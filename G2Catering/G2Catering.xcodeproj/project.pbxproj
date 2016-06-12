@@ -11,8 +11,6 @@
 		76D45C7E1D0CFD3B0026491F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76D45C7D1D0CFD3B0026491F /* Assets.xcassets */; };
 		76D45C8C1D0CFD3B0026491F /* G2CateringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D45C8B1D0CFD3B0026491F /* G2CateringTests.m */; };
 		76D45C971D0CFD3C0026491F /* G2CateringUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D45C961D0CFD3C0026491F /* G2CateringUITests.m */; };
-		76D6E8911D0D76FD0014DA13 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6E88F1D0D76FD0014DA13 /* AppDelegate.m */; };
-		76D6E8921D0D76FD0014DA13 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6E8901D0D76FD0014DA13 /* main.m */; };
 		76D6E89A1D0D77090014DA13 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 76D6E8961D0D77090014DA13 /* Info.plist */; };
 		76D6E89B1D0D77090014DA13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76D6E8981D0D77090014DA13 /* LaunchScreen.storyboard */; };
 		76D6E89C1D0D77090014DA13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76D6E8991D0D77090014DA13 /* Main.storyboard */; };
@@ -24,6 +22,9 @@
 		76D6E8BB1D0D77860014DA13 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D6E8B01D0D77860014DA13 /* MainViewController.xib */; };
 		76D6E8BC1D0D77860014DA13 /* MainBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6E8B41D0D77860014DA13 /* MainBottomView.m */; };
 		76D6E8BD1D0D77860014DA13 /* MainBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D6E8B51D0D77860014DA13 /* MainBottomView.xib */; };
+		76D6E8C01D0D78450014DA13 /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6E8BF1D0D78450014DA13 /* HttpTool.m */; };
+		76D6E8C81D0D7B530014DA13 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6E8C51D0D7B530014DA13 /* AppDelegate.m */; };
+		76D6E8C91D0D7B530014DA13 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6E8C61D0D7B530014DA13 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,9 +55,6 @@
 		76D45C921D0CFD3C0026491F /* G2CateringUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = G2CateringUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76D45C961D0CFD3C0026491F /* G2CateringUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = G2CateringUITests.m; sourceTree = "<group>"; };
 		76D45C981D0CFD3C0026491F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		76D6E88E1D0D76FD0014DA13 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		76D6E88F1D0D76FD0014DA13 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		76D6E8901D0D76FD0014DA13 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		76D6E8961D0D77090014DA13 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76D6E8981D0D77090014DA13 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76D6E8991D0D77090014DA13 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -72,6 +70,12 @@
 		76D6E8B31D0D77860014DA13 /* MainBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainBottomView.h; sourceTree = "<group>"; };
 		76D6E8B41D0D77860014DA13 /* MainBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainBottomView.m; sourceTree = "<group>"; };
 		76D6E8B51D0D77860014DA13 /* MainBottomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainBottomView.xib; sourceTree = "<group>"; };
+		76D6E8BE1D0D78450014DA13 /* HttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpTool.h; sourceTree = "<group>"; };
+		76D6E8BF1D0D78450014DA13 /* HttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpTool.m; sourceTree = "<group>"; };
+		76D6E8C41D0D7B530014DA13 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		76D6E8C51D0D7B530014DA13 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		76D6E8C61D0D7B530014DA13 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		76D6E8C71D0D7B530014DA13 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		8A99B5CD036CAE879C22EB66 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,7 +142,7 @@
 				76D6E8851D0D754A0014DA13 /* Vendors(第三方) */,
 				76D6E89D1D0D77860014DA13 /* Main(主界面) */,
 				76D6E8931D0D77090014DA13 /* Resources(资源) */,
-				76D6E88D1D0D76FD0014DA13 /* Other(其他) */,
+				76D6E8C31D0D7B530014DA13 /* Other */,
 				76D45C7D1D0CFD3B0026491F /* Assets.xcassets */,
 			);
 			path = G2Catering;
@@ -197,6 +201,8 @@
 		76D6E8891D0D755D0014DA13 /* Network(网络) */ = {
 			isa = PBXGroup;
 			children = (
+				76D6E8BE1D0D78450014DA13 /* HttpTool.h */,
+				76D6E8BF1D0D78450014DA13 /* HttpTool.m */,
 			);
 			path = "Network(网络)";
 			sourceTree = "<group>";
@@ -206,16 +212,6 @@
 			children = (
 			);
 			path = "Tool(工具类)";
-			sourceTree = "<group>";
-		};
-		76D6E88D1D0D76FD0014DA13 /* Other(其他) */ = {
-			isa = PBXGroup;
-			children = (
-				76D6E88E1D0D76FD0014DA13 /* AppDelegate.h */,
-				76D6E88F1D0D76FD0014DA13 /* AppDelegate.m */,
-				76D6E8901D0D76FD0014DA13 /* main.m */,
-			);
-			path = "Other(其他)";
 			sourceTree = "<group>";
 		};
 		76D6E8931D0D77090014DA13 /* Resources(资源) */ = {
@@ -365,6 +361,17 @@
 				76D6E8B51D0D77860014DA13 /* MainBottomView.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		76D6E8C31D0D7B530014DA13 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				76D6E8C41D0D7B530014DA13 /* AppDelegate.h */,
+				76D6E8C51D0D7B530014DA13 /* AppDelegate.m */,
+				76D6E8C61D0D7B530014DA13 /* main.m */,
+				76D6E8C71D0D7B530014DA13 /* PrefixHeader.pch */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 		BCBCDE88EDDFD9597B01BB42 /* Pods */ = {
@@ -564,10 +571,11 @@
 			files = (
 				76D6E8B81D0D77860014DA13 /* OrderingCollectionViewCell.m in Sources */,
 				76D6E8B61D0D77860014DA13 /* OrderingViewController.m in Sources */,
+				76D6E8C81D0D7B530014DA13 /* AppDelegate.m in Sources */,
 				76D6E8BC1D0D77860014DA13 /* MainBottomView.m in Sources */,
 				76D6E8BA1D0D77860014DA13 /* MainViewController.m in Sources */,
-				76D6E8911D0D76FD0014DA13 /* AppDelegate.m in Sources */,
-				76D6E8921D0D76FD0014DA13 /* main.m in Sources */,
+				76D6E8C91D0D7B530014DA13 /* main.m in Sources */,
+				76D6E8C01D0D78450014DA13 /* HttpTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -692,6 +700,8 @@
 			baseConfigurationReference = 2B4E00C8C92ACE2E7EE03E02 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/G2Catering/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/G2Catering/Resources(资源)/Plist/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -706,6 +716,8 @@
 			baseConfigurationReference = 8A99B5CD036CAE879C22EB66 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/G2Catering/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/G2Catering/Resources(资源)/Plist/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
