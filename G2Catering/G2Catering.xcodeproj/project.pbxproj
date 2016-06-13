@@ -25,6 +25,12 @@
 		76D6E8C01D0D78450014DA13 /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6E8BF1D0D78450014DA13 /* HttpTool.m */; };
 		76D6E8C81D0D7B530014DA13 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6E8C51D0D7B530014DA13 /* AppDelegate.m */; };
 		76D6E8C91D0D7B530014DA13 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6E8C61D0D7B530014DA13 /* main.m */; };
+		76D6E8CC1D0E61FA0014DA13 /* MainLeftView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6E8CB1D0E61FA0014DA13 /* MainLeftView.m */; };
+		76D6E8CF1D0E620A0014DA13 /* MainRightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6E8CE1D0E620A0014DA13 /* MainRightView.m */; };
+		76D6E8D11D0E628F0014DA13 /* MainLeftView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D6E8D01D0E628F0014DA13 /* MainLeftView.xib */; };
+		76D6E8D31D0E629B0014DA13 /* MainRightView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D6E8D21D0E629B0014DA13 /* MainRightView.xib */; };
+		76D6E8D71D0E889B0014DA13 /* MainLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6E8D51D0E889B0014DA13 /* MainLeftViewController.m */; };
+		76D6E8D81D0E889B0014DA13 /* MainLeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D6E8D61D0E889B0014DA13 /* MainLeftViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +82,15 @@
 		76D6E8C51D0D7B530014DA13 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		76D6E8C61D0D7B530014DA13 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		76D6E8C71D0D7B530014DA13 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		76D6E8CA1D0E61FA0014DA13 /* MainLeftView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainLeftView.h; sourceTree = "<group>"; };
+		76D6E8CB1D0E61FA0014DA13 /* MainLeftView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainLeftView.m; sourceTree = "<group>"; };
+		76D6E8CD1D0E620A0014DA13 /* MainRightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainRightView.h; sourceTree = "<group>"; };
+		76D6E8CE1D0E620A0014DA13 /* MainRightView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainRightView.m; sourceTree = "<group>"; };
+		76D6E8D01D0E628F0014DA13 /* MainLeftView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainLeftView.xib; sourceTree = "<group>"; };
+		76D6E8D21D0E629B0014DA13 /* MainRightView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainRightView.xib; sourceTree = "<group>"; };
+		76D6E8D41D0E889B0014DA13 /* MainLeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainLeftViewController.h; sourceTree = "<group>"; };
+		76D6E8D51D0E889B0014DA13 /* MainLeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainLeftViewController.m; sourceTree = "<group>"; };
+		76D6E8D61D0E889B0014DA13 /* MainLeftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainLeftViewController.xib; sourceTree = "<group>"; };
 		8A99B5CD036CAE879C22EB66 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -342,6 +357,9 @@
 				76D6E8AE1D0D77860014DA13 /* MainViewController.h */,
 				76D6E8AF1D0D77860014DA13 /* MainViewController.m */,
 				76D6E8B01D0D77860014DA13 /* MainViewController.xib */,
+				76D6E8D41D0E889B0014DA13 /* MainLeftViewController.h */,
+				76D6E8D51D0E889B0014DA13 /* MainLeftViewController.m */,
+				76D6E8D61D0E889B0014DA13 /* MainLeftViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -359,6 +377,12 @@
 				76D6E8B31D0D77860014DA13 /* MainBottomView.h */,
 				76D6E8B41D0D77860014DA13 /* MainBottomView.m */,
 				76D6E8B51D0D77860014DA13 /* MainBottomView.xib */,
+				76D6E8CA1D0E61FA0014DA13 /* MainLeftView.h */,
+				76D6E8CB1D0E61FA0014DA13 /* MainLeftView.m */,
+				76D6E8D01D0E628F0014DA13 /* MainLeftView.xib */,
+				76D6E8CD1D0E620A0014DA13 /* MainRightView.h */,
+				76D6E8CE1D0E620A0014DA13 /* MainRightView.m */,
+				76D6E8D21D0E629B0014DA13 /* MainRightView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -490,8 +514,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				76D6E89A1D0D77090014DA13 /* Info.plist in Resources */,
+				76D6E8D11D0E628F0014DA13 /* MainLeftView.xib in Resources */,
 				76D6E89C1D0D77090014DA13 /* Main.storyboard in Resources */,
+				76D6E8D81D0E889B0014DA13 /* MainLeftViewController.xib in Resources */,
 				76D6E8B91D0D77860014DA13 /* OrderingCollectionViewCell.xib in Resources */,
+				76D6E8D31D0E629B0014DA13 /* MainRightView.xib in Resources */,
 				76D6E8BB1D0D77860014DA13 /* MainViewController.xib in Resources */,
 				76D6E8B71D0D77860014DA13 /* OrderingViewController.xib in Resources */,
 				76D6E8BD1D0D77860014DA13 /* MainBottomView.xib in Resources */,
@@ -571,11 +598,14 @@
 			files = (
 				76D6E8B81D0D77860014DA13 /* OrderingCollectionViewCell.m in Sources */,
 				76D6E8B61D0D77860014DA13 /* OrderingViewController.m in Sources */,
+				76D6E8D71D0E889B0014DA13 /* MainLeftViewController.m in Sources */,
 				76D6E8C81D0D7B530014DA13 /* AppDelegate.m in Sources */,
 				76D6E8BC1D0D77860014DA13 /* MainBottomView.m in Sources */,
+				76D6E8CC1D0E61FA0014DA13 /* MainLeftView.m in Sources */,
 				76D6E8BA1D0D77860014DA13 /* MainViewController.m in Sources */,
 				76D6E8C91D0D7B530014DA13 /* main.m in Sources */,
 				76D6E8C01D0D78450014DA13 /* HttpTool.m in Sources */,
+				76D6E8CF1D0E620A0014DA13 /* MainRightView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

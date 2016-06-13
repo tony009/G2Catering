@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainLeftViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="212" height="686"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mpo-6Z-kiF">
+                    <rect key="frame" x="41" y="50" width="130" height="50"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="菜单－预定管理" translatesAutoresizingMaskIntoConstraints="NO" id="Hr8-C6-2af">
+                            <rect key="frame" x="8" y="9" width="32" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="1eQ-gT-RZC"/>
+                                <constraint firstAttribute="width" constant="32" id="eru-qB-TrW"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="预订管理" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r34-Zx-dHV">
+                            <rect key="frame" x="56" y="15" width="70" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="1SZ-YK-H2V"/>
+                                <constraint firstAttribute="height" constant="21" id="NIb-2a-Pvs"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6L-EY-dbW">
+                            <rect key="frame" x="0.0" y="0.0" width="130" height="50"/>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="67G-lo-89K"/>
+                        <constraint firstAttribute="bottom" secondItem="G6L-EY-dbW" secondAttribute="bottom" id="C56-Bj-xYV"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="J9u-0i-lZc"/>
+                        <constraint firstAttribute="width" constant="130" id="N6c-jT-zXV"/>
+                        <constraint firstAttribute="height" constant="50" id="RZb-BF-ZXg"/>
+                        <constraint firstAttribute="trailing" secondItem="G6L-EY-dbW" secondAttribute="trailing" id="Uuq-Bj-KgJ"/>
+                        <constraint firstItem="G6L-EY-dbW" firstAttribute="top" secondItem="Mpo-6Z-kiF" secondAttribute="top" id="VtJ-c2-Shp"/>
+                        <constraint firstItem="r34-Zx-dHV" firstAttribute="leading" secondItem="Hr8-C6-2af" secondAttribute="trailing" constant="16" id="XmS-bN-7wB"/>
+                        <constraint firstItem="r34-Zx-dHV" firstAttribute="centerY" secondItem="Mpo-6Z-kiF" secondAttribute="centerY" id="jxa-er-BkD"/>
+                        <constraint firstItem="Hr8-C6-2af" firstAttribute="centerY" secondItem="Mpo-6Z-kiF" secondAttribute="centerY" id="qYY-W8-BCL"/>
+                        <constraint firstItem="Hr8-C6-2af" firstAttribute="leading" secondItem="Mpo-6Z-kiF" secondAttribute="leading" constant="8" id="tYa-KZ-mEv"/>
+                        <constraint firstItem="G6L-EY-dbW" firstAttribute="leading" secondItem="Mpo-6Z-kiF" secondAttribute="leading" id="vbB-OU-VPD"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jp4-Ec-lTk">
+                    <rect key="frame" x="44" y="154" width="124" height="81"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="81" id="DSr-eB-gbu"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="81" id="ekW-rh-cPX"/>
+                        <constraint firstAttribute="width" constant="124" id="ni8-Af-dcR"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Mpo-6Z-kiF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ibm-WC-MXM"/>
+                <constraint firstItem="jp4-Ec-lTk" firstAttribute="top" secondItem="Mpo-6Z-kiF" secondAttribute="bottom" constant="54" id="Mt1-rv-02R"/>
+                <constraint firstItem="Mpo-6Z-kiF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="Tc0-4S-Y2p"/>
+                <constraint firstItem="jp4-Ec-lTk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cQT-b6-OQg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="142" y="215"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="菜单－预定管理" width="25" height="23"/>
+    </resources>
+</document>

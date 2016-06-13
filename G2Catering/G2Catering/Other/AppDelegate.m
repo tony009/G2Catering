@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "OrderingViewController.h"
+#import "MainViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -21,7 +22,12 @@
     
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = [[OrderingViewController alloc]init];
+    
+    MainViewController *mvc = [[MainViewController alloc]init];
+    
+    UINavigationController *na = [[UINavigationController alloc]initWithRootViewController:mvc];
+    
+    self.window.rootViewController = na;
     [self.window makeKeyAndVisible];
     
     return YES;
