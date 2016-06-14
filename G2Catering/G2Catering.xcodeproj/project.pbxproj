@@ -29,6 +29,8 @@
 		76D6EA141D0FA3070014DA13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76D6EA031D0FA3070014DA13 /* Main.storyboard */; };
 		76D6EA571D0FA6440014DA13 /* PrintSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6EA551D0FA6440014DA13 /* PrintSettingsViewController.m */; };
 		76D6EA581D0FA6440014DA13 /* PrintSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D6EA561D0FA6440014DA13 /* PrintSettingsViewController.xib */; };
+		918E232D1D0FA8B500DAFAE4 /* AboutSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 918E232B1D0FA8B500DAFAE4 /* AboutSettingsViewController.m */; };
+		918E232E1D0FA8B500DAFAE4 /* AboutSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 918E232C1D0FA8B500DAFAE4 /* AboutSettingsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +89,9 @@
 		76D6EA551D0FA6440014DA13 /* PrintSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintSettingsViewController.m; sourceTree = "<group>"; };
 		76D6EA561D0FA6440014DA13 /* PrintSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrintSettingsViewController.xib; sourceTree = "<group>"; };
 		8A99B5CD036CAE879C22EB66 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		918E232A1D0FA8B500DAFAE4 /* AboutSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutSettingsViewController.h; sourceTree = "<group>"; };
+		918E232B1D0FA8B500DAFAE4 /* AboutSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutSettingsViewController.m; sourceTree = "<group>"; };
+		918E232C1D0FA8B500DAFAE4 /* AboutSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutSettingsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -541,6 +546,9 @@
 				76D6EA541D0FA6440014DA13 /* PrintSettingsViewController.h */,
 				76D6EA551D0FA6440014DA13 /* PrintSettingsViewController.m */,
 				76D6EA561D0FA6440014DA13 /* PrintSettingsViewController.xib */,
+				918E232A1D0FA8B500DAFAE4 /* AboutSettingsViewController.h */,
+				918E232B1D0FA8B500DAFAE4 /* AboutSettingsViewController.m */,
+				918E232C1D0FA8B500DAFAE4 /* AboutSettingsViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -707,6 +715,7 @@
 			files = (
 				76D6EA0F1D0FA3070014DA13 /* MainRightView.xib in Resources */,
 				76D6EA131D0FA3070014DA13 /* LaunchScreen.storyboard in Resources */,
+				918E232E1D0FA8B500DAFAE4 /* AboutSettingsViewController.xib in Resources */,
 				76D6EA0D1D0FA3070014DA13 /* MainLeftView.xib in Resources */,
 				76D6EA071D0FA3070014DA13 /* OrderingViewController.xib in Resources */,
 				76D45C7E1D0CFD3B0026491F /* Assets.xcassets in Resources */,
@@ -790,6 +799,7 @@
 				76D6EA571D0FA6440014DA13 /* PrintSettingsViewController.m in Sources */,
 				76D6EA061D0FA3070014DA13 /* OrderingViewController.m in Sources */,
 				76D6EA0C1D0FA3070014DA13 /* MainLeftView.m in Sources */,
+				918E232D1D0FA8B500DAFAE4 /* AboutSettingsViewController.m in Sources */,
 				76D6EA0E1D0FA3070014DA13 /* MainRightView.m in Sources */,
 				76D6EA081D0FA3070014DA13 /* OrderingCollectionViewCell.m in Sources */,
 				76D6EA051D0FA3070014DA13 /* HttpTool.m in Sources */,
