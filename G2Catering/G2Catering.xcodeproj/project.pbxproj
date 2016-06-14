@@ -20,8 +20,6 @@
 		76D6E8B91D0D77860014DA13 /* OrderingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D6E8AB1D0D77860014DA13 /* OrderingCollectionViewCell.xib */; };
 		76D6E8BA1D0D77860014DA13 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6E8AF1D0D77860014DA13 /* MainViewController.m */; };
 		76D6E8BB1D0D77860014DA13 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D6E8B01D0D77860014DA13 /* MainViewController.xib */; };
-		76D6E8BC1D0D77860014DA13 /* MainBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6E8B41D0D77860014DA13 /* MainBottomView.m */; };
-		76D6E8BD1D0D77860014DA13 /* MainBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D6E8B51D0D77860014DA13 /* MainBottomView.xib */; };
 		76D6E8C01D0D78450014DA13 /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6E8BF1D0D78450014DA13 /* HttpTool.m */; };
 		76D6E8C81D0D7B530014DA13 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6E8C51D0D7B530014DA13 /* AppDelegate.m */; };
 		76D6E8C91D0D7B530014DA13 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6E8C61D0D7B530014DA13 /* main.m */; };
@@ -29,8 +27,6 @@
 		76D6E8CF1D0E620A0014DA13 /* MainRightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6E8CE1D0E620A0014DA13 /* MainRightView.m */; };
 		76D6E8D11D0E628F0014DA13 /* MainLeftView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D6E8D01D0E628F0014DA13 /* MainLeftView.xib */; };
 		76D6E8D31D0E629B0014DA13 /* MainRightView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D6E8D21D0E629B0014DA13 /* MainRightView.xib */; };
-		76D6E8D71D0E889B0014DA13 /* MainLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6E8D51D0E889B0014DA13 /* MainLeftViewController.m */; };
-		76D6E8D81D0E889B0014DA13 /* MainLeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D6E8D61D0E889B0014DA13 /* MainLeftViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,9 +69,6 @@
 		76D6E8AE1D0D77860014DA13 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		76D6E8AF1D0D77860014DA13 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		76D6E8B01D0D77860014DA13 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
-		76D6E8B31D0D77860014DA13 /* MainBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainBottomView.h; sourceTree = "<group>"; };
-		76D6E8B41D0D77860014DA13 /* MainBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainBottomView.m; sourceTree = "<group>"; };
-		76D6E8B51D0D77860014DA13 /* MainBottomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainBottomView.xib; sourceTree = "<group>"; };
 		76D6E8BE1D0D78450014DA13 /* HttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpTool.h; sourceTree = "<group>"; };
 		76D6E8BF1D0D78450014DA13 /* HttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpTool.m; sourceTree = "<group>"; };
 		76D6E8C41D0D7B530014DA13 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -88,9 +81,6 @@
 		76D6E8CE1D0E620A0014DA13 /* MainRightView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainRightView.m; sourceTree = "<group>"; };
 		76D6E8D01D0E628F0014DA13 /* MainLeftView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainLeftView.xib; sourceTree = "<group>"; };
 		76D6E8D21D0E629B0014DA13 /* MainRightView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainRightView.xib; sourceTree = "<group>"; };
-		76D6E8D41D0E889B0014DA13 /* MainLeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainLeftViewController.h; sourceTree = "<group>"; };
-		76D6E8D51D0E889B0014DA13 /* MainLeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainLeftViewController.m; sourceTree = "<group>"; };
-		76D6E8D61D0E889B0014DA13 /* MainLeftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainLeftViewController.xib; sourceTree = "<group>"; };
 		8A99B5CD036CAE879C22EB66 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +145,7 @@
 			children = (
 				76D6E8861D0D755D0014DA13 /* Expand(拓展) */,
 				76D6E8851D0D754A0014DA13 /* Vendors(第三方) */,
+				76D6E8E01D0F9A840014DA13 /* FunctionMenu(功能菜单) */,
 				76D6E89D1D0D77860014DA13 /* Main(主界面) */,
 				76D6E8931D0D77090014DA13 /* Resources(资源) */,
 				76D6E8C31D0D7B530014DA13 /* Other */,
@@ -268,6 +259,7 @@
 			children = (
 				76D6E89E1D0D77860014DA13 /* DinnerTable(餐台) */,
 				76D6E8A21D0D77860014DA13 /* Ordering(点单) */,
+				76D6E8DC1D0F98490014DA13 /* Retail(零售) */,
 				76D6E8AC1D0D77860014DA13 /* Other */,
 			);
 			path = "Main(主界面)";
@@ -357,9 +349,6 @@
 				76D6E8AE1D0D77860014DA13 /* MainViewController.h */,
 				76D6E8AF1D0D77860014DA13 /* MainViewController.m */,
 				76D6E8B01D0D77860014DA13 /* MainViewController.xib */,
-				76D6E8D41D0E889B0014DA13 /* MainLeftViewController.h */,
-				76D6E8D51D0E889B0014DA13 /* MainLeftViewController.m */,
-				76D6E8D61D0E889B0014DA13 /* MainLeftViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -374,9 +363,6 @@
 		76D6E8B21D0D77860014DA13 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				76D6E8B31D0D77860014DA13 /* MainBottomView.h */,
-				76D6E8B41D0D77860014DA13 /* MainBottomView.m */,
-				76D6E8B51D0D77860014DA13 /* MainBottomView.xib */,
 				76D6E8CA1D0E61FA0014DA13 /* MainLeftView.h */,
 				76D6E8CB1D0E61FA0014DA13 /* MainLeftView.m */,
 				76D6E8D01D0E628F0014DA13 /* MainLeftView.xib */,
@@ -396,6 +382,204 @@
 				76D6E8C71D0D7B530014DA13 /* PrefixHeader.pch */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		76D6E8DC1D0F98490014DA13 /* Retail(零售) */ = {
+			isa = PBXGroup;
+			children = (
+				76D6E8DD1D0F98490014DA13 /* Controller */,
+				76D6E8DE1D0F98490014DA13 /* Model */,
+				76D6E8DF1D0F98490014DA13 /* View */,
+			);
+			path = "Retail(零售)";
+			sourceTree = "<group>";
+		};
+		76D6E8DD1D0F98490014DA13 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		76D6E8DE1D0F98490014DA13 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		76D6E8DF1D0F98490014DA13 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		76D6E8E01D0F9A840014DA13 /* FunctionMenu(功能菜单) */ = {
+			isa = PBXGroup;
+			children = (
+				76D6E8E11D0F9A840014DA13 /* DataReport(数据报告) */,
+				76D6E8E51D0F9A840014DA13 /* OrderRecord(订单记录) */,
+				76D6E8E91D0F9A840014DA13 /* ReserveManager(预定管理) */,
+				76D6E8ED1D0F9A840014DA13 /* Settings(系统设置) */,
+				76D6E8F11D0F9A840014DA13 /* VIPManager(会员管理) */,
+			);
+			path = "FunctionMenu(功能菜单)";
+			sourceTree = "<group>";
+		};
+		76D6E8E11D0F9A840014DA13 /* DataReport(数据报告) */ = {
+			isa = PBXGroup;
+			children = (
+				76D6E8E21D0F9A840014DA13 /* Controller */,
+				76D6E8E31D0F9A840014DA13 /* Model */,
+				76D6E8E41D0F9A840014DA13 /* View */,
+			);
+			path = "DataReport(数据报告)";
+			sourceTree = "<group>";
+		};
+		76D6E8E21D0F9A840014DA13 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		76D6E8E31D0F9A840014DA13 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		76D6E8E41D0F9A840014DA13 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		76D6E8E51D0F9A840014DA13 /* OrderRecord(订单记录) */ = {
+			isa = PBXGroup;
+			children = (
+				76D6E8E61D0F9A840014DA13 /* Controller */,
+				76D6E8E71D0F9A840014DA13 /* Model */,
+				76D6E8E81D0F9A840014DA13 /* View */,
+			);
+			path = "OrderRecord(订单记录)";
+			sourceTree = "<group>";
+		};
+		76D6E8E61D0F9A840014DA13 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		76D6E8E71D0F9A840014DA13 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		76D6E8E81D0F9A840014DA13 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		76D6E8E91D0F9A840014DA13 /* ReserveManager(预定管理) */ = {
+			isa = PBXGroup;
+			children = (
+				76D6E8EA1D0F9A840014DA13 /* Controller */,
+				76D6E8EB1D0F9A840014DA13 /* Model */,
+				76D6E8EC1D0F9A840014DA13 /* View */,
+			);
+			path = "ReserveManager(预定管理)";
+			sourceTree = "<group>";
+		};
+		76D6E8EA1D0F9A840014DA13 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		76D6E8EB1D0F9A840014DA13 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		76D6E8EC1D0F9A840014DA13 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		76D6E8ED1D0F9A840014DA13 /* Settings(系统设置) */ = {
+			isa = PBXGroup;
+			children = (
+				76D6E8EE1D0F9A840014DA13 /* Controller */,
+				76D6E8EF1D0F9A840014DA13 /* Model */,
+				76D6E8F01D0F9A840014DA13 /* View */,
+			);
+			path = "Settings(系统设置)";
+			sourceTree = "<group>";
+		};
+		76D6E8EE1D0F9A840014DA13 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		76D6E8EF1D0F9A840014DA13 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		76D6E8F01D0F9A840014DA13 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		76D6E8F11D0F9A840014DA13 /* VIPManager(会员管理) */ = {
+			isa = PBXGroup;
+			children = (
+				76D6E8F21D0F9A840014DA13 /* Controller */,
+				76D6E8F31D0F9A840014DA13 /* Model */,
+				76D6E8F41D0F9A840014DA13 /* View */,
+			);
+			path = "VIPManager(会员管理)";
+			sourceTree = "<group>";
+		};
+		76D6E8F21D0F9A840014DA13 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		76D6E8F31D0F9A840014DA13 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		76D6E8F41D0F9A840014DA13 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		BCBCDE88EDDFD9597B01BB42 /* Pods */ = {
@@ -516,12 +700,10 @@
 				76D6E89A1D0D77090014DA13 /* Info.plist in Resources */,
 				76D6E8D11D0E628F0014DA13 /* MainLeftView.xib in Resources */,
 				76D6E89C1D0D77090014DA13 /* Main.storyboard in Resources */,
-				76D6E8D81D0E889B0014DA13 /* MainLeftViewController.xib in Resources */,
 				76D6E8B91D0D77860014DA13 /* OrderingCollectionViewCell.xib in Resources */,
 				76D6E8D31D0E629B0014DA13 /* MainRightView.xib in Resources */,
 				76D6E8BB1D0D77860014DA13 /* MainViewController.xib in Resources */,
 				76D6E8B71D0D77860014DA13 /* OrderingViewController.xib in Resources */,
-				76D6E8BD1D0D77860014DA13 /* MainBottomView.xib in Resources */,
 				76D6E89B1D0D77090014DA13 /* LaunchScreen.storyboard in Resources */,
 				76D45C7E1D0CFD3B0026491F /* Assets.xcassets in Resources */,
 			);
@@ -598,9 +780,7 @@
 			files = (
 				76D6E8B81D0D77860014DA13 /* OrderingCollectionViewCell.m in Sources */,
 				76D6E8B61D0D77860014DA13 /* OrderingViewController.m in Sources */,
-				76D6E8D71D0E889B0014DA13 /* MainLeftViewController.m in Sources */,
 				76D6E8C81D0D7B530014DA13 /* AppDelegate.m in Sources */,
-				76D6E8BC1D0D77860014DA13 /* MainBottomView.m in Sources */,
 				76D6E8CC1D0E61FA0014DA13 /* MainLeftView.m in Sources */,
 				76D6E8BA1D0D77860014DA13 /* MainViewController.m in Sources */,
 				76D6E8C91D0D7B530014DA13 /* main.m in Sources */,

@@ -8,7 +8,6 @@
 
 #import "MainViewController.h"
 #import "MainLeftView.h"
-#import "MainLeftViewController.h"
 @interface MainViewController ()
 @property (nonatomic,strong) UIView *leftView;
 @property (nonatomic,strong) UIView *rightView;
@@ -22,7 +21,7 @@
     // Do any additional setup after loading the view from its nib.
     
     self.flag = 0;
-
+    
     
     [self p_initViews];
     
@@ -73,20 +72,12 @@
     self.leftView = leftView;
     self.rightView = rightView;
     
-//    [self.view addSubview:leftView];
-//    [self.view addSubview:rightView];
+    
+    self.leftView.hidden = YES;
+    self.rightView.hidden = YES;
     
     [KWindow addSubview:leftView];
     [KWindow addSubview:rightView];
-    
-    
-    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(300, 300, 200, 300)];
-    view.backgroundColor = [UIColor whiteColor];
-    
-    [KWindow addSubview:view];
-    
-    
-    UIWindow *w =  [UIApplication sharedApplication].keyWindow;
     
 }
 
@@ -114,6 +105,7 @@
         } completion:^(BOOL finished) {
             
             self.flag = 1;
+            self.rightView.hidden = NO;
             
         }];
         
@@ -126,6 +118,7 @@
         }completion:^(BOOL finished) {
             
             self.flag = 0;
+            self.leftView.hidden = YES;
             
         }];
         
@@ -143,10 +136,11 @@
         [UIView animateWithDuration:0.5 animations:^{
             
             self.view.transform = CGAffineTransformMakeTranslation(300, 0);
-
+            
         } completion:^(BOOL finished) {
             
             self.flag = -1;
+            self.leftView.hidden = NO;
             
         }];
         
@@ -159,6 +153,7 @@
         }completion:^(BOOL finished) {
             
             self.flag = 0;
+            self.rightView.hidden = YES;
             
         }];
     }

@@ -7,7 +7,6 @@
 //
 
 #import "OrderingViewController.h"
-#import "MainBottomView.h"
 
 static NSString *collectionViewCellIdentifer = @"OrderingCollectionViewReuseCell";
 static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
@@ -31,16 +30,7 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
 }
 
 -(void)p_initViews{
- 
-    
-    MainBottomView *view  =  [[[NSBundle mainBundle] loadNibNamed:@"MainBottomView" owner:self options:nil]lastObject];
-    
-    view.backgroundColor = [UIColor redColor];
-    
-    view.frame = CGRectMake(0, 700, 1024, 68);
-    
-    [self.view addSubview:view];
-    
+
     UINib *nib = [UINib nibWithNibName:@"OrderingCollectionViewCell" bundle:nil];
     
     [self.orderCollectionView registerNib:nib forCellWithReuseIdentifier:collectionViewCellIdentifer];
