@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "OrderingViewController.h"
 #import "MainViewController.h"
+#import "TradeViewController.h"
 @interface AppDelegate ()
 
 @end

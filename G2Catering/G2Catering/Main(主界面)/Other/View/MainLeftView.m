@@ -7,6 +7,7 @@
 //
 
 #import "MainLeftView.h"
+//#import "JiaoYiJiLuViewController.h"
 
 @implementation MainLeftView
 
@@ -17,5 +18,14 @@
     // Drawing code
 }
 */
+- (IBAction)tradeAction:(id)sender {
+    
+    if ([self.delegate respondsToSelector:@selector(MainLeftViewMenuDidChick:withIndex:)]) {
+        [self.delegate MainLeftViewMenuDidChick:self withIndex:1];
+    }
+    
+}
+
+
 
 @end
