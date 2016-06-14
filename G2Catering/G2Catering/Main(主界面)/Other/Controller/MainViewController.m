@@ -8,7 +8,8 @@
 
 #import "MainViewController.h"
 #import "MainLeftView.h"
-@interface MainViewController ()
+#import "TradeViewController.h"
+@interface MainViewController ()<MainLeftViewDelegate>
 @property (nonatomic,strong) UIView *leftView;
 @property (nonatomic,strong) UIView *rightView;
 @property (nonatomic) int flag;   //(-1,左,0正常，1右)
@@ -61,6 +62,7 @@
     
     
     MainLeftView *leftView =  [[[NSBundle mainBundle]loadNibNamed:@"MainLeftView" owner:self options:nil]lastObject];
+    leftView.delegate = self;
     
     leftView.frame = CGRectMake(0, 0, 300, KScreenHeight);
     
@@ -163,6 +165,31 @@
     
 }
 
+#pragma mark  左边栏的点击事件
+
+
+- (void)MainLeftViewMenuDidChick:(MainLeftView  *)orderContent withIndex:(NSInteger )index{
+    
+    [UIView animateWithDuration:0.5 animations:^{
+        
+        self.view.transform=CGAffineTransformIdentity;
+        
+    }completion:^(BOOL finished) {
+        
+        self.flag = 0;
+        self.leftView.hidden = YES;
+        
+    }];
+
+    if(index == 1){
+        
+        
+        TradeViewController *tradeCtrl=  [[[NSBundle mainBundle]loadNibNamed:@"TradeViewController" owner:nil options:nil]lastObject];
+        [self.view addSubview:tradeCtrl.view ];
+        
+    }
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

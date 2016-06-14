@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "OrderingViewController.h"
 #import "MainViewController.h"
+#import "TradeViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -23,11 +24,12 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    MainViewController *mvc = [[MainViewController alloc]init];
-    
-    UINavigationController *na = [[UINavigationController alloc]initWithRootViewController:mvc];
-    
-    self.window.rootViewController = na;
+//    MainViewController *mvc = [[MainViewController alloc]init];
+//   
+//    UINavigationController *na = [[UINavigationController alloc]initWithRootViewController:mvc];
+//
+    TradeViewController *tradeVctl = [[[NSBundle mainBundle]loadNibNamed:@"TradeViewController" owner:nil options:nil]lastObject];
+    self.window.rootViewController = tradeVctl;
     [self.window makeKeyAndVisible];
     
     return YES;
