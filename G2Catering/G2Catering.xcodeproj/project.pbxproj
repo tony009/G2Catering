@@ -31,6 +31,8 @@
 		76D6EA581D0FA6440014DA13 /* PrintSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D6EA561D0FA6440014DA13 /* PrintSettingsViewController.xib */; };
 		8119FD981D0FA9A8003D545C /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8119FD961D0FA9A8003D545C /* TestViewController.m */; };
 		8119FD991D0FA9A8003D545C /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8119FD971D0FA9A8003D545C /* TestViewController.xib */; };
+		918E232D1D0FA8B500DAFAE4 /* AboutSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 918E232B1D0FA8B500DAFAE4 /* AboutSettingsViewController.m */; };
+		918E232E1D0FA8B500DAFAE4 /* AboutSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 918E232C1D0FA8B500DAFAE4 /* AboutSettingsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
