@@ -14,6 +14,10 @@
 #define KScreenHeight  [UIScreen mainScreen].bounds.size.height
 
 
+
+#define koriginalWidth  388
+
+
 //
 #define kLeftViewWidth 200
 

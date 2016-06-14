@@ -8,9 +8,10 @@
 
 #import "MainViewController.h"
 #import "MainLeftView.h"
+#import "TradeViewController.h"
 #import "DinnerTableViewController.h"
 #import "OrderingViewController.h"
-@interface MainViewController ()
+@interface MainViewController ()<MainLeftViewDelegate>
 @property (nonatomic,strong) UIView *leftView;
 @property (nonatomic,strong) UIView *rightView;
 @property (nonatomic) int flag;   //(-1,左,0正常，1右)

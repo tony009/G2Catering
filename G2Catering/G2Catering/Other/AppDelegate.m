@@ -30,6 +30,12 @@
     na.navigationBarHidden = YES;
     
     self.window.rootViewController = na;
+//    MainViewController *mvc = [[MainViewController alloc]init];
+//   
+//    UINavigationController *na = [[UINavigationController alloc]initWithRootViewController:mvc];
+//
+    TradeViewController *tradeVctl = [[[NSBundle mainBundle]loadNibNamed:@"TradeViewController" owner:nil options:nil]lastObject];
+    self.window.rootViewController = tradeVctl;
     [self.window makeKeyAndVisible];
     
     return YES;

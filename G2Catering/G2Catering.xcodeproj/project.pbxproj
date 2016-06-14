@@ -31,8 +31,14 @@
 		76D6EA581D0FA6440014DA13 /* PrintSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D6EA561D0FA6440014DA13 /* PrintSettingsViewController.xib */; };
 		76D6EA5F1D0FE4550014DA13 /* DinnerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6EA5D1D0FE4550014DA13 /* DinnerTableViewController.m */; };
 		76D6EA601D0FE4550014DA13 /* DinnerTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D6EA5E1D0FE4550014DA13 /* DinnerTableViewController.xib */; };
-		8119FD981D0FA9A8003D545C /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8119FD961D0FA9A8003D545C /* TestViewController.m */; };
-		8119FD991D0FA9A8003D545C /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8119FD971D0FA9A8003D545C /* TestViewController.xib */; };
+		810991181D1009F8006EF716 /* JiLuCaiViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 810991161D1009F8006EF716 /* JiLuCaiViewCell.m */; };
+		810991191D1009F8006EF716 /* JiLuCaiViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 810991171D1009F8006EF716 /* JiLuCaiViewCell.xib */; };
+		8119FDA61D0FD144003D545C /* TradeContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8119FDA51D0FD144003D545C /* TradeContentView.m */; };
+		8119FDA81D0FD151003D545C /* TradeContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8119FDA71D0FD151003D545C /* TradeContentView.xib */; };
+		8119FDAE1D0FDC9B003D545C /* JiaoYiJiLuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8119FDAC1D0FDC9B003D545C /* JiaoYiJiLuCell.m */; };
+		8119FDAF1D0FDC9B003D545C /* JiaoYiJiLuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8119FDAD1D0FDC9B003D545C /* JiaoYiJiLuCell.xib */; };
+		8119FDB81D0FEE78003D545C /* TradeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8119FDB61D0FEE78003D545C /* TradeViewController.m */; };
+		8119FDB91D0FEE78003D545C /* TradeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8119FDB71D0FEE78003D545C /* TradeViewController.xib */; };
 		918E232D1D0FA8B500DAFAE4 /* AboutSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 918E232B1D0FA8B500DAFAE4 /* AboutSettingsViewController.m */; };
 		918E232E1D0FA8B500DAFAE4 /* AboutSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 918E232C1D0FA8B500DAFAE4 /* AboutSettingsViewController.xib */; };
 /* End PBXBuildFile section */
@@ -98,9 +104,18 @@
 		76D6EA5C1D0FE4550014DA13 /* DinnerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DinnerTableViewController.h; sourceTree = "<group>"; };
 		76D6EA5D1D0FE4550014DA13 /* DinnerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DinnerTableViewController.m; sourceTree = "<group>"; };
 		76D6EA5E1D0FE4550014DA13 /* DinnerTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DinnerTableViewController.xib; sourceTree = "<group>"; };
-		8119FD951D0FA9A8003D545C /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
-		8119FD961D0FA9A8003D545C /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
-		8119FD971D0FA9A8003D545C /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		810991151D1009F8006EF716 /* JiLuCaiViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiLuCaiViewCell.h; sourceTree = "<group>"; };
+		810991161D1009F8006EF716 /* JiLuCaiViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiLuCaiViewCell.m; sourceTree = "<group>"; };
+		810991171D1009F8006EF716 /* JiLuCaiViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JiLuCaiViewCell.xib; sourceTree = "<group>"; };
+		8119FDA41D0FD144003D545C /* TradeContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradeContentView.h; sourceTree = "<group>"; };
+		8119FDA51D0FD144003D545C /* TradeContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradeContentView.m; sourceTree = "<group>"; };
+		8119FDA71D0FD151003D545C /* TradeContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TradeContentView.xib; sourceTree = "<group>"; };
+		8119FDAB1D0FDC9B003D545C /* JiaoYiJiLuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaoYiJiLuCell.h; sourceTree = "<group>"; };
+		8119FDAC1D0FDC9B003D545C /* JiaoYiJiLuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaoYiJiLuCell.m; sourceTree = "<group>"; };
+		8119FDAD1D0FDC9B003D545C /* JiaoYiJiLuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JiaoYiJiLuCell.xib; sourceTree = "<group>"; };
+		8119FDB51D0FEE78003D545C /* TradeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradeViewController.h; sourceTree = "<group>"; };
+		8119FDB61D0FEE78003D545C /* TradeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradeViewController.m; sourceTree = "<group>"; };
+		8119FDB71D0FEE78003D545C /* TradeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TradeViewController.xib; sourceTree = "<group>"; };
 		8A99B5CD036CAE879C22EB66 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		918E232A1D0FA8B500DAFAE4 /* AboutSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutSettingsViewController.h; sourceTree = "<group>"; };
 		918E232B1D0FA8B500DAFAE4 /* AboutSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutSettingsViewController.m; sourceTree = "<group>"; };
@@ -750,7 +765,6 @@
 				918E232E1D0FA8B500DAFAE4 /* AboutSettingsViewController.xib in Resources */,
 				76D6EA0D1D0FA3070014DA13 /* MainLeftView.xib in Resources */,
 				76D6EA601D0FE4550014DA13 /* DinnerTableViewController.xib in Resources */,
-				8119FD991D0FA9A8003D545C /* TestViewController.xib in Resources */,
 				76D6EA071D0FA3070014DA13 /* OrderingViewController.xib in Resources */,
 				76D45C7E1D0CFD3B0026491F /* Assets.xcassets in Resources */,
 				8119FDAF1D0FDC9B003D545C /* JiaoYiJiLuCell.xib in Resources */,
@@ -840,7 +854,6 @@
 				8119FDAE1D0FDC9B003D545C /* JiaoYiJiLuCell.m in Sources */,
 				76D6EA0E1D0FA3070014DA13 /* MainRightView.m in Sources */,
 				76D6EA5F1D0FE4550014DA13 /* DinnerTableViewController.m in Sources */,
-				8119FD981D0FA9A8003D545C /* TestViewController.m in Sources */,
 				76D6EA081D0FA3070014DA13 /* OrderingCollectionViewCell.m in Sources */,
 				76D6EA051D0FA3070014DA13 /* HttpTool.m in Sources */,
 				76D6EA0A1D0FA3070014DA13 /* MainViewController.m in Sources */,
