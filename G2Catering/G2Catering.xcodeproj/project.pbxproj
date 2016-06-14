@@ -145,7 +145,7 @@
 			children = (
 				76D6E8861D0D755D0014DA13 /* Expand(拓展) */,
 				76D6E8851D0D754A0014DA13 /* Vendors(第三方) */,
-				76D6E8E01D0F9A840014DA13 /* FunctionMenu(功能菜单) */,
+				76D6E8F51D0FA03D0014DA13 /* FunctionMenu(功能菜单) */,
 				76D6E89D1D0D77860014DA13 /* Main(主界面) */,
 				76D6E8931D0D77090014DA13 /* Resources(资源) */,
 				76D6E8C31D0D7B530014DA13 /* Other */,
@@ -415,167 +415,167 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		76D6E8E01D0F9A840014DA13 /* FunctionMenu(功能菜单) */ = {
+		76D6E8F51D0FA03D0014DA13 /* FunctionMenu(功能菜单) */ = {
 			isa = PBXGroup;
 			children = (
-				76D6E8E11D0F9A840014DA13 /* DataReport(数据报告) */,
-				76D6E8E51D0F9A840014DA13 /* OrderRecord(订单记录) */,
-				76D6E8E91D0F9A840014DA13 /* ReserveManager(预定管理) */,
-				76D6E8ED1D0F9A840014DA13 /* Settings(系统设置) */,
-				76D6E8F11D0F9A840014DA13 /* VIPManager(会员管理) */,
+				76D6E8F61D0FA03D0014DA13 /* DataReport(数据报告) */,
+				76D6E8FA1D0FA03D0014DA13 /* OrderRecord(订单记录) */,
+				76D6E8FE1D0FA03D0014DA13 /* ReserveManager(预定管理) */,
+				76D6E9021D0FA03D0014DA13 /* Settings(系统设置) */,
+				76D6E9061D0FA03D0014DA13 /* VIPManager(会员管理) */,
 			);
 			path = "FunctionMenu(功能菜单)";
 			sourceTree = "<group>";
 		};
-		76D6E8E11D0F9A840014DA13 /* DataReport(数据报告) */ = {
+		76D6E8F61D0FA03D0014DA13 /* DataReport(数据报告) */ = {
 			isa = PBXGroup;
 			children = (
-				76D6E8E21D0F9A840014DA13 /* Controller */,
-				76D6E8E31D0F9A840014DA13 /* Model */,
-				76D6E8E41D0F9A840014DA13 /* View */,
+				76D6E8F71D0FA03D0014DA13 /* Controller */,
+				76D6E8F81D0FA03D0014DA13 /* Model */,
+				76D6E8F91D0FA03D0014DA13 /* View */,
 			);
 			path = "DataReport(数据报告)";
 			sourceTree = "<group>";
 		};
-		76D6E8E21D0F9A840014DA13 /* Controller */ = {
+		76D6E8F71D0FA03D0014DA13 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		76D6E8E31D0F9A840014DA13 /* Model */ = {
+		76D6E8F81D0FA03D0014DA13 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		76D6E8E41D0F9A840014DA13 /* View */ = {
+		76D6E8F91D0FA03D0014DA13 /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		76D6E8E51D0F9A840014DA13 /* OrderRecord(订单记录) */ = {
+		76D6E8FA1D0FA03D0014DA13 /* OrderRecord(订单记录) */ = {
 			isa = PBXGroup;
 			children = (
-				76D6E8E61D0F9A840014DA13 /* Controller */,
-				76D6E8E71D0F9A840014DA13 /* Model */,
-				76D6E8E81D0F9A840014DA13 /* View */,
+				76D6E8FB1D0FA03D0014DA13 /* Controller */,
+				76D6E8FC1D0FA03D0014DA13 /* Model */,
+				76D6E8FD1D0FA03D0014DA13 /* View */,
 			);
 			path = "OrderRecord(订单记录)";
 			sourceTree = "<group>";
 		};
-		76D6E8E61D0F9A840014DA13 /* Controller */ = {
+		76D6E8FB1D0FA03D0014DA13 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		76D6E8E71D0F9A840014DA13 /* Model */ = {
+		76D6E8FC1D0FA03D0014DA13 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		76D6E8E81D0F9A840014DA13 /* View */ = {
+		76D6E8FD1D0FA03D0014DA13 /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		76D6E8E91D0F9A840014DA13 /* ReserveManager(预定管理) */ = {
+		76D6E8FE1D0FA03D0014DA13 /* ReserveManager(预定管理) */ = {
 			isa = PBXGroup;
 			children = (
-				76D6E8EA1D0F9A840014DA13 /* Controller */,
-				76D6E8EB1D0F9A840014DA13 /* Model */,
-				76D6E8EC1D0F9A840014DA13 /* View */,
+				76D6E8FF1D0FA03D0014DA13 /* Controller */,
+				76D6E9001D0FA03D0014DA13 /* Model */,
+				76D6E9011D0FA03D0014DA13 /* View */,
 			);
 			path = "ReserveManager(预定管理)";
 			sourceTree = "<group>";
 		};
-		76D6E8EA1D0F9A840014DA13 /* Controller */ = {
+		76D6E8FF1D0FA03D0014DA13 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		76D6E8EB1D0F9A840014DA13 /* Model */ = {
+		76D6E9001D0FA03D0014DA13 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		76D6E8EC1D0F9A840014DA13 /* View */ = {
+		76D6E9011D0FA03D0014DA13 /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		76D6E8ED1D0F9A840014DA13 /* Settings(系统设置) */ = {
+		76D6E9021D0FA03D0014DA13 /* Settings(系统设置) */ = {
 			isa = PBXGroup;
 			children = (
-				76D6E8EE1D0F9A840014DA13 /* Controller */,
-				76D6E8EF1D0F9A840014DA13 /* Model */,
-				76D6E8F01D0F9A840014DA13 /* View */,
+				76D6E9031D0FA03D0014DA13 /* Controller */,
+				76D6E9041D0FA03D0014DA13 /* Model */,
+				76D6E9051D0FA03D0014DA13 /* View */,
 			);
 			path = "Settings(系统设置)";
 			sourceTree = "<group>";
 		};
-		76D6E8EE1D0F9A840014DA13 /* Controller */ = {
+		76D6E9031D0FA03D0014DA13 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		76D6E8EF1D0F9A840014DA13 /* Model */ = {
+		76D6E9041D0FA03D0014DA13 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		76D6E8F01D0F9A840014DA13 /* View */ = {
+		76D6E9051D0FA03D0014DA13 /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		76D6E8F11D0F9A840014DA13 /* VIPManager(会员管理) */ = {
+		76D6E9061D0FA03D0014DA13 /* VIPManager(会员管理) */ = {
 			isa = PBXGroup;
 			children = (
-				76D6E8F21D0F9A840014DA13 /* Controller */,
-				76D6E8F31D0F9A840014DA13 /* Model */,
-				76D6E8F41D0F9A840014DA13 /* View */,
+				76D6E9071D0FA03D0014DA13 /* Controller */,
+				76D6E9081D0FA03D0014DA13 /* Model */,
+				76D6E9091D0FA03D0014DA13 /* View */,
 			);
 			path = "VIPManager(会员管理)";
 			sourceTree = "<group>";
 		};
-		76D6E8F21D0F9A840014DA13 /* Controller */ = {
+		76D6E9071D0FA03D0014DA13 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		76D6E8F31D0F9A840014DA13 /* Model */ = {
+		76D6E9081D0FA03D0014DA13 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		76D6E8F41D0F9A840014DA13 /* View */ = {
+		76D6E9091D0FA03D0014DA13 /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
