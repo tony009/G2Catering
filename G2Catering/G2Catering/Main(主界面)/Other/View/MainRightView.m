@@ -18,14 +18,30 @@
 }
 */
 
-- (IBAction)oAction:(UIButton *)sender {
-    
+- (void)awakeFromNib{
     
 }
 
-- (IBAction)dAction:(UIButton *)sender {
-    
+-(instancetype)initWithCoder:(NSCoder *)aDecoder{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        [self setUp];
+    }
+    return self;
+}
+
+-(instancetype)initWithFrame:(CGRect)frame{
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self setUp];
+    }
+    return self;
+}
+
+
+-(void)setUp{
     
 }
+
 
 @end

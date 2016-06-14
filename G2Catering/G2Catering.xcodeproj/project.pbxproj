@@ -29,6 +29,8 @@
 		76D6EA141D0FA3070014DA13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76D6EA031D0FA3070014DA13 /* Main.storyboard */; };
 		76D6EA571D0FA6440014DA13 /* PrintSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6EA551D0FA6440014DA13 /* PrintSettingsViewController.m */; };
 		76D6EA581D0FA6440014DA13 /* PrintSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D6EA561D0FA6440014DA13 /* PrintSettingsViewController.xib */; };
+		76D6EA5F1D0FE4550014DA13 /* DinnerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6EA5D1D0FE4550014DA13 /* DinnerTableViewController.m */; };
+		76D6EA601D0FE4550014DA13 /* DinnerTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D6EA5E1D0FE4550014DA13 /* DinnerTableViewController.xib */; };
 		8119FD981D0FA9A8003D545C /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8119FD961D0FA9A8003D545C /* TestViewController.m */; };
 		8119FD991D0FA9A8003D545C /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8119FD971D0FA9A8003D545C /* TestViewController.xib */; };
 		918E232D1D0FA8B500DAFAE4 /* AboutSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 918E232B1D0FA8B500DAFAE4 /* AboutSettingsViewController.m */; };
@@ -90,6 +92,12 @@
 		76D6EA541D0FA6440014DA13 /* PrintSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintSettingsViewController.h; sourceTree = "<group>"; };
 		76D6EA551D0FA6440014DA13 /* PrintSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintSettingsViewController.m; sourceTree = "<group>"; };
 		76D6EA561D0FA6440014DA13 /* PrintSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrintSettingsViewController.xib; sourceTree = "<group>"; };
+		76D6EA591D0FE14E0014DA13 /* DimensMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DimensMacros.h; sourceTree = "<group>"; };
+		76D6EA5A1D0FE1D80014DA13 /* UtilsMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsMacros.h; sourceTree = "<group>"; };
+		76D6EA5B1D0FE2430014DA13 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		76D6EA5C1D0FE4550014DA13 /* DinnerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DinnerTableViewController.h; sourceTree = "<group>"; };
+		76D6EA5D1D0FE4550014DA13 /* DinnerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DinnerTableViewController.m; sourceTree = "<group>"; };
+		76D6EA5E1D0FE4550014DA13 /* DinnerTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DinnerTableViewController.xib; sourceTree = "<group>"; };
 		8119FD951D0FA9A8003D545C /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		8119FD961D0FA9A8003D545C /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		8119FD971D0FA9A8003D545C /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
@@ -208,6 +216,9 @@
 		76D6E9BE1D0FA3070014DA13 /* Macros(宏) */ = {
 			isa = PBXGroup;
 			children = (
+				76D6EA591D0FE14E0014DA13 /* DimensMacros.h */,
+				76D6EA5A1D0FE1D80014DA13 /* UtilsMacros.h */,
+				76D6EA5B1D0FE2430014DA13 /* Macros.h */,
 			);
 			path = "Macros(宏)";
 			sourceTree = "<group>";
@@ -252,6 +263,9 @@
 		76D6E9DA1D0FA3070014DA13 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				76D6EA5C1D0FE4550014DA13 /* DinnerTableViewController.h */,
+				76D6EA5D1D0FE4550014DA13 /* DinnerTableViewController.m */,
+				76D6EA5E1D0FE4550014DA13 /* DinnerTableViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -725,6 +739,7 @@
 				76D6EA131D0FA3070014DA13 /* LaunchScreen.storyboard in Resources */,
 				918E232E1D0FA8B500DAFAE4 /* AboutSettingsViewController.xib in Resources */,
 				76D6EA0D1D0FA3070014DA13 /* MainLeftView.xib in Resources */,
+				76D6EA601D0FE4550014DA13 /* DinnerTableViewController.xib in Resources */,
 				8119FD991D0FA9A8003D545C /* TestViewController.xib in Resources */,
 				76D6EA071D0FA3070014DA13 /* OrderingViewController.xib in Resources */,
 				76D45C7E1D0CFD3B0026491F /* Assets.xcassets in Resources */,
@@ -810,6 +825,7 @@
 				76D6EA0C1D0FA3070014DA13 /* MainLeftView.m in Sources */,
 				918E232D1D0FA8B500DAFAE4 /* AboutSettingsViewController.m in Sources */,
 				76D6EA0E1D0FA3070014DA13 /* MainRightView.m in Sources */,
+				76D6EA5F1D0FE4550014DA13 /* DinnerTableViewController.m in Sources */,
 				8119FD981D0FA9A8003D545C /* TestViewController.m in Sources */,
 				76D6EA081D0FA3070014DA13 /* OrderingCollectionViewCell.m in Sources */,
 				76D6EA051D0FA3070014DA13 /* HttpTool.m in Sources */,
