@@ -27,8 +27,6 @@
 		76D6EA121D0FA3070014DA13 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 76D6EA001D0FA3070014DA13 /* Info.plist */; };
 		76D6EA131D0FA3070014DA13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76D6EA021D0FA3070014DA13 /* LaunchScreen.storyboard */; };
 		76D6EA141D0FA3070014DA13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76D6EA031D0FA3070014DA13 /* Main.storyboard */; };
-		76D6EA571D0FA6440014DA13 /* PrintSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6EA551D0FA6440014DA13 /* PrintSettingsViewController.m */; };
-		76D6EA581D0FA6440014DA13 /* PrintSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D6EA561D0FA6440014DA13 /* PrintSettingsViewController.xib */; };
 		76D6EA5F1D0FE4550014DA13 /* DinnerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6EA5D1D0FE4550014DA13 /* DinnerTableViewController.m */; };
 		76D6EA601D0FE4550014DA13 /* DinnerTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D6EA5E1D0FE4550014DA13 /* DinnerTableViewController.xib */; };
 		81068C8C1D1107D30022BCD2 /* VipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81068C8B1D1107D30022BCD2 /* VipViewController.xib */; };
@@ -62,8 +60,21 @@
 		81E6510A1D115516000A26C7 /* NSString+FSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E650EC1D115516000A26C7 /* NSString+FSExtension.m */; };
 		81E6510B1D115516000A26C7 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 81E650ED1D115516000A26C7 /* README.md */; };
 		81E6510C1D115516000A26C7 /* UIView+FSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E650EF1D115516000A26C7 /* UIView+FSExtension.m */; };
-		918E232D1D0FA8B500DAFAE4 /* AboutSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 918E232B1D0FA8B500DAFAE4 /* AboutSettingsViewController.m */; };
-		918E232E1D0FA8B500DAFAE4 /* AboutSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 918E232C1D0FA8B500DAFAE4 /* AboutSettingsViewController.xib */; };
+		81E6512B1D1166AB000A26C7 /* BaseSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E651151D1166AB000A26C7 /* BaseSettingsViewController.m */; };
+		81E6512C1D1166AB000A26C7 /* BaseSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81E651161D1166AB000A26C7 /* BaseSettingsViewController.xib */; };
+		81E6512D1D1166AB000A26C7 /* AboutSettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E6511A1D1166AB000A26C7 /* AboutSettingsView.m */; };
+		81E6512E1D1166AB000A26C7 /* AboutSettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81E6511B1D1166AB000A26C7 /* AboutSettingsView.xib */; };
+		81E6512F1D1166AB000A26C7 /* DeviceTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E6511D1D1166AB000A26C7 /* DeviceTestView.m */; };
+		81E651301D1166AB000A26C7 /* DeviceTestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81E6511E1D1166AB000A26C7 /* DeviceTestView.xib */; };
+		81E651311D1166AB000A26C7 /* EstimateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E651201D1166AB000A26C7 /* EstimateView.m */; };
+		81E651321D1166AB000A26C7 /* EstimateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81E651211D1166AB000A26C7 /* EstimateView.xib */; };
+		81E651331D1166AB000A26C7 /* PrintSettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E651231D1166AB000A26C7 /* PrintSettingsView.m */; };
+		81E651341D1166AB000A26C7 /* PrintSettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81E651241D1166AB000A26C7 /* PrintSettingsView.xib */; };
+		81E651351D1166AB000A26C7 /* PrintSettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E651261D1166AB000A26C7 /* PrintSettingTableViewCell.m */; };
+		81E651361D1166AB000A26C7 /* PrintSettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81E651271D1166AB000A26C7 /* PrintSettingTableViewCell.xib */; };
+		81E651371D1166AB000A26C7 /* UpdatePasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E651291D1166AB000A26C7 /* UpdatePasswordView.m */; };
+		81E651381D1166AB000A26C7 /* UpdatePasswordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81E6512A1D1166AB000A26C7 /* UpdatePasswordView.xib */; };
+		918E232D1D0FA8B500DAFAE4 /* (null) in Sources */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,9 +129,6 @@
 		76D6EA001D0FA3070014DA13 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76D6EA021D0FA3070014DA13 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76D6EA031D0FA3070014DA13 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		76D6EA541D0FA6440014DA13 /* PrintSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintSettingsViewController.h; sourceTree = "<group>"; };
-		76D6EA551D0FA6440014DA13 /* PrintSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintSettingsViewController.m; sourceTree = "<group>"; };
-		76D6EA561D0FA6440014DA13 /* PrintSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrintSettingsViewController.xib; sourceTree = "<group>"; };
 		76D6EA591D0FE14E0014DA13 /* DimensMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DimensMacros.h; sourceTree = "<group>"; };
 		76D6EA5A1D0FE1D80014DA13 /* UtilsMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsMacros.h; sourceTree = "<group>"; };
 		76D6EA5B1D0FE2430014DA13 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
@@ -180,28 +188,28 @@
 		81E650ED1D115516000A26C7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		81E650EE1D115516000A26C7 /* UIView+FSExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FSExtension.h"; sourceTree = "<group>"; };
 		81E650EF1D115516000A26C7 /* UIView+FSExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FSExtension.m"; sourceTree = "<group>"; };
+		81E651141D1166AB000A26C7 /* BaseSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSettingsViewController.h; sourceTree = "<group>"; };
+		81E651151D1166AB000A26C7 /* BaseSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSettingsViewController.m; sourceTree = "<group>"; };
+		81E651161D1166AB000A26C7 /* BaseSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseSettingsViewController.xib; sourceTree = "<group>"; };
+		81E651191D1166AB000A26C7 /* AboutSettingsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutSettingsView.h; sourceTree = "<group>"; };
+		81E6511A1D1166AB000A26C7 /* AboutSettingsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutSettingsView.m; sourceTree = "<group>"; };
+		81E6511B1D1166AB000A26C7 /* AboutSettingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutSettingsView.xib; sourceTree = "<group>"; };
+		81E6511C1D1166AB000A26C7 /* DeviceTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceTestView.h; sourceTree = "<group>"; };
+		81E6511D1D1166AB000A26C7 /* DeviceTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceTestView.m; sourceTree = "<group>"; };
+		81E6511E1D1166AB000A26C7 /* DeviceTestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceTestView.xib; sourceTree = "<group>"; };
+		81E6511F1D1166AB000A26C7 /* EstimateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EstimateView.h; sourceTree = "<group>"; };
+		81E651201D1166AB000A26C7 /* EstimateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EstimateView.m; sourceTree = "<group>"; };
+		81E651211D1166AB000A26C7 /* EstimateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EstimateView.xib; sourceTree = "<group>"; };
+		81E651221D1166AB000A26C7 /* PrintSettingsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintSettingsView.h; sourceTree = "<group>"; };
+		81E651231D1166AB000A26C7 /* PrintSettingsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintSettingsView.m; sourceTree = "<group>"; };
+		81E651241D1166AB000A26C7 /* PrintSettingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrintSettingsView.xib; sourceTree = "<group>"; };
+		81E651251D1166AB000A26C7 /* PrintSettingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintSettingTableViewCell.h; sourceTree = "<group>"; };
+		81E651261D1166AB000A26C7 /* PrintSettingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintSettingTableViewCell.m; sourceTree = "<group>"; };
+		81E651271D1166AB000A26C7 /* PrintSettingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrintSettingTableViewCell.xib; sourceTree = "<group>"; };
+		81E651281D1166AB000A26C7 /* UpdatePasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdatePasswordView.h; sourceTree = "<group>"; };
+		81E651291D1166AB000A26C7 /* UpdatePasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdatePasswordView.m; sourceTree = "<group>"; };
+		81E6512A1D1166AB000A26C7 /* UpdatePasswordView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UpdatePasswordView.xib; sourceTree = "<group>"; };
 		8A99B5CD036CAE879C22EB66 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		915E61571D0FFD0A000553F2 /* DeviceTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceTestView.h; sourceTree = "<group>"; };
-		915E61581D0FFD0A000553F2 /* DeviceTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceTestView.m; sourceTree = "<group>"; };
-		915E615A1D0FFD2A000553F2 /* DeviceTestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceTestView.xib; sourceTree = "<group>"; };
-		915E615C1D1002D0000553F2 /* PrintSettingsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintSettingsView.h; sourceTree = "<group>"; };
-		915E615D1D1002D0000553F2 /* PrintSettingsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintSettingsView.m; sourceTree = "<group>"; };
-		915E615F1D1002E1000553F2 /* PrintSettingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrintSettingsView.xib; sourceTree = "<group>"; };
-		915E61611D100435000553F2 /* PrintSettingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintSettingTableViewCell.h; sourceTree = "<group>"; };
-		915E61621D100435000553F2 /* PrintSettingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintSettingTableViewCell.m; sourceTree = "<group>"; };
-		915E61631D100435000553F2 /* PrintSettingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrintSettingTableViewCell.xib; sourceTree = "<group>"; };
-		918E232F1D0FABFF00DAFAE4 /* BaseSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSettingsViewController.h; sourceTree = "<group>"; };
-		918E23301D0FABFF00DAFAE4 /* BaseSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSettingsViewController.m; sourceTree = "<group>"; };
-		918E23311D0FABFF00DAFAE4 /* BaseSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseSettingsViewController.xib; sourceTree = "<group>"; };
-		918E233E1D0FDDB900DAFAE4 /* UpdatePasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdatePasswordView.h; sourceTree = "<group>"; };
-		918E233F1D0FDDB900DAFAE4 /* UpdatePasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdatePasswordView.m; sourceTree = "<group>"; };
-		918E23411D0FDDCF00DAFAE4 /* UpdatePasswordView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UpdatePasswordView.xib; sourceTree = "<group>"; };
-		918E23431D0FF40B00DAFAE4 /* AboutSettingsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutSettingsView.h; sourceTree = "<group>"; };
-		918E23441D0FF40B00DAFAE4 /* AboutSettingsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutSettingsView.m; sourceTree = "<group>"; };
-		918E23461D0FF41B00DAFAE4 /* AboutSettingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutSettingsView.xib; sourceTree = "<group>"; };
-		91C4F0F61D1013AD00AA8CD5 /* EstimateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EstimateView.h; sourceTree = "<group>"; };
-		91C4F0F71D1013AD00AA8CD5 /* EstimateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EstimateView.m; sourceTree = "<group>"; };
-		91C4F0FB1D1013C800AA8CD5 /* EstimateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EstimateView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -548,8 +556,8 @@
 				76D6EA401D0FA5F30014DA13 /* DataReport(数据报告) */,
 				76D6EA441D0FA5F30014DA13 /* OrderRecord(订单记录) */,
 				76D6EA481D0FA5F30014DA13 /* ReserveManager(预定管理) */,
-				76D6EA4C1D0FA5F30014DA13 /* Settings(系统设置) */,
 				76D6EA501D0FA5F30014DA13 /* VIPManager(会员管理) */,
+				81E651121D1166AB000A26C7 /* Settings(系统设置) */,
 			);
 			path = "FunctionMenu(功能菜单)";
 			sourceTree = "<group>";
@@ -662,58 +670,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		76D6EA4C1D0FA5F30014DA13 /* Settings(系统设置) */ = {
-			isa = PBXGroup;
-			children = (
-				76D6EA4D1D0FA5F30014DA13 /* Controller */,
-				76D6EA4E1D0FA5F30014DA13 /* Model */,
-				76D6EA4F1D0FA5F30014DA13 /* View */,
-			);
-			path = "Settings(系统设置)";
-			sourceTree = "<group>";
-		};
-		76D6EA4D1D0FA5F30014DA13 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				918E232F1D0FABFF00DAFAE4 /* BaseSettingsViewController.h */,
-				918E23301D0FABFF00DAFAE4 /* BaseSettingsViewController.m */,
-				918E23311D0FABFF00DAFAE4 /* BaseSettingsViewController.xib */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		76D6EA4E1D0FA5F30014DA13 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		76D6EA4F1D0FA5F30014DA13 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				918E233E1D0FDDB900DAFAE4 /* UpdatePasswordView.h */,
-				918E233F1D0FDDB900DAFAE4 /* UpdatePasswordView.m */,
-				918E23411D0FDDCF00DAFAE4 /* UpdatePasswordView.xib */,
-				918E23431D0FF40B00DAFAE4 /* AboutSettingsView.h */,
-				918E23441D0FF40B00DAFAE4 /* AboutSettingsView.m */,
-				918E23461D0FF41B00DAFAE4 /* AboutSettingsView.xib */,
-				915E61571D0FFD0A000553F2 /* DeviceTestView.h */,
-				915E61581D0FFD0A000553F2 /* DeviceTestView.m */,
-				915E615A1D0FFD2A000553F2 /* DeviceTestView.xib */,
-				915E615C1D1002D0000553F2 /* PrintSettingsView.h */,
-				915E615D1D1002D0000553F2 /* PrintSettingsView.m */,
-				915E615F1D1002E1000553F2 /* PrintSettingsView.xib */,
-				915E61611D100435000553F2 /* PrintSettingTableViewCell.h */,
-				915E61621D100435000553F2 /* PrintSettingTableViewCell.m */,
-				915E61631D100435000553F2 /* PrintSettingTableViewCell.xib */,
-				91C4F0F61D1013AD00AA8CD5 /* EstimateView.h */,
-				91C4F0F71D1013AD00AA8CD5 /* EstimateView.m */,
-				91C4F0FB1D1013C800AA8CD5 /* EstimateView.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		76D6EA501D0FA5F30014DA13 /* VIPManager(会员管理) */ = {
 			isa = PBXGroup;
 			children = (
@@ -788,6 +744,58 @@
 				81E650EF1D115516000A26C7 /* UIView+FSExtension.m */,
 			);
 			path = FSCalendar;
+			sourceTree = "<group>";
+		};
+		81E651121D1166AB000A26C7 /* Settings(系统设置) */ = {
+			isa = PBXGroup;
+			children = (
+				81E651131D1166AB000A26C7 /* Controller */,
+				81E651171D1166AB000A26C7 /* Model */,
+				81E651181D1166AB000A26C7 /* View */,
+			);
+			path = "Settings(系统设置)";
+			sourceTree = "<group>";
+		};
+		81E651131D1166AB000A26C7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				81E651141D1166AB000A26C7 /* BaseSettingsViewController.h */,
+				81E651151D1166AB000A26C7 /* BaseSettingsViewController.m */,
+				81E651161D1166AB000A26C7 /* BaseSettingsViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		81E651171D1166AB000A26C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		81E651181D1166AB000A26C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				81E651191D1166AB000A26C7 /* AboutSettingsView.h */,
+				81E6511A1D1166AB000A26C7 /* AboutSettingsView.m */,
+				81E6511B1D1166AB000A26C7 /* AboutSettingsView.xib */,
+				81E6511C1D1166AB000A26C7 /* DeviceTestView.h */,
+				81E6511D1D1166AB000A26C7 /* DeviceTestView.m */,
+				81E6511E1D1166AB000A26C7 /* DeviceTestView.xib */,
+				81E6511F1D1166AB000A26C7 /* EstimateView.h */,
+				81E651201D1166AB000A26C7 /* EstimateView.m */,
+				81E651211D1166AB000A26C7 /* EstimateView.xib */,
+				81E651221D1166AB000A26C7 /* PrintSettingsView.h */,
+				81E651231D1166AB000A26C7 /* PrintSettingsView.m */,
+				81E651241D1166AB000A26C7 /* PrintSettingsView.xib */,
+				81E651251D1166AB000A26C7 /* PrintSettingTableViewCell.h */,
+				81E651261D1166AB000A26C7 /* PrintSettingTableViewCell.m */,
+				81E651271D1166AB000A26C7 /* PrintSettingTableViewCell.xib */,
+				81E651281D1166AB000A26C7 /* UpdatePasswordView.h */,
+				81E651291D1166AB000A26C7 /* UpdatePasswordView.m */,
+				81E6512A1D1166AB000A26C7 /* UpdatePasswordView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		BCBCDE88EDDFD9597B01BB42 /* Pods */ = {
@@ -911,26 +919,26 @@
 				81E651071D115516000A26C7 /* LICENSE in Resources */,
 				8119FDB91D0FEE78003D545C /* TradeViewController.xib in Resources */,
 				76D6EA131D0FA3070014DA13 /* LaunchScreen.storyboard in Resources */,
-				918E23331D0FABFF00DAFAE4 /* BaseSettingsViewController.xib in Resources */,
 				76D6EA0D1D0FA3070014DA13 /* MainLeftView.xib in Resources */,
-				918E23421D0FDDCF00DAFAE4 /* UpdatePasswordView.xib in Resources */,
 				76D6EA601D0FE4550014DA13 /* DinnerTableViewController.xib in Resources */,
 				76D6EA071D0FA3070014DA13 /* OrderingViewController.xib in Resources */,
 				76D45C7E1D0CFD3B0026491F /* Assets.xcassets in Resources */,
+				81E651301D1166AB000A26C7 /* DeviceTestView.xib in Resources */,
 				81068C8C1D1107D30022BCD2 /* VipViewController.xib in Resources */,
 				8119FDAF1D0FDC9B003D545C /* JiaoYiJiLuCell.xib in Resources */,
 				76D6EA091D0FA3070014DA13 /* OrderingCollectionViewCell.xib in Resources */,
-				91C4F0FC1D1013C800AA8CD5 /* EstimateView.xib in Resources */,
 				76D6EA141D0FA3070014DA13 /* Main.storyboard in Resources */,
-				915E615B1D0FFD2A000553F2 /* DeviceTestView.xib in Resources */,
-				915E61651D100435000553F2 /* PrintSettingTableViewCell.xib in Resources */,
+				81E651361D1166AB000A26C7 /* PrintSettingTableViewCell.xib in Resources */,
+				81E6512C1D1166AB000A26C7 /* BaseSettingsViewController.xib in Resources */,
 				810991191D1009F8006EF716 /* JiLuCaiViewCell.xib in Resources */,
+				81E651381D1166AB000A26C7 /* UpdatePasswordView.xib in Resources */,
 				8109916B1D101378006EF716 /* TypeTableViewCell.xib in Resources */,
 				76D6EA0B1D0FA3070014DA13 /* MainViewController.xib in Resources */,
 				76D6EA121D0FA3070014DA13 /* Info.plist in Resources */,
-				918E23471D0FF41B00DAFAE4 /* AboutSettingsView.xib in Resources */,
-				915E61601D1002E1000553F2 /* PrintSettingsView.xib in Resources */,
+				81E651321D1166AB000A26C7 /* EstimateView.xib in Resources */,
 				8119FDA81D0FD151003D545C /* TradeContentView.xib in Resources */,
+				81E6512E1D1166AB000A26C7 /* AboutSettingsView.xib in Resources */,
+				81E651341D1166AB000A26C7 /* PrintSettingsView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1003,28 +1011,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76D6EA571D0FA6440014DA13 /* PrintSettingsViewController.m in Sources */,
+				81E651311D1166AB000A26C7 /* EstimateView.m in Sources */,
 				81E651031D115516000A26C7 /* FSCalendarConstance.m in Sources */,
 				76D6EA061D0FA3070014DA13 /* OrderingViewController.m in Sources */,
-				915E61591D0FFD0A000553F2 /* DeviceTestView.m in Sources */,
-				915E615E1D1002D0000553F2 /* PrintSettingsView.m in Sources */,
-				915E61641D100435000553F2 /* PrintSettingTableViewCell.m in Sources */,
+				81E6512F1D1166AB000A26C7 /* DeviceTestView.m in Sources */,
 				76D6EA0C1D0FA3070014DA13 /* MainLeftView.m in Sources */,
 				81E651081D115516000A26C7 /* NSDate+FSExtension.m in Sources */,
 				81E6510B1D115516000A26C7 /* README.md in Sources */,
-				918E232D1D0FA8B500DAFAE4 /* AboutSettingsViewController.m in Sources */,
+				918E232D1D0FA8B500DAFAE4 /* (null) in Sources */,
+				81E651351D1166AB000A26C7 /* PrintSettingTableViewCell.m in Sources */,
 				81E651021D115516000A26C7 /* FSCalendarCollectionView.m in Sources */,
 				8119FDAE1D0FDC9B003D545C /* JiaoYiJiLuCell.m in Sources */,
 				81E651001D115516000A26C7 /* FSCalendarAppearance.m in Sources */,
 				81E651091D115516000A26C7 /* NSDate+TEAExtensions.m in Sources */,
 				76D6EA0E1D0FA3070014DA13 /* MainRightView.m in Sources */,
+				81E6512D1D1166AB000A26C7 /* AboutSettingsView.m in Sources */,
 				81E6510C1D115516000A26C7 /* UIView+FSExtension.m in Sources */,
 				8109916A1D101378006EF716 /* TypeTableViewCell.m in Sources */,
 				81E650FE1D115516000A26C7 /* FSCalendar+IBExtension.m in Sources */,
 				76D6EA5F1D0FE4550014DA13 /* DinnerTableViewController.m in Sources */,
 				81E6510A1D115516000A26C7 /* NSString+FSExtension.m in Sources */,
+				81E6512B1D1166AB000A26C7 /* BaseSettingsViewController.m in Sources */,
 				76D6EA081D0FA3070014DA13 /* OrderingCollectionViewCell.m in Sources */,
-				91C4F0F81D1013AD00AA8CD5 /* EstimateView.m in Sources */,
 				76D6EA051D0FA3070014DA13 /* HttpTool.m in Sources */,
 				81E651051D115516000A26C7 /* FSCalendarHeader.m in Sources */,
 				76D6EA0A1D0FA3070014DA13 /* MainViewController.m in Sources */,
@@ -1032,6 +1040,7 @@
 				81068C901D1125240022BCD2 /* VIPTableViewCell.m in Sources */,
 				76D6EA111D0FA3070014DA13 /* main.m in Sources */,
 				810991181D1009F8006EF716 /* JiLuCaiViewCell.m in Sources */,
+				81E651371D1166AB000A26C7 /* UpdatePasswordView.m in Sources */,
 				81E651011D115516000A26C7 /* FSCalendarCell.m in Sources */,
 				81E650FF1D115516000A26C7 /* FSCalendar.m in Sources */,
 				81E651041D115516000A26C7 /* FSCalendarFlowLayout.m in Sources */,
@@ -1039,6 +1048,7 @@
 				8119FDB81D0FEE78003D545C /* TradeViewController.m in Sources */,
 				8119FDA61D0FD144003D545C /* TradeContentView.m in Sources */,
 				76D6EA101D0FA3070014DA13 /* AppDelegate.m in Sources */,
+				81E651331D1166AB000A26C7 /* PrintSettingsView.m in Sources */,
 				81E650B11D113928000A26C7 /* VIPLeftView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
