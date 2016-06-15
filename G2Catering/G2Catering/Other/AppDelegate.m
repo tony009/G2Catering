@@ -10,6 +10,7 @@
 #import "OrderingViewController.h"
 #import "MainViewController.h"
 #import "TradeViewController.h"
+#import "VipViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -28,8 +29,10 @@
 //   
 //    UINavigationController *na = [[UINavigationController alloc]initWithRootViewController:mvc];
 //
-    TradeViewController *tradeVctl = [[[NSBundle mainBundle]loadNibNamed:@"TradeViewController" owner:nil options:nil]lastObject];
-    self.window.rootViewController = tradeVctl;
+//    TradeViewController *tradeVctl = [[[NSBundle mainBundle]loadNibNamed:@"TradeViewController" owner:nil options:nil]lastObject];
+//    self.window.rootViewController = tradeVctl;
+    VipViewController *vipVctl = [[[NSBundle mainBundle]loadNibNamed:@"VipViewController" owner:nil options:nil]lastObject];
+        self.window.rootViewController = vipVctl;
     [self.window makeKeyAndVisible];
     
     return YES;

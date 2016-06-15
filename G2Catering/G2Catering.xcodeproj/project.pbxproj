@@ -29,14 +29,18 @@
 		76D6EA141D0FA3070014DA13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76D6EA031D0FA3070014DA13 /* Main.storyboard */; };
 		76D6EA571D0FA6440014DA13 /* PrintSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6EA551D0FA6440014DA13 /* PrintSettingsViewController.m */; };
 		76D6EA581D0FA6440014DA13 /* PrintSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D6EA561D0FA6440014DA13 /* PrintSettingsViewController.xib */; };
+		81068C8C1D1107D30022BCD2 /* VipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81068C8B1D1107D30022BCD2 /* VipViewController.xib */; };
 		810991181D1009F8006EF716 /* JiLuCaiViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 810991161D1009F8006EF716 /* JiLuCaiViewCell.m */; };
 		810991191D1009F8006EF716 /* JiLuCaiViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 810991171D1009F8006EF716 /* JiLuCaiViewCell.xib */; };
+		8109916A1D101378006EF716 /* TypeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 810991681D101378006EF716 /* TypeTableViewCell.m */; };
+		8109916B1D101378006EF716 /* TypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 810991691D101378006EF716 /* TypeTableViewCell.xib */; };
 		8119FDA61D0FD144003D545C /* TradeContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8119FDA51D0FD144003D545C /* TradeContentView.m */; };
 		8119FDA81D0FD151003D545C /* TradeContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8119FDA71D0FD151003D545C /* TradeContentView.xib */; };
 		8119FDAE1D0FDC9B003D545C /* JiaoYiJiLuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8119FDAC1D0FDC9B003D545C /* JiaoYiJiLuCell.m */; };
 		8119FDAF1D0FDC9B003D545C /* JiaoYiJiLuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8119FDAD1D0FDC9B003D545C /* JiaoYiJiLuCell.xib */; };
 		8119FDB81D0FEE78003D545C /* TradeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8119FDB61D0FEE78003D545C /* TradeViewController.m */; };
 		8119FDB91D0FEE78003D545C /* TradeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8119FDB71D0FEE78003D545C /* TradeViewController.xib */; };
+		81D987531D11029900A63B43 /* VipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D987511D11029900A63B43 /* VipViewController.m */; };
 		918E232D1D0FA8B500DAFAE4 /* AboutSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 918E232B1D0FA8B500DAFAE4 /* AboutSettingsViewController.m */; };
 		918E232E1D0FA8B500DAFAE4 /* AboutSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 918E232C1D0FA8B500DAFAE4 /* AboutSettingsViewController.xib */; };
 /* End PBXBuildFile section */
@@ -96,9 +100,13 @@
 		76D6EA541D0FA6440014DA13 /* PrintSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintSettingsViewController.h; sourceTree = "<group>"; };
 		76D6EA551D0FA6440014DA13 /* PrintSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintSettingsViewController.m; sourceTree = "<group>"; };
 		76D6EA561D0FA6440014DA13 /* PrintSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrintSettingsViewController.xib; sourceTree = "<group>"; };
+		81068C8B1D1107D30022BCD2 /* VipViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VipViewController.xib; sourceTree = "<group>"; };
 		810991151D1009F8006EF716 /* JiLuCaiViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiLuCaiViewCell.h; sourceTree = "<group>"; };
 		810991161D1009F8006EF716 /* JiLuCaiViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiLuCaiViewCell.m; sourceTree = "<group>"; };
 		810991171D1009F8006EF716 /* JiLuCaiViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JiLuCaiViewCell.xib; sourceTree = "<group>"; };
+		810991671D101378006EF716 /* TypeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeTableViewCell.h; sourceTree = "<group>"; };
+		810991681D101378006EF716 /* TypeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeTableViewCell.m; sourceTree = "<group>"; };
+		810991691D101378006EF716 /* TypeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TypeTableViewCell.xib; sourceTree = "<group>"; };
 		8119FDA41D0FD144003D545C /* TradeContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradeContentView.h; sourceTree = "<group>"; };
 		8119FDA51D0FD144003D545C /* TradeContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradeContentView.m; sourceTree = "<group>"; };
 		8119FDA71D0FD151003D545C /* TradeContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TradeContentView.xib; sourceTree = "<group>"; };
@@ -108,6 +116,8 @@
 		8119FDB51D0FEE78003D545C /* TradeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradeViewController.h; sourceTree = "<group>"; };
 		8119FDB61D0FEE78003D545C /* TradeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradeViewController.m; sourceTree = "<group>"; };
 		8119FDB71D0FEE78003D545C /* TradeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TradeViewController.xib; sourceTree = "<group>"; };
+		81D987501D11029900A63B43 /* VipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VipViewController.h; sourceTree = "<group>"; };
+		81D987511D11029900A63B43 /* VipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VipViewController.m; sourceTree = "<group>"; };
 		8A99B5CD036CAE879C22EB66 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		918E232A1D0FA8B500DAFAE4 /* AboutSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutSettingsViewController.h; sourceTree = "<group>"; };
 		918E232B1D0FA8B500DAFAE4 /* AboutSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutSettingsViewController.m; sourceTree = "<group>"; };
@@ -527,6 +537,9 @@
 				8119FDA41D0FD144003D545C /* TradeContentView.h */,
 				8119FDA51D0FD144003D545C /* TradeContentView.m */,
 				8119FDA71D0FD151003D545C /* TradeContentView.xib */,
+				810991671D101378006EF716 /* TypeTableViewCell.h */,
+				810991681D101378006EF716 /* TypeTableViewCell.m */,
+				810991691D101378006EF716 /* TypeTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -612,6 +625,9 @@
 		76D6EA511D0FA5F30014DA13 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				81D987501D11029900A63B43 /* VipViewController.h */,
+				81D987511D11029900A63B43 /* VipViewController.m */,
+				81068C8B1D1107D30022BCD2 /* VipViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -752,10 +768,12 @@
 				76D6EA0D1D0FA3070014DA13 /* MainLeftView.xib in Resources */,
 				76D6EA071D0FA3070014DA13 /* OrderingViewController.xib in Resources */,
 				76D45C7E1D0CFD3B0026491F /* Assets.xcassets in Resources */,
+				81068C8C1D1107D30022BCD2 /* VipViewController.xib in Resources */,
 				8119FDAF1D0FDC9B003D545C /* JiaoYiJiLuCell.xib in Resources */,
 				76D6EA091D0FA3070014DA13 /* OrderingCollectionViewCell.xib in Resources */,
 				76D6EA141D0FA3070014DA13 /* Main.storyboard in Resources */,
 				810991191D1009F8006EF716 /* JiLuCaiViewCell.xib in Resources */,
+				8109916B1D101378006EF716 /* TypeTableViewCell.xib in Resources */,
 				76D6EA581D0FA6440014DA13 /* PrintSettingsViewController.xib in Resources */,
 				76D6EA0B1D0FA3070014DA13 /* MainViewController.xib in Resources */,
 				76D6EA121D0FA3070014DA13 /* Info.plist in Resources */,
@@ -838,11 +856,13 @@
 				918E232D1D0FA8B500DAFAE4 /* AboutSettingsViewController.m in Sources */,
 				8119FDAE1D0FDC9B003D545C /* JiaoYiJiLuCell.m in Sources */,
 				76D6EA0E1D0FA3070014DA13 /* MainRightView.m in Sources */,
+				8109916A1D101378006EF716 /* TypeTableViewCell.m in Sources */,
 				76D6EA081D0FA3070014DA13 /* OrderingCollectionViewCell.m in Sources */,
 				76D6EA051D0FA3070014DA13 /* HttpTool.m in Sources */,
 				76D6EA0A1D0FA3070014DA13 /* MainViewController.m in Sources */,
 				76D6EA111D0FA3070014DA13 /* main.m in Sources */,
 				810991181D1009F8006EF716 /* JiLuCaiViewCell.m in Sources */,
+				81D987531D11029900A63B43 /* VipViewController.m in Sources */,
 				8119FDB81D0FEE78003D545C /* TradeViewController.m in Sources */,
 				8119FDA61D0FD144003D545C /* TradeContentView.m in Sources */,
 				76D6EA101D0FA3070014DA13 /* AppDelegate.m in Sources */,
