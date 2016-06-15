@@ -37,6 +37,25 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
     
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    
+    
+    
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    
+}
+
+
+- (IBAction)xiadanAction:(id)sender {
+    
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

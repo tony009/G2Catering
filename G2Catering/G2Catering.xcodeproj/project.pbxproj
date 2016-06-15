@@ -233,6 +233,9 @@
 		76D6E9BE1D0FA3070014DA13 /* Macros(宏) */ = {
 			isa = PBXGroup;
 			children = (
+				76D6EA591D0FE14E0014DA13 /* DimensMacros.h */,
+				76D6EA5A1D0FE1D80014DA13 /* UtilsMacros.h */,
+				76D6EA5B1D0FE2430014DA13 /* Macros.h */,
 			);
 			path = "Macros(宏)";
 			sourceTree = "<group>";
@@ -277,6 +280,9 @@
 		76D6E9DA1D0FA3070014DA13 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				76D6EA5C1D0FE4550014DA13 /* DinnerTableViewController.h */,
+				76D6EA5D1D0FE4550014DA13 /* DinnerTableViewController.m */,
+				76D6EA5E1D0FE4550014DA13 /* DinnerTableViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -766,6 +772,7 @@
 				76D6EA131D0FA3070014DA13 /* LaunchScreen.storyboard in Resources */,
 				918E232E1D0FA8B500DAFAE4 /* AboutSettingsViewController.xib in Resources */,
 				76D6EA0D1D0FA3070014DA13 /* MainLeftView.xib in Resources */,
+				76D6EA601D0FE4550014DA13 /* DinnerTableViewController.xib in Resources */,
 				76D6EA071D0FA3070014DA13 /* OrderingViewController.xib in Resources */,
 				76D45C7E1D0CFD3B0026491F /* Assets.xcassets in Resources */,
 				81068C8C1D1107D30022BCD2 /* VipViewController.xib in Resources */,

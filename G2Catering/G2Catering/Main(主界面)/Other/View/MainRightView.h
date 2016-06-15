@@ -10,4 +10,6 @@
 
 @interface MainRightView : UIView
 
+@property (weak, nonatomic) IBOutlet UIButton *orderingButton;
+
 @end

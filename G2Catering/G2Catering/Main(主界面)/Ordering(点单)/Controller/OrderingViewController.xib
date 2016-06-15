@@ -61,6 +61,9 @@
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89F-nS-0an">
                             <rect key="frame" x="46" y="557" width="30" height="30"/>
                             <state key="normal" title="下单"/>
+                            <connections>
+                                <action selector="xiadanAction:" destination="-1" eventType="touchUpInside" id="5n6-5c-pnr"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
