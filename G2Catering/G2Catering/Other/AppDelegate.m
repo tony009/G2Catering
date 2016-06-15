@@ -9,6 +9,9 @@
 #import "AppDelegate.h"
 #import "OrderingViewController.h"
 #import "MainViewController.h"
+#import "BaseSettingsViewController.h"
+
+
 @interface AppDelegate ()
 
 @end
@@ -25,9 +28,11 @@
     
     MainViewController *mvc = [[MainViewController alloc]init];
     
-    UINavigationController *na = [[UINavigationController alloc]initWithRootViewController:mvc];
     
-    self.window.rootViewController = na;
+//    UINavigationController *na = [[UINavigationController alloc]initWithRootViewController:mvc];
+    BaseSettingsViewController *baseVc = [BaseSettingsViewController new];
+      UINavigationController *na = [[UINavigationController alloc]initWithRootViewController:baseVc];
+    self.window.rootViewController = baseVc;
     [self.window makeKeyAndVisible];
     
     return YES;

@@ -27,10 +27,20 @@
 		76D6EA121D0FA3070014DA13 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 76D6EA001D0FA3070014DA13 /* Info.plist */; };
 		76D6EA131D0FA3070014DA13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76D6EA021D0FA3070014DA13 /* LaunchScreen.storyboard */; };
 		76D6EA141D0FA3070014DA13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76D6EA031D0FA3070014DA13 /* Main.storyboard */; };
-		76D6EA571D0FA6440014DA13 /* PrintSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6EA551D0FA6440014DA13 /* PrintSettingsViewController.m */; };
-		76D6EA581D0FA6440014DA13 /* PrintSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D6EA561D0FA6440014DA13 /* PrintSettingsViewController.xib */; };
-		918E232D1D0FA8B500DAFAE4 /* AboutSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 918E232B1D0FA8B500DAFAE4 /* AboutSettingsViewController.m */; };
-		918E232E1D0FA8B500DAFAE4 /* AboutSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 918E232C1D0FA8B500DAFAE4 /* AboutSettingsViewController.xib */; };
+		915E61591D0FFD0A000553F2 /* DeviceTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 915E61581D0FFD0A000553F2 /* DeviceTestView.m */; };
+		915E615B1D0FFD2A000553F2 /* DeviceTestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 915E615A1D0FFD2A000553F2 /* DeviceTestView.xib */; };
+		915E615E1D1002D0000553F2 /* PrintSettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 915E615D1D1002D0000553F2 /* PrintSettingsView.m */; };
+		915E61601D1002E1000553F2 /* PrintSettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 915E615F1D1002E1000553F2 /* PrintSettingsView.xib */; };
+		915E61641D100435000553F2 /* PrintSettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 915E61621D100435000553F2 /* PrintSettingTableViewCell.m */; };
+		915E61651D100435000553F2 /* PrintSettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 915E61631D100435000553F2 /* PrintSettingTableViewCell.xib */; };
+		918E23321D0FABFF00DAFAE4 /* BaseSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 918E23301D0FABFF00DAFAE4 /* BaseSettingsViewController.m */; };
+		918E23331D0FABFF00DAFAE4 /* BaseSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 918E23311D0FABFF00DAFAE4 /* BaseSettingsViewController.xib */; };
+		918E23401D0FDDB900DAFAE4 /* UpdatePasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 918E233F1D0FDDB900DAFAE4 /* UpdatePasswordView.m */; };
+		918E23421D0FDDCF00DAFAE4 /* UpdatePasswordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 918E23411D0FDDCF00DAFAE4 /* UpdatePasswordView.xib */; };
+		918E23451D0FF40B00DAFAE4 /* AboutSettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 918E23441D0FF40B00DAFAE4 /* AboutSettingsView.m */; };
+		918E23471D0FF41B00DAFAE4 /* AboutSettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 918E23461D0FF41B00DAFAE4 /* AboutSettingsView.xib */; };
+		91C4F0F81D1013AD00AA8CD5 /* EstimateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C4F0F71D1013AD00AA8CD5 /* EstimateView.m */; };
+		91C4F0FC1D1013C800AA8CD5 /* EstimateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C4F0FB1D1013C800AA8CD5 /* EstimateView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,13 +95,28 @@
 		76D6EA001D0FA3070014DA13 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76D6EA021D0FA3070014DA13 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76D6EA031D0FA3070014DA13 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		76D6EA541D0FA6440014DA13 /* PrintSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintSettingsViewController.h; sourceTree = "<group>"; };
-		76D6EA551D0FA6440014DA13 /* PrintSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintSettingsViewController.m; sourceTree = "<group>"; };
-		76D6EA561D0FA6440014DA13 /* PrintSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrintSettingsViewController.xib; sourceTree = "<group>"; };
 		8A99B5CD036CAE879C22EB66 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		918E232A1D0FA8B500DAFAE4 /* AboutSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutSettingsViewController.h; sourceTree = "<group>"; };
-		918E232B1D0FA8B500DAFAE4 /* AboutSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutSettingsViewController.m; sourceTree = "<group>"; };
-		918E232C1D0FA8B500DAFAE4 /* AboutSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutSettingsViewController.xib; sourceTree = "<group>"; };
+		915E61571D0FFD0A000553F2 /* DeviceTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceTestView.h; sourceTree = "<group>"; };
+		915E61581D0FFD0A000553F2 /* DeviceTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceTestView.m; sourceTree = "<group>"; };
+		915E615A1D0FFD2A000553F2 /* DeviceTestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceTestView.xib; sourceTree = "<group>"; };
+		915E615C1D1002D0000553F2 /* PrintSettingsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintSettingsView.h; sourceTree = "<group>"; };
+		915E615D1D1002D0000553F2 /* PrintSettingsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintSettingsView.m; sourceTree = "<group>"; };
+		915E615F1D1002E1000553F2 /* PrintSettingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrintSettingsView.xib; sourceTree = "<group>"; };
+		915E61611D100435000553F2 /* PrintSettingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintSettingTableViewCell.h; sourceTree = "<group>"; };
+		915E61621D100435000553F2 /* PrintSettingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintSettingTableViewCell.m; sourceTree = "<group>"; };
+		915E61631D100435000553F2 /* PrintSettingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrintSettingTableViewCell.xib; sourceTree = "<group>"; };
+		918E232F1D0FABFF00DAFAE4 /* BaseSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSettingsViewController.h; sourceTree = "<group>"; };
+		918E23301D0FABFF00DAFAE4 /* BaseSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSettingsViewController.m; sourceTree = "<group>"; };
+		918E23311D0FABFF00DAFAE4 /* BaseSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseSettingsViewController.xib; sourceTree = "<group>"; };
+		918E233E1D0FDDB900DAFAE4 /* UpdatePasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdatePasswordView.h; sourceTree = "<group>"; };
+		918E233F1D0FDDB900DAFAE4 /* UpdatePasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdatePasswordView.m; sourceTree = "<group>"; };
+		918E23411D0FDDCF00DAFAE4 /* UpdatePasswordView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UpdatePasswordView.xib; sourceTree = "<group>"; };
+		918E23431D0FF40B00DAFAE4 /* AboutSettingsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutSettingsView.h; sourceTree = "<group>"; };
+		918E23441D0FF40B00DAFAE4 /* AboutSettingsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutSettingsView.m; sourceTree = "<group>"; };
+		918E23461D0FF41B00DAFAE4 /* AboutSettingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutSettingsView.xib; sourceTree = "<group>"; };
+		91C4F0F61D1013AD00AA8CD5 /* EstimateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EstimateView.h; sourceTree = "<group>"; };
+		91C4F0F71D1013AD00AA8CD5 /* EstimateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EstimateView.m; sourceTree = "<group>"; };
+		91C4F0FB1D1013C800AA8CD5 /* EstimateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EstimateView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -543,12 +568,9 @@
 		76D6EA4D1D0FA5F30014DA13 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				76D6EA541D0FA6440014DA13 /* PrintSettingsViewController.h */,
-				76D6EA551D0FA6440014DA13 /* PrintSettingsViewController.m */,
-				76D6EA561D0FA6440014DA13 /* PrintSettingsViewController.xib */,
-				918E232A1D0FA8B500DAFAE4 /* AboutSettingsViewController.h */,
-				918E232B1D0FA8B500DAFAE4 /* AboutSettingsViewController.m */,
-				918E232C1D0FA8B500DAFAE4 /* AboutSettingsViewController.xib */,
+				918E232F1D0FABFF00DAFAE4 /* BaseSettingsViewController.h */,
+				918E23301D0FABFF00DAFAE4 /* BaseSettingsViewController.m */,
+				918E23311D0FABFF00DAFAE4 /* BaseSettingsViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -563,6 +585,24 @@
 		76D6EA4F1D0FA5F30014DA13 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				918E233E1D0FDDB900DAFAE4 /* UpdatePasswordView.h */,
+				918E233F1D0FDDB900DAFAE4 /* UpdatePasswordView.m */,
+				918E23411D0FDDCF00DAFAE4 /* UpdatePasswordView.xib */,
+				918E23431D0FF40B00DAFAE4 /* AboutSettingsView.h */,
+				918E23441D0FF40B00DAFAE4 /* AboutSettingsView.m */,
+				918E23461D0FF41B00DAFAE4 /* AboutSettingsView.xib */,
+				915E61571D0FFD0A000553F2 /* DeviceTestView.h */,
+				915E61581D0FFD0A000553F2 /* DeviceTestView.m */,
+				915E615A1D0FFD2A000553F2 /* DeviceTestView.xib */,
+				915E615C1D1002D0000553F2 /* PrintSettingsView.h */,
+				915E615D1D1002D0000553F2 /* PrintSettingsView.m */,
+				915E615F1D1002E1000553F2 /* PrintSettingsView.xib */,
+				915E61611D100435000553F2 /* PrintSettingTableViewCell.h */,
+				915E61621D100435000553F2 /* PrintSettingTableViewCell.m */,
+				915E61631D100435000553F2 /* PrintSettingTableViewCell.xib */,
+				91C4F0F61D1013AD00AA8CD5 /* EstimateView.h */,
+				91C4F0F71D1013AD00AA8CD5 /* EstimateView.m */,
+				91C4F0FB1D1013C800AA8CD5 /* EstimateView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -715,15 +755,20 @@
 			files = (
 				76D6EA0F1D0FA3070014DA13 /* MainRightView.xib in Resources */,
 				76D6EA131D0FA3070014DA13 /* LaunchScreen.storyboard in Resources */,
-				918E232E1D0FA8B500DAFAE4 /* AboutSettingsViewController.xib in Resources */,
+				918E23331D0FABFF00DAFAE4 /* BaseSettingsViewController.xib in Resources */,
 				76D6EA0D1D0FA3070014DA13 /* MainLeftView.xib in Resources */,
+				918E23421D0FDDCF00DAFAE4 /* UpdatePasswordView.xib in Resources */,
 				76D6EA071D0FA3070014DA13 /* OrderingViewController.xib in Resources */,
 				76D45C7E1D0CFD3B0026491F /* Assets.xcassets in Resources */,
 				76D6EA091D0FA3070014DA13 /* OrderingCollectionViewCell.xib in Resources */,
+				91C4F0FC1D1013C800AA8CD5 /* EstimateView.xib in Resources */,
 				76D6EA141D0FA3070014DA13 /* Main.storyboard in Resources */,
-				76D6EA581D0FA6440014DA13 /* PrintSettingsViewController.xib in Resources */,
+				915E615B1D0FFD2A000553F2 /* DeviceTestView.xib in Resources */,
+				915E61651D100435000553F2 /* PrintSettingTableViewCell.xib in Resources */,
 				76D6EA0B1D0FA3070014DA13 /* MainViewController.xib in Resources */,
 				76D6EA121D0FA3070014DA13 /* Info.plist in Resources */,
+				918E23471D0FF41B00DAFAE4 /* AboutSettingsView.xib in Resources */,
+				915E61601D1002E1000553F2 /* PrintSettingsView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -796,13 +841,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76D6EA571D0FA6440014DA13 /* PrintSettingsViewController.m in Sources */,
 				76D6EA061D0FA3070014DA13 /* OrderingViewController.m in Sources */,
+				915E61591D0FFD0A000553F2 /* DeviceTestView.m in Sources */,
+				915E615E1D1002D0000553F2 /* PrintSettingsView.m in Sources */,
+				915E61641D100435000553F2 /* PrintSettingTableViewCell.m in Sources */,
 				76D6EA0C1D0FA3070014DA13 /* MainLeftView.m in Sources */,
-				918E232D1D0FA8B500DAFAE4 /* AboutSettingsViewController.m in Sources */,
 				76D6EA0E1D0FA3070014DA13 /* MainRightView.m in Sources */,
+				918E23451D0FF40B00DAFAE4 /* AboutSettingsView.m in Sources */,
+				918E23321D0FABFF00DAFAE4 /* BaseSettingsViewController.m in Sources */,
 				76D6EA081D0FA3070014DA13 /* OrderingCollectionViewCell.m in Sources */,
+				91C4F0F81D1013AD00AA8CD5 /* EstimateView.m in Sources */,
 				76D6EA051D0FA3070014DA13 /* HttpTool.m in Sources */,
+				918E23401D0FDDB900DAFAE4 /* UpdatePasswordView.m in Sources */,
 				76D6EA0A1D0FA3070014DA13 /* MainViewController.m in Sources */,
 				76D6EA111D0FA3070014DA13 /* main.m in Sources */,
 				76D6EA101D0FA3070014DA13 /* AppDelegate.m in Sources */,

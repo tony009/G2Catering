@@ -1,5 +1,5 @@
 //
-//  AboutSettingsViewController.h
+//  BaseSettingsViewController.h
 //  G2Catering
 //
 //  Created by NDlan on 16/6/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AboutSettingsViewController : UIViewController
+@interface BaseSettingsViewController : UIViewController
 
 @end
