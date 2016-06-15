@@ -15,7 +15,7 @@
 
 
 
-#define koriginalWidth  388
+#define koriginalWidth  338
 
 
 //

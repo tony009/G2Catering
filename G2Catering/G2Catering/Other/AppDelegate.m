@@ -10,8 +10,6 @@
 #import "OrderingViewController.h"
 #import "MainViewController.h"
 #import "BaseSettingsViewController.h"
-
-
 #import "TradeViewController.h"
 #import "VipViewController.h"
 @interface AppDelegate ()
@@ -37,6 +35,11 @@
 //    MainViewController *mvc = [[MainViewController alloc]init];
 //   
 //    UINavigationController *na = [[UINavigationController alloc]initWithRootViewController:mvc];
+//
+    TradeViewController *tradeVctl = [[[NSBundle mainBundle]loadNibNamed:@"TradeViewController" owner:nil options:nil]lastObject];
+    self.window.rootViewController = tradeVctl;
+//    VipViewController *vipVctl = [[[NSBundle mainBundle]loadNibNamed:@"VipViewController" owner:nil options:nil]lastObject];
+//        self.window.rootViewController = vipVctl;
     BaseSettingsViewController *baseVc = [BaseSettingsViewController new];
 //      UINavigationController *na = [[UINavigationController alloc]initWithRootViewController:baseVc];
     self.window.rootViewController = baseVc;
