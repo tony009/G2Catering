@@ -9,6 +9,9 @@
 #import "AppDelegate.h"
 #import "OrderingViewController.h"
 #import "MainViewController.h"
+#import "BaseSettingsViewController.h"
+
+
 #import "TradeViewController.h"
 #import "VipViewController.h"
 @interface AppDelegate ()

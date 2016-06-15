@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PrintSettingTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="556" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="556" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="互联客" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6d-Jc-kB4">
+                        <rect key="frame" x="191" y="16" width="45" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="192.168.2.11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGc-i1-7CG">
+                        <rect key="frame" x="316" y="16" width="84" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="热菜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5PG-6g-z2E">
+                        <rect key="frame" x="495" y="16" width="30" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收银台1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jac-B2-ueb">
+                        <rect key="frame" x="51" y="16" width="52" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YGc-i1-7CG" firstAttribute="centerY" secondItem="b6d-Jc-kB4" secondAttribute="centerY" id="3rV-9r-89L"/>
+                    <constraint firstItem="5PG-6g-z2E" firstAttribute="centerY" secondItem="YGc-i1-7CG" secondAttribute="centerY" id="S8q-Eg-mup"/>
+                    <constraint firstItem="Jac-B2-ueb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="43" id="WiV-g3-jC0"/>
+                    <constraint firstItem="Jac-B2-ueb" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="aKl-gn-KqI"/>
+                    <constraint firstItem="YGc-i1-7CG" firstAttribute="leading" secondItem="b6d-Jc-kB4" secondAttribute="trailing" constant="80" id="agk-Uz-P6M"/>
+                    <constraint firstItem="b6d-Jc-kB4" firstAttribute="centerY" secondItem="Jac-B2-ueb" secondAttribute="centerY" id="ekb-W2-fwf"/>
+                    <constraint firstItem="5PG-6g-z2E" firstAttribute="leading" secondItem="YGc-i1-7CG" secondAttribute="trailing" constant="95" id="kV3-6D-2ch"/>
+                    <constraint firstItem="b6d-Jc-kB4" firstAttribute="leading" secondItem="Jac-B2-ueb" secondAttribute="trailing" constant="88" id="vfe-9w-6fi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="IP" destination="YGc-i1-7CG" id="06z-a6-Pgf"/>
+                <outlet property="StallsName" destination="Jac-B2-ueb" id="gQ6-1U-UsW"/>
+                <outlet property="brandName" destination="b6d-Jc-kB4" id="OXn-M8-WKt"/>
+                <outlet property="dishType" destination="5PG-6g-z2E" id="3Qw-RC-rle"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
