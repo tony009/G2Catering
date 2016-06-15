@@ -8,10 +8,15 @@
 
 #import "MainViewController.h"
 #import "MainLeftView.h"
-@interface MainViewController ()
+#import "TradeViewController.h"
+#import "DinnerTableViewController.h"
+#import "OrderingViewController.h"
+@interface MainViewController ()<MainLeftViewDelegate>
 @property (nonatomic,strong) UIView *leftView;
 @property (nonatomic,strong) UIView *rightView;
 @property (nonatomic) int flag;   //(-1,左,0正常，1右)
+
+
 @end
 
 @implementation MainViewController
@@ -27,24 +32,71 @@
     
 }
 
+//点菜功能
 - (IBAction)OrderAction:(UIButton *)sender {
     
+    OrderingViewController *oVC = [[OrderingViewController alloc]init];
+    
+
+    [self switchViewControllerWithView:oVC.view];
+    
     
 }
 
-
+//餐台功能
 - (IBAction)dinnerTableAction:(UIButton *)sender {
     
+    DinnerTableViewController *dtVC = [[DinnerTableViewController alloc]init];
     
+
+    [self switchViewControllerWithView:dtVC.view];
     
 }
 
-- (IBAction)buttonAction:(id)sender {
+
+-(void)switchViewControllerWithView:(UIView *)view{
     
+    for (UIView *view in self.view.subviews) {
+        
+        [view removeFromSuperview];
+        
+    }
     
+    [view setFrame:self.view.bounds];
     
+    [self.view addSubview:view];
+    
+//   id tView = [NSLayoutConstraint constraintWithItem:view attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTop multiplier:1 constant:0];
+//    
+//    id bView = [NSLayoutConstraint constraintWithItem:view attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottom multiplier:1 constant:0];
+//    
+//    id lView = [NSLayoutConstraint constraintWithItem:view attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeading multiplier:1 constant:0];
+//    
+//    id rView = [NSLayoutConstraint constraintWithItem:view attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTrailing multiplier:1 constant:0];
+//    
+//    
+//    [NSLayoutConstraint activateConstraints:@[tView,bView,lView,rView]];
+    
+    UIView *blackView = [[UIView alloc]initWithFrame:CGRectMake(200, 300, 200, 400)];
+    blackView.backgroundColor = [UIColor blackColor];
+    
+    NSDictionary *views = @{
+                            @"view":blackView
+                            };
+    
+    [self.view addSubview:blackView];
+    
+  NSArray *hConstrains  = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[view]-|" options:0 metrics:nil views:views];
+  NSArray *vConstrains = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[view]-|" options:0 metrics:nil views:views];
+    
+
+
+    [NSLayoutConstraint activateConstraints:hConstrains];
+    [NSLayoutConstraint activateConstraints:vConstrains];
+
     
 }
+
 
 
 -(void)p_initViews{
@@ -61,13 +113,14 @@
     
     
     MainLeftView *leftView =  [[[NSBundle mainBundle]loadNibNamed:@"MainLeftView" owner:self options:nil]lastObject];
+    leftView.delegate = self;
     
-    leftView.frame = CGRectMake(0, 0, 300, KScreenHeight);
+    leftView.frame = CGRectMake(0, 0, kLeftViewWidth, KScreenHeight);
     
 
     MainLeftView *rightView =  [[[NSBundle mainBundle]loadNibNamed:@"MainRightView" owner:self options:nil]lastObject];
     
-    rightView.frame = CGRectMake(KScreenWidth-300, 0, 300, KScreenHeight);
+    rightView.frame = CGRectMake(KScreenWidth-kLeftViewWidth, 0, kLeftViewWidth, KScreenHeight);
     
     self.leftView = leftView;
     self.rightView = rightView;
@@ -83,15 +136,10 @@
 
 -(void)viewWillLayoutSubviews{
     
-    self.leftView.frame  = CGRectMake(0, 0, 300, KScreenHeight);
-    self.rightView.frame = CGRectMake(KScreenWidth-300, 0, 300, KScreenHeight);
+    self.leftView.frame  = CGRectMake(0, 0, kLeftViewWidth, KScreenHeight);
+    self.rightView.frame = CGRectMake(KScreenWidth-kLeftViewWidth, 0, kLeftViewWidth, KScreenHeight);
 }
 
--(void)viewDidLayoutSubviews{
-    
-    
-    
-}
 
 -(void)p_swipeLeft{
     
@@ -100,7 +148,7 @@
         
         [UIView animateWithDuration:0.5 animations:^{
             
-            self.view.transform = CGAffineTransformMakeTranslation(-300, 0);
+            self.view.transform = CGAffineTransformMakeTranslation(-kLeftViewWidth, 0);
             
         } completion:^(BOOL finished) {
             
@@ -135,7 +183,7 @@
         
         [UIView animateWithDuration:0.5 animations:^{
             
-            self.view.transform = CGAffineTransformMakeTranslation(300, 0);
+            self.view.transform = CGAffineTransformMakeTranslation(kLeftViewWidth, 0);
             
         } completion:^(BOOL finished) {
             
@@ -163,6 +211,31 @@
     
 }
 
+#pragma mark  左边栏的点击事件
+
+
+- (void)MainLeftViewMenuDidChick:(MainLeftView  *)orderContent withIndex:(NSInteger )index{
+    
+    [UIView animateWithDuration:0.5 animations:^{
+        
+        self.view.transform=CGAffineTransformIdentity;
+        
+    }completion:^(BOOL finished) {
+        
+        self.flag = 0;
+        self.leftView.hidden = YES;
+        
+    }];
+
+    if(index == 1){
+        
+        
+        TradeViewController *tradeCtrl=  [[[NSBundle mainBundle]loadNibNamed:@"TradeViewController" owner:nil options:nil]lastObject];
+        [self.view addSubview:tradeCtrl.view ];
+        
+    }
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

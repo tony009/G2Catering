@@ -228,6 +228,9 @@
 		76D6E9BE1D0FA3070014DA13 /* Macros(宏) */ = {
 			isa = PBXGroup;
 			children = (
+				76D6EA591D0FE14E0014DA13 /* DimensMacros.h */,
+				76D6EA5A1D0FE1D80014DA13 /* UtilsMacros.h */,
+				76D6EA5B1D0FE2430014DA13 /* Macros.h */,
 			);
 			path = "Macros(宏)";
 			sourceTree = "<group>";
@@ -272,6 +275,9 @@
 		76D6E9DA1D0FA3070014DA13 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				76D6EA5C1D0FE4550014DA13 /* DinnerTableViewController.h */,
+				76D6EA5D1D0FE4550014DA13 /* DinnerTableViewController.m */,
+				76D6EA5E1D0FE4550014DA13 /* DinnerTableViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -506,6 +512,9 @@
 		76D6EA451D0FA5F30014DA13 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8119FDB51D0FEE78003D545C /* TradeViewController.h */,
+				8119FDB61D0FEE78003D545C /* TradeViewController.m */,
+				8119FDB71D0FEE78003D545C /* TradeViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -520,6 +529,18 @@
 		76D6EA471D0FA5F30014DA13 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				810991151D1009F8006EF716 /* JiLuCaiViewCell.h */,
+				810991161D1009F8006EF716 /* JiLuCaiViewCell.m */,
+				810991171D1009F8006EF716 /* JiLuCaiViewCell.xib */,
+				8119FDAB1D0FDC9B003D545C /* JiaoYiJiLuCell.h */,
+				8119FDAC1D0FDC9B003D545C /* JiaoYiJiLuCell.m */,
+				8119FDAD1D0FDC9B003D545C /* JiaoYiJiLuCell.xib */,
+				8119FDA41D0FD144003D545C /* TradeContentView.h */,
+				8119FDA51D0FD144003D545C /* TradeContentView.m */,
+				8119FDA71D0FD151003D545C /* TradeContentView.xib */,
+				810991671D101378006EF716 /* TypeTableViewCell.h */,
+				810991681D101378006EF716 /* TypeTableViewCell.m */,
+				810991691D101378006EF716 /* TypeTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -620,6 +641,9 @@
 		76D6EA511D0FA5F30014DA13 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				81D987501D11029900A63B43 /* VipViewController.h */,
+				81D987511D11029900A63B43 /* VipViewController.m */,
+				81068C8B1D1107D30022BCD2 /* VipViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -754,12 +778,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				76D6EA0F1D0FA3070014DA13 /* MainRightView.xib in Resources */,
+				8119FDB91D0FEE78003D545C /* TradeViewController.xib in Resources */,
 				76D6EA131D0FA3070014DA13 /* LaunchScreen.storyboard in Resources */,
 				918E23331D0FABFF00DAFAE4 /* BaseSettingsViewController.xib in Resources */,
 				76D6EA0D1D0FA3070014DA13 /* MainLeftView.xib in Resources */,
 				918E23421D0FDDCF00DAFAE4 /* UpdatePasswordView.xib in Resources */,
 				76D6EA071D0FA3070014DA13 /* OrderingViewController.xib in Resources */,
 				76D45C7E1D0CFD3B0026491F /* Assets.xcassets in Resources */,
+				81068C8C1D1107D30022BCD2 /* VipViewController.xib in Resources */,
+				8119FDAF1D0FDC9B003D545C /* JiaoYiJiLuCell.xib in Resources */,
 				76D6EA091D0FA3070014DA13 /* OrderingCollectionViewCell.xib in Resources */,
 				91C4F0FC1D1013C800AA8CD5 /* EstimateView.xib in Resources */,
 				76D6EA141D0FA3070014DA13 /* Main.storyboard in Resources */,
@@ -855,6 +882,10 @@
 				918E23401D0FDDB900DAFAE4 /* UpdatePasswordView.m in Sources */,
 				76D6EA0A1D0FA3070014DA13 /* MainViewController.m in Sources */,
 				76D6EA111D0FA3070014DA13 /* main.m in Sources */,
+				810991181D1009F8006EF716 /* JiLuCaiViewCell.m in Sources */,
+				81D987531D11029900A63B43 /* VipViewController.m in Sources */,
+				8119FDB81D0FEE78003D545C /* TradeViewController.m in Sources */,
+				8119FDA61D0FD144003D545C /* TradeContentView.m in Sources */,
 				76D6EA101D0FA3070014DA13 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
