@@ -30,6 +30,8 @@
 		76D6EA571D0FA6440014DA13 /* PrintSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6EA551D0FA6440014DA13 /* PrintSettingsViewController.m */; };
 		76D6EA581D0FA6440014DA13 /* PrintSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D6EA561D0FA6440014DA13 /* PrintSettingsViewController.xib */; };
 		81068C8C1D1107D30022BCD2 /* VipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81068C8B1D1107D30022BCD2 /* VipViewController.xib */; };
+		76D6EA5F1D0FE4550014DA13 /* DinnerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6EA5D1D0FE4550014DA13 /* DinnerTableViewController.m */; };
+		76D6EA601D0FE4550014DA13 /* DinnerTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D6EA5E1D0FE4550014DA13 /* DinnerTableViewController.xib */; };
 		810991181D1009F8006EF716 /* JiLuCaiViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 810991161D1009F8006EF716 /* JiLuCaiViewCell.m */; };
 		810991191D1009F8006EF716 /* JiLuCaiViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 810991171D1009F8006EF716 /* JiLuCaiViewCell.xib */; };
 		8109916A1D101378006EF716 /* TypeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 810991681D101378006EF716 /* TypeTableViewCell.m */; };
@@ -101,6 +103,12 @@
 		76D6EA551D0FA6440014DA13 /* PrintSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintSettingsViewController.m; sourceTree = "<group>"; };
 		76D6EA561D0FA6440014DA13 /* PrintSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrintSettingsViewController.xib; sourceTree = "<group>"; };
 		81068C8B1D1107D30022BCD2 /* VipViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VipViewController.xib; sourceTree = "<group>"; };
+		76D6EA591D0FE14E0014DA13 /* DimensMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DimensMacros.h; sourceTree = "<group>"; };
+		76D6EA5A1D0FE1D80014DA13 /* UtilsMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsMacros.h; sourceTree = "<group>"; };
+		76D6EA5B1D0FE2430014DA13 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		76D6EA5C1D0FE4550014DA13 /* DinnerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DinnerTableViewController.h; sourceTree = "<group>"; };
+		76D6EA5D1D0FE4550014DA13 /* DinnerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DinnerTableViewController.m; sourceTree = "<group>"; };
+		76D6EA5E1D0FE4550014DA13 /* DinnerTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DinnerTableViewController.xib; sourceTree = "<group>"; };
 		810991151D1009F8006EF716 /* JiLuCaiViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiLuCaiViewCell.h; sourceTree = "<group>"; };
 		810991161D1009F8006EF716 /* JiLuCaiViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiLuCaiViewCell.m; sourceTree = "<group>"; };
 		810991171D1009F8006EF716 /* JiLuCaiViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JiLuCaiViewCell.xib; sourceTree = "<group>"; };
@@ -864,6 +872,7 @@
 				8119FDAE1D0FDC9B003D545C /* JiaoYiJiLuCell.m in Sources */,
 				76D6EA0E1D0FA3070014DA13 /* MainRightView.m in Sources */,
 				8109916A1D101378006EF716 /* TypeTableViewCell.m in Sources */,
+				76D6EA5F1D0FE4550014DA13 /* DinnerTableViewController.m in Sources */,
 				76D6EA081D0FA3070014DA13 /* OrderingCollectionViewCell.m in Sources */,
 				76D6EA051D0FA3070014DA13 /* HttpTool.m in Sources */,
 				76D6EA0A1D0FA3070014DA13 /* MainViewController.m in Sources */,
