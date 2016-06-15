@@ -24,7 +24,31 @@
     [self.tableView registerNib:[UINib nibWithNibName:@"JiLuCaiViewCell" bundle:nil] forCellReuseIdentifier:@"JiLuCaiViewCell"];
     [self setRoundAngleWithView:self.cheDanBtn withCornerRadius:5 withColor:[UIColor clearColor]];
     [self setRoundAngleWithView:self.jieZhangBtn withCornerRadius:5 withColor:[UIColor clearColor]];
-//    self.cheDanBtn setTitleColor:[] forState:<#(UIControlState)#>
+    [self.cheDanBtn addTarget:self action:@selector(cheAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self.jieZhangBtn addTarget:self action:@selector(jieAction:) forControlEvents:UIControlEventTouchUpInside];
+    
+    
+    
+}
+
+- (void)cheAction:(UIButton *)btn{
+    
+    
+    if ([self.delegate respondsToSelector:@selector(TradeContentViewDidChickCheDan:)]) {
+        
+        [self.delegate TradeContentViewDidChickCheDan:self];
+    }
+     NSLog(@"cheAction");
+}
+
+- (void)jieAction:(UIButton *)btn{
+    
+    
+    if ([self.delegate respondsToSelector:@selector(TradeContentViewDidChickJieZhang:WithBillID:tableID:count:)]) {
+        
+        [self.delegate TradeContentViewDidChickJieZhang:self WithBillID:@"" tableID:@"" count:@""];
+    }
+    NSLog(@"jieAction");
 }
 
 //设置圆角
