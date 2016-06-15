@@ -7,17 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-@class OriginalContentView;
-@protocol OriginalContentViewDelegate <NSObject>
+@class TradeContentView;
+@protocol TradeContentViewDelegate <NSObject>
 
 @optional
-- (void)OriginalContentViewDidChickXiaDan:(OriginalContentView  *)orderContent;
-- (void)OriginalContentViewDidChickJieZhang:(OriginalContentView  *)orderContent WithBillID:(NSString *)billID tableID:(NSString *)tableID count:(NSString *)count;
-- (void)OriginalContentViewDidSuccessClearTable:(OriginalContentView  *)orderContent;
+- (void)TradeContentViewDidChickCheDan:(TradeContentView  *)orderContent;
+- (void)TradeContentViewDidChickJieZhang:(TradeContentView  *)orderContent WithBillID:(NSString *)billID tableID:(NSString *)tableID count:(NSString *)count;
 @end
 
 @interface TradeContentView : UIView
-@property (nonatomic, weak) id<OriginalContentViewDelegate> delegate;
+@property (nonatomic, weak) id<TradeContentViewDelegate> delegate;
 
 @property (weak, nonatomic) IBOutlet UILabel *tabNum;
 

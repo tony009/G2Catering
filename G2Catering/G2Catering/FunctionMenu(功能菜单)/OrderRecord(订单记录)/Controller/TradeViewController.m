@@ -11,13 +11,18 @@
 #import "MJExtension.h"
 #import "JiaoYiJiLuCell.h"
 #import "TypeTableViewCell.h"
-@interface TradeViewController ()<OriginalContentViewDelegate,UITableViewDataSource,UITableViewDelegate>{
+#import "FSCalendar.h"
+#import "NSDate+FSExtension.h"
+@interface TradeViewController ()<TradeContentViewDelegate,UITableViewDataSource,UITableViewDelegate,FSCalendarDataSource,FSCalendarDelegate>{
     
     BOOL isHidden;
     NSMutableArray *_groupArray;
      NSMutableArray *_subArray;
     NSMutableArray *_imageArray;
     NSMutableArray *_selectedImage;
+    UIButton *_selectedBtn;
+    UIButton *_dateBtn;
+    FSCalendar *_calendar;
 }
 @property (nonatomic, strong) TradeContentView *originalVc;
 
@@ -28,8 +33,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setUpOriginalView];
-   
     [self.historyTable registerNib:[UINib nibWithNibName:@"JiaoYiJiLuCell" bundle:nil ] forCellReuseIdentifier:@"History"];
     self.historyTable.dataSource = self;
     self.historyTable.delegate = self;
@@ -49,44 +52,137 @@
 }
 
 
-- (void)setUpOriginalView{
-    
-    UIButton *coverView = [[UIButton alloc] initWithFrame:self.view.bounds];
-    coverView.backgroundColor = [UIColor blackColor];
-    coverView.alpha = 0.1;
-    [coverView addTarget:self action:@selector(coverViewChick) forControlEvents:UIControlEventTouchUpInside];
-    coverView.hidden = YES;
-    coverView.frame = CGRectMake(0, 0, KScreenWidth - koriginalWidth, CGRectGetHeight(self.view.frame));
-    _coverView = coverView;
-    [self.view addSubview:coverView];
+
+- (IBAction)selecteDate:(UIButton *)sender {
     
     
-  
+    _wholeView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    _wholeView.backgroundColor = [UIColor colorWithRed:0/255.0 green:0/255.0 blue:0/255.0 alpha:0.5];
+    //刘明修改 添加View覆盖整个视图
+    //[self.navigationController.view addSubview:_wholeView];
     
+    //end
+    
+    [self.view addSubview:_wholeView];
+    
+    _calendar = [[FSCalendar alloc] initWithFrame:CGRectMake(0, 0, 350, 210)];
+    _calendar.backgroundColor = [UIColor whiteColor];
+    _calendar.dataSource = self;
+    _calendar.delegate = self;
+    NSInteger year = 2016;
+    NSInteger month = 05;
+    NSInteger day = 06;
+
+        //获取当前时间
+        NSDate *now = [NSDate date];
+        NSCalendar *calendar1 = [NSCalendar currentCalendar];
+        NSUInteger unitFlags = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit;
+        NSDateComponents *dateComponent = [calendar1 components:unitFlags fromDate:now];
+        year = [dateComponent year];
+        month = [dateComponent month];
+        day = [dateComponent day];
+
+    
+    _calendar.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"zh"];
+    _calendar.layer.cornerRadius = 5;
+    [_calendar selectDate:[NSDate fs_dateWithYear:year month:month day:day]];
+    [_wholeView addSubview:_calendar];
+    _calendar.center = CGPointMake(_wholeView.center.x, _wholeView.center.y);
+    _dateBtn =sender;
     
 }
+
+
+#pragma mark FSCalender的代理
+
+- (void)calendar:(FSCalendar *)calendar didSelectDate:(NSDate *)date
+{
+    
+    NSLog(@"dayChangedToDate %@(GMT)",date);
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    //tiangai
+    NSLocale *locale =[[NSLocale alloc] initWithLocaleIdentifier:@"zh"];
+    dateFormatter.locale = locale;
+    [dateFormatter setDateFormat:@"YYYY-MM-dd"];
+    //     [dateFormatter setDateFormat:@"YYYY.MM.dd"];
+    //end
+    NSString *dateString = [dateFormatter stringFromDate:date];
+    
+    NSDateFormatter *dateFormatter1 = [[NSDateFormatter alloc] init];
+    dateFormatter1.locale = locale;
+    [dateFormatter1 setDateFormat:@"yyyyMMdd"];
+    [_dateBtn setTitle:dateString forState:UIControlStateNormal];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.4 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+        [_calendar removeFromSuperview];
+        [_wholeView removeFromSuperview];
+        
+        
+    });
+    
+ 
+    
+}
+
+- (void)selectDate:(NSDate *)date
+{
+    NSLog(@"select date :%@",date);
+}
+- (BOOL)calendar:(FSCalendar *)calendar shouldSelectDate:(NSDate *)date
+{
+    NSLog(@"select shouldSelectDate date :%@",date);
+    return YES;
+    
+}
+
+- (UIColor *)calendar:(FSCalendar *)calendar appearance:(FSCalendarAppearance *)appearance titleDefaultColorForDate:(NSDate *)date
+{
+    NSLog(@"titleDefaultColorForDate :%@ ",date);
+    return [UIColor redColor];
+}
+
+- (void)calendarCurrentPageDidChange:(FSCalendar *)calendar
+{
+    NSLog(@"did change to page %@",[calendar.currentPage fs_stringWithFormat:@"MMMM yyyy"]);
+}
+
+
+
 - (void)showOriginalContentView{
     
-    TradeContentView *originalV = [[[NSBundle mainBundle]loadNibNamed:@"TradeContentView" owner:nil options:nil]lastObject ];
-    originalV.frame = CGRectMake(KScreenWidth - koriginalWidth, 0, koriginalWidth, KScreenHeight);
-    self.originalVc = originalV;
-//    self.coverView.hidden = YES;
-    originalV.delegate = self;
-    [self.view addSubview:originalV];
-}
-//
-//
-- (void)hideOriginalContentView{
-    
-    [self.originalVc removeFromSuperview];
-}
-//
-- (void)coverViewChick{
-    self.coverView.hidden = YES;
+        [UIView animateWithDuration:0.25 animations:^{
+            
+            self.view.transform = CGAffineTransformMakeTranslation(-338, 0);
+            TradeContentView *originalV = [[[NSBundle mainBundle]loadNibNamed:@"TradeContentView" owner:nil options:nil]lastObject ];
+            originalV.frame = CGRectMake(KScreenWidth - koriginalWidth, 0, koriginalWidth, KScreenHeight);
+            self.originalVc = originalV;
 
-    [self hideOriginalContentView];
-    isHidden = YES;
+            originalV.delegate = self;
+            [KWindow addSubview:originalV];
+            
+        } completion:^(BOOL finished) {
+            
+            
+            
+        }];
+        
+
+    
+
+   
 }
+
+- (void)hideOriginalContentView{
+    [UIView animateWithDuration:0.25 animations:^{
+        self.view.transform = CGAffineTransformIdentity;
+        [self.originalVc removeFromSuperview];
+    }];
+    
+    
+}
+
 
 
 #pragma mark - tableView的数据源和代理方法
@@ -114,8 +210,14 @@
     
 }
 - (void)groupAction:(UIButton *)btn{
-    btn.selected = !btn.selected;
-     NSLog(@"sgfhjk");
+    if (_selectBtn != btn) {
+        
+        _selectBtn.selected = NO;
+        btn.selected = !btn.selected;
+        _selectBtn = btn;
+    }
+  
+
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -155,56 +257,10 @@
         if (indexPath.section == 0) {
             
             [cell.titleBtn setTitle:_subArray[indexPath.row] forState:UIControlStateNormal];
-            
+             [cell.titleBtn addTarget:self action:@selector(groupAction:) forControlEvents:UIControlEventTouchUpInside];
           
         }
-//
-//        static NSString *ID = @"MenuCell";
-//        
-//        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-//        if (cell == nil) {
-//            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
-//        }
-//        cell.textLabel.textColor = [UIColor whiteColor];
-//        cell.backgroundColor = [UIColor clearColor];
-//        cell.textLabel.textAlignment = NSTextAlignmentCenter;
-//        cell.selectionStyle = UITableViewCellSelectionStyleNone;
-//        switch (indexPath.row) {
-//            case 0:
-//                cell.textLabel.text = @"全部";
-//                
-//                break;
-//            case 1:
-//                cell.textLabel.text = @"已下单";
-//                break;
-//            case 2:
-//                cell.textLabel.text = @"已结账";
-//                break;
-//
-//            case 3:
-//                cell.textLabel.text = @"派送中";
-//                break;
-//             
-//            case 4:
-//                cell.textLabel.text = @"已撤单";
-//                break;
-//            case 5:
-//                cell.textLabel.text = @"堂食";
-//                break;
-//            case 6:
-//                cell.textLabel.text = @"外卖";
-//                break;
-//                
-//            case 7:
-//                cell.textLabel.text = @"外带";
-//                break;
-//            case 8:
-//                cell.textLabel.text = @"异常";
-//                break;
-//            default:
-//                break;
-        
-//        }
+
         return cell;
         
     }else if (tableView == _historyTable){
@@ -239,25 +295,33 @@
                 [self showOriginalContentView];
         //        JiaoYiPG *jiaoyiPg = self.jiluArr[indexPath.row];
         //        self.originalVc.jiaoyiPG = jiaoyiPg;
-                self.coverView.hidden = NO;
+
                 isHidden = NO;
             }else{
         
                 [self hideOriginalContentView];
-                self.coverView.hidden = YES;
+//                self.coverView.hidden = YES;
                 isHidden = YES;
               
             }
         
     }
-    
-   
-
 
     
 }
 
+#pragma mark  注释OriginalContentViewDelegate
 
+- (void)TradeContentViewDidChickCheDan:(TradeContentView  *)orderContent{
+    
+    [self hideOriginalContentView];
+    
+    
+}
+- (void)TradeContentViewDidChickJieZhang:(TradeContentView  *)orderContent WithBillID:(NSString *)billID tableID:(NSString *)tableID count:(NSString *)count{
+    
+     [self hideOriginalContentView];
+}
 
 
 - (void)didReceiveMemoryWarning {
