@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		040AFC8569EBF84ABB39E999 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 073B094CD599E52328204BCD /* libPods.a */; };
+		76BB274F1D1142310093DEDF /* OrderingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BB274D1D1142310093DEDF /* OrderingTableViewCell.m */; };
+		76BB27501D1142310093DEDF /* OrderingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76BB274E1D1142310093DEDF /* OrderingTableViewCell.xib */; };
 		76D45C7E1D0CFD3B0026491F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76D45C7D1D0CFD3B0026491F /* Assets.xcassets */; };
 		76D45C8C1D0CFD3B0026491F /* G2CateringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D45C8B1D0CFD3B0026491F /* G2CateringTests.m */; };
 		76D45C971D0CFD3C0026491F /* G2CateringUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D45C961D0CFD3C0026491F /* G2CateringUITests.m */; };
@@ -63,6 +65,9 @@
 /* Begin PBXFileReference section */
 		073B094CD599E52328204BCD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B4E00C8C92ACE2E7EE03E02 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		76BB274C1D1142310093DEDF /* OrderingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderingTableViewCell.h; sourceTree = "<group>"; };
+		76BB274D1D1142310093DEDF /* OrderingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderingTableViewCell.m; sourceTree = "<group>"; };
+		76BB274E1D1142310093DEDF /* OrderingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderingTableViewCell.xib; sourceTree = "<group>"; };
 		76D45C6E1D0CFD3B0026491F /* G2Catering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = G2Catering.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76D45C7D1D0CFD3B0026491F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76D45C871D0CFD3B0026491F /* G2CateringTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = G2CateringTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -332,6 +337,9 @@
 				76D6E9E41D0FA3070014DA13 /* OrderingCollectionViewCell.h */,
 				76D6E9E51D0FA3070014DA13 /* OrderingCollectionViewCell.m */,
 				76D6E9E61D0FA3070014DA13 /* OrderingCollectionViewCell.xib */,
+				76BB274C1D1142310093DEDF /* OrderingTableViewCell.h */,
+				76BB274D1D1142310093DEDF /* OrderingTableViewCell.m */,
+				76BB274E1D1142310093DEDF /* OrderingTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -463,7 +471,6 @@
 			isa = PBXGroup;
 			children = (
 				76D6EA401D0FA5F30014DA13 /* DataReport(数据报告) */,
-				76D6EA441D0FA5F30014DA13 /* OrderRecord(订单记录) */,
 				76D6EA481D0FA5F30014DA13 /* ReserveManager(预定管理) */,
 				76D6EA4C1D0FA5F30014DA13 /* Settings(系统设置) */,
 				76D6EA501D0FA5F30014DA13 /* VIPManager(会员管理) */,
@@ -509,7 +516,8 @@
 				76D6EA461D0FA5F30014DA13 /* Model */,
 				76D6EA471D0FA5F30014DA13 /* View */,
 			);
-			path = "OrderRecord(订单记录)";
+			name = "OrderRecord(订单记录)";
+			path = "../OrderRecord(订单记录)";
 			sourceTree = "<group>";
 		};
 		76D6EA451D0FA5F30014DA13 /* Controller */ = {
@@ -548,6 +556,7 @@
 		76D6EA481D0FA5F30014DA13 /* ReserveManager(预定管理) */ = {
 			isa = PBXGroup;
 			children = (
+				76D6EA441D0FA5F30014DA13 /* OrderRecord(订单记录) */,
 				76D6EA491D0FA5F30014DA13 /* Controller */,
 				76D6EA4A1D0FA5F30014DA13 /* Model */,
 				76D6EA4B1D0FA5F30014DA13 /* View */,
@@ -771,6 +780,7 @@
 				76D6EA091D0FA3070014DA13 /* OrderingCollectionViewCell.xib in Resources */,
 				76D6EA141D0FA3070014DA13 /* Main.storyboard in Resources */,
 				810991191D1009F8006EF716 /* JiLuCaiViewCell.xib in Resources */,
+				76BB27501D1142310093DEDF /* OrderingTableViewCell.xib in Resources */,
 				76D6EA581D0FA6440014DA13 /* PrintSettingsViewController.xib in Resources */,
 				76D6EA0B1D0FA3070014DA13 /* MainViewController.xib in Resources */,
 				76D6EA121D0FA3070014DA13 /* Info.plist in Resources */,
@@ -862,6 +872,7 @@
 				8119FDB81D0FEE78003D545C /* TradeViewController.m in Sources */,
 				8119FDA61D0FD144003D545C /* TradeContentView.m in Sources */,
 				76D6EA101D0FA3070014DA13 /* AppDelegate.m in Sources */,
+				76BB274F1D1142310093DEDF /* OrderingTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
