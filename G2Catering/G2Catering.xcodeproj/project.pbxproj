@@ -54,6 +54,11 @@
 		918E23421D0FDDCF00DAFAE4 /* UpdatePasswordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 918E23411D0FDDCF00DAFAE4 /* UpdatePasswordView.xib */; };
 		918E23451D0FF40B00DAFAE4 /* AboutSettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 918E23441D0FF40B00DAFAE4 /* AboutSettingsView.m */; };
 		918E23471D0FF41B00DAFAE4 /* AboutSettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 918E23461D0FF41B00DAFAE4 /* AboutSettingsView.xib */; };
+		91960C851D113D67007B4CDF /* LM_button.m in Sources */ = {isa = PBXBuildFile; fileRef = 91960C841D113D67007B4CDF /* LM_button.m */; };
+		91960C891D1143E3007B4CDF /* FoodCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91960C871D1143E3007B4CDF /* FoodCollectionViewCell.m */; };
+		91960C8A1D1143E3007B4CDF /* FoodCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91960C881D1143E3007B4CDF /* FoodCollectionViewCell.xib */; };
+		91960C8D1D11582B007B4CDF /* EstimateSettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91960C8C1D11582B007B4CDF /* EstimateSettingView.m */; };
+		91960C8F1D115844007B4CDF /* EstimateSettingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91960C8E1D115844007B4CDF /* EstimateSettingView.xib */; };
 		91C4F0F81D1013AD00AA8CD5 /* EstimateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C4F0F71D1013AD00AA8CD5 /* EstimateView.m */; };
 		91C4F0FC1D1013C800AA8CD5 /* EstimateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C4F0FB1D1013C800AA8CD5 /* EstimateView.xib */; };
 /* End PBXBuildFile section */
@@ -153,6 +158,14 @@
 		918E23431D0FF40B00DAFAE4 /* AboutSettingsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutSettingsView.h; sourceTree = "<group>"; };
 		918E23441D0FF40B00DAFAE4 /* AboutSettingsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutSettingsView.m; sourceTree = "<group>"; };
 		918E23461D0FF41B00DAFAE4 /* AboutSettingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutSettingsView.xib; sourceTree = "<group>"; };
+		91960C831D113D67007B4CDF /* LM_button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LM_button.h; sourceTree = "<group>"; };
+		91960C841D113D67007B4CDF /* LM_button.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LM_button.m; sourceTree = "<group>"; };
+		91960C861D1143E3007B4CDF /* FoodCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodCollectionViewCell.h; sourceTree = "<group>"; };
+		91960C871D1143E3007B4CDF /* FoodCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodCollectionViewCell.m; sourceTree = "<group>"; };
+		91960C881D1143E3007B4CDF /* FoodCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodCollectionViewCell.xib; sourceTree = "<group>"; };
+		91960C8B1D11582B007B4CDF /* EstimateSettingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EstimateSettingView.h; sourceTree = "<group>"; };
+		91960C8C1D11582B007B4CDF /* EstimateSettingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EstimateSettingView.m; sourceTree = "<group>"; };
+		91960C8E1D115844007B4CDF /* EstimateSettingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EstimateSettingView.xib; sourceTree = "<group>"; };
 		91C4F0F61D1013AD00AA8CD5 /* EstimateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EstimateView.h; sourceTree = "<group>"; };
 		91C4F0F71D1013AD00AA8CD5 /* EstimateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EstimateView.m; sourceTree = "<group>"; };
 		91C4F0FB1D1013C800AA8CD5 /* EstimateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EstimateView.xib; sourceTree = "<group>"; };
@@ -663,6 +676,14 @@
 				91C4F0F61D1013AD00AA8CD5 /* EstimateView.h */,
 				91C4F0F71D1013AD00AA8CD5 /* EstimateView.m */,
 				91C4F0FB1D1013C800AA8CD5 /* EstimateView.xib */,
+				91960C861D1143E3007B4CDF /* FoodCollectionViewCell.h */,
+				91960C871D1143E3007B4CDF /* FoodCollectionViewCell.m */,
+				91960C881D1143E3007B4CDF /* FoodCollectionViewCell.xib */,
+				91960C8B1D11582B007B4CDF /* EstimateSettingView.h */,
+				91960C8C1D11582B007B4CDF /* EstimateSettingView.m */,
+				91960C8E1D115844007B4CDF /* EstimateSettingView.xib */,
+				91960C831D113D67007B4CDF /* LM_button.h */,
+				91960C841D113D67007B4CDF /* LM_button.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -833,7 +854,9 @@
 				915E615B1D0FFD2A000553F2 /* DeviceTestView.xib in Resources */,
 				915E61651D100435000553F2 /* PrintSettingTableViewCell.xib in Resources */,
 				810991191D1009F8006EF716 /* JiLuCaiViewCell.xib in Resources */,
+				91960C8F1D115844007B4CDF /* EstimateSettingView.xib in Resources */,
 				8109916B1D101378006EF716 /* TypeTableViewCell.xib in Resources */,
+				91960C8A1D1143E3007B4CDF /* FoodCollectionViewCell.xib in Resources */,
 				76D6EA0B1D0FA3070014DA13 /* MainViewController.xib in Resources */,
 				76D6EA121D0FA3070014DA13 /* Info.plist in Resources */,
 				918E23471D0FF41B00DAFAE4 /* AboutSettingsView.xib in Resources */,
@@ -921,7 +944,10 @@
 				76D6EA0E1D0FA3070014DA13 /* MainRightView.m in Sources */,
 				918E23451D0FF40B00DAFAE4 /* AboutSettingsView.m in Sources */,
 				918E23321D0FABFF00DAFAE4 /* BaseSettingsViewController.m in Sources */,
+				91960C891D1143E3007B4CDF /* FoodCollectionViewCell.m in Sources */,
+				91960C851D113D67007B4CDF /* LM_button.m in Sources */,
 				8109916A1D101378006EF716 /* TypeTableViewCell.m in Sources */,
+				91960C8D1D11582B007B4CDF /* EstimateSettingView.m in Sources */,
 				76D6EA5F1D0FE4550014DA13 /* DinnerTableViewController.m in Sources */,
 				76D6EA081D0FA3070014DA13 /* OrderingCollectionViewCell.m in Sources */,
 				91C4F0F81D1013AD00AA8CD5 /* EstimateView.m in Sources */,
