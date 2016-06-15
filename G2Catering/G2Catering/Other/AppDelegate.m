@@ -12,6 +12,8 @@
 #import "BaseSettingsViewController.h"
 
 
+#import "TradeViewController.h"
+#import "VipViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -28,10 +30,15 @@
     
     MainViewController *mvc = [[MainViewController alloc]init];
     
+    UINavigationController *na = [[UINavigationController alloc]initWithRootViewController:mvc];
+    na.navigationBarHidden = YES;
     
+    self.window.rootViewController = na;
+//    MainViewController *mvc = [[MainViewController alloc]init];
+//   
 //    UINavigationController *na = [[UINavigationController alloc]initWithRootViewController:mvc];
     BaseSettingsViewController *baseVc = [BaseSettingsViewController new];
-      UINavigationController *na = [[UINavigationController alloc]initWithRootViewController:baseVc];
+//      UINavigationController *na = [[UINavigationController alloc]initWithRootViewController:baseVc];
     self.window.rootViewController = baseVc;
     [self.window makeKeyAndVisible];
     
