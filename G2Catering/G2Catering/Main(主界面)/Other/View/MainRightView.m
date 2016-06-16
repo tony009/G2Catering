@@ -7,7 +7,7 @@
 //
 
 #import "MainRightView.h"
-
+#import  "LingShouViewController.h"
 @implementation MainRightView
 
 /*
@@ -42,6 +42,17 @@
 -(void)setUp{
     
 }
+
+- (IBAction)lingShouAction:(id)sender {
+    if([self.delegate respondsToSelector:@selector(MainRightViewMenuDidChick:withIndex:)]){
+        
+        [self.delegate MainRightViewMenuDidChick:self withIndex:2];
+    }
+    
+}
+
+
+
 
 
 @end

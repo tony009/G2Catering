@@ -13,7 +13,9 @@
 #import "OrderingViewController.h"
 #import "VipViewController.h"
 #import "BaseSettingsViewController.h"
-@interface MainViewController ()<MainLeftViewDelegate>
+#import "MainRightView.h"
+#import "LingShouViewController.h"
+@interface MainViewController ()<MainLeftViewDelegate,MainRightViewDelegate>
 @property (nonatomic,strong) UIView *leftView;
 @property (nonatomic,strong) UIView *rightView;
 @property (nonatomic) int flag;   //(-1,左,0正常，1右)
@@ -163,7 +165,7 @@
     
 
     MainLeftView *rightView =  [[[NSBundle mainBundle]loadNibNamed:@"MainRightView" owner:self options:nil]lastObject];
-    
+    rightView.delegate = self;
     rightView.frame = CGRectMake(KScreenWidth-kLeftViewWidth, 0, kLeftViewWidth, KScreenHeight);
     
     self.leftView = leftView;
@@ -252,6 +254,36 @@
     
     
 
+    
+}
+#pragma mark  右边栏的点击事件
+- (void)MainRightViewMenuDidChick:(MainRightView  *)orderContent withIndex:(NSInteger )index{
+    
+    [UIView animateWithDuration:0.5 animations:^{
+        
+        self.view.transform=CGAffineTransformIdentity;
+        
+    }completion:^(BOOL finished) {
+        
+        self.flag = 0;
+        self.rightView.hidden = YES;
+        
+    }];
+    
+    switch (index) {
+        case 2: //零售管理
+        {
+            LingShouViewController *lingCtrl=  [[LingShouViewController alloc]init];
+            
+            [self switchViewController:lingCtrl];
+            
+        }
+        default:
+        break;
+    }
+    
+       
+    
     
 }
 
