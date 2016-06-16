@@ -13,7 +13,8 @@
 #import "TypeTableViewCell.h"
 #import "FSCalendar.h"
 #import "NSDate+FSExtension.h"
-@interface TradeViewController ()<TradeContentViewDelegate,UITableViewDataSource,UITableViewDelegate,FSCalendarDataSource,FSCalendarDelegate>{
+#import "CheDanView.h"
+@interface TradeViewController ()<TradeContentViewDelegate,UITableViewDataSource,UITableViewDelegate,FSCalendarDataSource,FSCalendarDelegate,CheDanViewDelegate>{
     
     BOOL isHidden;
     NSMutableArray *_groupArray;
@@ -23,6 +24,7 @@
     UIButton *_selectedBtn;
     UIButton *_dateBtn;
     FSCalendar *_calendar;
+    BOOL _isALL;
 }
 @property (nonatomic, strong) TradeContentView *originalVc;
 
@@ -203,6 +205,7 @@
     [button setImage:[UIImage imageNamed:_imageArray[section]] forState:UIControlStateNormal];
     [button setImage:[UIImage imageNamed:_selectedImage[section]] forState:UIControlStateSelected];
     [button setTitleColor:[UIColor colorWithRed:143/255.0 green:159/255.0 blue:175/255.0 alpha:1] forState:UIControlStateNormal];
+    button.tag = 210 + section;
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
     button.backgroundColor = [UIColor clearColor] ;
     return button;
@@ -210,6 +213,11 @@
     
 }
 - (void)groupAction:(UIButton *)btn{
+    if (btn.tag == 210) {
+        
+        _isALL = !_isALL;
+        [self.typeTable reloadData];
+    }
     if (_selectBtn != btn) {
         
         _selectBtn.selected = NO;
@@ -223,7 +231,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if (tableView  == _typeTable) {
        
-        if(section == 0){
+        if(section == 0 && _isALL){
             
             return _subArray.count;
             
@@ -310,11 +318,27 @@
     
 }
 
+#pragma mark  注释CheDanViewDelegate
+- (void)CheDanViewDidCancel:(CheDanView  *)orderContent{
+    
+    [orderContent removeFromSuperview];
+    [self hideOriginalContentView];
+    
+}
+- (void)CheDanViewDidYes:(CheDanView  *)orderContent{
+    
+    [orderContent removeFromSuperview];
+    [self hideOriginalContentView];
+}
+
 #pragma mark  注释OriginalContentViewDelegate
 
 - (void)TradeContentViewDidChickCheDan:(TradeContentView  *)orderContent{
+    CheDanView *cheView = [[[NSBundle mainBundle]loadNibNamed:@"CheDanView" owner:nil options:nil]lastObject];
+    cheView.delegate= self;
+    [KWindow addSubview:cheView];
     
-    [self hideOriginalContentView];
+//    [self hideOriginalContentView];
     
     
 }
