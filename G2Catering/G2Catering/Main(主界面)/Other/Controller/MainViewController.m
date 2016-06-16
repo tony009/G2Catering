@@ -11,6 +11,8 @@
 #import "TradeViewController.h"
 #import "DinnerTableViewController.h"
 #import "OrderingViewController.h"
+#import "VipViewController.h"
+#import "BaseSettingsViewController.h"
 @interface MainViewController ()<MainLeftViewDelegate>
 @property (nonatomic,strong) UIView *leftView;
 @property (nonatomic,strong) UIView *rightView;
@@ -30,6 +32,40 @@
     
     [self p_initViews];
     
+
+    
+    [self OrderAction:nil];
+
+}
+
+
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    
+//    UIView *blackView = [[UIView alloc]initWithFrame:CGRectMake(200, 300, 200, 400)];
+//    blackView.backgroundColor = [UIColor blackColor];
+//    
+////    NSDictionary *views = @{
+////                            @"view":blackView
+////                            };
+//    
+//    blackView.translatesAutoresizingMaskIntoConstraints = NO;
+//    
+//    
+//    id tView = [NSLayoutConstraint constraintWithItem:blackView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.topLayoutGuide attribute:NSLayoutAttributeBottom multiplier:1 constant:0];
+//    
+//    id bView = [NSLayoutConstraint constraintWithItem:blackView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.bottomLayoutGuide attribute:NSLayoutAttributeTop multiplier:1 constant:0];
+//    
+//    id lView = [NSLayoutConstraint constraintWithItem:blackView attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.view.layoutMarginsGuide attribute:NSLayoutAttributeLeading multiplier:1 constant:0];
+//    
+//    id rView = [NSLayoutConstraint constraintWithItem:blackView attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self.view .layoutMarginsGuide attribute:NSLayoutAttributeTrailing multiplier:1 constant:0];
+//    
+//    [self.view addSubview:blackView];
+//    
+//    
+//    [NSLayoutConstraint activateConstraints:@[tView,bView,lView,rView]];
+    
 }
 
 //点菜功能
@@ -37,8 +73,8 @@
     
     OrderingViewController *oVC = [[OrderingViewController alloc]init];
     
-
-    [self switchViewControllerWithView:oVC.view];
+    
+    [self switchViewController:oVC];
     
     
 }
@@ -49,12 +85,12 @@
     DinnerTableViewController *dtVC = [[DinnerTableViewController alloc]init];
     
 
-    [self switchViewControllerWithView:dtVC.view];
+    [self switchViewController:dtVC];
     
 }
 
 
--(void)switchViewControllerWithView:(UIView *)view{
+-(void)switchViewController:(UIViewController *)vc{
     
     for (UIView *view in self.view.subviews) {
         
@@ -62,37 +98,45 @@
         
     }
     
-    [view setFrame:self.view.bounds];
+    UIView *view = vc.view;
+    
+    view.translatesAutoresizingMaskIntoConstraints = NO;
+    
+    
+//        NSDictionary *views = @{
+//                                @"view":view
+//                                };
+//    
+//    
+//        [self.view addSubview:view];
+//    
+//    
+//        NSArray *hConstrains  = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[view]-|" options:0 metrics:nil views:views];
+//        NSArray *vConstrains = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[view]-|" options:0 metrics:nil views:views];
+//    
+//    
+//    
+//        [NSLayoutConstraint activateConstraints:hConstrains];
+//        [NSLayoutConstraint activateConstraints:vConstrains];
+    
+    
+   id tView = [NSLayoutConstraint constraintWithItem:view attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTop multiplier:1 constant:0];
+    
+    id bView = [NSLayoutConstraint constraintWithItem:view attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottom multiplier:1 constant:0];
+    
+    id lView = [NSLayoutConstraint constraintWithItem:view attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeading multiplier:1 constant:0];
+    
+    id rView = [NSLayoutConstraint constraintWithItem:view attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTrailing multiplier:1 constant:0];
+    
+    
+    [self addChildViewController:vc];
     
     [self.view addSubview:view];
     
-//   id tView = [NSLayoutConstraint constraintWithItem:view attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTop multiplier:1 constant:0];
-//    
-//    id bView = [NSLayoutConstraint constraintWithItem:view attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottom multiplier:1 constant:0];
-//    
-//    id lView = [NSLayoutConstraint constraintWithItem:view attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeading multiplier:1 constant:0];
-//    
-//    id rView = [NSLayoutConstraint constraintWithItem:view attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTrailing multiplier:1 constant:0];
-//    
-//    
-//    [NSLayoutConstraint activateConstraints:@[tView,bView,lView,rView]];
     
-    UIView *blackView = [[UIView alloc]initWithFrame:CGRectMake(200, 300, 200, 400)];
-    blackView.backgroundColor = [UIColor blackColor];
-    
-    NSDictionary *views = @{
-                            @"view":blackView
-                            };
-    
-    [self.view addSubview:blackView];
-    
-  NSArray *hConstrains  = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[view]-|" options:0 metrics:nil views:views];
-  NSArray *vConstrains = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[view]-|" options:0 metrics:nil views:views];
+    [NSLayoutConstraint activateConstraints:@[tView,bView,lView,rView]];
     
 
-
-    [NSLayoutConstraint activateConstraints:hConstrains];
-    [NSLayoutConstraint activateConstraints:vConstrains];
 
     
 }
@@ -212,8 +256,6 @@
 }
 
 #pragma mark  左边栏的点击事件
-
-
 - (void)MainLeftViewMenuDidChick:(MainLeftView  *)orderContent withIndex:(NSInteger )index{
     
     [UIView animateWithDuration:0.5 animations:^{
@@ -226,13 +268,50 @@
         self.leftView.hidden = YES;
         
     }];
-
-    if(index == 1){
-        
-        
-        TradeViewController *tradeCtrl=  [[[NSBundle mainBundle]loadNibNamed:@"TradeViewController" owner:nil options:nil]lastObject];
-        [self.view addSubview:tradeCtrl.view ];
-        
+    
+    switch (index) {
+        case 0: //预订管理
+        {
+            TradeViewController *tradeCtrl=  [[[NSBundle mainBundle]loadNibNamed:@"TradeViewController" owner:nil options:nil]lastObject];
+            
+            [self switchViewController:tradeCtrl];
+            
+        }
+        break;
+            
+        case 1://订单记录
+        {
+            TradeViewController *tradeCtrl=  [[[NSBundle mainBundle]loadNibNamed:@"TradeViewController" owner:nil options:nil]lastObject];
+            
+            [self switchViewController:tradeCtrl];
+            
+        }
+        break;
+        case 2://数据报告
+        {
+            TradeViewController *tradeCtrl=  [[[NSBundle mainBundle]loadNibNamed:@"TradeViewController" owner:nil options:nil]lastObject];
+            
+            [self switchViewController:tradeCtrl];
+            
+        }
+            break;
+        case 3://会员管理
+        {
+            VipViewController *vipVC= [[[NSBundle mainBundle]loadNibNamed:@"VipViewController" owner:nil options:nil]lastObject];
+            [self switchViewController:vipVC];
+            
+        }
+            break;
+        case 4://系统设置
+        {
+            BaseSettingsViewController *vc=  [[BaseSettingsViewController alloc]init];
+            
+            [self switchViewController:vc];
+            
+        }
+            break;
+        default:
+            break;
     }
     
 }

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FoodCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="122" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="122" height="180"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="吉祥三宝" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sae-zh-aSU">
+                        <rect key="frame" x="0.0" y="142" width="121" height="37"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="组49" translatesAutoresizingMaskIntoConstraints="NO" id="exT-wK-vTk">
+                        <rect key="frame" x="0.0" y="0.0" width="121" height="142"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="142" id="FVG-Ew-eTj"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="exT-wK-vTk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="MVt-2P-uQl"/>
+                <constraint firstItem="exT-wK-vTk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Nks-h7-U3D"/>
+                <constraint firstItem="sae-zh-aSU" firstAttribute="top" secondItem="exT-wK-vTk" secondAttribute="bottom" id="S0W-nx-LmA"/>
+                <constraint firstAttribute="trailing" secondItem="exT-wK-vTk" secondAttribute="trailing" constant="1" id="dBJ-RR-3at"/>
+                <constraint firstAttribute="trailing" secondItem="sae-zh-aSU" secondAttribute="trailing" constant="1" id="eyd-4Y-gdz"/>
+                <constraint firstItem="sae-zh-aSU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="fg5-mP-fFN"/>
+                <constraint firstAttribute="bottom" secondItem="sae-zh-aSU" secondAttribute="bottom" constant="1" id="iHc-HB-O6Z"/>
+            </constraints>
+            <size key="customSize" width="122" height="157"/>
+            <connections>
+                <outlet property="foodName" destination="sae-zh-aSU" id="4AQ-nv-wLf"/>
+                <outlet property="foodPicture" destination="exT-wK-vTk" id="gLx-XS-fFR"/>
+            </connections>
+            <point key="canvasLocation" x="519" y="343"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="组49" width="309" height="165"/>
+    </resources>
+</document>

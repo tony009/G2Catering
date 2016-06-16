@@ -7,14 +7,21 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="OrderingCollectionViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="71" height="68"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OrderingCollectionViewReuseCell" id="gTV-IL-0wX" customClass="OrderingCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="155" height="180"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="71" height="68"/>
+                <rect key="frame" x="0.0" y="0.0" width="155" height="180"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="aaaa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jb5-HK-vUG">
-                        <rect key="frame" x="17" y="23" width="36" height="21"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZPE-WC-I5y">
+                        <rect key="frame" x="1" y="0.0" width="153" height="141"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="香辣蒜蓉包" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jb5-HK-vUG">
+                        <rect key="frame" x="3" y="151" width="150" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="Fff-gN-dB9"/>
+                            <constraint firstAttribute="height" constant="21" id="jLF-XW-K6P"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -22,8 +29,19 @@
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
-            <size key="customSize" width="71" height="68"/>
-            <point key="canvasLocation" x="253.5" y="259"/>
+            <constraints>
+                <constraint firstItem="jb5-HK-vUG" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="6rW-IS-Hrt"/>
+                <constraint firstItem="ZPE-WC-I5y" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="IKI-Qo-gYJ"/>
+                <constraint firstItem="ZPE-WC-I5y" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="1" id="Udh-bQ-k1P"/>
+                <constraint firstItem="jb5-HK-vUG" firstAttribute="top" secondItem="ZPE-WC-I5y" secondAttribute="bottom" constant="10" id="WsZ-by-gNL"/>
+                <constraint firstAttribute="bottom" secondItem="jb5-HK-vUG" secondAttribute="bottom" constant="8" id="m0j-fu-ChD"/>
+                <constraint firstAttribute="trailing" secondItem="ZPE-WC-I5y" secondAttribute="trailing" constant="1" id="sBg-5E-Rtv"/>
+            </constraints>
+            <size key="customSize" width="247" height="221"/>
+            <connections>
+                <outlet property="dishName" destination="jb5-HK-vUG" id="EGY-fX-hsn"/>
+            </connections>
+            <point key="canvasLocation" x="73.5" y="192"/>
         </collectionViewCell>
     </objects>
 </document>

@@ -10,4 +10,5 @@
 
 @interface OrderingCollectionViewCell : UICollectionViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *dishName; //菜名
 @end
