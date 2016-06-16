@@ -7,6 +7,10 @@
 //
 
 #import "OrderingViewController.h"
+#import "OrderingCollectionViewCell.h"
+#import "OrderingTableViewCell.h"
+
+
 
 static NSString *collectionViewCellIdentifer = @"OrderingCollectionViewReuseCell";
 static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
@@ -35,6 +39,9 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
     
     [self.orderCollectionView registerNib:nib forCellWithReuseIdentifier:collectionViewCellIdentifer];
     
+    UINib *nib2 = [UINib nibWithNibName:@"OrderingTableViewCell" bundle:nil];
+    
+    [self.orderListTableView registerNib:nib2 forCellReuseIdentifier:tableViewCellIdentifer];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -71,15 +78,17 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
     // Pass the selected object to the new view controller.
 }
 */
+#pragma mark --UICollectionViewDataSource
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     
     return 11;
 }
+
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:collectionViewCellIdentifer forIndexPath:indexPath];
-    
+    OrderingCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:collectionViewCellIdentifer forIndexPath:indexPath];
+
     return cell;
 }
 
@@ -92,8 +101,10 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"OrderingCollectionViewCell"];
-    UITableViewCell *cell = [[UITableViewCell alloc]init];
+    OrderingTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:tableViewCellIdentifer];
+    cell.dishPrice.text = @"100";
+    cell.dishName.text = @"五彩三丝";
+    
     return cell;
 }
 
