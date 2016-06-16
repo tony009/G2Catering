@@ -86,6 +86,10 @@
 		76D45C971D0CFD3C0026491F /* G2CateringUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D45C961D0CFD3C0026491F /* G2CateringUITests.m */; };
 		76E9145C1D126297001ABA9D /* BookingManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E9145A1D126297001ABA9D /* BookingManagerViewController.m */; };
 		76E9145D1D126297001ABA9D /* BookingManagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76E9145B1D126297001ABA9D /* BookingManagerViewController.xib */; };
+		817CA0951D1283A300F1F61E /* LingShouViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 817CA0931D1283A300F1F61E /* LingShouViewController.m */; };
+		817CA0961D1283A300F1F61E /* LingShouViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 817CA0941D1283A300F1F61E /* LingShouViewController.xib */; };
+		817CA09A1D1283AC00F1F61E /* LingShouTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 817CA0981D1283AC00F1F61E /* LingShouTableViewCell.m */; };
+		817CA09B1D1283AC00F1F61E /* LingShouTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 817CA0991D1283AC00F1F61E /* LingShouTableViewCell.xib */; };
 		91DAEDBB1D1265C200460F4E /* BaseSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAEDBA1D1265C200460F4E /* BaseSettingsViewController.m */; };
 		91DAEDBF1D1274CE00460F4E /* BookManagerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAEDBD1D1274CE00460F4E /* BookManagerTableViewCell.m */; };
 		91DAEDC01D1274CE00460F4E /* BookManagerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAEDBE1D1274CE00460F4E /* BookManagerTableViewCell.xib */; };
@@ -246,6 +250,12 @@
 		76E914591D126297001ABA9D /* BookingManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingManagerViewController.h; sourceTree = "<group>"; };
 		76E9145A1D126297001ABA9D /* BookingManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingManagerViewController.m; sourceTree = "<group>"; };
 		76E9145B1D126297001ABA9D /* BookingManagerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingManagerViewController.xib; sourceTree = "<group>"; };
+		817CA0921D1283A300F1F61E /* LingShouViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LingShouViewController.h; sourceTree = "<group>"; };
+		817CA0931D1283A300F1F61E /* LingShouViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LingShouViewController.m; sourceTree = "<group>"; };
+		817CA0941D1283A300F1F61E /* LingShouViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LingShouViewController.xib; sourceTree = "<group>"; };
+		817CA0971D1283AC00F1F61E /* LingShouTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LingShouTableViewCell.h; sourceTree = "<group>"; };
+		817CA0981D1283AC00F1F61E /* LingShouTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LingShouTableViewCell.m; sourceTree = "<group>"; };
+		817CA0991D1283AC00F1F61E /* LingShouTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LingShouTableViewCell.xib; sourceTree = "<group>"; };
 		8A99B5CD036CAE879C22EB66 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		91DAEDBA1D1265C200460F4E /* BaseSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSettingsViewController.m; sourceTree = "<group>"; };
 		91DAEDBC1D1274CE00460F4E /* BookManagerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookManagerTableViewCell.h; sourceTree = "<group>"; };
@@ -713,6 +723,9 @@
 		76BB28C71D12615F0093DEDF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				817CA0921D1283A300F1F61E /* LingShouViewController.h */,
+				817CA0931D1283A300F1F61E /* LingShouViewController.m */,
+				817CA0941D1283A300F1F61E /* LingShouViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -727,6 +740,9 @@
 		76BB28C91D12615F0093DEDF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				817CA0971D1283AC00F1F61E /* LingShouTableViewCell.h */,
+				817CA0981D1283AC00F1F61E /* LingShouTableViewCell.m */,
+				817CA0991D1283AC00F1F61E /* LingShouTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1002,6 +1018,7 @@
 				76BB292F1D1261600093DEDF /* Info.plist in Resources */,
 				91DAEDC01D1274CE00460F4E /* BookManagerTableViewCell.xib in Resources */,
 				76BB290D1D1261600093DEDF /* EstimateView.xib in Resources */,
+				817CA09B1D1283AC00F1F61E /* LingShouTableViewCell.xib in Resources */,
 				76BB29221D1261600093DEDF /* OrderingCollectionViewCell.xib in Resources */,
 				76BB29311D1261600093DEDF /* Main.storyboard in Resources */,
 				76BB29161D1261600093DEDF /* UpdatePasswordView.xib in Resources */,
@@ -1020,6 +1037,7 @@
 				76BB28F91D1261600093DEDF /* TradeViewController.xib in Resources */,
 				76BB293B1D1261600093DEDF /* LICENSE in Resources */,
 				76BB29141D1261600093DEDF /* PrintSettingTableViewCell.xib in Resources */,
+				817CA0961D1283A300F1F61E /* LingShouViewController.xib in Resources */,
 				76BB28FF1D1261600093DEDF /* TradeContentView.xib in Resources */,
 				76BB290B1D1261600093DEDF /* EstimateSettingView.xib in Resources */,
 				76BB29121D1261600093DEDF /* PrintSettingsView.xib in Resources */,
@@ -1114,9 +1132,11 @@
 				76BB29291D1261600093DEDF /* MainLeftView.m in Sources */,
 				76BB28F61D1261600093DEDF /* JiaoYiJiLuViewController.m in Sources */,
 				76BB291D1D1261600093DEDF /* DinnerTableViewController.m in Sources */,
+				817CA0951D1283A300F1F61E /* LingShouViewController.m in Sources */,
 				76BB29391D1261600093DEDF /* FSCalendarHeader.m in Sources */,
 				76BB28FE1D1261600093DEDF /* TradeContentView.m in Sources */,
 				76BB29001D1261600093DEDF /* TypeTableViewCell.m in Sources */,
+				817CA09A1D1283AC00F1F61E /* LingShouTableViewCell.m in Sources */,
 				76BB29251D1261600093DEDF /* MainViewController.m in Sources */,
 				76BB290C1D1261600093DEDF /* EstimateView.m in Sources */,
 				91DAEDC81D127F4400460F4E /* AddBookView.m in Sources */,

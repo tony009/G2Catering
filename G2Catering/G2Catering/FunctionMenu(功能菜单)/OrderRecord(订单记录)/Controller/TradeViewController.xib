@@ -248,7 +248,7 @@
                 <outlet property="startText" destination="6gF-7o-aYU" id="kd9-u1-15d"/>
                 <outlet property="typeTable" destination="D0P-1W-bwv" id="ypC-KQ-v7J"/>
             </connections>
-            <point key="canvasLocation" x="-1885" y="-1575.5"/>
+            <point key="canvasLocation" x="-1457" y="-1604.5"/>
         </viewController>
     </objects>
     <resources>

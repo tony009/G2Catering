@@ -19,17 +19,23 @@
     self.segmentedCtrl.frame = CGRectMake(CGRectGetMaxX(self.nameLabel.frame), CGRectGetMinY(self.nameLabel.frame), 338- CGRectGetMaxX(self.nameLabel.frame)-30, 30);
     [self.topView addSubview:self.segmentedCtrl];
     
+    [self  setRoundAngleWithView:self.cancelBtn withCornerRadius:5 withColor:[UIColor clearColor]];
     
+    [self  setRoundAngleWithView:self.yesBtn withCornerRadius:5 withColor:[UIColor clearColor]];
     
     
 }
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+
+//设置圆角
+- (void)setRoundAngleWithView:(UIView *)changeView withCornerRadius:(double)cornerRadius withColor:(UIColor *)color{
+    
+    changeView.layer.masksToBounds = YES;
+    changeView.layer.cornerRadius = cornerRadius;
+    changeView.layer.borderColor = color.CGColor;
+    changeView.layer.borderWidth = 1;
+    
 }
-*/
+
 
 
 - (IBAction)cancelAction:(id)sender {
