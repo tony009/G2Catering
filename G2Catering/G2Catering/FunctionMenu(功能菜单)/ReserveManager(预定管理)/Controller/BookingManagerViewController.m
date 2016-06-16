@@ -8,17 +8,25 @@
 
 #import "BookingManagerViewController.h"
 #import "BookManagerTableViewCell.h"
+#import "CancelBookView.h"
 @interface BookingManagerViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, assign) NSInteger editState;
 
 @property (nonatomic, strong) NSMutableArray *bookDataArray;
+
+@property (nonatomic, strong) CancelBookView *cancelView;
 @end
 
 @implementation BookingManagerViewController
 static NSString *reuserID = @"bookCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.backView.layer.cornerRadius  = 5;
+    self.backView.layer.masksToBounds = YES;
+    self.backView.layer.borderColor   = [UIColor lightGrayColor].CGColor;
+    self.backView.layer.borderWidth   = 1;
    
     self.searchBackView.layer.borderColor   = [UIColor colorWithRed:42/255.0f green:66/255.0f blue:90/255.0f alpha:1].CGColor;
     self.searchBackView.layer.borderWidth   = 1;
@@ -31,6 +39,8 @@ static NSString *reuserID = @"bookCell";
 
     
     self.bookDataArray = @[@1,@2,@3,@4,@5,@6].mutableCopy;
+    
+    [self setupCancelView];
 }
 
 #pragma mark - tableView代理
@@ -63,11 +73,9 @@ static NSString *reuserID = @"bookCell";
 
     UITableViewRowAction *cancelBook = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"取消预订" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
         
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-
-        [self.bookDataArray removeObject: self.bookDataArray[indexPath.row]];
+        NSLog(@"取消订单");
         
-        [tableView reloadData];
+        self.cancelView.hidden = NO;
         
     }];
 
@@ -82,12 +90,26 @@ static NSString *reuserID = @"bookCell";
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - cancelView
+- (void)setupCancelView{
+    
+    self.cancelView = [[NSBundle mainBundle] loadNibNamed:@"CancelBookView" owner:nil options:nil].firstObject;
+    [self.cancelView.sureBtn addTarget:self action:@selector(didClickSureBtn) forControlEvents:UIControlEventTouchUpInside];
+    [self.cancelView.cancelBtn addTarget:self action:@selector(didClickCancelBtn) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.cancelView];
+    self.cancelView.hidden = YES;
+}
+- (void)didClickSureBtn{
+    
+    self.cancelView.hidden = YES;
 }
 
+- (void)didClickCancelBtn{
+    
+    self.cancelView.hidden = YES;
+}
 
+#pragma mark- lazy
 - (NSMutableArray *)bookDataArray{
     
     if (!_bookDataArray) {

@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BookingManagerViewController">
             <connections>
                 <outlet property="addBtn" destination="a4M-CN-F7c" id="sPT-CQ-mHr"/>
+                <outlet property="backView" destination="SLu-eS-ABc" id="ezt-XS-gIM"/>
                 <outlet property="bookTableView" destination="eMg-1v-05G" id="CQs-RD-yz2"/>
                 <outlet property="searchBackView" destination="udw-OZ-ndU" id="7qU-9b-7ad"/>
                 <outlet property="searchTextField" destination="SvI-lB-2PN" id="enB-yP-zQS"/>
@@ -19,8 +20,8 @@
             <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SLu-eS-ABc">
-                    <rect key="frame" x="19" y="24" width="986" height="720"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SLu-eS-ABc">
+                    <rect key="frame" x="19" y="27" width="986" height="720"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W1j-TO-fT4">
                             <rect key="frame" x="0.0" y="0.0" width="986" height="65"/>

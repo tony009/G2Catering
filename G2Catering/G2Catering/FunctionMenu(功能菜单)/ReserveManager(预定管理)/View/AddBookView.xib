@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AddBookView">
+            <rect key="frame" x="0.0" y="0.0" width="338" height="720"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XJd-PK-EVf">
+                    <rect key="frame" x="0.0" y="65" width="338" height="1"/>
+                    <color key="backgroundColor" red="0.76078431369999999" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="gYX-jj-yLv"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新建预定" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pg2-0j-pD0">
+                    <rect key="frame" x="38" y="25" width="72" height="22"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="预定人" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAR-Od-yIM">
+                    <rect key="frame" x="38" y="100" width="54" height="22"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eoX-L1-Ygb">
+                    <rect key="frame" x="142" y="101" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Pg2-0j-pD0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="38" id="23O-oh-4QO"/>
+                <constraint firstAttribute="trailing" secondItem="XJd-PK-EVf" secondAttribute="trailing" id="5UW-wG-ji2"/>
+                <constraint firstItem="Pg2-0j-pD0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="IMG-IX-X3W"/>
+                <constraint firstItem="XJd-PK-EVf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="UDZ-wv-TxQ"/>
+                <constraint firstItem="zAR-Od-yIM" firstAttribute="top" secondItem="Pg2-0j-pD0" secondAttribute="bottom" constant="53" id="XfV-Fh-hRe"/>
+                <constraint firstItem="XJd-PK-EVf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="65" id="erf-zh-Bih"/>
+                <constraint firstItem="zAR-Od-yIM" firstAttribute="leading" secondItem="Pg2-0j-pD0" secondAttribute="leading" id="pId-NV-bbX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

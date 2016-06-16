@@ -87,6 +87,12 @@
 		76E9145C1D126297001ABA9D /* BookingManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E9145A1D126297001ABA9D /* BookingManagerViewController.m */; };
 		76E9145D1D126297001ABA9D /* BookingManagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76E9145B1D126297001ABA9D /* BookingManagerViewController.xib */; };
 		91DAEDBB1D1265C200460F4E /* BaseSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAEDBA1D1265C200460F4E /* BaseSettingsViewController.m */; };
+		91DAEDBF1D1274CE00460F4E /* BookManagerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAEDBD1D1274CE00460F4E /* BookManagerTableViewCell.m */; };
+		91DAEDC01D1274CE00460F4E /* BookManagerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAEDBE1D1274CE00460F4E /* BookManagerTableViewCell.xib */; };
+		91DAEDC31D12758000460F4E /* CancelBookView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAEDC21D12758000460F4E /* CancelBookView.m */; };
+		91DAEDC51D12760700460F4E /* CancelBookView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAEDC41D12760700460F4E /* CancelBookView.xib */; };
+		91DAEDC81D127F4400460F4E /* AddBookView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAEDC71D127F4400460F4E /* AddBookView.m */; };
+		91DAEDCA1D127F5500460F4E /* AddBookView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAEDC91D127F5500460F4E /* AddBookView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -242,6 +248,15 @@
 		76E9145B1D126297001ABA9D /* BookingManagerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingManagerViewController.xib; sourceTree = "<group>"; };
 		8A99B5CD036CAE879C22EB66 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		91DAEDBA1D1265C200460F4E /* BaseSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSettingsViewController.m; sourceTree = "<group>"; };
+		91DAEDBC1D1274CE00460F4E /* BookManagerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookManagerTableViewCell.h; sourceTree = "<group>"; };
+		91DAEDBD1D1274CE00460F4E /* BookManagerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookManagerTableViewCell.m; sourceTree = "<group>"; };
+		91DAEDBE1D1274CE00460F4E /* BookManagerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookManagerTableViewCell.xib; sourceTree = "<group>"; };
+		91DAEDC11D12758000460F4E /* CancelBookView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CancelBookView.h; sourceTree = "<group>"; };
+		91DAEDC21D12758000460F4E /* CancelBookView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CancelBookView.m; sourceTree = "<group>"; };
+		91DAEDC41D12760700460F4E /* CancelBookView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CancelBookView.xib; sourceTree = "<group>"; };
+		91DAEDC61D127F4400460F4E /* AddBookView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddBookView.h; sourceTree = "<group>"; };
+		91DAEDC71D127F4400460F4E /* AddBookView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddBookView.m; sourceTree = "<group>"; };
+		91DAEDC91D127F5500460F4E /* AddBookView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddBookView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -444,6 +459,15 @@
 		76BB28721D12615F0093DEDF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				91DAEDBC1D1274CE00460F4E /* BookManagerTableViewCell.h */,
+				91DAEDBD1D1274CE00460F4E /* BookManagerTableViewCell.m */,
+				91DAEDBE1D1274CE00460F4E /* BookManagerTableViewCell.xib */,
+				91DAEDC11D12758000460F4E /* CancelBookView.h */,
+				91DAEDC21D12758000460F4E /* CancelBookView.m */,
+				91DAEDC41D12760700460F4E /* CancelBookView.xib */,
+				91DAEDC61D127F4400460F4E /* AddBookView.h */,
+				91DAEDC71D127F4400460F4E /* AddBookView.m */,
+				91DAEDC91D127F5500460F4E /* AddBookView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -972,9 +996,11 @@
 				76BB29091D1261600093DEDF /* DeviceTestView.xib in Resources */,
 				76BB290F1D1261600093DEDF /* FoodCollectionViewCell.xib in Resources */,
 				76BB291E1D1261600093DEDF /* DinnerTableViewController.xib in Resources */,
+				91DAEDC51D12760700460F4E /* CancelBookView.xib in Resources */,
 				76BB29071D1261600093DEDF /* AboutSettingsView.xib in Resources */,
 				76E9145D1D126297001ABA9D /* BookingManagerViewController.xib in Resources */,
 				76BB292F1D1261600093DEDF /* Info.plist in Resources */,
+				91DAEDC01D1274CE00460F4E /* BookManagerTableViewCell.xib in Resources */,
 				76BB290D1D1261600093DEDF /* EstimateView.xib in Resources */,
 				76BB29221D1261600093DEDF /* OrderingCollectionViewCell.xib in Resources */,
 				76BB29311D1261600093DEDF /* Main.storyboard in Resources */,
@@ -997,6 +1023,7 @@
 				76BB28FF1D1261600093DEDF /* TradeContentView.xib in Resources */,
 				76BB290B1D1261600093DEDF /* EstimateSettingView.xib in Resources */,
 				76BB29121D1261600093DEDF /* PrintSettingsView.xib in Resources */,
+				91DAEDCA1D127F5500460F4E /* AddBookView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1092,11 +1119,14 @@
 				76BB29001D1261600093DEDF /* TypeTableViewCell.m in Sources */,
 				76BB29251D1261600093DEDF /* MainViewController.m in Sources */,
 				76BB290C1D1261600093DEDF /* EstimateView.m in Sources */,
+				91DAEDC81D127F4400460F4E /* AddBookView.m in Sources */,
 				76BB28FC1D1261600093DEDF /* JiLuCaiViewCell.m in Sources */,
 				76BB29081D1261600093DEDF /* DeviceTestView.m in Sources */,
 				76BB29111D1261600093DEDF /* PrintSettingsView.m in Sources */,
+				91DAEDBF1D1274CE00460F4E /* BookManagerTableViewCell.m in Sources */,
 				76BB292B1D1261600093DEDF /* MainRightView.m in Sources */,
 				76BB28F51D1261600093DEDF /* HttpTool.m in Sources */,
+				91DAEDC31D12758000460F4E /* CancelBookView.m in Sources */,
 				76BB293D1D1261600093DEDF /* NSDate+TEAExtensions.m in Sources */,
 				76BB29101D1261600093DEDF /* LM_button.m in Sources */,
 				76BB29321D1261600093DEDF /* FSCalendar+IBExtension.m in Sources */,
