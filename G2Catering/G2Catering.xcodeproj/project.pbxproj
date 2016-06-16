@@ -46,18 +46,6 @@
 		81E6510A1D115516000A26C7 /* NSString+FSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E650EC1D115516000A26C7 /* NSString+FSExtension.m */; };
 		81E6510B1D115516000A26C7 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 81E650ED1D115516000A26C7 /* README.md */; };
 		81E6510C1D115516000A26C7 /* UIView+FSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E650EF1D115516000A26C7 /* UIView+FSExtension.m */; };
-		91DAECEF1D12393600460F4E /* JiaoYiJiLuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAECA71D12393600460F4E /* JiaoYiJiLuViewController.m */; };
-		91DAECF01D12393600460F4E /* JiaoYiJiLuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAECA81D12393600460F4E /* JiaoYiJiLuViewController.xib */; };
-		91DAECF11D12393600460F4E /* TradeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAECAA1D12393600460F4E /* TradeViewController.m */; };
-		91DAECF21D12393600460F4E /* TradeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAECAB1D12393600460F4E /* TradeViewController.xib */; };
-		91DAECF31D12393600460F4E /* JiaoYiJiLuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAECAF1D12393600460F4E /* JiaoYiJiLuCell.m */; };
-		91DAECF41D12393600460F4E /* JiaoYiJiLuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAECB01D12393600460F4E /* JiaoYiJiLuCell.xib */; };
-		91DAECF51D12393600460F4E /* JiLuCaiViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAECB21D12393600460F4E /* JiLuCaiViewCell.m */; };
-		91DAECF61D12393600460F4E /* JiLuCaiViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAECB31D12393600460F4E /* JiLuCaiViewCell.xib */; };
-		91DAECF71D12393600460F4E /* TradeContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAECB51D12393600460F4E /* TradeContentView.m */; };
-		91DAECF81D12393600460F4E /* TradeContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAECB61D12393600460F4E /* TradeContentView.xib */; };
-		91DAECF91D12393600460F4E /* TypeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAECB81D12393600460F4E /* TypeTableViewCell.m */; };
-		91DAECFA1D12393600460F4E /* TypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAECB91D12393600460F4E /* TypeTableViewCell.xib */; };
 		91DAECFB1D12393600460F4E /* BookingManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAECBD1D12393600460F4E /* BookingManagerViewController.m */; };
 		91DAECFC1D12393600460F4E /* BookingManagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAECBE1D12393600460F4E /* BookingManagerViewController.xib */; };
 		91DAECFF1D12393600460F4E /* AboutSettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAECC91D12393600460F4E /* AboutSettingsView.m */; };
@@ -85,6 +73,18 @@
 		91DAED151D12393600460F4E /* VIPTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAECEE1D12393600460F4E /* VIPTableViewCell.xib */; };
 		91DAED1A1D12399600460F4E /* BaseSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAED181D12399600460F4E /* BaseSettingsViewController.xib */; };
 		91DAED1C1D123AF700460F4E /* BaseSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAED1B1D123AF700460F4E /* BaseSettingsViewController.m */; };
+		91DAED231D123D5300460F4E /* JiaoYiJiLuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAED1E1D123D5300460F4E /* JiaoYiJiLuViewController.m */; };
+		91DAED241D123D5300460F4E /* JiaoYiJiLuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAED1F1D123D5300460F4E /* JiaoYiJiLuViewController.xib */; };
+		91DAED251D123D5300460F4E /* TradeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAED211D123D5300460F4E /* TradeViewController.m */; };
+		91DAED261D123D5300460F4E /* TradeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAED221D123D5300460F4E /* TradeViewController.xib */; };
+		91DAED331D123D6D00460F4E /* JiaoYiJiLuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAED281D123D6D00460F4E /* JiaoYiJiLuCell.m */; };
+		91DAED341D123D6D00460F4E /* JiaoYiJiLuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAED291D123D6D00460F4E /* JiaoYiJiLuCell.xib */; };
+		91DAED351D123D6D00460F4E /* JiLuCaiViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAED2B1D123D6D00460F4E /* JiLuCaiViewCell.m */; };
+		91DAED361D123D6D00460F4E /* JiLuCaiViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAED2C1D123D6D00460F4E /* JiLuCaiViewCell.xib */; };
+		91DAED371D123D6D00460F4E /* TradeContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAED2E1D123D6D00460F4E /* TradeContentView.m */; };
+		91DAED381D123D6D00460F4E /* TradeContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAED2F1D123D6D00460F4E /* TradeContentView.xib */; };
+		91DAED391D123D6D00460F4E /* TypeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAED311D123D6D00460F4E /* TypeTableViewCell.m */; };
+		91DAED3A1D123D6D00460F4E /* TypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAED321D123D6D00460F4E /* TypeTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -178,24 +178,6 @@
 		81E650EE1D115516000A26C7 /* UIView+FSExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FSExtension.h"; sourceTree = "<group>"; };
 		81E650EF1D115516000A26C7 /* UIView+FSExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FSExtension.m"; sourceTree = "<group>"; };
 		8A99B5CD036CAE879C22EB66 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		91DAECA61D12393600460F4E /* JiaoYiJiLuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaoYiJiLuViewController.h; sourceTree = "<group>"; };
-		91DAECA71D12393600460F4E /* JiaoYiJiLuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaoYiJiLuViewController.m; sourceTree = "<group>"; };
-		91DAECA81D12393600460F4E /* JiaoYiJiLuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JiaoYiJiLuViewController.xib; sourceTree = "<group>"; };
-		91DAECA91D12393600460F4E /* TradeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradeViewController.h; sourceTree = "<group>"; };
-		91DAECAA1D12393600460F4E /* TradeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradeViewController.m; sourceTree = "<group>"; };
-		91DAECAB1D12393600460F4E /* TradeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TradeViewController.xib; sourceTree = "<group>"; };
-		91DAECAE1D12393600460F4E /* JiaoYiJiLuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaoYiJiLuCell.h; sourceTree = "<group>"; };
-		91DAECAF1D12393600460F4E /* JiaoYiJiLuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaoYiJiLuCell.m; sourceTree = "<group>"; };
-		91DAECB01D12393600460F4E /* JiaoYiJiLuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JiaoYiJiLuCell.xib; sourceTree = "<group>"; };
-		91DAECB11D12393600460F4E /* JiLuCaiViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiLuCaiViewCell.h; sourceTree = "<group>"; };
-		91DAECB21D12393600460F4E /* JiLuCaiViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiLuCaiViewCell.m; sourceTree = "<group>"; };
-		91DAECB31D12393600460F4E /* JiLuCaiViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JiLuCaiViewCell.xib; sourceTree = "<group>"; };
-		91DAECB41D12393600460F4E /* TradeContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradeContentView.h; sourceTree = "<group>"; };
-		91DAECB51D12393600460F4E /* TradeContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradeContentView.m; sourceTree = "<group>"; };
-		91DAECB61D12393600460F4E /* TradeContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TradeContentView.xib; sourceTree = "<group>"; };
-		91DAECB71D12393600460F4E /* TypeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeTableViewCell.h; sourceTree = "<group>"; };
-		91DAECB81D12393600460F4E /* TypeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeTableViewCell.m; sourceTree = "<group>"; };
-		91DAECB91D12393600460F4E /* TypeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TypeTableViewCell.xib; sourceTree = "<group>"; };
 		91DAECBC1D12393600460F4E /* BookingManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingManagerViewController.h; sourceTree = "<group>"; };
 		91DAECBD1D12393600460F4E /* BookingManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingManagerViewController.m; sourceTree = "<group>"; };
 		91DAECBE1D12393600460F4E /* BookingManagerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingManagerViewController.xib; sourceTree = "<group>"; };
@@ -237,6 +219,24 @@
 		91DAED161D12399600460F4E /* BaseSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSettingsViewController.h; sourceTree = "<group>"; };
 		91DAED181D12399600460F4E /* BaseSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseSettingsViewController.xib; sourceTree = "<group>"; };
 		91DAED1B1D123AF700460F4E /* BaseSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BaseSettingsViewController.m; path = "../../../../FunctionMenu(功能菜单)/Settings(系统设置)/Controller/BaseSettingsViewController.m"; sourceTree = "<group>"; };
+		91DAED1D1D123D5300460F4E /* JiaoYiJiLuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JiaoYiJiLuViewController.h; path = "G2Catering/Expand(拓展)/FunctionMenu(功能菜单)/OrderRecord(订单记录)/Controller/JiaoYiJiLuViewController.h"; sourceTree = SOURCE_ROOT; };
+		91DAED1E1D123D5300460F4E /* JiaoYiJiLuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JiaoYiJiLuViewController.m; path = "G2Catering/Expand(拓展)/FunctionMenu(功能菜单)/OrderRecord(订单记录)/Controller/JiaoYiJiLuViewController.m"; sourceTree = SOURCE_ROOT; };
+		91DAED1F1D123D5300460F4E /* JiaoYiJiLuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JiaoYiJiLuViewController.xib; path = "G2Catering/Expand(拓展)/FunctionMenu(功能菜单)/OrderRecord(订单记录)/Controller/JiaoYiJiLuViewController.xib"; sourceTree = SOURCE_ROOT; };
+		91DAED201D123D5300460F4E /* TradeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TradeViewController.h; path = "G2Catering/Expand(拓展)/FunctionMenu(功能菜单)/OrderRecord(订单记录)/Controller/TradeViewController.h"; sourceTree = SOURCE_ROOT; };
+		91DAED211D123D5300460F4E /* TradeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TradeViewController.m; path = "G2Catering/Expand(拓展)/FunctionMenu(功能菜单)/OrderRecord(订单记录)/Controller/TradeViewController.m"; sourceTree = SOURCE_ROOT; };
+		91DAED221D123D5300460F4E /* TradeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TradeViewController.xib; path = "G2Catering/Expand(拓展)/FunctionMenu(功能菜单)/OrderRecord(订单记录)/Controller/TradeViewController.xib"; sourceTree = SOURCE_ROOT; };
+		91DAED271D123D6D00460F4E /* JiaoYiJiLuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JiaoYiJiLuCell.h; path = "G2Catering/Expand(拓展)/FunctionMenu(功能菜单)/OrderRecord(订单记录)/View/JiaoYiJiLuCell.h"; sourceTree = SOURCE_ROOT; };
+		91DAED281D123D6D00460F4E /* JiaoYiJiLuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JiaoYiJiLuCell.m; path = "G2Catering/Expand(拓展)/FunctionMenu(功能菜单)/OrderRecord(订单记录)/View/JiaoYiJiLuCell.m"; sourceTree = SOURCE_ROOT; };
+		91DAED291D123D6D00460F4E /* JiaoYiJiLuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JiaoYiJiLuCell.xib; path = "G2Catering/Expand(拓展)/FunctionMenu(功能菜单)/OrderRecord(订单记录)/View/JiaoYiJiLuCell.xib"; sourceTree = SOURCE_ROOT; };
+		91DAED2A1D123D6D00460F4E /* JiLuCaiViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JiLuCaiViewCell.h; path = "G2Catering/Expand(拓展)/FunctionMenu(功能菜单)/OrderRecord(订单记录)/View/JiLuCaiViewCell.h"; sourceTree = SOURCE_ROOT; };
+		91DAED2B1D123D6D00460F4E /* JiLuCaiViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JiLuCaiViewCell.m; path = "G2Catering/Expand(拓展)/FunctionMenu(功能菜单)/OrderRecord(订单记录)/View/JiLuCaiViewCell.m"; sourceTree = SOURCE_ROOT; };
+		91DAED2C1D123D6D00460F4E /* JiLuCaiViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JiLuCaiViewCell.xib; path = "G2Catering/Expand(拓展)/FunctionMenu(功能菜单)/OrderRecord(订单记录)/View/JiLuCaiViewCell.xib"; sourceTree = SOURCE_ROOT; };
+		91DAED2D1D123D6D00460F4E /* TradeContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TradeContentView.h; path = "G2Catering/Expand(拓展)/FunctionMenu(功能菜单)/OrderRecord(订单记录)/View/TradeContentView.h"; sourceTree = SOURCE_ROOT; };
+		91DAED2E1D123D6D00460F4E /* TradeContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TradeContentView.m; path = "G2Catering/Expand(拓展)/FunctionMenu(功能菜单)/OrderRecord(订单记录)/View/TradeContentView.m"; sourceTree = SOURCE_ROOT; };
+		91DAED2F1D123D6D00460F4E /* TradeContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TradeContentView.xib; path = "G2Catering/Expand(拓展)/FunctionMenu(功能菜单)/OrderRecord(订单记录)/View/TradeContentView.xib"; sourceTree = SOURCE_ROOT; };
+		91DAED301D123D6D00460F4E /* TypeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TypeTableViewCell.h; path = "G2Catering/Expand(拓展)/FunctionMenu(功能菜单)/OrderRecord(订单记录)/View/TypeTableViewCell.h"; sourceTree = SOURCE_ROOT; };
+		91DAED311D123D6D00460F4E /* TypeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TypeTableViewCell.m; path = "G2Catering/Expand(拓展)/FunctionMenu(功能菜单)/OrderRecord(订单记录)/View/TypeTableViewCell.m"; sourceTree = SOURCE_ROOT; };
+		91DAED321D123D6D00460F4E /* TypeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TypeTableViewCell.xib; path = "G2Catering/Expand(拓展)/FunctionMenu(功能菜单)/OrderRecord(订单记录)/View/TypeTableViewCell.xib"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -674,12 +674,12 @@
 		91DAECA51D12393600460F4E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				91DAECA61D12393600460F4E /* JiaoYiJiLuViewController.h */,
-				91DAECA71D12393600460F4E /* JiaoYiJiLuViewController.m */,
-				91DAECA81D12393600460F4E /* JiaoYiJiLuViewController.xib */,
-				91DAECA91D12393600460F4E /* TradeViewController.h */,
-				91DAECAA1D12393600460F4E /* TradeViewController.m */,
-				91DAECAB1D12393600460F4E /* TradeViewController.xib */,
+				91DAED1D1D123D5300460F4E /* JiaoYiJiLuViewController.h */,
+				91DAED1E1D123D5300460F4E /* JiaoYiJiLuViewController.m */,
+				91DAED1F1D123D5300460F4E /* JiaoYiJiLuViewController.xib */,
+				91DAED201D123D5300460F4E /* TradeViewController.h */,
+				91DAED211D123D5300460F4E /* TradeViewController.m */,
+				91DAED221D123D5300460F4E /* TradeViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -694,18 +694,18 @@
 		91DAECAD1D12393600460F4E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				91DAECAE1D12393600460F4E /* JiaoYiJiLuCell.h */,
-				91DAECAF1D12393600460F4E /* JiaoYiJiLuCell.m */,
-				91DAECB01D12393600460F4E /* JiaoYiJiLuCell.xib */,
-				91DAECB11D12393600460F4E /* JiLuCaiViewCell.h */,
-				91DAECB21D12393600460F4E /* JiLuCaiViewCell.m */,
-				91DAECB31D12393600460F4E /* JiLuCaiViewCell.xib */,
-				91DAECB41D12393600460F4E /* TradeContentView.h */,
-				91DAECB51D12393600460F4E /* TradeContentView.m */,
-				91DAECB61D12393600460F4E /* TradeContentView.xib */,
-				91DAECB71D12393600460F4E /* TypeTableViewCell.h */,
-				91DAECB81D12393600460F4E /* TypeTableViewCell.m */,
-				91DAECB91D12393600460F4E /* TypeTableViewCell.xib */,
+				91DAED271D123D6D00460F4E /* JiaoYiJiLuCell.h */,
+				91DAED281D123D6D00460F4E /* JiaoYiJiLuCell.m */,
+				91DAED291D123D6D00460F4E /* JiaoYiJiLuCell.xib */,
+				91DAED2A1D123D6D00460F4E /* JiLuCaiViewCell.h */,
+				91DAED2B1D123D6D00460F4E /* JiLuCaiViewCell.m */,
+				91DAED2C1D123D6D00460F4E /* JiLuCaiViewCell.xib */,
+				91DAED2D1D123D6D00460F4E /* TradeContentView.h */,
+				91DAED2E1D123D6D00460F4E /* TradeContentView.m */,
+				91DAED2F1D123D6D00460F4E /* TradeContentView.xib */,
+				91DAED301D123D6D00460F4E /* TypeTableViewCell.h */,
+				91DAED311D123D6D00460F4E /* TypeTableViewCell.m */,
+				91DAED321D123D6D00460F4E /* TypeTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -961,9 +961,8 @@
 			files = (
 				76D6EA0F1D0FA3070014DA13 /* MainRightView.xib in Resources */,
 				91DAED151D12393600460F4E /* VIPTableViewCell.xib in Resources */,
-				91DAECF01D12393600460F4E /* JiaoYiJiLuViewController.xib in Resources */,
 				91DAED021D12393600460F4E /* DeviceTestView.xib in Resources */,
-				91DAECFA1D12393600460F4E /* TypeTableViewCell.xib in Resources */,
+				91DAED261D123D5300460F4E /* TradeViewController.xib in Resources */,
 				81E651071D115516000A26C7 /* LICENSE in Resources */,
 				91DAED0F1D12393600460F4E /* UpdatePasswordView.xib in Resources */,
 				91DAED0D1D12393600460F4E /* PrintSettingTableViewCell.xib in Resources */,
@@ -971,18 +970,20 @@
 				76D6EA131D0FA3070014DA13 /* LaunchScreen.storyboard in Resources */,
 				76D6EA0D1D0FA3070014DA13 /* MainLeftView.xib in Resources */,
 				76D6EA601D0FE4550014DA13 /* DinnerTableViewController.xib in Resources */,
-				91DAECF41D12393600460F4E /* JiaoYiJiLuCell.xib in Resources */,
 				76D6EA071D0FA3070014DA13 /* OrderingViewController.xib in Resources */,
 				91DAED1A1D12399600460F4E /* BaseSettingsViewController.xib in Resources */,
 				76D45C7E1D0CFD3B0026491F /* Assets.xcassets in Resources */,
 				76D6EA091D0FA3070014DA13 /* OrderingCollectionViewCell.xib in Resources */,
+				91DAED3A1D123D6D00460F4E /* TypeTableViewCell.xib in Resources */,
 				91DAED111D12393600460F4E /* VipViewController.xib in Resources */,
-				91DAECF61D12393600460F4E /* JiLuCaiViewCell.xib in Resources */,
-				91DAECF81D12393600460F4E /* TradeContentView.xib in Resources */,
+				91DAED241D123D5300460F4E /* JiaoYiJiLuViewController.xib in Resources */,
+				91DAED381D123D6D00460F4E /* TradeContentView.xib in Resources */,
+				91DAED361D123D6D00460F4E /* JiLuCaiViewCell.xib in Resources */,
 				91DAED131D12393600460F4E /* VIPLeftView.xib in Resources */,
 				76D6EA141D0FA3070014DA13 /* Main.storyboard in Resources */,
-				91DAECF21D12393600460F4E /* TradeViewController.xib in Resources */,
 				91DAED081D12393600460F4E /* FoodCollectionViewCell.xib in Resources */,
+				91DAED341D123D6D00460F4E /* JiaoYiJiLuCell.xib in Resources */,
+				76BB27501D1142310093DEDF /* OrderingTableViewCell.xib in Resources */,
 				76D6EA0B1D0FA3070014DA13 /* MainViewController.xib in Resources */,
 				91DAECFC1D12393600460F4E /* BookingManagerViewController.xib in Resources */,
 				91DAED061D12393600460F4E /* EstimateView.xib in Resources */,
@@ -1066,18 +1067,17 @@
 				76D6EA061D0FA3070014DA13 /* OrderingViewController.m in Sources */,
 				91DAED011D12393600460F4E /* DeviceTestView.m in Sources */,
 				76D6EA0C1D0FA3070014DA13 /* MainLeftView.m in Sources */,
-				91DAECF71D12393600460F4E /* TradeContentView.m in Sources */,
 				81E651081D115516000A26C7 /* NSDate+FSExtension.m in Sources */,
 				81E6510B1D115516000A26C7 /* README.md in Sources */,
 				91DAED0E1D12393600460F4E /* UpdatePasswordView.m in Sources */,
 				81E651021D115516000A26C7 /* FSCalendarCollectionView.m in Sources */,
 				81E651001D115516000A26C7 /* FSCalendarAppearance.m in Sources */,
-				91DAECF11D12393600460F4E /* TradeViewController.m in Sources */,
 				81E651091D115516000A26C7 /* NSDate+TEAExtensions.m in Sources */,
 				91DAECFF1D12393600460F4E /* AboutSettingsView.m in Sources */,
 				91DAED031D12393600460F4E /* EstimateSettingView.m in Sources */,
 				91DAED071D12393600460F4E /* FoodCollectionViewCell.m in Sources */,
 				76D6EA0E1D0FA3070014DA13 /* MainRightView.m in Sources */,
+				91DAED331D123D6D00460F4E /* JiaoYiJiLuCell.m in Sources */,
 				81E6510C1D115516000A26C7 /* UIView+FSExtension.m in Sources */,
 				81E650FE1D115516000A26C7 /* FSCalendar+IBExtension.m in Sources */,
 				91DAED141D12393600460F4E /* VIPTableViewCell.m in Sources */,
@@ -1089,21 +1089,23 @@
 				81E651051D115516000A26C7 /* FSCalendarHeader.m in Sources */,
 				91DAED091D12393600460F4E /* LM_button.m in Sources */,
 				76D6EA0A1D0FA3070014DA13 /* MainViewController.m in Sources */,
+				91DAED391D123D6D00460F4E /* TypeTableViewCell.m in Sources */,
 				91DAED101D12393600460F4E /* VipViewController.m in Sources */,
-				91DAECF31D12393600460F4E /* JiaoYiJiLuCell.m in Sources */,
-				91DAECF91D12393600460F4E /* TypeTableViewCell.m in Sources */,
+				91DAED231D123D5300460F4E /* JiaoYiJiLuViewController.m in Sources */,
 				81E651061D115516000A26C7 /* FSCalendarStickyHeader.m in Sources */,
 				91DAED121D12393600460F4E /* VIPLeftView.m in Sources */,
 				76D6EA111D0FA3070014DA13 /* main.m in Sources */,
 				81E651011D115516000A26C7 /* FSCalendarCell.m in Sources */,
+				91DAED251D123D5300460F4E /* TradeViewController.m in Sources */,
 				91DAED0C1D12393600460F4E /* PrintSettingTableViewCell.m in Sources */,
 				81E650FF1D115516000A26C7 /* FSCalendar.m in Sources */,
 				91DAED051D12393600460F4E /* EstimateView.m in Sources */,
-				91DAECEF1D12393600460F4E /* JiaoYiJiLuViewController.m in Sources */,
 				91DAECFB1D12393600460F4E /* BookingManagerViewController.m in Sources */,
-				91DAECF51D12393600460F4E /* JiLuCaiViewCell.m in Sources */,
+				91DAED351D123D6D00460F4E /* JiLuCaiViewCell.m in Sources */,
 				81E651041D115516000A26C7 /* FSCalendarFlowLayout.m in Sources */,
+				91DAED371D123D6D00460F4E /* TradeContentView.m in Sources */,
 				76D6EA101D0FA3070014DA13 /* AppDelegate.m in Sources */,
+				76BB274F1D1142310093DEDF /* OrderingTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

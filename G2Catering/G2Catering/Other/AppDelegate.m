@@ -34,10 +34,15 @@
     
     self.window.rootViewController = na;
 
-
+    TradeViewController *tradeVctl = [[[NSBundle mainBundle]loadNibNamed:@"TradeViewController" owner:nil options:nil]lastObject];
+    self.window.rootViewController = tradeVctl;
     
-//    TradeViewController *tradeVctl = [[[NSBundle mainBundle]loadNibNamed:@"TradeViewController" owner:nil options:nil]lastObject];
-//    self.window.rootViewController = tradeVctl;
+    BookingManagerViewController *book = [BookingManagerViewController new];
+     self.window.rootViewController = book;
+    
+    BaseSettingsViewController *base = [BaseSettingsViewController new];
+    self.window.rootViewController = base;
+    
     [self.window makeKeyAndVisible];
     
     return YES;
