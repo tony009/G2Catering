@@ -63,7 +63,7 @@
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftc-0p-KbK">
                             <rect key="frame" x="229" y="156" width="42" height="37"/>
-                            <state key="normal" image="形状-1"/>
+                            <state key="normal" image="椭圆1-1"/>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="类型：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Flg-uN-lRd">
                             <rect key="frame" x="20" y="164" width="71" height="21"/>
@@ -129,7 +129,7 @@
         </view>
     </objects>
     <resources>
-        <image name="形状-1" width="11" height="6"/>
+        <image name="椭圆1-1" width="23" height="23"/>
         <image name="订单-BG" width="312" height="271"/>
     </resources>
 </document>
