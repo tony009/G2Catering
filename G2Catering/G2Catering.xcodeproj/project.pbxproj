@@ -21,7 +21,6 @@
 		76BB28FF1D1261600093DEDF /* TradeContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76BB28681D12615F0093DEDF /* TradeContentView.xib */; };
 		76BB29001D1261600093DEDF /* TypeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BB286A1D12615F0093DEDF /* TypeTableViewCell.m */; };
 		76BB29011D1261600093DEDF /* TypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76BB286B1D12615F0093DEDF /* TypeTableViewCell.xib */; };
-		76BB29041D1261600093DEDF /* BaseSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BB28761D12615F0093DEDF /* BaseSettingsViewController.m */; };
 		76BB29051D1261600093DEDF /* BaseSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76BB28771D12615F0093DEDF /* BaseSettingsViewController.xib */; };
 		76BB29061D1261600093DEDF /* AboutSettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BB287B1D12615F0093DEDF /* AboutSettingsView.m */; };
 		76BB29071D1261600093DEDF /* AboutSettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76BB287C1D12615F0093DEDF /* AboutSettingsView.xib */; };
@@ -85,79 +84,9 @@
 		76D45C7E1D0CFD3B0026491F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76D45C7D1D0CFD3B0026491F /* Assets.xcassets */; };
 		76D45C8C1D0CFD3B0026491F /* G2CateringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D45C8B1D0CFD3B0026491F /* G2CateringTests.m */; };
 		76D45C971D0CFD3C0026491F /* G2CateringUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D45C961D0CFD3C0026491F /* G2CateringUITests.m */; };
-		76D6EA051D0FA3070014DA13 /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6E9C11D0FA3070014DA13 /* HttpTool.m */; };
-		76D6EA061D0FA3070014DA13 /* OrderingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6E9E01D0FA3070014DA13 /* OrderingViewController.m */; };
-		76D6EA071D0FA3070014DA13 /* OrderingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D6E9E11D0FA3070014DA13 /* OrderingViewController.xib */; };
-		76D6EA081D0FA3070014DA13 /* OrderingCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6E9E51D0FA3070014DA13 /* OrderingCollectionViewCell.m */; };
-		76D6EA091D0FA3070014DA13 /* OrderingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D6E9E61D0FA3070014DA13 /* OrderingCollectionViewCell.xib */; };
-		76D6EA0A1D0FA3070014DA13 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6E9EA1D0FA3070014DA13 /* MainViewController.m */; };
-		76D6EA0B1D0FA3070014DA13 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D6E9EB1D0FA3070014DA13 /* MainViewController.xib */; };
-		76D6EA0C1D0FA3070014DA13 /* MainLeftView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6E9EF1D0FA3070014DA13 /* MainLeftView.m */; };
-		76D6EA0D1D0FA3070014DA13 /* MainLeftView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D6E9F01D0FA3070014DA13 /* MainLeftView.xib */; };
-		76D6EA0E1D0FA3070014DA13 /* MainRightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6E9F21D0FA3070014DA13 /* MainRightView.m */; };
-		76D6EA0F1D0FA3070014DA13 /* MainRightView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D6E9F31D0FA3070014DA13 /* MainRightView.xib */; };
-		76D6EA101D0FA3070014DA13 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6E9FA1D0FA3070014DA13 /* AppDelegate.m */; };
-		76D6EA111D0FA3070014DA13 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6E9FB1D0FA3070014DA13 /* main.m */; };
-		76D6EA121D0FA3070014DA13 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 76D6EA001D0FA3070014DA13 /* Info.plist */; };
-		76D6EA131D0FA3070014DA13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76D6EA021D0FA3070014DA13 /* LaunchScreen.storyboard */; };
-		76D6EA141D0FA3070014DA13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76D6EA031D0FA3070014DA13 /* Main.storyboard */; };
-		76D6EA5F1D0FE4550014DA13 /* DinnerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6EA5D1D0FE4550014DA13 /* DinnerTableViewController.m */; };
-		76D6EA601D0FE4550014DA13 /* DinnerTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D6EA5E1D0FE4550014DA13 /* DinnerTableViewController.xib */; };
-		81E650FE1D115516000A26C7 /* FSCalendar+IBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E650D41D115516000A26C7 /* FSCalendar+IBExtension.m */; };
-		81E650FF1D115516000A26C7 /* FSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E650D61D115516000A26C7 /* FSCalendar.m */; };
-		81E651001D115516000A26C7 /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E650D81D115516000A26C7 /* FSCalendarAppearance.m */; };
-		81E651011D115516000A26C7 /* FSCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E650DA1D115516000A26C7 /* FSCalendarCell.m */; };
-		81E651021D115516000A26C7 /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E650DC1D115516000A26C7 /* FSCalendarCollectionView.m */; };
-		81E651031D115516000A26C7 /* FSCalendarConstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E650DE1D115516000A26C7 /* FSCalendarConstance.m */; };
-		81E651041D115516000A26C7 /* FSCalendarFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E650E11D115516000A26C7 /* FSCalendarFlowLayout.m */; };
-		81E651051D115516000A26C7 /* FSCalendarHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E650E31D115516000A26C7 /* FSCalendarHeader.m */; };
-		81E651061D115516000A26C7 /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E650E51D115516000A26C7 /* FSCalendarStickyHeader.m */; };
-		81E651071D115516000A26C7 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 81E650E61D115516000A26C7 /* LICENSE */; };
-		81E651081D115516000A26C7 /* NSDate+FSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E650E81D115516000A26C7 /* NSDate+FSExtension.m */; };
-		81E651091D115516000A26C7 /* NSDate+TEAExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E650EA1D115516000A26C7 /* NSDate+TEAExtensions.m */; };
-		81E6510A1D115516000A26C7 /* NSString+FSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E650EC1D115516000A26C7 /* NSString+FSExtension.m */; };
-		81E6510B1D115516000A26C7 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 81E650ED1D115516000A26C7 /* README.md */; };
-		81E6510C1D115516000A26C7 /* UIView+FSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E650EF1D115516000A26C7 /* UIView+FSExtension.m */; };
-		91DAED921D1263C500460F4E /* JiaoYiJiLuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAED481D1263C400460F4E /* JiaoYiJiLuViewController.m */; };
-		91DAED931D1263C500460F4E /* JiaoYiJiLuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAED491D1263C400460F4E /* JiaoYiJiLuViewController.xib */; };
-		91DAED941D1263C500460F4E /* TradeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAED4B1D1263C400460F4E /* TradeViewController.m */; };
-		91DAED951D1263C500460F4E /* TradeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAED4C1D1263C400460F4E /* TradeViewController.xib */; };
-		91DAED961D1263C500460F4E /* JiaoYiJiLuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAED501D1263C400460F4E /* JiaoYiJiLuCell.m */; };
-		91DAED971D1263C500460F4E /* JiaoYiJiLuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAED511D1263C400460F4E /* JiaoYiJiLuCell.xib */; };
-		91DAED981D1263C500460F4E /* JiLuCaiViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAED531D1263C400460F4E /* JiLuCaiViewCell.m */; };
-		91DAED991D1263C500460F4E /* JiLuCaiViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAED541D1263C400460F4E /* JiLuCaiViewCell.xib */; };
-		91DAED9A1D1263C500460F4E /* TradeContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAED561D1263C400460F4E /* TradeContentView.m */; };
-		91DAED9B1D1263C500460F4E /* TradeContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAED571D1263C400460F4E /* TradeContentView.xib */; };
-		91DAED9C1D1263C500460F4E /* TypeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAED591D1263C400460F4E /* TypeTableViewCell.m */; };
-		91DAED9D1D1263C500460F4E /* TypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAED5A1D1263C400460F4E /* TypeTableViewCell.xib */; };
-		91DAED9E1D1263C500460F4E /* BookingManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAED5E1D1263C400460F4E /* BookingManagerViewController.m */; };
-		91DAED9F1D1263C500460F4E /* BookingManagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAED5F1D1263C400460F4E /* BookingManagerViewController.xib */; };
-		91DAEDA01D1263C500460F4E /* BookManagerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAED631D1263C400460F4E /* BookManagerTableViewCell.m */; };
-		91DAEDA11D1263C500460F4E /* BookManagerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAED641D1263C400460F4E /* BookManagerTableViewCell.xib */; };
-		91DAEDA21D1263C500460F4E /* BaseSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAED681D1263C400460F4E /* BaseSettingsViewController.xib */; };
-		91DAEDA31D1263C500460F4E /* AboutSettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAED6C1D1263C400460F4E /* AboutSettingsView.m */; };
-		91DAEDA41D1263C500460F4E /* AboutSettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAED6D1D1263C400460F4E /* AboutSettingsView.xib */; };
-		91DAEDA51D1263C500460F4E /* DeviceTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAED6F1D1263C400460F4E /* DeviceTestView.m */; };
-		91DAEDA61D1263C500460F4E /* DeviceTestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAED701D1263C400460F4E /* DeviceTestView.xib */; };
-		91DAEDA71D1263C500460F4E /* EstimateSettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAED721D1263C400460F4E /* EstimateSettingView.m */; };
-		91DAEDA81D1263C500460F4E /* EstimateSettingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAED731D1263C400460F4E /* EstimateSettingView.xib */; };
-		91DAEDA91D1263C500460F4E /* EstimateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAED751D1263C400460F4E /* EstimateView.m */; };
-		91DAEDAA1D1263C500460F4E /* EstimateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAED761D1263C400460F4E /* EstimateView.xib */; };
-		91DAEDAB1D1263C500460F4E /* FoodCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAED781D1263C400460F4E /* FoodCollectionViewCell.m */; };
-		91DAEDAC1D1263C500460F4E /* FoodCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAED791D1263C400460F4E /* FoodCollectionViewCell.xib */; };
-		91DAEDAD1D1263C500460F4E /* LM_button.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAED7B1D1263C400460F4E /* LM_button.m */; };
-		91DAEDAE1D1263C500460F4E /* PrintSettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAED7D1D1263C400460F4E /* PrintSettingsView.m */; };
-		91DAEDAF1D1263C500460F4E /* PrintSettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAED7E1D1263C400460F4E /* PrintSettingsView.xib */; };
-		91DAEDB01D1263C500460F4E /* PrintSettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAED801D1263C400460F4E /* PrintSettingTableViewCell.m */; };
-		91DAEDB11D1263C500460F4E /* PrintSettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAED811D1263C400460F4E /* PrintSettingTableViewCell.xib */; };
-		91DAEDB21D1263C500460F4E /* UpdatePasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAED831D1263C400460F4E /* UpdatePasswordView.m */; };
-		91DAEDB31D1263C500460F4E /* UpdatePasswordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAED841D1263C400460F4E /* UpdatePasswordView.xib */; };
-		91DAEDB41D1263C500460F4E /* VipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAED881D1263C400460F4E /* VipViewController.m */; };
-		91DAEDB51D1263C500460F4E /* VipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAED891D1263C400460F4E /* VipViewController.xib */; };
-		91DAEDB61D1263C500460F4E /* VIPLeftView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAED8D1D1263C400460F4E /* VIPLeftView.m */; };
-		91DAEDB71D1263C500460F4E /* VIPLeftView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAED8E1D1263C400460F4E /* VIPLeftView.xib */; };
-		91DAEDB81D1263C500460F4E /* VIPTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAED901D1263C500460F4E /* VIPTableViewCell.m */; };
-		91DAEDB91D1263C500460F4E /* VIPTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAED911D1263C500460F4E /* VIPTableViewCell.xib */; };
+		76E9145C1D126297001ABA9D /* BookingManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E9145A1D126297001ABA9D /* BookingManagerViewController.m */; };
+		76E9145D1D126297001ABA9D /* BookingManagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76E9145B1D126297001ABA9D /* BookingManagerViewController.xib */; };
+		91DAEDBB1D1265C200460F4E /* BaseSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAEDBA1D1265C200460F4E /* BaseSettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -204,7 +133,6 @@
 		76BB286A1D12615F0093DEDF /* TypeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeTableViewCell.m; sourceTree = "<group>"; };
 		76BB286B1D12615F0093DEDF /* TypeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TypeTableViewCell.xib; sourceTree = "<group>"; };
 		76BB28751D12615F0093DEDF /* BaseSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSettingsViewController.h; sourceTree = "<group>"; };
-		76BB28761D12615F0093DEDF /* BaseSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSettingsViewController.m; sourceTree = "<group>"; };
 		76BB28771D12615F0093DEDF /* BaseSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseSettingsViewController.xib; sourceTree = "<group>"; };
 		76BB287A1D12615F0093DEDF /* AboutSettingsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutSettingsView.h; sourceTree = "<group>"; };
 		76BB287B1D12615F0093DEDF /* AboutSettingsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutSettingsView.m; sourceTree = "<group>"; };
@@ -313,67 +241,7 @@
 		76E9145A1D126297001ABA9D /* BookingManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingManagerViewController.m; sourceTree = "<group>"; };
 		76E9145B1D126297001ABA9D /* BookingManagerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingManagerViewController.xib; sourceTree = "<group>"; };
 		8A99B5CD036CAE879C22EB66 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		91DAED471D1263C400460F4E /* JiaoYiJiLuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaoYiJiLuViewController.h; sourceTree = "<group>"; };
-		91DAED481D1263C400460F4E /* JiaoYiJiLuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaoYiJiLuViewController.m; sourceTree = "<group>"; };
-		91DAED491D1263C400460F4E /* JiaoYiJiLuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JiaoYiJiLuViewController.xib; sourceTree = "<group>"; };
-		91DAED4A1D1263C400460F4E /* TradeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradeViewController.h; sourceTree = "<group>"; };
-		91DAED4B1D1263C400460F4E /* TradeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradeViewController.m; sourceTree = "<group>"; };
-		91DAED4C1D1263C400460F4E /* TradeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TradeViewController.xib; sourceTree = "<group>"; };
-		91DAED4F1D1263C400460F4E /* JiaoYiJiLuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaoYiJiLuCell.h; sourceTree = "<group>"; };
-		91DAED501D1263C400460F4E /* JiaoYiJiLuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaoYiJiLuCell.m; sourceTree = "<group>"; };
-		91DAED511D1263C400460F4E /* JiaoYiJiLuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JiaoYiJiLuCell.xib; sourceTree = "<group>"; };
-		91DAED521D1263C400460F4E /* JiLuCaiViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiLuCaiViewCell.h; sourceTree = "<group>"; };
-		91DAED531D1263C400460F4E /* JiLuCaiViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiLuCaiViewCell.m; sourceTree = "<group>"; };
-		91DAED541D1263C400460F4E /* JiLuCaiViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JiLuCaiViewCell.xib; sourceTree = "<group>"; };
-		91DAED551D1263C400460F4E /* TradeContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradeContentView.h; sourceTree = "<group>"; };
-		91DAED561D1263C400460F4E /* TradeContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradeContentView.m; sourceTree = "<group>"; };
-		91DAED571D1263C400460F4E /* TradeContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TradeContentView.xib; sourceTree = "<group>"; };
-		91DAED581D1263C400460F4E /* TypeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeTableViewCell.h; sourceTree = "<group>"; };
-		91DAED591D1263C400460F4E /* TypeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeTableViewCell.m; sourceTree = "<group>"; };
-		91DAED5A1D1263C400460F4E /* TypeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TypeTableViewCell.xib; sourceTree = "<group>"; };
-		91DAED5D1D1263C400460F4E /* BookingManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingManagerViewController.h; sourceTree = "<group>"; };
-		91DAED5E1D1263C400460F4E /* BookingManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingManagerViewController.m; sourceTree = "<group>"; };
-		91DAED5F1D1263C400460F4E /* BookingManagerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingManagerViewController.xib; sourceTree = "<group>"; };
-		91DAED621D1263C400460F4E /* BookManagerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookManagerTableViewCell.h; sourceTree = "<group>"; };
-		91DAED631D1263C400460F4E /* BookManagerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookManagerTableViewCell.m; sourceTree = "<group>"; };
-		91DAED641D1263C400460F4E /* BookManagerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookManagerTableViewCell.xib; sourceTree = "<group>"; };
-		91DAED671D1263C400460F4E /* BaseSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSettingsViewController.h; sourceTree = "<group>"; };
-		91DAED681D1263C400460F4E /* BaseSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseSettingsViewController.xib; sourceTree = "<group>"; };
-		91DAED6B1D1263C400460F4E /* AboutSettingsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutSettingsView.h; sourceTree = "<group>"; };
-		91DAED6C1D1263C400460F4E /* AboutSettingsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutSettingsView.m; sourceTree = "<group>"; };
-		91DAED6D1D1263C400460F4E /* AboutSettingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutSettingsView.xib; sourceTree = "<group>"; };
-		91DAED6E1D1263C400460F4E /* DeviceTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceTestView.h; sourceTree = "<group>"; };
-		91DAED6F1D1263C400460F4E /* DeviceTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceTestView.m; sourceTree = "<group>"; };
-		91DAED701D1263C400460F4E /* DeviceTestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceTestView.xib; sourceTree = "<group>"; };
-		91DAED711D1263C400460F4E /* EstimateSettingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EstimateSettingView.h; sourceTree = "<group>"; };
-		91DAED721D1263C400460F4E /* EstimateSettingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EstimateSettingView.m; sourceTree = "<group>"; };
-		91DAED731D1263C400460F4E /* EstimateSettingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EstimateSettingView.xib; sourceTree = "<group>"; };
-		91DAED741D1263C400460F4E /* EstimateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EstimateView.h; sourceTree = "<group>"; };
-		91DAED751D1263C400460F4E /* EstimateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EstimateView.m; sourceTree = "<group>"; };
-		91DAED761D1263C400460F4E /* EstimateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EstimateView.xib; sourceTree = "<group>"; };
-		91DAED771D1263C400460F4E /* FoodCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodCollectionViewCell.h; sourceTree = "<group>"; };
-		91DAED781D1263C400460F4E /* FoodCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodCollectionViewCell.m; sourceTree = "<group>"; };
-		91DAED791D1263C400460F4E /* FoodCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodCollectionViewCell.xib; sourceTree = "<group>"; };
-		91DAED7A1D1263C400460F4E /* LM_button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LM_button.h; sourceTree = "<group>"; };
-		91DAED7B1D1263C400460F4E /* LM_button.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LM_button.m; sourceTree = "<group>"; };
-		91DAED7C1D1263C400460F4E /* PrintSettingsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintSettingsView.h; sourceTree = "<group>"; };
-		91DAED7D1D1263C400460F4E /* PrintSettingsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintSettingsView.m; sourceTree = "<group>"; };
-		91DAED7E1D1263C400460F4E /* PrintSettingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrintSettingsView.xib; sourceTree = "<group>"; };
-		91DAED7F1D1263C400460F4E /* PrintSettingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintSettingTableViewCell.h; sourceTree = "<group>"; };
-		91DAED801D1263C400460F4E /* PrintSettingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintSettingTableViewCell.m; sourceTree = "<group>"; };
-		91DAED811D1263C400460F4E /* PrintSettingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrintSettingTableViewCell.xib; sourceTree = "<group>"; };
-		91DAED821D1263C400460F4E /* UpdatePasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdatePasswordView.h; sourceTree = "<group>"; };
-		91DAED831D1263C400460F4E /* UpdatePasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdatePasswordView.m; sourceTree = "<group>"; };
-		91DAED841D1263C400460F4E /* UpdatePasswordView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UpdatePasswordView.xib; sourceTree = "<group>"; };
-		91DAED871D1263C400460F4E /* VipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VipViewController.h; sourceTree = "<group>"; };
-		91DAED881D1263C400460F4E /* VipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VipViewController.m; sourceTree = "<group>"; };
-		91DAED891D1263C400460F4E /* VipViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VipViewController.xib; sourceTree = "<group>"; };
-		91DAED8C1D1263C400460F4E /* VIPLeftView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VIPLeftView.h; sourceTree = "<group>"; };
-		91DAED8D1D1263C400460F4E /* VIPLeftView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VIPLeftView.m; sourceTree = "<group>"; };
-		91DAED8E1D1263C400460F4E /* VIPLeftView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VIPLeftView.xib; sourceTree = "<group>"; };
-		91DAED8F1D1263C500460F4E /* VIPTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VIPTableViewCell.h; sourceTree = "<group>"; };
-		91DAED901D1263C500460F4E /* VIPTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VIPTableViewCell.m; sourceTree = "<group>"; };
-		91DAED911D1263C500460F4E /* VIPTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VIPTableViewCell.xib; sourceTree = "<group>"; };
+		91DAEDBA1D1265C200460F4E /* BaseSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -424,13 +292,6 @@
 		76BB28481D12615F0093DEDF /* Category(分类) */ = {
 			isa = PBXGroup;
 			children = (
-				76D6E9BC1D0FA3070014DA13 /* Expand(拓展) */,
-				91DAED401D1263C400460F4E /* FunctionMenu(功能菜单) */,
-				76D6E9D81D0FA3070014DA13 /* Main(主界面) */,
-				76D6E9F81D0FA3070014DA13 /* Other */,
-				76D6E9FD1D0FA3070014DA13 /* Resources(资源) */,
-				76D6EA041D0FA3070014DA13 /* Vendors(第三方) */,
-				76D45C7D1D0CFD3B0026491F /* Assets.xcassets */,
 			);
 			path = "Category(分类)";
 			sourceTree = "<group>";
@@ -601,7 +462,7 @@
 			isa = PBXGroup;
 			children = (
 				76BB28751D12615F0093DEDF /* BaseSettingsViewController.h */,
-				76BB28761D12615F0093DEDF /* BaseSettingsViewController.m */,
+				91DAEDBA1D1265C200460F4E /* BaseSettingsViewController.m */,
 				76BB28771D12615F0093DEDF /* BaseSettingsViewController.xib */,
 			);
 			path = Controller;
@@ -752,24 +613,22 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		91DAED401D1263C400460F4E /* FunctionMenu(功能菜单) */ = {
+		76BB28AE1D12615F0093DEDF /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				91DAED411D1263C400460F4E /* DataReport(数据报告) */,
-				91DAED451D1263C400460F4E /* OrderRecord(订单记录) */,
-				91DAED5B1D1263C400460F4E /* ReserveManager(预定管理) */,
-				91DAED651D1263C400460F4E /* Settings(系统设置) */,
-				91DAED851D1263C400460F4E /* VIPManager(会员管理) */,
 			);
-			path = "FunctionMenu(功能菜单)";
+			path = Model;
 			sourceTree = "<group>";
 		};
-		91DAED411D1263C400460F4E /* DataReport(数据报告) */ = {
+		76BB28AF1D12615F0093DEDF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				91DAED421D1263C400460F4E /* Controller */,
-				91DAED431D1263C400460F4E /* Model */,
-				91DAED441D1263C400460F4E /* View */,
+				76BB28B01D12615F0093DEDF /* OrderingCollectionViewCell.h */,
+				76BB28B11D12615F0093DEDF /* OrderingCollectionViewCell.m */,
+				76BB28B21D12615F0093DEDF /* OrderingCollectionViewCell.xib */,
+				76BB28B31D12615F0093DEDF /* OrderingTableViewCell.h */,
+				76BB28B41D12615F0093DEDF /* OrderingTableViewCell.m */,
+				76BB28B51D12615F0093DEDF /* OrderingTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -784,7 +643,7 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
-		91DAED421D1263C400460F4E /* Controller */ = {
+		76BB28B71D12615F0093DEDF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				76BB28B81D12615F0093DEDF /* MainViewController.h */,
@@ -794,14 +653,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		91DAED431D1263C400460F4E /* Model */ = {
+		76BB28BB1D12615F0093DEDF /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		91DAED441D1263C400460F4E /* View */ = {
+		76BB28BC1D12615F0093DEDF /* View */ = {
 			isa = PBXGroup;
 			children = (
 				76BB28BD1D12615F0093DEDF /* MainLeftTableViewCell.h */,
@@ -817,112 +676,91 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		91DAED451D1263C400460F4E /* OrderRecord(订单记录) */ = {
+		76BB28C61D12615F0093DEDF /* Retail(零售) */ = {
 			isa = PBXGroup;
 			children = (
-				91DAED461D1263C400460F4E /* Controller */,
-				91DAED4D1D1263C400460F4E /* Model */,
-				91DAED4E1D1263C400460F4E /* View */,
+				76BB28C71D12615F0093DEDF /* Controller */,
+				76BB28C81D12615F0093DEDF /* Model */,
+				76BB28C91D12615F0093DEDF /* View */,
 			);
-			path = "OrderRecord(订单记录)";
+			path = "Retail(零售)";
 			sourceTree = "<group>";
 		};
-		91DAED461D1263C400460F4E /* Controller */ = {
+		76BB28C71D12615F0093DEDF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				91DAED471D1263C400460F4E /* JiaoYiJiLuViewController.h */,
-				91DAED481D1263C400460F4E /* JiaoYiJiLuViewController.m */,
-				91DAED491D1263C400460F4E /* JiaoYiJiLuViewController.xib */,
-				91DAED4A1D1263C400460F4E /* TradeViewController.h */,
-				91DAED4B1D1263C400460F4E /* TradeViewController.m */,
-				91DAED4C1D1263C400460F4E /* TradeViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		91DAED4D1D1263C400460F4E /* Model */ = {
+		76BB28C81D12615F0093DEDF /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		91DAED4E1D1263C400460F4E /* View */ = {
+		76BB28C91D12615F0093DEDF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				91DAED4F1D1263C400460F4E /* JiaoYiJiLuCell.h */,
-				91DAED501D1263C400460F4E /* JiaoYiJiLuCell.m */,
-				91DAED511D1263C400460F4E /* JiaoYiJiLuCell.xib */,
-				91DAED521D1263C400460F4E /* JiLuCaiViewCell.h */,
-				91DAED531D1263C400460F4E /* JiLuCaiViewCell.m */,
-				91DAED541D1263C400460F4E /* JiLuCaiViewCell.xib */,
-				91DAED551D1263C400460F4E /* TradeContentView.h */,
-				91DAED561D1263C400460F4E /* TradeContentView.m */,
-				91DAED571D1263C400460F4E /* TradeContentView.xib */,
-				91DAED581D1263C400460F4E /* TypeTableViewCell.h */,
-				91DAED591D1263C400460F4E /* TypeTableViewCell.m */,
-				91DAED5A1D1263C400460F4E /* TypeTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		91DAED5B1D1263C400460F4E /* ReserveManager(预定管理) */ = {
+		76BB28CA1D12615F0093DEDF /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				91DAED5C1D1263C400460F4E /* Controller */,
-				91DAED601D1263C400460F4E /* Model */,
-				91DAED611D1263C400460F4E /* View */,
+				76BB28CB1D12615F0093DEDF /* AppDelegate.h */,
+				76BB28CC1D12615F0093DEDF /* AppDelegate.m */,
+				76BB28CD1D12615F0093DEDF /* main.m */,
+				76BB28CE1D12615F0093DEDF /* PrefixHeader.pch */,
 			);
 			path = Other;
 			sourceTree = "<group>";
 		};
-		91DAED5C1D1263C400460F4E /* Controller */ = {
+		76BB28CF1D12615F0093DEDF /* Resources(资源) */ = {
 			isa = PBXGroup;
 			children = (
-				91DAED5D1D1263C400460F4E /* BookingManagerViewController.h */,
-				91DAED5E1D1263C400460F4E /* BookingManagerViewController.m */,
-				91DAED5F1D1263C400460F4E /* BookingManagerViewController.xib */,
+				76BB28D01D12615F0093DEDF /* Image */,
+				76BB28D11D12615F0093DEDF /* Plist */,
+				76BB28D31D12615F0093DEDF /* Storyboard */,
 			);
 			path = "Resources(资源)";
 			sourceTree = "<group>";
 		};
-		91DAED601D1263C400460F4E /* Model */ = {
+		76BB28D01D12615F0093DEDF /* Image */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Image;
 			sourceTree = "<group>";
 		};
-		91DAED611D1263C400460F4E /* View */ = {
+		76BB28D11D12615F0093DEDF /* Plist */ = {
 			isa = PBXGroup;
 			children = (
-				91DAED621D1263C400460F4E /* BookManagerTableViewCell.h */,
-				91DAED631D1263C400460F4E /* BookManagerTableViewCell.m */,
-				91DAED641D1263C400460F4E /* BookManagerTableViewCell.xib */,
+				76BB28D21D12615F0093DEDF /* Info.plist */,
 			);
 			path = Plist;
 			sourceTree = "<group>";
 		};
-		91DAED651D1263C400460F4E /* Settings(系统设置) */ = {
+		76BB28D31D12615F0093DEDF /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				91DAED661D1263C400460F4E /* Controller */,
-				91DAED691D1263C400460F4E /* Model */,
-				91DAED6A1D1263C400460F4E /* View */,
+				76BB28D41D12615F0093DEDF /* LaunchScreen.storyboard */,
+				76BB28D51D12615F0093DEDF /* Main.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
-		91DAED661D1263C400460F4E /* Controller */ = {
+		76BB28D61D12615F0093DEDF /* Vendors(第三方) */ = {
 			isa = PBXGroup;
 			children = (
-				91DAED671D1263C400460F4E /* BaseSettingsViewController.h */,
-				91DAED681D1263C400460F4E /* BaseSettingsViewController.xib */,
+				76BB28D71D12615F0093DEDF /* FSCalendar */,
 			);
 			path = "Vendors(第三方)";
 			sourceTree = "<group>";
 		};
-		91DAED691D1263C400460F4E /* Model */ = {
+		76BB28D71D12615F0093DEDF /* FSCalendar */ = {
 			isa = PBXGroup;
 			children = (
 				76BB28D81D12615F0093DEDF /* FSCalendar+IBExtension.h */,
@@ -958,59 +796,43 @@
 			path = FSCalendar;
 			sourceTree = "<group>";
 		};
-		91DAED6A1D1263C400460F4E /* View */ = {
+		76D45C651D0CFD3B0026491F = {
 			isa = PBXGroup;
 			children = (
-				91DAED6B1D1263C400460F4E /* AboutSettingsView.h */,
-				91DAED6C1D1263C400460F4E /* AboutSettingsView.m */,
-				91DAED6D1D1263C400460F4E /* AboutSettingsView.xib */,
-				91DAED6E1D1263C400460F4E /* DeviceTestView.h */,
-				91DAED6F1D1263C400460F4E /* DeviceTestView.m */,
-				91DAED701D1263C400460F4E /* DeviceTestView.xib */,
-				91DAED711D1263C400460F4E /* EstimateSettingView.h */,
-				91DAED721D1263C400460F4E /* EstimateSettingView.m */,
-				91DAED731D1263C400460F4E /* EstimateSettingView.xib */,
-				91DAED741D1263C400460F4E /* EstimateView.h */,
-				91DAED751D1263C400460F4E /* EstimateView.m */,
-				91DAED761D1263C400460F4E /* EstimateView.xib */,
-				91DAED771D1263C400460F4E /* FoodCollectionViewCell.h */,
-				91DAED781D1263C400460F4E /* FoodCollectionViewCell.m */,
-				91DAED791D1263C400460F4E /* FoodCollectionViewCell.xib */,
-				91DAED7A1D1263C400460F4E /* LM_button.h */,
-				91DAED7B1D1263C400460F4E /* LM_button.m */,
-				91DAED7C1D1263C400460F4E /* PrintSettingsView.h */,
-				91DAED7D1D1263C400460F4E /* PrintSettingsView.m */,
-				91DAED7E1D1263C400460F4E /* PrintSettingsView.xib */,
-				91DAED7F1D1263C400460F4E /* PrintSettingTableViewCell.h */,
-				91DAED801D1263C400460F4E /* PrintSettingTableViewCell.m */,
-				91DAED811D1263C400460F4E /* PrintSettingTableViewCell.xib */,
-				91DAED821D1263C400460F4E /* UpdatePasswordView.h */,
-				91DAED831D1263C400460F4E /* UpdatePasswordView.m */,
-				91DAED841D1263C400460F4E /* UpdatePasswordView.xib */,
+				76D45C701D0CFD3B0026491F /* G2Catering */,
+				76D45C8A1D0CFD3B0026491F /* G2CateringTests */,
+				76D45C951D0CFD3C0026491F /* G2CateringUITests */,
+				76D45C6F1D0CFD3B0026491F /* Products */,
+				BCBCDE88EDDFD9597B01BB42 /* Pods */,
+				61409CEBC5EC687B81CF5D5F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		91DAED851D1263C400460F4E /* VIPManager(会员管理) */ = {
+		76D45C6F1D0CFD3B0026491F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				91DAED861D1263C400460F4E /* Controller */,
-				91DAED8A1D1263C400460F4E /* Model */,
-				91DAED8B1D1263C400460F4E /* View */,
+				76D45C6E1D0CFD3B0026491F /* G2Catering.app */,
+				76D45C871D0CFD3B0026491F /* G2CateringTests.xctest */,
+				76D45C921D0CFD3C0026491F /* G2CateringUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		91DAED861D1263C400460F4E /* Controller */ = {
+		76D45C701D0CFD3B0026491F /* G2Catering */ = {
 			isa = PBXGroup;
 			children = (
-				91DAED871D1263C400460F4E /* VipViewController.h */,
-				91DAED881D1263C400460F4E /* VipViewController.m */,
-				91DAED891D1263C400460F4E /* VipViewController.xib */,
+				76BB28471D12615F0093DEDF /* Expand(拓展) */,
+				76BB28511D12615F0093DEDF /* FunctionMenu(功能菜单) */,
+				76BB28A11D12615F0093DEDF /* Main(主界面) */,
+				76BB28CA1D12615F0093DEDF /* Other */,
+				76BB28CF1D12615F0093DEDF /* Resources(资源) */,
+				76BB28D61D12615F0093DEDF /* Vendors(第三方) */,
+				76D45C7D1D0CFD3B0026491F /* Assets.xcassets */,
 			);
 			path = G2Catering;
 			sourceTree = "<group>";
 		};
-		91DAED8A1D1263C400460F4E /* Model */ = {
+		76D45C8A1D0CFD3B0026491F /* G2CateringTests */ = {
 			isa = PBXGroup;
 			children = (
 				76D45C8B1D0CFD3B0026491F /* G2CateringTests.m */,
@@ -1019,15 +841,11 @@
 			path = G2CateringTests;
 			sourceTree = "<group>";
 		};
-		91DAED8B1D1263C400460F4E /* View */ = {
+		76D45C951D0CFD3C0026491F /* G2CateringUITests */ = {
 			isa = PBXGroup;
 			children = (
-				91DAED8C1D1263C400460F4E /* VIPLeftView.h */,
-				91DAED8D1D1263C400460F4E /* VIPLeftView.m */,
-				91DAED8E1D1263C400460F4E /* VIPLeftView.xib */,
-				91DAED8F1D1263C500460F4E /* VIPTableViewCell.h */,
-				91DAED901D1263C500460F4E /* VIPTableViewCell.m */,
-				91DAED911D1263C500460F4E /* VIPTableViewCell.xib */,
+				76D45C961D0CFD3C0026491F /* G2CateringUITests.m */,
+				76D45C981D0CFD3C0026491F /* Info.plist */,
 			);
 			path = G2CateringUITests;
 			sourceTree = "<group>";
@@ -1147,38 +965,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91DAEDB51D1263C500460F4E /* VipViewController.xib in Resources */,
-				91DAED991D1263C500460F4E /* JiLuCaiViewCell.xib in Resources */,
-				91DAEDA61D1263C500460F4E /* DeviceTestView.xib in Resources */,
-				91DAED9B1D1263C500460F4E /* TradeContentView.xib in Resources */,
-				76D6EA0F1D0FA3070014DA13 /* MainRightView.xib in Resources */,
-				91DAED9D1D1263C500460F4E /* TypeTableViewCell.xib in Resources */,
-				91DAEDA81D1263C500460F4E /* EstimateSettingView.xib in Resources */,
-				91DAEDAC1D1263C500460F4E /* FoodCollectionViewCell.xib in Resources */,
-				91DAED951D1263C500460F4E /* TradeViewController.xib in Resources */,
-				91DAEDB11D1263C500460F4E /* PrintSettingTableViewCell.xib in Resources */,
-				91DAED9F1D1263C500460F4E /* BookingManagerViewController.xib in Resources */,
-				81E651071D115516000A26C7 /* LICENSE in Resources */,
-				91DAEDB71D1263C500460F4E /* VIPLeftView.xib in Resources */,
-				76D6EA131D0FA3070014DA13 /* LaunchScreen.storyboard in Resources */,
-				91DAEDA21D1263C500460F4E /* BaseSettingsViewController.xib in Resources */,
-				91DAED931D1263C500460F4E /* JiaoYiJiLuViewController.xib in Resources */,
-				91DAEDAA1D1263C500460F4E /* EstimateView.xib in Resources */,
-				76D6EA0D1D0FA3070014DA13 /* MainLeftView.xib in Resources */,
-				76D6EA601D0FE4550014DA13 /* DinnerTableViewController.xib in Resources */,
-				76D6EA071D0FA3070014DA13 /* OrderingViewController.xib in Resources */,
-				91DAEDB31D1263C500460F4E /* UpdatePasswordView.xib in Resources */,
-				91DAEDA41D1263C500460F4E /* AboutSettingsView.xib in Resources */,
+				76BB28FB1D1261600093DEDF /* JiaoYiJiLuCell.xib in Resources */,
+				76BB29261D1261600093DEDF /* MainViewController.xib in Resources */,
+				76BB291A1D1261600093DEDF /* VIPLeftView.xib in Resources */,
 				76D45C7E1D0CFD3B0026491F /* Assets.xcassets in Resources */,
-				91DAEDB91D1263C500460F4E /* VIPTableViewCell.xib in Resources */,
-				76D6EA091D0FA3070014DA13 /* OrderingCollectionViewCell.xib in Resources */,
-				91DAEDA11D1263C500460F4E /* BookManagerTableViewCell.xib in Resources */,
-				91DAED971D1263C500460F4E /* JiaoYiJiLuCell.xib in Resources */,
-				76D6EA141D0FA3070014DA13 /* Main.storyboard in Resources */,
-				76BB27501D1142310093DEDF /* OrderingTableViewCell.xib in Resources */,
-				76D6EA0B1D0FA3070014DA13 /* MainViewController.xib in Resources */,
-				76D6EA121D0FA3070014DA13 /* Info.plist in Resources */,
-				91DAEDAF1D1263C500460F4E /* PrintSettingsView.xib in Resources */,
+				76BB29091D1261600093DEDF /* DeviceTestView.xib in Resources */,
+				76BB290F1D1261600093DEDF /* FoodCollectionViewCell.xib in Resources */,
+				76BB291E1D1261600093DEDF /* DinnerTableViewController.xib in Resources */,
+				76BB29071D1261600093DEDF /* AboutSettingsView.xib in Resources */,
+				76E9145D1D126297001ABA9D /* BookingManagerViewController.xib in Resources */,
+				76BB292F1D1261600093DEDF /* Info.plist in Resources */,
+				76BB290D1D1261600093DEDF /* EstimateView.xib in Resources */,
+				76BB29221D1261600093DEDF /* OrderingCollectionViewCell.xib in Resources */,
+				76BB29311D1261600093DEDF /* Main.storyboard in Resources */,
+				76BB29161D1261600093DEDF /* UpdatePasswordView.xib in Resources */,
+				76BB28F71D1261600093DEDF /* JiaoYiJiLuViewController.xib in Resources */,
+				76BB29011D1261600093DEDF /* TypeTableViewCell.xib in Resources */,
+				76BB292C1D1261600093DEDF /* MainRightView.xib in Resources */,
+				76BB29241D1261600093DEDF /* OrderingTableViewCell.xib in Resources */,
+				76BB29201D1261600093DEDF /* OrderingViewController.xib in Resources */,
+				76BB29301D1261600093DEDF /* LaunchScreen.storyboard in Resources */,
+				76BB29181D1261600093DEDF /* VipViewController.xib in Resources */,
+				76BB29281D1261600093DEDF /* MainLeftTableViewCell.xib in Resources */,
+				76BB29051D1261600093DEDF /* BaseSettingsViewController.xib in Resources */,
+				76BB291C1D1261600093DEDF /* VIPTableViewCell.xib in Resources */,
+				76BB292A1D1261600093DEDF /* MainLeftView.xib in Resources */,
+				76BB28FD1D1261600093DEDF /* JiLuCaiViewCell.xib in Resources */,
+				76BB28F91D1261600093DEDF /* TradeViewController.xib in Resources */,
+				76BB293B1D1261600093DEDF /* LICENSE in Resources */,
+				76BB29141D1261600093DEDF /* PrintSettingTableViewCell.xib in Resources */,
+				76BB28FF1D1261600093DEDF /* TradeContentView.xib in Resources */,
+				76BB290B1D1261600093DEDF /* EstimateSettingView.xib in Resources */,
+				76BB29121D1261600093DEDF /* PrintSettingsView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1251,50 +1069,51 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91DAEDB21D1263C500460F4E /* UpdatePasswordView.m in Sources */,
-				91DAEDA91D1263C500460F4E /* EstimateView.m in Sources */,
-				91DAED9A1D1263C500460F4E /* TradeContentView.m in Sources */,
-				81E651031D115516000A26C7 /* FSCalendarConstance.m in Sources */,
-				76D6EA061D0FA3070014DA13 /* OrderingViewController.m in Sources */,
-				76D6EA0C1D0FA3070014DA13 /* MainLeftView.m in Sources */,
-				81E651081D115516000A26C7 /* NSDate+FSExtension.m in Sources */,
-				81E6510B1D115516000A26C7 /* README.md in Sources */,
-				91DAEDB61D1263C500460F4E /* VIPLeftView.m in Sources */,
-				81E651021D115516000A26C7 /* FSCalendarCollectionView.m in Sources */,
-				81E651001D115516000A26C7 /* FSCalendarAppearance.m in Sources */,
-				81E651091D115516000A26C7 /* NSDate+TEAExtensions.m in Sources */,
-				76D6EA0E1D0FA3070014DA13 /* MainRightView.m in Sources */,
-				81E6510C1D115516000A26C7 /* UIView+FSExtension.m in Sources */,
-				81E650FE1D115516000A26C7 /* FSCalendar+IBExtension.m in Sources */,
-				76D6EA5F1D0FE4550014DA13 /* DinnerTableViewController.m in Sources */,
-				81E6510A1D115516000A26C7 /* NSString+FSExtension.m in Sources */,
-				91DAEDB41D1263C500460F4E /* VipViewController.m in Sources */,
-				76D6EA081D0FA3070014DA13 /* OrderingCollectionViewCell.m in Sources */,
-				76D6EA051D0FA3070014DA13 /* HttpTool.m in Sources */,
-				81E651051D115516000A26C7 /* FSCalendarHeader.m in Sources */,
-				76D6EA0A1D0FA3070014DA13 /* MainViewController.m in Sources */,
-				91DAED921D1263C500460F4E /* JiaoYiJiLuViewController.m in Sources */,
-				91DAEDB81D1263C500460F4E /* VIPTableViewCell.m in Sources */,
-				91DAEDB01D1263C500460F4E /* PrintSettingTableViewCell.m in Sources */,
-				81E651061D115516000A26C7 /* FSCalendarStickyHeader.m in Sources */,
-				91DAEDA31D1263C500460F4E /* AboutSettingsView.m in Sources */,
-				91DAED961D1263C500460F4E /* JiaoYiJiLuCell.m in Sources */,
-				91DAED9C1D1263C500460F4E /* TypeTableViewCell.m in Sources */,
-				76D6EA111D0FA3070014DA13 /* main.m in Sources */,
-				81E651011D115516000A26C7 /* FSCalendarCell.m in Sources */,
-				91DAEDAD1D1263C500460F4E /* LM_button.m in Sources */,
-				91DAEDA71D1263C500460F4E /* EstimateSettingView.m in Sources */,
-				81E650FF1D115516000A26C7 /* FSCalendar.m in Sources */,
-				81E651041D115516000A26C7 /* FSCalendarFlowLayout.m in Sources */,
-				91DAEDAE1D1263C500460F4E /* PrintSettingsView.m in Sources */,
-				91DAED981D1263C500460F4E /* JiLuCaiViewCell.m in Sources */,
-				91DAED941D1263C500460F4E /* TradeViewController.m in Sources */,
-				76D6EA101D0FA3070014DA13 /* AppDelegate.m in Sources */,
-				91DAEDA51D1263C500460F4E /* DeviceTestView.m in Sources */,
-				76BB274F1D1142310093DEDF /* OrderingTableViewCell.m in Sources */,
-				91DAEDA01D1263C500460F4E /* BookManagerTableViewCell.m in Sources */,
-				91DAEDAB1D1263C500460F4E /* FoodCollectionViewCell.m in Sources */,
-				91DAED9E1D1263C500460F4E /* BookingManagerViewController.m in Sources */,
+				76BB29171D1261600093DEDF /* VipViewController.m in Sources */,
+				76BB29271D1261600093DEDF /* MainLeftTableViewCell.m in Sources */,
+				76BB291B1D1261600093DEDF /* VIPTableViewCell.m in Sources */,
+				76BB290A1D1261600093DEDF /* EstimateSettingView.m in Sources */,
+				76BB293A1D1261600093DEDF /* FSCalendarStickyHeader.m in Sources */,
+				76BB29401D1261600093DEDF /* UIView+FSExtension.m in Sources */,
+				76BB29211D1261600093DEDF /* OrderingCollectionViewCell.m in Sources */,
+				76BB29381D1261600093DEDF /* FSCalendarFlowLayout.m in Sources */,
+				76BB29351D1261600093DEDF /* FSCalendarCell.m in Sources */,
+				76BB292E1D1261600093DEDF /* main.m in Sources */,
+				76BB291F1D1261600093DEDF /* OrderingViewController.m in Sources */,
+				76BB29191D1261600093DEDF /* VIPLeftView.m in Sources */,
+				76BB29131D1261600093DEDF /* PrintSettingTableViewCell.m in Sources */,
+				76BB29371D1261600093DEDF /* FSCalendarConstance.m in Sources */,
+				76BB293E1D1261600093DEDF /* NSString+FSExtension.m in Sources */,
+				76BB29291D1261600093DEDF /* MainLeftView.m in Sources */,
+				76BB28F61D1261600093DEDF /* JiaoYiJiLuViewController.m in Sources */,
+				76BB291D1D1261600093DEDF /* DinnerTableViewController.m in Sources */,
+				76BB29391D1261600093DEDF /* FSCalendarHeader.m in Sources */,
+				76BB28FE1D1261600093DEDF /* TradeContentView.m in Sources */,
+				76BB29001D1261600093DEDF /* TypeTableViewCell.m in Sources */,
+				76BB29251D1261600093DEDF /* MainViewController.m in Sources */,
+				76BB290C1D1261600093DEDF /* EstimateView.m in Sources */,
+				76BB28FC1D1261600093DEDF /* JiLuCaiViewCell.m in Sources */,
+				76BB29081D1261600093DEDF /* DeviceTestView.m in Sources */,
+				76BB29111D1261600093DEDF /* PrintSettingsView.m in Sources */,
+				76BB292B1D1261600093DEDF /* MainRightView.m in Sources */,
+				76BB28F51D1261600093DEDF /* HttpTool.m in Sources */,
+				76BB293D1D1261600093DEDF /* NSDate+TEAExtensions.m in Sources */,
+				76BB29101D1261600093DEDF /* LM_button.m in Sources */,
+				76BB29321D1261600093DEDF /* FSCalendar+IBExtension.m in Sources */,
+				76BB29361D1261600093DEDF /* FSCalendarCollectionView.m in Sources */,
+				76BB292D1D1261600093DEDF /* AppDelegate.m in Sources */,
+				76BB290E1D1261600093DEDF /* FoodCollectionViewCell.m in Sources */,
+				76BB28F81D1261600093DEDF /* TradeViewController.m in Sources */,
+				76BB29151D1261600093DEDF /* UpdatePasswordView.m in Sources */,
+				76BB29331D1261600093DEDF /* FSCalendar.m in Sources */,
+				76BB29231D1261600093DEDF /* OrderingTableViewCell.m in Sources */,
+				76BB29061D1261600093DEDF /* AboutSettingsView.m in Sources */,
+				91DAEDBB1D1265C200460F4E /* BaseSettingsViewController.m in Sources */,
+				76BB293C1D1261600093DEDF /* NSDate+FSExtension.m in Sources */,
+				76BB293F1D1261600093DEDF /* README.md in Sources */,
+				76BB28FA1D1261600093DEDF /* JiaoYiJiLuCell.m in Sources */,
+				76E9145C1D126297001ABA9D /* BookingManagerViewController.m in Sources */,
+				76BB29341D1261600093DEDF /* FSCalendarAppearance.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
