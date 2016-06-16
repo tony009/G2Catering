@@ -70,6 +70,26 @@
     
 }
 
+//点菜功能
+- (IBAction)OrderAction:(UIButton *)sender {
+    
+    OrderingViewController *oVC = [[OrderingViewController alloc]init];
+    
+    
+    [self switchViewController:oVC];
+    
+    
+}
+
+//餐台功能
+- (IBAction)dinnerTableAction:(UIButton *)sender {
+    
+    DinnerTableViewController *dtVC = [[DinnerTableViewController alloc]init];
+    
+
+    [self switchViewController:dtVC];
+    
+}
 
 
 -(void)switchViewController:(UIViewController *)vc{
