@@ -90,6 +90,8 @@
 		817CA0961D1283A300F1F61E /* LingShouViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 817CA0941D1283A300F1F61E /* LingShouViewController.xib */; };
 		817CA09A1D1283AC00F1F61E /* LingShouTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 817CA0981D1283AC00F1F61E /* LingShouTableViewCell.m */; };
 		817CA09B1D1283AC00F1F61E /* LingShouTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 817CA0991D1283AC00F1F61E /* LingShouTableViewCell.xib */; };
+		817CA09F1D12850100F1F61E /* CheDanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 817CA09D1D12850100F1F61E /* CheDanView.m */; };
+		817CA0A01D12850100F1F61E /* CheDanView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 817CA09E1D12850100F1F61E /* CheDanView.xib */; };
 		91DAEDBB1D1265C200460F4E /* BaseSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAEDBA1D1265C200460F4E /* BaseSettingsViewController.m */; };
 		91DAEDBF1D1274CE00460F4E /* BookManagerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAEDBD1D1274CE00460F4E /* BookManagerTableViewCell.m */; };
 		91DAEDC01D1274CE00460F4E /* BookManagerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAEDBE1D1274CE00460F4E /* BookManagerTableViewCell.xib */; };
@@ -252,6 +254,9 @@
 		817CA0971D1283AC00F1F61E /* LingShouTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LingShouTableViewCell.h; sourceTree = "<group>"; };
 		817CA0981D1283AC00F1F61E /* LingShouTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LingShouTableViewCell.m; sourceTree = "<group>"; };
 		817CA0991D1283AC00F1F61E /* LingShouTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LingShouTableViewCell.xib; sourceTree = "<group>"; };
+		817CA09C1D12850100F1F61E /* CheDanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CheDanView.h; path = ../Model/CheDanView.h; sourceTree = "<group>"; };
+		817CA09D1D12850100F1F61E /* CheDanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CheDanView.m; path = ../Model/CheDanView.m; sourceTree = "<group>"; };
+		817CA09E1D12850100F1F61E /* CheDanView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CheDanView.xib; path = ../Model/CheDanView.xib; sourceTree = "<group>"; };
 		8A99B5CD036CAE879C22EB66 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		91DAEDBA1D1265C200460F4E /* BaseSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSettingsViewController.m; sourceTree = "<group>"; };
 		91DAEDBC1D1274CE00460F4E /* BookManagerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookManagerTableViewCell.h; sourceTree = "<group>"; };
@@ -413,6 +418,9 @@
 		76BB285F1D12615F0093DEDF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				817CA09C1D12850100F1F61E /* CheDanView.h */,
+				817CA09D1D12850100F1F61E /* CheDanView.m */,
+				817CA09E1D12850100F1F61E /* CheDanView.xib */,
 				76BB28601D12615F0093DEDF /* JiaoYiJiLuCell.h */,
 				76BB28611D12615F0093DEDF /* JiaoYiJiLuCell.m */,
 				76BB28621D12615F0093DEDF /* JiaoYiJiLuCell.xib */,
@@ -1002,6 +1010,7 @@
 				91DAEDC01D1274CE00460F4E /* BookManagerTableViewCell.xib in Resources */,
 				76BB290D1D1261600093DEDF /* EstimateView.xib in Resources */,
 				817CA09B1D1283AC00F1F61E /* LingShouTableViewCell.xib in Resources */,
+				817CA0A01D12850100F1F61E /* CheDanView.xib in Resources */,
 				76BB29221D1261600093DEDF /* OrderingCollectionViewCell.xib in Resources */,
 				76BB29311D1261600093DEDF /* Main.storyboard in Resources */,
 				76BB29161D1261600093DEDF /* UpdatePasswordView.xib in Resources */,
@@ -1113,6 +1122,7 @@
 				76BB293E1D1261600093DEDF /* NSString+FSExtension.m in Sources */,
 				76BB29291D1261600093DEDF /* MainLeftView.m in Sources */,
 				76BB28F61D1261600093DEDF /* JiaoYiJiLuViewController.m in Sources */,
+				817CA09F1D12850100F1F61E /* CheDanView.m in Sources */,
 				76BB291D1D1261600093DEDF /* DinnerTableViewController.m in Sources */,
 				817CA0951D1283A300F1F61E /* LingShouViewController.m in Sources */,
 				76BB29391D1261600093DEDF /* FSCalendarHeader.m in Sources */,
