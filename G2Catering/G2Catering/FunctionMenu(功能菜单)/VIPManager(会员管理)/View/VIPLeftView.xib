@@ -11,7 +11,7 @@
             <rect key="frame" x="0.0" y="0.0" width="338" height="768"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BG" translatesAutoresizingMaskIntoConstraints="NO" id="LEL-hS-56I">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="订单-BG" translatesAutoresizingMaskIntoConstraints="NO" id="LEL-hS-56I">
                     <rect key="frame" x="0.0" y="0.0" width="338" height="768"/>
                 </imageView>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bSO-u3-cvP">
@@ -129,7 +129,7 @@
         </view>
     </objects>
     <resources>
-        <image name="BG" width="312" height="271"/>
         <image name="形状-1" width="11" height="6"/>
+        <image name="订单-BG" width="312" height="271"/>
     </resources>
 </document>

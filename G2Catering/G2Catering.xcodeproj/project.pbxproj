@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		040AFC8569EBF84ABB39E999 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 073B094CD599E52328204BCD /* libPods.a */; };
 		76BB28F51D1261600093DEDF /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BB284F1D12615F0093DEDF /* HttpTool.m */; };
-		76BB28F61D1261600093DEDF /* JiaoYiJiLuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BB28591D12615F0093DEDF /* JiaoYiJiLuViewController.m */; };
-		76BB28F71D1261600093DEDF /* JiaoYiJiLuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76BB285A1D12615F0093DEDF /* JiaoYiJiLuViewController.xib */; };
 		76BB28F81D1261600093DEDF /* TradeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BB285C1D12615F0093DEDF /* TradeViewController.m */; };
 		76BB28F91D1261600093DEDF /* TradeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76BB285D1D12615F0093DEDF /* TradeViewController.xib */; };
 		76BB28FA1D1261600093DEDF /* JiaoYiJiLuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BB28611D12615F0093DEDF /* JiaoYiJiLuCell.m */; };
@@ -122,9 +120,6 @@
 		76BB284C1D12615F0093DEDF /* UtilsMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsMacros.h; sourceTree = "<group>"; };
 		76BB284E1D12615F0093DEDF /* HttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpTool.h; sourceTree = "<group>"; };
 		76BB284F1D12615F0093DEDF /* HttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpTool.m; sourceTree = "<group>"; };
-		76BB28581D12615F0093DEDF /* JiaoYiJiLuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaoYiJiLuViewController.h; sourceTree = "<group>"; };
-		76BB28591D12615F0093DEDF /* JiaoYiJiLuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaoYiJiLuViewController.m; sourceTree = "<group>"; };
-		76BB285A1D12615F0093DEDF /* JiaoYiJiLuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JiaoYiJiLuViewController.xib; sourceTree = "<group>"; };
 		76BB285B1D12615F0093DEDF /* TradeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradeViewController.h; sourceTree = "<group>"; };
 		76BB285C1D12615F0093DEDF /* TradeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradeViewController.m; sourceTree = "<group>"; };
 		76BB285D1D12615F0093DEDF /* TradeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TradeViewController.xib; sourceTree = "<group>"; };
@@ -398,9 +393,6 @@
 		76BB28571D12615F0093DEDF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				76BB28581D12615F0093DEDF /* JiaoYiJiLuViewController.h */,
-				76BB28591D12615F0093DEDF /* JiaoYiJiLuViewController.m */,
-				76BB285A1D12615F0093DEDF /* JiaoYiJiLuViewController.xib */,
 				76BB285B1D12615F0093DEDF /* TradeViewController.h */,
 				76BB285C1D12615F0093DEDF /* TradeViewController.m */,
 				76BB285D1D12615F0093DEDF /* TradeViewController.xib */,
@@ -1014,7 +1006,6 @@
 				76BB29221D1261600093DEDF /* OrderingCollectionViewCell.xib in Resources */,
 				76BB29311D1261600093DEDF /* Main.storyboard in Resources */,
 				76BB29161D1261600093DEDF /* UpdatePasswordView.xib in Resources */,
-				76BB28F71D1261600093DEDF /* JiaoYiJiLuViewController.xib in Resources */,
 				76BB29011D1261600093DEDF /* TypeTableViewCell.xib in Resources */,
 				76BB292C1D1261600093DEDF /* MainRightView.xib in Resources */,
 				76BB29241D1261600093DEDF /* OrderingTableViewCell.xib in Resources */,
@@ -1121,7 +1112,6 @@
 				76BB29371D1261600093DEDF /* FSCalendarConstance.m in Sources */,
 				76BB293E1D1261600093DEDF /* NSString+FSExtension.m in Sources */,
 				76BB29291D1261600093DEDF /* MainLeftView.m in Sources */,
-				76BB28F61D1261600093DEDF /* JiaoYiJiLuViewController.m in Sources */,
 				817CA09F1D12850100F1F61E /* CheDanView.m in Sources */,
 				76BB291D1D1261600093DEDF /* DinnerTableViewController.m in Sources */,
 				817CA0951D1283A300F1F61E /* LingShouViewController.m in Sources */,

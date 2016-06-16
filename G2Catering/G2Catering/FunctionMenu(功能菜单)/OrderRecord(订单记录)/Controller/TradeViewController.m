@@ -155,15 +155,15 @@
 - (void)showOriginalContentView{
     
         [UIView animateWithDuration:0.25 animations:^{
-            
-            self.view.transform = CGAffineTransformMakeTranslation(-338, 0);
+           self.allView.transform = CGAffineTransformMakeTranslation(-338, 0);
             TradeContentView *originalV = [[[NSBundle mainBundle]loadNibNamed:@"TradeContentView" owner:nil options:nil]lastObject ];
-            originalV.frame = CGRectMake(KScreenWidth - koriginalWidth, 0, koriginalWidth, KScreenHeight);
+            originalV.frame = CGRectMake(CGRectGetWidth(self.view.frame)-koriginalWidth , 0, koriginalWidth, KScreenHeight);
             self.originalVc = originalV;
 
             originalV.delegate = self;
-            [KWindow addSubview:originalV];
+            [self.view addSubview:originalV];
             
+       
         } completion:^(BOOL finished) {
             
             
@@ -178,7 +178,7 @@
 
 - (void)hideOriginalContentView{
     [UIView animateWithDuration:0.25 animations:^{
-        self.view.transform = CGAffineTransformIdentity;
+        self.allView.transform = CGAffineTransformIdentity;
         [self.originalVc removeFromSuperview];
     }];
     
