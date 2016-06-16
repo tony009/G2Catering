@@ -11,6 +11,8 @@
 #import "TradeViewController.h"
 #import "DinnerTableViewController.h"
 #import "OrderingViewController.h"
+#import "VipViewController.h"
+#import "BaseSettingsViewController.h"
 @interface MainViewController ()<MainLeftViewDelegate>
 @property (nonatomic,strong) UIView *leftView;
 @property (nonatomic,strong) UIView *rightView;
@@ -31,6 +33,8 @@
     [self p_initViews];
     
 
+    
+    [self OrderAction:nil];
 
 }
 
@@ -252,8 +256,6 @@
 }
 
 #pragma mark  左边栏的点击事件
-
-
 - (void)MainLeftViewMenuDidChick:(MainLeftView  *)orderContent withIndex:(NSInteger )index{
     
     [UIView animateWithDuration:0.5 animations:^{
@@ -266,13 +268,50 @@
         self.leftView.hidden = YES;
         
     }];
-
-    if(index == 1){
-        
-        
-        TradeViewController *tradeCtrl=  [[[NSBundle mainBundle]loadNibNamed:@"TradeViewController" owner:nil options:nil]lastObject];
-        [self.view addSubview:tradeCtrl.view ];
-        
+    
+    switch (index) {
+        case 0: //预订管理
+        {
+            TradeViewController *tradeCtrl=  [[[NSBundle mainBundle]loadNibNamed:@"TradeViewController" owner:nil options:nil]lastObject];
+            
+            [self switchViewController:tradeCtrl];
+            
+        }
+        break;
+            
+        case 1://订单记录
+        {
+            TradeViewController *tradeCtrl=  [[[NSBundle mainBundle]loadNibNamed:@"TradeViewController" owner:nil options:nil]lastObject];
+            
+            [self switchViewController:tradeCtrl];
+            
+        }
+        break;
+        case 2://数据报告
+        {
+            TradeViewController *tradeCtrl=  [[[NSBundle mainBundle]loadNibNamed:@"TradeViewController" owner:nil options:nil]lastObject];
+            
+            [self switchViewController:tradeCtrl];
+            
+        }
+            break;
+        case 3://会员管理
+        {
+            VipViewController *vipVC= [[[NSBundle mainBundle]loadNibNamed:@"VipViewController" owner:nil options:nil]lastObject];
+            [self switchViewController:vipVC];
+            
+        }
+            break;
+        case 4://系统设置
+        {
+            BaseSettingsViewController *vc=  [[BaseSettingsViewController alloc]init];
+            
+            [self switchViewController:vc];
+            
+        }
+            break;
+        default:
+            break;
     }
     
 }
