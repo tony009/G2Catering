@@ -21,7 +21,6 @@
 		76BB28FF1D1261600093DEDF /* TradeContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76BB28681D12615F0093DEDF /* TradeContentView.xib */; };
 		76BB29001D1261600093DEDF /* TypeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BB286A1D12615F0093DEDF /* TypeTableViewCell.m */; };
 		76BB29011D1261600093DEDF /* TypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76BB286B1D12615F0093DEDF /* TypeTableViewCell.xib */; };
-		76BB29041D1261600093DEDF /* BaseSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BB28761D12615F0093DEDF /* BaseSettingsViewController.m */; };
 		76BB29051D1261600093DEDF /* BaseSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76BB28771D12615F0093DEDF /* BaseSettingsViewController.xib */; };
 		76BB29061D1261600093DEDF /* AboutSettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BB287B1D12615F0093DEDF /* AboutSettingsView.m */; };
 		76BB29071D1261600093DEDF /* AboutSettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76BB287C1D12615F0093DEDF /* AboutSettingsView.xib */; };
@@ -87,6 +86,15 @@
 		76D45C971D0CFD3C0026491F /* G2CateringUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D45C961D0CFD3C0026491F /* G2CateringUITests.m */; };
 		76E9145C1D126297001ABA9D /* BookingManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E9145A1D126297001ABA9D /* BookingManagerViewController.m */; };
 		76E9145D1D126297001ABA9D /* BookingManagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76E9145B1D126297001ABA9D /* BookingManagerViewController.xib */; };
+		817CA0951D1283A300F1F61E /* LingShouViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 817CA0931D1283A300F1F61E /* LingShouViewController.m */; };
+		817CA0961D1283A300F1F61E /* LingShouViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 817CA0941D1283A300F1F61E /* LingShouViewController.xib */; };
+		817CA09A1D1283AC00F1F61E /* LingShouTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 817CA0981D1283AC00F1F61E /* LingShouTableViewCell.m */; };
+		817CA09B1D1283AC00F1F61E /* LingShouTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 817CA0991D1283AC00F1F61E /* LingShouTableViewCell.xib */; };
+		817CA09F1D12850100F1F61E /* CheDanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 817CA09D1D12850100F1F61E /* CheDanView.m */; };
+		817CA0A01D12850100F1F61E /* CheDanView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 817CA09E1D12850100F1F61E /* CheDanView.xib */; };
+		91DAEDBB1D1265C200460F4E /* BaseSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAEDBA1D1265C200460F4E /* BaseSettingsViewController.m */; };
+		91DAEDBF1D1274CE00460F4E /* BookManagerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAEDBD1D1274CE00460F4E /* BookManagerTableViewCell.m */; };
+		91DAEDC01D1274CE00460F4E /* BookManagerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAEDBE1D1274CE00460F4E /* BookManagerTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,7 +141,6 @@
 		76BB286A1D12615F0093DEDF /* TypeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeTableViewCell.m; sourceTree = "<group>"; };
 		76BB286B1D12615F0093DEDF /* TypeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TypeTableViewCell.xib; sourceTree = "<group>"; };
 		76BB28751D12615F0093DEDF /* BaseSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSettingsViewController.h; sourceTree = "<group>"; };
-		76BB28761D12615F0093DEDF /* BaseSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSettingsViewController.m; sourceTree = "<group>"; };
 		76BB28771D12615F0093DEDF /* BaseSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseSettingsViewController.xib; sourceTree = "<group>"; };
 		76BB287A1D12615F0093DEDF /* AboutSettingsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutSettingsView.h; sourceTree = "<group>"; };
 		76BB287B1D12615F0093DEDF /* AboutSettingsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutSettingsView.m; sourceTree = "<group>"; };
@@ -241,7 +248,20 @@
 		76E914591D126297001ABA9D /* BookingManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingManagerViewController.h; sourceTree = "<group>"; };
 		76E9145A1D126297001ABA9D /* BookingManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingManagerViewController.m; sourceTree = "<group>"; };
 		76E9145B1D126297001ABA9D /* BookingManagerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingManagerViewController.xib; sourceTree = "<group>"; };
+		817CA0921D1283A300F1F61E /* LingShouViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LingShouViewController.h; sourceTree = "<group>"; };
+		817CA0931D1283A300F1F61E /* LingShouViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LingShouViewController.m; sourceTree = "<group>"; };
+		817CA0941D1283A300F1F61E /* LingShouViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LingShouViewController.xib; sourceTree = "<group>"; };
+		817CA0971D1283AC00F1F61E /* LingShouTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LingShouTableViewCell.h; sourceTree = "<group>"; };
+		817CA0981D1283AC00F1F61E /* LingShouTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LingShouTableViewCell.m; sourceTree = "<group>"; };
+		817CA0991D1283AC00F1F61E /* LingShouTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LingShouTableViewCell.xib; sourceTree = "<group>"; };
+		817CA09C1D12850100F1F61E /* CheDanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CheDanView.h; path = ../Model/CheDanView.h; sourceTree = "<group>"; };
+		817CA09D1D12850100F1F61E /* CheDanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CheDanView.m; path = ../Model/CheDanView.m; sourceTree = "<group>"; };
+		817CA09E1D12850100F1F61E /* CheDanView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CheDanView.xib; path = ../Model/CheDanView.xib; sourceTree = "<group>"; };
 		8A99B5CD036CAE879C22EB66 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		91DAEDBA1D1265C200460F4E /* BaseSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSettingsViewController.m; sourceTree = "<group>"; };
+		91DAEDBC1D1274CE00460F4E /* BookManagerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookManagerTableViewCell.h; sourceTree = "<group>"; };
+		91DAEDBD1D1274CE00460F4E /* BookManagerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookManagerTableViewCell.m; sourceTree = "<group>"; };
+		91DAEDBE1D1274CE00460F4E /* BookManagerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookManagerTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -398,6 +418,9 @@
 		76BB285F1D12615F0093DEDF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				817CA09C1D12850100F1F61E /* CheDanView.h */,
+				817CA09D1D12850100F1F61E /* CheDanView.m */,
+				817CA09E1D12850100F1F61E /* CheDanView.xib */,
 				76BB28601D12615F0093DEDF /* JiaoYiJiLuCell.h */,
 				76BB28611D12615F0093DEDF /* JiaoYiJiLuCell.m */,
 				76BB28621D12615F0093DEDF /* JiaoYiJiLuCell.xib */,
@@ -444,6 +467,9 @@
 		76BB28721D12615F0093DEDF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				91DAEDBC1D1274CE00460F4E /* BookManagerTableViewCell.h */,
+				91DAEDBD1D1274CE00460F4E /* BookManagerTableViewCell.m */,
+				91DAEDBE1D1274CE00460F4E /* BookManagerTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -462,7 +488,7 @@
 			isa = PBXGroup;
 			children = (
 				76BB28751D12615F0093DEDF /* BaseSettingsViewController.h */,
-				76BB28761D12615F0093DEDF /* BaseSettingsViewController.m */,
+				91DAEDBA1D1265C200460F4E /* BaseSettingsViewController.m */,
 				76BB28771D12615F0093DEDF /* BaseSettingsViewController.xib */,
 			);
 			path = Controller;
@@ -689,6 +715,9 @@
 		76BB28C71D12615F0093DEDF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				817CA0921D1283A300F1F61E /* LingShouViewController.h */,
+				817CA0931D1283A300F1F61E /* LingShouViewController.m */,
+				817CA0941D1283A300F1F61E /* LingShouViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -703,6 +732,9 @@
 		76BB28C91D12615F0093DEDF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				817CA0971D1283AC00F1F61E /* LingShouTableViewCell.h */,
+				817CA0981D1283AC00F1F61E /* LingShouTableViewCell.m */,
+				817CA0991D1283AC00F1F61E /* LingShouTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -975,7 +1007,10 @@
 				76BB29071D1261600093DEDF /* AboutSettingsView.xib in Resources */,
 				76E9145D1D126297001ABA9D /* BookingManagerViewController.xib in Resources */,
 				76BB292F1D1261600093DEDF /* Info.plist in Resources */,
+				91DAEDC01D1274CE00460F4E /* BookManagerTableViewCell.xib in Resources */,
 				76BB290D1D1261600093DEDF /* EstimateView.xib in Resources */,
+				817CA09B1D1283AC00F1F61E /* LingShouTableViewCell.xib in Resources */,
+				817CA0A01D12850100F1F61E /* CheDanView.xib in Resources */,
 				76BB29221D1261600093DEDF /* OrderingCollectionViewCell.xib in Resources */,
 				76BB29311D1261600093DEDF /* Main.storyboard in Resources */,
 				76BB29161D1261600093DEDF /* UpdatePasswordView.xib in Resources */,
@@ -994,6 +1029,7 @@
 				76BB28F91D1261600093DEDF /* TradeViewController.xib in Resources */,
 				76BB293B1D1261600093DEDF /* LICENSE in Resources */,
 				76BB29141D1261600093DEDF /* PrintSettingTableViewCell.xib in Resources */,
+				817CA0961D1283A300F1F61E /* LingShouViewController.xib in Resources */,
 				76BB28FF1D1261600093DEDF /* TradeContentView.xib in Resources */,
 				76BB290B1D1261600093DEDF /* EstimateSettingView.xib in Resources */,
 				76BB29121D1261600093DEDF /* PrintSettingsView.xib in Resources */,
@@ -1075,7 +1111,6 @@
 				76BB290A1D1261600093DEDF /* EstimateSettingView.m in Sources */,
 				76BB293A1D1261600093DEDF /* FSCalendarStickyHeader.m in Sources */,
 				76BB29401D1261600093DEDF /* UIView+FSExtension.m in Sources */,
-				76BB29041D1261600093DEDF /* BaseSettingsViewController.m in Sources */,
 				76BB29211D1261600093DEDF /* OrderingCollectionViewCell.m in Sources */,
 				76BB29381D1261600093DEDF /* FSCalendarFlowLayout.m in Sources */,
 				76BB29351D1261600093DEDF /* FSCalendarCell.m in Sources */,
@@ -1087,15 +1122,19 @@
 				76BB293E1D1261600093DEDF /* NSString+FSExtension.m in Sources */,
 				76BB29291D1261600093DEDF /* MainLeftView.m in Sources */,
 				76BB28F61D1261600093DEDF /* JiaoYiJiLuViewController.m in Sources */,
+				817CA09F1D12850100F1F61E /* CheDanView.m in Sources */,
 				76BB291D1D1261600093DEDF /* DinnerTableViewController.m in Sources */,
+				817CA0951D1283A300F1F61E /* LingShouViewController.m in Sources */,
 				76BB29391D1261600093DEDF /* FSCalendarHeader.m in Sources */,
 				76BB28FE1D1261600093DEDF /* TradeContentView.m in Sources */,
 				76BB29001D1261600093DEDF /* TypeTableViewCell.m in Sources */,
+				817CA09A1D1283AC00F1F61E /* LingShouTableViewCell.m in Sources */,
 				76BB29251D1261600093DEDF /* MainViewController.m in Sources */,
 				76BB290C1D1261600093DEDF /* EstimateView.m in Sources */,
 				76BB28FC1D1261600093DEDF /* JiLuCaiViewCell.m in Sources */,
 				76BB29081D1261600093DEDF /* DeviceTestView.m in Sources */,
 				76BB29111D1261600093DEDF /* PrintSettingsView.m in Sources */,
+				91DAEDBF1D1274CE00460F4E /* BookManagerTableViewCell.m in Sources */,
 				76BB292B1D1261600093DEDF /* MainRightView.m in Sources */,
 				76BB28F51D1261600093DEDF /* HttpTool.m in Sources */,
 				76BB293D1D1261600093DEDF /* NSDate+TEAExtensions.m in Sources */,
@@ -1109,6 +1148,7 @@
 				76BB29331D1261600093DEDF /* FSCalendar.m in Sources */,
 				76BB29231D1261600093DEDF /* OrderingTableViewCell.m in Sources */,
 				76BB29061D1261600093DEDF /* AboutSettingsView.m in Sources */,
+				91DAEDBB1D1265C200460F4E /* BaseSettingsViewController.m in Sources */,
 				76BB293C1D1261600093DEDF /* NSDate+FSExtension.m in Sources */,
 				76BB293F1D1261600093DEDF /* README.md in Sources */,
 				76BB28FA1D1261600093DEDF /* JiaoYiJiLuCell.m in Sources */,

@@ -125,7 +125,7 @@
                 <outlet property="typeTable" destination="MSf-tK-WTG" id="xO2-Ta-aZE"/>
                 <outlet property="yesBtn" destination="gNl-Dl-hFJ" id="j59-Cn-Doc"/>
             </connections>
-            <point key="canvasLocation" x="931" y="200"/>
+            <point key="canvasLocation" x="848" y="-68"/>
         </view>
     </objects>
     <resources>
