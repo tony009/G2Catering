@@ -13,6 +13,7 @@
 #import "OrderingViewController.h"
 #import "VipViewController.h"
 #import "BaseSettingsViewController.h"
+#import "BookingManagerViewController.h"
 @interface MainViewController ()<MainLeftViewDelegate>
 @property (nonatomic,strong) UIView *leftView;
 @property (nonatomic,strong) UIView *rightView;
@@ -272,9 +273,9 @@
     switch (index) {
         case 0: //预订管理
         {
-            TradeViewController *tradeCtrl=  [[[NSBundle mainBundle]loadNibNamed:@"TradeViewController" owner:nil options:nil]lastObject];
+            BookingManagerViewController *vc=  [[BookingManagerViewController alloc]init];
             
-            [self switchViewController:tradeCtrl];
+            [self switchViewController:vc];
             
         }
         break;
