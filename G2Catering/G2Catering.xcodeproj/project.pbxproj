@@ -10,6 +10,8 @@
 		040AFC8569EBF84ABB39E999 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 073B094CD599E52328204BCD /* libPods.a */; };
 		76BB274F1D1142310093DEDF /* OrderingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BB274D1D1142310093DEDF /* OrderingTableViewCell.m */; };
 		76BB27501D1142310093DEDF /* OrderingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76BB274E1D1142310093DEDF /* OrderingTableViewCell.xib */; };
+		76BB27A21D123F830093DEDF /* MainLeftTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BB27A01D123F830093DEDF /* MainLeftTableViewCell.m */; };
+		76BB27A31D123F830093DEDF /* MainLeftTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76BB27A11D123F830093DEDF /* MainLeftTableViewCell.xib */; };
 		76D45C7E1D0CFD3B0026491F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76D45C7D1D0CFD3B0026491F /* Assets.xcassets */; };
 		76D45C8C1D0CFD3B0026491F /* G2CateringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D45C8B1D0CFD3B0026491F /* G2CateringTests.m */; };
 		76D45C971D0CFD3C0026491F /* G2CateringUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D45C961D0CFD3C0026491F /* G2CateringUITests.m */; };
@@ -102,6 +104,9 @@
 		76BB274C1D1142310093DEDF /* OrderingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderingTableViewCell.h; sourceTree = "<group>"; };
 		76BB274D1D1142310093DEDF /* OrderingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderingTableViewCell.m; sourceTree = "<group>"; };
 		76BB274E1D1142310093DEDF /* OrderingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderingTableViewCell.xib; sourceTree = "<group>"; };
+		76BB279F1D123F830093DEDF /* MainLeftTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainLeftTableViewCell.h; sourceTree = "<group>"; };
+		76BB27A01D123F830093DEDF /* MainLeftTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainLeftTableViewCell.m; sourceTree = "<group>"; };
+		76BB27A11D123F830093DEDF /* MainLeftTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainLeftTableViewCell.xib; sourceTree = "<group>"; };
 		76D45C6E1D0CFD3B0026491F /* G2Catering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = G2Catering.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76D45C7D1D0CFD3B0026491F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76D45C871D0CFD3B0026491F /* G2CateringTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = G2CateringTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -470,6 +475,9 @@
 				76D6E9F11D0FA3070014DA13 /* MainRightView.h */,
 				76D6E9F21D0FA3070014DA13 /* MainRightView.m */,
 				76D6E9F31D0FA3070014DA13 /* MainRightView.xib */,
+				76BB279F1D123F830093DEDF /* MainLeftTableViewCell.h */,
+				76BB27A01D123F830093DEDF /* MainLeftTableViewCell.m */,
+				76BB27A11D123F830093DEDF /* MainLeftTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -562,6 +570,7 @@
 			isa = PBXGroup;
 			children = (
 				76D6EA401D0FA5F30014DA13 /* DataReport(数据报告) */,
+				76D6EA441D0FA5F30014DA13 /* OrderRecord(订单记录) */,
 				76D6EA481D0FA5F30014DA13 /* ReserveManager(预定管理) */,
 				76D6EA501D0FA5F30014DA13 /* VIPManager(会员管理) */,
 				81E651121D1166AB000A26C7 /* Settings(系统设置) */,
@@ -607,8 +616,7 @@
 				76D6EA461D0FA5F30014DA13 /* Model */,
 				76D6EA471D0FA5F30014DA13 /* View */,
 			);
-			name = "OrderRecord(订单记录)";
-			path = "../OrderRecord(订单记录)";
+			path = "OrderRecord(订单记录)";
 			sourceTree = "<group>";
 		};
 		76D6EA451D0FA5F30014DA13 /* Controller */ = {
@@ -650,7 +658,6 @@
 		76D6EA481D0FA5F30014DA13 /* ReserveManager(预定管理) */ = {
 			isa = PBXGroup;
 			children = (
-				76D6EA441D0FA5F30014DA13 /* OrderRecord(订单记录) */,
 				76D6EA491D0FA5F30014DA13 /* Controller */,
 				76D6EA4A1D0FA5F30014DA13 /* Model */,
 				76D6EA4B1D0FA5F30014DA13 /* View */,
@@ -923,6 +930,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81068C911D1125240022BCD2 /* VIPTableViewCell.xib in Resources */,
+				76BB27A31D123F830093DEDF /* MainLeftTableViewCell.xib in Resources */,
 				81E650B31D113936000A26C7 /* VIPLeftView.xib in Resources */,
 				76D6EA0F1D0FA3070014DA13 /* MainRightView.xib in Resources */,
 				81E651071D115516000A26C7 /* LICENSE in Resources */,
@@ -941,7 +949,6 @@
 				81E6512C1D1166AB000A26C7 /* BaseSettingsViewController.xib in Resources */,
 				810991191D1009F8006EF716 /* JiLuCaiViewCell.xib in Resources */,
 				76BB27501D1142310093DEDF /* OrderingTableViewCell.xib in Resources */,
-				76D6EA581D0FA6440014DA13 /* PrintSettingsViewController.xib in Resources */,
 				81E651381D1166AB000A26C7 /* UpdatePasswordView.xib in Resources */,
 				8109916B1D101378006EF716 /* TypeTableViewCell.xib in Resources */,
 				76D6EA0B1D0FA3070014DA13 /* MainViewController.xib in Resources */,
@@ -1030,6 +1037,7 @@
 				81E651081D115516000A26C7 /* NSDate+FSExtension.m in Sources */,
 				81E6510B1D115516000A26C7 /* README.md in Sources */,
 				918E232D1D0FA8B500DAFAE4 /* (null) in Sources */,
+				76BB27A21D123F830093DEDF /* MainLeftTableViewCell.m in Sources */,
 				81E651351D1166AB000A26C7 /* PrintSettingTableViewCell.m in Sources */,
 				81E651021D115516000A26C7 /* FSCalendarCollectionView.m in Sources */,
 				8119FDAE1D0FDC9B003D545C /* JiaoYiJiLuCell.m in Sources */,

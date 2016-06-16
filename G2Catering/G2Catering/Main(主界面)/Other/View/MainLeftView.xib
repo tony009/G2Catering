@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -18,65 +18,29 @@
                         <constraint firstAttribute="width" constant="124" id="tXl-Sw-Vj5"/>
                     </constraints>
                 </imageView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2yD-2g-hGX">
-                    <rect key="frame" x="91" y="181" width="130" height="50"/>
-                    <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="菜单－预定管理" translatesAutoresizingMaskIntoConstraints="NO" id="N8k-zK-WJS">
-                            <rect key="frame" x="8" y="9" width="32" height="32"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="32" id="LH0-U0-aSl"/>
-                                <constraint firstAttribute="height" constant="32" id="qJt-n3-jMx"/>
-                            </constraints>
-                        </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="预订管理" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBg-BE-pYk">
-                            <rect key="frame" x="56" y="15" width="70" height="21"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="70" id="Gja-yh-ddp"/>
-                                <constraint firstAttribute="height" constant="21" id="pw5-GG-1nK"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZq-0m-usH">
-                            <rect key="frame" x="0.0" y="0.0" width="130" height="50"/>
-                        </button>
-                    </subviews>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="50" id="2PT-hB-QDk"/>
-                        <constraint firstItem="bBg-BE-pYk" firstAttribute="centerY" secondItem="2yD-2g-hGX" secondAttribute="centerY" id="4mk-5f-8Qe"/>
-                        <constraint firstAttribute="width" constant="130" id="6o5-6p-0ed"/>
-                        <constraint firstAttribute="trailing" secondItem="aZq-0m-usH" secondAttribute="trailing" id="6wu-ai-2Yl"/>
-                        <constraint firstItem="N8k-zK-WJS" firstAttribute="leading" secondItem="2yD-2g-hGX" secondAttribute="leading" constant="8" id="Am3-ug-XLN"/>
-                        <constraint firstItem="N8k-zK-WJS" firstAttribute="centerY" secondItem="2yD-2g-hGX" secondAttribute="centerY" id="D0g-pj-TQC"/>
-                        <constraint firstItem="aZq-0m-usH" firstAttribute="leading" secondItem="2yD-2g-hGX" secondAttribute="leading" id="Eeu-0z-5wi"/>
-                        <constraint firstAttribute="bottom" secondItem="aZq-0m-usH" secondAttribute="bottom" id="TNu-YP-rC7"/>
-                        <constraint firstItem="bBg-BE-pYk" firstAttribute="leading" secondItem="N8k-zK-WJS" secondAttribute="trailing" constant="16" id="jPJ-rf-P0W"/>
-                        <constraint firstItem="aZq-0m-usH" firstAttribute="top" secondItem="2yD-2g-hGX" secondAttribute="top" id="n59-pV-TIC"/>
-                    </constraints>
-                </view>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awy-oN-6qk">
-                    <rect key="frame" x="101" y="244" width="117" height="50"/>
-                    <state key="normal" title="订单管理">
-                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    </state>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ae8-Y7-gx5">
+                    <rect key="frame" x="0.0" y="161" width="312" height="466"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <connections>
-                        <action selector="tradeAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Fjg-CZ-bLl"/>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="fJG-oq-ENM"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="XNy-Gz-Ijz"/>
                     </connections>
-                </button>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="0.16470588235294117" green="0.25882352941176467" blue="0.3529411764705882" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="ae8-Y7-gx5" secondAttribute="trailing" id="BTX-TL-uw9"/>
+                <constraint firstItem="ae8-Y7-gx5" firstAttribute="top" secondItem="nAZ-aL-I8l" secondAttribute="bottom" constant="30" id="S3r-RF-Tj1"/>
                 <constraint firstItem="nAZ-aL-I8l" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="bQA-Di-pwQ"/>
                 <constraint firstItem="nAZ-aL-I8l" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="fos-MD-yxm"/>
-                <constraint firstItem="2yD-2g-hGX" firstAttribute="top" secondItem="nAZ-aL-I8l" secondAttribute="bottom" constant="50" id="oSK-G1-G59"/>
-                <constraint firstItem="2yD-2g-hGX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="orI-Bj-vFM"/>
+                <constraint firstItem="ae8-Y7-gx5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jXW-MU-svu"/>
+                <constraint firstAttribute="bottom" secondItem="ae8-Y7-gx5" secondAttribute="bottom" id="yaw-m9-qiE"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="menuTableView" destination="ae8-Y7-gx5" id="LFE-AW-wlu"/>
+            </connections>
             <point key="canvasLocation" x="468" y="-64.5"/>
         </view>
     </objects>
-    <resources>
-        <image name="菜单－预定管理" width="25" height="23"/>
-    </resources>
 </document>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MainLeftTableViewCellIdentifier" rowHeight="185" id="KGk-i7-Jjw" customClass="MainLeftTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="185"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="184"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ccg-Gh-oD3">
+                        <rect key="frame" x="95" y="0.0" width="130" height="184"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Ca-z9-SvQ">
+                                <rect key="frame" x="8" y="76" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="WQB-ik-RyE"/>
+                                    <constraint firstAttribute="height" constant="32" id="bzc-0H-27i"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="预订管理" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4M-be-Ldj">
+                                <rect key="frame" x="56" y="82" width="80" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="aBz-w8-2Iw"/>
+                                    <constraint firstAttribute="height" constant="21" id="iho-Gb-0oR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3Ca-z9-SvQ" firstAttribute="leading" secondItem="ccg-Gh-oD3" secondAttribute="leading" constant="8" id="0dQ-HR-N5Y"/>
+                            <constraint firstItem="q4M-be-Ldj" firstAttribute="leading" secondItem="3Ca-z9-SvQ" secondAttribute="trailing" constant="16" id="RGP-px-ifi"/>
+                            <constraint firstItem="q4M-be-Ldj" firstAttribute="centerY" secondItem="ccg-Gh-oD3" secondAttribute="centerY" id="kFR-dj-szj"/>
+                            <constraint firstItem="3Ca-z9-SvQ" firstAttribute="centerY" secondItem="ccg-Gh-oD3" secondAttribute="centerY" id="uox-d7-UXj"/>
+                            <constraint firstAttribute="width" constant="130" id="vbh-ZQ-aI1"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.1647058824" green="0.25882352939999997" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="ccg-Gh-oD3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="leR-Or-88y"/>
+                    <constraint firstAttribute="bottom" secondItem="ccg-Gh-oD3" secondAttribute="bottom" id="wIr-Kj-8m0"/>
+                    <constraint firstItem="ccg-Gh-oD3" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="yyg-8e-D0k"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="pImageView" destination="3Ca-z9-SvQ" id="0gq-8j-rOg"/>
+                <outlet property="pLabel" destination="q4M-be-Ldj" id="4N2-7W-6ZF"/>
+            </connections>
+            <point key="canvasLocation" x="301" y="181.5"/>
+        </tableViewCell>
+    </objects>
+</document>
