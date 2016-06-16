@@ -34,20 +34,6 @@
     na.navigationBarHidden = YES;
     
     self.window.rootViewController = na;
-//    MainViewController *mvc = [[MainViewController alloc]init];
-//   
-//    UINavigationController *na = [[UINavigationController alloc]initWithRootViewController:mvc];
-//
-    TradeViewController *tradeVctl = [[[NSBundle mainBundle]loadNibNamed:@"TradeViewController" owner:nil options:nil]lastObject];
-    self.window.rootViewController = tradeVctl;
-//    VipViewController *vipVctl = [[[NSBundle mainBundle]loadNibNamed:@"VipViewController" owner:nil options:nil]lastObject];
-//        self.window.rootViewController = vipVctl;
-//    LingShouViewController *lingVctl = [[LingShouViewController alloc]init];
-//            self.window.rootViewController = lingVctl;
-//    BaseSettingsViewController *baseVc = [BaseSettingsViewController new];
-////      UINavigationController *na = [[UINavigationController alloc]initWithRootViewController:baseVc];
-//    self.window.rootViewController = baseVc;
-    [self.window makeKeyAndVisible];
     
     return YES;
 }
