@@ -53,7 +53,7 @@
         [btn addTarget:self action:@selector(didClickestimateStatusBtn:) forControlEvents:UIControlEventTouchUpInside];
     }
     
-    
+    [self didClickLeftMeunBtn:self.leftMeunBtns[0]];
 }
 
 - (void)didClickLeftMeunBtn:(UIButton *)sender {

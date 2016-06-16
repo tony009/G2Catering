@@ -12,6 +12,7 @@
 #import "BaseSettingsViewController.h"
 #import "TradeViewController.h"
 #import "VipViewController.h"
+#import "BookingManagerViewController.h"
 @interface AppDelegate ()
 
 @end

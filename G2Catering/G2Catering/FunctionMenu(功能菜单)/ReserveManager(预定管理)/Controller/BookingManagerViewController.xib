@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BookingManagerViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GIS-L5-r8S">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="65"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="预定管理" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDs-SY-5IH">
+                            <rect key="frame" x="472" y="21" width="80" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUx-Dr-yhR">
+                            <rect key="frame" x="950" y="16" width="34" height="34"/>
+                            <state key="normal" backgroundImage="形状4"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="JDs-SY-5IH" firstAttribute="centerX" secondItem="GIS-L5-r8S" secondAttribute="centerX" id="6JM-Jr-YGz"/>
+                        <constraint firstAttribute="height" constant="65" id="Q0K-m1-C3T"/>
+                        <constraint firstItem="JDs-SY-5IH" firstAttribute="centerY" secondItem="GIS-L5-r8S" secondAttribute="centerY" id="Vlg-6k-PeG"/>
+                        <constraint firstAttribute="trailing" secondItem="tUx-Dr-yhR" secondAttribute="trailing" constant="40" id="wq2-tX-ugw"/>
+                        <constraint firstItem="tUx-Dr-yhR" firstAttribute="top" secondItem="GIS-L5-r8S" secondAttribute="top" constant="16" id="zlE-hX-3Bp"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="GIS-L5-r8S" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JYQ-GT-aAi"/>
+                <constraint firstItem="GIS-L5-r8S" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ccC-8Z-oST"/>
+                <constraint firstAttribute="trailing" secondItem="GIS-L5-r8S" secondAttribute="trailing" id="r3b-v2-3zs"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="334" y="360"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="形状4" width="34" height="34"/>
+    </resources>
+</document>
