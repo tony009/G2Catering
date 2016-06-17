@@ -14,7 +14,6 @@
 #import "VipViewController.h"
 #import "BaseSettingsViewController.h"
 #import "TransferViewController.h"
-@interface MainViewController ()<MainLeftViewDelegate>
 #import "BookingManagerViewController.h"
 #import "MainRightView.h"
 #import "LingShouViewController.h"
