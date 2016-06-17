@@ -25,6 +25,7 @@
     UIButton *_dateBtn;
     FSCalendar *_calendar;
     BOOL _isALL;
+    BOOL _isLeft;
 }
 @property (nonatomic, strong) TradeContentView *originalVc;
 
@@ -50,7 +51,8 @@
     //默认状态下
     _imageArray = [NSMutableArray arrayWithArray:@[@"交易记录－全部-点击",@"交易记录－堂食",@"交易记录－外卖",@"交易记录－外带",@"交易记录－异常"]];
      _selectedImage = [NSMutableArray arrayWithArray:@[@"交易记录－全部",@"交易记录－堂食-点击",@"交易记录－外卖-点击",@"交易记录－外带-点击",@"交易记录－异常-点击"]];
-    [self setRoundAngleWithView:self.imgView withCornerRadius:5 withColor:[UIColor lightGrayColor]];
+    [self setRoundAngleWithView:self.bgView
+               withCornerRadius:5 withColor:[UIColor lightGrayColor]];
     
 }
 
@@ -64,6 +66,38 @@
     
 }
 
+- (IBAction)leftAnimation:(id)sender {
+    
+    if (!_isLeft) {
+        
+        [UIView animateWithDuration:0.25 animations:^{
+            self.allView.transform = CGAffineTransformMakeTranslation(229, 0);
+            
+            self.leftView.hidden = NO;
+            
+        } completion:^(BOOL finished) {
+            
+            
+            
+        }];
+    }else{
+        
+        [UIView animateWithDuration:0.25 animations:^{
+            self.allView.transform = CGAffineTransformIdentity;
+            
+            self.leftView.hidden = YES;
+            
+        } completion:^(BOOL finished) {
+            
+            
+            
+        }];
+        
+    }
+  
+    _isLeft = !_isLeft;
+    
+}
 
 
 - (IBAction)selecteDate:(UIButton *)sender {

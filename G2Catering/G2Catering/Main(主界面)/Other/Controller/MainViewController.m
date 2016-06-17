@@ -13,6 +13,8 @@
 #import "OrderingViewController.h"
 #import "VipViewController.h"
 #import "BaseSettingsViewController.h"
+#import "TransferViewController.h"
+#import "BookingManagerViewController.h"
 #import "MainRightView.h"
 #import "LingShouViewController.h"
 #import "BookingManagerViewController.h"
@@ -336,11 +338,19 @@ static float  kDuration = 0.25; //动画持续时间
     }];
     
     switch (index) {
-        case 0: //预订管理
+        case 100: //交接班
         {
             BookingManagerViewController *vc=  [[BookingManagerViewController alloc]init];
             
             [self switchViewController:vc];
+            
+        }
+            break;
+        case 0: //预订管理
+        {
+            BookingManagerViewController *bookVC = [[BookingManagerViewController alloc] init];
+            
+            [self switchViewController:bookVC];
             
         }
         break;

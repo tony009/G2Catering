@@ -8,18 +8,29 @@
 
 #import "BookingManagerViewController.h"
 #import "BookManagerTableViewCell.h"
-@interface BookingManagerViewController ()<UITableViewDelegate,UITableViewDataSource>
+#import "CancelBookView.h"
+#import "AddBookView.h"
+#import "TableCollectionViewCell.h"
+@interface BookingManagerViewController ()<UITableViewDelegate,UITableViewDataSource,UICollectionViewDelegate,UICollectionViewDataSource>
 
 @property (nonatomic, assign) NSInteger editState;
 
 @property (nonatomic, strong) NSMutableArray *bookDataArray;
+
+@property (nonatomic, strong) CancelBookView *cancelView;
+@property (nonatomic, strong) AddBookView *addBookView;
 @end
 
 @implementation BookingManagerViewController
 static NSString *reuserID = @"bookCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
-   
+    
+    self.backView.layer.cornerRadius  = 5;
+    self.backView.layer.masksToBounds = YES;
+    self.backView.layer.borderColor   = [UIColor lightGrayColor].CGColor;
+    self.backView.layer.borderWidth   = 1;
+    
     self.searchBackView.layer.borderColor   = [UIColor colorWithRed:42/255.0f green:66/255.0f blue:90/255.0f alpha:1].CGColor;
     self.searchBackView.layer.borderWidth   = 1;
     self.searchBackView.layer.cornerRadius  = 2;
@@ -28,9 +39,14 @@ static NSString *reuserID = @"bookCell";
     self.bookTableView.delegate   = self;
     self.bookTableView.dataSource = self;
     [self.bookTableView registerNib:[UINib nibWithNibName:@"BookManagerTableViewCell" bundle:nil] forCellReuseIdentifier:reuserID];
-
     
+    [self.addBtn addTarget:self action:@selector(didClickAddBtn) forControlEvents:UIControlEventTouchUpInside];
     self.bookDataArray = @[@1,@2,@3,@4,@5,@6].mutableCopy;
+    
+    [self setupCancelView];
+    
+    [self setupTableChooseView];
+    
 }
 
 #pragma mark - tableView代理
@@ -40,7 +56,7 @@ static NSString *reuserID = @"bookCell";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-
+    
     
     BookManagerTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuserID forIndexPath:indexPath];
     
@@ -60,34 +76,225 @@ static NSString *reuserID = @"bookCell";
 
 
 - (nullable NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath {
-
+    
     UITableViewRowAction *cancelBook = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"取消预订" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
         
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-
-        [self.bookDataArray removeObject: self.bookDataArray[indexPath.row]];
+        NSLog(@"取消订单");
         
-        [tableView reloadData];
+        self.cancelView.hidden = NO;
         
     }];
-
+    
     cancelBook.backgroundColor = [UIColor colorWithRed:194/255.0f green:199/255.0f blue:203/255.0f alpha:1];
     UITableViewRowAction *order = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"   点餐   " handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
         
         NSLog(@"去点餐");
     }];
-
+    
     order.backgroundColor = [UIColor colorWithRed:42/255.0f green:66/255.0f blue:90/255.0f alpha:1];
     return @[order,cancelBook];
 }
 
+- (void)didClickAddBtn{
+    
+    
+    [self setupAddBookView];
+}
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - setupAddBookView
+
+- (void)setupAddBookView{
+    
+    self.addBookView = [[NSBundle mainBundle] loadNibNamed:@"AddBookView" owner:nil options:nil].firstObject;
+    [self.addBookView.sureBtn addTarget:self action:@selector(didClickAddBookViewSureBtn) forControlEvents:UIControlEventTouchUpInside];
+    [self.addBookView.cancelBtn addTarget:self action:@selector(didClickAddBookViewCancelBtn) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.addBookView.gentlemenBtn addTarget:self action:@selector(chooseBtn:) forControlEvents:UIControlEventTouchUpInside];
+    [self.addBookView.ladiesBtn addTarget:self action:@selector(chooseBtn:) forControlEvents:UIControlEventTouchUpInside];
+    [self.addBookView.hourBtn addTarget:self action:@selector(chooseBtn:) forControlEvents:UIControlEventTouchUpInside];
+    [self.addBookView.dayBtn addTarget:self action:@selector(chooseBtn:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self chooseBtn:self.addBookView.gentlemenBtn];
+    [self chooseBtn:self.addBookView.hourBtn];
+    
+    
+    [self.rightBackView addSubview:self.addBookView];
+    self.addBookView.hidden = YES;
+    
+    
+    [UIView animateWithDuration:0.5 animations:^{
+        
+        self.backView.transform = CGAffineTransformMakeTranslation(-347, 0);
+        
+        [self.view layoutIfNeeded];
+        
+    } completion:^(BOOL finished) {
+        
+        self.addBookView.hidden = NO;
+        
+    }];
+}
+- (void)didClickAddBookViewSureBtn{
+    
+    NSLog(@"123");
+    
+    self.addBookView.hidden = YES;
+}
+
+- (void)didClickAddBookViewCancelBtn{
+    
+    self.addBookView.hidden = YES;
 }
 
 
+- (void)chooseBtn:(UIButton *)sender{
+    
+    sender.selected = YES;
+    [sender setBackgroundColor:[UIColor colorWithRed:42/255.0f green:66/255.0f blue:90/255.0f alpha:1]];
+    if (sender == self.addBookView.gentlemenBtn) {
+        
+        [self changeBtnStatus:self.addBookView.ladiesBtn];
+        
+    }else if (sender == self.addBookView.ladiesBtn){
+        
+        [self changeBtnStatus:self.addBookView.gentlemenBtn];
+        
+    }else if (sender == self.addBookView.hourBtn){
+        
+        [self changeBtnStatus:self.addBookView.dayBtn];
+        
+    }else if (sender == self.addBookView.dayBtn){
+        
+        [self changeBtnStatus:self.addBookView.hourBtn];
+    }
+    
+}
+
+- (void)changeBtnStatus:(UIButton *)sender{
+    
+    sender.selected = NO;
+    [sender setBackgroundColor:[UIColor whiteColor]];
+}
+
+
+#pragma mark - setupTableChooseView
+static NSString *reuseID = @"tableItem";
+- (void)setupTableChooseView{
+    
+    self.tableChooseView.layer.cornerRadius  = 5;
+    self.tableChooseView.layer.masksToBounds = YES;
+    self.tableChooseView.layer.borderColor   = [UIColor lightGrayColor].CGColor;
+    self.tableChooseView.layer.borderWidth   = 1;
+    
+    for (int i = 0; i<self.tableTypeBtn.count; i++) {
+        
+        UIButton *btn = self.tableTypeBtn[i];
+        btn.layer.cornerRadius  = 34;
+        btn.layer.masksToBounds = YES;
+        btn.layer.borderColor   = [UIColor lightGrayColor].CGColor;
+        btn.layer.borderWidth   = 1;
+        btn.tag = 10 + i;
+        [btn addTarget:self action:@selector(didClickTableTypeBtn:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    
+    
+    self.tableCollectionView.delegate   = self;
+    self.tableCollectionView.dataSource = self;
+    
+    UICollectionViewFlowLayout *flowLayout = (UICollectionViewFlowLayout *)self.tableCollectionView.collectionViewLayout;
+    flowLayout.minimumLineSpacing = 0;
+    flowLayout.minimumInteritemSpacing = 0;
+    flowLayout.itemSize = CGSizeMake(80, 72);
+    flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
+    self.tableCollectionView.showsVerticalScrollIndicator = NO;
+    self.tableCollectionView.showsHorizontalScrollIndicator = NO;
+    self.tableCollectionView.backgroundColor = [UIColor whiteColor];
+    [self.tableCollectionView registerNib:[UINib nibWithNibName:@"TableCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:reuseID];
+    
+//    self.tableChooseView.hidden = YES;
+    
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    
+    return 12;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    TableCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseID forIndexPath:indexPath];
+    cell.selected = NO;
+    
+    
+    return cell;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+//    TableCollectionViewCell *cell = (TableCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    
+    for (TableCollectionViewCell *cell in self.tableCollectionView.subviews) {
+        
+        NSIndexPath *indexPathCell = [collectionView indexPathForCell:cell];
+        
+        if (indexPathCell == indexPath) {
+                cell.selected = YES;
+                cell.labelBackView.backgroundColor = [UIColor colorWithRed:42/255.0f green:66/255.0f blue:90/255.0f alpha:1];
+                cell.tableNum.textColor = [UIColor whiteColor];
+        }else{
+            cell.selected = NO;
+            cell.labelBackView.backgroundColor = [UIColor colorWithRed:194/255.0f green:199/255.0f blue:203/255.0f alpha:1];
+            cell.tableNum.textColor = [UIColor blackColor];
+            
+        }
+
+    }
+    
+
+    
+}
+
+
+
+- (void)didClickTableTypeBtn:(UIButton *)sender{
+    
+    for (UIButton *btn in self.tableTypeBtn) {
+        
+        if (btn == sender) {
+            
+            [btn setBackgroundColor:[UIColor colorWithRed:42/255.0f green:66/255.0f blue:90/255.0f alpha:1]];
+            btn.selected = YES;
+        }else{
+            
+            [btn setBackgroundColor:[UIColor whiteColor]];
+            btn.selected = NO;
+        }
+    }
+}
+
+#pragma mark - tableCollectionView代理
+
+#pragma mark - cancelView
+- (void)setupCancelView{
+    
+    self.cancelView = [[NSBundle mainBundle] loadNibNamed:@"CancelBookView" owner:nil options:nil].firstObject;
+    [self.cancelView.sureBtn addTarget:self action:@selector(didClickSureBtn) forControlEvents:UIControlEventTouchUpInside];
+    [self.cancelView.cancelBtn addTarget:self action:@selector(didClickCancelBtn) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.cancelView];
+    self.cancelView.hidden = YES;
+    
+}
+- (void)didClickSureBtn{
+    
+    self.cancelView.hidden = YES;
+}
+
+- (void)didClickCancelBtn{
+    
+    self.cancelView.hidden = YES;
+}
+
+#pragma mark- lazy
 - (NSMutableArray *)bookDataArray{
     
     if (!_bookDataArray) {
@@ -98,13 +305,13 @@ static NSString *reuserID = @"bookCell";
     return _bookDataArray;
 }
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

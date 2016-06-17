@@ -12,7 +12,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *historyTable;
 @property (weak, nonatomic) IBOutlet UITableView *typeTable;
 @property (weak, nonatomic) IBOutlet UIView *bgView;
-@property (weak, nonatomic) IBOutlet UIImageView *imgView;
+
 @property (weak, nonatomic) IBOutlet UIButton *endDate;
 @property (weak, nonatomic) IBOutlet UIButton *startDate;
 @property (weak, nonatomic) IBOutlet UITextField *startText;
@@ -20,5 +20,9 @@
 @property (weak, nonatomic) IBOutlet UIButton *selectBtn;
 @property(nonatomic,strong)UIView *wholeView;
 @property (weak, nonatomic) IBOutlet UIView *allView;
+
+@property (weak, nonatomic) IBOutlet UIButton *leftBtn;
+
+@property (weak, nonatomic) IBOutlet UIView *leftView;
 
 @end
