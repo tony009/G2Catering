@@ -33,7 +33,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="692" height="78"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rH7-Mi-fps">
-                            <rect key="frame" x="29" y="37" width="18" height="22"/>
+                            <rect key="frame" x="8" y="21" width="63" height="37"/>
                             <state key="normal" image="AddCircleLine拷贝"/>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J5s-fZ-5PT">
@@ -44,11 +44,11 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZd-D1-2VR">
-                            <rect key="frame" x="627" y="37" width="65" height="22"/>
+                            <rect key="frame" x="613" y="22" width="65" height="34"/>
                             <state key="normal" image="确定"/>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="￥321.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUp-4Q-2go">
-                            <rect key="frame" x="272" y="29" width="163" height="30"/>
+                            <rect key="frame" x="272" y="25" width="163" height="30"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
