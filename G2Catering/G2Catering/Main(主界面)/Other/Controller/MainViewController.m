@@ -13,8 +13,10 @@
 #import "OrderingViewController.h"
 #import "VipViewController.h"
 #import "BaseSettingsViewController.h"
+#import "MainRightView.h"
+#import "LingShouViewController.h"
 #import "BookingManagerViewController.h"
-@interface MainViewController ()<MainLeftViewDelegate>
+@interface MainViewController ()<MainLeftViewDelegate,MainRightViewDelegate>
 @property (nonatomic,strong) UIView *leftView;
 @property (nonatomic,strong) UIView *rightView;
 @property (nonatomic) int flag;   //(-1,左,0正常，1右)

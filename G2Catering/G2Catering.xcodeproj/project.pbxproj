@@ -84,6 +84,8 @@
 		76D45C971D0CFD3C0026491F /* G2CateringUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D45C961D0CFD3C0026491F /* G2CateringUITests.m */; };
 		76E9145C1D126297001ABA9D /* BookingManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E9145A1D126297001ABA9D /* BookingManagerViewController.m */; };
 		76E9145D1D126297001ABA9D /* BookingManagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76E9145B1D126297001ABA9D /* BookingManagerViewController.xib */; };
+		76E914601D13DE40001ABA9D /* DishTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E9145F1D13DE40001ABA9D /* DishTypeView.m */; };
+		76E914631D13F312001ABA9D /* DishTypeViewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E914621D13F312001ABA9D /* DishTypeViewCollectionViewCell.m */; };
 		817CA0951D1283A300F1F61E /* LingShouViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 817CA0931D1283A300F1F61E /* LingShouViewController.m */; };
 		817CA0961D1283A300F1F61E /* LingShouViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 817CA0941D1283A300F1F61E /* LingShouViewController.xib */; };
 		817CA09A1D1283AC00F1F61E /* LingShouTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 817CA0981D1283AC00F1F61E /* LingShouTableViewCell.m */; };
@@ -243,6 +245,10 @@
 		76E914591D126297001ABA9D /* BookingManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingManagerViewController.h; sourceTree = "<group>"; };
 		76E9145A1D126297001ABA9D /* BookingManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingManagerViewController.m; sourceTree = "<group>"; };
 		76E9145B1D126297001ABA9D /* BookingManagerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingManagerViewController.xib; sourceTree = "<group>"; };
+		76E9145E1D13DE40001ABA9D /* DishTypeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DishTypeView.h; sourceTree = "<group>"; };
+		76E9145F1D13DE40001ABA9D /* DishTypeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DishTypeView.m; sourceTree = "<group>"; };
+		76E914611D13F312001ABA9D /* DishTypeViewCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DishTypeViewCollectionViewCell.h; sourceTree = "<group>"; };
+		76E914621D13F312001ABA9D /* DishTypeViewCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DishTypeViewCollectionViewCell.m; sourceTree = "<group>"; };
 		817CA0921D1283A300F1F61E /* LingShouViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LingShouViewController.h; sourceTree = "<group>"; };
 		817CA0931D1283A300F1F61E /* LingShouViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LingShouViewController.m; sourceTree = "<group>"; };
 		817CA0941D1283A300F1F61E /* LingShouViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LingShouViewController.xib; sourceTree = "<group>"; };
@@ -647,6 +653,10 @@
 				76BB28B31D12615F0093DEDF /* OrderingTableViewCell.h */,
 				76BB28B41D12615F0093DEDF /* OrderingTableViewCell.m */,
 				76BB28B51D12615F0093DEDF /* OrderingTableViewCell.xib */,
+				76E9145E1D13DE40001ABA9D /* DishTypeView.h */,
+				76E9145F1D13DE40001ABA9D /* DishTypeView.m */,
+				76E914611D13F312001ABA9D /* DishTypeViewCollectionViewCell.h */,
+				76E914621D13F312001ABA9D /* DishTypeViewCollectionViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1136,11 +1146,13 @@
 				76BB28F81D1261600093DEDF /* TradeViewController.m in Sources */,
 				76BB29151D1261600093DEDF /* UpdatePasswordView.m in Sources */,
 				76BB29331D1261600093DEDF /* FSCalendar.m in Sources */,
+				76E914601D13DE40001ABA9D /* DishTypeView.m in Sources */,
 				76BB29231D1261600093DEDF /* OrderingTableViewCell.m in Sources */,
 				76BB29061D1261600093DEDF /* AboutSettingsView.m in Sources */,
 				91DAEDBB1D1265C200460F4E /* BaseSettingsViewController.m in Sources */,
 				76BB293C1D1261600093DEDF /* NSDate+FSExtension.m in Sources */,
 				76BB293F1D1261600093DEDF /* README.md in Sources */,
+				76E914631D13F312001ABA9D /* DishTypeViewCollectionViewCell.m in Sources */,
 				76BB28FA1D1261600093DEDF /* JiaoYiJiLuCell.m in Sources */,
 				76E9145C1D126297001ABA9D /* BookingManagerViewController.m in Sources */,
 				76BB29341D1261600093DEDF /* FSCalendarAppearance.m in Sources */,

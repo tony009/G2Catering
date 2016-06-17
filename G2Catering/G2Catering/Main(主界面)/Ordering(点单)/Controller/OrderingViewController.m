@@ -10,7 +10,7 @@
 #import "OrderingCollectionViewCell.h"
 #import "OrderingTableViewCell.h"
 
-
+#import "DishTypeView.h"
 
 static NSString *collectionViewCellIdentifer = @"OrderingCollectionViewReuseCell";
 static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
@@ -20,6 +20,15 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
 
 @property (weak, nonatomic) IBOutlet UITableView *orderListTableView;
 @property (weak, nonatomic) IBOutlet UICollectionView *orderCollectionView;
+
+
+@property (weak, nonatomic) IBOutlet UIView *orderListView;
+
+
+@property (weak, nonatomic) IBOutlet UIView *firstView;
+@property (weak, nonatomic) IBOutlet UIView *secondView;
+
+@property (weak, nonatomic) IBOutlet DishTypeView *dishTypeView;
 
 @end
 
@@ -42,7 +51,41 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
     UINib *nib2 = [UINib nibWithNibName:@"OrderingTableViewCell" bundle:nil];
     
     [self.orderListTableView registerNib:nib2 forCellReuseIdentifier:tableViewCellIdentifer];
+    
+    
+    self.firstView.layer.borderWidth = 1;
+    self.secondView.layer.borderWidth = 1;
+    self.orderCollectionView.layer.borderWidth =1;
+    self.orderListView.layer.borderWidth = 1;
+    
+    self.firstView.layer.borderColor = [UIColor grayColor].CGColor;
+    self.secondView.layer.borderColor = [UIColor grayColor].CGColor;
+    self.orderCollectionView.layer.borderColor = [UIColor grayColor].CGColor;
+    self.orderListView.layer.borderColor = [UIColor grayColor].CGColor;
+    
+    self.firstView.layer.cornerRadius = 10;
+    self.secondView.layer.cornerRadius = 10;
+    self.orderCollectionView.layer.cornerRadius = 10;
+    self.orderListView.layer.cornerRadius = 10;
+    
+    //
+    self.orderCollectionView.showsVerticalScrollIndicator = NO;
+    self.orderCollectionView.showsHorizontalScrollIndicator = NO;
+    self.orderCollectionView.backgroundColor = [UIColor whiteColor];
+    
+    UICollectionViewFlowLayout *flowLayout = (UICollectionViewFlowLayout *)self.orderCollectionView.collectionViewLayout;
+    
+    flowLayout.minimumLineSpacing = 1;
+    flowLayout.minimumInteritemSpacing = 1;
+    flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
+    flowLayout.itemSize = CGSizeMake(155, 180);
+    
+    //
+    
 }
+
+
+
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -80,9 +123,10 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
 */
 #pragma mark --UICollectionViewDataSource
 
+
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     
-    return 11;
+    return 30;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
