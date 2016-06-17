@@ -86,6 +86,12 @@
 		76E9145D1D126297001ABA9D /* BookingManagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76E9145B1D126297001ABA9D /* BookingManagerViewController.xib */; };
 		76E914601D13DE40001ABA9D /* DishTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E9145F1D13DE40001ABA9D /* DishTypeView.m */; };
 		76E914631D13F312001ABA9D /* DishTypeViewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E914621D13F312001ABA9D /* DishTypeViewCollectionViewCell.m */; };
+		8105DFAC1D13CA6700A20CEC /* ZhifuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8105DFAB1D13CA6700A20CEC /* ZhifuView.m */; };
+		8105DFAE1D13CA7300A20CEC /* ZhifuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8105DFAD1D13CA7300A20CEC /* ZhifuView.xib */; };
+		76E914601D13DE40001ABA9D /* DishTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E9145F1D13DE40001ABA9D /* DishTypeView.m */; };
+		76E914631D13F312001ABA9D /* DishTypeViewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E914621D13F312001ABA9D /* DishTypeViewCollectionViewCell.m */; };
+		76E914601D13DE40001ABA9D /* DishTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E9145F1D13DE40001ABA9D /* DishTypeView.m */; };
+		76E914631D13F312001ABA9D /* DishTypeViewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E914621D13F312001ABA9D /* DishTypeViewCollectionViewCell.m */; };
 		817CA0951D1283A300F1F61E /* LingShouViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 817CA0931D1283A300F1F61E /* LingShouViewController.m */; };
 		817CA0961D1283A300F1F61E /* LingShouViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 817CA0941D1283A300F1F61E /* LingShouViewController.xib */; };
 		817CA09A1D1283AC00F1F61E /* LingShouTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 817CA0981D1283AC00F1F61E /* LingShouTableViewCell.m */; };
@@ -262,6 +268,9 @@
 		76E9145F1D13DE40001ABA9D /* DishTypeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DishTypeView.m; sourceTree = "<group>"; };
 		76E914611D13F312001ABA9D /* DishTypeViewCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DishTypeViewCollectionViewCell.h; sourceTree = "<group>"; };
 		76E914621D13F312001ABA9D /* DishTypeViewCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DishTypeViewCollectionViewCell.m; sourceTree = "<group>"; };
+		8105DFAA1D13CA6700A20CEC /* ZhifuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhifuView.h; sourceTree = "<group>"; };
+		8105DFAB1D13CA6700A20CEC /* ZhifuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhifuView.m; sourceTree = "<group>"; };
+		8105DFAD1D13CA7300A20CEC /* ZhifuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZhifuView.xib; sourceTree = "<group>"; };
 		817CA0921D1283A300F1F61E /* LingShouViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LingShouViewController.h; sourceTree = "<group>"; };
 		817CA0931D1283A300F1F61E /* LingShouViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LingShouViewController.m; sourceTree = "<group>"; };
 		817CA0941D1283A300F1F61E /* LingShouViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LingShouViewController.xib; sourceTree = "<group>"; };

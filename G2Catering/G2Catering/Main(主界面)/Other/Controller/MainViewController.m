@@ -340,9 +340,9 @@ static float  kDuration = 0.25; //动画持续时间
     switch (index) {
         case 100: //交接班
         {
-            BookingManagerViewController *vc=  [[BookingManagerViewController alloc]init];
+            TransferViewController *tradeCtrl=  [[TransferViewController alloc] init];
             
-            [self switchViewController:vc];
+            [self switchViewController:tradeCtrl];
             
         }
             break;
