@@ -11,6 +11,7 @@
 #import "CancelBookView.h"
 #import "AddBookView.h"
 #import "TableCollectionViewCell.h"
+#import "LM_datePickerView.h"
 @interface BookingManagerViewController ()<UITableViewDelegate,UITableViewDataSource,UICollectionViewDelegate,UICollectionViewDataSource>
 
 @property (nonatomic, assign) NSInteger editState;
@@ -19,6 +20,10 @@
 
 @property (nonatomic, strong) CancelBookView *cancelView;
 @property (nonatomic, strong) AddBookView *addBookView;
+
+@property (nonatomic, strong) NSString *leftViewStatus;
+
+@property (nonatomic, strong) LM_datePickerView *datePickerView;
 @end
 
 @implementation BookingManagerViewController
@@ -46,6 +51,8 @@ static NSString *reuserID = @"bookCell";
     [self setupCancelView];
     
     [self setupTableChooseView];
+    
+    [self setupLeftBookStatusView];
     
 }
 
@@ -101,6 +108,36 @@ static NSString *reuserID = @"bookCell";
     [self setupAddBookView];
 }
 
+
+#pragma mark - setupDatePickerView
+
+- (void)setupDatePickerView{
+    
+    self.addBookView.datePickerViewBackView.hidden = YES;
+    self.addBookView.datePickerViewBackView.layer.cornerRadius  = 5;
+    self.addBookView.datePickerViewBackView.layer.masksToBounds = YES;
+    self.addBookView.datePickerViewBackView.layer.borderColor   = [UIColor lightGrayColor].CGColor;
+    self.addBookView.datePickerViewBackView.layer.borderWidth   = 1;
+    
+    self.datePickerView = [[NSBundle mainBundle] loadNibNamed:@"LM_datePickerView" owner:nil options:nil].firstObject;
+    [self.addBookView.datePickerViewBackView  addSubview:self.datePickerView];
+    
+    
+    [self.datePickerView.sureBtn addTarget:self action:@selector(changeBookTime) forControlEvents:UIControlEventTouchUpInside];
+    [self.datePickerView.cancelBtn addTarget:self action:@selector(cancelChangeBookTime) forControlEvents:UIControlEventTouchUpInside];
+    
+}
+
+- (void)changeBookTime{
+    
+    [self.addBookView.bookTime setTitle:self.datePickerView.currentTime.text forState:UIControlStateNormal];
+    self.addBookView.datePickerViewBackView.hidden = YES;
+}
+
+- (void)cancelChangeBookTime{
+    self.addBookView.datePickerViewBackView.hidden = YES;
+    
+}
 #pragma mark - setupAddBookView
 
 - (void)setupAddBookView{
@@ -113,6 +150,10 @@ static NSString *reuserID = @"bookCell";
     [self.addBookView.ladiesBtn addTarget:self action:@selector(chooseBtn:) forControlEvents:UIControlEventTouchUpInside];
     [self.addBookView.hourBtn addTarget:self action:@selector(chooseBtn:) forControlEvents:UIControlEventTouchUpInside];
     [self.addBookView.dayBtn addTarget:self action:@selector(chooseBtn:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.addBookView.chooseTableBtn addTarget:self action:@selector(chooseTableNumBtn:) forControlEvents:UIControlEventTouchUpInside];
+    [self.addBookView.bookTime addTarget:self action:@selector(didClickBookTime) forControlEvents:UIControlEventTouchUpInside];
+
     
     [self chooseBtn:self.addBookView.gentlemenBtn];
     [self chooseBtn:self.addBookView.hourBtn];
@@ -133,17 +174,38 @@ static NSString *reuserID = @"bookCell";
         self.addBookView.hidden = NO;
         
     }];
+    
+    [self setupDatePickerView];
+    
 }
 - (void)didClickAddBookViewSureBtn{
     
-    NSLog(@"123");
     
-    self.addBookView.hidden = YES;
+    
+    [UIView animateWithDuration:0.5 animations:^{
+        
+        self.backView.transform = CGAffineTransformIdentity;
+
+        
+    } completion:^(BOOL finished) {
+        
+        self.addBookView.hidden = YES;
+        
+    }];
 }
 
 - (void)didClickAddBookViewCancelBtn{
     
-    self.addBookView.hidden = YES;
+    [UIView animateWithDuration:0.5 animations:^{
+        
+        self.backView.transform = CGAffineTransformIdentity;
+        
+        
+    } completion:^(BOOL finished) {
+        
+        self.addBookView.hidden = YES;
+        
+    }];
 }
 
 
@@ -177,9 +239,23 @@ static NSString *reuserID = @"bookCell";
 }
 
 
+- (void)chooseTableNumBtn:(UIButton *)sender{
+    
+    
+    self.tableChooseView.hidden = NO;
+}
+
+- (void)didClickBookTime{
+    
+  self.addBookView.datePickerViewBackView.hidden = NO;
+}
+
+
+
 #pragma mark - setupTableChooseView
 static NSString *reuseID = @"tableItem";
 - (void)setupTableChooseView{
+    self.tableChooseView.hidden = YES;
     
     self.tableChooseView.layer.cornerRadius  = 5;
     self.tableChooseView.layer.masksToBounds = YES;
@@ -224,23 +300,25 @@ static NSString *reuseID = @"tableItem";
     
     TableCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseID forIndexPath:indexPath];
     cell.selected = NO;
-    
-    
+
     return cell;
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
 //    TableCollectionViewCell *cell = (TableCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    self.tableChooseView.hidden = YES;
     
     for (TableCollectionViewCell *cell in self.tableCollectionView.subviews) {
         
         NSIndexPath *indexPathCell = [collectionView indexPathForCell:cell];
         
         if (indexPathCell == indexPath) {
-                cell.selected = YES;
-                cell.labelBackView.backgroundColor = [UIColor colorWithRed:42/255.0f green:66/255.0f blue:90/255.0f alpha:1];
-                cell.tableNum.textColor = [UIColor whiteColor];
+            
+            [self.addBookView.chooseTableBtn setTitle:[NSString stringWithFormat:@"%@号桌台",cell.tableNum.text] forState:UIControlStateNormal];
+            cell.selected = YES;
+            cell.labelBackView.backgroundColor = [UIColor colorWithRed:42/255.0f green:66/255.0f blue:90/255.0f alpha:1];
+            cell.tableNum.textColor = [UIColor whiteColor];
         }else{
             cell.selected = NO;
             cell.labelBackView.backgroundColor = [UIColor colorWithRed:194/255.0f green:199/255.0f blue:203/255.0f alpha:1];
@@ -272,7 +350,73 @@ static NSString *reuseID = @"tableItem";
     }
 }
 
-#pragma mark - tableCollectionView代理
+#pragma mark - setupLeftBookStatusView
+- (void)setupLeftBookStatusView{
+    
+    self.bookTypeBackView.hidden = YES;
+    self.leftViewStatus = @"close";
+    [self.showAndCloseLeftBtn addTarget:self action:@selector(closeLeftBookStatusView) forControlEvents:UIControlEventTouchUpInside];
+    
+    for (int i = 0; i<self.bookStatusBtn.count; i++) {
+        
+        UIButton *btn = self.bookStatusBtn[i];
+        btn.tag = 10000 + i;
+        [btn addTarget:self action:@selector(didClickLeftMeunBtn:) forControlEvents:UIControlEventTouchUpInside];
+        btn.selected = NO;
+        
+        if (i == 0) {
+            
+            [self didClickLeftMeunBtn:btn];
+        }
+    }
+    
+}
+
+
+- (void)didClickLeftMeunBtn:(UIButton *)sender{
+    
+    for (UIButton *btn in self.bookStatusBtn) {
+        
+        if (btn == sender) {
+            
+            btn.selected = YES;
+        }else{
+            
+            btn.selected = NO;
+        }
+    }
+    
+}
+
+
+
+- (void)closeLeftBookStatusView{
+    
+    if ([self.leftViewStatus isEqualToString:@"close"]) {
+        
+        [UIView animateWithDuration:0.25 animations:^{
+            self.showAndCloseLeftBtn.transform = CGAffineTransformMakeTranslation(230, 0);
+            self.backView.transform = CGAffineTransformMakeTranslation(230, 0);
+            self.leftViewStatus = @"open";
+        } completion:^(BOOL finished) {
+            self.bookTypeBackView.hidden = NO;
+        }];
+
+    }else{
+        
+        [UIView animateWithDuration:0.25 animations:^{
+            self.bookTypeBackView.hidden = YES;
+            self.showAndCloseLeftBtn.transform = CGAffineTransformIdentity;
+            self.backView.transform = CGAffineTransformIdentity;
+            self.leftViewStatus = @"close";
+        }];
+    }
+    
+
+    
+}
+
+
 
 #pragma mark - cancelView
 - (void)setupCancelView{

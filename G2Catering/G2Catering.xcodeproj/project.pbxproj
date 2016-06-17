@@ -90,6 +90,8 @@
 		817CA09B1D1283AC00F1F61E /* LingShouTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 817CA0991D1283AC00F1F61E /* LingShouTableViewCell.xib */; };
 		817CA09F1D12850100F1F61E /* CheDanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 817CA09D1D12850100F1F61E /* CheDanView.m */; };
 		817CA0A01D12850100F1F61E /* CheDanView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 817CA09E1D12850100F1F61E /* CheDanView.xib */; };
+		9111D6C11D13D51A005EF0A7 /* LM_datePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9111D6C01D13D51A005EF0A7 /* LM_datePickerView.m */; };
+		9111D6C31D13D52B005EF0A7 /* LM_datePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9111D6C21D13D52B005EF0A7 /* LM_datePickerView.xib */; };
 		91DAEDBB1D1265C200460F4E /* BaseSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAEDBA1D1265C200460F4E /* BaseSettingsViewController.m */; };
 		91DAEDD51D12859E00460F4E /* AddBookView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAEDCD1D12859E00460F4E /* AddBookView.m */; };
 		91DAEDD61D12859E00460F4E /* AddBookView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAEDCE1D12859E00460F4E /* AddBookView.xib */; };
@@ -259,6 +261,9 @@
 		817CA09D1D12850100F1F61E /* CheDanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CheDanView.m; path = ../Model/CheDanView.m; sourceTree = "<group>"; };
 		817CA09E1D12850100F1F61E /* CheDanView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CheDanView.xib; path = ../Model/CheDanView.xib; sourceTree = "<group>"; };
 		8A99B5CD036CAE879C22EB66 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		9111D6BF1D13D51A005EF0A7 /* LM_datePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LM_datePickerView.h; sourceTree = "<group>"; };
+		9111D6C01D13D51A005EF0A7 /* LM_datePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LM_datePickerView.m; sourceTree = "<group>"; };
+		9111D6C21D13D52B005EF0A7 /* LM_datePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LM_datePickerView.xib; sourceTree = "<group>"; };
 		91DAEDBA1D1265C200460F4E /* BaseSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSettingsViewController.m; sourceTree = "<group>"; };
 		91DAEDCC1D12859E00460F4E /* AddBookView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddBookView.h; sourceTree = "<group>"; };
 		91DAEDCD1D12859E00460F4E /* AddBookView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddBookView.m; sourceTree = "<group>"; };
@@ -894,6 +899,9 @@
 				91DAEDFE1D12B7BD00460F4E /* TableCollectionViewCell.h */,
 				91DAEDFF1D12B7BD00460F4E /* TableCollectionViewCell.m */,
 				91DAEE001D12B7BD00460F4E /* TableCollectionViewCell.xib */,
+				9111D6BF1D13D51A005EF0A7 /* LM_datePickerView.h */,
+				9111D6C01D13D51A005EF0A7 /* LM_datePickerView.m */,
+				9111D6C21D13D52B005EF0A7 /* LM_datePickerView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1031,6 +1039,7 @@
 				76BB29161D1261600093DEDF /* UpdatePasswordView.xib in Resources */,
 				76BB29011D1261600093DEDF /* TypeTableViewCell.xib in Resources */,
 				76BB292C1D1261600093DEDF /* MainRightView.xib in Resources */,
+				9111D6C31D13D52B005EF0A7 /* LM_datePickerView.xib in Resources */,
 				76BB29241D1261600093DEDF /* OrderingTableViewCell.xib in Resources */,
 				76BB29201D1261600093DEDF /* OrderingViewController.xib in Resources */,
 				76BB29301D1261600093DEDF /* LaunchScreen.storyboard in Resources */,
@@ -1136,6 +1145,7 @@
 				76BB291F1D1261600093DEDF /* OrderingViewController.m in Sources */,
 				76BB29191D1261600093DEDF /* VIPLeftView.m in Sources */,
 				76BB29131D1261600093DEDF /* PrintSettingTableViewCell.m in Sources */,
+				9111D6C11D13D51A005EF0A7 /* LM_datePickerView.m in Sources */,
 				76BB29371D1261600093DEDF /* FSCalendarConstance.m in Sources */,
 				76BB293E1D1261600093DEDF /* NSString+FSExtension.m in Sources */,
 				76BB29291D1261600093DEDF /* MainLeftView.m in Sources */,
