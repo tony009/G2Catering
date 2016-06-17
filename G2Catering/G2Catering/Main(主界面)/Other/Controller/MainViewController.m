@@ -13,6 +13,7 @@
 #import "OrderingViewController.h"
 #import "VipViewController.h"
 #import "BaseSettingsViewController.h"
+#import "TransferViewController.h"
 @interface MainViewController ()<MainLeftViewDelegate>
 @property (nonatomic,strong) UIView *leftView;
 @property (nonatomic,strong) UIView *rightView;
@@ -270,6 +271,14 @@
     }];
     
     switch (index) {
+        case 100: //交接班
+        {
+            TransferViewController *tradeCtrl=  [[TransferViewController alloc] init];
+            
+            [self switchViewController:tradeCtrl];
+            
+        }
+            break;
         case 0: //预订管理
         {
             TradeViewController *tradeCtrl=  [[[NSBundle mainBundle]loadNibNamed:@"TradeViewController" owner:nil options:nil]lastObject];

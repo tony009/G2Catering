@@ -87,6 +87,11 @@
 		76E9145C1D126297001ABA9D /* BookingManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E9145A1D126297001ABA9D /* BookingManagerViewController.m */; };
 		76E9145D1D126297001ABA9D /* BookingManagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76E9145B1D126297001ABA9D /* BookingManagerViewController.xib */; };
 		91DAEDBB1D1265C200460F4E /* BaseSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAEDBA1D1265C200460F4E /* BaseSettingsViewController.m */; };
+		F16B15801D12820A005B3B64 /* BookManagerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F16B157E1D12820A005B3B64 /* BookManagerTableViewCell.m */; };
+		F16B15811D12820A005B3B64 /* BookManagerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F16B157F1D12820A005B3B64 /* BookManagerTableViewCell.xib */; };
+		F16B15851D128375005B3B64 /* TransferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F16B15831D128375005B3B64 /* TransferViewController.m */; };
+		F16B15861D128375005B3B64 /* TransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F16B15841D128375005B3B64 /* TransferViewController.xib */; };
+		F1DE47171D13902A0051B7A7 /* XYPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DE47161D13902A0051B7A7 /* XYPieChart.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -242,6 +247,14 @@
 		76E9145B1D126297001ABA9D /* BookingManagerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingManagerViewController.xib; sourceTree = "<group>"; };
 		8A99B5CD036CAE879C22EB66 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		91DAEDBA1D1265C200460F4E /* BaseSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSettingsViewController.m; sourceTree = "<group>"; };
+		F16B157D1D12820A005B3B64 /* BookManagerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookManagerTableViewCell.h; sourceTree = "<group>"; };
+		F16B157E1D12820A005B3B64 /* BookManagerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookManagerTableViewCell.m; sourceTree = "<group>"; };
+		F16B157F1D12820A005B3B64 /* BookManagerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookManagerTableViewCell.xib; sourceTree = "<group>"; };
+		F16B15821D128375005B3B64 /* TransferViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransferViewController.h; sourceTree = "<group>"; };
+		F16B15831D128375005B3B64 /* TransferViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransferViewController.m; sourceTree = "<group>"; };
+		F16B15841D128375005B3B64 /* TransferViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransferViewController.xib; sourceTree = "<group>"; };
+		F1DE47151D13902A0051B7A7 /* XYPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPieChart.h; sourceTree = "<group>"; };
+		F1DE47161D13902A0051B7A7 /* XYPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPieChart.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -325,6 +338,7 @@
 		76BB28511D12615F0093DEDF /* FunctionMenu(功能菜单) */ = {
 			isa = PBXGroup;
 			children = (
+				F16B157B1D127AF8005B3B64 /* Transfer(交接班) */,
 				76BB28521D12615F0093DEDF /* DataReport(数据报告) */,
 				76BB28561D12615F0093DEDF /* OrderRecord(订单记录) */,
 				76BB286C1D12615F0093DEDF /* ReserveManager(预定管理) */,
@@ -444,6 +458,9 @@
 		76BB28721D12615F0093DEDF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F16B157D1D12820A005B3B64 /* BookManagerTableViewCell.h */,
+				F16B157E1D12820A005B3B64 /* BookManagerTableViewCell.m */,
+				F16B157F1D12820A005B3B64 /* BookManagerTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -859,6 +876,26 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F16B157B1D127AF8005B3B64 /* Transfer(交接班) */ = {
+			isa = PBXGroup;
+			children = (
+				F16B157C1D12800D005B3B64 /* Controller */,
+			);
+			path = "Transfer(交接班)";
+			sourceTree = "<group>";
+		};
+		F16B157C1D12800D005B3B64 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F16B15821D128375005B3B64 /* TransferViewController.h */,
+				F16B15831D128375005B3B64 /* TransferViewController.m */,
+				F16B15841D128375005B3B64 /* TransferViewController.xib */,
+				F1DE47151D13902A0051B7A7 /* XYPieChart.h */,
+				F1DE47161D13902A0051B7A7 /* XYPieChart.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -970,11 +1007,13 @@
 				76BB291A1D1261600093DEDF /* VIPLeftView.xib in Resources */,
 				76D45C7E1D0CFD3B0026491F /* Assets.xcassets in Resources */,
 				76BB29091D1261600093DEDF /* DeviceTestView.xib in Resources */,
+				F16B15861D128375005B3B64 /* TransferViewController.xib in Resources */,
 				76BB290F1D1261600093DEDF /* FoodCollectionViewCell.xib in Resources */,
 				76BB291E1D1261600093DEDF /* DinnerTableViewController.xib in Resources */,
 				76BB29071D1261600093DEDF /* AboutSettingsView.xib in Resources */,
 				76E9145D1D126297001ABA9D /* BookingManagerViewController.xib in Resources */,
 				76BB292F1D1261600093DEDF /* Info.plist in Resources */,
+				F16B15811D12820A005B3B64 /* BookManagerTableViewCell.xib in Resources */,
 				76BB290D1D1261600093DEDF /* EstimateView.xib in Resources */,
 				76BB29221D1261600093DEDF /* OrderingCollectionViewCell.xib in Resources */,
 				76BB29311D1261600093DEDF /* Main.storyboard in Resources */,
@@ -1093,10 +1132,13 @@
 				76BB29251D1261600093DEDF /* MainViewController.m in Sources */,
 				76BB290C1D1261600093DEDF /* EstimateView.m in Sources */,
 				76BB28FC1D1261600093DEDF /* JiLuCaiViewCell.m in Sources */,
+				F1DE47171D13902A0051B7A7 /* XYPieChart.m in Sources */,
 				76BB29081D1261600093DEDF /* DeviceTestView.m in Sources */,
 				76BB29111D1261600093DEDF /* PrintSettingsView.m in Sources */,
+				F16B15801D12820A005B3B64 /* BookManagerTableViewCell.m in Sources */,
 				76BB292B1D1261600093DEDF /* MainRightView.m in Sources */,
 				76BB28F51D1261600093DEDF /* HttpTool.m in Sources */,
+				F16B15851D128375005B3B64 /* TransferViewController.m in Sources */,
 				76BB293D1D1261600093DEDF /* NSDate+TEAExtensions.m in Sources */,
 				76BB29101D1261600093DEDF /* LM_button.m in Sources */,
 				76BB29321D1261600093DEDF /* FSCalendar+IBExtension.m in Sources */,
