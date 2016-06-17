@@ -166,20 +166,19 @@
     
     MainLeftView *leftView =  [[[NSBundle mainBundle]loadNibNamed:@"MainLeftView" owner:self options:nil]lastObject];
     leftView.delegate = self;
-    
-    leftView.frame = CGRectMake(0, 0, kLeftViewWidth, KScreenHeight);
+    leftView.frame = CGRectMake(-kLeftViewWidth, 0, kLeftViewWidth, KScreenHeight);
     
 
     MainLeftView *rightView =  [[[NSBundle mainBundle]loadNibNamed:@"MainRightView" owner:self options:nil]lastObject];
-    
-    rightView.frame = CGRectMake(KScreenWidth-kLeftViewWidth, 0, kLeftViewWidth, KScreenHeight);
+    rightView.delegate = self;
+    rightView.frame = CGRectMake(KScreenWidth, 0, kLeftViewWidth, KScreenHeight);
     
     self.leftView = leftView;
     self.rightView = rightView;
     
-    
-    self.leftView.hidden = YES;
-    self.rightView.hidden = YES;
+//    
+//    self.leftView.hidden = YES;
+//    self.rightView.hidden = YES;
     
     [KWindow addSubview:leftView];
     [KWindow addSubview:rightView];
@@ -188,9 +187,12 @@
 
 -(void)viewWillLayoutSubviews{
     
-    self.leftView.frame  = CGRectMake(0, 0, kLeftViewWidth, KScreenHeight);
-    self.rightView.frame = CGRectMake(KScreenWidth-kLeftViewWidth, 0, kLeftViewWidth, KScreenHeight);
+    self.leftView.frame  = CGRectMake(-kLeftViewWidth, 0, kLeftViewWidth, KScreenHeight);
+    self.rightView.frame = CGRectMake(KScreenWidth, 0, kLeftViewWidth, KScreenHeight);
 }
+
+
+static float  kDuration = 0.25; //动画持续时间
 
 
 -(void)p_swipeLeft{
@@ -198,27 +200,29 @@
     
     if (self.flag == 0) { //正常
         
-        [UIView animateWithDuration:0.5 animations:^{
+        [UIView animateWithDuration:kDuration animations:^{
             
             self.view.transform = CGAffineTransformMakeTranslation(-kLeftViewWidth, 0);
+            self.rightView.transform = CGAffineTransformMakeTranslation(-kLeftViewWidth, 0);
             
         } completion:^(BOOL finished) {
             
             self.flag = 1;
-            self.rightView.hidden = NO;
+            //self.rightView.hidden = NO;
             
         }];
         
     }else if (self.flag ==-1){ //右边
         
-        [UIView animateWithDuration:0.5 animations:^{
+        [UIView animateWithDuration:kDuration animations:^{
             
             self.view.transform=CGAffineTransformIdentity;
+            self.leftView.transform = CGAffineTransformIdentity;
             
         }completion:^(BOOL finished) {
             
             self.flag = 0;
-            self.leftView.hidden = YES;
+            //self.leftView.hidden = YES;
             
         }];
         
@@ -233,27 +237,29 @@
     
     if(self.flag == 0){
         
-        [UIView animateWithDuration:0.5 animations:^{
+        [UIView animateWithDuration:kDuration animations:^{
             
             self.view.transform = CGAffineTransformMakeTranslation(kLeftViewWidth, 0);
+            self.leftView.transform = CGAffineTransformMakeTranslation(kLeftViewWidth, 0);
             
         } completion:^(BOOL finished) {
             
             self.flag = -1;
-            self.leftView.hidden = NO;
+            //self.leftView.hidden = NO;
             
         }];
         
     }else if (self.flag == 1) {
         
-        [UIView animateWithDuration:0.5 animations:^{
+        [UIView animateWithDuration:kDuration animations:^{
             
             self.view.transform=CGAffineTransformIdentity;
+            self.rightView.transform = CGAffineTransformIdentity;
             
         }completion:^(BOOL finished) {
             
             self.flag = 0;
-            self.rightView.hidden = YES;
+            //self.rightView.hidden = YES;
             
         }];
     }
@@ -262,18 +268,68 @@
 
     
 }
-
-#pragma mark  左边栏的点击事件
-- (void)MainLeftViewMenuDidChick:(MainLeftView  *)orderContent withIndex:(NSInteger )index{
+#pragma mark  右边栏的点击事件
+- (void)MainRightViewMenuDidChick:(MainRightView  *)orderContent withIndex:(NSInteger )index{
     
-    [UIView animateWithDuration:0.5 animations:^{
+    [UIView animateWithDuration:kDuration animations:^{
         
         self.view.transform=CGAffineTransformIdentity;
+        self.rightView.transform = CGAffineTransformIdentity;
         
     }completion:^(BOOL finished) {
         
         self.flag = 0;
-        self.leftView.hidden = YES;
+        //self.rightView.hidden = YES;
+        
+    }];
+    
+    switch (index) {
+        case 0: //点菜管理
+        {
+            OrderingViewController *vc=  [[OrderingViewController alloc]init];
+            
+            [self switchViewController:vc];
+            
+        }
+    
+        break;
+        case 1: //餐台管理
+        {
+            DinnerTableViewController *vc=  [[DinnerTableViewController alloc]init];
+            
+            [self switchViewController:vc];
+            
+        }
+
+        break;
+        case 2: //零售管理
+        {
+            LingShouViewController *lingCtrl=  [[LingShouViewController alloc]init];
+            
+            [self switchViewController:lingCtrl];
+            
+        }
+        break;
+        default:
+        break;
+    }
+    
+       
+    
+    
+}
+
+#pragma mark  左边栏的点击事件
+- (void)MainLeftViewMenuDidChick:(MainLeftView  *)orderContent withIndex:(NSInteger )index{
+    
+    [UIView animateWithDuration:kDuration animations:^{
+        
+        self.view.transform=CGAffineTransformIdentity;
+        self.leftView.transform = CGAffineTransformIdentity;
+    }completion:^(BOOL finished) {
+        
+        self.flag = 0;
+        //self.leftView.hidden = YES;
         
     }];
     

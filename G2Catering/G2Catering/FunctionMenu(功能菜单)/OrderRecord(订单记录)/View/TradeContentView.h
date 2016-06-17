@@ -30,6 +30,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *cheDanBtn;
 @property (weak, nonatomic) IBOutlet UIButton *jieZhangBtn;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UIImageView *bgImgView;
 
 
 @end

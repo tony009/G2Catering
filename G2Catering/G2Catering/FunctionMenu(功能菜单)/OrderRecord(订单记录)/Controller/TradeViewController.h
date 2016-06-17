@@ -19,5 +19,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *endText;
 @property (weak, nonatomic) IBOutlet UIButton *selectBtn;
 @property(nonatomic,strong)UIView *wholeView;
+@property (weak, nonatomic) IBOutlet UIView *allView;
 
 @end

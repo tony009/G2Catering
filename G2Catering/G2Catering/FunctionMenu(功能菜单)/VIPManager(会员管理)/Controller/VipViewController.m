@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _isHidden = YES;
-  [self.bgView setImage:[UIImage imageNamed:@"BG"]];
+  [self.bgView setImage:[UIImage imageNamed:@"订单-BG"]];
     self.vipTable.dataSource =self;
     self.vipTable.delegate =self;
     [self.vipTable registerNib:[UINib nibWithNibName:@"VIPTableViewCell" bundle:nil] forCellReuseIdentifier:@"VIPTableViewCell"];
@@ -45,11 +45,11 @@
     if (_isHidden) {
         [UIView animateWithDuration:0.25 animations:^{
             
-            self.view.transform = CGAffineTransformMakeTranslation(-338, 0);
+            self.allView.transform = CGAffineTransformMakeTranslation(-338, 0);
             VIPLeftView *leftView = [[[NSBundle mainBundle]loadNibNamed:@"VIPLeftView" owner:self options:nil]lastObject];
             leftView.delegate = self;
             leftView.frame = CGRectMake(KScreenWidth - 338, 0, 338, 768);
-            [KWindow addSubview:leftView];
+            [self.view addSubview:leftView];
             _isHidden = NO;
             
         } completion:^(BOOL finished) {
@@ -67,7 +67,7 @@
     
     [UIView animateWithDuration:0.25 animations:^{
         
-        self.view.transform = CGAffineTransformIdentity;
+        self.allView.transform = CGAffineTransformIdentity;
         [orderContent removeFromSuperview];
         _isHidden = YES;
         
@@ -83,7 +83,7 @@
     
     [UIView animateWithDuration:0.25 animations:^{
         
-        self.view.transform = CGAffineTransformIdentity;
+        self.allView.transform = CGAffineTransformIdentity;
          [orderContent removeFromSuperview];
         _isHidden = YES;
         
