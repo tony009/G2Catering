@@ -13,7 +13,7 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="155" height="180"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZPE-WC-I5y">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0@3x_18" translatesAutoresizingMaskIntoConstraints="NO" id="ZPE-WC-I5y">
                         <rect key="frame" x="1" y="0.0" width="153" height="141"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="香辣蒜蓉包" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jb5-HK-vUG">
@@ -41,7 +41,10 @@
             <connections>
                 <outlet property="dishName" destination="jb5-HK-vUG" id="EGY-fX-hsn"/>
             </connections>
-            <point key="canvasLocation" x="73.5" y="192"/>
+            <point key="canvasLocation" x="10.5" y="222"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="0@3x_18" width="506" height="450"/>
+    </resources>
 </document>

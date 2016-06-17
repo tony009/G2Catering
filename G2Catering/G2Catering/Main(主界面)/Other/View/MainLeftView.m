@@ -8,7 +8,6 @@
 
 #import "MainLeftView.h"
 #import "MainLeftTableViewCell.h"
-
 @interface MainLeftView ()<UITableViewDelegate,UITableViewDataSource>{
     
     NSArray *imageArray; //图片数组
@@ -44,7 +43,7 @@
 -(instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
-        
+        [self setUp];
     }
     return self;
 }
@@ -59,6 +58,10 @@
     
 }
 
+- (IBAction)btnAction:(id)sender {
+    
+    [self.delegate MainLeftViewMenuDidChick:self withIndex:100];
+}
 
 #pragma mark -- UITableViewDataSource
 

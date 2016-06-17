@@ -13,15 +13,17 @@
 #import "OrderingViewController.h"
 #import "VipViewController.h"
 #import "BaseSettingsViewController.h"
+#import "TransferViewController.h"
 #import "BookingManagerViewController.h"
 #import "MainRightView.h"
 #import "LingShouViewController.h"
+#import "BookingManagerViewController.h"
 @interface MainViewController ()<MainLeftViewDelegate,MainRightViewDelegate>
 @property (nonatomic,strong) UIView *leftView;
 @property (nonatomic,strong) UIView *rightView;
 @property (nonatomic) int flag;   //(-1,左,0正常，1右)
 
-
+@property (weak, nonatomic) IBOutlet UIButton *button;
 @end
 
 @implementation MainViewController
@@ -36,6 +38,13 @@
     [self p_initViews];
     
 
+//    self.button.backgroundColor = [UIColor blackColor];
+//    
+//    [self.button setTitleEdgeInsets:UIEdgeInsetsMake(40, 40, 40,40 )];
+//    
+//    self.button.titleLabel.numberOfLines = 0;
+    
+    
     
     [self OrderAction:nil];
 
@@ -329,6 +338,14 @@ static float  kDuration = 0.25; //动画持续时间
     }];
     
     switch (index) {
+        case 100: //交接班
+        {
+            TransferViewController *tradeCtrl=  [[TransferViewController alloc] init];
+            
+            [self switchViewController:tradeCtrl];
+            
+        }
+            break;
         case 0: //预订管理
         {
             BookingManagerViewController *bookVC = [[BookingManagerViewController alloc] init];
