@@ -43,21 +43,21 @@
     
     
     
-//    self.btn = [[UIButton alloc]initWithFrame:self.bounds];
-//    [self.btn setTitle:@"全部" forState:UIControlStateNormal];
-//    [self.btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-//    
-//    [self.btn setTitleEdgeInsets:UIEdgeInsetsMake(20, 20, 20,20 )];
-//    self.btn.titleLabel.numberOfLines = 0;
-//
-//    [self addSubview:self.btn];
+    self.btn = [[UIButton alloc]initWithFrame:self.bounds];
+    [self.btn setTitle:@"全部" forState:UIControlStateNormal];
+    [self.btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     
-    self.label  = [[UILabel alloc]initWithFrame:self.bounds];
-    //self.label.center = self.center;
-    self.label.text = @"全部";
-    self.label.textAlignment = NSTextAlignmentCenter;
-    self.label.numberOfLines = 0;
-    [self addSubview:self.label];
+    [self.btn setTitleEdgeInsets:UIEdgeInsetsMake(20, 20, 20,20 )];
+    self.btn.titleLabel.numberOfLines = 0;
+    [self.btn setEnabled:NO];
+    [self addSubview:self.btn];
+    
+//    self.label  = [[UILabel alloc]initWithFrame:CGRectMake(10, 10, 20, 100)];
+//    //self.label.center = self.center;
+//    self.label.text = @"全部";
+//    self.label.textAlignment = NSTextAlignmentCenter;
+//    self.label.numberOfLines = 0;
+//    [self addSubview:self.label];
     
 }
 
