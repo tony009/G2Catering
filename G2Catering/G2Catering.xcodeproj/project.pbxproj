@@ -99,6 +99,8 @@
 		91DAEDD81D12859E00460F4E /* BookManagerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAEDD11D12859E00460F4E /* BookManagerTableViewCell.xib */; };
 		91DAEDD91D12859E00460F4E /* CancelBookView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAEDD31D12859E00460F4E /* CancelBookView.m */; };
 		91DAEDDA1D12859E00460F4E /* CancelBookView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAEDD41D12859E00460F4E /* CancelBookView.xib */; };
+		91DAEE011D12B7BD00460F4E /* TableCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAEDFF1D12B7BD00460F4E /* TableCollectionViewCell.m */; };
+		91DAEE021D12B7BD00460F4E /* TableCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAEE001D12B7BD00460F4E /* TableCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -272,6 +274,9 @@
 		91DAEDD21D12859E00460F4E /* CancelBookView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CancelBookView.h; sourceTree = "<group>"; };
 		91DAEDD31D12859E00460F4E /* CancelBookView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CancelBookView.m; sourceTree = "<group>"; };
 		91DAEDD41D12859E00460F4E /* CancelBookView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CancelBookView.xib; sourceTree = "<group>"; };
+		91DAEDFE1D12B7BD00460F4E /* TableCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableCollectionViewCell.h; sourceTree = "<group>"; };
+		91DAEDFF1D12B7BD00460F4E /* TableCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableCollectionViewCell.m; sourceTree = "<group>"; };
+		91DAEE001D12B7BD00460F4E /* TableCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -894,6 +899,9 @@
 				91DAEDD21D12859E00460F4E /* CancelBookView.h */,
 				91DAEDD31D12859E00460F4E /* CancelBookView.m */,
 				91DAEDD41D12859E00460F4E /* CancelBookView.xib */,
+				91DAEDFE1D12B7BD00460F4E /* TableCollectionViewCell.h */,
+				91DAEDFF1D12B7BD00460F4E /* TableCollectionViewCell.m */,
+				91DAEE001D12B7BD00460F4E /* TableCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1050,6 +1058,7 @@
 				76BB28FF1D1261600093DEDF /* TradeContentView.xib in Resources */,
 				76BB290B1D1261600093DEDF /* EstimateSettingView.xib in Resources */,
 				76BB29121D1261600093DEDF /* PrintSettingsView.xib in Resources */,
+				91DAEE021D12B7BD00460F4E /* TableCollectionViewCell.xib in Resources */,
 				91DAEDD61D12859E00460F4E /* AddBookView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1166,6 +1175,7 @@
 				76BB28F81D1261600093DEDF /* TradeViewController.m in Sources */,
 				76BB29151D1261600093DEDF /* UpdatePasswordView.m in Sources */,
 				76BB29331D1261600093DEDF /* FSCalendar.m in Sources */,
+				91DAEE011D12B7BD00460F4E /* TableCollectionViewCell.m in Sources */,
 				76BB29231D1261600093DEDF /* OrderingTableViewCell.m in Sources */,
 				76BB29061D1261600093DEDF /* AboutSettingsView.m in Sources */,
 				91DAEDBB1D1265C200460F4E /* BaseSettingsViewController.m in Sources */,
