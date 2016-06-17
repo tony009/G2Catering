@@ -100,6 +100,8 @@
 		81DE5A8D1D13E4AB000C4E41 /* CancelBookView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81DE5A821D13E4AB000C4E41 /* CancelBookView.xib */; };
 		81DE5A8E1D13E4AB000C4E41 /* TableCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81DE5A841D13E4AB000C4E41 /* TableCollectionViewCell.m */; };
 		81DE5A8F1D13E4AB000C4E41 /* TableCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81DE5A851D13E4AB000C4E41 /* TableCollectionViewCell.xib */; };
+		81EB4D761D13F4EF00FF3817 /* TypeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EB4D741D13F4EF00FF3817 /* TypeCollectionViewCell.m */; };
+		81EB4D771D13F4EF00FF3817 /* TypeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81EB4D751D13F4EF00FF3817 /* TypeCollectionViewCell.xib */; };
 		91DAEDBB1D1265C200460F4E /* BaseSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAEDBA1D1265C200460F4E /* BaseSettingsViewController.m */; };
 		F16B15851D128375005B3B64 /* TransferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F16B15831D128375005B3B64 /* TransferViewController.m */; };
 		F16B15861D128375005B3B64 /* TransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F16B15841D128375005B3B64 /* TransferViewController.xib */; };
@@ -278,6 +280,9 @@
 		81DE5A831D13E4AB000C4E41 /* TableCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableCollectionViewCell.h; sourceTree = "<group>"; };
 		81DE5A841D13E4AB000C4E41 /* TableCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableCollectionViewCell.m; sourceTree = "<group>"; };
 		81DE5A851D13E4AB000C4E41 /* TableCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableCollectionViewCell.xib; sourceTree = "<group>"; };
+		81EB4D731D13F4EF00FF3817 /* TypeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeCollectionViewCell.h; sourceTree = "<group>"; };
+		81EB4D741D13F4EF00FF3817 /* TypeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeCollectionViewCell.m; sourceTree = "<group>"; };
+		81EB4D751D13F4EF00FF3817 /* TypeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TypeCollectionViewCell.xib; sourceTree = "<group>"; };
 		8A99B5CD036CAE879C22EB66 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		91DAEDBA1D1265C200460F4E /* BaseSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSettingsViewController.m; sourceTree = "<group>"; };
 		F16B15821D128375005B3B64 /* TransferViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransferViewController.h; sourceTree = "<group>"; };
@@ -722,6 +727,9 @@
 				8105DFAA1D13CA6700A20CEC /* ZhifuView.h */,
 				8105DFAB1D13CA6700A20CEC /* ZhifuView.m */,
 				8105DFAD1D13CA7300A20CEC /* ZhifuView.xib */,
+				81EB4D731D13F4EF00FF3817 /* TypeCollectionViewCell.h */,
+				81EB4D741D13F4EF00FF3817 /* TypeCollectionViewCell.m */,
+				81EB4D751D13F4EF00FF3817 /* TypeCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1084,6 +1092,7 @@
 				81DE5A891D13E4AB000C4E41 /* AddBookView.xib in Resources */,
 				8105DFAE1D13CA7300A20CEC /* ZhifuView.xib in Resources */,
 				76BB28FD1D1261600093DEDF /* JiLuCaiViewCell.xib in Resources */,
+				81EB4D771D13F4EF00FF3817 /* TypeCollectionViewCell.xib in Resources */,
 				76BB28F91D1261600093DEDF /* TradeViewController.xib in Resources */,
 				76BB293B1D1261600093DEDF /* LICENSE in Resources */,
 				76BB29141D1261600093DEDF /* PrintSettingTableViewCell.xib in Resources */,
@@ -1173,6 +1182,7 @@
 				76BB29381D1261600093DEDF /* FSCalendarFlowLayout.m in Sources */,
 				81DE5A861D13E4AB000C4E41 /* BookingManagerViewController.m in Sources */,
 				76BB29351D1261600093DEDF /* FSCalendarCell.m in Sources */,
+				81EB4D761D13F4EF00FF3817 /* TypeCollectionViewCell.m in Sources */,
 				76BB292E1D1261600093DEDF /* main.m in Sources */,
 				76BB291F1D1261600093DEDF /* OrderingViewController.m in Sources */,
 				76BB29191D1261600093DEDF /* VIPLeftView.m in Sources */,

@@ -8,7 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LingShouViewController : UIViewController
+@interface LingShouViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+{
+    
+    NSMutableArray *_priceArray;
+}
+
 //存取字符串显示的字符串
 @property(retain,nonatomic) NSMutableString *resultStr;
 @property (weak, nonatomic) IBOutlet UIView *leftView;
@@ -22,6 +27,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *resultLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *priceLabel;
+@property (weak, nonatomic) IBOutlet UIView *calculatorView;
 
 
 @end
