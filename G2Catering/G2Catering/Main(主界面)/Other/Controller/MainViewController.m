@@ -15,6 +15,10 @@
 #import "BaseSettingsViewController.h"
 #import "TransferViewController.h"
 @interface MainViewController ()<MainLeftViewDelegate>
+#import "BookingManagerViewController.h"
+#import "MainRightView.h"
+#import "LingShouViewController.h"
+@interface MainViewController ()<MainLeftViewDelegate,MainRightViewDelegate>
 @property (nonatomic,strong) UIView *leftView;
 @property (nonatomic,strong) UIView *rightView;
 @property (nonatomic) int flag;   //(-1,左,0正常，1右)
