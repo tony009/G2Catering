@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+@class MainRightView;
+@protocol MainRightViewDelegate <NSObject>
 
+@optional
+- (void)MainRightViewMenuDidChick:(MainRightView  *)orderContent withIndex:(NSInteger )index;
+
+@end
 @interface MainRightView : UIView
 
 @property (weak, nonatomic) IBOutlet UIButton *orderingButton;
-
+@property (nonatomic, weak) id<MainRightViewDelegate> delegate;
 @end

@@ -24,6 +24,7 @@
     [self.tableView registerNib:[UINib nibWithNibName:@"JiLuCaiViewCell" bundle:nil] forCellReuseIdentifier:@"JiLuCaiViewCell"];
     [self setRoundAngleWithView:self.cheDanBtn withCornerRadius:5 withColor:[UIColor clearColor]];
     [self setRoundAngleWithView:self.jieZhangBtn withCornerRadius:5 withColor:[UIColor clearColor]];
+    [self setRoundAngleWithView:self.bgImgView withCornerRadius:5 withColor:[UIColor lightGrayColor]];
     [self.cheDanBtn addTarget:self action:@selector(cheAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.jieZhangBtn addTarget:self action:@selector(jieAction:) forControlEvents:UIControlEventTouchUpInside];
     

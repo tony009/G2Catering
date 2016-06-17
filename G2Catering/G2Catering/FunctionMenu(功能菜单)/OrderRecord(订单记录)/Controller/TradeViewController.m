@@ -50,7 +50,18 @@
     //默认状态下
     _imageArray = [NSMutableArray arrayWithArray:@[@"交易记录－全部-点击",@"交易记录－堂食",@"交易记录－外卖",@"交易记录－外带",@"交易记录－异常"]];
      _selectedImage = [NSMutableArray arrayWithArray:@[@"交易记录－全部",@"交易记录－堂食-点击",@"交易记录－外卖-点击",@"交易记录－外带-点击",@"交易记录－异常-点击"]];
-    [self.imgView setImage:[UIImage imageNamed:@"BG"]];
+    [self setRoundAngleWithView:self.imgView withCornerRadius:5 withColor:[UIColor lightGrayColor]];
+    
+}
+
+//设置圆角
+- (void)setRoundAngleWithView:(UIView *)changeView withCornerRadius:(double)cornerRadius withColor:(UIColor *)color{
+    
+    changeView.layer.masksToBounds = YES;
+    changeView.layer.cornerRadius = cornerRadius;
+    changeView.layer.borderColor = color.CGColor;
+    changeView.layer.borderWidth = 1;
+    
 }
 
 
@@ -155,15 +166,15 @@
 - (void)showOriginalContentView{
     
         [UIView animateWithDuration:0.25 animations:^{
-            
-            self.view.transform = CGAffineTransformMakeTranslation(-338, 0);
+           self.allView.transform = CGAffineTransformMakeTranslation(-338, 0);
             TradeContentView *originalV = [[[NSBundle mainBundle]loadNibNamed:@"TradeContentView" owner:nil options:nil]lastObject ];
-            originalV.frame = CGRectMake(KScreenWidth - koriginalWidth, 0, koriginalWidth, KScreenHeight);
+            originalV.frame = CGRectMake(CGRectGetWidth(self.view.frame)-koriginalWidth , 0, koriginalWidth, KScreenHeight);
             self.originalVc = originalV;
 
             originalV.delegate = self;
-            [KWindow addSubview:originalV];
+            [self.view addSubview:originalV];
             
+       
         } completion:^(BOOL finished) {
             
             
@@ -178,7 +189,7 @@
 
 - (void)hideOriginalContentView{
     [UIView animateWithDuration:0.25 animations:^{
-        self.view.transform = CGAffineTransformIdentity;
+        self.allView.transform = CGAffineTransformIdentity;
         [self.originalVc removeFromSuperview];
     }];
     
