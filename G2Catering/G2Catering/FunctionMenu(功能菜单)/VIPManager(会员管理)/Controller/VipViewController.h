@@ -13,5 +13,6 @@
 @property (weak, nonatomic) IBOutlet UITableView *vipTable;
 @property (weak, nonatomic) IBOutlet UIButton *addBtn;
 @property (weak, nonatomic) IBOutlet UIView *searchView;
+@property (weak, nonatomic) IBOutlet UIView *allView;
 
 @end

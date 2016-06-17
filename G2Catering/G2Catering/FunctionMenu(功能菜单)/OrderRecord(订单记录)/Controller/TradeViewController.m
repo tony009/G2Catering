@@ -13,7 +13,8 @@
 #import "TypeTableViewCell.h"
 #import "FSCalendar.h"
 #import "NSDate+FSExtension.h"
-@interface TradeViewController ()<TradeContentViewDelegate,UITableViewDataSource,UITableViewDelegate,FSCalendarDataSource,FSCalendarDelegate>{
+#import "CheDanView.h"
+@interface TradeViewController ()<TradeContentViewDelegate,UITableViewDataSource,UITableViewDelegate,FSCalendarDataSource,FSCalendarDelegate,CheDanViewDelegate>{
     
     BOOL isHidden;
     NSMutableArray *_groupArray;
@@ -23,6 +24,7 @@
     UIButton *_selectedBtn;
     UIButton *_dateBtn;
     FSCalendar *_calendar;
+    BOOL _isALL;
 }
 @property (nonatomic, strong) TradeContentView *originalVc;
 
@@ -48,7 +50,18 @@
     //默认状态下
     _imageArray = [NSMutableArray arrayWithArray:@[@"交易记录－全部-点击",@"交易记录－堂食",@"交易记录－外卖",@"交易记录－外带",@"交易记录－异常"]];
      _selectedImage = [NSMutableArray arrayWithArray:@[@"交易记录－全部",@"交易记录－堂食-点击",@"交易记录－外卖-点击",@"交易记录－外带-点击",@"交易记录－异常-点击"]];
-    [self.imgView setImage:[UIImage imageNamed:@"BG"]];
+    [self setRoundAngleWithView:self.imgView withCornerRadius:5 withColor:[UIColor lightGrayColor]];
+    
+}
+
+//设置圆角
+- (void)setRoundAngleWithView:(UIView *)changeView withCornerRadius:(double)cornerRadius withColor:(UIColor *)color{
+    
+    changeView.layer.masksToBounds = YES;
+    changeView.layer.cornerRadius = cornerRadius;
+    changeView.layer.borderColor = color.CGColor;
+    changeView.layer.borderWidth = 1;
+    
 }
 
 
@@ -153,15 +166,15 @@
 - (void)showOriginalContentView{
     
         [UIView animateWithDuration:0.25 animations:^{
-            
-            self.view.transform = CGAffineTransformMakeTranslation(-338, 0);
+           self.allView.transform = CGAffineTransformMakeTranslation(-338, 0);
             TradeContentView *originalV = [[[NSBundle mainBundle]loadNibNamed:@"TradeContentView" owner:nil options:nil]lastObject ];
-            originalV.frame = CGRectMake(KScreenWidth - koriginalWidth, 0, koriginalWidth, KScreenHeight);
+            originalV.frame = CGRectMake(CGRectGetWidth(self.view.frame)-koriginalWidth , 0, koriginalWidth, KScreenHeight);
             self.originalVc = originalV;
 
             originalV.delegate = self;
-            [KWindow addSubview:originalV];
+            [self.view addSubview:originalV];
             
+       
         } completion:^(BOOL finished) {
             
             
@@ -176,7 +189,7 @@
 
 - (void)hideOriginalContentView{
     [UIView animateWithDuration:0.25 animations:^{
-        self.view.transform = CGAffineTransformIdentity;
+        self.allView.transform = CGAffineTransformIdentity;
         [self.originalVc removeFromSuperview];
     }];
     
@@ -203,6 +216,7 @@
     [button setImage:[UIImage imageNamed:_imageArray[section]] forState:UIControlStateNormal];
     [button setImage:[UIImage imageNamed:_selectedImage[section]] forState:UIControlStateSelected];
     [button setTitleColor:[UIColor colorWithRed:143/255.0 green:159/255.0 blue:175/255.0 alpha:1] forState:UIControlStateNormal];
+    button.tag = 210 + section;
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
     button.backgroundColor = [UIColor clearColor] ;
     return button;
@@ -210,6 +224,11 @@
     
 }
 - (void)groupAction:(UIButton *)btn{
+    if (btn.tag == 210) {
+        
+        _isALL = !_isALL;
+        [self.typeTable reloadData];
+    }
     if (_selectBtn != btn) {
         
         _selectBtn.selected = NO;
@@ -223,7 +242,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if (tableView  == _typeTable) {
        
-        if(section == 0){
+        if(section == 0 && _isALL){
             
             return _subArray.count;
             
@@ -310,11 +329,27 @@
     
 }
 
+#pragma mark  注释CheDanViewDelegate
+- (void)CheDanViewDidCancel:(CheDanView  *)orderContent{
+    
+    [orderContent removeFromSuperview];
+    [self hideOriginalContentView];
+    
+}
+- (void)CheDanViewDidYes:(CheDanView  *)orderContent{
+    
+    [orderContent removeFromSuperview];
+    [self hideOriginalContentView];
+}
+
 #pragma mark  注释OriginalContentViewDelegate
 
 - (void)TradeContentViewDidChickCheDan:(TradeContentView  *)orderContent{
+    CheDanView *cheView = [[[NSBundle mainBundle]loadNibNamed:@"CheDanView" owner:nil options:nil]lastObject];
+    cheView.delegate= self;
+    [KWindow addSubview:cheView];
     
-    [self hideOriginalContentView];
+//    [self hideOriginalContentView];
     
     
 }

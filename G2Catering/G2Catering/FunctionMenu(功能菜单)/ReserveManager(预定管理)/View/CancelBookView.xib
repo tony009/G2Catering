@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CancelBookView">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="voB-w9-h9M">
+                    <rect key="frame" x="377" y="248" width="270" height="161"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="取消预订" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lF6-wD-WJS">
+                            <rect key="frame" x="95" y="27" width="80" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="确定取消预定吗?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPt-wQ-BPF">
+                            <rect key="frame" x="68" y="73" width="135" height="22"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WFl-o4-CXJ">
+                            <rect key="frame" x="0.0" y="116" width="270" height="1"/>
+                            <color key="backgroundColor" red="0.76078431372549016" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="nYa-gL-Wo1"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqA-E5-83U">
+                            <rect key="frame" x="135" y="117" width="1" height="44"/>
+                            <color key="backgroundColor" red="0.76078431372549016" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="5II-TS-R3T"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzq-vO-Gx8">
+                            <rect key="frame" x="0.0" y="117" width="135" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vvr-Ix-hbF">
+                            <rect key="frame" x="136" y="117" width="134" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="确定">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="lF6-wD-WJS" firstAttribute="centerX" secondItem="voB-w9-h9M" secondAttribute="centerX" id="4Bi-a8-MmI"/>
+                        <constraint firstAttribute="trailing" secondItem="WFl-o4-CXJ" secondAttribute="trailing" id="8tr-4U-CJo"/>
+                        <constraint firstItem="zPt-wQ-BPF" firstAttribute="top" secondItem="lF6-wD-WJS" secondAttribute="bottom" constant="22" id="Cww-pK-Ibv"/>
+                        <constraint firstItem="yqA-E5-83U" firstAttribute="leading" secondItem="dzq-vO-Gx8" secondAttribute="trailing" id="GFi-Ke-UHh"/>
+                        <constraint firstAttribute="bottom" secondItem="dzq-vO-Gx8" secondAttribute="bottom" id="Kvw-s4-HqH"/>
+                        <constraint firstItem="yqA-E5-83U" firstAttribute="centerX" secondItem="voB-w9-h9M" secondAttribute="centerX" id="Rd6-fa-qk2"/>
+                        <constraint firstItem="yqA-E5-83U" firstAttribute="top" secondItem="WFl-o4-CXJ" secondAttribute="bottom" id="UKL-jT-iIc"/>
+                        <constraint firstAttribute="width" constant="270" id="WIx-nK-dwu"/>
+                        <constraint firstItem="WFl-o4-CXJ" firstAttribute="top" secondItem="voB-w9-h9M" secondAttribute="top" constant="116" id="WgH-XN-IwS"/>
+                        <constraint firstItem="zPt-wQ-BPF" firstAttribute="centerX" secondItem="lF6-wD-WJS" secondAttribute="centerX" id="YvI-Os-xKM"/>
+                        <constraint firstItem="dzq-vO-Gx8" firstAttribute="top" secondItem="WFl-o4-CXJ" secondAttribute="bottom" id="ZVD-eh-s1j"/>
+                        <constraint firstAttribute="trailing" secondItem="Vvr-Ix-hbF" secondAttribute="trailing" id="ayr-ds-4Rb"/>
+                        <constraint firstItem="Vvr-Ix-hbF" firstAttribute="top" secondItem="WFl-o4-CXJ" secondAttribute="bottom" id="cEE-Ff-72d"/>
+                        <constraint firstAttribute="bottom" secondItem="yqA-E5-83U" secondAttribute="bottom" id="del-eh-kkb"/>
+                        <constraint firstItem="dzq-vO-Gx8" firstAttribute="leading" secondItem="voB-w9-h9M" secondAttribute="leading" id="eHu-ai-C69"/>
+                        <constraint firstItem="lF6-wD-WJS" firstAttribute="top" secondItem="voB-w9-h9M" secondAttribute="top" constant="27" id="o94-v8-DVQ"/>
+                        <constraint firstAttribute="bottom" secondItem="Vvr-Ix-hbF" secondAttribute="bottom" id="p41-Ro-LVc"/>
+                        <constraint firstAttribute="height" constant="161" id="pup-XY-3lo"/>
+                        <constraint firstItem="Vvr-Ix-hbF" firstAttribute="leading" secondItem="yqA-E5-83U" secondAttribute="trailing" id="qST-oH-f4k"/>
+                        <constraint firstItem="WFl-o4-CXJ" firstAttribute="leading" secondItem="voB-w9-h9M" secondAttribute="leading" id="seR-Un-mBS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.65000000000000002" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="voB-w9-h9M" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="377" id="5U3-8u-8vi"/>
+                <constraint firstItem="voB-w9-h9M" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="248" id="uTa-pC-Gkf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancelBookView" destination="voB-w9-h9M" id="CZB-lp-d94"/>
+                <outlet property="cancelBtn" destination="dzq-vO-Gx8" id="dL2-xa-CFz"/>
+                <outlet property="sureBtn" destination="Vvr-Ix-hbF" id="uL9-VT-Rov"/>
+            </connections>
+        </view>
+    </objects>
+</document>
