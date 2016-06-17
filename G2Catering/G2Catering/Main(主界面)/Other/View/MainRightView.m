@@ -43,6 +43,25 @@
     
 }
 
+
+- (IBAction)orderingAction:(UIButton *)sender {
+    
+    if([self.delegate respondsToSelector:@selector(MainRightViewMenuDidChick:withIndex:)]){
+        
+        [self.delegate MainRightViewMenuDidChick:self withIndex:0];
+    }
+    
+}
+
+- (IBAction)dinnerTableAction:(UIButton *)sender {
+    
+    if([self.delegate respondsToSelector:@selector(MainRightViewMenuDidChick:withIndex:)]){
+        
+        [self.delegate MainRightViewMenuDidChick:self withIndex:1];
+    }
+    
+}
+
 - (IBAction)lingShouAction:(id)sender {
     if([self.delegate respondsToSelector:@selector(MainRightViewMenuDidChick:withIndex:)]){
         
