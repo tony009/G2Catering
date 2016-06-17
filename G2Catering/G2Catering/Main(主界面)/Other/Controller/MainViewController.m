@@ -19,7 +19,7 @@
 @property (nonatomic,strong) UIView *rightView;
 @property (nonatomic) int flag;   //(-1,左,0正常，1右)
 
-
+@property (weak, nonatomic) IBOutlet UIButton *button;
 @end
 
 @implementation MainViewController
@@ -34,6 +34,13 @@
     [self p_initViews];
     
 
+//    self.button.backgroundColor = [UIColor blackColor];
+//    
+//    [self.button setTitleEdgeInsets:UIEdgeInsetsMake(40, 40, 40,40 )];
+//    
+//    self.button.titleLabel.numberOfLines = 0;
+    
+    
     
     [self OrderAction:nil];
 
