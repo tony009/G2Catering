@@ -35,9 +35,20 @@
     [super viewDidLoad];
     
     self.estimateStatusBtnBackView.hidden = YES;
+    self.rightBackView.hidden = YES;
     
     self.contentBackView.layer.cornerRadius = 5;
     self.contentBackView.layer.masksToBounds = YES;
+    
+
+    [self setupLeftView];
+    
+    [self setupRightView];
+}
+
+#pragma mark - setupLeftView
+
+- (void)setupLeftView{
     
     for (int i = 0; i<self.leftMeunBtns.count; i++) {
         
@@ -56,7 +67,17 @@
     [self didClickLeftMeunBtn:self.leftMeunBtns[0]];
 }
 
+
 - (void)didClickLeftMeunBtn:(UIButton *)sender {
+    
+    [UIView animateWithDuration:0.3 animations:^{
+        
+        self.leftAndContentBackView.transform = CGAffineTransformIdentity;
+        
+    } completion:^(BOOL finished) {
+        
+        self.rightBackView.hidden = YES;
+    }];
 
     for (UIView *view in self.contentBackView.subviews) {
         
@@ -97,6 +118,8 @@
         
         PrintSettingsView *view = [[NSBundle mainBundle] loadNibNamed:@"PrintSettingsView" owner:nil options:nil].firstObject;
         
+        [view.addBtn addTarget:self action:@selector(addPrintDevice) forControlEvents:UIControlEventTouchUpInside];
+        
         [self.contentBackView addSubview:view];
     }
     
@@ -125,6 +148,94 @@
 
     }
     
+}
+
+- (void)addPrintDevice{
+    
+    
+    [UIView animateWithDuration:0.3 animations:^{
+        
+       self.leftAndContentBackView.transform = CGAffineTransformMakeTranslation(-356, 0);
+        
+    } completion:^(BOOL finished) {
+        
+        self.rightBackView.hidden = NO;
+    }];
+}
+
+#pragma mark- setupRightView
+
+- (void)setupRightView{
+    
+    self.rightBackView.layer.cornerRadius = 5;
+    self.rightBackView.layer.masksToBounds = YES;
+    
+    self.right_tittle.layer.cornerRadius = 2;
+    self.right_tittle.layer.masksToBounds = YES;
+    
+    self.right_sureBtn.layer.cornerRadius = 2;
+    self.right_sureBtn.layer.masksToBounds = YES;
+    [self.right_sureBtn addTarget:self action:@selector(didClickRightSureBtn) forControlEvents:UIControlEventTouchUpInside];
+    self.right_cancelBtn.layer.cornerRadius = 2;
+    self.right_cancelBtn.layer.masksToBounds = YES;
+    [self.right_cancelBtn addTarget:self action:@selector(didClickRightCancelBtn) forControlEvents:UIControlEventTouchUpInside];
+    
+    for (int i = 0; i<self.right_foodTypeBtns.count; i++) {
+        
+        UIButton *btn = self.right_foodTypeBtns[i];
+        btn.tag = 200 + i;
+        [btn addTarget:self action:@selector(chooseRightViewFoodType:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    
+    
+    UITapGestureRecognizer *tapStatus = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didClickRight_status)];
+    
+    [self.right_status addGestureRecognizer:tapStatus];
+    
+    
+    UITapGestureRecognizer *tapTest = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didClickRight_test)];
+    
+    [self.right_test addGestureRecognizer:tapTest];
+}
+
+- (void)didClickRight_status{
+    
+    NSLog(@"%s",__func__);
+}
+
+- (void)didClickRight_test{
+    
+    NSLog(@"%s",__func__);
+}
+
+- (void)chooseRightViewFoodType:(UIButton *)sender{
+    
+    sender.selected = YES;
+}
+
+- (void)didClickRightSureBtn{
+    [UIView animateWithDuration:0.3 animations:^{
+        
+        self.leftAndContentBackView.transform = CGAffineTransformIdentity;
+        
+    } completion:^(BOOL finished) {
+        
+        self.rightBackView.hidden = YES;
+    }];
+    
+}
+
+
+- (void)didClickRightCancelBtn{
+    
+    [UIView animateWithDuration:0.3 animations:^{
+        
+        self.leftAndContentBackView.transform = CGAffineTransformIdentity;
+        
+    } completion:^(BOOL finished) {
+        
+        self.rightBackView.hidden = YES;
+    }];
 }
 
 - (void)didClickestimateStatusBtn:(UIButton *)sender {

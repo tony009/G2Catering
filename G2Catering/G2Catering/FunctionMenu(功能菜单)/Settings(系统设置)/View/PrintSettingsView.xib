@@ -20,9 +20,9 @@
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yK7-kr-Vpl">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yK7-kr-Vpl">
                             <rect key="frame" x="638" y="16" width="34" height="34"/>
-                            <state key="normal" backgroundImage="形状4"/>
+                            <state key="normal" image="设置-形状4"/>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -116,8 +116,8 @@
                         <constraint firstAttribute="bottom" secondItem="wc5-Do-JUc" secondAttribute="bottom" id="uBm-QS-7Fw"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sXT-NE-EZR">
-                    <rect key="frame" x="0.0" y="65" width="694" height="1"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sXT-NE-EZR">
+                    <rect key="frame" x="0.0" y="64" width="694" height="1"/>
                     <color key="backgroundColor" red="0.88479132400000005" green="0.89877158720000005" blue="0.91534745070000001" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="1" id="0q6-V2-8eU"/>
@@ -149,6 +149,6 @@
         </view>
     </objects>
     <resources>
-        <image name="形状4" width="34" height="34"/>
+        <image name="设置-形状4" width="34" height="34"/>
     </resources>
 </document>
