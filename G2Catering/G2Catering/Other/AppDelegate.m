@@ -13,6 +13,7 @@
 #import "TradeViewController.h"
 #import "VipViewController.h"
 #import "LingShouViewController.h"
+#import "LoginViewController.h"
 
 @interface AppDelegate ()
 
@@ -28,12 +29,11 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    MainViewController *mvc = [[MainViewController alloc]init];
+
+    LoginViewController *loginVC = [LoginViewController new];
     
-    UINavigationController *na = [[UINavigationController alloc]initWithRootViewController:mvc];
-    na.navigationBarHidden = YES;
     
-    self.window.rootViewController = na;
+    self.window.rootViewController = loginVC;
     
     return YES;
 }

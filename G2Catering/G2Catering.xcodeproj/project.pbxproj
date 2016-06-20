@@ -107,6 +107,12 @@
 		913419EE1D16465A000222CD /* CancelBookView.m in Sources */ = {isa = PBXBuildFile; fileRef = 913419E81D16465A000222CD /* CancelBookView.m */; };
 		913419EF1D16465A000222CD /* CancelBookView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 913419E91D16465A000222CD /* CancelBookView.xib */; };
 		91DAEDBB1D1265C200460F4E /* BaseSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAEDBA1D1265C200460F4E /* BaseSettingsViewController.m */; };
+		91DB34D41D179255000CB5F4 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DB34D21D179255000CB5F4 /* LoginViewController.m */; };
+		91DB34D51D179255000CB5F4 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DB34D31D179255000CB5F4 /* LoginViewController.xib */; };
+		91DB34D81D179FA2000CB5F4 /* SearchBlueToothView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DB34D71D179FA2000CB5F4 /* SearchBlueToothView.m */; };
+		91DB34DA1D179FB0000CB5F4 /* SearchBlueToothView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DB34D91D179FB0000CB5F4 /* SearchBlueToothView.xib */; };
+		91DB34DE1D17C28B000CB5F4 /* BlueToothDeviceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DB34DC1D17C28B000CB5F4 /* BlueToothDeviceTableViewCell.m */; };
+		91DB34DF1D17C28B000CB5F4 /* BlueToothDeviceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DB34DD1D17C28B000CB5F4 /* BlueToothDeviceTableViewCell.xib */; };
 		F16B15851D128375005B3B64 /* TransferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F16B15831D128375005B3B64 /* TransferViewController.m */; };
 		F16B15861D128375005B3B64 /* TransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F16B15841D128375005B3B64 /* TransferViewController.xib */; };
 		F1DE47171D13902A0051B7A7 /* XYPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DE47161D13902A0051B7A7 /* XYPieChart.m */; };
@@ -296,6 +302,15 @@
 		913419E81D16465A000222CD /* CancelBookView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CancelBookView.m; sourceTree = "<group>"; };
 		913419E91D16465A000222CD /* CancelBookView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CancelBookView.xib; sourceTree = "<group>"; };
 		91DAEDBA1D1265C200460F4E /* BaseSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSettingsViewController.m; sourceTree = "<group>"; };
+		91DB34D11D179255000CB5F4 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		91DB34D21D179255000CB5F4 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		91DB34D31D179255000CB5F4 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		91DB34D61D179FA2000CB5F4 /* SearchBlueToothView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBlueToothView.h; sourceTree = "<group>"; };
+		91DB34D71D179FA2000CB5F4 /* SearchBlueToothView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBlueToothView.m; sourceTree = "<group>"; };
+		91DB34D91D179FB0000CB5F4 /* SearchBlueToothView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchBlueToothView.xib; sourceTree = "<group>"; };
+		91DB34DB1D17C28B000CB5F4 /* BlueToothDeviceTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueToothDeviceTableViewCell.h; sourceTree = "<group>"; };
+		91DB34DC1D17C28B000CB5F4 /* BlueToothDeviceTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueToothDeviceTableViewCell.m; sourceTree = "<group>"; };
+		91DB34DD1D17C28B000CB5F4 /* BlueToothDeviceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlueToothDeviceTableViewCell.xib; sourceTree = "<group>"; };
 		F16B15821D128375005B3B64 /* TransferViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransferViewController.h; sourceTree = "<group>"; };
 		F16B15831D128375005B3B64 /* TransferViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransferViewController.m; sourceTree = "<group>"; };
 		F16B15841D128375005B3B64 /* TransferViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransferViewController.xib; sourceTree = "<group>"; };
@@ -988,6 +1003,9 @@
 		91DB34CE1D178E51000CB5F4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				91DB34D11D179255000CB5F4 /* LoginViewController.h */,
+				91DB34D21D179255000CB5F4 /* LoginViewController.m */,
+				91DB34D31D179255000CB5F4 /* LoginViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1002,6 +1020,12 @@
 		91DB34D01D178E51000CB5F4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				91DB34D61D179FA2000CB5F4 /* SearchBlueToothView.h */,
+				91DB34D71D179FA2000CB5F4 /* SearchBlueToothView.m */,
+				91DB34D91D179FB0000CB5F4 /* SearchBlueToothView.xib */,
+				91DB34DB1D17C28B000CB5F4 /* BlueToothDeviceTableViewCell.h */,
+				91DB34DC1D17C28B000CB5F4 /* BlueToothDeviceTableViewCell.m */,
+				91DB34DD1D17C28B000CB5F4 /* BlueToothDeviceTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1170,8 +1194,11 @@
 				76BB291C1D1261600093DEDF /* VIPTableViewCell.xib in Resources */,
 				913419ED1D16465A000222CD /* BookManagerTableViewCell.xib in Resources */,
 				913419DB1D16454B000222CD /* BookingManagerViewController.xib in Resources */,
+				91DB34DF1D17C28B000CB5F4 /* BlueToothDeviceTableViewCell.xib in Resources */,
 				76BB292A1D1261600093DEDF /* MainLeftView.xib in Resources */,
 				8105DFAE1D13CA7300A20CEC /* ZhifuView.xib in Resources */,
+				91DB34DA1D179FB0000CB5F4 /* SearchBlueToothView.xib in Resources */,
+				91DB34D51D179255000CB5F4 /* LoginViewController.xib in Resources */,
 				76BB28FD1D1261600093DEDF /* JiLuCaiViewCell.xib in Resources */,
 				81EB4D771D13F4EF00FF3817 /* TypeCollectionViewCell.xib in Resources */,
 				76BB28F91D1261600093DEDF /* TradeViewController.xib in Resources */,
@@ -1272,6 +1299,7 @@
 				76BB29191D1261600093DEDF /* VIPLeftView.m in Sources */,
 				76BB29131D1261600093DEDF /* PrintSettingTableViewCell.m in Sources */,
 				76BB29371D1261600093DEDF /* FSCalendarConstance.m in Sources */,
+				91DB34D41D179255000CB5F4 /* LoginViewController.m in Sources */,
 				76BB293E1D1261600093DEDF /* NSString+FSExtension.m in Sources */,
 				76BB29291D1261600093DEDF /* MainLeftView.m in Sources */,
 				817CA09F1D12850100F1F61E /* CheDanView.m in Sources */,
@@ -1281,6 +1309,7 @@
 				913419EC1D16465A000222CD /* BookManagerTableViewCell.m in Sources */,
 				913419DF1D164653000222CD /* TableCollectionViewCell.m in Sources */,
 				76BB28FE1D1261600093DEDF /* TradeContentView.m in Sources */,
+				91DB34D81D179FA2000CB5F4 /* SearchBlueToothView.m in Sources */,
 				76BB29001D1261600093DEDF /* TypeTableViewCell.m in Sources */,
 				817CA09A1D1283AC00F1F61E /* LingShouTableViewCell.m in Sources */,
 				76BB29251D1261600093DEDF /* MainViewController.m in Sources */,
@@ -1293,6 +1322,7 @@
 				76BB292B1D1261600093DEDF /* MainRightView.m in Sources */,
 				76BB28F51D1261600093DEDF /* HttpTool.m in Sources */,
 				F16B15851D128375005B3B64 /* TransferViewController.m in Sources */,
+				91DB34DE1D17C28B000CB5F4 /* BlueToothDeviceTableViewCell.m in Sources */,
 				76BB293D1D1261600093DEDF /* NSDate+TEAExtensions.m in Sources */,
 				76BB29101D1261600093DEDF /* LM_button.m in Sources */,
 				76BB29321D1261600093DEDF /* FSCalendar+IBExtension.m in Sources */,
