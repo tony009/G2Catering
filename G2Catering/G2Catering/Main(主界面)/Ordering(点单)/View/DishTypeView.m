@@ -12,6 +12,12 @@
 
 @interface DishTypeView ()<UICollectionViewDelegate,UICollectionViewDataSource>
 @property (nonatomic,strong) UICollectionView *collectionView;
+
+
+
+
+
+
 @end
 
 @implementation DishTypeView
@@ -65,13 +71,12 @@
     flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
     flowLayout.itemSize = CGSizeMake(63, 85);
  
-    
-//    
-//    [self.collectionView registerNib:nib forCellWithReuseIdentifier:@"OrderingCollectionViewReuseCell"];
-    
     [self.collectionView registerClass:[DishTypeViewCollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
     
     [self addSubview:self.collectionView];
+    
+    
+    self.strArray = [NSArray array];
 }
 
 
@@ -79,14 +84,16 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     
-    return 9;
+    return self.strArray.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
     static NSString *identify = @"cell";
     
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identify forIndexPath:indexPath];
+    DishTypeViewCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identify forIndexPath:indexPath];
+    
+    [cell.btn setTitle:self.strArray[indexPath.row] forState:UIControlStateNormal];
     
     return cell;
 }
@@ -96,8 +103,25 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
+    DishTypeViewCollectionViewCell *cell = (DishTypeViewCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    cell.backgroundColor = RGB(0x2a, 0x42, 0x5a);
+    [cell.btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    
+    if ([self.delegate respondsToSelector:@selector(DishTypeView:didSelectItemAtIndex:)]) {
+        
+        [self.delegate DishTypeView:self didSelectItemAtIndex:indexPath.row];
+        
+    }
+    
+}
+
+
+- (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath{
     
     
+    DishTypeViewCollectionViewCell *cell = (DishTypeViewCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    cell.backgroundColor = [UIColor whiteColor];
+    [cell.btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
 }
 
 @end

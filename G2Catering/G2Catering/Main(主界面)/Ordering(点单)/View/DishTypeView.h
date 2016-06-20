@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@class DishTypeView;
+@protocol DishTypeViewDelegate <NSObject>
+
+- (void)DishTypeView:(DishTypeView *)dishTypeView didSelectItemAtIndex:(NSInteger *)index;
+
+@end
+
 @interface DishTypeView : UIView
 
+@property (nonatomic,strong) NSArray<NSString *> *strArray;
+
+@property (nonatomic,weak)id<DishTypeViewDelegate>delegate;
 @end

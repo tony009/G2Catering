@@ -11,5 +11,5 @@
 @interface DishTypeViewCollectionViewCell : UICollectionViewCell
 
 @property(nonatomic,strong)UIButton *btn;
-@property(nonatomic,strong)UILabel *label;
+
 @end
