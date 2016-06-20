@@ -25,5 +25,9 @@
 @property (weak, nonatomic) IBOutlet UICollectionView *tableCollectionView;
 
 
+@property (weak, nonatomic) IBOutlet UIView *bookTypeBackView;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *bookStatusBtn;
+@property (weak, nonatomic) IBOutlet UIButton *showAndCloseLeftBtn;
+
 
 @end

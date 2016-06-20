@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface AboutSettingsView : UIView
-
-@property (weak, nonatomic) IBOutlet UITextView *textView;
+@property (nonatomic, strong) UITextView *textView;
 @property (weak, nonatomic) IBOutlet UIButton *sendBtn;
 @end

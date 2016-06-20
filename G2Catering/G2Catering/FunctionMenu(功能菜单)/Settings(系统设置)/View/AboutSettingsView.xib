@@ -8,13 +8,13 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AboutSettingsView">
-            <rect key="frame" x="0.0" y="0.0" width="694" height="720"/>
+            <rect key="frame" x="0.0" y="0.0" width="765" height="720"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rXL-bk-uug">
-                    <rect key="frame" x="0.0" y="0.0" width="694" height="64"/>
+                    <rect key="frame" x="0.0" y="0.0" width="765" height="64"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="关于我们" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bec-iC-6ci">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="关于我们" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bec-iC-6ci">
                             <rect key="frame" x="311" y="26" width="72" height="22"/>
                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -30,7 +30,7 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="blB-PX-g1r">
-                    <rect key="frame" x="0.0" y="64" width="694" height="1"/>
+                    <rect key="frame" x="0.0" y="64" width="765" height="1"/>
                     <color key="backgroundColor" red="0.88479132400000005" green="0.89877158720000005" blue="0.91534745070000001" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="3Je-0y-F2g"/>
@@ -38,7 +38,7 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DRJ-0a-6H0">
-                    <rect key="frame" x="0.0" y="65" width="694" height="655"/>
+                    <rect key="frame" x="0.0" y="65" width="765" height="655"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="版本信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kBN-Dn-XSw">
                             <rect key="frame" x="65" y="57" width="72" height="22"/>
@@ -58,8 +58,8 @@
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="V1.2.0互联客餐饮" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYh-W9-gh6">
-                            <rect key="frame" x="206" y="58" width="140" height="22"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V1.2.0互联客餐饮" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYh-W9-gh6">
+                            <rect key="frame" x="206" y="57" width="140" height="22"/>
                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
@@ -70,40 +70,30 @@
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Vkh-vT-QXI">
-                            <rect key="frame" x="207" y="284" width="440" height="225"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="225" id="go8-l9-Lgx"/>
-                                <constraint firstAttribute="width" constant="440" id="vn5-vb-3ZY"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                        </textView>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tu1-9H-PO4">
-                            <rect key="frame" x="508" y="526" width="139" height="50"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tu1-9H-PO4">
+                            <rect key="frame" x="546" y="525" width="139" height="50"/>
                             <color key="backgroundColor" red="0.16078431369999999" green="0.25490196079999999" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="139" id="21d-8c-0YK"/>
                                 <constraint firstAttribute="height" constant="50" id="ZRN-Uy-iXr"/>
                             </constraints>
-                            <state key="normal" title="发送"/>
+                            <state key="normal" title="发送">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="pNb-IN-8US" firstAttribute="leading" secondItem="kBN-Dn-XSw" secondAttribute="leading" id="4cS-CH-3Tv"/>
-                        <constraint firstItem="Vkh-vT-QXI" firstAttribute="leading" secondItem="Xws-vN-6Bz" secondAttribute="trailing" constant="70" id="6KQ-QD-w9d"/>
                         <constraint firstItem="eYh-W9-gh6" firstAttribute="centerY" secondItem="kBN-Dn-XSw" secondAttribute="centerY" id="6pg-HY-q5x"/>
-                        <constraint firstItem="tu1-9H-PO4" firstAttribute="trailing" secondItem="Vkh-vT-QXI" secondAttribute="trailing" id="BLx-vu-Qdh"/>
                         <constraint firstItem="pNb-IN-8US" firstAttribute="top" secondItem="kBN-Dn-XSw" secondAttribute="bottom" constant="62" id="EoE-d9-AC9"/>
-                        <constraint firstItem="Vkh-vT-QXI" firstAttribute="top" secondItem="Xws-vN-6Bz" secondAttribute="top" id="Fna-qQ-uln"/>
                         <constraint firstItem="S9o-NA-FKb" firstAttribute="leading" secondItem="pNb-IN-8US" secondAttribute="trailing" constant="34" id="MAA-yt-WNN"/>
                         <constraint firstItem="Xws-vN-6Bz" firstAttribute="leading" secondItem="pNb-IN-8US" secondAttribute="leading" id="Una-e5-1ZG"/>
                         <constraint firstItem="eYh-W9-gh6" firstAttribute="leading" secondItem="kBN-Dn-XSw" secondAttribute="trailing" constant="69" id="bqF-B8-XKj"/>
                         <constraint firstItem="Xws-vN-6Bz" firstAttribute="top" secondItem="pNb-IN-8US" secondAttribute="bottom" constant="121" id="chZ-KQ-oK3"/>
+                        <constraint firstAttribute="bottom" secondItem="tu1-9H-PO4" secondAttribute="bottom" constant="80" id="kNb-Bi-9VB"/>
                         <constraint firstItem="S9o-NA-FKb" firstAttribute="centerY" secondItem="pNb-IN-8US" secondAttribute="centerY" id="ldc-TZ-d6i"/>
-                        <constraint firstItem="tu1-9H-PO4" firstAttribute="top" secondItem="Vkh-vT-QXI" secondAttribute="bottom" constant="17" id="n8d-K3-ONJ"/>
+                        <constraint firstAttribute="trailing" secondItem="tu1-9H-PO4" secondAttribute="trailing" constant="80" id="ndz-tG-H8s"/>
                         <constraint firstItem="kBN-Dn-XSw" firstAttribute="top" secondItem="DRJ-0a-6H0" secondAttribute="top" constant="57" id="pJe-cm-qI8"/>
                         <constraint firstItem="kBN-Dn-XSw" firstAttribute="leading" secondItem="DRJ-0a-6H0" secondAttribute="leading" constant="65" id="wfD-gD-TfA"/>
                     </constraints>
@@ -127,7 +117,6 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="sendBtn" destination="tu1-9H-PO4" id="fm0-wa-H3A"/>
-                <outlet property="textView" destination="Vkh-vT-QXI" id="aCJ-eF-J21"/>
             </connections>
             <point key="canvasLocation" x="309" y="366"/>
         </view>

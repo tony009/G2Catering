@@ -32,6 +32,10 @@
 - (void)jieZhangAction:(UIButton *)btn{
     
     ZhifuView *view = [[[NSBundle mainBundle]loadNibNamed:@"ZhifuView" owner:self options:nil]lastObject];
+    NSString *subString = [_priceLabel.text substringFromIndex:1];
+    view.price = [subString doubleValue];
+    
+    view.isYu = YES;
     view.frame = CGRectMake(8, 33, 680, 727);
     [self.calculatorView addSubview:view];
     

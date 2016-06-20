@@ -139,7 +139,7 @@ static NSString *reuseID = @"foodCell";
     flowLayout.minimumLineSpacing = 1;
     flowLayout.minimumInteritemSpacing = 1;
     flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
-    flowLayout.itemSize = CGSizeMake(122, 180);
+    flowLayout.itemSize = CGSizeMake(135, 180);
     
     [self.foodCollectionView registerNib:[UINib nibWithNibName:@"FoodCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:reuseID];
     
