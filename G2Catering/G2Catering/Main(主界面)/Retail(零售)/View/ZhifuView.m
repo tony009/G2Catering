@@ -24,8 +24,52 @@
     self.layer.borderWidth = 1;
     self.layer.cornerRadius = 5;
     self.layer.masksToBounds = YES;
+    self.verifyView.layer.cornerRadius = 5;
+
+}
+
+-(void)setIsYu:(BOOL)isYu{
+    
+    _isYu = isYu;
+    if(_isYu){
+        
+        self.yuFuView.hidden = NO;
+
+            self.allView.transform= CGAffineTransformMakeTranslation(0, 80);
+
+    }
     
 }
+-(void)setPrice:(float)price{
+    
+    _price = price;
+    _moneyLabel.text = [NSString stringWithFormat:@"%.2f",_price];
+    [_button1 setTitle:[NSString stringWithFormat:@"￥%.2f",_price] forState:UIControlStateNormal];
+    if ([_moneyLabel.text integerValue] %10<5) {
+        
+        long count = [_moneyLabel.text integerValue]/10;
+        float price = count *10+5;
+        float price2 = (count +1)*10;
+        
+        [_button2 setTitle:[NSString stringWithFormat:@"￥%.2f",price] forState:UIControlStateNormal];
+        [_button3 setTitle:[NSString stringWithFormat:@"￥%.2f",price2] forState:UIControlStateNormal];
+    }else{
+        
+        long count = [_moneyLabel.text integerValue]/10;
+        float price = (count +1)*10;
+        float price2 = (count +2)*10;
+        
+        [_button2 setTitle:[NSString stringWithFormat:@"￥%.2f",price] forState:UIControlStateNormal];
+        [_button3 setTitle:[NSString stringWithFormat:@"￥%.2f",price2] forState:UIControlStateNormal];
+    }
+    
+
+}
+
+
+
+
+
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     
