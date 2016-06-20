@@ -91,6 +91,8 @@
 		76E914B51D17FF3F001ABA9D /* OpenTableCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76E914B31D17FF3F001ABA9D /* OpenTableCollectionViewCell.xib */; };
 		8105DFAC1D13CA6700A20CEC /* ZhifuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8105DFAB1D13CA6700A20CEC /* ZhifuView.m */; };
 		8105DFAE1D13CA7300A20CEC /* ZhifuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8105DFAD1D13CA7300A20CEC /* ZhifuView.xib */; };
+		8170602F1D179D68006BCD2F /* fuKuanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8170602E1D179D68006BCD2F /* fuKuanView.m */; };
+		817060311D179D7A006BCD2F /* fuKuanView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 817060301D179D7A006BCD2F /* fuKuanView.xib */; };
 		817CA0951D1283A300F1F61E /* LingShouViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 817CA0931D1283A300F1F61E /* LingShouViewController.m */; };
 		817CA0961D1283A300F1F61E /* LingShouViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 817CA0941D1283A300F1F61E /* LingShouViewController.xib */; };
 		817CA09A1D1283AC00F1F61E /* LingShouTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 817CA0981D1283AC00F1F61E /* LingShouTableViewCell.m */; };
@@ -1338,6 +1340,8 @@
 				817CA0951D1283A300F1F61E /* LingShouViewController.m in Sources */,
 				76BB29391D1261600093DEDF /* FSCalendarHeader.m in Sources */,
 				76E914B01D17DAA9001ABA9D /* OpenTableButton.m in Sources */,
+				913419EC1D16465A000222CD /* BookManagerTableViewCell.m in Sources */,
+				913419DF1D164653000222CD /* TableCollectionViewCell.m in Sources */,
 				76BB28FE1D1261600093DEDF /* TradeContentView.m in Sources */,
 				91DB34D81D179FA2000CB5F4 /* SearchBlueToothView.m in Sources */,
 				76BB29001D1261600093DEDF /* TypeTableViewCell.m in Sources */,
