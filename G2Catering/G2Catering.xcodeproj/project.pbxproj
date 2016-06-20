@@ -82,6 +82,8 @@
 		76D45C7E1D0CFD3B0026491F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76D45C7D1D0CFD3B0026491F /* Assets.xcassets */; };
 		76D45C8C1D0CFD3B0026491F /* G2CateringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D45C8B1D0CFD3B0026491F /* G2CateringTests.m */; };
 		76D45C971D0CFD3C0026491F /* G2CateringUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D45C961D0CFD3C0026491F /* G2CateringUITests.m */; };
+		76E914601D13DE40001ABA9D /* DishTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E9145F1D13DE40001ABA9D /* DishTypeView.m */; };
+		76E914631D13F312001ABA9D /* DishTypeViewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E914621D13F312001ABA9D /* DishTypeViewCollectionViewCell.m */; };
 		8105DFAC1D13CA6700A20CEC /* ZhifuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8105DFAB1D13CA6700A20CEC /* ZhifuView.m */; };
 		8105DFAE1D13CA7300A20CEC /* ZhifuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8105DFAD1D13CA7300A20CEC /* ZhifuView.xib */; };
 		8170602F1D179D68006BCD2F /* fuKuanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8170602E1D179D68006BCD2F /* fuKuanView.m */; };
@@ -92,18 +94,20 @@
 		817CA09B1D1283AC00F1F61E /* LingShouTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 817CA0991D1283AC00F1F61E /* LingShouTableViewCell.xib */; };
 		817CA09F1D12850100F1F61E /* CheDanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 817CA09D1D12850100F1F61E /* CheDanView.m */; };
 		817CA0A01D12850100F1F61E /* CheDanView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 817CA09E1D12850100F1F61E /* CheDanView.xib */; };
-		81DE5A861D13E4AB000C4E41 /* BookingManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81DE5A761D13E4AB000C4E41 /* BookingManagerViewController.m */; };
-		81DE5A871D13E4AB000C4E41 /* BookingManagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81DE5A771D13E4AB000C4E41 /* BookingManagerViewController.xib */; };
-		81DE5A881D13E4AB000C4E41 /* AddBookView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81DE5A7B1D13E4AB000C4E41 /* AddBookView.m */; };
-		81DE5A891D13E4AB000C4E41 /* AddBookView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81DE5A7C1D13E4AB000C4E41 /* AddBookView.xib */; };
-		81DE5A8A1D13E4AB000C4E41 /* BookManagerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81DE5A7E1D13E4AB000C4E41 /* BookManagerTableViewCell.m */; };
-		81DE5A8B1D13E4AB000C4E41 /* BookManagerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81DE5A7F1D13E4AB000C4E41 /* BookManagerTableViewCell.xib */; };
-		81DE5A8C1D13E4AB000C4E41 /* CancelBookView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81DE5A811D13E4AB000C4E41 /* CancelBookView.m */; };
-		81DE5A8D1D13E4AB000C4E41 /* CancelBookView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81DE5A821D13E4AB000C4E41 /* CancelBookView.xib */; };
-		81DE5A8E1D13E4AB000C4E41 /* TableCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81DE5A841D13E4AB000C4E41 /* TableCollectionViewCell.m */; };
-		81DE5A8F1D13E4AB000C4E41 /* TableCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81DE5A851D13E4AB000C4E41 /* TableCollectionViewCell.xib */; };
 		81EB4D761D13F4EF00FF3817 /* TypeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EB4D741D13F4EF00FF3817 /* TypeCollectionViewCell.m */; };
 		81EB4D771D13F4EF00FF3817 /* TypeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81EB4D751D13F4EF00FF3817 /* TypeCollectionViewCell.xib */; };
+		913419D31D16430C000222CD /* LM_datePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 913419C61D16430C000222CD /* LM_datePickerView.m */; };
+		913419D41D16430C000222CD /* LM_datePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 913419C71D16430C000222CD /* LM_datePickerView.xib */; };
+		913419DA1D16454B000222CD /* BookingManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 913419D81D16454B000222CD /* BookingManagerViewController.m */; };
+		913419DB1D16454B000222CD /* BookingManagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 913419D91D16454B000222CD /* BookingManagerViewController.xib */; };
+		913419DF1D164653000222CD /* TableCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 913419DD1D164653000222CD /* TableCollectionViewCell.m */; };
+		913419E01D164653000222CD /* TableCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 913419DE1D164653000222CD /* TableCollectionViewCell.xib */; };
+		913419EA1D16465A000222CD /* AddBookView.m in Sources */ = {isa = PBXBuildFile; fileRef = 913419E21D16465A000222CD /* AddBookView.m */; };
+		913419EB1D16465A000222CD /* AddBookView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 913419E31D16465A000222CD /* AddBookView.xib */; };
+		913419EC1D16465A000222CD /* BookManagerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 913419E51D16465A000222CD /* BookManagerTableViewCell.m */; };
+		913419ED1D16465A000222CD /* BookManagerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 913419E61D16465A000222CD /* BookManagerTableViewCell.xib */; };
+		913419EE1D16465A000222CD /* CancelBookView.m in Sources */ = {isa = PBXBuildFile; fileRef = 913419E81D16465A000222CD /* CancelBookView.m */; };
+		913419EF1D16465A000222CD /* CancelBookView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 913419E91D16465A000222CD /* CancelBookView.xib */; };
 		91DAEDBB1D1265C200460F4E /* BaseSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAEDBA1D1265C200460F4E /* BaseSettingsViewController.m */; };
 		F16B15851D128375005B3B64 /* TransferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F16B15831D128375005B3B64 /* TransferViewController.m */; };
 		F16B15861D128375005B3B64 /* TransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F16B15841D128375005B3B64 /* TransferViewController.xib */; };
@@ -255,6 +259,10 @@
 		76D45C921D0CFD3C0026491F /* G2CateringUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = G2CateringUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76D45C961D0CFD3C0026491F /* G2CateringUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = G2CateringUITests.m; sourceTree = "<group>"; };
 		76D45C981D0CFD3C0026491F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76E9145E1D13DE40001ABA9D /* DishTypeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DishTypeView.h; sourceTree = "<group>"; };
+		76E9145F1D13DE40001ABA9D /* DishTypeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DishTypeView.m; sourceTree = "<group>"; };
+		76E914611D13F312001ABA9D /* DishTypeViewCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DishTypeViewCollectionViewCell.h; sourceTree = "<group>"; };
+		76E914621D13F312001ABA9D /* DishTypeViewCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DishTypeViewCollectionViewCell.m; sourceTree = "<group>"; };
 		8105DFAA1D13CA6700A20CEC /* ZhifuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhifuView.h; sourceTree = "<group>"; };
 		8105DFAB1D13CA6700A20CEC /* ZhifuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhifuView.m; sourceTree = "<group>"; };
 		8105DFAD1D13CA7300A20CEC /* ZhifuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZhifuView.xib; sourceTree = "<group>"; };
@@ -270,25 +278,28 @@
 		817CA09C1D12850100F1F61E /* CheDanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CheDanView.h; path = ../Model/CheDanView.h; sourceTree = "<group>"; };
 		817CA09D1D12850100F1F61E /* CheDanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CheDanView.m; path = ../Model/CheDanView.m; sourceTree = "<group>"; };
 		817CA09E1D12850100F1F61E /* CheDanView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CheDanView.xib; path = ../Model/CheDanView.xib; sourceTree = "<group>"; };
-		81DE5A751D13E4AB000C4E41 /* BookingManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingManagerViewController.h; sourceTree = "<group>"; };
-		81DE5A761D13E4AB000C4E41 /* BookingManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingManagerViewController.m; sourceTree = "<group>"; };
-		81DE5A771D13E4AB000C4E41 /* BookingManagerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingManagerViewController.xib; sourceTree = "<group>"; };
-		81DE5A7A1D13E4AB000C4E41 /* AddBookView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddBookView.h; sourceTree = "<group>"; };
-		81DE5A7B1D13E4AB000C4E41 /* AddBookView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddBookView.m; sourceTree = "<group>"; };
-		81DE5A7C1D13E4AB000C4E41 /* AddBookView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddBookView.xib; sourceTree = "<group>"; };
-		81DE5A7D1D13E4AB000C4E41 /* BookManagerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookManagerTableViewCell.h; sourceTree = "<group>"; };
-		81DE5A7E1D13E4AB000C4E41 /* BookManagerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookManagerTableViewCell.m; sourceTree = "<group>"; };
-		81DE5A7F1D13E4AB000C4E41 /* BookManagerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookManagerTableViewCell.xib; sourceTree = "<group>"; };
-		81DE5A801D13E4AB000C4E41 /* CancelBookView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CancelBookView.h; sourceTree = "<group>"; };
-		81DE5A811D13E4AB000C4E41 /* CancelBookView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CancelBookView.m; sourceTree = "<group>"; };
-		81DE5A821D13E4AB000C4E41 /* CancelBookView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CancelBookView.xib; sourceTree = "<group>"; };
-		81DE5A831D13E4AB000C4E41 /* TableCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableCollectionViewCell.h; sourceTree = "<group>"; };
-		81DE5A841D13E4AB000C4E41 /* TableCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableCollectionViewCell.m; sourceTree = "<group>"; };
-		81DE5A851D13E4AB000C4E41 /* TableCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableCollectionViewCell.xib; sourceTree = "<group>"; };
 		81EB4D731D13F4EF00FF3817 /* TypeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeCollectionViewCell.h; sourceTree = "<group>"; };
 		81EB4D741D13F4EF00FF3817 /* TypeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeCollectionViewCell.m; sourceTree = "<group>"; };
 		81EB4D751D13F4EF00FF3817 /* TypeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TypeCollectionViewCell.xib; sourceTree = "<group>"; };
 		8A99B5CD036CAE879C22EB66 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		913419C51D16430C000222CD /* LM_datePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LM_datePickerView.h; sourceTree = "<group>"; };
+		913419C61D16430C000222CD /* LM_datePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LM_datePickerView.m; sourceTree = "<group>"; };
+		913419C71D16430C000222CD /* LM_datePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LM_datePickerView.xib; sourceTree = "<group>"; };
+		913419D71D16454B000222CD /* BookingManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingManagerViewController.h; sourceTree = "<group>"; };
+		913419D81D16454B000222CD /* BookingManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingManagerViewController.m; sourceTree = "<group>"; };
+		913419D91D16454B000222CD /* BookingManagerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingManagerViewController.xib; sourceTree = "<group>"; };
+		913419DC1D164653000222CD /* TableCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableCollectionViewCell.h; sourceTree = "<group>"; };
+		913419DD1D164653000222CD /* TableCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableCollectionViewCell.m; sourceTree = "<group>"; };
+		913419DE1D164653000222CD /* TableCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableCollectionViewCell.xib; sourceTree = "<group>"; };
+		913419E11D16465A000222CD /* AddBookView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddBookView.h; sourceTree = "<group>"; };
+		913419E21D16465A000222CD /* AddBookView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddBookView.m; sourceTree = "<group>"; };
+		913419E31D16465A000222CD /* AddBookView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddBookView.xib; sourceTree = "<group>"; };
+		913419E41D16465A000222CD /* BookManagerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookManagerTableViewCell.h; sourceTree = "<group>"; };
+		913419E51D16465A000222CD /* BookManagerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookManagerTableViewCell.m; sourceTree = "<group>"; };
+		913419E61D16465A000222CD /* BookManagerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookManagerTableViewCell.xib; sourceTree = "<group>"; };
+		913419E71D16465A000222CD /* CancelBookView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CancelBookView.h; sourceTree = "<group>"; };
+		913419E81D16465A000222CD /* CancelBookView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CancelBookView.m; sourceTree = "<group>"; };
+		913419E91D16465A000222CD /* CancelBookView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CancelBookView.xib; sourceTree = "<group>"; };
 		91DAEDBA1D1265C200460F4E /* BaseSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSettingsViewController.m; sourceTree = "<group>"; };
 		F16B15821D128375005B3B64 /* TransferViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransferViewController.h; sourceTree = "<group>"; };
 		F16B15831D128375005B3B64 /* TransferViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransferViewController.m; sourceTree = "<group>"; };
@@ -378,8 +389,10 @@
 		76BB28511D12615F0093DEDF /* FunctionMenu(功能菜单) */ = {
 			isa = PBXGroup;
 			children = (
+				91DB34CD1D178E51000CB5F4 /* LoginAndRegister(登录注册) */,
 				F16B157B1D127AF8005B3B64 /* Transfer(交接班) */,
 				76BB28521D12615F0093DEDF /* DataReport(数据报告) */,
+				913419B51D16430C000222CD /* ReserveManager(预定管理) */,
 				76BB28561D12615F0093DEDF /* OrderRecord(订单记录) */,
 				76BB28731D12615F0093DEDF /* Settings(系统设置) */,
 				76BB28941D12615F0093DEDF /* VIPManager(会员管理) */,
@@ -649,6 +662,10 @@
 				76BB28B31D12615F0093DEDF /* OrderingTableViewCell.h */,
 				76BB28B41D12615F0093DEDF /* OrderingTableViewCell.m */,
 				76BB28B51D12615F0093DEDF /* OrderingTableViewCell.xib */,
+				76E9145E1D13DE40001ABA9D /* DishTypeView.h */,
+				76E9145F1D13DE40001ABA9D /* DishTypeView.m */,
+				76E914611D13F312001ABA9D /* DishTypeViewCollectionViewCell.h */,
+				76E914621D13F312001ABA9D /* DishTypeViewCollectionViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -899,9 +916,6 @@
 		81DE5A741D13E4AB000C4E41 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				81DE5A751D13E4AB000C4E41 /* BookingManagerViewController.h */,
-				81DE5A761D13E4AB000C4E41 /* BookingManagerViewController.m */,
-				81DE5A771D13E4AB000C4E41 /* BookingManagerViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -916,18 +930,86 @@
 		81DE5A791D13E4AB000C4E41 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				81DE5A7A1D13E4AB000C4E41 /* AddBookView.h */,
-				81DE5A7B1D13E4AB000C4E41 /* AddBookView.m */,
-				81DE5A7C1D13E4AB000C4E41 /* AddBookView.xib */,
-				81DE5A7D1D13E4AB000C4E41 /* BookManagerTableViewCell.h */,
-				81DE5A7E1D13E4AB000C4E41 /* BookManagerTableViewCell.m */,
-				81DE5A7F1D13E4AB000C4E41 /* BookManagerTableViewCell.xib */,
-				81DE5A801D13E4AB000C4E41 /* CancelBookView.h */,
-				81DE5A811D13E4AB000C4E41 /* CancelBookView.m */,
-				81DE5A821D13E4AB000C4E41 /* CancelBookView.xib */,
-				81DE5A831D13E4AB000C4E41 /* TableCollectionViewCell.h */,
-				81DE5A841D13E4AB000C4E41 /* TableCollectionViewCell.m */,
-				81DE5A851D13E4AB000C4E41 /* TableCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		913419B51D16430C000222CD /* ReserveManager(预定管理) */ = {
+			isa = PBXGroup;
+			children = (
+				913419B61D16430C000222CD /* Controller */,
+				913419BA1D16430C000222CD /* Model */,
+				913419BB1D16430C000222CD /* View */,
+			);
+			path = "ReserveManager(预定管理)";
+			sourceTree = "<group>";
+		};
+		913419B61D16430C000222CD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				913419D71D16454B000222CD /* BookingManagerViewController.h */,
+				913419D81D16454B000222CD /* BookingManagerViewController.m */,
+				913419D91D16454B000222CD /* BookingManagerViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		913419BA1D16430C000222CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		913419BB1D16430C000222CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				913419E11D16465A000222CD /* AddBookView.h */,
+				913419E21D16465A000222CD /* AddBookView.m */,
+				913419E31D16465A000222CD /* AddBookView.xib */,
+				913419E41D16465A000222CD /* BookManagerTableViewCell.h */,
+				913419E51D16465A000222CD /* BookManagerTableViewCell.m */,
+				913419E61D16465A000222CD /* BookManagerTableViewCell.xib */,
+				913419E71D16465A000222CD /* CancelBookView.h */,
+				913419E81D16465A000222CD /* CancelBookView.m */,
+				913419E91D16465A000222CD /* CancelBookView.xib */,
+				913419DC1D164653000222CD /* TableCollectionViewCell.h */,
+				913419DD1D164653000222CD /* TableCollectionViewCell.m */,
+				913419DE1D164653000222CD /* TableCollectionViewCell.xib */,
+				913419C51D16430C000222CD /* LM_datePickerView.h */,
+				913419C61D16430C000222CD /* LM_datePickerView.m */,
+				913419C71D16430C000222CD /* LM_datePickerView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		91DB34CD1D178E51000CB5F4 /* LoginAndRegister(登录注册) */ = {
+			isa = PBXGroup;
+			children = (
+				91DB34CE1D178E51000CB5F4 /* Controller */,
+				91DB34CF1D178E51000CB5F4 /* Model */,
+				91DB34D01D178E51000CB5F4 /* View */,
+			);
+			path = "LoginAndRegister(登录注册)";
+			sourceTree = "<group>";
+		};
+		91DB34CE1D178E51000CB5F4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		91DB34CF1D178E51000CB5F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		91DB34D01D178E51000CB5F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1070,7 +1152,7 @@
 				76BB28FB1D1261600093DEDF /* JiaoYiJiLuCell.xib in Resources */,
 				76BB29261D1261600093DEDF /* MainViewController.xib in Resources */,
 				76BB291A1D1261600093DEDF /* VIPLeftView.xib in Resources */,
-				81DE5A8F1D13E4AB000C4E41 /* TableCollectionViewCell.xib in Resources */,
+				913419EF1D16465A000222CD /* CancelBookView.xib in Resources */,
 				76D45C7E1D0CFD3B0026491F /* Assets.xcassets in Resources */,
 				76BB29091D1261600093DEDF /* DeviceTestView.xib in Resources */,
 				817060311D179D7A006BCD2F /* fuKuanView.xib in Resources */,
@@ -1081,24 +1163,22 @@
 				76BB292F1D1261600093DEDF /* Info.plist in Resources */,
 				76BB290D1D1261600093DEDF /* EstimateView.xib in Resources */,
 				817CA09B1D1283AC00F1F61E /* LingShouTableViewCell.xib in Resources */,
-				81DE5A8D1D13E4AB000C4E41 /* CancelBookView.xib in Resources */,
 				817CA0A01D12850100F1F61E /* CheDanView.xib in Resources */,
 				76BB29221D1261600093DEDF /* OrderingCollectionViewCell.xib in Resources */,
 				76BB29311D1261600093DEDF /* Main.storyboard in Resources */,
 				76BB29161D1261600093DEDF /* UpdatePasswordView.xib in Resources */,
-				81DE5A871D13E4AB000C4E41 /* BookingManagerViewController.xib in Resources */,
 				76BB29011D1261600093DEDF /* TypeTableViewCell.xib in Resources */,
 				76BB292C1D1261600093DEDF /* MainRightView.xib in Resources */,
 				76BB29241D1261600093DEDF /* OrderingTableViewCell.xib in Resources */,
 				76BB29201D1261600093DEDF /* OrderingViewController.xib in Resources */,
 				76BB29301D1261600093DEDF /* LaunchScreen.storyboard in Resources */,
-				81DE5A8B1D13E4AB000C4E41 /* BookManagerTableViewCell.xib in Resources */,
 				76BB29181D1261600093DEDF /* VipViewController.xib in Resources */,
 				76BB29281D1261600093DEDF /* MainLeftTableViewCell.xib in Resources */,
 				76BB29051D1261600093DEDF /* BaseSettingsViewController.xib in Resources */,
 				76BB291C1D1261600093DEDF /* VIPTableViewCell.xib in Resources */,
+				913419ED1D16465A000222CD /* BookManagerTableViewCell.xib in Resources */,
+				913419DB1D16454B000222CD /* BookingManagerViewController.xib in Resources */,
 				76BB292A1D1261600093DEDF /* MainLeftView.xib in Resources */,
-				81DE5A891D13E4AB000C4E41 /* AddBookView.xib in Resources */,
 				8105DFAE1D13CA7300A20CEC /* ZhifuView.xib in Resources */,
 				76BB28FD1D1261600093DEDF /* JiLuCaiViewCell.xib in Resources */,
 				81EB4D771D13F4EF00FF3817 /* TypeCollectionViewCell.xib in Resources */,
@@ -1108,7 +1188,9 @@
 				817CA0961D1283A300F1F61E /* LingShouViewController.xib in Resources */,
 				76BB28FF1D1261600093DEDF /* TradeContentView.xib in Resources */,
 				76BB290B1D1261600093DEDF /* EstimateSettingView.xib in Resources */,
+				913419E01D164653000222CD /* TableCollectionViewCell.xib in Resources */,
 				76BB29121D1261600093DEDF /* PrintSettingsView.xib in Resources */,
+				913419EB1D16465A000222CD /* AddBookView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1188,8 +1270,9 @@
 				76BB293A1D1261600093DEDF /* FSCalendarStickyHeader.m in Sources */,
 				76BB29401D1261600093DEDF /* UIView+FSExtension.m in Sources */,
 				76BB29211D1261600093DEDF /* OrderingCollectionViewCell.m in Sources */,
+				913419EA1D16465A000222CD /* AddBookView.m in Sources */,
+				913419D31D16430C000222CD /* LM_datePickerView.m in Sources */,
 				76BB29381D1261600093DEDF /* FSCalendarFlowLayout.m in Sources */,
-				81DE5A861D13E4AB000C4E41 /* BookingManagerViewController.m in Sources */,
 				76BB29351D1261600093DEDF /* FSCalendarCell.m in Sources */,
 				81EB4D761D13F4EF00FF3817 /* TypeCollectionViewCell.m in Sources */,
 				76BB292E1D1261600093DEDF /* main.m in Sources */,
@@ -1203,17 +1286,17 @@
 				76BB291D1D1261600093DEDF /* DinnerTableViewController.m in Sources */,
 				817CA0951D1283A300F1F61E /* LingShouViewController.m in Sources */,
 				76BB29391D1261600093DEDF /* FSCalendarHeader.m in Sources */,
+				913419EC1D16465A000222CD /* BookManagerTableViewCell.m in Sources */,
+				913419DF1D164653000222CD /* TableCollectionViewCell.m in Sources */,
 				76BB28FE1D1261600093DEDF /* TradeContentView.m in Sources */,
 				76BB29001D1261600093DEDF /* TypeTableViewCell.m in Sources */,
-				81DE5A881D13E4AB000C4E41 /* AddBookView.m in Sources */,
 				817CA09A1D1283AC00F1F61E /* LingShouTableViewCell.m in Sources */,
 				76BB29251D1261600093DEDF /* MainViewController.m in Sources */,
-				81DE5A8C1D13E4AB000C4E41 /* CancelBookView.m in Sources */,
+				913419DA1D16454B000222CD /* BookingManagerViewController.m in Sources */,
 				76BB290C1D1261600093DEDF /* EstimateView.m in Sources */,
 				76BB28FC1D1261600093DEDF /* JiLuCaiViewCell.m in Sources */,
 				F1DE47171D13902A0051B7A7 /* XYPieChart.m in Sources */,
 				76BB29081D1261600093DEDF /* DeviceTestView.m in Sources */,
-				81DE5A8A1D13E4AB000C4E41 /* BookManagerTableViewCell.m in Sources */,
 				76BB29111D1261600093DEDF /* PrintSettingsView.m in Sources */,
 				76BB292B1D1261600093DEDF /* MainRightView.m in Sources */,
 				76BB28F51D1261600093DEDF /* HttpTool.m in Sources */,
@@ -1221,7 +1304,6 @@
 				76BB293D1D1261600093DEDF /* NSDate+TEAExtensions.m in Sources */,
 				76BB29101D1261600093DEDF /* LM_button.m in Sources */,
 				76BB29321D1261600093DEDF /* FSCalendar+IBExtension.m in Sources */,
-				81DE5A8E1D13E4AB000C4E41 /* TableCollectionViewCell.m in Sources */,
 				76BB29361D1261600093DEDF /* FSCalendarCollectionView.m in Sources */,
 				76BB292D1D1261600093DEDF /* AppDelegate.m in Sources */,
 				76BB290E1D1261600093DEDF /* FoodCollectionViewCell.m in Sources */,
@@ -1230,13 +1312,16 @@
 				76BB29151D1261600093DEDF /* UpdatePasswordView.m in Sources */,
 				8105DFAC1D13CA6700A20CEC /* ZhifuView.m in Sources */,
 				76BB29331D1261600093DEDF /* FSCalendar.m in Sources */,
+				76E914601D13DE40001ABA9D /* DishTypeView.m in Sources */,
 				76BB29231D1261600093DEDF /* OrderingTableViewCell.m in Sources */,
 				76BB29061D1261600093DEDF /* AboutSettingsView.m in Sources */,
 				91DAEDBB1D1265C200460F4E /* BaseSettingsViewController.m in Sources */,
 				76BB293C1D1261600093DEDF /* NSDate+FSExtension.m in Sources */,
 				76BB293F1D1261600093DEDF /* README.md in Sources */,
+				76E914631D13F312001ABA9D /* DishTypeViewCollectionViewCell.m in Sources */,
 				76BB28FA1D1261600093DEDF /* JiaoYiJiLuCell.m in Sources */,
 				76BB29341D1261600093DEDF /* FSCalendarAppearance.m in Sources */,
+				913419EE1D16465A000222CD /* CancelBookView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
