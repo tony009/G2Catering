@@ -84,6 +84,8 @@
 		76D45C971D0CFD3C0026491F /* G2CateringUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D45C961D0CFD3C0026491F /* G2CateringUITests.m */; };
 		8105DFAC1D13CA6700A20CEC /* ZhifuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8105DFAB1D13CA6700A20CEC /* ZhifuView.m */; };
 		8105DFAE1D13CA7300A20CEC /* ZhifuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8105DFAD1D13CA7300A20CEC /* ZhifuView.xib */; };
+		8170602F1D179D68006BCD2F /* fuKuanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8170602E1D179D68006BCD2F /* fuKuanView.m */; };
+		817060311D179D7A006BCD2F /* fuKuanView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 817060301D179D7A006BCD2F /* fuKuanView.xib */; };
 		817CA0951D1283A300F1F61E /* LingShouViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 817CA0931D1283A300F1F61E /* LingShouViewController.m */; };
 		817CA0961D1283A300F1F61E /* LingShouViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 817CA0941D1283A300F1F61E /* LingShouViewController.xib */; };
 		817CA09A1D1283AC00F1F61E /* LingShouTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 817CA0981D1283AC00F1F61E /* LingShouTableViewCell.m */; };
@@ -256,6 +258,9 @@
 		8105DFAA1D13CA6700A20CEC /* ZhifuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhifuView.h; sourceTree = "<group>"; };
 		8105DFAB1D13CA6700A20CEC /* ZhifuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhifuView.m; sourceTree = "<group>"; };
 		8105DFAD1D13CA7300A20CEC /* ZhifuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZhifuView.xib; sourceTree = "<group>"; };
+		8170602D1D179D68006BCD2F /* fuKuanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fuKuanView.h; sourceTree = "<group>"; };
+		8170602E1D179D68006BCD2F /* fuKuanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fuKuanView.m; sourceTree = "<group>"; };
+		817060301D179D7A006BCD2F /* fuKuanView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = fuKuanView.xib; sourceTree = "<group>"; };
 		817CA0921D1283A300F1F61E /* LingShouViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LingShouViewController.h; sourceTree = "<group>"; };
 		817CA0931D1283A300F1F61E /* LingShouViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LingShouViewController.m; sourceTree = "<group>"; };
 		817CA0941D1283A300F1F61E /* LingShouViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LingShouViewController.xib; sourceTree = "<group>"; };
@@ -727,6 +732,9 @@
 				8105DFAA1D13CA6700A20CEC /* ZhifuView.h */,
 				8105DFAB1D13CA6700A20CEC /* ZhifuView.m */,
 				8105DFAD1D13CA7300A20CEC /* ZhifuView.xib */,
+				8170602D1D179D68006BCD2F /* fuKuanView.h */,
+				8170602E1D179D68006BCD2F /* fuKuanView.m */,
+				817060301D179D7A006BCD2F /* fuKuanView.xib */,
 				81EB4D731D13F4EF00FF3817 /* TypeCollectionViewCell.h */,
 				81EB4D741D13F4EF00FF3817 /* TypeCollectionViewCell.m */,
 				81EB4D751D13F4EF00FF3817 /* TypeCollectionViewCell.xib */,
@@ -1065,6 +1073,7 @@
 				81DE5A8F1D13E4AB000C4E41 /* TableCollectionViewCell.xib in Resources */,
 				76D45C7E1D0CFD3B0026491F /* Assets.xcassets in Resources */,
 				76BB29091D1261600093DEDF /* DeviceTestView.xib in Resources */,
+				817060311D179D7A006BCD2F /* fuKuanView.xib in Resources */,
 				F16B15861D128375005B3B64 /* TransferViewController.xib in Resources */,
 				76BB290F1D1261600093DEDF /* FoodCollectionViewCell.xib in Resources */,
 				76BB291E1D1261600093DEDF /* DinnerTableViewController.xib in Resources */,
@@ -1216,6 +1225,7 @@
 				76BB29361D1261600093DEDF /* FSCalendarCollectionView.m in Sources */,
 				76BB292D1D1261600093DEDF /* AppDelegate.m in Sources */,
 				76BB290E1D1261600093DEDF /* FoodCollectionViewCell.m in Sources */,
+				8170602F1D179D68006BCD2F /* fuKuanView.m in Sources */,
 				76BB28F81D1261600093DEDF /* TradeViewController.m in Sources */,
 				76BB29151D1261600093DEDF /* UpdatePasswordView.m in Sources */,
 				8105DFAC1D13CA6700A20CEC /* ZhifuView.m in Sources */,
