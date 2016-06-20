@@ -8,9 +8,28 @@
 
 #import "AboutSettingsView.h"
 
+@interface AboutSettingsView ()<UITextViewDelegate>
+
+@end
+
 @implementation AboutSettingsView
 
-- (void)awakeFromNib{
+- (void)awakeFromNib{//765 655
+    
+    self.textView  = [[UITextView alloc] initWithFrame:CGRectMake(207, 344, 480, 224)];
+    
+    self.textView.delegate = self;
+    [self addSubview:self.textView];
+    
+//
+//    self.textView.translatesAutoresizingMaskIntoConstraints = NO;
+//    
+//    NSArray *conH = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-207-[textView]-80-|" options:0 metrics:nil views:@{@"textView":self.textView}];
+//    
+//    NSArray *conV = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-284-[textView]-147-|" options:0 metrics:nil views:@{@"textView":self.textView}];
+//    
+//    [self.textView addConstraints:conH];
+//    [self.textView addConstraints:conV];
     
     self.textView.layer.borderColor = [UIColor lightGrayColor].CGColor;
     self.textView.layer.borderWidth = 1;
