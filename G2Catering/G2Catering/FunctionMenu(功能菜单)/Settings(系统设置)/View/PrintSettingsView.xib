@@ -21,18 +21,18 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yK7-kr-Vpl">
-                            <rect key="frame" x="638" y="16" width="34" height="34"/>
-                            <state key="normal" image="设置-形状4"/>
+                            <rect key="frame" x="644" y="20" width="26" height="26"/>
+                            <state key="normal" image="新形状4"/>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="yK7-kr-Vpl" secondAttribute="trailing" constant="22" id="0U3-qb-QyX"/>
+                        <constraint firstAttribute="trailing" secondItem="yK7-kr-Vpl" secondAttribute="trailing" constant="24" id="0U3-qb-QyX"/>
                         <constraint firstItem="ZM0-Sf-DZb" firstAttribute="centerX" secondItem="U0T-SK-WgU" secondAttribute="centerX" id="PP2-pl-vq8"/>
                         <constraint firstItem="ZM0-Sf-DZb" firstAttribute="top" secondItem="U0T-SK-WgU" secondAttribute="top" constant="26" id="h8v-k5-0A1"/>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="j1r-gO-ImO"/>
                         <constraint firstAttribute="height" constant="64" id="mou-KW-7N9"/>
-                        <constraint firstItem="yK7-kr-Vpl" firstAttribute="top" secondItem="U0T-SK-WgU" secondAttribute="top" constant="16" id="pLn-5S-oXK"/>
+                        <constraint firstItem="yK7-kr-Vpl" firstAttribute="top" secondItem="U0T-SK-WgU" secondAttribute="top" constant="20" id="pLn-5S-oXK"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="61a-95-JuC">
@@ -145,10 +145,10 @@
                 <outlet property="addBtn" destination="yK7-kr-Vpl" id="gCl-O1-H9u"/>
                 <outlet property="tableView" destination="wc5-Do-JUc" id="WcE-9k-vle"/>
             </connections>
-            <point key="canvasLocation" x="309" y="366"/>
+            <point key="canvasLocation" x="464" y="351"/>
         </view>
     </objects>
     <resources>
-        <image name="设置-形状4" width="34" height="34"/>
+        <image name="新形状4" width="26" height="26"/>
     </resources>
 </document>

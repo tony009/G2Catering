@@ -384,6 +384,7 @@
 		76BB28511D12615F0093DEDF /* FunctionMenu(功能菜单) */ = {
 			isa = PBXGroup;
 			children = (
+				91DB34CD1D178E51000CB5F4 /* LoginAndRegister(登录注册) */,
 				F16B157B1D127AF8005B3B64 /* Transfer(交接班) */,
 				76BB28521D12615F0093DEDF /* DataReport(数据报告) */,
 				913419B51D16430C000222CD /* ReserveManager(预定管理) */,
@@ -970,6 +971,37 @@
 				913419C51D16430C000222CD /* LM_datePickerView.h */,
 				913419C61D16430C000222CD /* LM_datePickerView.m */,
 				913419C71D16430C000222CD /* LM_datePickerView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		91DB34CD1D178E51000CB5F4 /* LoginAndRegister(登录注册) */ = {
+			isa = PBXGroup;
+			children = (
+				91DB34CE1D178E51000CB5F4 /* Controller */,
+				91DB34CF1D178E51000CB5F4 /* Model */,
+				91DB34D01D178E51000CB5F4 /* View */,
+			);
+			path = "LoginAndRegister(登录注册)";
+			sourceTree = "<group>";
+		};
+		91DB34CE1D178E51000CB5F4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		91DB34CF1D178E51000CB5F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		91DB34D01D178E51000CB5F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = View;
 			sourceTree = "<group>";

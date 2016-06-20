@@ -395,8 +395,8 @@ static NSString *reuseID = @"tableItem";
     if ([self.leftViewStatus isEqualToString:@"close"]) {
         
         [UIView animateWithDuration:0.25 animations:^{
-            self.showAndCloseLeftBtn.transform = CGAffineTransformMakeTranslation(230, 0);
             self.backView.transform = CGAffineTransformMakeTranslation(230, 0);
+            self.showAndCloseLeftBtn.selected = YES;
             self.leftViewStatus = @"open";
         } completion:^(BOOL finished) {
             self.bookTypeBackView.hidden = NO;
@@ -406,7 +406,7 @@ static NSString *reuseID = @"tableItem";
         
         [UIView animateWithDuration:0.25 animations:^{
             self.bookTypeBackView.hidden = YES;
-            self.showAndCloseLeftBtn.transform = CGAffineTransformIdentity;
+            self.showAndCloseLeftBtn.selected = NO;
             self.backView.transform = CGAffineTransformIdentity;
             self.leftViewStatus = @"close";
         }];
