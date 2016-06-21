@@ -84,6 +84,11 @@
 		76D45C971D0CFD3C0026491F /* G2CateringUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D45C961D0CFD3C0026491F /* G2CateringUITests.m */; };
 		76E914601D13DE40001ABA9D /* DishTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E9145F1D13DE40001ABA9D /* DishTypeView.m */; };
 		76E914631D13F312001ABA9D /* DishTypeViewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E914621D13F312001ABA9D /* DishTypeViewCollectionViewCell.m */; };
+		76E914AB1D17C828001ABA9D /* OpenTableAndTakeOutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E914AA1D17C828001ABA9D /* OpenTableAndTakeOutView.m */; };
+		76E914AD1D17C84F001ABA9D /* OpenTableAndTakeOutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76E914AC1D17C84F001ABA9D /* OpenTableAndTakeOutView.xib */; };
+		76E914B01D17DAA9001ABA9D /* OpenTableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E914AF1D17DAA9001ABA9D /* OpenTableButton.m */; };
+		76E914B41D17FF3F001ABA9D /* OpenTableCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E914B21D17FF3F001ABA9D /* OpenTableCollectionViewCell.m */; };
+		76E914B51D17FF3F001ABA9D /* OpenTableCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76E914B31D17FF3F001ABA9D /* OpenTableCollectionViewCell.xib */; };
 		8105DFAC1D13CA6700A20CEC /* ZhifuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8105DFAB1D13CA6700A20CEC /* ZhifuView.m */; };
 		8105DFAE1D13CA7300A20CEC /* ZhifuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8105DFAD1D13CA7300A20CEC /* ZhifuView.xib */; };
 		8170602F1D179D68006BCD2F /* fuKuanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8170602E1D179D68006BCD2F /* fuKuanView.m */; };
@@ -269,6 +274,14 @@
 		76E9145F1D13DE40001ABA9D /* DishTypeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DishTypeView.m; sourceTree = "<group>"; };
 		76E914611D13F312001ABA9D /* DishTypeViewCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DishTypeViewCollectionViewCell.h; sourceTree = "<group>"; };
 		76E914621D13F312001ABA9D /* DishTypeViewCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DishTypeViewCollectionViewCell.m; sourceTree = "<group>"; };
+		76E914A91D17C828001ABA9D /* OpenTableAndTakeOutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenTableAndTakeOutView.h; sourceTree = "<group>"; };
+		76E914AA1D17C828001ABA9D /* OpenTableAndTakeOutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenTableAndTakeOutView.m; sourceTree = "<group>"; };
+		76E914AC1D17C84F001ABA9D /* OpenTableAndTakeOutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OpenTableAndTakeOutView.xib; sourceTree = "<group>"; };
+		76E914AE1D17DAA9001ABA9D /* OpenTableButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenTableButton.h; sourceTree = "<group>"; };
+		76E914AF1D17DAA9001ABA9D /* OpenTableButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenTableButton.m; sourceTree = "<group>"; };
+		76E914B11D17FF3F001ABA9D /* OpenTableCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenTableCollectionViewCell.h; sourceTree = "<group>"; };
+		76E914B21D17FF3F001ABA9D /* OpenTableCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenTableCollectionViewCell.m; sourceTree = "<group>"; };
+		76E914B31D17FF3F001ABA9D /* OpenTableCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OpenTableCollectionViewCell.xib; sourceTree = "<group>"; };
 		8105DFAA1D13CA6700A20CEC /* ZhifuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhifuView.h; sourceTree = "<group>"; };
 		8105DFAB1D13CA6700A20CEC /* ZhifuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhifuView.m; sourceTree = "<group>"; };
 		8105DFAD1D13CA7300A20CEC /* ZhifuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZhifuView.xib; sourceTree = "<group>"; };
@@ -681,6 +694,14 @@
 				76E9145F1D13DE40001ABA9D /* DishTypeView.m */,
 				76E914611D13F312001ABA9D /* DishTypeViewCollectionViewCell.h */,
 				76E914621D13F312001ABA9D /* DishTypeViewCollectionViewCell.m */,
+				76E914A91D17C828001ABA9D /* OpenTableAndTakeOutView.h */,
+				76E914AA1D17C828001ABA9D /* OpenTableAndTakeOutView.m */,
+				76E914AC1D17C84F001ABA9D /* OpenTableAndTakeOutView.xib */,
+				76E914AE1D17DAA9001ABA9D /* OpenTableButton.h */,
+				76E914AF1D17DAA9001ABA9D /* OpenTableButton.m */,
+				76E914B11D17FF3F001ABA9D /* OpenTableCollectionViewCell.h */,
+				76E914B21D17FF3F001ABA9D /* OpenTableCollectionViewCell.m */,
+				76E914B31D17FF3F001ABA9D /* OpenTableCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1188,6 +1209,8 @@
 				76BB292F1D1261600093DEDF /* Info.plist in Resources */,
 				76BB290D1D1261600093DEDF /* EstimateView.xib in Resources */,
 				817CA09B1D1283AC00F1F61E /* LingShouTableViewCell.xib in Resources */,
+				76E914AD1D17C84F001ABA9D /* OpenTableAndTakeOutView.xib in Resources */,
+				81DE5A8D1D13E4AB000C4E41 /* CancelBookView.xib in Resources */,
 				817CA0A01D12850100F1F61E /* CheDanView.xib in Resources */,
 				76BB29221D1261600093DEDF /* OrderingCollectionViewCell.xib in Resources */,
 				76BB29311D1261600093DEDF /* Main.storyboard in Resources */,
@@ -1200,6 +1223,7 @@
 				76BB29181D1261600093DEDF /* VipViewController.xib in Resources */,
 				76BB29281D1261600093DEDF /* MainLeftTableViewCell.xib in Resources */,
 				76BB29051D1261600093DEDF /* BaseSettingsViewController.xib in Resources */,
+				76E914B51D17FF3F001ABA9D /* OpenTableCollectionViewCell.xib in Resources */,
 				76BB291C1D1261600093DEDF /* VIPTableViewCell.xib in Resources */,
 				913419ED1D16465A000222CD /* BookManagerTableViewCell.xib in Resources */,
 				913419DB1D16454B000222CD /* BookingManagerViewController.xib in Resources */,
@@ -1310,11 +1334,13 @@
 				76BB29371D1261600093DEDF /* FSCalendarConstance.m in Sources */,
 				91DB34D41D179255000CB5F4 /* LoginViewController.m in Sources */,
 				76BB293E1D1261600093DEDF /* NSString+FSExtension.m in Sources */,
+				76E914AB1D17C828001ABA9D /* OpenTableAndTakeOutView.m in Sources */,
 				76BB29291D1261600093DEDF /* MainLeftView.m in Sources */,
 				817CA09F1D12850100F1F61E /* CheDanView.m in Sources */,
 				76BB291D1D1261600093DEDF /* DinnerTableViewController.m in Sources */,
 				817CA0951D1283A300F1F61E /* LingShouViewController.m in Sources */,
 				76BB29391D1261600093DEDF /* FSCalendarHeader.m in Sources */,
+				76E914B01D17DAA9001ABA9D /* OpenTableButton.m in Sources */,
 				913419EC1D16465A000222CD /* BookManagerTableViewCell.m in Sources */,
 				913419DF1D164653000222CD /* TableCollectionViewCell.m in Sources */,
 				76BB28FE1D1261600093DEDF /* TradeContentView.m in Sources */,
@@ -1326,6 +1352,7 @@
 				76BB290C1D1261600093DEDF /* EstimateView.m in Sources */,
 				76BB28FC1D1261600093DEDF /* JiLuCaiViewCell.m in Sources */,
 				F1DE47171D13902A0051B7A7 /* XYPieChart.m in Sources */,
+				76E914B41D17FF3F001ABA9D /* OpenTableCollectionViewCell.m in Sources */,
 				76BB29081D1261600093DEDF /* DeviceTestView.m in Sources */,
 				76BB29111D1261600093DEDF /* PrintSettingsView.m in Sources */,
 				76BB292B1D1261600093DEDF /* MainRightView.m in Sources */,

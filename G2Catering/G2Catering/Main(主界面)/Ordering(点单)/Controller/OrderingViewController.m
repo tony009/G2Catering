@@ -12,6 +12,8 @@
 
 #import "DishTypeView.h"
 
+#import "OpenTableAndTakeOutView.h"
+
 static NSString *collectionViewCellIdentifer = @"OrderingCollectionViewReuseCell";
 static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
 
@@ -25,10 +27,14 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
 @property (weak, nonatomic) IBOutlet UIView *orderListView;
 
 
+
+@property (weak, nonatomic) IBOutlet UIView *replacedView;
+
 @property (weak, nonatomic) IBOutlet UIView *firstView;
 @property (weak, nonatomic) IBOutlet UIView *secondView;
-
 @property (weak, nonatomic) IBOutlet DishTypeView *dishTypeView;
+
+@property (weak,nonatomic) OpenTableAndTakeOutView *openTableAndTakeOutView;
 
 @end
 
@@ -82,6 +88,15 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
     
     //
     
+    
+    self.dishTypeView.strArray = @[@"全部",@"热菜",@"甜菜",@"主食",@"凉菜",@"酒水",@"特价"];
+    
+    
+    self.openTableAndTakeOutView = [[[NSBundle mainBundle]loadNibNamed:@"OpenTableAndTakeOutView" owner:nil options:nil] lastObject];
+
+    self.openTableAndTakeOutView.frame = self.replacedView.frame;
+    
+    [self.view addSubview:self.openTableAndTakeOutView];
 }
 
 
