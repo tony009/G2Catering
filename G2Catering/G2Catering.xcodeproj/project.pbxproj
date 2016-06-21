@@ -96,8 +96,6 @@
 		817CA0A01D12850100F1F61E /* CheDanView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 817CA09E1D12850100F1F61E /* CheDanView.xib */; };
 		81EB4D761D13F4EF00FF3817 /* TypeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EB4D741D13F4EF00FF3817 /* TypeCollectionViewCell.m */; };
 		81EB4D771D13F4EF00FF3817 /* TypeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81EB4D751D13F4EF00FF3817 /* TypeCollectionViewCell.xib */; };
-		913419D31D16430C000222CD /* LM_datePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 913419C61D16430C000222CD /* LM_datePickerView.m */; };
-		913419D41D16430C000222CD /* LM_datePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 913419C71D16430C000222CD /* LM_datePickerView.xib */; };
 		913419DA1D16454B000222CD /* BookingManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 913419D81D16454B000222CD /* BookingManagerViewController.m */; };
 		913419DB1D16454B000222CD /* BookingManagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 913419D91D16454B000222CD /* BookingManagerViewController.xib */; };
 		913419DF1D164653000222CD /* TableCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 913419DD1D164653000222CD /* TableCollectionViewCell.m */; };
@@ -108,6 +106,8 @@
 		913419ED1D16465A000222CD /* BookManagerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 913419E61D16465A000222CD /* BookManagerTableViewCell.xib */; };
 		913419EE1D16465A000222CD /* CancelBookView.m in Sources */ = {isa = PBXBuildFile; fileRef = 913419E81D16465A000222CD /* CancelBookView.m */; };
 		913419EF1D16465A000222CD /* CancelBookView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 913419E91D16465A000222CD /* CancelBookView.xib */; };
+		9175E34A1D18EEDD00755E35 /* LM_datePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9175E3481D18EEDD00755E35 /* LM_datePickerView.m */; };
+		9175E34B1D18EEDD00755E35 /* LM_datePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9175E3491D18EEDD00755E35 /* LM_datePickerView.xib */; };
 		91DAEDBB1D1265C200460F4E /* BaseSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAEDBA1D1265C200460F4E /* BaseSettingsViewController.m */; };
 		91DB34D41D179255000CB5F4 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DB34D21D179255000CB5F4 /* LoginViewController.m */; };
 		91DB34D51D179255000CB5F4 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DB34D31D179255000CB5F4 /* LoginViewController.xib */; };
@@ -288,9 +288,6 @@
 		81EB4D741D13F4EF00FF3817 /* TypeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeCollectionViewCell.m; sourceTree = "<group>"; };
 		81EB4D751D13F4EF00FF3817 /* TypeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TypeCollectionViewCell.xib; sourceTree = "<group>"; };
 		8A99B5CD036CAE879C22EB66 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		913419C51D16430C000222CD /* LM_datePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LM_datePickerView.h; sourceTree = "<group>"; };
-		913419C61D16430C000222CD /* LM_datePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LM_datePickerView.m; sourceTree = "<group>"; };
-		913419C71D16430C000222CD /* LM_datePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LM_datePickerView.xib; sourceTree = "<group>"; };
 		913419D71D16454B000222CD /* BookingManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingManagerViewController.h; sourceTree = "<group>"; };
 		913419D81D16454B000222CD /* BookingManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingManagerViewController.m; sourceTree = "<group>"; };
 		913419D91D16454B000222CD /* BookingManagerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingManagerViewController.xib; sourceTree = "<group>"; };
@@ -306,6 +303,9 @@
 		913419E71D16465A000222CD /* CancelBookView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CancelBookView.h; sourceTree = "<group>"; };
 		913419E81D16465A000222CD /* CancelBookView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CancelBookView.m; sourceTree = "<group>"; };
 		913419E91D16465A000222CD /* CancelBookView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CancelBookView.xib; sourceTree = "<group>"; };
+		9175E3471D18EEDD00755E35 /* LM_datePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LM_datePickerView.h; sourceTree = "<group>"; };
+		9175E3481D18EEDD00755E35 /* LM_datePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LM_datePickerView.m; sourceTree = "<group>"; };
+		9175E3491D18EEDD00755E35 /* LM_datePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LM_datePickerView.xib; sourceTree = "<group>"; };
 		91DAEDBA1D1265C200460F4E /* BaseSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSettingsViewController.m; sourceTree = "<group>"; };
 		91DB34D11D179255000CB5F4 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		91DB34D21D179255000CB5F4 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
@@ -991,9 +991,9 @@
 				913419DC1D164653000222CD /* TableCollectionViewCell.h */,
 				913419DD1D164653000222CD /* TableCollectionViewCell.m */,
 				913419DE1D164653000222CD /* TableCollectionViewCell.xib */,
-				913419C51D16430C000222CD /* LM_datePickerView.h */,
-				913419C61D16430C000222CD /* LM_datePickerView.m */,
-				913419C71D16430C000222CD /* LM_datePickerView.xib */,
+				9175E3471D18EEDD00755E35 /* LM_datePickerView.h */,
+				9175E3481D18EEDD00755E35 /* LM_datePickerView.m */,
+				9175E3491D18EEDD00755E35 /* LM_datePickerView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1180,6 +1180,7 @@
 				76D45C7E1D0CFD3B0026491F /* Assets.xcassets in Resources */,
 				76BB29091D1261600093DEDF /* DeviceTestView.xib in Resources */,
 				817060311D179D7A006BCD2F /* fuKuanView.xib in Resources */,
+				9175E34B1D18EEDD00755E35 /* LM_datePickerView.xib in Resources */,
 				F16B15861D128375005B3B64 /* TransferViewController.xib in Resources */,
 				76BB290F1D1261600093DEDF /* FoodCollectionViewCell.xib in Resources */,
 				76BB291E1D1261600093DEDF /* DinnerTableViewController.xib in Resources */,
@@ -1297,8 +1298,8 @@
 				76BB293A1D1261600093DEDF /* FSCalendarStickyHeader.m in Sources */,
 				76BB29401D1261600093DEDF /* UIView+FSExtension.m in Sources */,
 				76BB29211D1261600093DEDF /* OrderingCollectionViewCell.m in Sources */,
+				9175E34A1D18EEDD00755E35 /* LM_datePickerView.m in Sources */,
 				913419EA1D16465A000222CD /* AddBookView.m in Sources */,
-				913419D31D16430C000222CD /* LM_datePickerView.m in Sources */,
 				76BB29381D1261600093DEDF /* FSCalendarFlowLayout.m in Sources */,
 				76BB29351D1261600093DEDF /* FSCalendarCell.m in Sources */,
 				81EB4D761D13F4EF00FF3817 /* TypeCollectionViewCell.m in Sources */,
