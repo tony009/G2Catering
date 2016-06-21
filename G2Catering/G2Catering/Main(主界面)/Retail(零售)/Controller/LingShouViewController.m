@@ -8,12 +8,8 @@
 
 #import "LingShouViewController.h"
 #import "LingShouTableViewCell.h"
-
-@interface LingShouViewController ()<UITableViewDataSource,UITableViewDelegate>{
-    
-     NSMutableArray *_priceArray;
-}
-
+#import "ZhifuView.h"
+@interface LingShouViewController ()
 @end
 
 @implementation LingShouViewController
@@ -24,15 +20,30 @@
      _priceArray = [NSMutableArray array];
     [self setRoundAngleWithView:self.leftView withCornerRadius:5 withColor:[UIColor lightGrayColor]];
     [self.consumeTable registerNib:[UINib nibWithNibName:@"LingShouTableViewCell" bundle:nil] forCellReuseIdentifier:@"LingShouTableViewCell"];
+    self.consumeTable.dataSource =self;
+    self.consumeTable.delegate =self;
+    [self.jieZhangBtn addTarget:self action:@selector(jieZhangAction:) forControlEvents:UIControlEventTouchUpInside];
+    
     
     
     
 }
 
+- (void)jieZhangAction:(UIButton *)btn{
+    
+    ZhifuView *view = [[[NSBundle mainBundle]loadNibNamed:@"ZhifuView" owner:self options:nil]lastObject];
+    NSString *subString = [_priceLabel.text substringFromIndex:1];
+    view.price = [subString doubleValue];
+    
+    view.isYu = YES;
+    view.frame = CGRectMake(8, 33, 680, 727);
+    [self.calculatorView addSubview:view];
+    
+    
+}
 - (IBAction)numClick:(UIButton *)sender {
     NSInteger senderTag = sender.tag;
     NSString *tmp = [sender currentTitle];
-    int flag = 0;
     //判断小数点的位数
     NSRange range = [_resultStr rangeOfString:@"."];
 //    NSLog(@"判断小数点的位数 %ld %ld",range.location,range.length);

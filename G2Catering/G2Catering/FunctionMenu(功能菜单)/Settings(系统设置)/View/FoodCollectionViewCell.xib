@@ -8,20 +8,20 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FoodCollectionViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="122" height="180"/>
+            <rect key="frame" x="0.0" y="0.0" width="135" height="180"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="122" height="180"/>
+                <rect key="frame" x="0.0" y="0.0" width="135" height="180"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="吉祥三宝" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sae-zh-aSU">
-                        <rect key="frame" x="0.0" y="142" width="121" height="37"/>
+                        <rect key="frame" x="0.0" y="142" width="134" height="37"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="组49" translatesAutoresizingMaskIntoConstraints="NO" id="exT-wK-vTk">
-                        <rect key="frame" x="0.0" y="0.0" width="121" height="142"/>
+                        <rect key="frame" x="0.0" y="0.0" width="134" height="142"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="142" id="FVG-Ew-eTj"/>
                         </constraints>

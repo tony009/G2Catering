@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
             <connections>
+                <outlet property="button" destination="dTg-WD-nPn" id="vpV-Oy-khw"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,15 +17,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTg-WD-nPn">
-                    <rect key="frame" x="361" y="497" width="46" height="30"/>
+                    <rect key="frame" x="334" y="462" width="100" height="100"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="46" id="amM-UN-QIS"/>
-                        <constraint firstAttribute="height" constant="30" id="yH2-Hf-cG2"/>
+                        <constraint firstAttribute="width" constant="100" id="amM-UN-QIS"/>
+                        <constraint firstAttribute="height" constant="100" id="yH2-Hf-cG2"/>
                     </constraints>
-                    <state key="normal" title="Button"/>
-                    <connections>
-                        <action selector="buttonAction:" destination="-1" eventType="touchUpInside" id="kWR-sp-fS0"/>
-                    </connections>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <state key="normal" title="3437948379439493874"/>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="0.26445405840000002" blue="0.11548929600000001" alpha="1" colorSpace="calibratedRGB"/>

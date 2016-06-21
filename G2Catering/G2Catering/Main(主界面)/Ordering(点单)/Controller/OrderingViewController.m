@@ -10,7 +10,9 @@
 #import "OrderingCollectionViewCell.h"
 #import "OrderingTableViewCell.h"
 
+#import "DishTypeView.h"
 
+#import "OpenTableAndTakeOutView.h"
 
 static NSString *collectionViewCellIdentifer = @"OrderingCollectionViewReuseCell";
 static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
@@ -20,6 +22,19 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
 
 @property (weak, nonatomic) IBOutlet UITableView *orderListTableView;
 @property (weak, nonatomic) IBOutlet UICollectionView *orderCollectionView;
+
+
+@property (weak, nonatomic) IBOutlet UIView *orderListView;
+
+
+
+@property (weak, nonatomic) IBOutlet UIView *replacedView;
+
+@property (weak, nonatomic) IBOutlet UIView *firstView;
+@property (weak, nonatomic) IBOutlet UIView *secondView;
+@property (weak, nonatomic) IBOutlet DishTypeView *dishTypeView;
+
+@property (weak,nonatomic) OpenTableAndTakeOutView *openTableAndTakeOutView;
 
 @end
 
@@ -42,7 +57,50 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
     UINib *nib2 = [UINib nibWithNibName:@"OrderingTableViewCell" bundle:nil];
     
     [self.orderListTableView registerNib:nib2 forCellReuseIdentifier:tableViewCellIdentifer];
+    
+    
+    self.firstView.layer.borderWidth = 1;
+    self.secondView.layer.borderWidth = 1;
+    self.orderCollectionView.layer.borderWidth =1;
+    self.orderListView.layer.borderWidth = 1;
+    
+    self.firstView.layer.borderColor = [UIColor grayColor].CGColor;
+    self.secondView.layer.borderColor = [UIColor grayColor].CGColor;
+    self.orderCollectionView.layer.borderColor = [UIColor grayColor].CGColor;
+    self.orderListView.layer.borderColor = [UIColor grayColor].CGColor;
+    
+    self.firstView.layer.cornerRadius = 10;
+    self.secondView.layer.cornerRadius = 10;
+    self.orderCollectionView.layer.cornerRadius = 10;
+    self.orderListView.layer.cornerRadius = 10;
+    
+    //
+    self.orderCollectionView.showsVerticalScrollIndicator = NO;
+    self.orderCollectionView.showsHorizontalScrollIndicator = NO;
+    self.orderCollectionView.backgroundColor = [UIColor whiteColor];
+    
+    UICollectionViewFlowLayout *flowLayout = (UICollectionViewFlowLayout *)self.orderCollectionView.collectionViewLayout;
+    
+    flowLayout.minimumLineSpacing = 1;
+    flowLayout.minimumInteritemSpacing = 1;
+    flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
+    flowLayout.itemSize = CGSizeMake(155, 180);
+    
+    //
+    
+    
+    self.dishTypeView.strArray = @[@"全部",@"热菜",@"甜菜",@"主食",@"凉菜",@"酒水",@"特价"];
+    
+    
+    self.openTableAndTakeOutView = [[[NSBundle mainBundle]loadNibNamed:@"OpenTableAndTakeOutView" owner:nil options:nil] lastObject];
+
+    self.openTableAndTakeOutView.frame = self.replacedView.frame;
+    
+    [self.view addSubview:self.openTableAndTakeOutView];
 }
+
+
+
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -80,9 +138,10 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
 */
 #pragma mark --UICollectionViewDataSource
 
+
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     
-    return 11;
+    return 30;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{

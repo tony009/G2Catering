@@ -24,4 +24,5 @@
 @property (weak, nonatomic) IBOutlet UIButton *ladiesBtn;
 @property (weak, nonatomic) IBOutlet UITextField *firstNameTextField;
 
+@property (weak, nonatomic) IBOutlet UIView *datePickerViewBackView;
 @end

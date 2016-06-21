@@ -8,14 +8,14 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="rXt-f4-CKF" customClass="DeviceTestView">
-            <rect key="frame" x="0.0" y="0.0" width="694" height="720"/>
+            <rect key="frame" x="0.0" y="0.0" width="765" height="720"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="13a-l1-oMN">
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="13a-l1-oMN">
                     <rect key="frame" x="0.0" y="0.0" width="694" height="64"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="外设调试" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVt-nH-XE4">
-                            <rect key="frame" x="311" y="26" width="72" height="22"/>
+                            <rect key="frame" x="347" y="26" width="72" height="22"/>
                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
@@ -29,7 +29,7 @@
                         <constraint firstAttribute="height" constant="64" id="r3J-PX-KTh"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S4R-8a-JKF">
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S4R-8a-JKF">
                     <rect key="frame" x="0.0" y="64" width="694" height="1"/>
                     <color key="backgroundColor" red="0.88479132400000005" green="0.89877158720000005" blue="0.91534745070000001" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
@@ -38,29 +38,26 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pxh-n1-4Pv">
-                    <rect key="frame" x="0.0" y="65" width="694" height="655"/>
+                    <rect key="frame" x="0.0" y="65" width="765" height="655"/>
                     <subviews>
                         <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="组49" translatesAutoresizingMaskIntoConstraints="NO" id="5sr-Vq-SvZ">
-                            <rect key="frame" x="61" y="88" width="280" height="165"/>
+                            <rect key="frame" x="61" y="88" width="309" height="165"/>
                             <gestureRecognizers/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="280" id="v5R-8n-lgE"/>
-                            </constraints>
                             <connections>
                                 <outletCollection property="gestureRecognizers" destination="Xf9-QP-4ux" appends="YES" id="LOK-m1-fu4"/>
                             </connections>
                         </imageView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wgW-Yo-9QX">
-                            <rect key="frame" x="365" y="88" width="270" height="165"/>
+                            <rect key="frame" x="394" y="88" width="300" height="165"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请点击左侧&quot;条码&quot;图案,将打印出" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCH-4R-olg">
-                                    <rect key="frame" x="15" y="59" width="240" height="21"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="条形码,请使用扫码枪扫描" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WpF-Qr-z2y">
+                                    <rect key="frame" x="54" y="90" width="192" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="条形码,请使用扫码枪扫描" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WpF-Qr-z2y">
-                                    <rect key="frame" x="39" y="90" width="192" height="21"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请点击左侧&quot;条码&quot;图案,将打印出" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCH-4R-olg">
+                                    <rect key="frame" x="30" y="59" width="240" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <nil key="highlightedColor"/>
@@ -68,7 +65,7 @@
                             </subviews>
                             <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="270" id="Ao9-ly-84y"/>
+                                <constraint firstAttribute="width" constant="300" id="Ao9-ly-84y"/>
                                 <constraint firstItem="qCH-4R-olg" firstAttribute="top" secondItem="wgW-Yo-9QX" secondAttribute="top" constant="59" id="Fms-em-kSF"/>
                                 <constraint firstItem="WpF-Qr-z2y" firstAttribute="centerX" secondItem="qCH-4R-olg" secondAttribute="centerX" id="GvF-44-46c"/>
                                 <constraint firstItem="WpF-Qr-z2y" firstAttribute="top" secondItem="qCH-4R-olg" secondAttribute="bottom" constant="10" id="lNr-GV-pEK"/>
@@ -76,9 +73,9 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MxL-pv-Te8">
-                            <rect key="frame" x="365" y="305" width="270" height="165"/>
+                            <rect key="frame" x="394" y="305" width="300" height="165"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请点击左侧&quot;钱箱&quot;,打开钱箱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttk-nt-agf">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="请点击左侧&quot;钱箱&quot;,打开钱箱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttk-nt-agf">
                                     <rect key="frame" x="33" y="74" width="205" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -88,16 +85,12 @@
                             <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstItem="ttk-nt-agf" firstAttribute="top" secondItem="MxL-pv-Te8" secondAttribute="top" constant="74" id="3Wv-Ex-EyQ"/>
-                                <constraint firstAttribute="width" constant="270" id="Xve-ct-0LL"/>
                                 <constraint firstItem="ttk-nt-agf" firstAttribute="centerX" secondItem="MxL-pv-Te8" secondAttribute="centerX" id="upJ-Kh-Qui"/>
                             </constraints>
                         </view>
                         <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="组50" translatesAutoresizingMaskIntoConstraints="NO" id="Sbi-y9-nCr">
-                            <rect key="frame" x="61" y="305" width="280" height="165"/>
+                            <rect key="frame" x="61" y="305" width="309" height="165"/>
                             <gestureRecognizers/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="280" id="fvi-cz-cmL"/>
-                            </constraints>
                             <connections>
                                 <outletCollection property="gestureRecognizers" destination="4at-TO-Rw2" appends="YES" id="pBd-MK-ufY"/>
                             </connections>
@@ -105,6 +98,7 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
+                        <constraint firstItem="MxL-pv-Te8" firstAttribute="width" secondItem="wgW-Yo-9QX" secondAttribute="width" id="BwA-iZ-wqb"/>
                         <constraint firstItem="wgW-Yo-9QX" firstAttribute="top" secondItem="5sr-Vq-SvZ" secondAttribute="top" id="KjV-9q-tCL"/>
                         <constraint firstItem="MxL-pv-Te8" firstAttribute="top" secondItem="Sbi-y9-nCr" secondAttribute="top" id="N4g-Dq-ldk"/>
                         <constraint firstItem="MxL-pv-Te8" firstAttribute="bottom" secondItem="Sbi-y9-nCr" secondAttribute="bottom" id="SUq-pM-edq"/>
