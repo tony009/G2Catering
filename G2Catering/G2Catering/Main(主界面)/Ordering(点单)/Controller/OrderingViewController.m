@@ -92,7 +92,7 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
     self.dishTypeView.strArray = @[@"全部",@"热菜",@"甜菜",@"主食",@"凉菜",@"酒水",@"特价"];
     
     
-    self.openTableAndTakeOutView = [[[NSBundle mainBundle]loadNibNamed:@"OpenTableAndTakeOutView" owner:nil options:nil] lastObject];
+    self.openTableAndTakeOutView = [[[NSBundle mainBundle]loadNibNamed:@"OpenTableAndTakeOutView" owner:nil options:nil] firstObject];
 
     self.openTableAndTakeOutView.frame = self.replacedView.frame;
     

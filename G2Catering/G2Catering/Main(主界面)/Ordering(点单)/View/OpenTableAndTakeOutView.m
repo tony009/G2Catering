@@ -27,6 +27,9 @@
 @property (strong, nonatomic) IBOutletCollection(OpenTableButton) NSArray *tableNoButtonCollection;
 @property (weak,nonatomic)OpenTableButton *selectedTableNoButton;
 
+
+@property (strong,nonatomic) NSMutableArray *numArray;
+
 @end
 
 
@@ -42,7 +45,7 @@
     self.collectionView.delegate = self;
     
     self.collectionView.showsHorizontalScrollIndicator = NO;
-    self.collectionView.showsVerticalScrollIndicator = YES;
+    self.collectionView.showsVerticalScrollIndicator = NO;
     
     
     
@@ -67,6 +70,12 @@
         
     }];
     
+    
+    self.numArray = [NSMutableArray array];
+    
+    for (int i =0; i< 10; i++) {
+        [self.numArray addObject:[NSString stringWithFormat:@"%d",i]];
+    }
     
 }
 
@@ -97,14 +106,32 @@
 #pragma mark -- UICollectionViewDataSource
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return  9;
+    return  [self.numArray count];
 }
+
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
     
   OpenTableCollectionViewCell *cell =   [collectionView dequeueReusableCellWithReuseIdentifier:@"reuseIdentifier" forIndexPath:indexPath];
     
+    
+    [cell.button setTitle:self.numArray[indexPath.row] forState:UIControlStateNormal];
+    
+    
     return cell;
+}
+
+#pragma mark -- UICollectionViewDelegate
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    OpenTableCollectionViewCell *cell =(OpenTableCollectionViewCell *) [collectionView cellForItemAtIndexPath:indexPath];
+    [cell.button setSelected:YES];
+    
+}
+- (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    OpenTableCollectionViewCell *cell =(OpenTableCollectionViewCell *) [collectionView cellForItemAtIndexPath:indexPath];
+    [cell.button setSelected:NO];
+    
 }
 
 /*
