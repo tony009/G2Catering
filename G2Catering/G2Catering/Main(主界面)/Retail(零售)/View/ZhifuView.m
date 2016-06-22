@@ -8,6 +8,7 @@
 
 #import "ZhifuView.h"
 #import "TypeCollectionViewCell.h"
+#import "fuKuanView.h"
 @interface  ZhifuView()<UICollectionViewDataSource,UICollectionViewDelegate>{
     
     NSMutableArray *_typeArray;
@@ -25,8 +26,27 @@
     self.layer.cornerRadius = 5;
     self.layer.masksToBounds = YES;
     self.verifyView.layer.cornerRadius = 5;
-
+    self.verifyView.layer.borderWidth = 1;
+    self.verifyView.layer.borderColor = [UIColor colorWithRed:42/255.0 green:66/255.0 blue:90/255.0 alpha:1].CGColor;
+    [self setRoundAngleWithView:self.button1 withCornerRadius:5 withColor:[UIColor colorWithRed:42/255.0 green:66/255.0 blue:90/255.0 alpha:1]];
+    
+    [self setRoundAngleWithView:self.button2 withCornerRadius:5 withColor:[UIColor colorWithRed:42/255.0 green:66/255.0 blue:90/255.0 alpha:1]];
+    [self setRoundAngleWithView:self.button3 withCornerRadius:5 withColor:[UIColor colorWithRed:42/255.0 green:66/255.0 blue:90/255.0 alpha:1]];
+    [self setRoundAngleWithView:self.button4 withCornerRadius:5 withColor:[UIColor colorWithRed:42/255.0 green:66/255.0 blue:90/255.0 alpha:1]];
+    [self setRoundAngleWithView:self.yuView withCornerRadius:5 withColor:[UIColor colorWithRed:42/255.0 green:66/255.0 blue:90/255.0 alpha:1]];
 }
+
+
+//设置圆角
+- (void)setRoundAngleWithView:(UIView *)changeView withCornerRadius:(double)cornerRadius withColor:(UIColor *)color{
+    
+    changeView.layer.masksToBounds = YES;
+    changeView.layer.cornerRadius = cornerRadius;
+    changeView.layer.borderColor = color.CGColor;
+    changeView.layer.borderWidth = 1;
+    
+}
+
 
 -(void)setIsYu:(BOOL)isYu{
     
@@ -83,6 +103,37 @@
     return cell;
     
     
+}
+
+- (IBAction)yesAction:(UIButton *)sender {
+}
+
+
+- (IBAction)cancelAction:(UIButton *)sender {
+    
+    [self removeFromSuperview];
+}
+
+
+- (IBAction)cashClick:(UIButton *)sender {
+    fuKuanView *fuView = [[[NSBundle mainBundle]loadNibNamed:@"fuKuanView" owner:self options:nil]lastObject];
+    fuView.statusString = sender.currentTitle;
+    fuView.frame = self.bounds;
+    
+    [self addSubview:fuView];
+    
+    
+}
+
+
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    fuKuanView *fuView = [[[NSBundle mainBundle]loadNibNamed:@"fuKuanView" owner:self options:nil]lastObject];
+    fuView.statusString = @"card";
+    fuView.frame = self.bounds;
+
+    [self addSubview:fuView];
 }
 
 @end

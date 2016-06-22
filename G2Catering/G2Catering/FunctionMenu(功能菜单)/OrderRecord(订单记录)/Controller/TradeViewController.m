@@ -75,6 +75,7 @@
             
             self.leftView.hidden = NO;
             
+            self.leftBtn.selected = YES;
         } completion:^(BOOL finished) {
             
             
@@ -86,6 +87,7 @@
             self.allView.transform = CGAffineTransformIdentity;
             
             self.leftView.hidden = YES;
+            self.leftBtn.selected = NO;
             
         } completion:^(BOOL finished) {
             

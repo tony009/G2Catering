@@ -31,4 +31,7 @@
 @property(nonatomic,assign)BOOL isYu;
 @property (weak, nonatomic) IBOutlet UIView *allView;
 
+@property (weak, nonatomic) IBOutlet UIView *yuView;
+
+
 @end

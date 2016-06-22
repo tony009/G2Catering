@@ -99,6 +99,8 @@
 		817CA09B1D1283AC00F1F61E /* LingShouTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 817CA0991D1283AC00F1F61E /* LingShouTableViewCell.xib */; };
 		817CA09F1D12850100F1F61E /* CheDanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 817CA09D1D12850100F1F61E /* CheDanView.m */; };
 		817CA0A01D12850100F1F61E /* CheDanView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 817CA09E1D12850100F1F61E /* CheDanView.xib */; };
+		81A600141D190EC300CCA448 /* secondStepView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A600131D190EC300CCA448 /* secondStepView.m */; };
+		81A600161D190ED200CCA448 /* secondStepView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81A600151D190ED200CCA448 /* secondStepView.xib */; };
 		81EB4D761D13F4EF00FF3817 /* TypeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EB4D741D13F4EF00FF3817 /* TypeCollectionViewCell.m */; };
 		81EB4D771D13F4EF00FF3817 /* TypeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81EB4D751D13F4EF00FF3817 /* TypeCollectionViewCell.xib */; };
 		913419D31D16430C000222CD /* LM_datePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 913419C61D16430C000222CD /* LM_datePickerView.m */; };
@@ -296,6 +298,9 @@
 		817CA09C1D12850100F1F61E /* CheDanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CheDanView.h; path = ../Model/CheDanView.h; sourceTree = "<group>"; };
 		817CA09D1D12850100F1F61E /* CheDanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CheDanView.m; path = ../Model/CheDanView.m; sourceTree = "<group>"; };
 		817CA09E1D12850100F1F61E /* CheDanView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CheDanView.xib; path = ../Model/CheDanView.xib; sourceTree = "<group>"; };
+		81A600121D190EC300CCA448 /* secondStepView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secondStepView.h; sourceTree = "<group>"; };
+		81A600131D190EC300CCA448 /* secondStepView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = secondStepView.m; sourceTree = "<group>"; };
+		81A600151D190ED200CCA448 /* secondStepView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = secondStepView.xib; sourceTree = "<group>"; };
 		81EB4D731D13F4EF00FF3817 /* TypeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeCollectionViewCell.h; sourceTree = "<group>"; };
 		81EB4D741D13F4EF00FF3817 /* TypeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeCollectionViewCell.m; sourceTree = "<group>"; };
 		81EB4D751D13F4EF00FF3817 /* TypeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TypeCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -787,6 +792,9 @@
 				8170602D1D179D68006BCD2F /* fuKuanView.h */,
 				8170602E1D179D68006BCD2F /* fuKuanView.m */,
 				817060301D179D7A006BCD2F /* fuKuanView.xib */,
+				81A600121D190EC300CCA448 /* secondStepView.h */,
+				81A600131D190EC300CCA448 /* secondStepView.m */,
+				81A600151D190ED200CCA448 /* secondStepView.xib */,
 				81EB4D731D13F4EF00FF3817 /* TypeCollectionViewCell.h */,
 				81EB4D741D13F4EF00FF3817 /* TypeCollectionViewCell.m */,
 				81EB4D751D13F4EF00FF3817 /* TypeCollectionViewCell.xib */,
@@ -1203,6 +1211,7 @@
 				817060311D179D7A006BCD2F /* fuKuanView.xib in Resources */,
 				F16B15861D128375005B3B64 /* TransferViewController.xib in Resources */,
 				76BB290F1D1261600093DEDF /* FoodCollectionViewCell.xib in Resources */,
+				81A600161D190ED200CCA448 /* secondStepView.xib in Resources */,
 				76BB291E1D1261600093DEDF /* DinnerTableViewController.xib in Resources */,
 				76BB29071D1261600093DEDF /* AboutSettingsView.xib in Resources */,
 				76BB292F1D1261600093DEDF /* Info.plist in Resources */,
@@ -1363,6 +1372,7 @@
 				76BB29361D1261600093DEDF /* FSCalendarCollectionView.m in Sources */,
 				76BB292D1D1261600093DEDF /* AppDelegate.m in Sources */,
 				76BB290E1D1261600093DEDF /* FoodCollectionViewCell.m in Sources */,
+				81A600141D190EC300CCA448 /* secondStepView.m in Sources */,
 				8170602F1D179D68006BCD2F /* fuKuanView.m in Sources */,
 				76BB28F81D1261600093DEDF /* TradeViewController.m in Sources */,
 				76BB29151D1261600093DEDF /* UpdatePasswordView.m in Sources */,
