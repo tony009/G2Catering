@@ -100,7 +100,7 @@
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
-                                <action selector="xiadanAction:" destination="-1" eventType="touchUpInside" id="5n6-5c-pnr"/>
+                                <action selector="placeOrderAction:" destination="-1" eventType="touchUpInside" id="cVd-cw-XvX"/>
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="39.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltp-uI-WMm">
