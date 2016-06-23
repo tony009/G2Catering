@@ -35,6 +35,13 @@
                                 <action selector="btnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="zw3-mw-AbS"/>
                             </connections>
                         </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zhang" translatesAutoresizingMaskIntoConstraints="NO" id="9Kc-wE-rb5">
+                            <rect key="frame" x="0.0" y="0.0" width="81" height="81"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="81" id="Eue-Sv-TW8"/>
+                                <constraint firstAttribute="width" constant="81" id="QV9-b7-gbt"/>
+                            </constraints>
+                        </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Li0-4R-hWq">
                             <rect key="frame" x="18" y="18" width="45" height="45"/>
                             <constraints>
@@ -42,7 +49,7 @@
                                 <constraint firstAttribute="height" constant="45" id="hfZ-I2-SeM"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="交接班" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXj-aB-afr">
@@ -51,13 +58,6 @@
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="交接班-形状20" translatesAutoresizingMaskIntoConstraints="NO" id="9Kc-wE-rb5">
-                            <rect key="frame" x="0.0" y="0.0" width="81" height="81"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="81" id="Eue-Sv-TW8"/>
-                                <constraint firstAttribute="width" constant="81" id="QV9-b7-gbt"/>
-                            </constraints>
-                        </imageView>
                     </subviews>
                     <constraints>
                         <constraint firstItem="Li0-4R-hWq" firstAttribute="top" secondItem="gOW-DL-43I" secondAttribute="top" constant="18" id="6MD-2e-Sl2"/>
@@ -92,7 +92,7 @@
         </view>
     </objects>
     <resources>
-        <image name="交接班-形状20" width="87" height="87"/>
+        <image name="zhang" width="174" height="174"/>
         <image name="矩形32" width="194" height="92"/>
     </resources>
 </document>
