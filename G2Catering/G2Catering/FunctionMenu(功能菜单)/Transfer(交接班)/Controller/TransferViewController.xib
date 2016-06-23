@@ -30,7 +30,7 @@
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="headPortrait" translatesAutoresizingMaskIntoConstraints="NO" id="yJE-yG-LYe">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="touxiang" translatesAutoresizingMaskIntoConstraints="NO" id="yJE-yG-LYe">
                                     <rect key="frame" x="20" y="24" width="69" height="69"/>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMO-ny-mEB">
@@ -154,10 +154,10 @@
                                     </attributedString>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blackPoint" translatesAutoresizingMaskIntoConstraints="NO" id="xSl-NO-wIT">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dian" translatesAutoresizingMaskIntoConstraints="NO" id="xSl-NO-wIT">
                                     <rect key="frame" x="162" y="251" width="10" height="10"/>
                                 </imageView>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blackPoint" translatesAutoresizingMaskIntoConstraints="NO" id="OYq-St-270">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dian" translatesAutoresizingMaskIntoConstraints="NO" id="OYq-St-270">
                                     <rect key="frame" x="162" y="222" width="10" height="10"/>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="预订" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p7M-cn-9bw">
@@ -205,10 +205,10 @@
                                     </attributedString>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blackPoint" translatesAutoresizingMaskIntoConstraints="NO" id="3Ce-SV-lep">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dian" translatesAutoresizingMaskIntoConstraints="NO" id="3Ce-SV-lep">
                                     <rect key="frame" x="44" y="251" width="10" height="10"/>
                                 </imageView>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="点@2x_19" translatesAutoresizingMaskIntoConstraints="NO" id="ptV-NT-lhV">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dian" translatesAutoresizingMaskIntoConstraints="NO" id="ptV-NT-lhV">
                                     <rect key="frame" x="44" y="222" width="10" height="10"/>
                                 </imageView>
                             </subviews>
@@ -934,12 +934,11 @@
         </view>
     </objects>
     <resources>
-        <image name="blackPoint" width="25" height="25"/>
-        <image name="headPortrait" width="17" height="17"/>
+        <image name="dian" width="12" height="12"/>
+        <image name="touxiang" width="77" height="77"/>
         <image name="形状44" width="27" height="37"/>
         <image name="形状64" width="35" height="35"/>
         <image name="形状65" width="35" height="35"/>
         <image name="形状66" width="34" height="34"/>
-        <image name="点@2x_19" width="335" height="300"/>
     </resources>
 </document>
