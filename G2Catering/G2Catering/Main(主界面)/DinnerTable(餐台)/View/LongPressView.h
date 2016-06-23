@@ -1,5 +1,5 @@
 //
-//  WaiMaiTableViewCell.h
+//  longPressView.h
 //  G2Catering
 //
 //  Created by tencrwin on 16/6/21.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WaiMaiTableViewCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UILabel *numLabel;
+@interface LongPressView : UIView
+@property (weak, nonatomic) IBOutlet UIView *changeView;
 
 @end

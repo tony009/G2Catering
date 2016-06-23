@@ -31,8 +31,8 @@
     self.searchTextField.layer.borderColor = [UIColor lightGrayColor].CGColor;
     self.searchTextField.layer.borderWidth = 1;
     
-    self.waiMaiView.frame = CGRectMake(0, 0, 1024, 768);
-    [self.waiMaiWholeView addSubview:self.waiMaiView];
+//    self.waiMaiView.frame = CGRectMake(0, 0, 1024, 768);
+//    [self.waiMaiWholeView addSubview:self.waiMaiView];
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -151,7 +151,7 @@
          _longView=[[[NSBundle mainBundle]loadNibNamed:@"LongPressView" owner:self options:nil]lastObject];
         [self.view addSubview:_longView];
         
-        _longView.changeView.frame = cell.frame;
+        _longView.changeView.frame = CGRectMake(point.x, point.y, 100, 100);
     }
 }
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -179,7 +179,7 @@
     if (collectionView.tag == 1001 ) {
         
       
-        self.view.frame = CGRectMake(-372, 0, 1024, 768);
+        self.view.frame = CGRectMake(-372, 0, 1362, 768);
        
     }
 }
@@ -190,7 +190,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     WaiMaiTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"WaiMaiTableViewCell" forIndexPath:indexPath];
-    
+    cell.numLabel.text = @"002";
     return cell;
 
 }
