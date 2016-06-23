@@ -34,7 +34,7 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
 @property (weak, nonatomic) IBOutlet UIView *secondView;
 @property (weak, nonatomic) IBOutlet DishTypeView *dishTypeView;
 
-@property (weak,nonatomic) OpenTableAndTakeOutView *openTableAndTakeOutView;
+@property (strong,nonatomic) OpenTableAndTakeOutView *openTableAndTakeOutView;
 
 @end
 
@@ -115,9 +115,10 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
 - (IBAction)placeOrderAction:(UIButton *)sender {
     
     
-    self.openTableAndTakeOutView = [[[NSBundle mainBundle]loadNibNamed:@"OpenTableAndTakeOutView" owner:nil options:nil] firstObject];
+//    self.openTableAndTakeOutView = [[[NSBundle mainBundle]loadNibNamed:@"OpenTableAndTakeOutView" owner:nil options:nil] firstObject];
     
-    self.openTableAndTakeOutView.frame = self.replacedView.frame;
+    self.openTableAndTakeOutView = [[OpenTableAndTakeOutView alloc]initWithFrame:self.replacedView.frame];
+
     
     [self.view addSubview:self.openTableAndTakeOutView];
     
