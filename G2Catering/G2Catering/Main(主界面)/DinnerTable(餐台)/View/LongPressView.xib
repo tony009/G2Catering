@@ -14,18 +14,22 @@
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f6c-oN-Qoa">
                     <rect key="frame" x="319" y="104" width="387" height="192"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="餐台状态_并桌" translatesAutoresizingMaskIntoConstraints="NO" id="oM9-P5-IGm">
-                            <rect key="frame" x="307" y="102" width="60" height="60"/>
-                        </imageView>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="餐台状态_打印按钮" translatesAutoresizingMaskIntoConstraints="NO" id="gJM-lu-GTR">
-                            <rect key="frame" x="112" y="20" width="60" height="60"/>
-                        </imageView>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="餐台状态_换桌" translatesAutoresizingMaskIntoConstraints="NO" id="3BN-5w-QJ4">
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dck-Jp-WVz">
                             <rect key="frame" x="20" y="102" width="60" height="60"/>
-                        </imageView>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="餐台状态_结算按钮" translatesAutoresizingMaskIntoConstraints="NO" id="4RD-Uo-KN5">
+                            <state key="normal" backgroundImage="餐台状态_换桌"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gv-cY-atu">
+                            <rect key="frame" x="112" y="20" width="60" height="60"/>
+                            <state key="normal" backgroundImage="餐台状态_打印按钮"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDH-xr-UZI">
                             <rect key="frame" x="212" y="20" width="60" height="60"/>
-                        </imageView>
+                            <state key="normal" backgroundImage="餐台状态_结算按钮"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pCt-or-7Me">
+                            <rect key="frame" x="307" y="102" width="60" height="60"/>
+                            <state key="normal" backgroundImage="餐台状态_并桌"/>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
