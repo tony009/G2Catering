@@ -111,9 +111,9 @@
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YIJ-dh-SHu">
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7r-Gg-ojo">
                                     <rect key="frame" x="196" y="76" width="240" height="233"/>
-                                </imageView>
+                                </button>
                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lf0-QD-wYS">
                                     <rect key="frame" x="71" y="70" width="465" height="239"/>
                                     <subviews>
@@ -161,6 +161,17 @@
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RoR-kv-T1H">
+                            <rect key="frame" x="182" y="260" width="326" height="44"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MHy-fU-eRh">
+                                    <rect key="frame" x="2" y="8" width="323" height="30"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
@@ -172,11 +183,13 @@
                 <outlet property="cashView" destination="1Oj-q5-3mk" id="kC8-Nz-dza"/>
                 <outlet property="continueBtn" destination="kGc-fZ-pbK" id="P0t-K2-NcE"/>
                 <outlet property="finishBtn" destination="SKh-a6-KBK" id="4gd-rT-UwL"/>
-                <outlet property="midImg" destination="YIJ-dh-SHu" id="9ft-5j-sh7"/>
+                <outlet property="midBtn" destination="r7r-Gg-ojo" id="2uk-eM-ncB"/>
                 <outlet property="moneyLabel" destination="wRD-Qb-gBE" id="8E5-nG-Wu2"/>
+                <outlet property="phoneText" destination="MHy-fU-eRh" id="3mU-jX-TnK"/>
                 <outlet property="printBtn" destination="jfb-hT-AHu" id="2dT-1M-dHZ"/>
                 <outlet property="shuakaView" destination="Lf0-QD-wYS" id="FIi-OD-F77"/>
                 <outlet property="successBtn" destination="tXl-5H-Zdk" id="jog-f5-W6c"/>
+                <outlet property="textView" destination="RoR-kv-T1H" id="HCH-Oe-uLa"/>
                 <outlet property="titleLabel" destination="cGS-B3-1ml" id="pl6-E4-h38"/>
                 <outlet property="upLoadBtn" destination="O2j-Ys-8Vb" id="5XX-tu-3qL"/>
                 <outlet property="waitBtn" destination="IjH-LB-KZ6" id="5k0-Ia-Hx1"/>
