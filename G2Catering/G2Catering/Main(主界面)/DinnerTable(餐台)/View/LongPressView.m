@@ -10,6 +10,13 @@
 
 @implementation LongPressView
 
+
+- (void)setPoint:(CGPoint)point{
+    
+    self.changeView.frame = CGRectMake(0, 0, 200, 100);
+     self.changeView.center = point;
+}
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

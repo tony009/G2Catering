@@ -27,6 +27,7 @@
             </view>
             <size key="customSize" width="52" height="79"/>
             <connections>
+                <outlet property="backImgView" destination="W52-7Y-Qmf" id="VOt-qu-p3k"/>
                 <outlet property="nameLabel" destination="8yb-jh-7Je" id="4wB-E4-Y59"/>
             </connections>
             <point key="canvasLocation" x="418" y="294.5"/>

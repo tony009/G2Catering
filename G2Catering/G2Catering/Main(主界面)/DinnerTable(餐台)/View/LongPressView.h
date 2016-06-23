@@ -10,5 +10,5 @@
 
 @interface LongPressView : UIView
 @property (weak, nonatomic) IBOutlet UIView *changeView;
-
+- (void)setPoint:(CGPoint)point;
 @end

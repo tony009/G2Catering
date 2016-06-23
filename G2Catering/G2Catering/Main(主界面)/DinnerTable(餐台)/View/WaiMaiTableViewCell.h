@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WaiMaiTableViewCell : UITableViewCell
+@interface WaiMaiTableViewCell : UITableViewCell<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UILabel *numLabel;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end

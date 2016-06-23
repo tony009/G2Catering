@@ -133,6 +133,8 @@
 		F104CE721D1B8083003EAEEC /* NSString+FSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F104CDF71D1B8083003EAEEC /* NSString+FSExtension.m */; };
 		F104CE731D1B8083003EAEEC /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = F104CDF81D1B8083003EAEEC /* README.md */; };
 		F104CE741D1B8083003EAEEC /* UIView+FSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F104CDFA1D1B8083003EAEEC /* UIView+FSExtension.m */; };
+		F104CE781D1B872E003EAEEC /* WaiMaiDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F104CE761D1B872E003EAEEC /* WaiMaiDetailTableViewCell.m */; };
+		F104CE791D1B872E003EAEEC /* WaiMaiDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F104CE771D1B872E003EAEEC /* WaiMaiDetailTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -359,6 +361,9 @@
 		F104CDF81D1B8083003EAEEC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F104CDF91D1B8083003EAEEC /* UIView+FSExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FSExtension.h"; sourceTree = "<group>"; };
 		F104CDFA1D1B8083003EAEEC /* UIView+FSExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FSExtension.m"; sourceTree = "<group>"; };
+		F104CE751D1B872E003EAEEC /* WaiMaiDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaiMaiDetailTableViewCell.h; sourceTree = "<group>"; };
+		F104CE761D1B872E003EAEEC /* WaiMaiDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaiMaiDetailTableViewCell.m; sourceTree = "<group>"; };
+		F104CE771D1B872E003EAEEC /* WaiMaiDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaiMaiDetailTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -778,6 +783,9 @@
 				F104CD921D1B8083003EAEEC /* WaiMaiTableViewCell.h */,
 				F104CD931D1B8083003EAEEC /* WaiMaiTableViewCell.m */,
 				F104CD941D1B8083003EAEEC /* WaiMaiTableViewCell.xib */,
+				F104CE751D1B872E003EAEEC /* WaiMaiDetailTableViewCell.h */,
+				F104CE761D1B872E003EAEEC /* WaiMaiDetailTableViewCell.m */,
+				F104CE771D1B872E003EAEEC /* WaiMaiDetailTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1096,6 +1104,7 @@
 				F104CE1B1D1B8083003EAEEC /* BaseSettingsViewController.xib in Resources */,
 				F104CE5E1D1B8083003EAEEC /* TypeCollectionViewCell.xib in Resources */,
 				F104CE5C1D1B8083003EAEEC /* secondStepView.xib in Resources */,
+				F104CE791D1B872E003EAEEC /* WaiMaiDetailTableViewCell.xib in Resources */,
 				F104CE1F1D1B8083003EAEEC /* DeviceTestView.xib in Resources */,
 				F104CE651D1B8083003EAEEC /* Main.storyboard in Resources */,
 				F104CE091D1B8083003EAEEC /* JiLuCaiViewCell.xib in Resources */,
@@ -1245,6 +1254,7 @@
 				F104CE681D1B8083003EAEEC /* FSCalendarAppearance.m in Sources */,
 				F104CE3C1D1B8083003EAEEC /* RightCollectionViewCell.m in Sources */,
 				F104CE041D1B8083003EAEEC /* CheDanView.m in Sources */,
+				F104CE781D1B872E003EAEEC /* WaiMaiDetailTableViewCell.m in Sources */,
 				F104CE121D1B8083003EAEEC /* BookManagerTableViewCell.m in Sources */,
 				F104CE161D1B8083003EAEEC /* LM_datePickerView.m in Sources */,
 				F104CE421D1B8083003EAEEC /* DishTypeView.m in Sources */,

@@ -17,6 +17,7 @@
   [self setRoundAngleWithView:self.yesBtn withCornerRadius:5 withColor:[UIColor colorWithRed:42/255.0 green:66/255.0 blue:90/255.0 alpha:1]];
     [_cancelBtn addTarget:self action:@selector(cancelAction:) forControlEvents:UIControlEventTouchUpInside];
      [_yesBtn addTarget:self action:@selector(yesAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self setRoundAngleWithView:self.textView withCornerRadius:5 withColor:[UIColor colorWithRed:42/255.0 green:66/255.0 blue:90/255.0 alpha:1]];
 }
 
 - (void)cancelAction:(UIButton *)cancelBtn{
