@@ -144,6 +144,6 @@
         <image name="RoundedRectangle16copy3" width="22" height="20"/>
         <image name="yes" width="22" height="20"/>
         <image name="登录页背景" width="813" height="547"/>
-        <image name="背景" width="2048" height="1536"/>
+        <image name="背景" width="1024" height="768"/>
     </resources>
 </document>
