@@ -29,7 +29,7 @@
     if ([self.statusString isEqualToString:@"vip"]) {
         
         //校验
-        secondStepView *stepView = [[[NSBundle mainBundle]loadNibNamed:@"secondStepView" owner:nil options:nil]lastObject];
+        secondStepView *stepView = [[[NSBundle mainBundle]loadNibNamed:@"secondStepView" owner: nil options:nil]lastObject];
         stepView.phoneText.text = _phoneText.text;
         __block secondStepView *this = stepView;
         stepView.block = ^(BOOL type){

@@ -11,6 +11,10 @@
 		76D45C7E1D0CFD3B0026491F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76D45C7D1D0CFD3B0026491F /* Assets.xcassets */; };
 		76D45C8C1D0CFD3B0026491F /* G2CateringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D45C8B1D0CFD3B0026491F /* G2CateringTests.m */; };
 		76D45C971D0CFD3C0026491F /* G2CateringUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D45C961D0CFD3C0026491F /* G2CateringUITests.m */; };
+		818EFB6B1D1CD010005C02E5 /* NSString+log.m in Sources */ = {isa = PBXBuildFile; fileRef = 818EFB621D1CD010005C02E5 /* NSString+log.m */; };
+		818EFB6E1D1CD010005C02E5 /* UIView+AdjustFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 818EFB6A1D1CD010005C02E5 /* UIView+AdjustFrame.m */; };
+		818EFB711D1CE5B6005C02E5 /* ScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 818EFB701D1CE5B6005C02E5 /* ScanView.m */; };
+		818EFB731D1CE5C7005C02E5 /* ScanView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 818EFB721D1CE5C7005C02E5 /* ScanView.xib */; };
 		F104CDFB1D1B8083003EAEEC /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F104CD151D1B8083003EAEEC /* HttpTool.m */; };
 		F104CDFC1D1B8083003EAEEC /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F104CD1A1D1B8083003EAEEC /* LoginViewController.m */; };
 		F104CDFD1D1B8083003EAEEC /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F104CD1B1D1B8083003EAEEC /* LoginViewController.xib */; };
@@ -163,6 +167,14 @@
 		76D45C921D0CFD3C0026491F /* G2CateringUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = G2CateringUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76D45C961D0CFD3C0026491F /* G2CateringUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = G2CateringUITests.m; sourceTree = "<group>"; };
 		76D45C981D0CFD3C0026491F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		818EFB611D1CD010005C02E5 /* NSString+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+log.h"; sourceTree = "<group>"; };
+		818EFB621D1CD010005C02E5 /* NSString+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+log.m"; sourceTree = "<group>"; };
+		818EFB681D1CD010005C02E5 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		818EFB691D1CD010005C02E5 /* UIView+AdjustFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AdjustFrame.h"; sourceTree = "<group>"; };
+		818EFB6A1D1CD010005C02E5 /* UIView+AdjustFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AdjustFrame.m"; sourceTree = "<group>"; };
+		818EFB6F1D1CE5B6005C02E5 /* ScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanView.h; sourceTree = "<group>"; };
+		818EFB701D1CE5B6005C02E5 /* ScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanView.m; sourceTree = "<group>"; };
+		818EFB721D1CE5C7005C02E5 /* ScanView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanView.xib; sourceTree = "<group>"; };
 		8A99B5CD036CAE879C22EB66 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F104CD101D1B8083003EAEEC /* DimensMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DimensMacros.h; sourceTree = "<group>"; };
 		F104CD111D1B8083003EAEEC /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
@@ -447,6 +459,26 @@
 				76D45C981D0CFD3C0026491F /* Info.plist */,
 			);
 			path = G2CateringUITests;
+			sourceTree = "<group>";
+		};
+		818EFB601D1CD010005C02E5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				818EFB611D1CD010005C02E5 /* NSString+log.h */,
+				818EFB621D1CD010005C02E5 /* NSString+log.m */,
+				818EFB631D1CD010005C02E5 /* Refresh */,
+				818EFB681D1CD010005C02E5 /* Singleton.h */,
+				818EFB691D1CD010005C02E5 /* UIView+AdjustFrame.h */,
+				818EFB6A1D1CD010005C02E5 /* UIView+AdjustFrame.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		818EFB631D1CD010005C02E5 /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Refresh;
 			sourceTree = "<group>";
 		};
 		BCBCDE88EDDFD9597B01BB42 /* Pods */ = {
@@ -898,6 +930,9 @@
 				F104CDCE1D1B8083003EAEEC /* ZhifuView.h */,
 				F104CDCF1D1B8083003EAEEC /* ZhifuView.m */,
 				F104CDD01D1B8083003EAEEC /* ZhifuView.xib */,
+				818EFB6F1D1CE5B6005C02E5 /* ScanView.h */,
+				818EFB701D1CE5B6005C02E5 /* ScanView.m */,
+				818EFB721D1CE5C7005C02E5 /* ScanView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -916,6 +951,7 @@
 		F104CDD61D1B8083003EAEEC /* Resources(资源) */ = {
 			isa = PBXGroup;
 			children = (
+				818EFB601D1CD010005C02E5 /* Common */,
 				F104CDD71D1B8083003EAEEC /* Plist */,
 				F104CDD91D1B8083003EAEEC /* Storyboard */,
 			);
@@ -1126,6 +1162,7 @@
 				F104CDFF1D1B8083003EAEEC /* BlueToothDeviceTableViewCell.xib in Resources */,
 				F104CE011D1B8083003EAEEC /* SearchBlueToothView.xib in Resources */,
 				F104CE4E1D1B8083003EAEEC /* MainViewController.xib in Resources */,
+				818EFB731D1CE5C7005C02E5 /* ScanView.xib in Resources */,
 				F104CE191D1B8083003EAEEC /* TableCollectionViewCell.xib in Resources */,
 				F104CE071D1B8083003EAEEC /* JiaoYiJiLuCell.xib in Resources */,
 				F104CE391D1B8083003EAEEC /* DeskCollectionViewCell.xib in Resources */,
@@ -1224,6 +1261,7 @@
 				F104CE491D1B8083003EAEEC /* OrderingCollectionViewCell.m in Sources */,
 				F104CE261D1B8083003EAEEC /* LM_button.m in Sources */,
 				F104CE701D1B8083003EAEEC /* NSDate+FSExtension.m in Sources */,
+				818EFB6E1D1CD010005C02E5 /* UIView+AdjustFrame.m in Sources */,
 				F104CE721D1B8083003EAEEC /* NSString+FSExtension.m in Sources */,
 				F104CE671D1B8083003EAEEC /* FSCalendar.m in Sources */,
 				F104CE531D1B8083003EAEEC /* MainRightView.m in Sources */,
@@ -1243,6 +1281,7 @@
 				F104CE551D1B8083003EAEEC /* LingShouViewController.m in Sources */,
 				F104CE681D1B8083003EAEEC /* FSCalendarAppearance.m in Sources */,
 				F104CE3C1D1B8083003EAEEC /* RightCollectionViewCell.m in Sources */,
+				818EFB711D1CE5B6005C02E5 /* ScanView.m in Sources */,
 				F104CE041D1B8083003EAEEC /* CheDanView.m in Sources */,
 				F104CE121D1B8083003EAEEC /* BookManagerTableViewCell.m in Sources */,
 				F104CE161D1B8083003EAEEC /* LM_datePickerView.m in Sources */,
@@ -1283,6 +1322,7 @@
 				F104CE1C1D1B8083003EAEEC /* AboutSettingsView.m in Sources */,
 				F104CE461D1B8083003EAEEC /* OpenTableButton.m in Sources */,
 				F104CE621D1B8083003EAEEC /* main.m in Sources */,
+				818EFB6B1D1CD010005C02E5 /* NSString+log.m in Sources */,
 				F104CE1E1D1B8083003EAEEC /* DeviceTestView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

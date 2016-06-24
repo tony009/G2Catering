@@ -146,13 +146,6 @@
                                         <action selector="cashClick:" destination="bp0-fH-mBD" eventType="touchUpInside" id="ehX-mn-XVE"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hD4-gE-lR9">
-                                    <rect key="frame" x="392" y="15" width="100" height="40"/>
-                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <state key="normal" title="输入">
-                                        <color key="titleColor" red="0.1647058824" green="0.25882352939999997" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
-                                    </state>
-                                </button>
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LtG-51-gtQ">
                                     <rect key="frame" x="0.0" y="15" width="100" height="40"/>
                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -163,6 +156,11 @@
                                         <action selector="cashClick:" destination="bp0-fH-mBD" eventType="touchUpInside" id="Cw4-Lb-Vep"/>
                                     </connections>
                                 </button>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="89v-WN-I3o">
+                                    <rect key="frame" x="395" y="15" width="97" height="40"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
                             </subviews>
                         </view>
                     </subviews>
@@ -176,8 +174,8 @@
                 <outlet property="button1" destination="LtG-51-gtQ" id="cH6-fa-6VY"/>
                 <outlet property="button2" destination="FXI-g7-hPd" id="FtI-zn-e2B"/>
                 <outlet property="button3" destination="D1L-eE-fAJ" id="Txd-0c-bpq"/>
-                <outlet property="button4" destination="hD4-gE-lR9" id="Be8-D6-InJ"/>
                 <outlet property="cancelBtn" destination="rH7-Mi-fps" id="9Ce-18-rsD"/>
+                <outlet property="inputText" destination="89v-WN-I3o" id="Itl-h4-HJJ"/>
                 <outlet property="moneyLabel" destination="qUp-4Q-2go" id="Vy9-cc-qww"/>
                 <outlet property="moneyView" destination="D7R-LD-C80" id="1e4-WN-wTc"/>
                 <outlet property="scanBtn" destination="F7M-EE-Wtw" id="0rE-Bu-XgE"/>
@@ -188,7 +186,7 @@
                 <outlet property="yuMoney" destination="vpj-p3-SPL" id="QGd-Pp-xfp"/>
                 <outlet property="yuView" destination="RBC-kc-G3F" id="r4l-sa-Gvf"/>
             </connections>
-            <point key="canvasLocation" x="541.5" y="688.5"/>
+            <point key="canvasLocation" x="376.5" y="156.5"/>
         </view>
     </objects>
     <resources>
