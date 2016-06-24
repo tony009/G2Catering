@@ -21,6 +21,9 @@
 @interface MainViewController ()<MainLeftViewDelegate,MainRightViewDelegate>
 @property (nonatomic,strong) UIView *leftView;
 @property (nonatomic,strong) UIView *rightView;
+
+@property (nonatomic,strong) UIView *clearView;
+
 @property (nonatomic) int flag;   //(-1,左,0正常，1右)
 
 @property (weak, nonatomic) IBOutlet UIButton *button;
@@ -115,23 +118,6 @@
     view.translatesAutoresizingMaskIntoConstraints = NO;
     
     
-//        NSDictionary *views = @{
-//                                @"view":view
-//                                };
-//    
-//    
-//        [self.view addSubview:view];
-//    
-//    
-//        NSArray *hConstrains  = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[view]-|" options:0 metrics:nil views:views];
-//        NSArray *vConstrains = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[view]-|" options:0 metrics:nil views:views];
-//    
-//    
-//    
-//        [NSLayoutConstraint activateConstraints:hConstrains];
-//        [NSLayoutConstraint activateConstraints:vConstrains];
-    
-    
    id tView = [NSLayoutConstraint constraintWithItem:view attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTop multiplier:1 constant:0];
     
     id bView = [NSLayoutConstraint constraintWithItem:view attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottom multiplier:1 constant:0];
@@ -214,6 +200,7 @@ static float  kDuration = 0.25; //动画持续时间
             self.flag = 1;
             //self.rightView.hidden = NO;
             
+            
         }];
         
     }else if (self.flag ==-1){ //右边
@@ -250,6 +237,7 @@ static float  kDuration = 0.25; //动画持续时间
             
             self.flag = -1;
             //self.leftView.hidden = NO;
+            
             
         }];
         
@@ -391,6 +379,7 @@ static float  kDuration = 0.25; //动画持续时间
     }
     
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
