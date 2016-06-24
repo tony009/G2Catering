@@ -9,12 +9,14 @@
 #import "ZhifuView.h"
 #import "TypeCollectionViewCell.h"
 #import "fuKuanView.h"
-@interface  ZhifuView()<UICollectionViewDataSource,UICollectionViewDelegate>{
+#import "ScanView.h"
+@interface  ZhifuView()<UICollectionViewDataSource,UICollectionViewDelegate,UITextFieldDelegate,fuKuanViewDelegate>{
     
     NSMutableArray *_typeArray;
     NSMutableArray *_stypeArray;
     NSMutableArray *_ntypeArray;
     UIButton *_selectedBtn;
+     UIButton *_cashSelectedBtn;
 
 }
 @end
@@ -38,8 +40,9 @@
     
     [self setRoundAngleWithView:self.button2 withCornerRadius:5 withColor:[UIColor colorWithRed:42/255.0 green:66/255.0 blue:90/255.0 alpha:1]];
     [self setRoundAngleWithView:self.button3 withCornerRadius:5 withColor:[UIColor colorWithRed:42/255.0 green:66/255.0 blue:90/255.0 alpha:1]];
-    [self setRoundAngleWithView:self.button4 withCornerRadius:5 withColor:[UIColor colorWithRed:42/255.0 green:66/255.0 blue:90/255.0 alpha:1]];
+    [self setRoundAngleWithView:self.inputText withCornerRadius:5 withColor:[UIColor colorWithRed:42/255.0 green:66/255.0 blue:90/255.0 alpha:1]];
     [self setRoundAngleWithView:self.yuView withCornerRadius:5 withColor:[UIColor colorWithRed:42/255.0 green:66/255.0 blue:90/255.0 alpha:1]];
+    self.inputText.delegate = self;
 }
 
 
@@ -92,7 +95,13 @@
 
 }
 
-
+-(void)textFieldDidBeginEditing:(UITextField *)textField{
+    _cashSelectedBtn.backgroundColor = [UIColor whiteColor];
+    [_cashSelectedBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    _cashSelectedBtn = nil;
+    
+    
+}
 
 
 
@@ -119,12 +128,85 @@
         
         //vip
         fuKuanView *fuView = [[[NSBundle mainBundle]loadNibNamed:@"fuKuanView" owner:self options:nil]lastObject];
-        fuView.statusString = @"vip";
+        fuView.statusString = @"vip";
+
+        fuView.delegate = self;
+        [self addSubview:fuView];
+        
+    }else if (_cashSelectedBtn == nil && _inputText.text.length == 0) {
+        
+        UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"提示" message:@"请填写金额" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
+        [alertView show];
+        return;
+    } else if(_selectedBtn.tag <=205 ){
+        
+                NSString *type = @"";
+                switch (_selectedBtn.tag ) {
+                    case 200:
+                        type = @"百度钱包";
+                        break;
+                    case 201:
+                        type = @"微信";
+                        break;
+                    case 202:
+                        type = @"支付宝";
+                        break;
+                    case 203:
+                        type = @"QQ";
+                        break;
+                    case 204:
+                        type = @"Apple pay";
+                        break;
+                    default:
+                        break;
+                }
+                if (_cashSelectedBtn != nil) {
+                    ScanView *sV = [[[NSBundle mainBundle]loadNibNamed:@"ScanView" owner:nil options:nil]lastObject];
+                    sV.titleLabel.text = type;
+                    
+                    [self addSubview:sV];
+                }else
+                {
+                    ScanView *sV = [[[NSBundle mainBundle]loadNibNamed:@"ScanView" owner:nil options:nil]lastObject];
+                         sV.titleLabel.text = type;
+                    [self addSubview:sV];
+                }
+               
+
+        
+        
+    }else if(_selectedBtn.tag == 206 ){
+        
+            fuKuanView *fuView = [[[NSBundle mainBundle]loadNibNamed:@"fuKuanView" owner:self options:nil]lastObject];
+            fuView.statusString = @"card";
+
+        
+            [self addSubview:fuView];
+        
+    }else if(_selectedBtn.tag == 207 ){
+        
+        fuKuanView *fuView = [[[NSBundle mainBundle]loadNibNamed:@"fuKuanView" owner:self options:nil]lastObject];
+        fuView.statusString = @"other";
+        
+        
         [self addSubview:fuView];
         
     }
 }
 
+-(void)fuKuanViewDidChickYes:(fuKuanView *)orderContent WithYuE:(NSString *)yue
+{
+//      TypeCollectionViewCell *cell = (TypeCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    if ([yue doubleValue] > 0) {
+        
+         [_selectedBtn setImage:[UIImage imageNamed:_typeArray[5]] forState:UIControlStateNormal];
+    }else {
+
+           [_selectedBtn setImage:[UIImage imageNamed:_ntypeArray[5]] forState:UIControlStateNormal];
+    }
+    _selectedBtn.selected = NO;
+
+}
 
 - (IBAction)cancelAction:(UIButton *)sender {
     
@@ -133,12 +215,15 @@
 
 
 - (IBAction)cashClick:(UIButton *)sender {
-    fuKuanView *fuView = [[[NSBundle mainBundle]loadNibNamed:@"fuKuanView" owner:self options:nil]lastObject];
-    fuView.statusString = sender.currentTitle;
-    fuView.frame = self.bounds;
-    
-    [self addSubview:fuView];
-    
+
+    if (_cashSelectedBtn !=nil) {
+        _cashSelectedBtn.backgroundColor = [UIColor whiteColor];
+        [_cashSelectedBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    }
+   
+    _cashSelectedBtn = sender;
+    _cashSelectedBtn.backgroundColor = [UIColor colorWithRed:42/255.0 green:66/255.0 blue:90/255.0 alpha:1];
+    [_cashSelectedBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     
 }
 
@@ -150,11 +235,7 @@
     _selectedBtn = cell.typeBtn;
     cell.typeBtn.selected = !cell.typeBtn.selected;
     
-//    fuKuanView *fuView = [[[NSBundle mainBundle]loadNibNamed:@"fuKuanView" owner:self options:nil]lastObject];
-//    fuView.statusString = @"card";
-//    fuView.frame = self.bounds;
-//
-//    [self addSubview:fuView];
+
 }
 
 @end
