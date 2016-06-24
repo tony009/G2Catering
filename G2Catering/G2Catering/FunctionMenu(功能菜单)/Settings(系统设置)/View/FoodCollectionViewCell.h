@@ -11,5 +11,8 @@
 @interface FoodCollectionViewCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *foodPicture;
 @property (weak, nonatomic) IBOutlet UILabel *foodName;
+@property (weak, nonatomic) IBOutlet UIImageView *sellOutImageView;
+@property (weak, nonatomic) IBOutlet UILabel *estimateNumLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *estimateimagView;
 
 @end

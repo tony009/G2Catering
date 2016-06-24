@@ -11,6 +11,7 @@
 #import "RightCollectionViewCell.h"
 #import "LongPressView.h"
 #import "WaiMaiTableViewCell.h"
+#import "LockScreenView.h"
 @interface DinnerTableViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UITableViewDataSource,UITableViewDelegate>
 {
     NSArray *_array;
@@ -31,14 +32,16 @@
     self.searchTextField.layer.borderColor = [UIColor lightGrayColor].CGColor;
     self.searchTextField.layer.borderWidth = 1;
     
-//    self.waiMaiView.frame = CGRectMake(0, 0, 1024, 768);
-//    [self.waiMaiWholeView addSubview:self.waiMaiView];
+    self.waiMaiView.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    self.waiMaiView.layer.borderWidth = 1;
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.rowHeight = 313;
     [_tableView registerNib:[UINib nibWithNibName:@"WaiMaiTableViewCell" bundle:nil] forCellReuseIdentifier:@"WaiMaiTableViewCell"];
 
+//    LockScreenView *lockView = [[LockScreenView alloc] initWithFrame:CGRectMake(0, 0, KScreenWidth, KScreenHeight)];
+//    [KWindow addSubview:lockView];
 }
 
 - (void)_initCollectionView
@@ -144,14 +147,13 @@
         NSIndexPath *indexPath = [self.collectionView indexPathForItemAtPoint:point];
         
         DeskCollectionViewCell *cell = (DeskCollectionViewCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
-        cell.contentView.backgroundColor = [UIColor redColor];
-        
-       
         
          _longView=[[[NSBundle mainBundle]loadNibNamed:@"LongPressView" owner:self options:nil]lastObject];
+//         _longView.changeView.center = point;
+        [_longView setPoint:point];
         [self.view addSubview:_longView];
         
-        _longView.changeView.frame = CGRectMake(point.x, point.y, 100, 100);
+       
     }
 }
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -179,8 +181,14 @@
     if (collectionView.tag == 1001 ) {
         
       
-        self.view.frame = CGRectMake(-372, 0, 1362, 768);
+        self.view.frame = CGRectMake(-338, 0, 1362, 768);
        
+    }else{
+        
+        RightCollectionViewCell *cell = (RightCollectionViewCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
+        
+//        cell.backImgView.image = [UIImage imageNamed:@"点击菜品"];
+
     }
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{

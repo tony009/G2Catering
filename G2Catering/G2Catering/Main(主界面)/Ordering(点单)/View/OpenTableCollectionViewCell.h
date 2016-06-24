@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "OpenTableButton.h"
 @interface OpenTableCollectionViewCell : UICollectionViewCell
+
+@property (weak, nonatomic) IBOutlet OpenTableButton *button;
 
 @end
