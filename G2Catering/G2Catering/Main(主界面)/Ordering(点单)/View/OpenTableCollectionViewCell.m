@@ -13,6 +13,9 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    
+    [self.button setEnabled:NO];
+    
 }
 
 @end

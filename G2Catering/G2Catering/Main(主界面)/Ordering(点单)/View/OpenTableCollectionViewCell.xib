@@ -27,6 +27,9 @@
                 <constraint firstItem="yJT-Gf-WL1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wMo-Bf-rdE"/>
             </constraints>
             <size key="customSize" width="143" height="75"/>
+            <connections>
+                <outlet property="button" destination="yJT-Gf-WL1" id="FTa-IR-x1W"/>
+            </connections>
             <point key="canvasLocation" x="268.5" y="293.5"/>
         </collectionViewCell>
     </objects>

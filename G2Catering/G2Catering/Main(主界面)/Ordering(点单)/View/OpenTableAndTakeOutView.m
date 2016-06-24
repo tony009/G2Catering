@@ -17,15 +17,29 @@
     NSString *_remarks;
     
 }
-@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+
+@property (strong, nonatomic) IBOutlet UIView *view;
+@property (strong, nonatomic) IBOutlet UIView *contentView; //内容视图
+
+
+
+@property (strong, nonatomic) IBOutlet UIView *placeOrderView;//开台视图
+
+@property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
 
 
 @property (strong, nonatomic) IBOutletCollection(OpenTableButton) NSArray *peopleNoButtonCollection;
-@property (weak,nonatomic)OpenTableButton *selectedPeopleNoButton;
+@property (strong,nonatomic)OpenTableButton *selectedPeopleNoButton;
 
 
 @property (strong, nonatomic) IBOutletCollection(OpenTableButton) NSArray *tableNoButtonCollection;
-@property (weak,nonatomic)OpenTableButton *selectedTableNoButton;
+@property (strong,nonatomic)OpenTableButton *selectedTableNoButton;
+
+@property (strong,nonatomic) NSMutableArray *numArray;
+
+
+
+@property (strong, nonatomic) IBOutlet UIView *takeOutView; //外卖视图
 
 @end
 
@@ -33,8 +47,47 @@
 
 @implementation OpenTableAndTakeOutView
 
--(void)awakeFromNib{
+-(instancetype)initWithFrame:(CGRect)frame{
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self setUp];
+    }
+    return self;
+}
+
+-(instancetype)initWithCoder:(NSCoder *)aDecoder{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        [self setUp];
+    }
+    return  self;
+}
+
+-(void)setUp{
+
+    [[NSBundle mainBundle]loadNibNamed:@"OpenTableAndTakeOutView" owner:self options:nil];
     
+    self.view.translatesAutoresizingMaskIntoConstraints = NO;
+    
+    id top = [NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1.0 constant:0];
+    
+    id bottom = [NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0];
+    
+    id left = [NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeading multiplier:1.0 constant:0];
+    
+    id right = [NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTrailing multiplier:1.0 constant:0];
+    
+    [self addSubview:self.view];
+    
+    
+    [NSLayoutConstraint activateConstraints:@[top,bottom,left,right]];
+    
+    
+    
+    
+    
+    self.layer.cornerRadius = 10;
+    self.layer.masksToBounds = YES;
     
     self.collectionView.backgroundColor = [UIColor whiteColor];
     
@@ -42,7 +95,7 @@
     self.collectionView.delegate = self;
     
     self.collectionView.showsHorizontalScrollIndicator = NO;
-    self.collectionView.showsVerticalScrollIndicator = YES;
+    self.collectionView.showsVerticalScrollIndicator = NO;
     
     
     
@@ -53,7 +106,7 @@
     flowLayout.itemSize = CGSizeMake(72, 83);
     
     [self.collectionView registerNib:[UINib nibWithNibName:@"OpenTableCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"reuseIdentifier"];
-
+    
     [self.peopleNoButtonCollection enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         
         OpenTableButton *button = (OpenTableButton*)obj;
@@ -66,6 +119,13 @@
         [button addTarget:self action:@selector(tableNoButtonAction:) forControlEvents:UIControlEventTouchUpInside];
         
     }];
+    
+    
+    self.numArray = [NSMutableArray array];
+    
+    for (int i =0; i< 10; i++) {
+        [self.numArray addObject:[NSString stringWithFormat:@"%d",i]];
+    }
     
     
 }
@@ -94,17 +154,68 @@
     
 }
 
+
+
+- (IBAction)placeOrderAction:(UIButton *)sender {
+
+    
+    self.placeOrderView.frame = self.contentView.frame;
+    
+    [self addSubview:self.placeOrderView];
+
+    
+}
+
+- (IBAction)takeOutAction:(UIButton *)sender
+{
+    self.takeOutView.frame = self.contentView.frame;
+    
+    [self addSubview:self.takeOutView];
+    
+    
+}
+
+- (IBAction)cancelAction:(UIButton *)sender {
+    
+    [self removeFromSuperview];
+}
+
+- (IBAction)confirmAction:(UIButton *)sender {
+    
+    
+}
+
+
+
 #pragma mark -- UICollectionViewDataSource
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return  9;
+    return  [self.numArray count];
 }
+
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
     
   OpenTableCollectionViewCell *cell =   [collectionView dequeueReusableCellWithReuseIdentifier:@"reuseIdentifier" forIndexPath:indexPath];
     
+    
+    [cell.button setTitle:self.numArray[indexPath.row] forState:UIControlStateNormal];
+    
+    
     return cell;
+}
+
+#pragma mark -- UICollectionViewDelegate
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    OpenTableCollectionViewCell *cell =(OpenTableCollectionViewCell *) [collectionView cellForItemAtIndexPath:indexPath];
+    [cell.button setSelected:YES];
+    
+}
+- (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    OpenTableCollectionViewCell *cell =(OpenTableCollectionViewCell *) [collectionView cellForItemAtIndexPath:indexPath];
+    [cell.button setSelected:NO];
+    
 }
 
 /*
