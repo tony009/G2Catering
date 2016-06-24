@@ -103,7 +103,7 @@
     flowLayout.minimumLineSpacing =2;
     flowLayout.minimumInteritemSpacing = 2;
     flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
-    flowLayout.itemSize = CGSizeMake(72, 83);
+    flowLayout.itemSize = CGSizeMake(83, 72);
     
     [self.collectionView registerNib:[UINib nibWithNibName:@"OpenTableCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"reuseIdentifier"];
     

@@ -166,14 +166,30 @@
     self.leftView = leftView;
     self.rightView = rightView;
     
-//    
-//    self.leftView.hidden = YES;
-//    self.rightView.hidden = YES;
-    
+
     [KWindow addSubview:leftView];
     [KWindow addSubview:rightView];
     
+    
+    self.clearView = [[UIView alloc]init];
+    self.clearView.backgroundColor = [UIColor clearColor];
+    
+    
+    UISwipeGestureRecognizer *lSwipe = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(back)];
+    lSwipe.direction = UISwipeGestureRecognizerDirectionLeft;
+    
+    UISwipeGestureRecognizer *rSwipe = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(back)];
+    rSwipe.direction = UISwipeGestureRecognizerDirectionRight;
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(back)];
+    
+   [self.clearView addGestureRecognizer:lSwipe];
+   [self.clearView addGestureRecognizer:rSwipe];
+   [self.clearView addGestureRecognizer:tap];
+
 }
+
+
 
 -(void)viewWillLayoutSubviews{
     
@@ -195,11 +211,13 @@ static float  kDuration = 0.25; //动画持续时间
             self.view.transform = CGAffineTransformMakeTranslation(-kLeftViewWidth, 0);
             self.rightView.transform = CGAffineTransformMakeTranslation(-kLeftViewWidth, 0);
             
+            
         } completion:^(BOOL finished) {
             
             self.flag = 1;
             //self.rightView.hidden = NO;
-            
+            self.clearView.frame = CGRectMake(0, 0, KScreenWidth-kLeftViewWidth, KScreenHeight);
+            [KWindow addSubview:self.clearView];
             
         }];
         
@@ -213,7 +231,6 @@ static float  kDuration = 0.25; //动画持续时间
         }completion:^(BOOL finished) {
             
             self.flag = 0;
-            //self.leftView.hidden = YES;
             
         }];
         
@@ -237,6 +254,8 @@ static float  kDuration = 0.25; //动画持续时间
             
             self.flag = -1;
             //self.leftView.hidden = NO;
+            self.clearView.frame = CGRectMake(kLeftViewWidth, 0, KScreenWidth-kLeftViewWidth, KScreenHeight);
+            [KWindow addSubview:self.clearView];
             
             
         }];
@@ -260,6 +279,27 @@ static float  kDuration = 0.25; //动画持续时间
 
     
 }
+
+-(void)back{
+    
+    
+    [UIView animateWithDuration:kDuration animations:^{
+        
+        self.view.transform=CGAffineTransformIdentity;
+        self.leftView.transform = CGAffineTransformIdentity;
+        self.rightView.transform = CGAffineTransformIdentity;
+        
+    }completion:^(BOOL finished) {
+        
+        self.flag = 0;
+        [self.clearView removeFromSuperview];
+        
+    }];
+
+
+    
+}
+
 #pragma mark  右边栏的点击事件
 - (void)MainRightViewMenuDidChick:(MainRightView  *)orderContent withIndex:(NSInteger )index{
     
