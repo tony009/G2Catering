@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface OrderingViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *moneyLabel;
 
 @end
