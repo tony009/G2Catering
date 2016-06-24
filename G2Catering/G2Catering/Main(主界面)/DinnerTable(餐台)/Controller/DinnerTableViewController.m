@@ -40,8 +40,8 @@
     self.tableView.rowHeight = 313;
     [_tableView registerNib:[UINib nibWithNibName:@"WaiMaiTableViewCell" bundle:nil] forCellReuseIdentifier:@"WaiMaiTableViewCell"];
 
-//    LockScreenView *lockView = [[LockScreenView alloc] initWithFrame:CGRectMake(0, 0, KScreenWidth, KScreenHeight)];
-//    [KWindow addSubview:lockView];
+    LockScreenView *lockView = [[LockScreenView alloc] initWithFrame:CGRectMake(0, 0, KScreenWidth, KScreenHeight)];
+    [KWindow addSubview:lockView];
 }
 
 - (void)_initCollectionView

@@ -26,12 +26,12 @@
 
 - (void)setupUI{
     
-    UIImageView *imageViewCloud = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"统计表云彩"]];
-    
-    [self addSubview:imageViewCloud];
-    
-    NSArray *constraintH = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|--imageViewCloud--|" options:nil metrics:nil views:@{@"imageViewCloud":imageViewCloud}];
-    
+//    UIImageView *imageViewCloud = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"统计表云彩"]];
+//    
+//    [self addSubview:imageViewCloud];
+//    
+//    NSArray *constraintH = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|--imageViewCloud--|" options:nil metrics:nil views:@{@"imageViewCloud":imageViewCloud}];
+//    
     
     
 }
