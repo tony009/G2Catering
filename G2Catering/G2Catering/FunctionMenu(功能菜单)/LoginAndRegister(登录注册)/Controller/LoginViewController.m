@@ -9,7 +9,7 @@
 #import "LoginViewController.h"
 #import "MainViewController.h"
 #import "SearchBlueToothView.h"
-@interface LoginViewController ()
+@interface LoginViewController ()<UITextFieldDelegate>
 
 @property (nonatomic, strong) SearchBlueToothView *searchView;
 
@@ -57,6 +57,8 @@
 
 - (void)setupUI{
     
+    self.accountTextField.delegate = self;
+    self.passwordTextField.delegate = self;
     
     self.loginBtn.layer.cornerRadius  = 5;
     self.loginBtn.layer.masksToBounds = YES;
@@ -85,10 +87,17 @@
     MainViewController *mvc = [[MainViewController alloc]init];
     
     UINavigationController *na = [[UINavigationController alloc]initWithRootViewController:mvc];
+    
     na.navigationBarHidden = YES;
     
     [self presentViewController:na animated:YES completion:nil];
     
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    [self.accountTextField resignFirstResponder];
+    [self.passwordTextField resignFirstResponder];
 }
 
 /*

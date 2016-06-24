@@ -1158,6 +1158,7 @@
 				TargetAttributes = {
 					76D45C6D1D0CFD3B0026491F = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = ECM2J96N6S;
 					};
 					76D45C861D0CFD3B0026491F = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -1210,7 +1211,6 @@
 				76BB290D1D1261600093DEDF /* EstimateView.xib in Resources */,
 				817CA09B1D1283AC00F1F61E /* LingShouTableViewCell.xib in Resources */,
 				76E914AD1D17C84F001ABA9D /* OpenTableAndTakeOutView.xib in Resources */,
-				81DE5A8D1D13E4AB000C4E41 /* CancelBookView.xib in Resources */,
 				817CA0A01D12850100F1F61E /* CheDanView.xib in Resources */,
 				76BB29221D1261600093DEDF /* OrderingCollectionViewCell.xib in Resources */,
 				76BB29311D1261600093DEDF /* Main.storyboard in Resources */,
@@ -1504,6 +1504,7 @@
 			baseConfigurationReference = 2B4E00C8C92ACE2E7EE03E02 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/G2Catering/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/G2Catering/Resources(资源)/Plist/Info.plist";
@@ -1520,6 +1521,7 @@
 			baseConfigurationReference = 8A99B5CD036CAE879C22EB66 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/G2Catering/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/G2Catering/Resources(资源)/Plist/Info.plist";
