@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LockScreenView">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TqZ-eB-WTL">
+                    <rect key="frame" x="690" y="-120" width="120" height="200"/>
+                    <subviews>
+                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="统计表云彩" translatesAutoresizingMaskIntoConstraints="NO" id="gEa-if-3ne">
+                            <rect key="frame" x="4" y="128" width="111" height="62"/>
+                        </imageView>
+                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="统计表线" translatesAutoresizingMaskIntoConstraints="NO" id="KbX-ME-MAm">
+                            <rect key="frame" x="64" y="0.0" width="2" height="129"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKS-fx-eAG">
+                            <rect key="frame" x="83" y="120" width="32" height="32"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="99+" backgroundImage="锁屏-椭圆2"/>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="锁屏" translatesAutoresizingMaskIntoConstraints="NO" id="4Oi-xA-iWp">
+                            <rect key="frame" x="50" y="139" width="30" height="40"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="4Oi-xA-iWp" firstAttribute="centerY" secondItem="gEa-if-3ne" secondAttribute="centerY" id="Bqn-Kq-bq6"/>
+                        <constraint firstItem="gEa-if-3ne" firstAttribute="centerX" secondItem="TqZ-eB-WTL" secondAttribute="centerX" id="Cdy-TV-nCO"/>
+                        <constraint firstAttribute="trailing" secondItem="aKS-fx-eAG" secondAttribute="trailing" constant="5" id="Egg-Pl-prf"/>
+                        <constraint firstItem="KbX-ME-MAm" firstAttribute="top" secondItem="TqZ-eB-WTL" secondAttribute="top" id="Goh-Rt-FXb"/>
+                        <constraint firstAttribute="trailing" secondItem="aKS-fx-eAG" secondAttribute="trailing" id="HSX-gq-Q1D"/>
+                        <constraint firstItem="gEa-if-3ne" firstAttribute="top" secondItem="TqZ-eB-WTL" secondAttribute="top" constant="128" id="IgH-Qr-ejj"/>
+                        <constraint firstItem="KbX-ME-MAm" firstAttribute="centerX" secondItem="TqZ-eB-WTL" secondAttribute="centerX" constant="5" id="KuG-3n-wUF"/>
+                        <constraint firstAttribute="height" constant="200" id="Tn4-Pg-jqm"/>
+                        <constraint firstItem="4Oi-xA-iWp" firstAttribute="centerX" secondItem="gEa-if-3ne" secondAttribute="centerX" constant="5" id="ZZy-UB-JFZ"/>
+                        <constraint firstItem="aKS-fx-eAG" firstAttribute="top" secondItem="TqZ-eB-WTL" secondAttribute="top" constant="120" id="f4L-o9-ajl"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="HSX-gq-Q1D"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.65000000000000002" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="TqZ-eB-WTL" secondAttribute="trailing" constant="214" id="Jk8-6D-O3N"/>
+                <constraint firstItem="TqZ-eB-WTL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="-120" id="U9Q-mH-jza"/>
+                <constraint firstItem="TqZ-eB-WTL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="690" id="hhH-ML-cp5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backViewTopMargin" destination="U9Q-mH-jza" id="xbc-c6-yzU"/>
+                <outlet property="cloudImageView" destination="gEa-if-3ne" id="9BM-VM-G3W"/>
+                <outlet property="lockBackView" destination="TqZ-eB-WTL" id="quG-0f-Ex3"/>
+                <outlet property="lockOrUnlockImageView" destination="4Oi-xA-iWp" id="rmG-HI-g09"/>
+                <outlet property="numBtn" destination="aKS-fx-eAG" id="mRi-Py-KsJ"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="统计表云彩" width="111" height="62"/>
+        <image name="统计表线" width="2" height="129"/>
+        <image name="锁屏" width="30" height="40"/>
+        <image name="锁屏-椭圆2" width="32" height="32"/>
+    </resources>
+</document>

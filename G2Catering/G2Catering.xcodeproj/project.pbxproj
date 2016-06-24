@@ -22,6 +22,9 @@
 		917A065B1D1CC48B00CEDB9E /* ZhifuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 917A06511D1CC48B00CEDB9E /* ZhifuView.m */; };
 		917A065C1D1CC48B00CEDB9E /* ZhifuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 917A06521D1CC48B00CEDB9E /* ZhifuView.xib */; };
 		917A066B1D1CD13600CEDB9E /* LockScreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 917A066A1D1CD13600CEDB9E /* LockScreenView.m */; };
+		917A066D1D1CE7D200CEDB9E /* LockScreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 917A066C1D1CE7D200CEDB9E /* LockScreenView.xib */; };
+		917A06701D1D137400CEDB9E /* UnLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 917A066F1D1D137400CEDB9E /* UnLockView.m */; };
+		917A06741D1D23B500CEDB9E /* UnLockView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 917A06731D1D23B500CEDB9E /* UnLockView.xib */; };
 		F104CDFB1D1B8083003EAEEC /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F104CD151D1B8083003EAEEC /* HttpTool.m */; };
 		F104CDFC1D1B8083003EAEEC /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F104CD1A1D1B8083003EAEEC /* LoginViewController.m */; };
 		F104CDFD1D1B8083003EAEEC /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F104CD1B1D1B8083003EAEEC /* LoginViewController.xib */; };
@@ -184,6 +187,10 @@
 		917A06521D1CC48B00CEDB9E /* ZhifuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZhifuView.xib; sourceTree = "<group>"; };
 		917A06691D1CD13600CEDB9E /* LockScreenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LockScreenView.h; sourceTree = "<group>"; };
 		917A066A1D1CD13600CEDB9E /* LockScreenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LockScreenView.m; sourceTree = "<group>"; };
+		917A066C1D1CE7D200CEDB9E /* LockScreenView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LockScreenView.xib; sourceTree = "<group>"; };
+		917A066E1D1D137400CEDB9E /* UnLockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnLockView.h; sourceTree = "<group>"; };
+		917A066F1D1D137400CEDB9E /* UnLockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnLockView.m; sourceTree = "<group>"; };
+		917A06731D1D23B500CEDB9E /* UnLockView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UnLockView.xib; sourceTree = "<group>"; };
 		F104CD101D1B8083003EAEEC /* DimensMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DimensMacros.h; sourceTree = "<group>"; };
 		F104CD111D1B8083003EAEEC /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		F104CD121D1B8083003EAEEC /* UtilsMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsMacros.h; sourceTree = "<group>"; };
@@ -508,6 +515,10 @@
 			children = (
 				917A06691D1CD13600CEDB9E /* LockScreenView.h */,
 				917A066A1D1CD13600CEDB9E /* LockScreenView.m */,
+				917A066C1D1CE7D200CEDB9E /* LockScreenView.xib */,
+				917A066E1D1D137400CEDB9E /* UnLockView.h */,
+				917A066F1D1D137400CEDB9E /* UnLockView.m */,
+				917A06731D1D23B500CEDB9E /* UnLockView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1160,6 +1171,7 @@
 				F104CE281D1B8083003EAEEC /* PrintSettingsView.xib in Resources */,
 				F104CDFD1D1B8083003EAEEC /* LoginViewController.xib in Resources */,
 				F104CE6F1D1B8083003EAEEC /* LICENSE in Resources */,
+				917A066D1D1CE7D200CEDB9E /* LockScreenView.xib in Resources */,
 				F104CE2C1D1B8083003EAEEC /* UpdatePasswordView.xib in Resources */,
 				F104CE3F1D1B8083003EAEEC /* WaiMaiTableViewCell.xib in Resources */,
 				F104CE051D1B8083003EAEEC /* CheDanView.xib in Resources */,
@@ -1172,6 +1184,7 @@
 				F104CE331D1B8083003EAEEC /* VIPLeftView.xib in Resources */,
 				F104CE641D1B8083003EAEEC /* LaunchScreen.storyboard in Resources */,
 				F104CE2A1D1B8083003EAEEC /* PrintSettingTableViewCell.xib in Resources */,
+				917A06741D1D23B500CEDB9E /* UnLockView.xib in Resources */,
 				F104CE131D1B8083003EAEEC /* BookManagerTableViewCell.xib in Resources */,
 				F104CE311D1B8083003EAEEC /* VipViewController.xib in Resources */,
 				F104CE481D1B8083003EAEEC /* OpenTableCollectionViewCell.xib in Resources */,
@@ -1290,6 +1303,7 @@
 				917A065B1D1CC48B00CEDB9E /* ZhifuView.m in Sources */,
 				F104CE301D1B8083003EAEEC /* VipViewController.m in Sources */,
 				F104CE201D1B8083003EAEEC /* EstimateSettingView.m in Sources */,
+				917A06701D1D137400CEDB9E /* UnLockView.m in Sources */,
 				F104CE431D1B8083003EAEEC /* DishTypeViewCollectionViewCell.m in Sources */,
 				F104CE4D1D1B8083003EAEEC /* MainViewController.m in Sources */,
 				F104CE221D1B8083003EAEEC /* EstimateView.m in Sources */,

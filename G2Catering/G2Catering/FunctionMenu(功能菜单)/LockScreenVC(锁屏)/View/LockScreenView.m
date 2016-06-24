@@ -7,31 +7,89 @@
 //
 
 #import "LockScreenView.h"
+#import <Masonry.h>
+#import "UnLockView.h"
+@interface LockScreenView ()
+
+@property (nonatomic, strong) UIView *selfView;
+
+@property (nonatomic, copy) NSString *screenStatus;
+
+@property (nonatomic, strong) UnLockView *unLockView;
+@end
 
 @implementation LockScreenView
 
-- (instancetype)initWithFrame:(CGRect)frame{
+- (void)awakeFromNib{
     
+    self.numBtn.userInteractionEnabled = NO;
+    UISwipeGestureRecognizer *pan = [[UISwipeGestureRecognizer alloc] init];
+    [pan addTarget:self action:@selector(pullDown:)];
+    pan.direction = UISwipeGestureRecognizerDirectionDown;
+    [self.cloudImageView addGestureRecognizer:pan];
+    self.screenStatus = @"unlock";
     
-    if (self == [super initWithFrame:frame]) {
-        
-        [self setupUI];
-        
-        self.backgroundColor = [UIColor blackColor];
-        self.alpha = 0.65;
-        
-    }
-    return self;
+
 }
 
-- (void)setupUI{
+- (void)pullDown:(UIGestureRecognizer *)gestureRecognizer{
     
-//    UIImageView *imageViewCloud = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"统计表云彩"]];
-//    
-//    [self addSubview:imageViewCloud];
-//    
-//    NSArray *constraintH = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|--imageViewCloud--|" options:nil metrics:nil views:@{@"imageViewCloud":imageViewCloud}];
-//    
+    if ([self.screenStatus isEqualToString:@"unlock"]) {
+        
+        self.backViewTopMargin.constant = 0;
+        
+        [UIView animateWithDuration:1 animations:^{
+            
+            [self layoutIfNeeded];
+            
+        } completion:^(BOOL finished) {
+            
+            self.backViewTopMargin.constant = -30;
+            
+            [UIView animateWithDuration:1 animations:^{
+                
+                [self layoutIfNeeded];
+                [self.lockOrUnlockImageView setImage:[UIImage imageNamed:@"解锁"]];
+                self.screenStatus = @"lock";
+            }];
+        }];
+        
+    }else{
+        
+        self.backViewTopMargin.constant = 0;
+        
+        [UIView animateWithDuration:1 animations:^{
+            
+            [self layoutIfNeeded];
+            
+        } completion:^(BOOL finished) {
+            
+            
+            self.backViewTopMargin.constant = -100;
+            
+            [UIView animateWithDuration:1 animations:^{
+                
+                [self layoutIfNeeded];
+                [self.lockOrUnlockImageView setImage:[UIImage imageNamed:@"锁屏"]];
+                
+                self.screenStatus = @"unlock";
+
+        } completion:^(BOOL finished) {
+            
+                [self removeFromSuperview];
+            
+                self.unLockView = [[NSBundle mainBundle] loadNibNamed:@"UnLockView" owner:nil options:nil].lastObject;
+                CGRect frame = self.unLockView.frame ;
+                
+                frame = CGRectMake(690, 0, 124, 200);
+                self.unLockView.frame = frame;
+                
+                [KWindow addSubview:self.unLockView];
+
+            }];
+        }];
+    }
+    
     
     
 }

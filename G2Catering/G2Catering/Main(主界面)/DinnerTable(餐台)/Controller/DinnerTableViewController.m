@@ -12,6 +12,8 @@
 #import "LongPressView.h"
 #import "WaiMaiTableViewCell.h"
 #import "LockScreenView.h"
+#import "UnLockView.h"
+#import <Masonry.h>
 @interface DinnerTableViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UITableViewDataSource,UITableViewDelegate>
 {
     NSArray *_array;
@@ -40,8 +42,19 @@
     self.tableView.rowHeight = 313;
     [_tableView registerNib:[UINib nibWithNibName:@"WaiMaiTableViewCell" bundle:nil] forCellReuseIdentifier:@"WaiMaiTableViewCell"];
 
-    LockScreenView *lockView = [[LockScreenView alloc] initWithFrame:CGRectMake(0, 0, KScreenWidth, KScreenHeight)];
-    [KWindow addSubview:lockView];
+
+
+//    [unLockView mas_makeConstraints:^(MASConstraintMaker *make) {
+//       
+//        make.right.equalTo(KWindow).with.offset(214);
+//        make.top.equalTo(KWindow).with.offset(-100);
+//        make.size.mas_equalTo(CGSizeMake(124, 200));
+//        
+//    }];
+    
+//    LockScreenView *lockView = [[NSBundle mainBundle] loadNibNamed:@"LockScreenView" owner:nil options:nil].firstObject;
+//    [KWindow addSubview:lockView];
+    
 }
 
 - (void)_initCollectionView

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UnLockView">
+            <rect key="frame" x="0.0" y="0.0" width="116" height="65"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="统计表云彩" translatesAutoresizingMaskIntoConstraints="NO" id="QR7-K0-8hN">
+                    <rect key="frame" x="3" y="3" width="111" height="62"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="锁屏" translatesAutoresizingMaskIntoConstraints="NO" id="yW7-pe-wye">
+                    <rect key="frame" x="45" y="16" width="27" height="36"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1u-wF-JAc">
+                    <rect key="frame" x="76" y="0.0" width="32" height="32"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="99+" backgroundImage="锁屏-椭圆2"/>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="yW7-pe-wye" firstAttribute="centerY" secondItem="QR7-K0-8hN" secondAttribute="centerY" id="8Vy-1I-fKF"/>
+                <constraint firstItem="W1u-wF-JAc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="95a-ai-Xqw"/>
+                <constraint firstItem="QR7-K0-8hN" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="TzK-g1-Khd"/>
+                <constraint firstAttribute="trailing" secondItem="W1u-wF-JAc" secondAttribute="trailing" constant="8" id="Vli-CZ-hpB"/>
+                <constraint firstItem="QR7-K0-8hN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="3" id="Y1S-OD-7p7"/>
+                <constraint firstItem="yW7-pe-wye" firstAttribute="centerX" secondItem="QR7-K0-8hN" secondAttribute="centerX" id="lJv-mA-Jw0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cloudImageView" destination="QR7-K0-8hN" id="ZHr-Cy-6Lm"/>
+                <outlet property="lockOrUnlockImageView" destination="yW7-pe-wye" id="5xg-Lj-vy2"/>
+                <outlet property="numBtn" destination="W1u-wF-JAc" id="tvs-sn-yka"/>
+            </connections>
+            <point key="canvasLocation" x="523" y="276"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="统计表云彩" width="111" height="62"/>
+        <image name="锁屏" width="30" height="40"/>
+        <image name="锁屏-椭圆2" width="32" height="32"/>
+    </resources>
+</document>
