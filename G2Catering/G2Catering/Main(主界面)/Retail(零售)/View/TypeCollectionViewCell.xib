@@ -13,7 +13,7 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="120" height="140"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxe-Ae-ZAY">
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxe-Ae-ZAY">
                         <rect key="frame" x="14" y="17" width="90" height="100"/>
                         <state key="normal" image="微信"/>
                     </button>
@@ -24,7 +24,7 @@
             <connections>
                 <outlet property="typeBtn" destination="oxe-Ae-ZAY" id="tNZ-zU-fmZ"/>
             </connections>
-            <point key="canvasLocation" x="509" y="341"/>
+            <point key="canvasLocation" x="84" y="302"/>
         </collectionViewCell>
     </objects>
     <resources>
