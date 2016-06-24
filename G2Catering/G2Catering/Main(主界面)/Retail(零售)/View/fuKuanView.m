@@ -29,18 +29,25 @@
     if ([self.statusString isEqualToString:@"vip"]) {
         
         //校验
-        secondStepView *stepView = [[[NSBundle mainBundle]loadNibNamed:@"secondStepView" owner:nil options:nil]lastObject];
+        secondStepView *stepView = [[[NSBundle mainBundle]loadNibNamed:@"secondStepView" owner: nil options:nil]lastObject];
         stepView.phoneText.text = _phoneText.text;
         __block secondStepView *this = stepView;
-        stepView.block = ^(BOOL type){
+        stepView.block = ^(BOOL type,NSString *money){
             
             if (type) {
+            
+              if ([ self.delegate respondsToSelector:@selector(fuKuanViewDidChickYes:WithYuE:)]) {
+            
+                        [self.delegate fuKuanViewDidChickYes:self WithYuE:money];
+                    }
+            
+
                 [this removeFromSuperview];
                 [self removeFromSuperview];
             }else{
                 
                 [this removeFromSuperview];
-                self.statusString = @"0";
+                self.statusString = @"vip";
             }
             
         };
@@ -68,7 +75,7 @@
 - (IBAction)phoneAction:(id)sender {
     secondStepView *stepView = [[[NSBundle mainBundle]loadNibNamed:@"secondStepView" owner:nil options:nil]lastObject];
     __block secondStepView *this = stepView;
-    stepView.block = ^(BOOL type){
+    stepView.block = ^(BOOL type,NSString *money){
       
         if (type) {
             [this removeFromSuperview];
@@ -157,7 +164,7 @@
 
       
         
-    }else{
+    }else if([self.statusString isEqualToString:@"other"]){
         self.bgView.hidden = NO;
         self.textView.hidden = YES;
         self.midBtn.hidden = YES;

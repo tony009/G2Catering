@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-typedef void(^secondStepViewBlock)(BOOL type);
+typedef void(^secondStepViewBlock)(BOOL type,NSString *money);
 @interface secondStepView : UIView
 @property(nonatomic,copy)secondStepViewBlock block;
 @property (weak, nonatomic) IBOutlet UIView *titleView;

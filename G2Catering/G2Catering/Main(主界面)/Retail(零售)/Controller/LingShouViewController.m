@@ -9,7 +9,7 @@
 #import "LingShouViewController.h"
 #import "LingShouTableViewCell.h"
 #import "ZhifuView.h"
-@interface LingShouViewController ()
+@interface LingShouViewController()
 @end
 
 @implementation LingShouViewController
@@ -32,6 +32,7 @@
 - (void)jieZhangAction:(UIButton *)btn{
     
     ZhifuView *view = [[[NSBundle mainBundle]loadNibNamed:@"ZhifuView" owner:self options:nil]lastObject];
+    
     NSString *subString = [_priceLabel.text substringFromIndex:1];
     view.price = [subString doubleValue];
     
