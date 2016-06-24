@@ -123,6 +123,15 @@
     }];
 }
 
+- (IBAction)cancelAction:(UIButton *)sender {
+    
+    [self removeFromSuperview];
+    
+}
+
+
+- (IBAction)yesAction:(UIButton *)sender {
+}
 
 #pragma mark - AVCaptureMetadataOutputObjectsDelegate
 - (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection{

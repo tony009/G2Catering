@@ -7,8 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+@class fuKuanView;
+@protocol fuKuanViewDelegate <NSObject>
 
+@optional
+- (void)fuKuanViewDidChickYes:(fuKuanView  *)orderContent WithYuE:(NSString *)yue ;
+@end
 @interface fuKuanView : UIView
+
+@property(nonatomic,assign) id<fuKuanViewDelegate>delegate;
 @property(nonatomic,copy)NSString *statusString;
 @property (weak, nonatomic) IBOutlet UIView *shuakaView;
 @property (weak, nonatomic) IBOutlet UILabel *moneyLabel;

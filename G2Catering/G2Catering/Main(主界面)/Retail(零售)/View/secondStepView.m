@@ -23,7 +23,7 @@
 - (void)cancelAction:(UIButton *)cancelBtn{
     
     if (self.block) {
-        self.block(NO);
+        self.block(NO,@"0");
     }
     
 }
@@ -32,7 +32,7 @@
     
     
     if (self.block) {
-        self.block(YES);
+        self.block(YES,@"0");
     }
     
 }

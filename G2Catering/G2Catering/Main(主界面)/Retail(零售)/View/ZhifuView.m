@@ -10,7 +10,7 @@
 #import "TypeCollectionViewCell.h"
 #import "fuKuanView.h"
 #import "ScanView.h"
-@interface  ZhifuView()<UICollectionViewDataSource,UICollectionViewDelegate,UITextFieldDelegate>{
+@interface  ZhifuView()<UICollectionViewDataSource,UICollectionViewDelegate,UITextFieldDelegate,fuKuanViewDelegate>{
     
     NSMutableArray *_typeArray;
     NSMutableArray *_stypeArray;
@@ -130,16 +130,16 @@
         fuKuanView *fuView = [[[NSBundle mainBundle]loadNibNamed:@"fuKuanView" owner:self options:nil]lastObject];
         fuView.statusString = @"vip";
 
+        fuView.delegate = self;
         [self addSubview:fuView];
         
-    }else if(_selectedBtn.tag <=205 ){
+    }else if (_cashSelectedBtn == nil && _inputText.text.length == 0) {
         
-        if (_cashSelectedBtn == nil && _inputText.text.length == 0) {
-            
-            UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"提示" message:@"请填写金额" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
-            [alertView show];
-            return;
-        }else{
+        UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"提示" message:@"请填写金额" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
+        [alertView show];
+        return;
+    } else if(_selectedBtn.tag <=205 ){
+        
                 NSString *type = @"";
                 switch (_selectedBtn.tag ) {
                     case 200:
@@ -172,12 +172,41 @@
                     [self addSubview:sV];
                 }
                
-            }
+
         
+        
+    }else if(_selectedBtn.tag == 206 ){
+        
+            fuKuanView *fuView = [[[NSBundle mainBundle]loadNibNamed:@"fuKuanView" owner:self options:nil]lastObject];
+            fuView.statusString = @"card";
+
+        
+            [self addSubview:fuView];
+        
+    }else if(_selectedBtn.tag == 207 ){
+        
+        fuKuanView *fuView = [[[NSBundle mainBundle]loadNibNamed:@"fuKuanView" owner:self options:nil]lastObject];
+        fuView.statusString = @"other";
+        
+        
+        [self addSubview:fuView];
         
     }
 }
 
+-(void)fuKuanViewDidChickYes:(fuKuanView *)orderContent WithYuE:(NSString *)yue
+{
+//      TypeCollectionViewCell *cell = (TypeCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    if ([yue doubleValue] > 0) {
+        
+         [_selectedBtn setImage:[UIImage imageNamed:_typeArray[5]] forState:UIControlStateNormal];
+    }else {
+
+           [_selectedBtn setImage:[UIImage imageNamed:_ntypeArray[5]] forState:UIControlStateNormal];
+    }
+    _selectedBtn.selected = NO;
+
+}
 
 - (IBAction)cancelAction:(UIButton *)sender {
     
@@ -206,11 +235,7 @@
     _selectedBtn = cell.typeBtn;
     cell.typeBtn.selected = !cell.typeBtn.selected;
     
-//    fuKuanView *fuView = [[[NSBundle mainBundle]loadNibNamed:@"fuKuanView" owner:self options:nil]lastObject];
-//    fuView.statusString = @"card";
-//    fuView.frame = self.bounds;
-//
-//    [self addSubview:fuView];
+
 }
 
 @end

@@ -17,6 +17,9 @@
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gS6-on-QZZ">
                             <rect key="frame" x="8" y="21" width="63" height="37"/>
                             <state key="normal" image="AddCircleLine拷贝"/>
+                            <connections>
+                                <action selector="cancelAction:" destination="qdv-rJ-pQq" eventType="touchUpInside" id="dQw-Zt-OE7"/>
+                            </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Vy-AY-VG0">
                             <rect key="frame" x="0.0" y="73" width="694" height="1"/>
@@ -32,8 +35,11 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6NR-OE-Mwj">
-                            <rect key="frame" x="626" y="18" width="65" height="43"/>
+                            <rect key="frame" x="603" y="18" width="65" height="43"/>
                             <state key="normal" image="确定"/>
+                            <connections>
+                                <action selector="yesAction:" destination="qdv-rJ-pQq" eventType="touchUpInside" id="6JA-HV-krK"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -73,7 +79,7 @@
                 <outlet property="lineImgView" destination="nJY-do-tOd" id="xGS-VH-WPy"/>
                 <outlet property="titleLabel" destination="ESf-og-CbA" id="37T-0k-2xx"/>
             </connections>
-            <point key="canvasLocation" x="314.5" y="538.5"/>
+            <point key="canvasLocation" x="-13.5" y="689.5"/>
         </view>
     </objects>
     <resources>
