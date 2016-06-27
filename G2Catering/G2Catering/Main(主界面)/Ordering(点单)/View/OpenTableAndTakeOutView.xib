@@ -7,9 +7,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OpenTableAndTakeOutView">
             <connections>
+                <outlet property="SegmentedView" destination="9yu-Pb-0hV" id="FUa-CS-gwz"/>
                 <outlet property="collectionView" destination="Bl9-qW-jli" id="IFB-4J-L7k"/>
                 <outlet property="contentView" destination="nnI-x2-fp2" id="OmV-Ap-nc3"/>
                 <outlet property="placeOrderView" destination="jgo-1P-QXl" id="igT-tF-PgM"/>
+                <outlet property="segmentedView" destination="9yu-Pb-0hV" id="hGd-ot-oSe"/>
                 <outlet property="takeOutView" destination="bOx-Q1-hpV" id="uSB-Lr-tQC"/>
                 <outlet property="view" destination="iN0-l3-epB" id="lid-9W-Sy8"/>
                 <outletCollection property="peopleNoButtonCollection" destination="vp0-H2-yL2" id="0Qx-fJ-xWV"/>
@@ -30,36 +32,12 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EfA-TY-Olq" userLabel="titleView">
                     <rect key="frame" x="0.0" y="0.0" width="771" height="65"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JkU-TI-9xP">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9yu-Pb-0hV" customClass="SegmentedView">
                             <rect key="frame" x="295" y="13" width="182" height="40"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORn-v8-Uos">
-                                    <rect key="frame" x="0.0" y="0.0" width="91" height="40"/>
-                                    <state key="normal" title="开台"/>
-                                    <connections>
-                                        <action selector="placeOrderAction:" destination="-1" eventType="touchUpInside" id="Skm-X3-Uk6"/>
-                                    </connections>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZK-Qi-OLj">
-                                    <rect key="frame" x="91" y="0.0" width="91" height="40"/>
-                                    <state key="normal" title="外卖"/>
-                                    <connections>
-                                        <action selector="takeOutAction:" destination="-1" eventType="touchUpInside" id="ObQ-Ev-3aZ"/>
-                                    </connections>
-                                </button>
-                            </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstAttribute="trailing" secondItem="BZK-Qi-OLj" secondAttribute="trailing" id="5UV-1D-w5i"/>
-                                <constraint firstItem="ORn-v8-Uos" firstAttribute="top" secondItem="JkU-TI-9xP" secondAttribute="top" id="8fV-Wt-Vcp"/>
-                                <constraint firstAttribute="height" constant="40" id="Bm2-1Y-bHb"/>
-                                <constraint firstAttribute="bottom" secondItem="BZK-Qi-OLj" secondAttribute="bottom" id="LSs-6U-k6t"/>
-                                <constraint firstAttribute="width" constant="182" id="Opn-MW-bls"/>
-                                <constraint firstItem="ORn-v8-Uos" firstAttribute="leading" secondItem="JkU-TI-9xP" secondAttribute="leading" id="TbW-E5-pcD"/>
-                                <constraint firstItem="ORn-v8-Uos" firstAttribute="width" secondItem="BZK-Qi-OLj" secondAttribute="width" id="Tif-hj-mhg"/>
-                                <constraint firstAttribute="bottom" secondItem="ORn-v8-Uos" secondAttribute="bottom" id="oAp-wR-F9J"/>
-                                <constraint firstItem="BZK-Qi-OLj" firstAttribute="leading" secondItem="ORn-v8-Uos" secondAttribute="trailing" id="rbx-le-MxA"/>
-                                <constraint firstItem="BZK-Qi-OLj" firstAttribute="top" secondItem="JkU-TI-9xP" secondAttribute="top" id="s2q-yF-1zZ"/>
+                                <constraint firstAttribute="width" constant="182" id="RA9-DR-S9M"/>
+                                <constraint firstAttribute="height" constant="40" id="idK-Bn-2Tq"/>
                             </constraints>
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ns7-H6-OoI" userLabel="cancelButton">
@@ -87,12 +65,12 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
+                        <constraint firstItem="9yu-Pb-0hV" firstAttribute="centerY" secondItem="EfA-TY-Olq" secondAttribute="centerY" id="0Lm-GM-rMh"/>
                         <constraint firstItem="Ibd-O6-8r3" firstAttribute="centerY" secondItem="EfA-TY-Olq" secondAttribute="centerY" id="EUs-VQ-qGK"/>
-                        <constraint firstItem="JkU-TI-9xP" firstAttribute="centerX" secondItem="EfA-TY-Olq" secondAttribute="centerX" id="HgD-Lm-wci"/>
+                        <constraint firstItem="9yu-Pb-0hV" firstAttribute="centerX" secondItem="EfA-TY-Olq" secondAttribute="centerX" id="Uy9-js-esE"/>
                         <constraint firstAttribute="trailing" secondItem="Ibd-O6-8r3" secondAttribute="trailing" constant="24" id="eNM-e5-OYM"/>
                         <constraint firstItem="Ns7-H6-OoI" firstAttribute="leading" secondItem="EfA-TY-Olq" secondAttribute="leading" constant="24" id="iqj-Zq-8VT"/>
                         <constraint firstItem="Ns7-H6-OoI" firstAttribute="centerY" secondItem="EfA-TY-Olq" secondAttribute="centerY" id="sUL-gx-ROV"/>
-                        <constraint firstItem="JkU-TI-9xP" firstAttribute="centerY" secondItem="EfA-TY-Olq" secondAttribute="centerY" id="vxu-ro-zxr"/>
                         <constraint firstAttribute="height" constant="65" id="zha-t2-qRy"/>
                     </constraints>
                 </view>
