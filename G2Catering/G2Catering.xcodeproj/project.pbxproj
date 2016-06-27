@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		040AFC8569EBF84ABB39E999 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 073B094CD599E52328204BCD /* libPods.a */; };
+		763177111D20FB8200571559 /* SegmentedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 763177101D20FB8200571559 /* SegmentedView.m */; };
+		763177131D20FC1E00571559 /* SegmentedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 763177121D20FC1E00571559 /* SegmentedView.xib */; };
 		76D45C7E1D0CFD3B0026491F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76D45C7D1D0CFD3B0026491F /* Assets.xcassets */; };
 		76D45C8C1D0CFD3B0026491F /* G2CateringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D45C8B1D0CFD3B0026491F /* G2CateringTests.m */; };
 		76D45C971D0CFD3C0026491F /* G2CateringUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D45C961D0CFD3C0026491F /* G2CateringUITests.m */; };
@@ -162,6 +164,9 @@
 /* Begin PBXFileReference section */
 		073B094CD599E52328204BCD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B4E00C8C92ACE2E7EE03E02 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		7631770F1D20FB8200571559 /* SegmentedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentedView.h; sourceTree = "<group>"; };
+		763177101D20FB8200571559 /* SegmentedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentedView.m; sourceTree = "<group>"; };
+		763177121D20FC1E00571559 /* SegmentedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SegmentedView.xib; sourceTree = "<group>"; };
 		76D45C6E1D0CFD3B0026491F /* G2Catering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = G2Catering.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76D45C7D1D0CFD3B0026491F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76D45C871D0CFD3B0026491F /* G2CateringTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = G2CateringTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -916,6 +921,9 @@
 				F104CDAA1D1B8083003EAEEC /* OrderingTableViewCell.h */,
 				F104CDAB1D1B8083003EAEEC /* OrderingTableViewCell.m */,
 				F104CDAC1D1B8083003EAEEC /* OrderingTableViewCell.xib */,
+				7631770F1D20FB8200571559 /* SegmentedView.h */,
+				763177101D20FB8200571559 /* SegmentedView.m */,
+				763177121D20FC1E00571559 /* SegmentedView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1172,6 +1180,7 @@
 				F104CE791D1B872E003EAEEC /* WaiMaiDetailTableViewCell.xib in Resources */,
 				F104CE1F1D1B8083003EAEEC /* DeviceTestView.xib in Resources */,
 				F104CE651D1B8083003EAEEC /* Main.storyboard in Resources */,
+				763177131D20FC1E00571559 /* SegmentedView.xib in Resources */,
 				917A06541D1CC48B00CEDB9E /* fuKuanView.xib in Resources */,
 				F104CE091D1B8083003EAEEC /* JiLuCaiViewCell.xib in Resources */,
 				F104CE411D1B8083003EAEEC /* OrderingViewController.xib in Resources */,
@@ -1355,6 +1364,7 @@
 				F104CE101D1B8083003EAEEC /* AddBookView.m in Sources */,
 				F104CE141D1B8083003EAEEC /* CancelBookView.m in Sources */,
 				F104CE6B1D1B8083003EAEEC /* FSCalendarConstance.m in Sources */,
+				763177111D20FB8200571559 /* SegmentedView.m in Sources */,
 				F104CE321D1B8083003EAEEC /* VIPLeftView.m in Sources */,
 				F104CE341D1B8083003EAEEC /* VIPTableViewCell.m in Sources */,
 				F104CE691D1B8083003EAEEC /* FSCalendarCell.m in Sources */,

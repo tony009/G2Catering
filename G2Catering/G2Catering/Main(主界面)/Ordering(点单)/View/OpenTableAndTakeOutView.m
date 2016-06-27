@@ -9,14 +9,17 @@
 #import "OpenTableAndTakeOutView.h"
 #import "OpenTableButton.h"
 #import "OpenTableCollectionViewCell.h"
+#import "SegmentedView.h"
 
-@interface OpenTableAndTakeOutView ()<UICollectionViewDataSource,UICollectionViewDelegate>{
+@interface OpenTableAndTakeOutView ()<UICollectionViewDataSource,UICollectionViewDelegate,SegmentedViewDelegate>{
     
     NSString *_peopleNo;
     NSString *_tableNo;
     NSString *_remarks;
     
 }
+
+@property (weak, nonatomic) IBOutlet SegmentedView *segmentedView;
 
 @property (strong, nonatomic) IBOutlet UIView *view;
 @property (strong, nonatomic) IBOutlet UIView *contentView; //内容视图
@@ -128,6 +131,9 @@
     }
     
     
+    self.segmentedView.delegate = self;
+    
+    
 }
 
 
@@ -155,26 +161,6 @@
 }
 
 
-
-- (IBAction)placeOrderAction:(UIButton *)sender {
-
-    
-    self.placeOrderView.frame = self.contentView.frame;
-    
-    [self addSubview:self.placeOrderView];
-
-    
-}
-
-- (IBAction)takeOutAction:(UIButton *)sender
-{
-    self.takeOutView.frame = self.contentView.frame;
-    
-    [self addSubview:self.takeOutView];
-    
-    
-}
-
 - (IBAction)cancelAction:(UIButton *)sender {
     
     [self removeFromSuperview];
@@ -185,6 +171,25 @@
     
 }
 
+
+#pragma mark -- SegmentedViewDelegate
+-(void)segmentedViewValueChanged:(NSInteger)index{
+    
+    if (index == 0) {//开台
+        
+        self.placeOrderView.frame = self.contentView.frame;
+        
+        [self addSubview:self.placeOrderView];
+        
+    }else if (index == 1){//外卖
+        
+        self.takeOutView.frame = self.contentView.frame;
+        
+        [self addSubview:self.takeOutView];
+        
+    }
+    
+}
 
 
 #pragma mark -- UICollectionViewDataSource
