@@ -19,6 +19,13 @@
 @property (weak, nonatomic) IBOutlet UIButton *endDataBtn;
 @property (weak, nonatomic) IBOutlet UIButton *selectDateBtn;
 
+@property (weak, nonatomic) IBOutlet UIView *orderCountView;
+@property (weak, nonatomic) IBOutlet UITableView *orderTableView;
 
+@property (weak, nonatomic) IBOutlet UIView *pieView;
+@property (weak, nonatomic) IBOutlet UIView *foodAnalyseBackView;
+@property (weak, nonatomic) IBOutlet UIButton *top10Btn;
+@property (weak, nonatomic) IBOutlet UITableView *foodAnayseTableView;
+@property (weak, nonatomic) IBOutlet UILabel *dataPublickTime;
 
 @end

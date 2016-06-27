@@ -9,7 +9,10 @@
 #import "DataReportViewController.h"
 #import "FSCalendar.h"
 #import "NSDate+FSExtension.h"
-@interface DataReportViewController ()<FSCalendarDelegate,FSCalendarDataSource>
+#import "OrderCountTableViewCell.h"
+#import "FoodAnayseTableViewCell.h"
+
+@interface DataReportViewController ()<FSCalendarDelegate,FSCalendarDataSource,UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) FSCalendar *calendar;
 @property (nonatomic, strong) UIView *dateBackView;
@@ -26,6 +29,9 @@
     
     [self setupDatePickerView];
 
+    [self setupOrderCountView];
+    
+    [self setupFoodAnayseView];
 }
 
 #pragma mark - setupTopView
@@ -188,6 +194,136 @@
     
 }
 
+
+#pragma mark - setupOrderCountView
+static NSString *reuserID = @"OrderingTableViewCell";
+- (void)setupOrderCountView{
+
+    self.orderCountView.layer.masksToBounds = YES;
+    self.orderCountView.layer.cornerRadius = 5;
+    
+    self.orderTableView.delegate = self;
+    self.orderTableView.dataSource = self;
+
+    [self.orderTableView registerNib:[UINib nibWithNibName:@"OrderCountTableViewCell" bundle:nil] forCellReuseIdentifier:reuserID];
+}
+
+#pragma mark- FoodAnayseTableViewCell
+
+static NSString *reuser = @"FoodAnayseTableViewCell";
+- (void)setupFoodAnayseView{
+    
+    self.foodAnalyseBackView.layer.masksToBounds = YES;
+    self.foodAnalyseBackView.layer.cornerRadius = 5;
+    self.foodAnalyseBackView.layer.borderColor = [UIColor grayColor].CGColor;
+    self.foodAnalyseBackView.layer.borderWidth = 1;
+    
+    self.foodAnayseTableView.delegate = self;
+    self.foodAnayseTableView.dataSource = self;
+    
+    [self.foodAnayseTableView registerNib:[UINib nibWithNibName:@"FoodAnayseTableViewCell" bundle:nil] forCellReuseIdentifier:reuser];
+}
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    
+    if (tableView == self.orderTableView) {
+         return 5;
+    }else{
+        
+        return 10;
+    }
+    
+   
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    
+    if (tableView == self.orderTableView) {
+        OrderCountTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuserID forIndexPath:indexPath];
+        
+        if (indexPath.row == 0) {
+            
+            cell.categoryName.text = @"堂食";
+            cell.orderNum.text = @"30";
+            cell.percentLabel.text = @"30%";
+        }
+        
+        if (indexPath.row == 1) {
+            
+            cell.categoryName.text = @"外卖";
+            cell.orderNum.text = @"40";
+            cell.percentLabel.text = @"40%";
+        }
+        
+        if (indexPath.row == 2) {
+            
+            cell.categoryName.text = @"外带";
+            cell.orderNum.text = @"30";
+            cell.percentLabel.text = @"30%";
+        }
+        
+        if (indexPath.row == 3) {
+            
+            cell.categoryName.text = @"";
+            cell.orderNum.text = @"";
+            cell.percentLabel.text = @"";
+        }
+        
+        if (indexPath.row == 4) {
+            
+            cell.categoryName.text = @"合计";
+            cell.orderNum.text = @"100";
+            cell.percentLabel.text = @"100%";
+        }
+        
+        if (indexPath.row % 2 == 0) {
+            
+            cell.backgroundColor = [UIColor colorWithRed:248/255.0f green:248/255.0f blue:248/255.0f alpha:1];
+        }else{
+            
+            cell.backgroundColor = [UIColor whiteColor];
+        }
+        
+        return cell;
+
+    }else{
+        
+        FoodAnayseTableViewCell *foodAnayseCell = [tableView dequeueReusableCellWithIdentifier:reuser forIndexPath:indexPath];
+        
+        if (indexPath.row == 0) {
+       
+            foodAnayseCell.backgroundColor = [UIColor colorWithRed:42/255.0f green:66/255.0f blue:90/255.0f alpha:1];
+            foodAnayseCell.num.textColor = [UIColor whiteColor];
+            foodAnayseCell.orderNum.textColor = [UIColor whiteColor];
+            foodAnayseCell.foodName.textColor = [UIColor whiteColor];
+        }else if (indexPath.row == 1){
+            
+             foodAnayseCell.backgroundColor = [UIColor colorWithRed:85/255.0f green:104/255.0f blue:123/255.0f alpha:1];
+            foodAnayseCell.num.textColor = [UIColor whiteColor];
+            foodAnayseCell.orderNum.textColor = [UIColor whiteColor];
+            foodAnayseCell.foodName.textColor = [UIColor whiteColor];
+        }else if (indexPath.row == 2){
+            
+            foodAnayseCell.backgroundColor = [UIColor colorWithRed:148/255.0f green:160/255.0f blue:172/255.0f alpha:1];
+            foodAnayseCell.num.textColor = [UIColor whiteColor];
+            foodAnayseCell.orderNum.textColor = [UIColor whiteColor];
+            foodAnayseCell.foodName.textColor = [UIColor whiteColor];
+        }else{
+            
+            foodAnayseCell.backgroundColor = [UIColor whiteColor];
+        }
+        
+        return foodAnayseCell;
+    }
+    
+    
+    
+    
+    
+}
 
 
 

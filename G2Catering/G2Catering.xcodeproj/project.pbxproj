@@ -17,6 +17,10 @@
 		818EFB801D1D098C005C02E5 /* UIView+AdjustFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 818EFB7E1D1D098C005C02E5 /* UIView+AdjustFrame.m */; };
 		915731CD1D20BBAC00B6EC1D /* DataReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 915731CB1D20BBAC00B6EC1D /* DataReportViewController.m */; };
 		915731CE1D20BBAC00B6EC1D /* DataReportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 915731CC1D20BBAC00B6EC1D /* DataReportViewController.xib */; };
+		9157322C1D2114E500B6EC1D /* OrderCountTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9157322A1D2114E500B6EC1D /* OrderCountTableViewCell.m */; };
+		9157322D1D2114E500B6EC1D /* OrderCountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9157322B1D2114E500B6EC1D /* OrderCountTableViewCell.xib */; };
+		915737781D2129D300B6EC1D /* FoodAnayseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 915737761D2129D300B6EC1D /* FoodAnayseTableViewCell.m */; };
+		915737791D2129D300B6EC1D /* FoodAnayseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 915737771D2129D300B6EC1D /* FoodAnayseTableViewCell.xib */; };
 		917A06531D1CC48B00CEDB9E /* fuKuanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 917A06451D1CC48B00CEDB9E /* fuKuanView.m */; };
 		917A06541D1CC48B00CEDB9E /* fuKuanView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 917A06461D1CC48B00CEDB9E /* fuKuanView.xib */; };
 		917A06551D1CC48B00CEDB9E /* LingShouTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 917A06481D1CC48B00CEDB9E /* LingShouTableViewCell.m */; };
@@ -187,6 +191,12 @@
 		915731CA1D20BBAC00B6EC1D /* DataReportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataReportViewController.h; sourceTree = "<group>"; };
 		915731CB1D20BBAC00B6EC1D /* DataReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataReportViewController.m; sourceTree = "<group>"; };
 		915731CC1D20BBAC00B6EC1D /* DataReportViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DataReportViewController.xib; sourceTree = "<group>"; };
+		915732291D2114E500B6EC1D /* OrderCountTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderCountTableViewCell.h; sourceTree = "<group>"; };
+		9157322A1D2114E500B6EC1D /* OrderCountTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderCountTableViewCell.m; sourceTree = "<group>"; };
+		9157322B1D2114E500B6EC1D /* OrderCountTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderCountTableViewCell.xib; sourceTree = "<group>"; };
+		915737751D2129D300B6EC1D /* FoodAnayseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodAnayseTableViewCell.h; sourceTree = "<group>"; };
+		915737761D2129D300B6EC1D /* FoodAnayseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodAnayseTableViewCell.m; sourceTree = "<group>"; };
+		915737771D2129D300B6EC1D /* FoodAnayseTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodAnayseTableViewCell.xib; sourceTree = "<group>"; };
 		917A06441D1CC48B00CEDB9E /* fuKuanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fuKuanView.h; sourceTree = "<group>"; };
 		917A06451D1CC48B00CEDB9E /* fuKuanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fuKuanView.m; sourceTree = "<group>"; };
 		917A06461D1CC48B00CEDB9E /* fuKuanView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = fuKuanView.xib; sourceTree = "<group>"; };
@@ -523,6 +533,12 @@
 		915731C91D20BB4A00B6EC1D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				915732291D2114E500B6EC1D /* OrderCountTableViewCell.h */,
+				9157322A1D2114E500B6EC1D /* OrderCountTableViewCell.m */,
+				9157322B1D2114E500B6EC1D /* OrderCountTableViewCell.xib */,
+				915737751D2129D300B6EC1D /* FoodAnayseTableViewCell.h */,
+				915737761D2129D300B6EC1D /* FoodAnayseTableViewCell.m */,
+				915737771D2129D300B6EC1D /* FoodAnayseTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1235,12 +1251,14 @@
 				917A066D1D1CE7D200CEDB9E /* LockScreenView.xib in Resources */,
 				F104CE2C1D1B8083003EAEEC /* UpdatePasswordView.xib in Resources */,
 				F104CE3F1D1B8083003EAEEC /* WaiMaiTableViewCell.xib in Resources */,
+				9157322D1D2114E500B6EC1D /* OrderCountTableViewCell.xib in Resources */,
 				F104CE051D1B8083003EAEEC /* CheDanView.xib in Resources */,
 				F104CE1D1D1B8083003EAEEC /* AboutSettingsView.xib in Resources */,
 				F104CE151D1B8083003EAEEC /* CancelBookView.xib in Resources */,
 				76D45C7E1D0CFD3B0026491F /* Assets.xcassets in Resources */,
 				F104CE251D1B8083003EAEEC /* FoodCollectionViewCell.xib in Resources */,
 				F104CE541D1B8083003EAEEC /* MainRightView.xib in Resources */,
+				915737791D2129D300B6EC1D /* FoodAnayseTableViewCell.xib in Resources */,
 				F104CE4C1D1B8083003EAEEC /* OrderingTableViewCell.xib in Resources */,
 				F104CE331D1B8083003EAEEC /* VIPLeftView.xib in Resources */,
 				F104CE641D1B8083003EAEEC /* LaunchScreen.storyboard in Resources */,
@@ -1388,6 +1406,7 @@
 				F104CE021D1B8083003EAEEC /* TradeViewController.m in Sources */,
 				F104CDFB1D1B8083003EAEEC /* HttpTool.m in Sources */,
 				F104CDFE1D1B8083003EAEEC /* BlueToothDeviceTableViewCell.m in Sources */,
+				9157322C1D2114E500B6EC1D /* OrderCountTableViewCell.m in Sources */,
 				F104CE271D1B8083003EAEEC /* PrintSettingsView.m in Sources */,
 				F104CE6C1D1B8083003EAEEC /* FSCalendarFlowLayout.m in Sources */,
 				F104CE2B1D1B8083003EAEEC /* UpdatePasswordView.m in Sources */,
@@ -1395,6 +1414,7 @@
 				F104CE0E1D1B8083003EAEEC /* BookingManagerViewController.m in Sources */,
 				F104CE0A1D1B8083003EAEEC /* TradeContentView.m in Sources */,
 				F104CE6D1D1B8083003EAEEC /* FSCalendarHeader.m in Sources */,
+				915737781D2129D300B6EC1D /* FoodAnayseTableViewCell.m in Sources */,
 				F104CE001D1B8083003EAEEC /* SearchBlueToothView.m in Sources */,
 				F104CE061D1B8083003EAEEC /* JiaoYiJiLuCell.m in Sources */,
 				F104CE511D1B8083003EAEEC /* MainLeftView.m in Sources */,
