@@ -13,7 +13,7 @@
 #import "DishTypeView.h"
 
 #import "OpenTableAndTakeOutView.h"
-
+#import "ZhifuView.h"
 static NSString *collectionViewCellIdentifer = @"OrderingCollectionViewReuseCell";
 static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
 
@@ -111,6 +111,20 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
     
     
 }
+
+
+- (IBAction)jieZhang:(UIButton *)sender {
+    
+    ZhifuView *view = [[[NSBundle mainBundle]loadNibNamed:@"ZhifuView" owner:self options:nil]lastObject];
+    
+    NSString *subString = _moneyLabel.text ;
+    view.price = [subString doubleValue];
+    
+    view.isYu = YES;
+    view.frame = CGRectMake(0,0, 696, 720);
+    [self.replacedView addSubview:view];
+}
+
 
 - (IBAction)placeOrderAction:(UIButton *)sender {
     

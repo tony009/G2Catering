@@ -43,6 +43,7 @@
     [self setRoundAngleWithView:self.inputText withCornerRadius:5 withColor:[UIColor colorWithRed:42/255.0 green:66/255.0 blue:90/255.0 alpha:1]];
     [self setRoundAngleWithView:self.yuView withCornerRadius:5 withColor:[UIColor colorWithRed:42/255.0 green:66/255.0 blue:90/255.0 alpha:1]];
     self.inputText.delegate = self;
+    self.inputText.keyboardType = UIKeyboardTypeNumberPad;
 }
 
 
@@ -103,7 +104,16 @@
     
 }
 
-
+-(void)textFieldDidEndEditing:(UITextField *)textField{
+    
+    if([textField.text doubleValue]<=0){
+        
+        UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"提示" message:@"请输入正确的价格" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
+        [alertView show];
+        return;
+    }
+    
+}
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{

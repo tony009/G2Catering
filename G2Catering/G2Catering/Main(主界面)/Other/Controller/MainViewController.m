@@ -28,6 +28,10 @@
 @property (nonatomic) int flag;   //(-1,左,0正常，1右)
 
 @property (weak, nonatomic) IBOutlet UIButton *button;
+
+
+@property (strong,nonatomic) UIViewController *oldVC;
+
 @end
 
 @implementation MainViewController
@@ -106,16 +110,91 @@
 }
 
 
+
+-(void)animateToViewController:(UIViewController *)vc{
+    
+    if (self.oldVC == vc) {
+        return;
+    }
+    
+    if (self.oldVC == nil) {
+        [self switchViewController:vc];
+        return;
+    }
+    
+    
+    [self.oldVC willMoveToParentViewController:nil];
+    [self addChildViewController:vc];
+    
+    vc.view.translatesAutoresizingMaskIntoConstraints = NO;
+    
+    NSLayoutConstraint * l = [NSLayoutConstraint constraintWithItem:vc.view
+                                                          attribute:NSLayoutAttributeLeading
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeLeading
+                                                         multiplier:1
+                                                           constant:0];
+    NSLayoutConstraint * r = [NSLayoutConstraint constraintWithItem:vc.view
+                                                          attribute:NSLayoutAttributeTrailing
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeTrailing
+                                                         multiplier:1
+                                                           constant:0];
+    NSLayoutConstraint * t = [NSLayoutConstraint constraintWithItem:vc.view
+                                                          attribute:NSLayoutAttributeTop
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeTop
+                                                         multiplier:1
+                                                           constant:0];
+    NSLayoutConstraint * b = [NSLayoutConstraint constraintWithItem:vc.view
+                                                          attribute:NSLayoutAttributeBottom
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeBottom
+                                                         multiplier:1
+                                                           constant:0];
+    
+    vc.view.alpha = 0;
+    
+    
+    [self transitionFromViewController:self.oldVC toViewController:vc duration:1.0 options:0 animations:^{
+        vc.view.alpha  = 1;
+        self.oldVC.view.alpha  =0;
+        [NSLayoutConstraint activateConstraints:@[l,r,t,b]];
+        
+    } completion:^(BOOL finished) {
+        
+        self.oldVC.view.alpha = 1;
+        [self.oldVC removeFromParentViewController];
+        [vc didMoveToParentViewController:self];
+        self.oldVC = vc;
+        
+    }];
+
+
+}
+
+
 -(void)switchViewController:(UIViewController *)vc{
     
-    for (UIView *view in self.view.subviews) {
-        
-        [view removeFromSuperview];
-        
+    
+    if (self.oldVC == vc) {
+        return;
+    }
+    
+    
+    if (self.oldVC != nil) {
+        [self.oldVC willMoveToParentViewController:nil];
+        [self.oldVC.view removeFromSuperview];
+        [self.oldVC removeFromParentViewController];
     }
     
     UIView *view = vc.view;
     
+
     view.translatesAutoresizingMaskIntoConstraints = NO;
     
     
@@ -135,9 +214,10 @@
     
     [NSLayoutConstraint activateConstraints:@[tView,bView,lView,rView]];
     
-
-
+    [vc didMoveToParentViewController:self];
     
+    
+    self.oldVC = vc;
 }
 
 
@@ -167,14 +247,30 @@
     self.leftView = leftView;
     self.rightView = rightView;
     
-//    
-//    self.leftView.hidden = YES;
-//    self.rightView.hidden = YES;
-    
+
     [KWindow addSubview:leftView];
     [KWindow addSubview:rightView];
     
+    
+    self.clearView = [[UIView alloc]init];
+    self.clearView.backgroundColor = [UIColor clearColor];
+    
+    
+    UISwipeGestureRecognizer *lSwipe = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(back)];
+    lSwipe.direction = UISwipeGestureRecognizerDirectionLeft;
+    
+    UISwipeGestureRecognizer *rSwipe = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(back)];
+    rSwipe.direction = UISwipeGestureRecognizerDirectionRight;
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(back)];
+    
+   [self.clearView addGestureRecognizer:lSwipe];
+   [self.clearView addGestureRecognizer:rSwipe];
+   [self.clearView addGestureRecognizer:tap];
+
 }
+
+
 
 -(void)viewWillLayoutSubviews{
     
@@ -196,11 +292,13 @@ static float  kDuration = 0.25; //动画持续时间
             self.view.transform = CGAffineTransformMakeTranslation(-kLeftViewWidth, 0);
             self.rightView.transform = CGAffineTransformMakeTranslation(-kLeftViewWidth, 0);
             
+            
         } completion:^(BOOL finished) {
             
             self.flag = 1;
             //self.rightView.hidden = NO;
-            
+            self.clearView.frame = CGRectMake(0, 0, KScreenWidth-kLeftViewWidth, KScreenHeight);
+            [KWindow addSubview:self.clearView];
             
         }];
         
@@ -214,7 +312,6 @@ static float  kDuration = 0.25; //动画持续时间
         }completion:^(BOOL finished) {
             
             self.flag = 0;
-            //self.leftView.hidden = YES;
             
         }];
         
@@ -238,6 +335,8 @@ static float  kDuration = 0.25; //动画持续时间
             
             self.flag = -1;
             //self.leftView.hidden = NO;
+            self.clearView.frame = CGRectMake(kLeftViewWidth, 0, KScreenWidth-kLeftViewWidth, KScreenHeight);
+            [KWindow addSubview:self.clearView];
             
             
         }];
@@ -261,6 +360,27 @@ static float  kDuration = 0.25; //动画持续时间
 
     
 }
+
+-(void)back{
+    
+    
+    [UIView animateWithDuration:kDuration animations:^{
+        
+        self.view.transform=CGAffineTransformIdentity;
+        self.leftView.transform = CGAffineTransformIdentity;
+        self.rightView.transform = CGAffineTransformIdentity;
+        
+    }completion:^(BOOL finished) {
+        
+        self.flag = 0;
+        [self.clearView removeFromSuperview];
+        
+    }];
+
+
+    
+}
+
 #pragma mark  右边栏的点击事件
 - (void)MainRightViewMenuDidChick:(MainRightView  *)orderContent withIndex:(NSInteger )index{
     
@@ -281,7 +401,7 @@ static float  kDuration = 0.25; //动画持续时间
         {
             OrderingViewController *vc=  [[OrderingViewController alloc]init];
             
-            [self switchViewController:vc];
+            [self animateToViewController:vc];
             
         }
     
@@ -290,16 +410,17 @@ static float  kDuration = 0.25; //动画持续时间
         {
             DinnerTableViewController *vc=  [[DinnerTableViewController alloc]init];
             
-            [self switchViewController:vc];
+            [self animateToViewController:vc];
             
         }
 
         break;
         case 2: //零售管理
         {
-            LingShouViewController *lingCtrl=  [[LingShouViewController alloc]init];
+            LingShouViewController *vc=  [[LingShouViewController alloc]init];
             
-            [self switchViewController:lingCtrl];
+            [self animateToViewController:vc];
+            
             
         }
         break;
@@ -329,26 +450,26 @@ static float  kDuration = 0.25; //动画持续时间
     switch (index) {
         case 100: //交接班
         {
-            TransferViewController *tradeCtrl=  [[TransferViewController alloc] init];
+            TransferViewController *vc=  [[TransferViewController alloc] init];
             
-            [self switchViewController:tradeCtrl];
+            [self animateToViewController:vc];
             
         }
             break;
         case 0: //预订管理
         {
-            BookingManagerViewController *bookVC = [[BookingManagerViewController alloc] init];
+            BookingManagerViewController *vc = [[BookingManagerViewController alloc] init];
             
-            [self switchViewController:bookVC];
+            [self animateToViewController:vc];
             
         }
         break;
             
         case 1://订单记录
         {
-            TradeViewController *tradeCtrl=  [[[NSBundle mainBundle]loadNibNamed:@"TradeViewController" owner:nil options:nil]lastObject];
+            TradeViewController *vc=  [[[NSBundle mainBundle]loadNibNamed:@"TradeViewController" owner:nil options:nil]lastObject];
             
-            [self switchViewController:tradeCtrl];
+            [self animateToViewController:vc];
             
         }
         break;
@@ -362,8 +483,9 @@ static float  kDuration = 0.25; //动画持续时间
             break;
         case 3://会员管理
         {
-            VipViewController *vipVC= [[[NSBundle mainBundle]loadNibNamed:@"VipViewController" owner:nil options:nil]lastObject];
-            [self switchViewController:vipVC];
+            VipViewController *vc= [[[NSBundle mainBundle]loadNibNamed:@"VipViewController" owner:nil options:nil]lastObject];
+            
+            [self animateToViewController:vc];
             
         }
             break;
@@ -371,7 +493,7 @@ static float  kDuration = 0.25; //动画持续时间
         {
             BaseSettingsViewController *vc=  [[BaseSettingsViewController alloc]init];
             
-            [self switchViewController:vc];
+            [self animateToViewController:vc];
             
         }
             break;
