@@ -15,6 +15,8 @@
 		818EFB781D1D096B005C02E5 /* ScanView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 818EFB761D1D096B005C02E5 /* ScanView.xib */; };
 		818EFB7F1D1D098C005C02E5 /* NSString+log.m in Sources */ = {isa = PBXBuildFile; fileRef = 818EFB7B1D1D098C005C02E5 /* NSString+log.m */; };
 		818EFB801D1D098C005C02E5 /* UIView+AdjustFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 818EFB7E1D1D098C005C02E5 /* UIView+AdjustFrame.m */; };
+		915731CD1D20BBAC00B6EC1D /* DataReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 915731CB1D20BBAC00B6EC1D /* DataReportViewController.m */; };
+		915731CE1D20BBAC00B6EC1D /* DataReportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 915731CC1D20BBAC00B6EC1D /* DataReportViewController.xib */; };
 		917A06531D1CC48B00CEDB9E /* fuKuanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 917A06451D1CC48B00CEDB9E /* fuKuanView.m */; };
 		917A06541D1CC48B00CEDB9E /* fuKuanView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 917A06461D1CC48B00CEDB9E /* fuKuanView.xib */; };
 		917A06551D1CC48B00CEDB9E /* LingShouTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 917A06481D1CC48B00CEDB9E /* LingShouTableViewCell.m */; };
@@ -182,6 +184,9 @@
 		818EFB7D1D1D098C005C02E5 /* UIView+AdjustFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AdjustFrame.h"; sourceTree = "<group>"; };
 		818EFB7E1D1D098C005C02E5 /* UIView+AdjustFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AdjustFrame.m"; sourceTree = "<group>"; };
 		8A99B5CD036CAE879C22EB66 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		915731CA1D20BBAC00B6EC1D /* DataReportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataReportViewController.h; sourceTree = "<group>"; };
+		915731CB1D20BBAC00B6EC1D /* DataReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataReportViewController.m; sourceTree = "<group>"; };
+		915731CC1D20BBAC00B6EC1D /* DataReportViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DataReportViewController.xib; sourceTree = "<group>"; };
 		917A06441D1CC48B00CEDB9E /* fuKuanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fuKuanView.h; sourceTree = "<group>"; };
 		917A06451D1CC48B00CEDB9E /* fuKuanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fuKuanView.m; sourceTree = "<group>"; };
 		917A06461D1CC48B00CEDB9E /* fuKuanView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = fuKuanView.xib; sourceTree = "<group>"; };
@@ -488,6 +493,40 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		915731C61D20BB4A00B6EC1D /* DataReport(数据报告) */ = {
+			isa = PBXGroup;
+			children = (
+				915731C71D20BB4A00B6EC1D /* Controller */,
+				915731C81D20BB4A00B6EC1D /* Model */,
+				915731C91D20BB4A00B6EC1D /* View */,
+			);
+			path = "DataReport(数据报告)";
+			sourceTree = "<group>";
+		};
+		915731C71D20BB4A00B6EC1D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				915731CA1D20BBAC00B6EC1D /* DataReportViewController.h */,
+				915731CB1D20BBAC00B6EC1D /* DataReportViewController.m */,
+				915731CC1D20BBAC00B6EC1D /* DataReportViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		915731C81D20BB4A00B6EC1D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		915731C91D20BB4A00B6EC1D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		917A06431D1CC48B00CEDB9E /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -590,6 +629,7 @@
 		F104CD161D1B8083003EAEEC /* FunctionMenu(功能菜单) */ = {
 			isa = PBXGroup;
 			children = (
+				915731C61D20BB4A00B6EC1D /* DataReport(数据报告) */,
 				917A06651D1CD10D00CEDB9E /* LockScreenVC(锁屏) */,
 				F104CD171D1B8083003EAEEC /* LoginAndRegister(登录注册) */,
 				F104CD231D1B8083003EAEEC /* OrderRecord(订单记录) */,
@@ -1186,6 +1226,7 @@
 				917A06541D1CC48B00CEDB9E /* fuKuanView.xib in Resources */,
 				F104CE091D1B8083003EAEEC /* JiLuCaiViewCell.xib in Resources */,
 				F104CE411D1B8083003EAEEC /* OrderingViewController.xib in Resources */,
+				915731CE1D20BBAC00B6EC1D /* DataReportViewController.xib in Resources */,
 				F104CE3D1D1B8083003EAEEC /* RightCollectionViewCell.xib in Resources */,
 				F104CE231D1B8083003EAEEC /* EstimateView.xib in Resources */,
 				F104CE281D1B8083003EAEEC /* PrintSettingsView.xib in Resources */,
@@ -1369,6 +1410,7 @@
 				F104CE101D1B8083003EAEEC /* AddBookView.m in Sources */,
 				F104CE141D1B8083003EAEEC /* CancelBookView.m in Sources */,
 				F104CE6B1D1B8083003EAEEC /* FSCalendarConstance.m in Sources */,
+				915731CD1D20BBAC00B6EC1D /* DataReportViewController.m in Sources */,
 				F104CE321D1B8083003EAEEC /* VIPLeftView.m in Sources */,
 				F104CE341D1B8083003EAEEC /* VIPTableViewCell.m in Sources */,
 				F104CE691D1B8083003EAEEC /* FSCalendarCell.m in Sources */,

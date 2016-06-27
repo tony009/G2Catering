@@ -11,7 +11,7 @@
             <rect key="frame" x="0.0" y="0.0" width="116" height="65"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="统计表云彩" translatesAutoresizingMaskIntoConstraints="NO" id="QR7-K0-8hN">
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="统计表云彩" translatesAutoresizingMaskIntoConstraints="NO" id="QR7-K0-8hN">
                     <rect key="frame" x="3" y="3" width="111" height="62"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="锁屏" translatesAutoresizingMaskIntoConstraints="NO" id="yW7-pe-wye">

@@ -18,6 +18,7 @@
 #import "MainRightView.h"
 #import "LingShouViewController.h"
 #import "BookingManagerViewController.h"
+#import "DataReportViewController.h"
 @interface MainViewController ()<MainLeftViewDelegate,MainRightViewDelegate>
 @property (nonatomic,strong) UIView *leftView;
 @property (nonatomic,strong) UIView *rightView;
@@ -353,9 +354,9 @@ static float  kDuration = 0.25; //动画持续时间
         break;
         case 2://数据报告
         {
-            TradeViewController *tradeCtrl=  [[[NSBundle mainBundle]loadNibNamed:@"TradeViewController" owner:nil options:nil]lastObject];
+            DataReportViewController *DataReportVC= [[DataReportViewController alloc] init];
             
-            [self switchViewController:tradeCtrl];
+            [self switchViewController:DataReportVC];
             
         }
             break;

@@ -114,7 +114,7 @@
     
     [self.view addSubview:_wholeView];
     
-    _calendar = [[FSCalendar alloc] initWithFrame:CGRectMake(0, 0, 350, 210)];
+    _calendar = [[FSCalendar alloc] initWithFrame:CGRectMake(0, 0, 500, 300)];
     _calendar.backgroundColor = [UIColor whiteColor];
     _calendar.dataSource = self;
     _calendar.delegate = self;
