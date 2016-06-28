@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DishTypeCollectionViewCell" id="gTV-IL-0wX" customClass="DishTypeCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="45" height="63"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="45" height="63"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全部" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4RY-6T-c4a">
+                        <rect key="frame" x="15" y="0.0" width="15" height="64"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ok9-ZK-cbO">
+                        <rect key="frame" x="0.0" y="62" width="45" height="1"/>
+                        <color key="backgroundColor" red="0.90588235289999997" green="0.90980392160000001" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Hd5-3y-Lrs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="Ok9-ZK-cbO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="V4u-j9-igq"/>
+                <constraint firstItem="4RY-6T-c4a" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="WVp-0W-o0Y"/>
+                <constraint firstItem="4RY-6T-c4a" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="YfY-Je-Jh1"/>
+                <constraint firstAttribute="bottom" secondItem="4RY-6T-c4a" secondAttribute="bottom" constant="-1" id="iwo-0b-6mT"/>
+                <constraint firstAttribute="trailing" secondItem="Ok9-ZK-cbO" secondAttribute="trailing" id="q09-Un-r8M"/>
+                <constraint firstAttribute="trailing" secondItem="4RY-6T-c4a" secondAttribute="trailing" constant="15" id="urF-3u-b3x"/>
+                <constraint firstAttribute="bottom" secondItem="Ok9-ZK-cbO" secondAttribute="bottom" id="ux7-Np-n3l"/>
+            </constraints>
+            <point key="canvasLocation" x="426.5" y="376.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

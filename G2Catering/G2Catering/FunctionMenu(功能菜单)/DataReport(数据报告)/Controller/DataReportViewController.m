@@ -11,13 +11,18 @@
 #import "NSDate+FSExtension.h"
 #import "OrderCountTableViewCell.h"
 #import "FoodAnayseTableViewCell.h"
-
-@interface DataReportViewController ()<FSCalendarDelegate,FSCalendarDataSource,UITableViewDelegate,UITableViewDataSource>
+#import "ZFChart.h"
+#import "DishTypeCollectionViewCell.h"
+@interface DataReportViewController ()<FSCalendarDelegate,FSCalendarDataSource,UITableViewDelegate,UITableViewDataSource,ZFPieChartDataSource,ZFGenericChartDataSource,ZFLineChartDelegate,UICollectionViewDelegate,UICollectionViewDataSource>
 
 @property (nonatomic, strong) FSCalendar *calendar;
 @property (nonatomic, strong) UIView *dateBackView;
 @property (nonatomic, strong) UIButton *currentDateBtn;
 
+@property (nonatomic, strong) NSMutableArray * pointArray;
+
+@property (nonatomic, strong) ZFWaveChart * waveChart2;
+@property (nonatomic, strong) ZFWaveChart * waveChart;
 @end
 
 @implementation DataReportViewController
@@ -26,12 +31,20 @@
     [super viewDidLoad];
   
     [self setupTopView];
-    
+    //日期选择
     [self setupDatePickerView];
-
+    //订单统计
     [self setupOrderCountView];
-    
+    //菜品分析
     [self setupFoodAnayseView];
+    //营收总收入
+    [self setupTotalRevenueView];
+    //下单方式
+    [self setupOrderWayView];
+    //营收分布
+    [self setupDistributionRevenueView];
+    //菜品分类
+    [self setupFoodCategoryView];
 }
 
 #pragma mark - setupTopView
@@ -318,14 +331,252 @@ static NSString *reuser = @"FoodAnayseTableViewCell";
         
         return foodAnayseCell;
     }
+ 
+}
+
+
+
+#pragma mark -setupTotalRevenueView
+
+- (void)setupTotalRevenueView{
     
     
+    //假数据
+    NSArray *array = @[@50,@60,@70,@80,@100,@200,@20,@50];
     
+    NSInteger totall = 630;
+    
+    for (int i = 0; i< array.count; i++) {
+        
+        float a = [array[i] doubleValue];
+        
+        NSLayoutConstraint *aContraint = self.totalRevenueConstraint[i];
+        
+        aContraint.constant = a / totall * 178;
+ 
+    }
     
     
 }
 
+#pragma mark -setupOrderWayView
 
+- (void)setupOrderWayView{
+    
+    
+    ZFPieChart * pieChart = [[ZFPieChart alloc] initWithFrame:CGRectMake(0, 0, 328, 248)];
+    pieChart.dataSource = self;
+    //    pieChart.piePatternType = kPieChartPatternTypeForCircle;
+    //    pieChart.percentType = kPercentTypeInteger;
+    //    pieChart.isShadow = NO;
+    //    pieChart.isAnimated = NO;
+    pieChart.isShowDetail = YES;
+    [pieChart strokePath];
+    [self.pieView addSubview:pieChart];
+}
+
+#pragma mark - ZFPieChartDataSource
+
+- (NSArray *)valueArrayInPieChart:(ZFPieChart *)chart{
+    //    return @[@"200", @"256", @"300", @"283", @"490", @"236"];
+    return @[@"200", @"256", @"300", @"283", @"490"];
+}
+
+- (NSArray *)nameArrayInPieChart:(ZFPieChart *)chart{
+    return @[@"预定", @"堂食", @"立即结算", @"外卖", @"外带"];
+}
+
+- (NSArray *)colorArrayInPieChart:(ZFPieChart *)chart{
+    
+//    51 102 102  42 66 90  31 136 175  40103153
+    return @[ZFColor(51, 102, 102, 1), ZFColor(42, 66, 90, 1), ZFColor(31, 136, 175, 1), ZFColor(40, 103, 153, 1), ZFColor(31, 136, 175, 1)];
+}
+
+
+
+#pragma mark -setupDistributionRevenueView
+
+- (void)setupDistributionRevenueView{
+    
+    
+    ZFLineChart * lineChart = [[ZFLineChart alloc] initWithFrame:CGRectMake(-20, 0, 336, 269)];
+    lineChart.dataSource = self;
+    lineChart.delegate = self;
+    UIView *blueView = [[UIView alloc] initWithFrame:CGRectMake(70, 20, 15, 15)];
+    blueView.backgroundColor = ZFColor(42, 66, 90, 1);
+    [lineChart addSubview:blueView];
+    UILabel *label1 = [[UILabel alloc] initWithFrame:CGRectMake(90, 12, 30, 30)];
+    label1.text = @"金额";
+    label1.font = [UIFont systemFontOfSize:12];
+    [lineChart addSubview:label1];
+    
+    UIView *greenView = [[UIView alloc] initWithFrame:CGRectMake(120, 20, 15, 15)];
+    greenView.backgroundColor = ZFColor(51, 153, 153, 1);
+    [lineChart addSubview:greenView];
+    UILabel *label2 = [[UILabel alloc] initWithFrame:CGRectMake(140, 12, 50, 30)];
+    label2.text = @"订单数";
+    label2.font = [UIFont systemFontOfSize:12];
+    [lineChart addSubview:label2];
+    
+    lineChart.unit = @"￥";
+    lineChart.topicColor = ZFWhite;
+    lineChart.isShowSeparate = YES;
+    //    lineChart.isAnimated = NO;
+    lineChart.isResetAxisLineMinValue = YES;
+    //    lineChart.isShowAxisLineValue = NO;
+    //    lineChart.isShadowForValueLabel = NO;
+    lineChart.isShadow = NO;
+    //    lineChart.valueLabelPattern = kPopoverLabelPatternBlank;
+    //    lineChart.valueCenterToCircleCenterPadding = 0;
+    //    lineChart.separateColor = ZFYellow;
+    lineChart.unitColor = ZFBlack;
+    lineChart.backgroundColor = ZFWhite;
+    lineChart.axisColor = ZFBlack;
+    lineChart.axisLineNameColor = ZFBlack;
+    lineChart.axisLineValueColor = ZFBlack;
+    lineChart.xLineNameLabelToXAxisLinePadding = -10;
+    [self.distributionRevenueBackView addSubview:lineChart];
+    [lineChart strokePath];
+}
+
+#pragma mark - ZFGenericChartDataSource
+
+- (NSArray *)valueArrayInGenericChart:(ZFGenericChart *)chart{
+    return @[@[@"22", @"300", @"490", @"380", @"167", @"451"], @[@"380", @"200", @"326", @"240", @"258", @"137"]];
+}
+
+- (NSArray *)nameArrayInGenericChart:(ZFGenericChart *)chart{
+    return @[@"6-10", @"10-14", @"14-18", @"18-22", @"22-2", @"2-4",@"(H)"];
+}
+
+
+////42 66 90  51 153 153
+- (NSArray *)colorArrayInGenericChart:(ZFGenericChart *)chart{
+    return @[ZFColor(42, 66, 90, 1), ZFColor(51, 153, 153, 1)];
+}
+
+- (CGFloat)axisLineMaxValueInGenericChart:(ZFGenericChart *)chart{
+    return 700;
+}
+
+- (CGFloat)axisLineMinValueInGenericChart:(ZFGenericChart *)chart{
+    return 0;
+}
+
+- (NSInteger)axisLineSectionCountInGenericChart:(ZFGenericChart *)chart{
+    return 10;
+}
+
+#pragma mark - ZFLineChartDelegate
+
+- (CGFloat)groupWidthInLineChart:(ZFLineChart *)lineChart{
+    return 20.f;
+}
+
+- (CGFloat)paddingForGroupsInLineChart:(ZFLineChart *)lineChart{
+    return 20.f;
+}
+//
+//- (CGFloat)circleRadiusInLineChart:(ZFLineChart *)lineChart{
+//    return 10.f;
+//}
+//
+//- (CGFloat)lineWidthInLineChart:(ZFLineChart *)lineChart{
+//    return 5.f;
+//}
+
+- (void)lineChart:(ZFLineChart *)lineChart didSelectCircleAtLineIndex:(NSInteger)lineIndex circleIndex:(NSInteger)circleIndex{
+    NSLog(@"第%ld条线========第%ld个",(long)lineIndex,(long)circleIndex);
+}
+
+- (void)lineChart:(ZFLineChart *)lineChart didSelectPopoverLabelAtLineIndex:(NSInteger)lineIndex circleIndex:(NSInteger)circleIndex{
+    NSLog(@"第%ld条线========第%ld个",(long)lineIndex,(long)circleIndex);
+}
+
+#pragma mark -setupFoodCategoryView
+static NSString *reuserCollectionID = @"DishTypeCollectionViewCell";
+- (void)setupFoodCategoryView{
+    
+    self.foodCategoryBackView.layer.borderColor = [UIColor grayColor].CGColor;
+    self.foodCategoryBackView.layer.borderWidth = 1;
+    self.foodCategoryBackView.layer.cornerRadius = 5;
+    
+//    UIBezierPath *bezierPath = [UIBezierPath bezierPathWithRoundedRect:self.foodCategoryBackView.bounds byRoundingCorners:UIRectCornerTopRight | UIRectCornerBottomRight cornerRadii:CGSizeMake(10, 10)];
+//    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+//    maskLayer.frame = self.foodCategoryBackView.bounds;
+//    maskLayer.path = bezierPath.CGPath;
+//    self.foodCategoryBackView.layer.mask = maskLayer;
+
+    
+    [self setDishCategoryCollectionView];
+    
+}
+
+
+- (void)setDishCategoryCollectionView{
+    
+    UICollectionViewFlowLayout *flowLayout = (UICollectionViewFlowLayout *)self.foodCategoryCollectionView.collectionViewLayout;
+    flowLayout.minimumLineSpacing = 0;
+    flowLayout.minimumInteritemSpacing = 0;
+    flowLayout.itemSize = CGSizeMake(45, 63);
+    flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
+    
+    self.foodCategoryCollectionView.showsVerticalScrollIndicator = NO;
+    self.foodCategoryCollectionView.backgroundColor = [UIColor whiteColor];
+    
+    self.foodCategoryCollectionView.delegate = self;
+    self.foodCategoryCollectionView.dataSource = self;
+    
+    [self.foodCategoryCollectionView registerNib:[UINib nibWithNibName:@"DishTypeCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:reuserCollectionID];
+}
+
+#pragma mark- collectionView代理
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    
+    return 10;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    DishTypeCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuserCollectionID forIndexPath:indexPath];
+    
+
+    
+    if (indexPath.row == 0) {
+        
+        cell.selected = YES;
+        cell.backgroundColor = [UIColor whiteColor];
+    }
+    
+    if (cell.selected == YES) {
+        
+        cell.backgroundColor = [UIColor whiteColor];
+    }else{
+        
+        cell.backgroundColor = [UIColor colorWithRed:248/255.0f green:248/255.0f blue:248/255.0f alpha:1];
+    }
+    
+    return cell;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+
+    for ( DishTypeCollectionViewCell *cell in self.foodCategoryCollectionView.subviews) {
+        if (![cell isKindOfClass:[DishTypeCollectionViewCell class]]) {
+            return;
+        }
+        if ([collectionView indexPathForCell:cell] == indexPath) {
+            
+            cell.backgroundColor = [UIColor whiteColor];
+        }else{
+
+             cell.backgroundColor = [UIColor colorWithRed:248/255.0f green:248/255.0f blue:248/255.0f alpha:1];
+        }
+    }
+    
+    
+}
 
 
 

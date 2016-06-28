@@ -28,4 +28,12 @@
 @property (weak, nonatomic) IBOutlet UITableView *foodAnayseTableView;
 @property (weak, nonatomic) IBOutlet UILabel *dataPublickTime;
 
+
+@property (strong, nonatomic) IBOutletCollection(NSLayoutConstraint) NSArray *totalRevenueConstraint;
+//营收分布背景视图
+@property (weak, nonatomic) IBOutlet UIView *distributionRevenueBackView;
+
+@property (weak, nonatomic) IBOutlet UIView *foodCategoryBackView;
+@property (weak, nonatomic) IBOutlet UICollectionView *foodCategoryCollectionView;
+
 @end
