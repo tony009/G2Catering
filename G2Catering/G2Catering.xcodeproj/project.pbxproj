@@ -23,6 +23,10 @@
 		9157322D1D2114E500B6EC1D /* OrderCountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9157322B1D2114E500B6EC1D /* OrderCountTableViewCell.xib */; };
 		915737781D2129D300B6EC1D /* FoodAnayseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 915737761D2129D300B6EC1D /* FoodAnayseTableViewCell.m */; };
 		915737791D2129D300B6EC1D /* FoodAnayseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 915737771D2129D300B6EC1D /* FoodAnayseTableViewCell.xib */; };
+		9179F4D91D221BB9002CF61D /* LockScreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9179F4D41D221BB9002CF61D /* LockScreenView.m */; };
+		9179F4DA1D221BB9002CF61D /* LockScreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9179F4D51D221BB9002CF61D /* LockScreenView.xib */; };
+		9179F4DB1D221BB9002CF61D /* UnLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9179F4D71D221BB9002CF61D /* UnLockView.m */; };
+		9179F4DC1D221BB9002CF61D /* UnLockView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9179F4D81D221BB9002CF61D /* UnLockView.xib */; };
 		917A06531D1CC48B00CEDB9E /* fuKuanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 917A06451D1CC48B00CEDB9E /* fuKuanView.m */; };
 		917A06541D1CC48B00CEDB9E /* fuKuanView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 917A06461D1CC48B00CEDB9E /* fuKuanView.xib */; };
 		917A06551D1CC48B00CEDB9E /* LingShouTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 917A06481D1CC48B00CEDB9E /* LingShouTableViewCell.m */; };
@@ -33,10 +37,6 @@
 		917A065A1D1CC48B00CEDB9E /* TypeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 917A064F1D1CC48B00CEDB9E /* TypeCollectionViewCell.xib */; };
 		917A065B1D1CC48B00CEDB9E /* ZhifuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 917A06511D1CC48B00CEDB9E /* ZhifuView.m */; };
 		917A065C1D1CC48B00CEDB9E /* ZhifuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 917A06521D1CC48B00CEDB9E /* ZhifuView.xib */; };
-		917A066B1D1CD13600CEDB9E /* LockScreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 917A066A1D1CD13600CEDB9E /* LockScreenView.m */; };
-		917A066D1D1CE7D200CEDB9E /* LockScreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 917A066C1D1CE7D200CEDB9E /* LockScreenView.xib */; };
-		917A06701D1D137400CEDB9E /* UnLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 917A066F1D1D137400CEDB9E /* UnLockView.m */; };
-		917A06741D1D23B500CEDB9E /* UnLockView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 917A06731D1D23B500CEDB9E /* UnLockView.xib */; };
 		F104CDFB1D1B8083003EAEEC /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F104CD151D1B8083003EAEEC /* HttpTool.m */; };
 		F104CDFC1D1B8083003EAEEC /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F104CD1A1D1B8083003EAEEC /* LoginViewController.m */; };
 		F104CDFD1D1B8083003EAEEC /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F104CD1B1D1B8083003EAEEC /* LoginViewController.xib */; };
@@ -202,6 +202,12 @@
 		915737751D2129D300B6EC1D /* FoodAnayseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodAnayseTableViewCell.h; sourceTree = "<group>"; };
 		915737761D2129D300B6EC1D /* FoodAnayseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodAnayseTableViewCell.m; sourceTree = "<group>"; };
 		915737771D2129D300B6EC1D /* FoodAnayseTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodAnayseTableViewCell.xib; sourceTree = "<group>"; };
+		9179F4D31D221BB9002CF61D /* LockScreenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LockScreenView.h; sourceTree = "<group>"; };
+		9179F4D41D221BB9002CF61D /* LockScreenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LockScreenView.m; sourceTree = "<group>"; };
+		9179F4D51D221BB9002CF61D /* LockScreenView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LockScreenView.xib; sourceTree = "<group>"; };
+		9179F4D61D221BB9002CF61D /* UnLockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnLockView.h; sourceTree = "<group>"; };
+		9179F4D71D221BB9002CF61D /* UnLockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnLockView.m; sourceTree = "<group>"; };
+		9179F4D81D221BB9002CF61D /* UnLockView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UnLockView.xib; sourceTree = "<group>"; };
 		917A06441D1CC48B00CEDB9E /* fuKuanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fuKuanView.h; sourceTree = "<group>"; };
 		917A06451D1CC48B00CEDB9E /* fuKuanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fuKuanView.m; sourceTree = "<group>"; };
 		917A06461D1CC48B00CEDB9E /* fuKuanView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = fuKuanView.xib; sourceTree = "<group>"; };
@@ -217,12 +223,6 @@
 		917A06501D1CC48B00CEDB9E /* ZhifuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhifuView.h; sourceTree = "<group>"; };
 		917A06511D1CC48B00CEDB9E /* ZhifuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhifuView.m; sourceTree = "<group>"; };
 		917A06521D1CC48B00CEDB9E /* ZhifuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZhifuView.xib; sourceTree = "<group>"; };
-		917A06691D1CD13600CEDB9E /* LockScreenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LockScreenView.h; sourceTree = "<group>"; };
-		917A066A1D1CD13600CEDB9E /* LockScreenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LockScreenView.m; sourceTree = "<group>"; };
-		917A066C1D1CE7D200CEDB9E /* LockScreenView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LockScreenView.xib; sourceTree = "<group>"; };
-		917A066E1D1D137400CEDB9E /* UnLockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnLockView.h; sourceTree = "<group>"; };
-		917A066F1D1D137400CEDB9E /* UnLockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnLockView.m; sourceTree = "<group>"; };
-		917A06731D1D23B500CEDB9E /* UnLockView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UnLockView.xib; sourceTree = "<group>"; };
 		F104CD101D1B8083003EAEEC /* DimensMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DimensMacros.h; sourceTree = "<group>"; };
 		F104CD111D1B8083003EAEEC /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		F104CD121D1B8083003EAEEC /* UtilsMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsMacros.h; sourceTree = "<group>"; };
@@ -600,12 +600,12 @@
 		917A06681D1CD10D00CEDB9E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				917A06691D1CD13600CEDB9E /* LockScreenView.h */,
-				917A066A1D1CD13600CEDB9E /* LockScreenView.m */,
-				917A066C1D1CE7D200CEDB9E /* LockScreenView.xib */,
-				917A066E1D1D137400CEDB9E /* UnLockView.h */,
-				917A066F1D1D137400CEDB9E /* UnLockView.m */,
-				917A06731D1D23B500CEDB9E /* UnLockView.xib */,
+				9179F4D31D221BB9002CF61D /* LockScreenView.h */,
+				9179F4D41D221BB9002CF61D /* LockScreenView.m */,
+				9179F4D51D221BB9002CF61D /* LockScreenView.xib */,
+				9179F4D61D221BB9002CF61D /* UnLockView.h */,
+				9179F4D71D221BB9002CF61D /* UnLockView.m */,
+				9179F4D81D221BB9002CF61D /* UnLockView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1245,10 +1245,12 @@
 				F104CE451D1B8083003EAEEC /* OpenTableAndTakeOutView.xib in Resources */,
 				F104CE1B1D1B8083003EAEEC /* BaseSettingsViewController.xib in Resources */,
 				F104CE791D1B872E003EAEEC /* WaiMaiDetailTableViewCell.xib in Resources */,
+				9179F4DA1D221BB9002CF61D /* LockScreenView.xib in Resources */,
 				F104CE1F1D1B8083003EAEEC /* DeviceTestView.xib in Resources */,
 				F104CE651D1B8083003EAEEC /* Main.storyboard in Resources */,
 				763177131D20FC1E00571559 /* SegmentedView.xib in Resources */,
 				917A06541D1CC48B00CEDB9E /* fuKuanView.xib in Resources */,
+				9179F4DC1D221BB9002CF61D /* UnLockView.xib in Resources */,
 				F104CE091D1B8083003EAEEC /* JiLuCaiViewCell.xib in Resources */,
 				F104CE411D1B8083003EAEEC /* OrderingViewController.xib in Resources */,
 				915731CE1D20BBAC00B6EC1D /* DataReportViewController.xib in Resources */,
@@ -1257,7 +1259,6 @@
 				F104CE281D1B8083003EAEEC /* PrintSettingsView.xib in Resources */,
 				F104CDFD1D1B8083003EAEEC /* LoginViewController.xib in Resources */,
 				F104CE6F1D1B8083003EAEEC /* LICENSE in Resources */,
-				917A066D1D1CE7D200CEDB9E /* LockScreenView.xib in Resources */,
 				F104CE2C1D1B8083003EAEEC /* UpdatePasswordView.xib in Resources */,
 				F104CE3F1D1B8083003EAEEC /* WaiMaiTableViewCell.xib in Resources */,
 				9157322D1D2114E500B6EC1D /* OrderCountTableViewCell.xib in Resources */,
@@ -1272,7 +1273,6 @@
 				F104CE331D1B8083003EAEEC /* VIPLeftView.xib in Resources */,
 				F104CE641D1B8083003EAEEC /* LaunchScreen.storyboard in Resources */,
 				F104CE2A1D1B8083003EAEEC /* PrintSettingTableViewCell.xib in Resources */,
-				917A06741D1D23B500CEDB9E /* UnLockView.xib in Resources */,
 				F104CE131D1B8083003EAEEC /* BookManagerTableViewCell.xib in Resources */,
 				F104CE311D1B8083003EAEEC /* VipViewController.xib in Resources */,
 				F104CE481D1B8083003EAEEC /* OpenTableCollectionViewCell.xib in Resources */,
@@ -1371,6 +1371,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9179F4D91D221BB9002CF61D /* LockScreenView.m in Sources */,
 				917A06591D1CC48B00CEDB9E /* TypeCollectionViewCell.m in Sources */,
 				F104CE1A1D1B8083003EAEEC /* BaseSettingsViewController.m in Sources */,
 				F104CE441D1B8083003EAEEC /* OpenTableAndTakeOutView.m in Sources */,
@@ -1394,7 +1395,6 @@
 				917A065B1D1CC48B00CEDB9E /* ZhifuView.m in Sources */,
 				F104CE301D1B8083003EAEEC /* VipViewController.m in Sources */,
 				F104CE201D1B8083003EAEEC /* EstimateSettingView.m in Sources */,
-				917A06701D1D137400CEDB9E /* UnLockView.m in Sources */,
 				F104CE431D1B8083003EAEEC /* DishTypeViewCollectionViewCell.m in Sources */,
 				F104CE4D1D1B8083003EAEEC /* MainViewController.m in Sources */,
 				F104CE221D1B8083003EAEEC /* EstimateView.m in Sources */,
@@ -1432,8 +1432,8 @@
 				F104CE291D1B8083003EAEEC /* PrintSettingTableViewCell.m in Sources */,
 				F104CE611D1B8083003EAEEC /* AppDelegate.m in Sources */,
 				F104CE661D1B8083003EAEEC /* FSCalendar+IBExtension.m in Sources */,
-				917A066B1D1CD13600CEDB9E /* LockScreenView.m in Sources */,
 				F104CE731D1B8083003EAEEC /* README.md in Sources */,
+				9179F4DB1D221BB9002CF61D /* UnLockView.m in Sources */,
 				F104CE4B1D1B8083003EAEEC /* OrderingTableViewCell.m in Sources */,
 				F104CE711D1B8083003EAEEC /* NSDate+TEAExtensions.m in Sources */,
 				F104CE101D1B8083003EAEEC /* AddBookView.m in Sources */,
