@@ -8,8 +8,6 @@
 
 #import "SegmentedView.h"
 
-
-
 @interface SegmentedView ()
 
 @property (strong, nonatomic) IBOutlet UIView *view;
