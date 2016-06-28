@@ -1440,6 +1440,7 @@
 				F104CE141D1B8083003EAEEC /* CancelBookView.m in Sources */,
 				F104CE6B1D1B8083003EAEEC /* FSCalendarConstance.m in Sources */,
 				915731CD1D20BBAC00B6EC1D /* DataReportViewController.m in Sources */,
+				763177111D20FB8200571559 /* SegmentedView.m in Sources */,
 				F104CE321D1B8083003EAEEC /* VIPLeftView.m in Sources */,
 				F104CE341D1B8083003EAEEC /* VIPTableViewCell.m in Sources */,
 				F104CE691D1B8083003EAEEC /* FSCalendarCell.m in Sources */,
