@@ -125,7 +125,7 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     TypeCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"TypeCollectionViewCell" forIndexPath:indexPath];
     [cell.typeBtn setImage:[UIImage imageNamed:_typeArray[indexPath.row]] forState:UIControlStateNormal];
-     [cell.typeBtn setImage:[UIImage imageNamed:_ntypeArray[indexPath.row]] forState:UIControlStateDisabled];
+    [cell.typeBtn setImage:[UIImage imageNamed:_ntypeArray[indexPath.row]] forState:UIControlStateDisabled];
     [cell.typeBtn setImage:[UIImage imageNamed:_stypeArray[indexPath.row]] forState:UIControlStateSelected];
     cell.typeBtn.tag = 200+indexPath.row;
     return cell;

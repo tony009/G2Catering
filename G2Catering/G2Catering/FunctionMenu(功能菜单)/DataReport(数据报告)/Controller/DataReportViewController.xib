@@ -348,6 +348,9 @@
                                                 <constraint firstAttribute="height" constant="178" id="vUC-gH-8gI"/>
                                             </constraints>
                                         </view>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zi" translatesAutoresizingMaskIntoConstraints="NO" id="hKp-0v-YE3">
+                                            <rect key="frame" x="24" y="186" width="286" height="33"/>
+                                        </imageView>
                                     </subviews>
                                     <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
@@ -357,12 +360,14 @@
                                         <constraint firstItem="fPS-G8-w7C" firstAttribute="leading" secondItem="hIn-nm-N2f" secondAttribute="trailing" constant="18" id="7Ur-Eb-5qb"/>
                                         <constraint firstItem="3X0-PP-pzW" firstAttribute="centerY" secondItem="fPS-G8-w7C" secondAttribute="centerY" id="Ihn-4e-5lp"/>
                                         <constraint firstItem="8wn-zG-Lwt" firstAttribute="leading" secondItem="l1y-u7-bbZ" secondAttribute="trailing" constant="18" id="Ila-i5-gfQ"/>
+                                        <constraint firstItem="hKp-0v-YE3" firstAttribute="leading" secondItem="oqD-dc-mZE" secondAttribute="leading" id="NXo-iS-uP8"/>
                                         <constraint firstItem="hIn-nm-N2f" firstAttribute="centerY" secondItem="cbk-r9-sQX" secondAttribute="centerY" id="NdI-t1-N3Z"/>
                                         <constraint firstItem="cbk-r9-sQX" firstAttribute="centerY" secondItem="gtz-lo-jwv" secondAttribute="centerY" id="UmC-S6-FwM"/>
                                         <constraint firstItem="hIn-nm-N2f" firstAttribute="leading" secondItem="cbk-r9-sQX" secondAttribute="trailing" constant="18" id="WIo-kI-mxj"/>
                                         <constraint firstItem="gtz-lo-jwv" firstAttribute="leading" secondItem="VnZ-w2-gNz" secondAttribute="leading" constant="24" id="XqZ-V8-htw"/>
                                         <constraint firstItem="3X0-PP-pzW" firstAttribute="leading" secondItem="fPS-G8-w7C" secondAttribute="trailing" constant="18" id="a33-NO-Blz"/>
                                         <constraint firstItem="l1y-u7-bbZ" firstAttribute="centerY" secondItem="dLS-1C-dH2" secondAttribute="centerY" id="aKY-o5-S5j"/>
+                                        <constraint firstItem="hKp-0v-YE3" firstAttribute="top" secondItem="oqD-dc-mZE" secondAttribute="bottom" constant="8" id="boO-YG-c7k"/>
                                         <constraint firstItem="dLS-1C-dH2" firstAttribute="centerY" secondItem="3X0-PP-pzW" secondAttribute="centerY" id="e21-0D-07h"/>
                                         <constraint firstItem="fPS-G8-w7C" firstAttribute="centerY" secondItem="hIn-nm-N2f" secondAttribute="centerY" id="fIn-Tq-EKl"/>
                                         <constraint firstItem="cbk-r9-sQX" firstAttribute="leading" secondItem="gtz-lo-jwv" secondAttribute="trailing" constant="18" id="fSP-h5-Hkv"/>
@@ -755,5 +760,6 @@
     </objects>
     <resources>
         <image name="Calendar" width="21" height="22"/>
+        <image name="zi" width="286" height="33"/>
     </resources>
 </document>
