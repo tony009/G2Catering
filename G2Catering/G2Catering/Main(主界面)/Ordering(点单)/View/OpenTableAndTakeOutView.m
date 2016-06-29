@@ -168,6 +168,7 @@
 
 - (IBAction)confirmAction:(UIButton *)sender {
     
+    [self removeFromSuperview];
     
 }
 
