@@ -8,6 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		040AFC8569EBF84ABB39E999 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 073B094CD599E52328204BCD /* libPods.a */; };
+		43882E701D23C9F1006C28CE /* DeskCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E4D1D23C9F1006C28CE /* DeskCollectionController.m */; settings = {ASSET_TAGS = (); }; };
+		43882E711D23C9F1006C28CE /* DeskCollectionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E4E1D23C9F1006C28CE /* DeskCollectionController.xib */; settings = {ASSET_TAGS = (); }; };
+		43882E721D23C9F1006C28CE /* DeskTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E501D23C9F1006C28CE /* DeskTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		43882E731D23C9F1006C28CE /* DeskTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E511D23C9F1006C28CE /* DeskTableViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		43882E741D23C9F1006C28CE /* DinnerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E531D23C9F1006C28CE /* DinnerTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		43882E751D23C9F1006C28CE /* DinnerTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E541D23C9F1006C28CE /* DinnerTableViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		43882E761D23C9F1006C28CE /* DeskCollectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E571D23C9F1006C28CE /* DeskCollectionTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		43882E771D23C9F1006C28CE /* DeskCollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E581D23C9F1006C28CE /* DeskCollectionTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		43882E781D23C9F1006C28CE /* DeskCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E5A1D23C9F1006C28CE /* DeskCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		43882E791D23C9F1006C28CE /* DeskCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E5B1D23C9F1006C28CE /* DeskCollectionViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		43882E7A1D23C9F1006C28CE /* LongPressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E5D1D23C9F1006C28CE /* LongPressView.m */; settings = {ASSET_TAGS = (); }; };
+		43882E7B1D23C9F1006C28CE /* LongPressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E5E1D23C9F1006C28CE /* LongPressView.xib */; settings = {ASSET_TAGS = (); }; };
+		43882E7C1D23C9F1006C28CE /* PanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E601D23C9F1006C28CE /* PanView.m */; settings = {ASSET_TAGS = (); }; };
+		43882E7D1D23C9F1006C28CE /* RightCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E621D23C9F1006C28CE /* RightCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		43882E7E1D23C9F1006C28CE /* RightCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E631D23C9F1006C28CE /* RightCollectionViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		43882E7F1D23C9F1006C28CE /* ShowMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E651D23C9F1006C28CE /* ShowMenuView.m */; settings = {ASSET_TAGS = (); }; };
+		43882E801D23C9F1006C28CE /* UpCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E671D23C9F1006C28CE /* UpCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		43882E811D23C9F1006C28CE /* UpCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E681D23C9F1006C28CE /* UpCollectionViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		43882E821D23C9F1006C28CE /* WaiMaiDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E6A1D23C9F1006C28CE /* WaiMaiDetailTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		43882E831D23C9F1006C28CE /* WaiMaiDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E6B1D23C9F1006C28CE /* WaiMaiDetailTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		43882E841D23C9F1006C28CE /* WaiMaiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E6D1D23C9F1006C28CE /* WaiMaiTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		43882E851D23C9F1006C28CE /* WaiMaiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E6E1D23C9F1006C28CE /* WaiMaiTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
 		763177111D20FB8200571559 /* SegmentedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 763177101D20FB8200571559 /* SegmentedView.m */; };
 		763177131D20FC1E00571559 /* SegmentedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 763177121D20FC1E00571559 /* SegmentedView.xib */; };
 		76D45C7E1D0CFD3B0026491F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76D45C7D1D0CFD3B0026491F /* Assets.xcassets */; };
@@ -123,16 +145,6 @@
 		F104CE331D1B8083003EAEEC /* VIPLeftView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F104CD7D1D1B8083003EAEEC /* VIPLeftView.xib */; };
 		F104CE341D1B8083003EAEEC /* VIPTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F104CD7F1D1B8083003EAEEC /* VIPTableViewCell.m */; };
 		F104CE351D1B8083003EAEEC /* VIPTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F104CD801D1B8083003EAEEC /* VIPTableViewCell.xib */; };
-		F104CE361D1B8083003EAEEC /* DinnerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F104CD851D1B8083003EAEEC /* DinnerTableViewController.m */; };
-		F104CE371D1B8083003EAEEC /* DinnerTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F104CD861D1B8083003EAEEC /* DinnerTableViewController.xib */; };
-		F104CE381D1B8083003EAEEC /* DeskCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F104CD8A1D1B8083003EAEEC /* DeskCollectionViewCell.m */; };
-		F104CE391D1B8083003EAEEC /* DeskCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F104CD8B1D1B8083003EAEEC /* DeskCollectionViewCell.xib */; };
-		F104CE3A1D1B8083003EAEEC /* LongPressView.m in Sources */ = {isa = PBXBuildFile; fileRef = F104CD8D1D1B8083003EAEEC /* LongPressView.m */; };
-		F104CE3B1D1B8083003EAEEC /* LongPressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F104CD8E1D1B8083003EAEEC /* LongPressView.xib */; };
-		F104CE3C1D1B8083003EAEEC /* RightCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F104CD901D1B8083003EAEEC /* RightCollectionViewCell.m */; };
-		F104CE3D1D1B8083003EAEEC /* RightCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F104CD911D1B8083003EAEEC /* RightCollectionViewCell.xib */; };
-		F104CE3E1D1B8083003EAEEC /* WaiMaiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F104CD931D1B8083003EAEEC /* WaiMaiTableViewCell.m */; };
-		F104CE3F1D1B8083003EAEEC /* WaiMaiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F104CD941D1B8083003EAEEC /* WaiMaiTableViewCell.xib */; };
 		F104CE401D1B8083003EAEEC /* OrderingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F104CD981D1B8083003EAEEC /* OrderingViewController.m */; };
 		F104CE411D1B8083003EAEEC /* OrderingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F104CD991D1B8083003EAEEC /* OrderingViewController.xib */; };
 		F104CE421D1B8083003EAEEC /* DishTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = F104CD9C1D1B8083003EAEEC /* DishTypeView.m */; };
@@ -176,8 +188,6 @@
 		F104CE721D1B8083003EAEEC /* NSString+FSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F104CDF71D1B8083003EAEEC /* NSString+FSExtension.m */; };
 		F104CE731D1B8083003EAEEC /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = F104CDF81D1B8083003EAEEC /* README.md */; };
 		F104CE741D1B8083003EAEEC /* UIView+FSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F104CDFA1D1B8083003EAEEC /* UIView+FSExtension.m */; };
-		F104CE781D1B872E003EAEEC /* WaiMaiDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F104CE761D1B872E003EAEEC /* WaiMaiDetailTableViewCell.m */; };
-		F104CE791D1B872E003EAEEC /* WaiMaiDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F104CE771D1B872E003EAEEC /* WaiMaiDetailTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -200,6 +210,40 @@
 /* Begin PBXFileReference section */
 		073B094CD599E52328204BCD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B4E00C8C92ACE2E7EE03E02 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		43882E4C1D23C9F1006C28CE /* DeskCollectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeskCollectionController.h; sourceTree = "<group>"; };
+		43882E4D1D23C9F1006C28CE /* DeskCollectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeskCollectionController.m; sourceTree = "<group>"; };
+		43882E4E1D23C9F1006C28CE /* DeskCollectionController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeskCollectionController.xib; sourceTree = "<group>"; };
+		43882E4F1D23C9F1006C28CE /* DeskTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeskTableViewController.h; sourceTree = "<group>"; };
+		43882E501D23C9F1006C28CE /* DeskTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeskTableViewController.m; sourceTree = "<group>"; };
+		43882E511D23C9F1006C28CE /* DeskTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeskTableViewController.xib; sourceTree = "<group>"; };
+		43882E521D23C9F1006C28CE /* DinnerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DinnerTableViewController.h; sourceTree = "<group>"; };
+		43882E531D23C9F1006C28CE /* DinnerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DinnerTableViewController.m; sourceTree = "<group>"; };
+		43882E541D23C9F1006C28CE /* DinnerTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DinnerTableViewController.xib; sourceTree = "<group>"; };
+		43882E561D23C9F1006C28CE /* DeskCollectionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeskCollectionTableViewCell.h; sourceTree = "<group>"; };
+		43882E571D23C9F1006C28CE /* DeskCollectionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeskCollectionTableViewCell.m; sourceTree = "<group>"; };
+		43882E581D23C9F1006C28CE /* DeskCollectionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeskCollectionTableViewCell.xib; sourceTree = "<group>"; };
+		43882E591D23C9F1006C28CE /* DeskCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeskCollectionViewCell.h; sourceTree = "<group>"; };
+		43882E5A1D23C9F1006C28CE /* DeskCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeskCollectionViewCell.m; sourceTree = "<group>"; };
+		43882E5B1D23C9F1006C28CE /* DeskCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeskCollectionViewCell.xib; sourceTree = "<group>"; };
+		43882E5C1D23C9F1006C28CE /* LongPressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LongPressView.h; sourceTree = "<group>"; };
+		43882E5D1D23C9F1006C28CE /* LongPressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LongPressView.m; sourceTree = "<group>"; };
+		43882E5E1D23C9F1006C28CE /* LongPressView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LongPressView.xib; sourceTree = "<group>"; };
+		43882E5F1D23C9F1006C28CE /* PanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanView.h; sourceTree = "<group>"; };
+		43882E601D23C9F1006C28CE /* PanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanView.m; sourceTree = "<group>"; };
+		43882E611D23C9F1006C28CE /* RightCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightCollectionViewCell.h; sourceTree = "<group>"; };
+		43882E621D23C9F1006C28CE /* RightCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightCollectionViewCell.m; sourceTree = "<group>"; };
+		43882E631D23C9F1006C28CE /* RightCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RightCollectionViewCell.xib; sourceTree = "<group>"; };
+		43882E641D23C9F1006C28CE /* ShowMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowMenuView.h; sourceTree = "<group>"; };
+		43882E651D23C9F1006C28CE /* ShowMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowMenuView.m; sourceTree = "<group>"; };
+		43882E661D23C9F1006C28CE /* UpCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpCollectionViewCell.h; sourceTree = "<group>"; };
+		43882E671D23C9F1006C28CE /* UpCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpCollectionViewCell.m; sourceTree = "<group>"; };
+		43882E681D23C9F1006C28CE /* UpCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UpCollectionViewCell.xib; sourceTree = "<group>"; };
+		43882E691D23C9F1006C28CE /* WaiMaiDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaiMaiDetailTableViewCell.h; sourceTree = "<group>"; };
+		43882E6A1D23C9F1006C28CE /* WaiMaiDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaiMaiDetailTableViewCell.m; sourceTree = "<group>"; };
+		43882E6B1D23C9F1006C28CE /* WaiMaiDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaiMaiDetailTableViewCell.xib; sourceTree = "<group>"; };
+		43882E6C1D23C9F1006C28CE /* WaiMaiTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaiMaiTableViewCell.h; sourceTree = "<group>"; };
+		43882E6D1D23C9F1006C28CE /* WaiMaiTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaiMaiTableViewCell.m; sourceTree = "<group>"; };
+		43882E6E1D23C9F1006C28CE /* WaiMaiTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaiMaiTableViewCell.xib; sourceTree = "<group>"; };
 		7631770F1D20FB8200571559 /* SegmentedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentedView.h; sourceTree = "<group>"; };
 		763177101D20FB8200571559 /* SegmentedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentedView.m; sourceTree = "<group>"; };
 		763177121D20FC1E00571559 /* SegmentedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SegmentedView.xib; sourceTree = "<group>"; };
@@ -398,21 +442,6 @@
 		F104CD7E1D1B8083003EAEEC /* VIPTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VIPTableViewCell.h; sourceTree = "<group>"; };
 		F104CD7F1D1B8083003EAEEC /* VIPTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VIPTableViewCell.m; sourceTree = "<group>"; };
 		F104CD801D1B8083003EAEEC /* VIPTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VIPTableViewCell.xib; sourceTree = "<group>"; };
-		F104CD841D1B8083003EAEEC /* DinnerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DinnerTableViewController.h; sourceTree = "<group>"; };
-		F104CD851D1B8083003EAEEC /* DinnerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DinnerTableViewController.m; sourceTree = "<group>"; };
-		F104CD861D1B8083003EAEEC /* DinnerTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DinnerTableViewController.xib; sourceTree = "<group>"; };
-		F104CD891D1B8083003EAEEC /* DeskCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeskCollectionViewCell.h; sourceTree = "<group>"; };
-		F104CD8A1D1B8083003EAEEC /* DeskCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeskCollectionViewCell.m; sourceTree = "<group>"; };
-		F104CD8B1D1B8083003EAEEC /* DeskCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeskCollectionViewCell.xib; sourceTree = "<group>"; };
-		F104CD8C1D1B8083003EAEEC /* LongPressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LongPressView.h; sourceTree = "<group>"; };
-		F104CD8D1D1B8083003EAEEC /* LongPressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LongPressView.m; sourceTree = "<group>"; };
-		F104CD8E1D1B8083003EAEEC /* LongPressView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LongPressView.xib; sourceTree = "<group>"; };
-		F104CD8F1D1B8083003EAEEC /* RightCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightCollectionViewCell.h; sourceTree = "<group>"; };
-		F104CD901D1B8083003EAEEC /* RightCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightCollectionViewCell.m; sourceTree = "<group>"; };
-		F104CD911D1B8083003EAEEC /* RightCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RightCollectionViewCell.xib; sourceTree = "<group>"; };
-		F104CD921D1B8083003EAEEC /* WaiMaiTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaiMaiTableViewCell.h; sourceTree = "<group>"; };
-		F104CD931D1B8083003EAEEC /* WaiMaiTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaiMaiTableViewCell.m; sourceTree = "<group>"; };
-		F104CD941D1B8083003EAEEC /* WaiMaiTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaiMaiTableViewCell.xib; sourceTree = "<group>"; };
 		F104CD971D1B8083003EAEEC /* OrderingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderingViewController.h; sourceTree = "<group>"; };
 		F104CD981D1B8083003EAEEC /* OrderingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderingViewController.m; sourceTree = "<group>"; };
 		F104CD991D1B8083003EAEEC /* OrderingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderingViewController.xib; sourceTree = "<group>"; };
@@ -485,9 +514,6 @@
 		F104CDF81D1B8083003EAEEC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F104CDF91D1B8083003EAEEC /* UIView+FSExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FSExtension.h"; sourceTree = "<group>"; };
 		F104CDFA1D1B8083003EAEEC /* UIView+FSExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FSExtension.m"; sourceTree = "<group>"; };
-		F104CE751D1B872E003EAEEC /* WaiMaiDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaiMaiDetailTableViewCell.h; sourceTree = "<group>"; };
-		F104CE761D1B872E003EAEEC /* WaiMaiDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaiMaiDetailTableViewCell.m; sourceTree = "<group>"; };
-		F104CE771D1B872E003EAEEC /* WaiMaiDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaiMaiDetailTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -516,6 +542,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43882E491D23C9F1006C28CE /* DinnerTable(餐台) */ = {
+			isa = PBXGroup;
+			children = (
+				43882E4A1D23C9F1006C28CE /* Controller */,
+				43882E551D23C9F1006C28CE /* View */,
+			);
+			path = "DinnerTable(餐台)";
+			sourceTree = "<group>";
+		};
+		43882E4A1D23C9F1006C28CE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				43882E4C1D23C9F1006C28CE /* DeskCollectionController.h */,
+				43882E4D1D23C9F1006C28CE /* DeskCollectionController.m */,
+				43882E4E1D23C9F1006C28CE /* DeskCollectionController.xib */,
+				43882E4F1D23C9F1006C28CE /* DeskTableViewController.h */,
+				43882E501D23C9F1006C28CE /* DeskTableViewController.m */,
+				43882E511D23C9F1006C28CE /* DeskTableViewController.xib */,
+				43882E521D23C9F1006C28CE /* DinnerTableViewController.h */,
+				43882E531D23C9F1006C28CE /* DinnerTableViewController.m */,
+				43882E541D23C9F1006C28CE /* DinnerTableViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		43882E551D23C9F1006C28CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				43882E561D23C9F1006C28CE /* DeskCollectionTableViewCell.h */,
+				43882E571D23C9F1006C28CE /* DeskCollectionTableViewCell.m */,
+				43882E581D23C9F1006C28CE /* DeskCollectionTableViewCell.xib */,
+				43882E591D23C9F1006C28CE /* DeskCollectionViewCell.h */,
+				43882E5A1D23C9F1006C28CE /* DeskCollectionViewCell.m */,
+				43882E5B1D23C9F1006C28CE /* DeskCollectionViewCell.xib */,
+				43882E5C1D23C9F1006C28CE /* LongPressView.h */,
+				43882E5D1D23C9F1006C28CE /* LongPressView.m */,
+				43882E5E1D23C9F1006C28CE /* LongPressView.xib */,
+				43882E5F1D23C9F1006C28CE /* PanView.h */,
+				43882E601D23C9F1006C28CE /* PanView.m */,
+				43882E611D23C9F1006C28CE /* RightCollectionViewCell.h */,
+				43882E621D23C9F1006C28CE /* RightCollectionViewCell.m */,
+				43882E631D23C9F1006C28CE /* RightCollectionViewCell.xib */,
+				43882E641D23C9F1006C28CE /* ShowMenuView.h */,
+				43882E651D23C9F1006C28CE /* ShowMenuView.m */,
+				43882E661D23C9F1006C28CE /* UpCollectionViewCell.h */,
+				43882E671D23C9F1006C28CE /* UpCollectionViewCell.m */,
+				43882E681D23C9F1006C28CE /* UpCollectionViewCell.xib */,
+				43882E691D23C9F1006C28CE /* WaiMaiDetailTableViewCell.h */,
+				43882E6A1D23C9F1006C28CE /* WaiMaiDetailTableViewCell.m */,
+				43882E6B1D23C9F1006C28CE /* WaiMaiDetailTableViewCell.xib */,
+				43882E6C1D23C9F1006C28CE /* WaiMaiTableViewCell.h */,
+				43882E6D1D23C9F1006C28CE /* WaiMaiTableViewCell.m */,
+				43882E6E1D23C9F1006C28CE /* WaiMaiTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		61409CEBC5EC687B81CF5D5F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1123,61 +1206,12 @@
 		F104CD811D1B8083003EAEEC /* Main(主界面) */ = {
 			isa = PBXGroup;
 			children = (
-				F104CD821D1B8083003EAEEC /* DinnerTable(餐台) */,
+				43882E491D23C9F1006C28CE /* DinnerTable(餐台) */,
 				F104CD951D1B8083003EAEEC /* Ordering(点单) */,
 				F104CDAD1D1B8083003EAEEC /* Other */,
 				F104CDBC1D1B8083003EAEEC /* Retail(零售) */,
 			);
 			path = "Main(主界面)";
-			sourceTree = "<group>";
-		};
-		F104CD821D1B8083003EAEEC /* DinnerTable(餐台) */ = {
-			isa = PBXGroup;
-			children = (
-				F104CD831D1B8083003EAEEC /* Controller */,
-				F104CD871D1B8083003EAEEC /* Model */,
-				F104CD881D1B8083003EAEEC /* View */,
-			);
-			path = "DinnerTable(餐台)";
-			sourceTree = "<group>";
-		};
-		F104CD831D1B8083003EAEEC /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				F104CD841D1B8083003EAEEC /* DinnerTableViewController.h */,
-				F104CD851D1B8083003EAEEC /* DinnerTableViewController.m */,
-				F104CD861D1B8083003EAEEC /* DinnerTableViewController.xib */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		F104CD871D1B8083003EAEEC /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		F104CD881D1B8083003EAEEC /* View */ = {
-			isa = PBXGroup;
-			children = (
-				F104CD891D1B8083003EAEEC /* DeskCollectionViewCell.h */,
-				F104CD8A1D1B8083003EAEEC /* DeskCollectionViewCell.m */,
-				F104CD8B1D1B8083003EAEEC /* DeskCollectionViewCell.xib */,
-				F104CD8C1D1B8083003EAEEC /* LongPressView.h */,
-				F104CD8D1D1B8083003EAEEC /* LongPressView.m */,
-				F104CD8E1D1B8083003EAEEC /* LongPressView.xib */,
-				F104CD8F1D1B8083003EAEEC /* RightCollectionViewCell.h */,
-				F104CD901D1B8083003EAEEC /* RightCollectionViewCell.m */,
-				F104CD911D1B8083003EAEEC /* RightCollectionViewCell.xib */,
-				F104CD921D1B8083003EAEEC /* WaiMaiTableViewCell.h */,
-				F104CD931D1B8083003EAEEC /* WaiMaiTableViewCell.m */,
-				F104CD941D1B8083003EAEEC /* WaiMaiTableViewCell.xib */,
-				F104CE751D1B872E003EAEEC /* WaiMaiDetailTableViewCell.h */,
-				F104CE761D1B872E003EAEEC /* WaiMaiDetailTableViewCell.m */,
-				F104CE771D1B872E003EAEEC /* WaiMaiDetailTableViewCell.xib */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		F104CD951D1B8083003EAEEC /* Ordering(点单) */ = {
@@ -1477,27 +1511,30 @@
 				F104CE171D1B8083003EAEEC /* LM_datePickerView.xib in Resources */,
 				F104CE451D1B8083003EAEEC /* OpenTableAndTakeOutView.xib in Resources */,
 				F104CE1B1D1B8083003EAEEC /* BaseSettingsViewController.xib in Resources */,
-				F104CE791D1B872E003EAEEC /* WaiMaiDetailTableViewCell.xib in Resources */,
 				9179F4DA1D221BB9002CF61D /* LockScreenView.xib in Resources */,
 				F104CE1F1D1B8083003EAEEC /* DeviceTestView.xib in Resources */,
+				43882E771D23C9F1006C28CE /* DeskCollectionTableViewCell.xib in Resources */,
 				F104CE651D1B8083003EAEEC /* Main.storyboard in Resources */,
 				763177131D20FC1E00571559 /* SegmentedView.xib in Resources */,
 				917A06541D1CC48B00CEDB9E /* fuKuanView.xib in Resources */,
+				43882E851D23C9F1006C28CE /* WaiMaiTableViewCell.xib in Resources */,
 				9179F4DC1D221BB9002CF61D /* UnLockView.xib in Resources */,
 				F104CE091D1B8083003EAEEC /* JiLuCaiViewCell.xib in Resources */,
 				F104CE411D1B8083003EAEEC /* OrderingViewController.xib in Resources */,
 				915731CE1D20BBAC00B6EC1D /* DataReportViewController.xib in Resources */,
+				43882E711D23C9F1006C28CE /* DeskCollectionController.xib in Resources */,
 				9179F5931D22795B002CF61D /* DishTypeCollectionViewCell.xib in Resources */,
-				F104CE3D1D1B8083003EAEEC /* RightCollectionViewCell.xib in Resources */,
 				F104CE231D1B8083003EAEEC /* EstimateView.xib in Resources */,
 				F104CE281D1B8083003EAEEC /* PrintSettingsView.xib in Resources */,
 				F104CDFD1D1B8083003EAEEC /* LoginViewController.xib in Resources */,
 				F104CE6F1D1B8083003EAEEC /* LICENSE in Resources */,
+				43882E791D23C9F1006C28CE /* DeskCollectionViewCell.xib in Resources */,
 				F104CE2C1D1B8083003EAEEC /* UpdatePasswordView.xib in Resources */,
-				F104CE3F1D1B8083003EAEEC /* WaiMaiTableViewCell.xib in Resources */,
 				9157322D1D2114E500B6EC1D /* OrderCountTableViewCell.xib in Resources */,
 				F104CE051D1B8083003EAEEC /* CheDanView.xib in Resources */,
+				43882E751D23C9F1006C28CE /* DinnerTableViewController.xib in Resources */,
 				F104CE1D1D1B8083003EAEEC /* AboutSettingsView.xib in Resources */,
+				43882E7B1D23C9F1006C28CE /* LongPressView.xib in Resources */,
 				F104CE151D1B8083003EAEEC /* CancelBookView.xib in Resources */,
 				76D45C7E1D0CFD3B0026491F /* Assets.xcassets in Resources */,
 				F104CE251D1B8083003EAEEC /* FoodCollectionViewCell.xib in Resources */,
@@ -1517,17 +1554,18 @@
 				F104CE011D1B8083003EAEEC /* SearchBlueToothView.xib in Resources */,
 				F104CE4E1D1B8083003EAEEC /* MainViewController.xib in Resources */,
 				F104CE191D1B8083003EAEEC /* TableCollectionViewCell.xib in Resources */,
+				43882E7E1D23C9F1006C28CE /* RightCollectionViewCell.xib in Resources */,
 				F104CE071D1B8083003EAEEC /* JiaoYiJiLuCell.xib in Resources */,
-				F104CE391D1B8083003EAEEC /* DeskCollectionViewCell.xib in Resources */,
 				F104CE2E1D1B8083003EAEEC /* TransferViewController.xib in Resources */,
+				43882E811D23C9F1006C28CE /* UpCollectionViewCell.xib in Resources */,
+				43882E731D23C9F1006C28CE /* DeskTableViewController.xib in Resources */,
 				F104CE0B1D1B8083003EAEEC /* TradeContentView.xib in Resources */,
 				F104CE561D1B8083003EAEEC /* LingShouViewController.xib in Resources */,
 				F104CE521D1B8083003EAEEC /* MainLeftView.xib in Resources */,
 				917A06561D1CC48B00CEDB9E /* LingShouTableViewCell.xib in Resources */,
-				F104CE3B1D1B8083003EAEEC /* LongPressView.xib in Resources */,
-				F104CE371D1B8083003EAEEC /* DinnerTableViewController.xib in Resources */,
 				F104CE211D1B8083003EAEEC /* EstimateSettingView.xib in Resources */,
 				818EFB781D1D096B005C02E5 /* ScanView.xib in Resources */,
+				43882E831D23C9F1006C28CE /* WaiMaiDetailTableViewCell.xib in Resources */,
 				F104CE0F1D1B8083003EAEEC /* BookingManagerViewController.xib in Resources */,
 				F104CE351D1B8083003EAEEC /* VIPTableViewCell.xib in Resources */,
 				F104CE4A1D1B8083003EAEEC /* OrderingCollectionViewCell.xib in Resources */,
@@ -1613,17 +1651,22 @@
 				9179F5781D224FD9002CF61D /* UIColor+Zirkfied.m in Sources */,
 				F104CE081D1B8083003EAEEC /* JiLuCaiViewCell.m in Sources */,
 				F104CE401D1B8083003EAEEC /* OrderingViewController.m in Sources */,
+				43882E821D23C9F1006C28CE /* WaiMaiDetailTableViewCell.m in Sources */,
 				917A06531D1CC48B00CEDB9E /* fuKuanView.m in Sources */,
 				F104CE0C1D1B8083003EAEEC /* TypeTableViewCell.m in Sources */,
 				9179F57C1D224FD9002CF61D /* ZFXAxisLine.m in Sources */,
 				F104CE4F1D1B8083003EAEEC /* MainLeftTableViewCell.m in Sources */,
 				F104CE6E1D1B8083003EAEEC /* FSCalendarStickyHeader.m in Sources */,
+				43882E7D1D23C9F1006C28CE /* RightCollectionViewCell.m in Sources */,
 				F104CE491D1B8083003EAEEC /* OrderingCollectionViewCell.m in Sources */,
 				818EFB7F1D1D098C005C02E5 /* NSString+log.m in Sources */,
 				9179F58D1D224FDA002CF61D /* ZFWave.m in Sources */,
 				818EFB801D1D098C005C02E5 /* UIView+AdjustFrame.m in Sources */,
+				43882E701D23C9F1006C28CE /* DeskCollectionController.m in Sources */,
+				43882E741D23C9F1006C28CE /* DinnerTableViewController.m in Sources */,
 				9179F58B1D224FDA002CF61D /* ZFPieChart.m in Sources */,
 				F104CE261D1B8083003EAEEC /* LM_button.m in Sources */,
+				43882E721D23C9F1006C28CE /* DeskTableViewController.m in Sources */,
 				F104CE701D1B8083003EAEEC /* NSDate+FSExtension.m in Sources */,
 				F104CE721D1B8083003EAEEC /* NSString+FSExtension.m in Sources */,
 				F104CE671D1B8083003EAEEC /* FSCalendar.m in Sources */,
@@ -1633,7 +1676,6 @@
 				9179F5891D224FDA002CF61D /* ZFLineChart.m in Sources */,
 				F104CDFC1D1B8083003EAEEC /* LoginViewController.m in Sources */,
 				F104CE181D1B8083003EAEEC /* TableCollectionViewCell.m in Sources */,
-				F104CE3A1D1B8083003EAEEC /* LongPressView.m in Sources */,
 				917A065B1D1CC48B00CEDB9E /* ZhifuView.m in Sources */,
 				F104CE301D1B8083003EAEEC /* VipViewController.m in Sources */,
 				F104CE201D1B8083003EAEEC /* EstimateSettingView.m in Sources */,
@@ -1644,12 +1686,11 @@
 				F104CE741D1B8083003EAEEC /* UIView+FSExtension.m in Sources */,
 				9179F5841D224FD9002CF61D /* ZFHorizontalAxis.m in Sources */,
 				F104CE2D1D1B8083003EAEEC /* TransferViewController.m in Sources */,
+				43882E781D23C9F1006C28CE /* DeskCollectionViewCell.m in Sources */,
 				F104CE551D1B8083003EAEEC /* LingShouViewController.m in Sources */,
 				F104CE681D1B8083003EAEEC /* FSCalendarAppearance.m in Sources */,
-				F104CE3C1D1B8083003EAEEC /* RightCollectionViewCell.m in Sources */,
 				F104CE041D1B8083003EAEEC /* CheDanView.m in Sources */,
 				9179F5801D224FD9002CF61D /* ZFBar.m in Sources */,
-				F104CE781D1B872E003EAEEC /* WaiMaiDetailTableViewCell.m in Sources */,
 				F104CE121D1B8083003EAEEC /* BookManagerTableViewCell.m in Sources */,
 				F104CE161D1B8083003EAEEC /* LM_datePickerView.m in Sources */,
 				F104CE421D1B8083003EAEEC /* DishTypeView.m in Sources */,
@@ -1666,8 +1707,8 @@
 				F104CE271D1B8083003EAEEC /* PrintSettingsView.m in Sources */,
 				F104CE6C1D1B8083003EAEEC /* FSCalendarFlowLayout.m in Sources */,
 				9179F5881D224FDA002CF61D /* ZFLine.m in Sources */,
+				43882E7A1D23C9F1006C28CE /* LongPressView.m in Sources */,
 				F104CE2B1D1B8083003EAEEC /* UpdatePasswordView.m in Sources */,
-				F104CE381D1B8083003EAEEC /* DeskCollectionViewCell.m in Sources */,
 				9179F58C1D224FDA002CF61D /* ZFTranslucencePath.m in Sources */,
 				F104CE0E1D1B8083003EAEEC /* BookingManagerViewController.m in Sources */,
 				F104CE0A1D1B8083003EAEEC /* TradeContentView.m in Sources */,
@@ -1676,7 +1717,6 @@
 				F104CE001D1B8083003EAEEC /* SearchBlueToothView.m in Sources */,
 				F104CE061D1B8083003EAEEC /* JiaoYiJiLuCell.m in Sources */,
 				F104CE511D1B8083003EAEEC /* MainLeftView.m in Sources */,
-				F104CE3E1D1B8083003EAEEC /* WaiMaiTableViewCell.m in Sources */,
 				818EFB771D1D096B005C02E5 /* ScanView.m in Sources */,
 				9179F57B1D224FD9002CF61D /* ZFPopoverLabel.m in Sources */,
 				F104CE291D1B8083003EAEEC /* PrintSettingTableViewCell.m in Sources */,
@@ -1688,10 +1728,12 @@
 				F104CE4B1D1B8083003EAEEC /* OrderingTableViewCell.m in Sources */,
 				9179F57D1D224FD9002CF61D /* ZFYAxisLine.m in Sources */,
 				9179F5851D224FDA002CF61D /* ZFHorizontalBar.m in Sources */,
+				43882E7C1D23C9F1006C28CE /* PanView.m in Sources */,
 				F104CE711D1B8083003EAEEC /* NSDate+TEAExtensions.m in Sources */,
 				9179F5791D224FD9002CF61D /* UIView+Zirkfied.m in Sources */,
 				F104CE101D1B8083003EAEEC /* AddBookView.m in Sources */,
 				F104CE141D1B8083003EAEEC /* CancelBookView.m in Sources */,
+				43882E801D23C9F1006C28CE /* UpCollectionViewCell.m in Sources */,
 				F104CE6B1D1B8083003EAEEC /* FSCalendarConstance.m in Sources */,
 				9179F58E1D224FDA002CF61D /* ZFWaveChart.m in Sources */,
 				9179F5861D224FDA002CF61D /* ZFHorizontalBarChart.m in Sources */,
@@ -1701,12 +1743,14 @@
 				763177111D20FB8200571559 /* SegmentedView.m in Sources */,
 				F104CE321D1B8083003EAEEC /* VIPLeftView.m in Sources */,
 				F104CE341D1B8083003EAEEC /* VIPTableViewCell.m in Sources */,
+				43882E7F1D23C9F1006C28CE /* ShowMenuView.m in Sources */,
+				43882E761D23C9F1006C28CE /* DeskCollectionTableViewCell.m in Sources */,
 				9179F57E1D224FD9002CF61D /* ZFConst.m in Sources */,
 				F104CE691D1B8083003EAEEC /* FSCalendarCell.m in Sources */,
-				F104CE361D1B8083003EAEEC /* DinnerTableViewController.m in Sources */,
 				917A06571D1CC48B00CEDB9E /* secondStepView.m in Sources */,
 				F104CE1C1D1B8083003EAEEC /* AboutSettingsView.m in Sources */,
 				F104CE461D1B8083003EAEEC /* OpenTableButton.m in Sources */,
+				43882E841D23C9F1006C28CE /* WaiMaiTableViewCell.m in Sources */,
 				F104CE621D1B8083003EAEEC /* main.m in Sources */,
 				F104CE1E1D1B8083003EAEEC /* DeviceTestView.m in Sources */,
 				917A06551D1CC48B00CEDB9E /* LingShouTableViewCell.m in Sources */,

@@ -11,7 +11,11 @@
 @implementation DeskCollectionViewCell
 
 - (void)awakeFromNib {
-    // Initialization code
+    self.imgView.layer.cornerRadius = 10;
+    self.imgView.layer.masksToBounds = YES;
+    self.imgView.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    self.imgView.layer.borderWidth = 1;
+   
 }
 
 @end
