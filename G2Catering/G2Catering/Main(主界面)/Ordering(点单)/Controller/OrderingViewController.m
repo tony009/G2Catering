@@ -20,6 +20,10 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
 
 @interface OrderingViewController ()<UITableViewDelegate,UITableViewDataSource,UICollectionViewDelegate,UICollectionViewDataSource>
 
+
+
+@property (weak, nonatomic) IBOutlet UIView *buttonView; //
+
 @property (weak, nonatomic) IBOutlet UITableView *orderListTableView;
 @property (weak, nonatomic) IBOutlet UICollectionView *orderCollectionView;
 
@@ -43,7 +47,6 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
 
     [self p_initViews];
 }
@@ -95,6 +98,12 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
 
 }
 
+
+- (IBAction)orderFuncAction:(UIButton *)sender {
+    
+    self.buttonView.hidden = !self.buttonView.hidden;
+    
+}
 
 
 

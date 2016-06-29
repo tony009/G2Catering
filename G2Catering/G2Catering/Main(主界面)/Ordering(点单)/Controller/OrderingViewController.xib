@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrderingViewController">
             <connections>
+                <outlet property="buttonView" destination="Z3p-iE-Jlq" id="qMB-7L-9Qu"/>
                 <outlet property="dishTypeView" destination="5AC-J0-qMj" id="v9r-gj-Sqi"/>
                 <outlet property="firstView" destination="S6R-Qw-tl7" id="REy-D8-KoU"/>
                 <outlet property="moneyLabel" destination="ltp-uI-WMm" id="1jv-V2-7gT"/>
@@ -45,6 +46,9 @@
                                         <constraint firstAttribute="width" constant="30" id="cXe-IV-QS8"/>
                                     </constraints>
                                     <state key="normal" image="椭圆1-1"/>
+                                    <connections>
+                                        <action selector="orderFuncAction:" destination="-1" eventType="touchUpInside" id="NGA-LS-j97"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -71,6 +75,37 @@
                                 <outlet property="delegate" destination="-1" id="o6f-LF-9Ak"/>
                             </connections>
                         </tableView>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z3p-iE-Jlq" userLabel="buttonView">
+                            <rect key="frame" x="0.0" y="66" width="290" height="145"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXs-zs-RuN">
+                                    <rect key="frame" x="0.0" y="0.0" width="290" height="73"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <state key="normal" title="删除订单">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gpn-rh-38E">
+                                    <rect key="frame" x="0.0" y="73" width="290" height="72"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <state key="normal" title="退出订单">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.16470588235294117" green="0.25882352941176467" blue="0.3529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="Gpn-rh-38E" firstAttribute="leading" secondItem="Z3p-iE-Jlq" secondAttribute="leading" id="8IY-Zb-HpG"/>
+                                <constraint firstAttribute="height" constant="145" id="MwJ-3A-Fxd"/>
+                                <constraint firstItem="JXs-zs-RuN" firstAttribute="leading" secondItem="Z3p-iE-Jlq" secondAttribute="leading" id="Vma-8F-YQ9"/>
+                                <constraint firstItem="JXs-zs-RuN" firstAttribute="height" secondItem="Gpn-rh-38E" secondAttribute="height" id="Xy2-HD-Ad5"/>
+                                <constraint firstAttribute="trailing" secondItem="Gpn-rh-38E" secondAttribute="trailing" id="eMU-lO-IaR"/>
+                                <constraint firstItem="Gpn-rh-38E" firstAttribute="top" secondItem="JXs-zs-RuN" secondAttribute="bottom" id="kud-Zj-PKs"/>
+                                <constraint firstAttribute="bottom" secondItem="Gpn-rh-38E" secondAttribute="bottom" id="oFP-hH-mBQ"/>
+                                <constraint firstItem="JXs-zs-RuN" firstAttribute="top" secondItem="Z3p-iE-Jlq" secondAttribute="top" id="oZm-FC-R4x"/>
+                                <constraint firstAttribute="trailing" secondItem="JXs-zs-RuN" secondAttribute="trailing" id="reE-DX-bTB"/>
+                            </constraints>
+                        </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="共6道" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFJ-TC-IZU">
                             <rect key="frame" x="17" y="621" width="100" height="21"/>
                             <constraints>
@@ -121,16 +156,19 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="Hw6-e0-a3O" firstAttribute="top" secondItem="Ziq-KQ-AAH" secondAttribute="top" id="4Ok-zj-g3f"/>
+                        <constraint firstAttribute="trailing" secondItem="Z3p-iE-Jlq" secondAttribute="trailing" id="ABg-8J-wi9"/>
                         <constraint firstAttribute="bottom" secondItem="Sro-7i-z5n" secondAttribute="bottom" id="BS8-XT-t5I"/>
                         <constraint firstItem="NFJ-TC-IZU" firstAttribute="top" secondItem="jSb-9u-aw4" secondAttribute="bottom" constant="16" id="FP8-rz-tnu"/>
                         <constraint firstItem="Sro-7i-z5n" firstAttribute="width" secondItem="89F-nS-0an" secondAttribute="width" id="HFM-e0-WJX"/>
                         <constraint firstItem="jSb-9u-aw4" firstAttribute="top" secondItem="GSo-NL-11I" secondAttribute="bottom" constant="16" id="HGv-7c-Fk5"/>
+                        <constraint firstItem="Z3p-iE-Jlq" firstAttribute="leading" secondItem="Ziq-KQ-AAH" secondAttribute="leading" id="IA4-OG-Tuj"/>
                         <constraint firstItem="89F-nS-0an" firstAttribute="top" secondItem="NFJ-TC-IZU" secondAttribute="bottom" constant="6" id="Nc0-mq-U6r"/>
                         <constraint firstItem="NFJ-TC-IZU" firstAttribute="leading" secondItem="Ziq-KQ-AAH" secondAttribute="leading" constant="17" id="Qz5-hB-rUi"/>
                         <constraint firstAttribute="trailing" secondItem="Sro-7i-z5n" secondAttribute="trailing" id="UmN-qi-Yj3"/>
                         <constraint firstAttribute="trailing" secondItem="Hw6-e0-a3O" secondAttribute="trailing" id="WqY-qo-EQD"/>
                         <constraint firstItem="GSo-NL-11I" firstAttribute="leading" secondItem="Ziq-KQ-AAH" secondAttribute="leading" id="Z0h-tb-UsV"/>
                         <constraint firstAttribute="bottom" secondItem="89F-nS-0an" secondAttribute="bottom" id="Z21-fH-4Zz"/>
+                        <constraint firstItem="Z3p-iE-Jlq" firstAttribute="top" secondItem="GSo-NL-11I" secondAttribute="bottom" id="abn-Io-yvc"/>
                         <constraint firstAttribute="trailing" secondItem="ltp-uI-WMm" secondAttribute="trailing" constant="17" id="bv0-1r-6Wu"/>
                         <constraint firstItem="jSb-9u-aw4" firstAttribute="leading" secondItem="Ziq-KQ-AAH" secondAttribute="leading" id="cqX-j5-xid"/>
                         <constraint firstItem="Hw6-e0-a3O" firstAttribute="leading" secondItem="Ziq-KQ-AAH" secondAttribute="leading" id="d69-iL-XMk"/>
