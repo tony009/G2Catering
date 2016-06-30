@@ -23,6 +23,14 @@
     NSInteger fromIndex;
     NSInteger endIndex;
     BOOL gestureSelectRight;
+    PanView *panView;
+    CGPoint middlePoint2;
+    NSMutableArray *dataTableArray;
+    NSArray *resultAAray;
+    
+//  换桌
+    NSString *biginHuan;
+    NSString *endHuan;
 }
 
 @end
@@ -32,10 +40,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    
     [self _initCollectionView];
     _array = @[@"全部",@"小桌",@"中桌",@"大桌",@"H5",@"外卖",@"哈哈"];
+    
+//  显示桌子，1 有桌子，0为 还没桌子
+    NSArray *pinArray = @[@"1",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0"];
+    NSMutableArray *mutablePinArray = [NSMutableArray arrayWithArray:pinArray];
+    resultAAray = @[[mutablePinArray mutableCopy],[mutablePinArray mutableCopy],[mutablePinArray mutableCopy],
+                    [mutablePinArray mutableCopy],[mutablePinArray mutableCopy],
+                    [mutablePinArray mutableCopy],[mutablePinArray mutableCopy],[mutablePinArray mutableCopy],
+                    [mutablePinArray mutableCopy],[mutablePinArray mutableCopy]];
+    [self caculationNumbers:resultAAray];
+    
     zhuoArray = @[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"11",@"12",@"13",@"14",@"15",@"16"
                   ,@"17",@"18",@"19",@"20"];
+    
+//    这里是所有消费的，1为有人消费，0 为没人消费
     NSArray *arr = @[@"1",@"1",@"1",@"1",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0"];
     arr2 = [NSMutableArray arrayWithArray:arr];
     
@@ -69,7 +91,7 @@
     
     
     UILongPressGestureRecognizer *longGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPressAction:)];
-    longGesture.minimumPressDuration = 5.0;
+    longGesture.minimumPressDuration = 1.0;
     [self.collectionView addGestureRecognizer:longGesture];
     
     self.rightCollection.delegate = self;
@@ -89,7 +111,7 @@
     
     if (collectionView.tag == 1001) {
         
-        return 20;
+        return dataTableArray.count;
     }else{
         
         return 7;
@@ -112,55 +134,7 @@
         UIPanGestureRecognizer *panRight = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(p_swipeRight:)];
         [cell addGestureRecognizer:panRight];
          cell.addressLabel.text = @"";
-        
-//        if (indexPath.row == 1) {
-//            
-//            cell.imgView.image = [UIImage imageNamed:@"空台背景"];
-//            if (deskState == DeskTableStateRevert) {
-//               cell.imgView.image = [UIImage imageNamed:@"7584682.jpg"];
-//            }
-//            cell.baiLabel.text = @"";
-//            cell.shiLabel.text = @"";
-//            cell.geLabel.text = @"";
-//            cell.addressLabel.text = @"阳光兴源";
-//           
-//        }else if (indexPath.row == 2) {
-//            
-//            cell.imgView.image = [UIImage imageNamed:@"10分钟背景"];
-//            if (deskState == DeskTableStateRevert) {
-//                cell.imgView.image = [UIImage imageNamed:@"7584682.jpg"];
-//            }
-//            cell.baiLabel.text = @"";
-//            cell.shiLabel.text = @"1";
-//            cell.geLabel.text = @"0";
-//        }else if (indexPath.row == 3) {
-//            
-//            cell.imgView.image = [UIImage imageNamed:@"60分钟背景"];
-//            if (deskState == DeskTableStateRevert) {
-//                cell.imgView.image = [UIImage imageNamed:@"7584682.jpg"];
-//            }
-//            cell.baiLabel.text = @"";
-//            cell.shiLabel.text = @"6";
-//            cell.geLabel.text = @"0";
-//            cell.nameLabel.textColor = [UIColor blueColor];;
-//        }else if (indexPath.row == 4) {
-//            
-//            cell.imgView.image = [UIImage imageNamed:@"预定背景"];
-//            if (deskState == DeskTableStateRevert) {
-//                cell.imgView.image = [UIImage imageNamed:@"7584682.jpg"];
-//            }
-//            cell.baiLabel.text = @"";
-//            cell.shiLabel.text = @"";
-//            cell.geLabel.text = @"";
-//        }else{
-//            if (deskState == DeskTableStateCombin) {
-//                cell.imgView.image = [UIImage imageNamed:@"7584682.jpg"];
-//            }
-//        }
-//        
-//        cell.priceLabel.text = @"12元";
-//        cell.nameLabel.text = zhuoArray[indexPath.row];
-        
+
         if ([arr2[indexPath.row] isEqualToString:@"0"]) {
             cell.imgView.image = [UIImage imageNamed:@"空台背景"];
             if (deskState == DeskTableStateCombin) {
@@ -173,7 +147,10 @@
             }
         }
         cell.priceLabel.text = @"12元";
-        cell.nameLabel.text = zhuoArray[indexPath.row];
+        cell.nameLabel.text = dataTableArray[indexPath.row];
+        if ([self contarinString:dataTableArray[indexPath.row]]) {
+            [cell removeGestureRecognizer:panRight];
+        }
         
         return cell;
     }else{
@@ -199,6 +176,7 @@
         fromIndex = indexPath.row;
         endIndex = 0;
         _longView = [[ShowMenuView alloc] initWithFrame:self.view.bounds];
+        _longView.deskName = cell.nameLabel.text;
         _longView.delegate = self;
         [_longView setPoint:point cllFrame:cell.frame];
         _longView.backgroundColor = RGB(71, 71, 71);
@@ -237,10 +215,12 @@
             if ([cell.imgView.image isEqual:[UIImage imageNamed:@"7584682.jpg"]]) {
                 [[[UIAlertView alloc] initWithTitle:@"提示" message:@" 已经有人了" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil] show];
             }else{
+                endHuan = cell.nameLabel.text;
                 endIndex = indexPath.row;
-                [arr2 replaceObjectAtIndex:endIndex withObject:@"1"];
-                [arr2 replaceObjectAtIndex:fromIndex withObject:@"0"];
-                [[[UIAlertView alloc] initWithTitle:@"提示" message:[NSString stringWithFormat:@"换到第%@桌",zhuoArray[indexPath.row]] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil] show];
+                
+
+                [self revertNewArray:biginHuan endIndexz:endHuan];
+                [[[UIAlertView alloc] initWithTitle:@"提示" message:[NSString stringWithFormat:@"换到第%@桌",cell.nameLabel.text] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil] show];
                 deskState = DeskTableStateDefault;
                 [self.collectionView reloadData];
             }
@@ -263,8 +243,9 @@
         }
     }else{
         
-        RightCollectionViewCell *cell = (RightCollectionViewCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
-//        cell.backImgView.image = [UIImage imageNamed:@"点击菜品"];
+        RightCollectionViewCell *cell = (RightCollectionViewCell *)[self.rightCollection cellForItemAtIndexPath:indexPath];
+
+        cell.backImgView.backgroundColor = RGB(0x2a, 0x42, 0x5a);
 
     }
 }
@@ -280,19 +261,19 @@
 
 }
 #pragma mark- Delegate方法
--(void)btnDelegateMethod:(UIButton *)btn
+-(void)btnDelegateMethod:(UIButton *)btn deskName:(NSString *)deskName
 {
     switch (btn.tag-99) {
         case 1:
-            NSLog(@"第一个按钮");
+            biginHuan = deskName;
             deskState = DeskTableStateRevert;
-            
             break;
         case 2:
             NSLog(@"第二个按钮");
+            
             break;
         case 3:
-            NSLog(@"第三个按钮");
+            [self removeDesk:deskName];
             break;
         case 4:
             deskState = DeskTableStateCombin;
@@ -306,6 +287,8 @@
     [self changgeDeskTable];
 }
 
+
+
 -(void)changgeDeskTable
 {
     [self.collectionView reloadData];
@@ -313,82 +296,128 @@
 
 -(void)p_swipeRight:(UIPanGestureRecognizer *)gesture{
     
-    
-    PanView *vi = [[PanView alloc] init];
-    
-    
-    if (gesture.state != UIGestureRecognizerStateEnded && gesture.state != UIGestureRecognizerStateFailed){
-        CGPoint point = [gesture locationInView:self.collectionView];
-        NSIndexPath *indexPath = [self.collectionView indexPathForItemAtPoint:point];
-        
-        DeskCollectionViewCell *cell = (DeskCollectionViewCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
-            //通过使用 locationInView 这个方法,来获取到手势的坐标
-        
-        if (![self.view.subviews containsObject:vi]) {
-            [self.view addSubview:vi];
-            NSLog(@"121212");
-        }
-        vi.frame = cell.frame;
-//        NSLog(@"__vi__%@",vi);
-        UIView *vi2 = gesture.view;
-//        vi.backgroundColor = [UIColor redColor];
-        CGPoint location = [gesture locationInView:gesture.view.superview];
-        vi.center = location;
+    CGPoint point = [gesture locationInView:self.collectionView];
+    NSIndexPath *indexPath = [self.collectionView indexPathForItemAtPoint:point];
+    DeskCollectionViewCell *cll = (DeskCollectionViewCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
+    CGPoint middlePoint = CGPointMake(69+cll.frame.origin.x+cll.frame.size.width/2, cll.frame.origin.y+66+cll.frame.size.height/2);
+    if (gesture.state == UIGestureRecognizerStateBegan) {
+        DeskCollectionViewCell *cll = (DeskCollectionViewCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
+        panView = [[PanView alloc] init];
+        panView.frame = cll.frame;
+        panView.center = middlePoint;
+        middlePoint2 = middlePoint;
+        [self.view addSubview:panView];
+        [self caculationNewArray:[cll.nameLabel.text intValue]];
     }
     
-    
-//    if (gesture.state == UIGestureRecognizerStateBegan) {
-//        CGPoint point = [gesture locationInView:self.collectionView];
-//        NSIndexPath *indexPath = [self.collectionView indexPathForItemAtPoint:point];
-//        
-//        DeskCollectionViewCell *cell = (DeskCollectionViewCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
-//        if (![cell.imgView.image isEqual:[UIImage imageNamed:@"空台背景"]]) {
-//            
-//        }
-//        
-//        fromIndex = indexPath.row;
-//        endIndex = 0;
-//        _longView = [[ShowMenuView alloc] initWithFrame:self.view.bounds];
-//        _longView.delegate = self;
-//        [_longView setPoint:point cllFrame:cell.frame];
-//        _longView.backgroundColor = RGB(71, 71, 71);
-//        _longView.alpha = 0.7;
-//        
-//        [self.view.window addSubview:_longView];
-//    }
+    if (gesture.state ==UIGestureRecognizerStateChanged) {
+        
+        CGPoint location = [gesture locationInView:gesture.view.superview];
+        CGFloat xMargin;
+        if (location.x<middlePoint2.x) {
+            xMargin = middlePoint2.x;
+        }else{
+            xMargin = location.x;
+        }
+        panView.center = CGPointMake(xMargin, middlePoint2.y);
+    }
+    if (gesture.state ==UIGestureRecognizerStateEnded) {
+        [panView removeFromSuperview];
+        [self caculationNumbers:resultAAray];
+    }
+
 }
 
-//- (void) handlePanGestures:(UIPanGestureRecognizer*)paramSender{
-//    
-//}
 #pragma mark- 点击方法
 - (IBAction)searchBtnAction:(id)sender {
     
     self.searchTextField.hidden = !self.searchTextField.hidden;
 }
 
-
-- (UIView*)duplicate:(UIView*)view
+#pragma mark- 计算相关拼桌
+-(void)caculationNumbers:(NSArray *)dataArray
 {
-    NSData * tempArchive = [NSKeyedArchiver archivedDataWithRootObject:view];
-    return [NSKeyedUnarchiver unarchiveObjectWithData:tempArchive];
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        NSMutableArray *mutabl = [NSMutableArray array];
+        for (int i =0; i<dataArray.count; i++) {
+            NSMutableArray *muarr = dataArray[i];
+            for (int j=0; j<[dataArray[i] count]; j++) {
+                if ([muarr[j] isEqualToString:@"1"]) {
+                    if (j==0) {
+                        [mutabl addObject:[NSString stringWithFormat:@"%d",i+1]];
+                    }else{
+                        [mutabl addObject:[NSString stringWithFormat:@"%d-%d",i+1,j]];
+                    }
+                }
+            }
+        }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            dataTableArray = mutabl;
+            
+            [self.collectionView reloadData];
+        });
+    });
+}
+#pragma mark- 创建新桌（拼桌）
+-(void)caculationNewArray:(int)changgeIndex
+{
+    NSMutableArray *mutable = resultAAray[changgeIndex-1];
+    for (int i = 0; i<[mutable count]; i++) {
+        if ([mutable[i] isEqualToString:@"0"]) {
+            [mutable replaceObjectAtIndex:i withObject:@"1"];
+            [arr2 insertObject:@"0" atIndex:changgeIndex];
+            break;
+        }
+    }
+}
+#pragma mark- 换桌
+-(void)revertNewArray:(NSString*)fromIndexz endIndexz:(NSString*)endIndexz
+{
+//  如果含有杠杠  （干掉这个桌）
+    if ([self contarinString:fromIndexz]) {
+        int begin = [[fromIndexz componentsSeparatedByString:@"-"][0] intValue];
+        int end = [[fromIndexz componentsSeparatedByString:@"-"][1] intValue];
+        NSMutableArray *mutable = resultAAray[begin -1];
+        [mutable replaceObjectAtIndex:end withObject:@"0"];
+        [self caculationNumbers:resultAAray];
+        if (fromIndex<endIndex) {
+                [arr2 replaceObjectAtIndex:fromIndex withObject:@"0"];
+                [arr2 replaceObjectAtIndex:endIndex-1 withObject:@"1"];
+            
+        }else{
+            
+        }
+  }
 }
 
+#pragma mark- 结账后的桌
+-(void)removeDesk:(NSString *)nameString
+{
+    if ([self contarinString:nameString]) {
+        int begin = [[nameString componentsSeparatedByString:@"-"][0] intValue];
+        int end = [[nameString componentsSeparatedByString:@"-"][1] intValue];
+        NSMutableArray *mutable = resultAAray[begin -1];
+        [mutable replaceObjectAtIndex:end withObject:@"0"];
+        [self caculationNumbers:resultAAray];
+    }
+    return;
+}
 
+-(BOOL)contarinString:(NSString *)string
+{
+    //字条串是否包含有某字符串
+    if ([string rangeOfString:@"-"].location == NSNotFound) {
+        return NO;
+    } else {
+        return YES;
+    }
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

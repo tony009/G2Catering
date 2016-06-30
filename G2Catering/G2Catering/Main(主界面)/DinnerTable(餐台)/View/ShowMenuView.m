@@ -71,8 +71,8 @@
 }
 
 - (IBAction)btnMethod:(UIButton *)sender {
-    if ([self.delegate respondsToSelector:@selector(btnDelegateMethod:)]) {
-        [self.delegate btnDelegateMethod:sender];
+    if ([self.delegate respondsToSelector:@selector(btnDelegateMethod:deskName:)]) {
+        [self.delegate btnDelegateMethod:sender deskName:self.deskName];
     }
 }
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event

@@ -9,11 +9,13 @@
 #import <UIKit/UIKit.h>
 @protocol ShowMenuViewViewDelegate <NSObject>
 
--(void)btnDelegateMethod:(UIButton *)btn;
+-(void)btnDelegateMethod:(UIButton *)btn deskName:(NSString *)deskName;
 
 @end
 @interface ShowMenuView : UIView
 @property(nonatomic,weak)id<ShowMenuViewViewDelegate> delegate;
+
+@property (nonatomic,copy)NSString *deskName;
 
 -(void)setPoint:(CGPoint)point cllFrame:(CGRect)cllFrame;
 @end
