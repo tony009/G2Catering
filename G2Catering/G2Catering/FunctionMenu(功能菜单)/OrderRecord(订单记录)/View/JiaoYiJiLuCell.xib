@@ -1,74 +1,91 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="JiaoYiJiLuCell">
-            <rect key="frame" x="0.0" y="0.0" width="689" height="44"/>
+            <rect key="frame" x="0.0" y="0.0" width="1029" height="50"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="689" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="1029" height="49"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="餐台" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BG8-mf-kdc">
-                        <rect key="frame" x="58" y="11" width="50" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="餐台08" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BG8-mf-kdc">
+                        <rect key="frame" x="96" y="13" width="55" height="24"/>
                         <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="17"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="开单人" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZw-aD-FLV">
-                        <rect key="frame" x="122" y="11" width="71" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZw-aD-FLV">
+                        <rect key="frame" x="201" y="13" width="28" height="24"/>
                         <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="17"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="单号" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dML-rU-27p">
-                        <rect key="frame" x="0.0" y="11" width="50" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="001" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dML-rU-27p">
+                        <rect key="frame" x="23" y="13" width="28" height="24"/>
                         <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="17"/>
-                        <color key="textColor" red="0.16292934689999999" green="0.56475102600000004" blue="0.93497474749999998" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="支付方式" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXJ-Tf-ZNX">
-                        <rect key="frame" x="539" y="11" width="71" height="21"/>
-                        <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="17"/>
-                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="状态" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NM9-Dw-Xxy">
-                        <rect key="frame" x="468" y="11" width="56" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已下单" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NM9-Dw-Xxy">
+                        <rect key="frame" x="650" y="13" width="51" height="24"/>
                         <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="17"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="开单时间" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6m-W0-1Ri">
-                        <rect key="frame" x="201" y="11" width="98" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01/01 14:00:00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6m-W0-1Ri">
+                        <rect key="frame" x="274" y="13" width="115" height="24"/>
                         <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="17"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="应收金额" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMR-ij-Nac">
-                        <rect key="frame" x="320" y="11" width="63" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥168" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMR-ij-Nac">
+                        <rect key="frame" x="439" y="13" width="38" height="24"/>
                         <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="17"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="实收金额" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFJ-gt-gbI">
-                        <rect key="frame" x="397" y="11" width="63" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥168" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFJ-gt-gbI">
+                        <rect key="frame" x="547" y="13" width="38" height="24"/>
                         <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="17"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="结账时间" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2z-n3-cOk">
-                        <rect key="frame" x="618" y="11" width="71" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01/01 14:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2z-n3-cOk">
+                        <rect key="frame" x="829" y="13" width="115" height="24"/>
                         <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="17"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="形状-13-拷贝" translatesAutoresizingMaskIntoConstraints="NO" id="538-up-Vxb">
+                        <rect key="frame" x="751" y="14" width="23" height="23"/>
+                    </imageView>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="mZw-aD-FLV" firstAttribute="leading" secondItem="BG8-mf-kdc" secondAttribute="trailing" constant="50" id="15z-HZ-HIN"/>
+                    <constraint firstItem="BG8-mf-kdc" firstAttribute="leading" secondItem="dML-rU-27p" secondAttribute="trailing" constant="45" id="3Vl-4o-dWx"/>
+                    <constraint firstItem="mZw-aD-FLV" firstAttribute="centerY" secondItem="BG8-mf-kdc" secondAttribute="centerY" id="6xV-xr-8zA"/>
+                    <constraint firstItem="K2z-n3-cOk" firstAttribute="centerY" secondItem="NM9-Dw-Xxy" secondAttribute="centerY" id="7DD-Do-sze"/>
+                    <constraint firstItem="BG8-mf-kdc" firstAttribute="centerY" secondItem="dML-rU-27p" secondAttribute="centerY" id="Ahf-BV-REf"/>
+                    <constraint firstItem="538-up-Vxb" firstAttribute="centerY" secondItem="NM9-Dw-Xxy" secondAttribute="centerY" id="CdT-Nx-Jhj"/>
+                    <constraint firstItem="NM9-Dw-Xxy" firstAttribute="centerY" secondItem="eFJ-gt-gbI" secondAttribute="centerY" id="DvL-eP-5pU"/>
+                    <constraint firstItem="dML-rU-27p" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="GSQ-WE-Qtr"/>
+                    <constraint firstItem="B6m-W0-1Ri" firstAttribute="leading" secondItem="mZw-aD-FLV" secondAttribute="trailing" constant="45" id="IL7-RS-bpb"/>
+                    <constraint firstItem="B6m-W0-1Ri" firstAttribute="centerY" secondItem="mZw-aD-FLV" secondAttribute="centerY" id="Pn0-0S-m6l"/>
+                    <constraint firstItem="nMR-ij-Nac" firstAttribute="leading" secondItem="B6m-W0-1Ri" secondAttribute="trailing" constant="50" id="QX1-yD-iWH"/>
+                    <constraint firstItem="NM9-Dw-Xxy" firstAttribute="leading" secondItem="eFJ-gt-gbI" secondAttribute="trailing" constant="65" id="Qss-9b-Udg"/>
+                    <constraint firstItem="eFJ-gt-gbI" firstAttribute="centerY" secondItem="nMR-ij-Nac" secondAttribute="centerY" id="cg7-Oi-LgJ"/>
+                    <constraint firstItem="K2z-n3-cOk" firstAttribute="leading" secondItem="538-up-Vxb" secondAttribute="trailing" constant="55" id="egk-Nj-v7C"/>
+                    <constraint firstItem="eFJ-gt-gbI" firstAttribute="leading" secondItem="nMR-ij-Nac" secondAttribute="trailing" constant="70" id="pV7-OS-OBq"/>
+                    <constraint firstItem="nMR-ij-Nac" firstAttribute="centerY" secondItem="B6m-W0-1Ri" secondAttribute="centerY" id="tgJ-Vf-oKu"/>
+                    <constraint firstItem="dML-rU-27p" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="vU8-X2-aUm"/>
+                    <constraint firstItem="538-up-Vxb" firstAttribute="leading" secondItem="NM9-Dw-Xxy" secondAttribute="trailing" constant="50" id="w4w-h5-Yia"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="cantai" destination="BG8-mf-kdc" id="kD5-3a-ibs"/>
@@ -77,11 +94,13 @@
                 <outlet property="kaidanren" destination="mZw-aD-FLV" id="b1w-KR-T2c"/>
                 <outlet property="kaidanshijian" destination="B6m-W0-1Ri" id="OIH-ji-uT3"/>
                 <outlet property="shihoujine" destination="eFJ-gt-gbI" id="WwX-Yl-4H2"/>
-                <outlet property="typeLabel" destination="nXJ-Tf-ZNX" id="JQF-2U-Dbi"/>
                 <outlet property="yingshoujine" destination="nMR-ij-Nac" id="PfH-eg-4Ke"/>
                 <outlet property="zhuangtai" destination="NM9-Dw-Xxy" id="0Ma-Ch-lnh"/>
             </connections>
             <point key="canvasLocation" x="117.5" y="220"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="形状-13-拷贝" width="23" height="23"/>
+    </resources>
 </document>
