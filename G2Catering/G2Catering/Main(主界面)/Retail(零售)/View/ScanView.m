@@ -131,6 +131,10 @@
 
 
 - (IBAction)yesAction:(UIButton *)sender {
+    
+    NSLog(@"确定");
+   [self removeFromSuperview];
+    
 }
 
 #pragma mark - AVCaptureMetadataOutputObjectsDelegate

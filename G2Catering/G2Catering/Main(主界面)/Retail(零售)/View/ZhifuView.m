@@ -44,8 +44,28 @@
     [self setRoundAngleWithView:self.yuView withCornerRadius:5 withColor:[UIColor colorWithRed:42/255.0 green:66/255.0 blue:90/255.0 alpha:1]];
     self.inputText.delegate = self;
     self.inputText.keyboardType = UIKeyboardTypeNumberPad;
+    
+    //刘明
+    
+    [self scan];
+    
 }
 
+- (void)scan{
+    
+    [self.scanBtn addTarget:self action:@selector(didClickScanBtn) forControlEvents:UIControlEventTouchUpInside];
+    
+}
+
+- (void)didClickScanBtn{
+    
+    ScanView *scanView = [[NSBundle mainBundle] loadNibNamed:@"ScanView" owner:nil options:nil].lastObject;
+    
+    [self addSubview:scanView];
+}
+
+
+//end
 
 //设置圆角
 - (void)setRoundAngleWithView:(UIView *)changeView withCornerRadius:(double)cornerRadius withColor:(UIColor *)color{
@@ -131,6 +151,19 @@
     return cell;
     
     
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    _selectedBtn.selected = NO;
+    TypeCollectionViewCell *cell = (TypeCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    _selectedBtn = cell.typeBtn;
+    cell.typeBtn.selected = !cell.typeBtn.selected;
+  //刘明
+    fuKuanView *payView = [[NSBundle mainBundle] loadNibNamed:@"fuKuanView" owner:nil options:nil].firstObject;
+    
+    [self addSubview:payView];
+    
+    //end
 }
 
 - (IBAction)yesAction:(UIButton *)sender {
@@ -239,13 +272,6 @@
 
 
 
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    _selectedBtn.selected = NO;
-    TypeCollectionViewCell *cell = (TypeCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
-    _selectedBtn = cell.typeBtn;
-    cell.typeBtn.selected = !cell.typeBtn.selected;
-    
 
-}
 
 @end
