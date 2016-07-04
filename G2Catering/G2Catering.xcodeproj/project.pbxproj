@@ -32,6 +32,7 @@
 		43882E851D23C9F1006C28CE /* WaiMaiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E6E1D23C9F1006C28CE /* WaiMaiTableViewCell.xib */; };
 		763177111D20FB8200571559 /* SegmentedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 763177101D20FB8200571559 /* SegmentedView.m */; };
 		763177131D20FC1E00571559 /* SegmentedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 763177121D20FC1E00571559 /* SegmentedView.xib */; };
+		763177171D2A406200571559 /* 下拉提示.gif in Resources */ = {isa = PBXBuildFile; fileRef = 763177161D2A406200571559 /* 下拉提示.gif */; };
 		76D45C7E1D0CFD3B0026491F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76D45C7D1D0CFD3B0026491F /* Assets.xcassets */; };
 		76D45C8C1D0CFD3B0026491F /* G2CateringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D45C8B1D0CFD3B0026491F /* G2CateringTests.m */; };
 		76D45C971D0CFD3C0026491F /* G2CateringUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D45C961D0CFD3C0026491F /* G2CateringUITests.m */; };
@@ -247,6 +248,7 @@
 		7631770F1D20FB8200571559 /* SegmentedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentedView.h; sourceTree = "<group>"; };
 		763177101D20FB8200571559 /* SegmentedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentedView.m; sourceTree = "<group>"; };
 		763177121D20FC1E00571559 /* SegmentedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SegmentedView.xib; sourceTree = "<group>"; };
+		763177161D2A406200571559 /* 下拉提示.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "下拉提示.gif"; sourceTree = "<group>"; };
 		76D45C6E1D0CFD3B0026491F /* G2Catering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = G2Catering.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76D45C7D1D0CFD3B0026491F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76D45C871D0CFD3B0026491F /* G2CateringTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = G2CateringTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -605,6 +607,14 @@
 				073B094CD599E52328204BCD /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		763177151D2A406200571559 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				763177161D2A406200571559 /* 下拉提示.gif */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 		76D45C651D0CFD3B0026491F = {
@@ -1329,6 +1339,7 @@
 		F104CDD61D1B8083003EAEEC /* Resources(资源) */ = {
 			isa = PBXGroup;
 			children = (
+				763177151D2A406200571559 /* Image */,
 				818EFB791D1D098C005C02E5 /* Common */,
 				F104CDD71D1B8083003EAEEC /* Plist */,
 				F104CDD91D1B8083003EAEEC /* Storyboard */,
@@ -1511,6 +1522,7 @@
 				F104CE171D1B8083003EAEEC /* LM_datePickerView.xib in Resources */,
 				F104CE451D1B8083003EAEEC /* OpenTableAndTakeOutView.xib in Resources */,
 				F104CE1B1D1B8083003EAEEC /* BaseSettingsViewController.xib in Resources */,
+				763177171D2A406200571559 /* 下拉提示.gif in Resources */,
 				9179F4DA1D221BB9002CF61D /* LockScreenView.xib in Resources */,
 				F104CE1F1D1B8083003EAEEC /* DeviceTestView.xib in Resources */,
 				43882E771D23C9F1006C28CE /* DeskCollectionTableViewCell.xib in Resources */,
