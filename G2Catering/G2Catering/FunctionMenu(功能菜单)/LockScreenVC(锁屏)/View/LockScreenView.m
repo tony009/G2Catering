@@ -42,7 +42,7 @@
     FLAnimatedImage *image = [FLAnimatedImage animatedImageWithGIFData:[NSData dataWithContentsOfFile:path]];
     FLAnimatedImageView *imageView = [[FLAnimatedImageView alloc] init];
     imageView.animatedImage = image;
-    imageView.frame = CGRectMake(100, 100, 140.0, 100.0);
+    imageView.frame = CGRectMake(32, 160, 100, 100);
     [self.lockBackView addSubview:imageView];
     
 
