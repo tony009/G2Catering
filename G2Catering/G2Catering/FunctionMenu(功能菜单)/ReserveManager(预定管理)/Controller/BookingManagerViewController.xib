@@ -13,8 +13,6 @@
                 <outlet property="bookTypeBackView" destination="RON-dF-P5f" id="Ioj-5F-HJj"/>
                 <outlet property="marginBetweenBackView" destination="Gas-cH-YaU" id="gA4-X2-2xh"/>
                 <outlet property="rightBackView" destination="ffH-g2-aO0" id="fMq-0p-P3C"/>
-                <outlet property="searchBackView" destination="udw-OZ-ndU" id="7qU-9b-7ad"/>
-                <outlet property="searchTextField" destination="SvI-lB-2PN" id="enB-yP-zQS"/>
                 <outlet property="showAndCloseLeftBtn" destination="d2I-aY-2Fu" id="QQU-Nc-5sp"/>
                 <outlet property="tableChooseView" destination="1RH-hv-TTl" id="U0U-jE-hiN"/>
                 <outlet property="tableCollectionView" destination="hLA-79-TDm" id="XUr-t3-F92"/>
@@ -269,52 +267,41 @@
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="udw-OZ-ndU">
-                                    <rect key="frame" x="74" y="15" width="249" height="37"/>
-                                    <subviews>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手机号/姓名/订单号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SvI-lB-2PN">
-                                            <rect key="frame" x="36" y="0.0" width="213" height="37"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                        </textField>
-                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hM-Uc-abD">
-                                            <rect key="frame" x="13" y="9" width="16" height="22"/>
-                                            <state key="normal" image="预定-搜索"/>
-                                        </button>
-                                    </subviews>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <constraints>
-                                        <constraint firstItem="7hM-Uc-abD" firstAttribute="top" secondItem="udw-OZ-ndU" secondAttribute="top" constant="9" id="2c8-Qf-aek"/>
-                                        <constraint firstItem="SvI-lB-2PN" firstAttribute="leading" secondItem="7hM-Uc-abD" secondAttribute="trailing" constant="7" id="3jt-aL-QK7"/>
-                                        <constraint firstAttribute="trailing" secondItem="SvI-lB-2PN" secondAttribute="trailing" id="72G-Gu-Vla"/>
-                                        <constraint firstAttribute="bottom" secondItem="SvI-lB-2PN" secondAttribute="bottom" id="VzV-WF-xIS"/>
-                                        <constraint firstItem="SvI-lB-2PN" firstAttribute="top" secondItem="udw-OZ-ndU" secondAttribute="top" id="aMZ-tR-PWp"/>
-                                        <constraint firstAttribute="height" constant="37" id="kyA-x3-CB3"/>
-                                        <constraint firstItem="7hM-Uc-abD" firstAttribute="leading" secondItem="udw-OZ-ndU" secondAttribute="leading" constant="13" id="n57-kh-eTD"/>
-                                        <constraint firstAttribute="width" constant="249" id="suu-4J-7nP"/>
-                                    </constraints>
-                                </view>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2I-aY-2Fu">
                                     <rect key="frame" x="24" y="22" width="21" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="g7b-6Z-3Nc"/>
+                                        <constraint firstAttribute="width" constant="21" id="mA8-9P-aMu"/>
+                                    </constraints>
                                     <state key="normal" image="正常状态"/>
                                     <state key="selected" image="弹出菜单状态"/>
                                 </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bhj-sV-7pW" customClass="SearchView">
+                                    <rect key="frame" x="75" y="13" width="250" height="40"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="i2m-a1-GJS"/>
+                                        <constraint firstAttribute="width" constant="250" id="ioK-NT-J5R"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="手机号 / 姓名 /订单号"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="a4M-CN-F7c" secondAttribute="trailing" constant="24" id="92f-zs-mCd"/>
                                 <constraint firstAttribute="height" constant="65" id="9k8-XR-XjN"/>
-                                <constraint firstItem="udw-OZ-ndU" firstAttribute="top" secondItem="W1j-TO-fT4" secondAttribute="top" constant="15" id="CC3-CC-MTf"/>
+                                <constraint firstItem="Bhj-sV-7pW" firstAttribute="leading" secondItem="d2I-aY-2Fu" secondAttribute="trailing" constant="30" id="EDI-La-WwA"/>
                                 <constraint firstItem="V5Z-jI-na3" firstAttribute="leading" secondItem="W1j-TO-fT4" secondAttribute="leading" id="RKh-kL-52v"/>
                                 <constraint firstAttribute="trailing" secondItem="V5Z-jI-na3" secondAttribute="trailing" id="RX8-2R-3bj"/>
-                                <constraint firstItem="d2I-aY-2Fu" firstAttribute="centerY" secondItem="SvI-lB-2PN" secondAttribute="centerY" id="b0L-Nc-2Id"/>
                                 <constraint firstItem="5WR-Ck-hUQ" firstAttribute="centerX" secondItem="W1j-TO-fT4" secondAttribute="centerX" id="beS-Yb-HsH"/>
+                                <constraint firstItem="Bhj-sV-7pW" firstAttribute="centerY" secondItem="W1j-TO-fT4" secondAttribute="centerY" id="bfA-Bp-faP"/>
                                 <constraint firstItem="a4M-CN-F7c" firstAttribute="top" secondItem="W1j-TO-fT4" secondAttribute="top" constant="20" id="bjX-80-Vu2"/>
+                                <constraint firstItem="d2I-aY-2Fu" firstAttribute="centerY" secondItem="W1j-TO-fT4" secondAttribute="centerY" id="cAg-Eg-MV5"/>
                                 <constraint firstAttribute="bottom" secondItem="V5Z-jI-na3" secondAttribute="bottom" id="g04-R2-Hgv"/>
                                 <constraint firstItem="d2I-aY-2Fu" firstAttribute="leading" secondItem="W1j-TO-fT4" secondAttribute="leading" constant="24" id="gVz-5v-EZZ"/>
                                 <constraint firstItem="5WR-Ck-hUQ" firstAttribute="centerY" secondItem="W1j-TO-fT4" secondAttribute="centerY" id="kj7-KX-amy"/>
-                                <constraint firstItem="udw-OZ-ndU" firstAttribute="leading" secondItem="W1j-TO-fT4" secondAttribute="leading" constant="74" id="pXa-nY-Cwu"/>
                             </constraints>
                         </view>
                     </subviews>
@@ -453,7 +440,6 @@
         <image name="新形状4" width="26" height="26"/>
         <image name="正常状态" width="21" height="20"/>
         <image name="预定-形状4" width="22" height="22"/>
-        <image name="预定-搜索" width="16" height="17"/>
         <image name="预订中－点击" width="22" height="22"/>
     </resources>
 </document>
