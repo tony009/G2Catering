@@ -30,6 +30,8 @@
 		43882E831D23C9F1006C28CE /* WaiMaiDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E6B1D23C9F1006C28CE /* WaiMaiDetailTableViewCell.xib */; };
 		43882E841D23C9F1006C28CE /* WaiMaiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E6D1D23C9F1006C28CE /* WaiMaiTableViewCell.m */; };
 		43882E851D23C9F1006C28CE /* WaiMaiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E6E1D23C9F1006C28CE /* WaiMaiTableViewCell.xib */; };
+		54C9367C1D29FC5800739A6D /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C936771D29FC5800739A6D /* PaymentViewController.m */; };
+		54C9367D1D29FC5800739A6D /* PaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54C936781D29FC5800739A6D /* PaymentViewController.xib */; };
 		763177111D20FB8200571559 /* SegmentedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 763177101D20FB8200571559 /* SegmentedView.m */; };
 		763177131D20FC1E00571559 /* SegmentedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 763177121D20FC1E00571559 /* SegmentedView.xib */; };
 		763177191D2A5B4600571559 /* 下拉提示.gif in Resources */ = {isa = PBXBuildFile; fileRef = 763177181D2A5B4600571559 /* 下拉提示.gif */; };
@@ -245,6 +247,9 @@
 		43882E6C1D23C9F1006C28CE /* WaiMaiTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaiMaiTableViewCell.h; sourceTree = "<group>"; };
 		43882E6D1D23C9F1006C28CE /* WaiMaiTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaiMaiTableViewCell.m; sourceTree = "<group>"; };
 		43882E6E1D23C9F1006C28CE /* WaiMaiTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaiMaiTableViewCell.xib; sourceTree = "<group>"; };
+		54C936761D29FC5800739A6D /* PaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentViewController.h; sourceTree = "<group>"; };
+		54C936771D29FC5800739A6D /* PaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentViewController.m; sourceTree = "<group>"; };
+		54C936781D29FC5800739A6D /* PaymentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentViewController.xib; sourceTree = "<group>"; };
 		7631770F1D20FB8200571559 /* SegmentedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentedView.h; sourceTree = "<group>"; };
 		763177101D20FB8200571559 /* SegmentedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentedView.m; sourceTree = "<group>"; };
 		763177121D20FC1E00571559 /* SegmentedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SegmentedView.xib; sourceTree = "<group>"; };
@@ -601,6 +606,48 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		54C9366F1D29FB0C00739A6D /* payment(支付) */ = {
+			isa = PBXGroup;
+			children = (
+				54C936751D29FC5800739A6D /* controller */,
+				54C936791D29FC5800739A6D /* model */,
+				54C9367A1D29FC5800739A6D /* view */,
+				54C9367B1D29FC5800739A6D /* viewModelManager */,
+			);
+			path = "payment(支付)";
+			sourceTree = "<group>";
+		};
+		54C936751D29FC5800739A6D /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				54C936761D29FC5800739A6D /* PaymentViewController.h */,
+				54C936771D29FC5800739A6D /* PaymentViewController.m */,
+				54C936781D29FC5800739A6D /* PaymentViewController.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		54C936791D29FC5800739A6D /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		54C9367A1D29FC5800739A6D /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		54C9367B1D29FC5800739A6D /* viewModelManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewModelManager;
+			sourceTree = "<group>";
+		};
 		61409CEBC5EC687B81CF5D5F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -642,6 +689,7 @@
 		76D45C701D0CFD3B0026491F /* G2Catering */ = {
 			isa = PBXGroup;
 			children = (
+				54C9366F1D29FB0C00739A6D /* payment(支付) */,
 				F104CD0E1D1B8083003EAEEC /* Expand(拓展) */,
 				F104CD161D1B8083003EAEEC /* FunctionMenu(功能菜单) */,
 				F104CD811D1B8083003EAEEC /* Main(主界面) */,
@@ -1479,7 +1527,7 @@
 				TargetAttributes = {
 					76D45C6D1D0CFD3B0026491F = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = GGXKHRC826;
+						DevelopmentTeam = VSMJ54AW24;
 					};
 					76D45C861D0CFD3B0026491F = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -1551,6 +1599,7 @@
 				76D45C7E1D0CFD3B0026491F /* Assets.xcassets in Resources */,
 				F104CE251D1B8083003EAEEC /* FoodCollectionViewCell.xib in Resources */,
 				F104CE541D1B8083003EAEEC /* MainRightView.xib in Resources */,
+				54C9367D1D29FC5800739A6D /* PaymentViewController.xib in Resources */,
 				915737791D2129D300B6EC1D /* FoodAnayseTableViewCell.xib in Resources */,
 				F104CE4C1D1B8083003EAEEC /* OrderingTableViewCell.xib in Resources */,
 				F104CE331D1B8083003EAEEC /* VIPLeftView.xib in Resources */,
@@ -1673,6 +1722,7 @@
 				F104CE491D1B8083003EAEEC /* OrderingCollectionViewCell.m in Sources */,
 				818EFB7F1D1D098C005C02E5 /* NSString+log.m in Sources */,
 				9179F58D1D224FDA002CF61D /* ZFWave.m in Sources */,
+				54C9367C1D29FC5800739A6D /* PaymentViewController.m in Sources */,
 				818EFB801D1D098C005C02E5 /* UIView+AdjustFrame.m in Sources */,
 				43882E701D23C9F1006C28CE /* DeskCollectionController.m in Sources */,
 				43882E741D23C9F1006C28CE /* DinnerTableViewController.m in Sources */,
