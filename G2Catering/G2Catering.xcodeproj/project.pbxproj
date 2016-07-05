@@ -30,6 +30,12 @@
 		43882E831D23C9F1006C28CE /* WaiMaiDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E6B1D23C9F1006C28CE /* WaiMaiDetailTableViewCell.xib */; };
 		43882E841D23C9F1006C28CE /* WaiMaiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E6D1D23C9F1006C28CE /* WaiMaiTableViewCell.m */; };
 		43882E851D23C9F1006C28CE /* WaiMaiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E6E1D23C9F1006C28CE /* WaiMaiTableViewCell.xib */; };
+		54060A031D2BA47E004FA5FB /* ScanQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54060A011D2BA47E004FA5FB /* ScanQRCodeViewController.m */; };
+		54060A041D2BA47E004FA5FB /* ScanQRCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54060A021D2BA47E004FA5FB /* ScanQRCodeViewController.xib */; };
+		54060A081D2BA518004FA5FB /* UploadDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54060A061D2BA518004FA5FB /* UploadDataViewController.m */; };
+		54060A091D2BA518004FA5FB /* UploadDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54060A071D2BA518004FA5FB /* UploadDataViewController.xib */; };
+		54060A0D1D2BA581004FA5FB /* PaySuccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54060A0B1D2BA581004FA5FB /* PaySuccessViewController.m */; };
+		54060A0E1D2BA581004FA5FB /* PaySuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54060A0C1D2BA581004FA5FB /* PaySuccessViewController.xib */; };
 		54C9367C1D29FC5800739A6D /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C936771D29FC5800739A6D /* PaymentViewController.m */; };
 		54C9367D1D29FC5800739A6D /* PaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54C936781D29FC5800739A6D /* PaymentViewController.xib */; };
 		763177111D20FB8200571559 /* SegmentedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 763177101D20FB8200571559 /* SegmentedView.m */; };
@@ -252,6 +258,15 @@
 		43882E6C1D23C9F1006C28CE /* WaiMaiTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaiMaiTableViewCell.h; sourceTree = "<group>"; };
 		43882E6D1D23C9F1006C28CE /* WaiMaiTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaiMaiTableViewCell.m; sourceTree = "<group>"; };
 		43882E6E1D23C9F1006C28CE /* WaiMaiTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaiMaiTableViewCell.xib; sourceTree = "<group>"; };
+		54060A001D2BA47E004FA5FB /* ScanQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanQRCodeViewController.h; sourceTree = "<group>"; };
+		54060A011D2BA47E004FA5FB /* ScanQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanQRCodeViewController.m; sourceTree = "<group>"; };
+		54060A021D2BA47E004FA5FB /* ScanQRCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanQRCodeViewController.xib; sourceTree = "<group>"; };
+		54060A051D2BA518004FA5FB /* UploadDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadDataViewController.h; sourceTree = "<group>"; };
+		54060A061D2BA518004FA5FB /* UploadDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadDataViewController.m; sourceTree = "<group>"; };
+		54060A071D2BA518004FA5FB /* UploadDataViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UploadDataViewController.xib; sourceTree = "<group>"; };
+		54060A0A1D2BA581004FA5FB /* PaySuccessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaySuccessViewController.h; sourceTree = "<group>"; };
+		54060A0B1D2BA581004FA5FB /* PaySuccessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaySuccessViewController.m; sourceTree = "<group>"; };
+		54060A0C1D2BA581004FA5FB /* PaySuccessViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaySuccessViewController.xib; sourceTree = "<group>"; };
 		54C936761D29FC5800739A6D /* PaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentViewController.h; sourceTree = "<group>"; };
 		54C936771D29FC5800739A6D /* PaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentViewController.m; sourceTree = "<group>"; };
 		54C936781D29FC5800739A6D /* PaymentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentViewController.xib; sourceTree = "<group>"; };
@@ -636,6 +651,15 @@
 				54C936761D29FC5800739A6D /* PaymentViewController.h */,
 				54C936771D29FC5800739A6D /* PaymentViewController.m */,
 				54C936781D29FC5800739A6D /* PaymentViewController.xib */,
+				54060A001D2BA47E004FA5FB /* ScanQRCodeViewController.h */,
+				54060A011D2BA47E004FA5FB /* ScanQRCodeViewController.m */,
+				54060A021D2BA47E004FA5FB /* ScanQRCodeViewController.xib */,
+				54060A051D2BA518004FA5FB /* UploadDataViewController.h */,
+				54060A061D2BA518004FA5FB /* UploadDataViewController.m */,
+				54060A071D2BA518004FA5FB /* UploadDataViewController.xib */,
+				54060A0A1D2BA581004FA5FB /* PaySuccessViewController.h */,
+				54060A0B1D2BA581004FA5FB /* PaySuccessViewController.m */,
+				54060A0C1D2BA581004FA5FB /* PaySuccessViewController.xib */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -1602,6 +1626,7 @@
 				F104CE1B1D1B8083003EAEEC /* BaseSettingsViewController.xib in Resources */,
 				763177191D2A5B4600571559 /* 下拉提示.gif in Resources */,
 				9179F4DA1D221BB9002CF61D /* LockScreenView.xib in Resources */,
+				54060A0E1D2BA581004FA5FB /* PaySuccessViewController.xib in Resources */,
 				F104CE1F1D1B8083003EAEEC /* DeviceTestView.xib in Resources */,
 				43882E771D23C9F1006C28CE /* DeskCollectionTableViewCell.xib in Resources */,
 				F104CE651D1B8083003EAEEC /* Main.storyboard in Resources */,
@@ -1617,6 +1642,7 @@
 				F104CE231D1B8083003EAEEC /* EstimateView.xib in Resources */,
 				F104CE281D1B8083003EAEEC /* PrintSettingsView.xib in Resources */,
 				F104CDFD1D1B8083003EAEEC /* LoginViewController.xib in Resources */,
+				54060A041D2BA47E004FA5FB /* ScanQRCodeViewController.xib in Resources */,
 				F104CE6F1D1B8083003EAEEC /* LICENSE in Resources */,
 				43882E791D23C9F1006C28CE /* DeskCollectionViewCell.xib in Resources */,
 				F104CE2C1D1B8083003EAEEC /* UpdatePasswordView.xib in Resources */,
@@ -1651,6 +1677,7 @@
 				F104CE2E1D1B8083003EAEEC /* TransferViewController.xib in Resources */,
 				43882E811D23C9F1006C28CE /* UpCollectionViewCell.xib in Resources */,
 				43882E731D23C9F1006C28CE /* DeskTableViewController.xib in Resources */,
+				54060A091D2BA518004FA5FB /* UploadDataViewController.xib in Resources */,
 				F104CE0B1D1B8083003EAEEC /* TradeContentView.xib in Resources */,
 				F104CE561D1B8083003EAEEC /* LingShouViewController.xib in Resources */,
 				F104CE521D1B8083003EAEEC /* MainLeftView.xib in Resources */,
@@ -1748,6 +1775,7 @@
 				43882E821D23C9F1006C28CE /* WaiMaiDetailTableViewCell.m in Sources */,
 				917A06531D1CC48B00CEDB9E /* fuKuanView.m in Sources */,
 				F104CE0C1D1B8083003EAEEC /* TypeTableViewCell.m in Sources */,
+				54060A0D1D2BA581004FA5FB /* PaySuccessViewController.m in Sources */,
 				9179F57C1D224FD9002CF61D /* ZFXAxisLine.m in Sources */,
 				F104CE4F1D1B8083003EAEEC /* MainLeftTableViewCell.m in Sources */,
 				F104CE6E1D1B8083003EAEEC /* FSCalendarStickyHeader.m in Sources */,
@@ -1756,6 +1784,7 @@
 				818EFB7F1D1D098C005C02E5 /* NSString+log.m in Sources */,
 				9179F58D1D224FDA002CF61D /* ZFWave.m in Sources */,
 				54C9367C1D29FC5800739A6D /* PaymentViewController.m in Sources */,
+				54060A081D2BA518004FA5FB /* UploadDataViewController.m in Sources */,
 				818EFB801D1D098C005C02E5 /* UIView+AdjustFrame.m in Sources */,
 				43882E701D23C9F1006C28CE /* DeskCollectionController.m in Sources */,
 				43882E741D23C9F1006C28CE /* DinnerTableViewController.m in Sources */,
@@ -1815,6 +1844,7 @@
 				F104CE511D1B8083003EAEEC /* MainLeftView.m in Sources */,
 				818EFB771D1D096B005C02E5 /* ScanView.m in Sources */,
 				9179F57B1D224FD9002CF61D /* ZFPopoverLabel.m in Sources */,
+				54060A031D2BA47E004FA5FB /* ScanQRCodeViewController.m in Sources */,
 				F104CE291D1B8083003EAEEC /* PrintSettingTableViewCell.m in Sources */,
 				9179F5871D224FDA002CF61D /* ZFCircle.m in Sources */,
 				F104CE611D1B8083003EAEEC /* AppDelegate.m in Sources */,
