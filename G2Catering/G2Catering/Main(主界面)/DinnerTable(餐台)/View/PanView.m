@@ -13,22 +13,16 @@
 @end
 
 @implementation PanView
-
--(instancetype)initWithFrame:(CGRect)frame
+@synthesize messageLabel;
+-(instancetype)initWithFrame:(CGRect)frame withTitle:(NSString *)title
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor redColor];
-        [self showView];
+        self.backgroundColor = [UIColor whiteColor];
+        self.text = title;
+        self.textAlignment = NSTextAlignmentCenter;
     }
     return self;
-}
-
--(void)showView
-{
-    
-
-    
 }
 
 @end

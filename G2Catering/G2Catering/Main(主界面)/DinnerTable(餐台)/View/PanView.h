@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PanView : UIView
+@interface PanView : UILabel
+
+-(instancetype)initWithFrame:(CGRect)frame withTitle:(NSString *)title;
+
+@property (nonatomic,copy)NSString *nameString;
 
 @end
