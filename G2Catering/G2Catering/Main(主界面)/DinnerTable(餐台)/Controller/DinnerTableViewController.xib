@@ -8,7 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DinnerTableViewController">
             <connections>
                 <outlet property="collectionView" destination="7Sm-q9-YkO" id="pKH-T4-XiA"/>
-                <outlet property="rightCollection" destination="skJ-fU-O9O" id="d30-Ng-BlF"/>
+                <outlet property="dishTypeView" destination="4VI-lh-z2W" id="3uR-9H-OEK"/>
                 <outlet property="searchTextField" destination="M8b-hu-BU8" id="zj3-mP-CtZ"/>
                 <outlet property="tableView" destination="haq-cw-UJm" id="PbT-fN-aAh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -34,16 +34,6 @@
                         <action selector="searchBtnAction:" destination="-1" eventType="touchUpInside" id="ROY-7D-2pf"/>
                     </connections>
                 </button>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" id="skJ-fU-O9O">
-                    <rect key="frame" x="950" y="75" width="56" height="667"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eMN-aQ-iba">
-                        <size key="itemSize" width="50" height="50"/>
-                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    </collectionViewFlowLayout>
-                </collectionView>
                 <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" 请输入餐台名称、餐台号" textAlignment="natural" minimumFontSize="17" id="M8b-hu-BU8">
                     <rect key="frame" x="715" y="39" width="232" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -113,6 +103,11 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <view contentMode="scaleToFill" id="4VI-lh-z2W" customClass="DishTypeView">
+                    <rect key="frame" x="950" y="77" width="56" height="645"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
             </subviews>
             <color key="backgroundColor" red="0.8862745098" green="0.8862745098" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -121,7 +116,7 @@
         </view>
     </objects>
     <resources>
-        <image name="背景餐台" width="935" height="720"/>
+        <image name="背景餐台" width="23" height="23"/>
         <image name="餐台-搜索" width="16" height="17"/>
     </resources>
 </document>

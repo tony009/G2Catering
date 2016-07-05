@@ -11,7 +11,7 @@
 @class DishTypeView;
 @protocol DishTypeViewDelegate <NSObject>
 
-- (void)DishTypeView:(DishTypeView *)dishTypeView didSelectItemAtIndex:(NSInteger *)index;
+- (void)DishTypeView:(DishTypeView *)dishTypeView didSelectItemAtIndex:(NSInteger)index;
 
 @end
 

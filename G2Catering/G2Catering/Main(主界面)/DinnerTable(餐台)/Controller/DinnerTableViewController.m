@@ -14,7 +14,8 @@
 #import "WaiMaiTableViewCell.h"
 #import "LockScreenView.h"
 #import "OrderPerson.h"
-@interface DinnerTableViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UITableViewDataSource,UITableViewDelegate,ShowMenuViewViewDelegate>
+#import "DishTypeView.h"
+@interface DinnerTableViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UITableViewDataSource,UITableViewDelegate,ShowMenuViewViewDelegate,DishTypeViewDelegate>
 {
     NSArray *_array;
     
@@ -41,6 +42,8 @@
 //  存储外卖的相关信息
     NSMutableArray *orderDataArray;  //  外卖数组
 }
+
+@property (weak, nonatomic) IBOutlet DishTypeView *dishTypeView;
 
 @end
 
@@ -76,7 +79,6 @@
     OrderPerson *order = [[OrderPerson alloc] initWithdict:dic];
     orderDataArray = [NSMutableArray arrayWithObjects:order,order,order,order,order, nil];
     
-    
     self.searchTextField.layer.cornerRadius = 10;
     self.searchTextField.layer.masksToBounds = YES;
     self.searchTextField.layer.borderColor = [UIColor lightGrayColor].CGColor;
@@ -92,6 +94,8 @@
 
 //    LockScreenView *lockView = [[LockScreenView alloc] initWithFrame:CGRectMake(0, 0, KScreenWidth, KScreenHeight)];
 //    [KWindow addSubview:lockView];
+    self.dishTypeView.strArray = _array;
+    self.dishTypeView.delegate = self;
 }
 
 - (void)_initCollectionView
@@ -127,18 +131,15 @@
 #pragma mark- UICollection Delegate 相关方法
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     
-    if (collectionView.tag == 1001) {
+
         
-        if (deskTypeState == DeskStateAll) {
+        if (deskTypeState != DeskStateOther) {
             return dataTableArray.count;
         }else{
             return orderDataArray.count;
         }
         
-    }else{
-        
-        return _array.count;
-    }
+   
     
 }
 - (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -152,7 +153,7 @@
     
 //    DeskCollectionViewCellwaimai
     if (collectionView.tag == 1001) {
-     if (deskTypeState == DeskStateAll) {
+     if (deskTypeState != DeskStateOther) {
         DeskCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"DeskCollectionViewCellww" forIndexPath:indexPath];
        
             UIPanGestureRecognizer *panRight = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(p_swipeRight:)];
@@ -261,30 +262,11 @@
         }
     }else{
         
-        RightCollectionViewCell *cell = (RightCollectionViewCell *)[self.rightCollection cellForItemAtIndexPath:indexPath];
+//        RightCollectionViewCell *cell = (RightCollectionViewCell *)[self.rightCollection cellForItemAtIndexPath:indexPath];
+//        
+//        cell.backImgView.backgroundColor = RGB(0x2a, 0x42, 0x5a);
         
-        cell.backImgView.backgroundColor = RGB(0x2a, 0x42, 0x5a);
         
-           switch (indexPath.row) {
-                 case 0:
-                      deskTypeState = DeskStateAll;
-                      break;
-                  case 1:
-                       deskTypeState = DeskStateSmall;
-                        break;
-                  case 2:
-                        deskTypeState = DeskStateMiddle;
-                        break;
-                  case 3:
-                        deskTypeState = DeskStateBig;
-                        break;
-                   case 4:
-                        deskTypeState = DeskStateOther;
-                        break;
-
-            }
-        
-        [self.collectionView reloadData];
         
     }
 }
@@ -363,7 +345,30 @@
     }
 }
 
+#pragma mark- 右侧选择菜单
+- (void)DishTypeView:(DishTypeView *)dishTypeView didSelectItemAtIndex:(NSInteger)index
+{
+    switch (index) {
+        case 0:
+            deskTypeState = DeskStateAll;
+            break;
+        case 1:
+            deskTypeState = DeskStateSmall;
+            break;
+        case 2:
+            deskTypeState = DeskStateMiddle;
+            break;
+        case 3:
+            deskTypeState = DeskStateBig;
+            break;
+        case 4:
+            deskTypeState = DeskStateOther;
+            break;
 
+    }
+    
+    [self.collectionView reloadData];
+}
 
 -(void)changgeDeskTable
 {
@@ -387,6 +392,11 @@
         if ([self contarinString:dataTableArray[indexPath.row]]) {
             [panView removeFromSuperview];
             [[[UIAlertView alloc] initWithTitle:@"提示" message:@"临时餐桌无法创建拼桌" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil] show];
+            return;
+        }
+        if ([self createNewOrNot:cll.nameLabel.text]) {
+            [panView removeFromSuperview];
+            [[[UIAlertView alloc] initWithTitle:@"提示" message:@"最多仅可以创建10台拼桌" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil] show];
             return;
         }
         
@@ -440,6 +450,25 @@
             [self.collectionView reloadData];
         });
     });
+}
+
+#pragma mark- 拼桌是否已经拼了10个了
+-(BOOL)createNewOrNot:(NSString *)ind
+{
+    NSMutableArray *mutable = resultAAray[[ind intValue]-1];
+    NSMutableArray *mut = [NSMutableArray array];
+    for (int i = 0; i<[mutable count]; i++) {
+        if ([mutable[i] isEqualToString:@"1"]) {
+            [mut addObject:@"ss"];
+        }
+    }
+    
+    if (mut.count == 10) {
+        return YES;
+    }else{
+        return NO;
+    }
+    
 }
 #pragma mark- 创建新桌（拼桌）
 -(void)caculationNewArray:(int)changgeIndex view:(UIView* )shoView
