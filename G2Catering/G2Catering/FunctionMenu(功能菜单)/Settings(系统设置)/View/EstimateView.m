@@ -168,7 +168,7 @@ static NSString *reuseID = @"foodCell";
 }
 
 
-#pragma mark - 估清设置界面
+#pragma mark - 沽清设置界面
 
 
 - (void)setupEstimateSettingView{

@@ -38,6 +38,8 @@
 		7631771C1D2B593000571559 /* SearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7631771B1D2B593000571559 /* SearchView.m */; };
 		7631771E1D2B593D00571559 /* SearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7631771D1D2B593D00571559 /* SearchView.xib */; };
 		763177251D2B60C000571559 /* UIView+UI.m in Sources */ = {isa = PBXBuildFile; fileRef = 763177241D2B60C000571559 /* UIView+UI.m */; };
+		763177291D2BA6CA00571559 /* BluetoothConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763177271D2BA6CA00571559 /* BluetoothConnectionViewController.m */; };
+		7631772A1D2BA6CA00571559 /* BluetoothConnectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 763177281D2BA6CA00571559 /* BluetoothConnectionViewController.xib */; };
 		76D45C7E1D0CFD3B0026491F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76D45C7D1D0CFD3B0026491F /* Assets.xcassets */; };
 		76D45C8C1D0CFD3B0026491F /* G2CateringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D45C8B1D0CFD3B0026491F /* G2CateringTests.m */; };
 		76D45C971D0CFD3C0026491F /* G2CateringUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D45C961D0CFD3C0026491F /* G2CateringUITests.m */; };
@@ -262,6 +264,9 @@
 		7631771D1D2B593D00571559 /* SearchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchView.xib; sourceTree = "<group>"; };
 		763177231D2B60C000571559 /* UIView+UI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+UI.h"; sourceTree = "<group>"; };
 		763177241D2B60C000571559 /* UIView+UI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+UI.m"; sourceTree = "<group>"; };
+		763177261D2BA6CA00571559 /* BluetoothConnectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothConnectionViewController.h; sourceTree = "<group>"; };
+		763177271D2BA6CA00571559 /* BluetoothConnectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluetoothConnectionViewController.m; sourceTree = "<group>"; };
+		763177281D2BA6CA00571559 /* BluetoothConnectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BluetoothConnectionViewController.xib; sourceTree = "<group>"; };
 		76D45C6E1D0CFD3B0026491F /* G2Catering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = G2Catering.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76D45C7D1D0CFD3B0026491F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76D45C871D0CFD3B0026491F /* G2CateringTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = G2CateringTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1068,6 +1073,9 @@
 				F104CD191D1B8083003EAEEC /* LoginViewController.h */,
 				F104CD1A1D1B8083003EAEEC /* LoginViewController.m */,
 				F104CD1B1D1B8083003EAEEC /* LoginViewController.xib */,
+				763177261D2BA6CA00571559 /* BluetoothConnectionViewController.h */,
+				763177271D2BA6CA00571559 /* BluetoothConnectionViewController.m */,
+				763177281D2BA6CA00571559 /* BluetoothConnectionViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1548,7 +1556,7 @@
 				TargetAttributes = {
 					76D45C6D1D0CFD3B0026491F = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = GGXKHRC826;
+						DevelopmentTeam = EY9GA3N4W5;
 					};
 					76D45C861D0CFD3B0026491F = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -1586,6 +1594,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F104CE501D1B8083003EAEEC /* MainLeftTableViewCell.xib in Resources */,
+				7631772A1D2BA6CA00571559 /* BluetoothConnectionViewController.xib in Resources */,
 				917A06581D1CC48B00CEDB9E /* secondStepView.xib in Resources */,
 				917A065A1D1CC48B00CEDB9E /* TypeCollectionViewCell.xib in Resources */,
 				F104CE171D1B8083003EAEEC /* LM_datePickerView.xib in Resources */,
@@ -1733,6 +1742,7 @@
 				F104CE441D1B8083003EAEEC /* OpenTableAndTakeOutView.m in Sources */,
 				9179F5781D224FD9002CF61D /* UIColor+Zirkfied.m in Sources */,
 				7631771C1D2B593000571559 /* SearchView.m in Sources */,
+				763177291D2BA6CA00571559 /* BluetoothConnectionViewController.m in Sources */,
 				F104CE081D1B8083003EAEEC /* JiLuCaiViewCell.m in Sources */,
 				F104CE401D1B8083003EAEEC /* OrderingViewController.m in Sources */,
 				43882E821D23C9F1006C28CE /* WaiMaiDetailTableViewCell.m in Sources */,

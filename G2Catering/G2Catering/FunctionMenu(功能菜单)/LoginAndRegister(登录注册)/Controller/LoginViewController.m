@@ -11,6 +11,7 @@
 #import "SearchBlueToothView.h"
 #import "LockScreenView.h"
 #import "UnLockView.h"
+#import "BluetoothConnectionViewController.h"
 @interface LoginViewController ()<UITextFieldDelegate>
 
 @property (nonatomic, strong) SearchBlueToothView *searchView;
@@ -91,6 +92,17 @@
     }
     
     
+    //self
+    
+//    BluetoothConnectionViewController *bcVC = [[BluetoothConnectionViewController alloc]init];
+//    UINavigationController *nc = [[UINavigationController alloc]initWithRootViewController:bcVC];
+//    nc.modalPresentationStyle = UIModalPresentationFormSheet;
+//    [KWindow.rootViewController presentViewController:nc animated:YES completion:^{
+//       
+//    }];
+//    
+//    return;
+    
     MainViewController *mvc = [[MainViewController alloc]init];
     
     UINavigationController *na = [[UINavigationController alloc]initWithRootViewController:mvc];
@@ -104,7 +116,7 @@
     
     CGRect frame = unLockView.frame ;
     
-    frame = CGRectMake(690, -20, 124, 200);
+    frame = CGRectMake(710, 0, 124, 200);
     unLockView.frame = frame;
   
     [KWindow addSubview:unLockView];

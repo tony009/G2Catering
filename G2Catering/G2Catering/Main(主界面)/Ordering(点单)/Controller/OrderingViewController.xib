@@ -224,7 +224,7 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5AC-J0-qMj" customClass="DishTypeView">
-                            <rect key="frame" x="629" y="0.0" width="67" height="720"/>
+                            <rect key="frame" x="623" y="0.0" width="73" height="720"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
                     </subviews>
@@ -236,7 +236,7 @@
                         <constraint firstAttribute="bottom" secondItem="S6R-Qw-tl7" secondAttribute="bottom" id="ZN6-Dg-8up"/>
                         <constraint firstItem="5AC-J0-qMj" firstAttribute="top" secondItem="a1m-Qf-1wr" secondAttribute="top" id="nOb-9G-Mbi"/>
                         <constraint firstItem="S6R-Qw-tl7" firstAttribute="leading" secondItem="a1m-Qf-1wr" secondAttribute="leading" id="rz1-iz-AER"/>
-                        <constraint firstItem="5AC-J0-qMj" firstAttribute="leading" secondItem="S6R-Qw-tl7" secondAttribute="trailing" id="sO7-3n-tXL"/>
+                        <constraint firstItem="5AC-J0-qMj" firstAttribute="leading" secondItem="S6R-Qw-tl7" secondAttribute="trailing" constant="-6" id="sO7-3n-tXL"/>
                     </constraints>
                 </view>
             </subviews>

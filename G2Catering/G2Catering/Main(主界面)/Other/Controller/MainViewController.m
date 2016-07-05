@@ -458,7 +458,7 @@ static float  kDuration = 0.25; //动画持续时间
             
         }
             break;
-        case 0: //预订管理
+        case 0: //预定管理
         {
             BookingManagerViewController *vc = [[BookingManagerViewController alloc] init];
             
