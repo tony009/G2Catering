@@ -104,7 +104,7 @@
     
     CGRect frame = unLockView.frame ;
     
-    frame = CGRectMake(690, -30, 124, 200);
+    frame = CGRectMake(690, -20, 124, 200);
     unLockView.frame = frame;
   
     [KWindow addSubview:unLockView];

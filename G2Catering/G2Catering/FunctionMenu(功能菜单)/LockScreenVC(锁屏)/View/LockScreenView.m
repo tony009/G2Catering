@@ -97,7 +97,7 @@
                 self.unLockView = [[NSBundle mainBundle] loadNibNamed:@"UnLockView" owner:nil options:nil].lastObject;
                 CGRect frame = self.unLockView.frame ;
                 
-                frame = CGRectMake(690, -30, 124, 200);
+                frame = CGRectMake(690, -20, 124, 200);
                 self.unLockView.frame = frame;
                 
                 [KWindow addSubview:self.unLockView];

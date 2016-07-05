@@ -28,7 +28,7 @@
     }else{
         
         self.pImageView.image = [UIImage imageNamed:self.defaultImageName];
-        self.pLabel.textColor = [UIColor blackColor];
+        self.pLabel.textColor = [UIColor lightGrayColor];
     }
     
 }
