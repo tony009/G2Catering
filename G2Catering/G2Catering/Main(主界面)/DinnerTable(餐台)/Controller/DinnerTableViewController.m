@@ -103,6 +103,7 @@
     deskState = DeskTableStateDefault;
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
+    self.collectionView.backgroundColor = [UIColor clearColor];
     self.collectionView.tag = 1001;
     
     
