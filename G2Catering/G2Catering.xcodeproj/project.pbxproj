@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		040AFC8569EBF84ABB39E999 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 073B094CD599E52328204BCD /* libPods.a */; };
+		4323B8D91D2BA30A005173BE /* OrderPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 4323B8D81D2BA30A005173BE /* OrderPerson.m */; settings = {ASSET_TAGS = (); }; };
 		43882E701D23C9F1006C28CE /* DeskCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E4D1D23C9F1006C28CE /* DeskCollectionController.m */; settings = {ASSET_TAGS = (); }; };
 		43882E711D23C9F1006C28CE /* DeskCollectionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E4E1D23C9F1006C28CE /* DeskCollectionController.xib */; settings = {ASSET_TAGS = (); }; };
 		43882E721D23C9F1006C28CE /* DeskTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E501D23C9F1006C28CE /* DeskTableViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -210,6 +211,8 @@
 /* Begin PBXFileReference section */
 		073B094CD599E52328204BCD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B4E00C8C92ACE2E7EE03E02 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		4323B8D71D2BA30A005173BE /* OrderPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderPerson.h; sourceTree = "<group>"; };
+		4323B8D81D2BA30A005173BE /* OrderPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderPerson.m; sourceTree = "<group>"; };
 		43882E4C1D23C9F1006C28CE /* DeskCollectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeskCollectionController.h; sourceTree = "<group>"; };
 		43882E4D1D23C9F1006C28CE /* DeskCollectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeskCollectionController.m; sourceTree = "<group>"; };
 		43882E4E1D23C9F1006C28CE /* DeskCollectionController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeskCollectionController.xib; sourceTree = "<group>"; };
@@ -542,11 +545,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4323B8D61D2BA2D7005173BE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4323B8D71D2BA30A005173BE /* OrderPerson.h */,
+				4323B8D81D2BA30A005173BE /* OrderPerson.m */,
+			);
+			name = Model;
+			path = View;
+			sourceTree = "<group>";
+		};
 		43882E491D23C9F1006C28CE /* DinnerTable(餐台) */ = {
 			isa = PBXGroup;
 			children = (
 				43882E4A1D23C9F1006C28CE /* Controller */,
 				43882E551D23C9F1006C28CE /* View */,
+				4323B8D61D2BA2D7005173BE /* Model */,
 			);
 			path = "DinnerTable(餐台)";
 			sourceTree = "<group>";
@@ -1710,6 +1724,7 @@
 				43882E7A1D23C9F1006C28CE /* LongPressView.m in Sources */,
 				F104CE2B1D1B8083003EAEEC /* UpdatePasswordView.m in Sources */,
 				9179F58C1D224FDA002CF61D /* ZFTranslucencePath.m in Sources */,
+				4323B8D91D2BA30A005173BE /* OrderPerson.m in Sources */,
 				F104CE0E1D1B8083003EAEEC /* BookingManagerViewController.m in Sources */,
 				F104CE0A1D1B8083003EAEEC /* TradeContentView.m in Sources */,
 				F104CE6D1D1B8083003EAEEC /* FSCalendarHeader.m in Sources */,

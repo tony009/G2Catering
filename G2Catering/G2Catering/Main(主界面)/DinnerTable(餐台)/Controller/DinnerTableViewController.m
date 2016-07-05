@@ -103,7 +103,6 @@
     deskState = DeskTableStateDefault;
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
-    self.collectionView.backgroundColor = [UIColor clearColor];
     self.collectionView.tag = 1001;
     
     
@@ -131,15 +130,11 @@
 #pragma mark- UICollection Delegate 相关方法
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     
-
-        
         if (deskTypeState != DeskStateOther) {
             return dataTableArray.count;
         }else{
             return orderDataArray.count;
         }
-        
-   
     
 }
 - (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -162,6 +157,7 @@
             
             if ([arr2[indexPath.row] isEqualToString:@"0"]) {
                 cell.imgView.image = [UIImage imageNamed:@"空台背景"];
+                 [cell removeGestureRecognizer:panRight];
                 if (deskState == DeskTableStateCombin) {
                     cell.imgView.image = [UIImage imageNamed:@"7584682.jpg"];
                 }
@@ -389,16 +385,20 @@
         middlePoint2 = middlePoint;
         [self.view addSubview:panView];
         
+//      临时餐桌不可以创建
         if ([self contarinString:dataTableArray[indexPath.row]]) {
             [panView removeFromSuperview];
             [[[UIAlertView alloc] initWithTitle:@"提示" message:@"临时餐桌无法创建拼桌" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil] show];
             return;
         }
+//      创建10个餐桌之后，不可以创建
         if ([self createNewOrNot:cll.nameLabel.text]) {
             [panView removeFromSuperview];
             [[[UIAlertView alloc] initWithTitle:@"提示" message:@"最多仅可以创建10台拼桌" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil] show];
             return;
         }
+        
+//      当前桌子为空，就不可以创建
         
         [self caculationNewArray:[cll.nameLabel.text intValue] view:panView];
     }
@@ -473,6 +473,9 @@
 #pragma mark- 创建新桌（拼桌）
 -(void)caculationNewArray:(int)changgeIndex view:(UIView* )shoView
 {
+    
+    
+//    NSLog(@"__arr2__%@",resultAAray);
     if ([arr2[changgeIndex -1] isEqualToString:@"0"]) {
         [[[UIAlertView alloc] initWithTitle:@"提示" message:@"该桌暂时没有客人，无法进行拼桌" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil] show];
         [shoView removeFromSuperview];
@@ -487,6 +490,7 @@
             break;
         }
     }
+    NSLog(@"__arr2__%@",arr2);
 }
 #pragma mark- 换桌
 -(void)revertNewArray:(NSString*)fromIndexName endIndexz:(NSString*)endIndexName
