@@ -124,13 +124,23 @@
     
 }
 
-
 - (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath{
     
     
     DishTypeViewCollectionViewCell *cell = (DishTypeViewCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
     cell.backgroundColor = [UIColor whiteColor];
     [cell.btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+}
+
+-(void)setSelectIndex:(NSInteger)index
+{
+//    [self.collectionView row]
+//    NSIndexPath *indexPath = [self.collectionView indexPathForItemAtPoint:CGPointMake(20, 20)];
+////    NSInteger selectedIndex = 0;
+////    NSIndexPath *selectedIndexPath = [NSIndexPath indexPathForRow:selectedIndex inSection:0];
+//    DishTypeViewCollectionViewCell *cell = (DishTypeViewCollectionViewCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
+//    cell.backgroundColor = [UIColor whiteColor];
+//    [cell.btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
 }
 
 @end

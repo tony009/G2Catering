@@ -20,4 +20,7 @@
 @property (nonatomic,strong) NSArray<NSString *> *strArray;
 
 @property (nonatomic,weak)id<DishTypeViewDelegate>delegate;
+
+-(void)setSelectIndex:(NSInteger)index;
+
 @end

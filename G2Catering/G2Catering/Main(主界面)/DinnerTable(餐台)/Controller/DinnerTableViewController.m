@@ -43,6 +43,9 @@
     NSMutableArray *orderDataArray;  //  外卖数组
 }
 
+@property (weak, nonatomic) IBOutlet UIView *firstView;
+@property (weak, nonatomic) IBOutlet UIView *secondView;
+@property (weak, nonatomic) IBOutlet UIView *threeView;
 @property (weak, nonatomic) IBOutlet DishTypeView *dishTypeView;
 
 @end
@@ -56,6 +59,23 @@
     
     [self _initCollectionView];
     
+    self.firstView.layer.borderWidth = 1;
+    self.secondView.layer.borderWidth = 1;
+    self.threeView.layer.borderWidth = 1;
+    self.searchBtn.layer.borderWidth = 1;
+    
+    self.firstView.layer.borderColor = [UIColor grayColor].CGColor;
+    self.secondView.layer.borderColor = [UIColor grayColor].CGColor;
+    self.threeView.layer.borderColor = [UIColor grayColor].CGColor;
+    self.searchBtn.layer.borderColor = [UIColor grayColor].CGColor;
+    
+    self.firstView.layer.cornerRadius = 10;
+    self.secondView.layer.cornerRadius = 10;
+    self.threeView.layer.cornerRadius = 10;
+    self.searchBtn.layer.cornerRadius = 5;
+    
+
+//    searchBtn
     
     _array = @[@"全部",@"小桌",@"中桌",@"大桌",@"外卖"];
     
@@ -79,10 +99,10 @@
     OrderPerson *order = [[OrderPerson alloc] initWithdict:dic];
     orderDataArray = [NSMutableArray arrayWithObjects:order,order,order,order,order, nil];
     
-    self.searchTextField.layer.cornerRadius = 10;
-    self.searchTextField.layer.masksToBounds = YES;
-    self.searchTextField.layer.borderColor = [UIColor lightGrayColor].CGColor;
-    self.searchTextField.layer.borderWidth = 1;
+//    self.searchTextField.layer.cornerRadius = 10;
+//    self.searchTextField.layer.masksToBounds = YES;
+//    self.searchTextField.layer.borderColor = [UIColor lightGrayColor].CGColor;
+//    self.searchTextField.layer.borderWidth = 1;
     
     self.waiMaiView.layer.borderColor = [UIColor lightGrayColor].CGColor;
     self.waiMaiView.layer.borderWidth = 1;
@@ -96,6 +116,7 @@
 //    [KWindow addSubview:lockView];
     self.dishTypeView.strArray = _array;
     self.dishTypeView.delegate = self;
+    [self.dishTypeView setSelectIndex:0];
 }
 
 - (void)_initCollectionView
@@ -103,7 +124,12 @@
     deskState = DeskTableStateDefault;
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
-    self.collectionView.backgroundColor = [UIColor clearColor];
+    self.collectionView.backgroundColor = [UIColor whiteColor];
+    
+    self.collectionView.layer.cornerRadius = 10;
+    self.collectionView.layer.masksToBounds = YES;
+    self.collectionView.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    self.collectionView.layer.borderWidth = 1;
     self.collectionView.tag = 1001;
     
     
@@ -213,12 +239,17 @@
 }
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section{
     
-    return 0;
+    return 15;
+}
+
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section
+{
+    return 25;
 }
 
 -(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
 {
-    return UIEdgeInsetsMake(0, 0,0, 0);
+    return UIEdgeInsetsMake(26, 17,0, 17);
 }
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
@@ -386,6 +417,7 @@
         middlePoint2 = middlePoint;
         [self.view addSubview:panView];
         
+        
 //      临时餐桌不可以创建
         if ([self contarinString:dataTableArray[indexPath.row]]) {
             [panView removeFromSuperview];
@@ -393,13 +425,14 @@
             return;
         }
 //      创建10个餐桌之后，不可以创建
-        if ([self createNewOrNot:cll.nameLabel.text]) {
+        if ([self createNewOrNot:cll.nameLabel.text].length>0) {
             [panView removeFromSuperview];
             [[[UIAlertView alloc] initWithTitle:@"提示" message:@"最多仅可以创建10台拼桌" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil] show];
             return;
         }
         
 //      当前桌子为空，就不可以创建
+        
         
         [self caculationNewArray:[cll.nameLabel.text intValue] view:panView];
     }
@@ -453,9 +486,16 @@
     });
 }
 
+
 #pragma mark- 拼桌是否已经拼了10个了
--(BOOL)createNewOrNot:(NSString *)ind
+-(NSString *)createNewOrNot:(NSString *)ind
 {
+//  用户滑动了 非cell端
+    if (!ind) {
+        return @"滑动位置不对";
+    }
+    
+//  判断是否有10个
     NSMutableArray *mutable = resultAAray[[ind intValue]-1];
     NSMutableArray *mut = [NSMutableArray array];
     for (int i = 0; i<[mutable count]; i++) {
@@ -464,24 +504,36 @@
         }
     }
     
+    
     if (mut.count == 10) {
-        return YES;
+        return @"当前拼桌已满";
     }else{
-        return NO;
+        return @"";
     }
     
 }
+
 #pragma mark- 创建新桌（拼桌）
 -(void)caculationNewArray:(int)changgeIndex view:(UIView* )shoView
 {
+//  判断如果有客人，
+    NSMutableArray *resu = [NSMutableArray array];
+    for (int i = 0; i<changgeIndex; i++) {
+        NSMutableArray *mutable22 = resultAAray[i];
+        for (int j = 0; j<[mutable22 count]; j++) {
+            if ([mutable22[j] isEqualToString:@"1"]) {
+                [resu addObject:@"ddd"];
+            }
+        }
+    }
     
-    
-//    NSLog(@"__arr2__%@",resultAAray);
-    if ([arr2[changgeIndex -1] isEqualToString:@"0"]) {
+    if ([[arr2 objectAtIndex:resu.count] isEqualToString:@"0"]) {
         [[[UIAlertView alloc] initWithTitle:@"提示" message:@"该桌暂时没有客人，无法进行拼桌" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil] show];
         [shoView removeFromSuperview];
         return;
     }
+    
+    
     NSMutableArray *mutable = resultAAray[changgeIndex-1];
     for (int i = 0; i<[mutable count]; i++) {
         if ([mutable[i] isEqualToString:@"0"]) {
@@ -491,7 +543,7 @@
             break;
         }
     }
-    NSLog(@"__arr2__%@",arr2);
+
 }
 #pragma mark- 换桌
 -(void)revertNewArray:(NSString*)fromIndexName endIndexz:(NSString*)endIndexName

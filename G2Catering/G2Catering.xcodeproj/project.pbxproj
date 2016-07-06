@@ -1586,7 +1586,7 @@
 				TargetAttributes = {
 					76D45C6D1D0CFD3B0026491F = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = EY9GA3N4W5;
+						DevelopmentTeam = 2JRHMYYZCM;
 					};
 					76D45C861D0CFD3B0026491F = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -1632,7 +1632,6 @@
 				F104CE1B1D1B8083003EAEEC /* BaseSettingsViewController.xib in Resources */,
 				763177191D2A5B4600571559 /* 下拉提示.gif in Resources */,
 				9179F4DA1D221BB9002CF61D /* LockScreenView.xib in Resources */,
-				54060A0E1D2BA581004FA5FB /* PaySuccessViewController.xib in Resources */,
 				F104CE1F1D1B8083003EAEEC /* DeviceTestView.xib in Resources */,
 				43882E771D23C9F1006C28CE /* DeskCollectionTableViewCell.xib in Resources */,
 				F104CE651D1B8083003EAEEC /* Main.storyboard in Resources */,
@@ -1648,7 +1647,6 @@
 				F104CE231D1B8083003EAEEC /* EstimateView.xib in Resources */,
 				F104CE281D1B8083003EAEEC /* PrintSettingsView.xib in Resources */,
 				F104CDFD1D1B8083003EAEEC /* LoginViewController.xib in Resources */,
-				54060A041D2BA47E004FA5FB /* ScanQRCodeViewController.xib in Resources */,
 				F104CE6F1D1B8083003EAEEC /* LICENSE in Resources */,
 				43882E791D23C9F1006C28CE /* DeskCollectionViewCell.xib in Resources */,
 				F104CE2C1D1B8083003EAEEC /* UpdatePasswordView.xib in Resources */,
@@ -1661,7 +1659,6 @@
 				76D45C7E1D0CFD3B0026491F /* Assets.xcassets in Resources */,
 				F104CE251D1B8083003EAEEC /* FoodCollectionViewCell.xib in Resources */,
 				F104CE541D1B8083003EAEEC /* MainRightView.xib in Resources */,
-				54C9367D1D29FC5800739A6D /* PaymentViewController.xib in Resources */,
 				915737791D2129D300B6EC1D /* FoodAnayseTableViewCell.xib in Resources */,
 				F104CE4C1D1B8083003EAEEC /* OrderingTableViewCell.xib in Resources */,
 				F104CE331D1B8083003EAEEC /* VIPLeftView.xib in Resources */,
@@ -1683,7 +1680,6 @@
 				F104CE2E1D1B8083003EAEEC /* TransferViewController.xib in Resources */,
 				43882E811D23C9F1006C28CE /* UpCollectionViewCell.xib in Resources */,
 				43882E731D23C9F1006C28CE /* DeskTableViewController.xib in Resources */,
-				54060A091D2BA518004FA5FB /* UploadDataViewController.xib in Resources */,
 				F104CE0B1D1B8083003EAEEC /* TradeContentView.xib in Resources */,
 				F104CE561D1B8083003EAEEC /* LingShouViewController.xib in Resources */,
 				F104CE521D1B8083003EAEEC /* MainLeftView.xib in Resources */,
@@ -1781,7 +1777,6 @@
 				43882E821D23C9F1006C28CE /* WaiMaiDetailTableViewCell.m in Sources */,
 				917A06531D1CC48B00CEDB9E /* fuKuanView.m in Sources */,
 				F104CE0C1D1B8083003EAEEC /* TypeTableViewCell.m in Sources */,
-				54060A0D1D2BA581004FA5FB /* PaySuccessViewController.m in Sources */,
 				9179F57C1D224FD9002CF61D /* ZFXAxisLine.m in Sources */,
 				F104CE4F1D1B8083003EAEEC /* MainLeftTableViewCell.m in Sources */,
 				F104CE6E1D1B8083003EAEEC /* FSCalendarStickyHeader.m in Sources */,
@@ -1789,8 +1784,6 @@
 				F104CE491D1B8083003EAEEC /* OrderingCollectionViewCell.m in Sources */,
 				818EFB7F1D1D098C005C02E5 /* NSString+log.m in Sources */,
 				9179F58D1D224FDA002CF61D /* ZFWave.m in Sources */,
-				54C9367C1D29FC5800739A6D /* PaymentViewController.m in Sources */,
-				54060A081D2BA518004FA5FB /* UploadDataViewController.m in Sources */,
 				818EFB801D1D098C005C02E5 /* UIView+AdjustFrame.m in Sources */,
 				43882E701D23C9F1006C28CE /* DeskCollectionController.m in Sources */,
 				43882E741D23C9F1006C28CE /* DinnerTableViewController.m in Sources */,
@@ -1851,7 +1844,6 @@
 				F104CE511D1B8083003EAEEC /* MainLeftView.m in Sources */,
 				818EFB771D1D096B005C02E5 /* ScanView.m in Sources */,
 				9179F57B1D224FD9002CF61D /* ZFPopoverLabel.m in Sources */,
-				54060A031D2BA47E004FA5FB /* ScanQRCodeViewController.m in Sources */,
 				F104CE291D1B8083003EAEEC /* PrintSettingTableViewCell.m in Sources */,
 				9179F5871D224FDA002CF61D /* ZFCircle.m in Sources */,
 				F104CE611D1B8083003EAEEC /* AppDelegate.m in Sources */,
@@ -2021,7 +2013,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/G2Catering/Resources(资源)/Plist/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ndlan.G2Catering;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ndlan.yuyu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 2;
@@ -2040,7 +2032,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/G2Catering/Resources(资源)/Plist/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ndlan.G2Catering;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ndlan.yuyu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 2;

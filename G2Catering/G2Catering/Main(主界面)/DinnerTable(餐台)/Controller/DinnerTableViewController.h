@@ -32,4 +32,6 @@ typedef NS_ENUM(NSInteger,DeskState) {
 @property (strong, nonatomic) IBOutlet UIView *waiMaiView;
 @property (weak, nonatomic) IBOutlet UIView *waiMaiWholeView;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UIButton *searchBtn;
+
 @end
