@@ -31,6 +31,7 @@
                 <constraint firstItem="QR7-K0-8hN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="3" id="Y1S-OD-7p7"/>
                 <constraint firstItem="yW7-pe-wye" firstAttribute="centerX" secondItem="QR7-K0-8hN" secondAttribute="centerX" id="lJv-mA-Jw0"/>
             </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="cloudImageView" destination="QR7-K0-8hN" id="ZHr-Cy-6Lm"/>
