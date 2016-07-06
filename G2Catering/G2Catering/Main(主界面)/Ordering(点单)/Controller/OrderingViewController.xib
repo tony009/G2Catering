@@ -8,9 +8,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrderingViewController">
             <connections>
                 <outlet property="buttonView" destination="Z3p-iE-Jlq" id="qMB-7L-9Qu"/>
+                <outlet property="checkButton" destination="Sro-7i-z5n" id="9Rh-iy-ngN"/>
                 <outlet property="dishTypeView" destination="5AC-J0-qMj" id="v9r-gj-Sqi"/>
                 <outlet property="firstView" destination="S6R-Qw-tl7" id="REy-D8-KoU"/>
-                <outlet property="jiezhangButton" destination="Sro-7i-z5n" id="dfc-N3-4rf"/>
                 <outlet property="moneyLabel" destination="ltp-uI-WMm" id="1jv-V2-7gT"/>
                 <outlet property="orderCollectionView" destination="U8D-i4-zBQ" id="3by-dA-MQf"/>
                 <outlet property="orderListTableView" destination="jSb-9u-aw4" id="z7R-QD-TW2"/>
