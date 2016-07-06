@@ -21,6 +21,9 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
 @interface OrderingViewController ()<UITableViewDelegate,UITableViewDataSource,UICollectionViewDelegate,UICollectionViewDataSource>
 
 
+@property (weak, nonatomic) IBOutlet UIButton *placeOrderButton;
+@property (weak, nonatomic) IBOutlet UIButton *jiezhangButton;
+
 
 @property (weak, nonatomic) IBOutlet UIView *buttonView; //
 
@@ -91,6 +94,8 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
     
     //
     
+    [self.placeOrderButton setCornerRadius:0 withBorderWidth:1.0 withBorderColor:RGB(0xc2, 0xc7, 0xcc)];
+    [self.jiezhangButton setCornerRadius:0 withBorderWidth:1.0 withBorderColor:RGB(0xc2, 0xc7, 0xcc)];
     
     self.dishTypeView.strArray = @[@"全部",@"热菜",@"甜菜",@"主食",@"凉菜",@"酒水",@"特价"];
     
@@ -190,7 +195,7 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     OrderingTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:tableViewCellIdentifer];
-    cell.dishPrice.text = @"100";
+    cell.dishPrice.text = @"￥100";
     cell.dishName.text = @"五彩三丝";
     
     return cell;

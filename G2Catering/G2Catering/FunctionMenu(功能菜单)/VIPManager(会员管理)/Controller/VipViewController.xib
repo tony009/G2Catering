@@ -41,7 +41,6 @@
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iMK-vp-Sjy" customClass="SearchView">
                                         <rect key="frame" x="24" y="13" width="250" height="40"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="33K-bj-uQT"/>
                                             <constraint firstAttribute="height" constant="40" id="Mn7-cP-hRV"/>
@@ -148,7 +147,7 @@
                         </constraints>
                     </view>
                 </subviews>
-                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <color key="backgroundColor" red="0.94901960780000005" green="0.95686274510000002" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
                     <constraint firstItem="vpf-NA-TiX" firstAttribute="top" secondItem="e1Z-DB-hpa" secondAttribute="bottom" constant="21" id="2ra-i6-TTw"/>
                     <constraint firstItem="e1Z-DB-hpa" firstAttribute="leading" secondItem="QPl-SR-eDV" secondAttribute="leading" constant="19" id="42R-sC-Kyv"/>

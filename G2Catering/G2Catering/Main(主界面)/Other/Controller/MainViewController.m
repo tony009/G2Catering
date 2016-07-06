@@ -241,9 +241,9 @@
     leftView.frame = CGRectMake(-kLeftViewWidth, 0, kLeftViewWidth, KScreenHeight);
     
 
-    MainLeftView *rightView =  [[[NSBundle mainBundle]loadNibNamed:@"MainRightView" owner:self options:nil]lastObject];
+    MainRightView *rightView =  [[[NSBundle mainBundle]loadNibNamed:@"MainRightView" owner:self options:nil]lastObject];
     rightView.delegate = self;
-    rightView.frame = CGRectMake(KScreenWidth, 0, kLeftViewWidth, KScreenHeight);
+    rightView.frame = CGRectMake(KScreenWidth, 0, kRightViewWidth, KScreenHeight);
     
     self.leftView = leftView;
     self.rightView = rightView;
@@ -277,7 +277,7 @@
 -(void)viewWillLayoutSubviews{
     
     self.leftView.frame  = CGRectMake(-kLeftViewWidth, 0, kLeftViewWidth, KScreenHeight);
-    self.rightView.frame = CGRectMake(KScreenWidth, 0, kLeftViewWidth, KScreenHeight);
+    self.rightView.frame = CGRectMake(KScreenWidth, 0, kRightViewWidth, KScreenHeight);
 }
 
 
@@ -291,15 +291,15 @@ static float  kDuration = 0.25; //动画持续时间
         
         [UIView animateWithDuration:kDuration animations:^{
             
-            self.view.transform = CGAffineTransformMakeTranslation(-kLeftViewWidth, 0);
-            self.rightView.transform = CGAffineTransformMakeTranslation(-kLeftViewWidth, 0);
+            self.view.transform = CGAffineTransformMakeTranslation(-kRightViewWidth, 0);
+            self.rightView.transform = CGAffineTransformMakeTranslation(-kRightViewWidth, 0);
             
             
         } completion:^(BOOL finished) {
             
             self.flag = 1;
             //self.rightView.hidden = NO;
-            self.clearView.frame = CGRectMake(0, 0, KScreenWidth-kLeftViewWidth, KScreenHeight);
+            self.clearView.frame = CGRectMake(0, 0, KScreenWidth-kRightViewWidth, KScreenHeight);
             [KWindow addSubview:self.clearView];
             
         }];
@@ -321,7 +321,6 @@ static float  kDuration = 0.25; //动画持续时间
     
 
 }
-
 
 -(void)p_swipeRight{
     

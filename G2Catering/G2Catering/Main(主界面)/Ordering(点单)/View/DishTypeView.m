@@ -66,10 +66,10 @@
     self.collectionView.showsVerticalScrollIndicator = NO;
     
     UICollectionViewFlowLayout *flowLayout = (UICollectionViewFlowLayout *)self.collectionView.collectionViewLayout;
-    flowLayout.minimumLineSpacing = 10;
+    flowLayout.minimumLineSpacing = 7;
     flowLayout.minimumInteritemSpacing = 0;
     flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
-    flowLayout.itemSize = CGSizeMake(63, 85);
+    flowLayout.itemSize = CGSizeMake(63, 95);
  
     [self.collectionView registerClass:[DishTypeViewCollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
     
