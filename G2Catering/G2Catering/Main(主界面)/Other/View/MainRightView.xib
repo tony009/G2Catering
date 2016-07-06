@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -12,7 +12,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gH-Qp-04T" userLabel="点菜">
-                    <rect key="frame" x="0.0" y="0.0" width="204" height="160"/>
+                    <rect key="frame" x="0.0" y="0.0" width="204" height="161"/>
                     <color key="backgroundColor" red="0.1647058824" green="0.25882352939999997" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" image="diancan_icon"/>
                     <connections>
@@ -28,7 +28,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYt-oZ-85m" userLabel="零售">
-                    <rect key="frame" x="0.0" y="323" width="204" height="160"/>
+                    <rect key="frame" x="0.0" y="322" width="204" height="161"/>
                     <color key="backgroundColor" red="0.1647058824" green="0.25882352939999997" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" image="lingshou_icon"/>
                     <connections>
@@ -36,17 +36,17 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAj-DH-hie" userLabel="外面">
-                    <rect key="frame" x="0.0" y="484" width="204" height="160"/>
+                    <rect key="frame" x="0.0" y="483" width="204" height="161"/>
                     <color key="backgroundColor" red="0.1647058824" green="0.25882352939999997" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" image="waimai_icon"/>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="HYt-oZ-85m" firstAttribute="top" secondItem="95N-Jx-h1h" secondAttribute="bottom" constant="1" id="7aW-aF-mG4"/>
+                <constraint firstItem="HYt-oZ-85m" firstAttribute="top" secondItem="95N-Jx-h1h" secondAttribute="bottom" id="7aW-aF-mG4"/>
                 <constraint firstAttribute="trailing" secondItem="HYt-oZ-85m" secondAttribute="trailing" id="9Bj-GR-0wo"/>
                 <constraint firstItem="eAj-DH-hie" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="BAA-AZ-tsl"/>
-                <constraint firstItem="eAj-DH-hie" firstAttribute="top" secondItem="HYt-oZ-85m" secondAttribute="bottom" constant="1" id="PmE-x7-dwp"/>
+                <constraint firstItem="eAj-DH-hie" firstAttribute="top" secondItem="HYt-oZ-85m" secondAttribute="bottom" id="PmE-x7-dwp"/>
                 <constraint firstAttribute="bottom" secondItem="eAj-DH-hie" secondAttribute="bottom" id="QF6-xY-un5"/>
                 <constraint firstItem="95N-Jx-h1h" firstAttribute="height" secondItem="1gH-Qp-04T" secondAttribute="height" id="S1D-nz-GTk"/>
                 <constraint firstAttribute="trailing" secondItem="95N-Jx-h1h" secondAttribute="trailing" id="SBk-3Z-9ne"/>
@@ -56,7 +56,7 @@
                 <constraint firstItem="1gH-Qp-04T" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="b8T-as-4NM"/>
                 <constraint firstItem="HYt-oZ-85m" firstAttribute="height" secondItem="1gH-Qp-04T" secondAttribute="height" id="kfy-Ae-XdP"/>
                 <constraint firstItem="eAj-DH-hie" firstAttribute="height" secondItem="1gH-Qp-04T" secondAttribute="height" id="mNp-Pv-59O"/>
-                <constraint firstItem="95N-Jx-h1h" firstAttribute="top" secondItem="1gH-Qp-04T" secondAttribute="bottom" constant="1" id="myH-OO-j5Q"/>
+                <constraint firstItem="95N-Jx-h1h" firstAttribute="top" secondItem="1gH-Qp-04T" secondAttribute="bottom" id="myH-OO-j5Q"/>
                 <constraint firstItem="95N-Jx-h1h" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rOJ-RO-NpA"/>
                 <constraint firstAttribute="trailing" secondItem="eAj-DH-hie" secondAttribute="trailing" id="tKL-Xs-KuU"/>
             </constraints>

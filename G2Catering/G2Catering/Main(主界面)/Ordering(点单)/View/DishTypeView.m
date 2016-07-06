@@ -67,7 +67,7 @@
     
     UICollectionViewFlowLayout *flowLayout = (UICollectionViewFlowLayout *)self.collectionView.collectionViewLayout;
     flowLayout.minimumLineSpacing = 10;
-    flowLayout.minimumInteritemSpacing = 1;
+    flowLayout.minimumInteritemSpacing = 0;
     flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
     flowLayout.itemSize = CGSizeMake(63, 85);
  
@@ -104,8 +104,17 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
     DishTypeViewCollectionViewCell *cell = (DishTypeViewCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    
+//    CGRect frame = cell.frame;
+//    frame.size.height = 100;
+//    frame.size.width = 80;
+//    cell.frame = frame;
+    
     cell.backgroundColor = RGB(0x2a, 0x42, 0x5a);
     [cell.btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    
+    
+    
     
     if ([self.delegate respondsToSelector:@selector(DishTypeView:didSelectItemAtIndex:)]) {
         

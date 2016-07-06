@@ -21,12 +21,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _isHidden = YES;
-  [self.bgView setImage:[UIImage imageNamed:@"订单-BG"]];
+  //[self.bgView setImage:[UIImage imageNamed:@"订单-BG"]];
     self.vipTable.dataSource =self;
     self.vipTable.delegate =self;
     [self.vipTable registerNib:[UINib nibWithNibName:@"VIPTableViewCell" bundle:nil] forCellReuseIdentifier:@"VIPTableViewCell"];
     [self.addBtn addTarget:self action:@selector(addVipAction:) forControlEvents:UIControlEventTouchUpInside];
-    [self setRoundAngleWithView:self.searchView withCornerRadius:5 withColor:[UIColor lightGrayColor]];
+    
+    [self.allView setCornerRadius:5.0 withBorderWidth:1.0 withBorderColor:[UIColor grayColor]];
 
 }
 //设置圆角

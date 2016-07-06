@@ -33,6 +33,12 @@
 		43882E851D23C9F1006C28CE /* WaiMaiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E6E1D23C9F1006C28CE /* WaiMaiTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
 		763177111D20FB8200571559 /* SegmentedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 763177101D20FB8200571559 /* SegmentedView.m */; };
 		763177131D20FC1E00571559 /* SegmentedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 763177121D20FC1E00571559 /* SegmentedView.xib */; };
+		763177191D2A5B4600571559 /* 下拉提示.gif in Resources */ = {isa = PBXBuildFile; fileRef = 763177181D2A5B4600571559 /* 下拉提示.gif */; };
+		7631771C1D2B593000571559 /* SearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7631771B1D2B593000571559 /* SearchView.m */; };
+		7631771E1D2B593D00571559 /* SearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7631771D1D2B593D00571559 /* SearchView.xib */; };
+		763177251D2B60C000571559 /* UIView+UI.m in Sources */ = {isa = PBXBuildFile; fileRef = 763177241D2B60C000571559 /* UIView+UI.m */; };
+		763177291D2BA6CA00571559 /* BluetoothConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763177271D2BA6CA00571559 /* BluetoothConnectionViewController.m */; };
+		7631772A1D2BA6CA00571559 /* BluetoothConnectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 763177281D2BA6CA00571559 /* BluetoothConnectionViewController.xib */; };
 		76D45C7E1D0CFD3B0026491F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76D45C7D1D0CFD3B0026491F /* Assets.xcassets */; };
 		76D45C8C1D0CFD3B0026491F /* G2CateringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D45C8B1D0CFD3B0026491F /* G2CateringTests.m */; };
 		76D45C971D0CFD3C0026491F /* G2CateringUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D45C961D0CFD3C0026491F /* G2CateringUITests.m */; };
@@ -247,9 +253,30 @@
 		43882E6C1D23C9F1006C28CE /* WaiMaiTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaiMaiTableViewCell.h; sourceTree = "<group>"; };
 		43882E6D1D23C9F1006C28CE /* WaiMaiTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaiMaiTableViewCell.m; sourceTree = "<group>"; };
 		43882E6E1D23C9F1006C28CE /* WaiMaiTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaiMaiTableViewCell.xib; sourceTree = "<group>"; };
+		54060A001D2BA47E004FA5FB /* ScanQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanQRCodeViewController.h; sourceTree = "<group>"; };
+		54060A011D2BA47E004FA5FB /* ScanQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanQRCodeViewController.m; sourceTree = "<group>"; };
+		54060A021D2BA47E004FA5FB /* ScanQRCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanQRCodeViewController.xib; sourceTree = "<group>"; };
+		54060A051D2BA518004FA5FB /* UploadDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadDataViewController.h; sourceTree = "<group>"; };
+		54060A061D2BA518004FA5FB /* UploadDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadDataViewController.m; sourceTree = "<group>"; };
+		54060A071D2BA518004FA5FB /* UploadDataViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UploadDataViewController.xib; sourceTree = "<group>"; };
+		54060A0A1D2BA581004FA5FB /* PaySuccessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaySuccessViewController.h; sourceTree = "<group>"; };
+		54060A0B1D2BA581004FA5FB /* PaySuccessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaySuccessViewController.m; sourceTree = "<group>"; };
+		54060A0C1D2BA581004FA5FB /* PaySuccessViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaySuccessViewController.xib; sourceTree = "<group>"; };
+		54C936761D29FC5800739A6D /* PaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentViewController.h; sourceTree = "<group>"; };
+		54C936771D29FC5800739A6D /* PaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentViewController.m; sourceTree = "<group>"; };
+		54C936781D29FC5800739A6D /* PaymentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentViewController.xib; sourceTree = "<group>"; };
 		7631770F1D20FB8200571559 /* SegmentedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentedView.h; sourceTree = "<group>"; };
 		763177101D20FB8200571559 /* SegmentedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentedView.m; sourceTree = "<group>"; };
 		763177121D20FC1E00571559 /* SegmentedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SegmentedView.xib; sourceTree = "<group>"; };
+		763177181D2A5B4600571559 /* 下拉提示.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "下拉提示.gif"; sourceTree = "<group>"; };
+		7631771A1D2B593000571559 /* SearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchView.h; sourceTree = "<group>"; };
+		7631771B1D2B593000571559 /* SearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchView.m; sourceTree = "<group>"; };
+		7631771D1D2B593D00571559 /* SearchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchView.xib; sourceTree = "<group>"; };
+		763177231D2B60C000571559 /* UIView+UI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+UI.h"; sourceTree = "<group>"; };
+		763177241D2B60C000571559 /* UIView+UI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+UI.m"; sourceTree = "<group>"; };
+		763177261D2BA6CA00571559 /* BluetoothConnectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothConnectionViewController.h; sourceTree = "<group>"; };
+		763177271D2BA6CA00571559 /* BluetoothConnectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluetoothConnectionViewController.m; sourceTree = "<group>"; };
+		763177281D2BA6CA00571559 /* BluetoothConnectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BluetoothConnectionViewController.xib; sourceTree = "<group>"; };
 		76D45C6E1D0CFD3B0026491F /* G2Catering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = G2Catering.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76D45C7D1D0CFD3B0026491F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76D45C871D0CFD3B0026491F /* G2CateringTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = G2CateringTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -613,12 +640,80 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		54C9366F1D29FB0C00739A6D /* payment(支付) */ = {
+			isa = PBXGroup;
+			children = (
+				54C936751D29FC5800739A6D /* controller */,
+				54C936791D29FC5800739A6D /* model */,
+				54C9367A1D29FC5800739A6D /* view */,
+				54C9367B1D29FC5800739A6D /* viewModelManager */,
+			);
+			path = "payment(支付)";
+			sourceTree = "<group>";
+		};
+		54C936751D29FC5800739A6D /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				54C936761D29FC5800739A6D /* PaymentViewController.h */,
+				54C936771D29FC5800739A6D /* PaymentViewController.m */,
+				54C936781D29FC5800739A6D /* PaymentViewController.xib */,
+				54060A001D2BA47E004FA5FB /* ScanQRCodeViewController.h */,
+				54060A011D2BA47E004FA5FB /* ScanQRCodeViewController.m */,
+				54060A021D2BA47E004FA5FB /* ScanQRCodeViewController.xib */,
+				54060A051D2BA518004FA5FB /* UploadDataViewController.h */,
+				54060A061D2BA518004FA5FB /* UploadDataViewController.m */,
+				54060A071D2BA518004FA5FB /* UploadDataViewController.xib */,
+				54060A0A1D2BA581004FA5FB /* PaySuccessViewController.h */,
+				54060A0B1D2BA581004FA5FB /* PaySuccessViewController.m */,
+				54060A0C1D2BA581004FA5FB /* PaySuccessViewController.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		54C936791D29FC5800739A6D /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		54C9367A1D29FC5800739A6D /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		54C9367B1D29FC5800739A6D /* viewModelManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewModelManager;
+			sourceTree = "<group>";
+		};
 		61409CEBC5EC687B81CF5D5F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				073B094CD599E52328204BCD /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		763177151D2A406200571559 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				763177181D2A5B4600571559 /* 下拉提示.gif */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		7631771F1D2B5E6600571559 /* Category(分类) */ = {
+			isa = PBXGroup;
+			children = (
+				763177231D2B60C000571559 /* UIView+UI.h */,
+				763177241D2B60C000571559 /* UIView+UI.m */,
+			);
+			path = "Category(分类)";
 			sourceTree = "<group>";
 		};
 		76D45C651D0CFD3B0026491F = {
@@ -646,6 +741,7 @@
 		76D45C701D0CFD3B0026491F /* G2Catering */ = {
 			isa = PBXGroup;
 			children = (
+				54C9366F1D29FB0C00739A6D /* payment(支付) */,
 				F104CD0E1D1B8083003EAEEC /* Expand(拓展) */,
 				F104CD161D1B8083003EAEEC /* FunctionMenu(功能菜单) */,
 				F104CD811D1B8083003EAEEC /* Main(主界面) */,
@@ -951,6 +1047,7 @@
 		F104CD0E1D1B8083003EAEEC /* Expand(拓展) */ = {
 			isa = PBXGroup;
 			children = (
+				7631771F1D2B5E6600571559 /* Category(分类) */,
 				F104CD0F1D1B8083003EAEEC /* Macros(宏) */,
 				F104CD131D1B8083003EAEEC /* Network(网络) */,
 			);
@@ -1006,6 +1103,9 @@
 				F104CD191D1B8083003EAEEC /* LoginViewController.h */,
 				F104CD1A1D1B8083003EAEEC /* LoginViewController.m */,
 				F104CD1B1D1B8083003EAEEC /* LoginViewController.xib */,
+				763177261D2BA6CA00571559 /* BluetoothConnectionViewController.h */,
+				763177271D2BA6CA00571559 /* BluetoothConnectionViewController.m */,
+				763177281D2BA6CA00571559 /* BluetoothConnectionViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1306,6 +1406,9 @@
 				F104CDB91D1B8083003EAEEC /* MainRightView.h */,
 				F104CDBA1D1B8083003EAEEC /* MainRightView.m */,
 				F104CDBB1D1B8083003EAEEC /* MainRightView.xib */,
+				7631771A1D2B593000571559 /* SearchView.h */,
+				7631771B1D2B593000571559 /* SearchView.m */,
+				7631771D1D2B593D00571559 /* SearchView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1343,6 +1446,7 @@
 		F104CDD61D1B8083003EAEEC /* Resources(资源) */ = {
 			isa = PBXGroup;
 			children = (
+				763177151D2A406200571559 /* Image */,
 				818EFB791D1D098C005C02E5 /* Common */,
 				F104CDD71D1B8083003EAEEC /* Plist */,
 				F104CDD91D1B8083003EAEEC /* Storyboard */,
@@ -1482,7 +1586,7 @@
 				TargetAttributes = {
 					76D45C6D1D0CFD3B0026491F = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = ECM2J96N6S;
+						DevelopmentTeam = EY9GA3N4W5;
 					};
 					76D45C861D0CFD3B0026491F = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -1520,12 +1624,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F104CE501D1B8083003EAEEC /* MainLeftTableViewCell.xib in Resources */,
+				7631772A1D2BA6CA00571559 /* BluetoothConnectionViewController.xib in Resources */,
 				917A06581D1CC48B00CEDB9E /* secondStepView.xib in Resources */,
 				917A065A1D1CC48B00CEDB9E /* TypeCollectionViewCell.xib in Resources */,
 				F104CE171D1B8083003EAEEC /* LM_datePickerView.xib in Resources */,
 				F104CE451D1B8083003EAEEC /* OpenTableAndTakeOutView.xib in Resources */,
 				F104CE1B1D1B8083003EAEEC /* BaseSettingsViewController.xib in Resources */,
+				763177191D2A5B4600571559 /* 下拉提示.gif in Resources */,
 				9179F4DA1D221BB9002CF61D /* LockScreenView.xib in Resources */,
+				54060A0E1D2BA581004FA5FB /* PaySuccessViewController.xib in Resources */,
 				F104CE1F1D1B8083003EAEEC /* DeviceTestView.xib in Resources */,
 				43882E771D23C9F1006C28CE /* DeskCollectionTableViewCell.xib in Resources */,
 				F104CE651D1B8083003EAEEC /* Main.storyboard in Resources */,
@@ -1541,6 +1648,7 @@
 				F104CE231D1B8083003EAEEC /* EstimateView.xib in Resources */,
 				F104CE281D1B8083003EAEEC /* PrintSettingsView.xib in Resources */,
 				F104CDFD1D1B8083003EAEEC /* LoginViewController.xib in Resources */,
+				54060A041D2BA47E004FA5FB /* ScanQRCodeViewController.xib in Resources */,
 				F104CE6F1D1B8083003EAEEC /* LICENSE in Resources */,
 				43882E791D23C9F1006C28CE /* DeskCollectionViewCell.xib in Resources */,
 				F104CE2C1D1B8083003EAEEC /* UpdatePasswordView.xib in Resources */,
@@ -1553,11 +1661,13 @@
 				76D45C7E1D0CFD3B0026491F /* Assets.xcassets in Resources */,
 				F104CE251D1B8083003EAEEC /* FoodCollectionViewCell.xib in Resources */,
 				F104CE541D1B8083003EAEEC /* MainRightView.xib in Resources */,
+				54C9367D1D29FC5800739A6D /* PaymentViewController.xib in Resources */,
 				915737791D2129D300B6EC1D /* FoodAnayseTableViewCell.xib in Resources */,
 				F104CE4C1D1B8083003EAEEC /* OrderingTableViewCell.xib in Resources */,
 				F104CE331D1B8083003EAEEC /* VIPLeftView.xib in Resources */,
 				F104CE641D1B8083003EAEEC /* LaunchScreen.storyboard in Resources */,
 				F104CE2A1D1B8083003EAEEC /* PrintSettingTableViewCell.xib in Resources */,
+				7631771E1D2B593D00571559 /* SearchView.xib in Resources */,
 				F104CE131D1B8083003EAEEC /* BookManagerTableViewCell.xib in Resources */,
 				F104CE311D1B8083003EAEEC /* VipViewController.xib in Resources */,
 				F104CE481D1B8083003EAEEC /* OpenTableCollectionViewCell.xib in Resources */,
@@ -1573,6 +1683,7 @@
 				F104CE2E1D1B8083003EAEEC /* TransferViewController.xib in Resources */,
 				43882E811D23C9F1006C28CE /* UpCollectionViewCell.xib in Resources */,
 				43882E731D23C9F1006C28CE /* DeskTableViewController.xib in Resources */,
+				54060A091D2BA518004FA5FB /* UploadDataViewController.xib in Resources */,
 				F104CE0B1D1B8083003EAEEC /* TradeContentView.xib in Resources */,
 				F104CE561D1B8083003EAEEC /* LingShouViewController.xib in Resources */,
 				F104CE521D1B8083003EAEEC /* MainLeftView.xib in Resources */,
@@ -1663,11 +1774,14 @@
 				F104CE1A1D1B8083003EAEEC /* BaseSettingsViewController.m in Sources */,
 				F104CE441D1B8083003EAEEC /* OpenTableAndTakeOutView.m in Sources */,
 				9179F5781D224FD9002CF61D /* UIColor+Zirkfied.m in Sources */,
+				7631771C1D2B593000571559 /* SearchView.m in Sources */,
+				763177291D2BA6CA00571559 /* BluetoothConnectionViewController.m in Sources */,
 				F104CE081D1B8083003EAEEC /* JiLuCaiViewCell.m in Sources */,
 				F104CE401D1B8083003EAEEC /* OrderingViewController.m in Sources */,
 				43882E821D23C9F1006C28CE /* WaiMaiDetailTableViewCell.m in Sources */,
 				917A06531D1CC48B00CEDB9E /* fuKuanView.m in Sources */,
 				F104CE0C1D1B8083003EAEEC /* TypeTableViewCell.m in Sources */,
+				54060A0D1D2BA581004FA5FB /* PaySuccessViewController.m in Sources */,
 				9179F57C1D224FD9002CF61D /* ZFXAxisLine.m in Sources */,
 				F104CE4F1D1B8083003EAEEC /* MainLeftTableViewCell.m in Sources */,
 				F104CE6E1D1B8083003EAEEC /* FSCalendarStickyHeader.m in Sources */,
@@ -1675,11 +1789,14 @@
 				F104CE491D1B8083003EAEEC /* OrderingCollectionViewCell.m in Sources */,
 				818EFB7F1D1D098C005C02E5 /* NSString+log.m in Sources */,
 				9179F58D1D224FDA002CF61D /* ZFWave.m in Sources */,
+				54C9367C1D29FC5800739A6D /* PaymentViewController.m in Sources */,
+				54060A081D2BA518004FA5FB /* UploadDataViewController.m in Sources */,
 				818EFB801D1D098C005C02E5 /* UIView+AdjustFrame.m in Sources */,
 				43882E701D23C9F1006C28CE /* DeskCollectionController.m in Sources */,
 				43882E741D23C9F1006C28CE /* DinnerTableViewController.m in Sources */,
 				9179F58B1D224FDA002CF61D /* ZFPieChart.m in Sources */,
 				F104CE261D1B8083003EAEEC /* LM_button.m in Sources */,
+				763177251D2B60C000571559 /* UIView+UI.m in Sources */,
 				43882E721D23C9F1006C28CE /* DeskTableViewController.m in Sources */,
 				F104CE701D1B8083003EAEEC /* NSDate+FSExtension.m in Sources */,
 				F104CE721D1B8083003EAEEC /* NSString+FSExtension.m in Sources */,
@@ -1734,6 +1851,7 @@
 				F104CE511D1B8083003EAEEC /* MainLeftView.m in Sources */,
 				818EFB771D1D096B005C02E5 /* ScanView.m in Sources */,
 				9179F57B1D224FD9002CF61D /* ZFPopoverLabel.m in Sources */,
+				54060A031D2BA47E004FA5FB /* ScanQRCodeViewController.m in Sources */,
 				F104CE291D1B8083003EAEEC /* PrintSettingTableViewCell.m in Sources */,
 				9179F5871D224FDA002CF61D /* ZFCircle.m in Sources */,
 				F104CE611D1B8083003EAEEC /* AppDelegate.m in Sources */,

@@ -9,6 +9,9 @@
 #import "LockScreenView.h"
 #import <Masonry.h>
 #import "UnLockView.h"
+#import "FLAnimatedImage.h"
+
+
 @interface LockScreenView ()
 
 @property (nonatomic, strong) UIView *selfView;
@@ -16,6 +19,10 @@
 @property (nonatomic, copy) NSString *screenStatus;
 
 @property (nonatomic, strong) UnLockView *unLockView;
+
+@property (nonatomic,strong) FLAnimatedImage *animatedImage;
+
+
 @end
 
 @implementation LockScreenView
@@ -28,6 +35,15 @@
     pan.direction = UISwipeGestureRecognizerDirectionDown;
     [self.cloudImageView addGestureRecognizer:pan];
     self.screenStatus = @"unlock";
+    
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"下拉提示" ofType:@"gif"];
+    
+    FLAnimatedImage *image = [FLAnimatedImage animatedImageWithGIFData:[NSData dataWithContentsOfFile:path]];
+    FLAnimatedImageView *imageView = [[FLAnimatedImageView alloc] init];
+    imageView.animatedImage = image;
+    imageView.frame = CGRectMake(32, 160, 100, 100);
+    [self.lockBackView addSubview:imageView];
     
 
 }
@@ -65,7 +81,7 @@
         } completion:^(BOOL finished) {
             
             
-            self.backViewTopMargin.constant = -100;
+            self.backViewTopMargin.constant = -120;
             
             [UIView animateWithDuration:1 animations:^{
                 
@@ -81,7 +97,7 @@
                 self.unLockView = [[NSBundle mainBundle] loadNibNamed:@"UnLockView" owner:nil options:nil].lastObject;
                 CGRect frame = self.unLockView.frame ;
                 
-                frame = CGRectMake(690, 0, 124, 200);
+                frame = CGRectMake(710, 0, 124, 200);
                 self.unLockView.frame = frame;
                 
                 [KWindow addSubview:self.unLockView];

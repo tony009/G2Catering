@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -12,22 +12,22 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TqZ-eB-WTL">
-                    <rect key="frame" x="690" y="-120" width="120" height="200"/>
+                    <rect key="frame" x="690" y="-120" width="154" height="200"/>
                     <subviews>
                         <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="统计表云彩" translatesAutoresizingMaskIntoConstraints="NO" id="gEa-if-3ne">
-                            <rect key="frame" x="4" y="128" width="111" height="62"/>
+                            <rect key="frame" x="22" y="128" width="111" height="62"/>
                         </imageView>
                         <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="统计表线" translatesAutoresizingMaskIntoConstraints="NO" id="KbX-ME-MAm">
-                            <rect key="frame" x="64" y="0.0" width="2" height="129"/>
+                            <rect key="frame" x="81" y="0.0" width="2" height="129"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="锁屏" translatesAutoresizingMaskIntoConstraints="NO" id="4Oi-xA-iWp">
+                            <rect key="frame" x="68" y="139" width="30" height="40"/>
                         </imageView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKS-fx-eAG">
-                            <rect key="frame" x="83" y="120" width="32" height="32"/>
+                            <rect key="frame" x="117" y="120" width="32" height="32"/>
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <state key="normal" title="99+" backgroundImage="锁屏-椭圆2"/>
                         </button>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="锁屏" translatesAutoresizingMaskIntoConstraints="NO" id="4Oi-xA-iWp">
-                            <rect key="frame" x="50" y="139" width="30" height="40"/>
-                        </imageView>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
@@ -35,23 +35,25 @@
                         <constraint firstItem="gEa-if-3ne" firstAttribute="centerX" secondItem="TqZ-eB-WTL" secondAttribute="centerX" id="Cdy-TV-nCO"/>
                         <constraint firstAttribute="trailing" secondItem="aKS-fx-eAG" secondAttribute="trailing" constant="5" id="Egg-Pl-prf"/>
                         <constraint firstItem="KbX-ME-MAm" firstAttribute="top" secondItem="TqZ-eB-WTL" secondAttribute="top" id="Goh-Rt-FXb"/>
-                        <constraint firstAttribute="trailing" secondItem="aKS-fx-eAG" secondAttribute="trailing" id="HSX-gq-Q1D"/>
                         <constraint firstItem="gEa-if-3ne" firstAttribute="top" secondItem="TqZ-eB-WTL" secondAttribute="top" constant="128" id="IgH-Qr-ejj"/>
                         <constraint firstItem="KbX-ME-MAm" firstAttribute="centerX" secondItem="TqZ-eB-WTL" secondAttribute="centerX" constant="5" id="KuG-3n-wUF"/>
                         <constraint firstAttribute="height" constant="200" id="Tn4-Pg-jqm"/>
                         <constraint firstItem="4Oi-xA-iWp" firstAttribute="centerX" secondItem="gEa-if-3ne" secondAttribute="centerX" constant="5" id="ZZy-UB-JFZ"/>
+                        <constraint firstAttribute="trailing" secondItem="aKS-fx-eAG" secondAttribute="trailing" constant="5" id="etz-RC-Q7T"/>
                         <constraint firstItem="aKS-fx-eAG" firstAttribute="top" secondItem="TqZ-eB-WTL" secondAttribute="top" constant="120" id="f4L-o9-ajl"/>
+                        <constraint firstItem="aKS-fx-eAG" firstAttribute="leading" secondItem="gEa-if-3ne" secondAttribute="trailing" id="h7C-dI-nEF"/>
                     </constraints>
                     <variation key="default">
                         <mask key="constraints">
-                            <exclude reference="HSX-gq-Q1D"/>
+                            <exclude reference="Egg-Pl-prf"/>
+                            <exclude reference="h7C-dI-nEF"/>
                         </mask>
                     </variation>
                 </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.65000000000000002" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="TqZ-eB-WTL" secondAttribute="trailing" constant="214" id="Jk8-6D-O3N"/>
+                <constraint firstAttribute="trailing" secondItem="TqZ-eB-WTL" secondAttribute="trailing" constant="180" id="Jk8-6D-O3N"/>
                 <constraint firstItem="TqZ-eB-WTL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="-120" id="U9Q-mH-jza"/>
                 <constraint firstItem="TqZ-eB-WTL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="690" id="hhH-ML-cp5"/>
             </constraints>

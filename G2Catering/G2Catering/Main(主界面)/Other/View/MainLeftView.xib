@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -11,14 +11,7 @@
             <rect key="frame" x="0.0" y="0.0" width="312" height="627"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="矩形32" translatesAutoresizingMaskIntoConstraints="NO" id="nAZ-aL-I8l">
-                    <rect key="frame" x="78" y="50" width="157" height="81"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="81" id="8qU-YE-b1D"/>
-                        <constraint firstAttribute="width" constant="157" id="tXl-Sw-Vj5"/>
-                    </constraints>
-                </imageView>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ae8-Y7-gx5">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ae8-Y7-gx5">
                     <rect key="frame" x="0.0" y="161" width="312" height="466"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <connections>
@@ -27,15 +20,15 @@
                     </connections>
                 </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gOW-DL-43I">
-                    <rect key="frame" x="78" y="50" width="157" height="81"/>
+                    <rect key="frame" x="116" y="50" width="81" height="81"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEl-Cy-nBp">
-                            <rect key="frame" x="0.0" y="0.0" width="157" height="81"/>
+                            <rect key="frame" x="0.0" y="0.0" width="81" height="81"/>
                             <connections>
                                 <action selector="btnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="zw3-mw-AbS"/>
                             </connections>
                         </button>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zhang" translatesAutoresizingMaskIntoConstraints="NO" id="9Kc-wE-rb5">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="交接班-形状20" translatesAutoresizingMaskIntoConstraints="NO" id="9Kc-wE-rb5">
                             <rect key="frame" x="0.0" y="0.0" width="81" height="81"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="81" id="Eue-Sv-TW8"/>
@@ -48,13 +41,7 @@
                                 <constraint firstAttribute="width" constant="45" id="HRf-UN-i6U"/>
                                 <constraint firstAttribute="height" constant="45" id="hfZ-I2-SeM"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="交接班" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXj-aB-afr">
-                            <rect key="frame" x="88" y="27" width="61" height="27"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="45"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -62,7 +49,7 @@
                     <constraints>
                         <constraint firstItem="Li0-4R-hWq" firstAttribute="top" secondItem="gOW-DL-43I" secondAttribute="top" constant="18" id="6MD-2e-Sl2"/>
                         <constraint firstItem="9Kc-wE-rb5" firstAttribute="top" secondItem="gOW-DL-43I" secondAttribute="top" id="7t0-SI-61p"/>
-                        <constraint firstAttribute="width" constant="157" id="9hI-Tp-V0N"/>
+                        <constraint firstAttribute="width" constant="81" id="9hI-Tp-V0N"/>
                         <constraint firstAttribute="height" constant="81" id="DAv-ju-Xin"/>
                         <constraint firstAttribute="bottom" secondItem="bEl-Cy-nBp" secondAttribute="bottom" id="Ik3-xN-4fg"/>
                         <constraint firstAttribute="trailing" secondItem="bEl-Cy-nBp" secondAttribute="trailing" id="MOL-Vz-FMr"/>
@@ -75,11 +62,9 @@
             </subviews>
             <color key="backgroundColor" red="0.16470588235294117" green="0.25882352941176467" blue="0.3529411764705882" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstItem="ae8-Y7-gx5" firstAttribute="top" secondItem="gOW-DL-43I" secondAttribute="bottom" constant="30" id="0AN-fd-H4c"/>
                 <constraint firstItem="gOW-DL-43I" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="4vt-x2-T03"/>
                 <constraint firstAttribute="trailing" secondItem="ae8-Y7-gx5" secondAttribute="trailing" id="BTX-TL-uw9"/>
-                <constraint firstItem="ae8-Y7-gx5" firstAttribute="top" secondItem="nAZ-aL-I8l" secondAttribute="bottom" constant="30" id="S3r-RF-Tj1"/>
-                <constraint firstItem="nAZ-aL-I8l" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="bQA-Di-pwQ"/>
-                <constraint firstItem="nAZ-aL-I8l" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="fos-MD-yxm"/>
                 <constraint firstItem="ae8-Y7-gx5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jXW-MU-svu"/>
                 <constraint firstItem="gOW-DL-43I" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="s7j-sT-VnJ"/>
                 <constraint firstAttribute="bottom" secondItem="ae8-Y7-gx5" secondAttribute="bottom" id="yaw-m9-qiE"/>
@@ -92,7 +77,6 @@
         </view>
     </objects>
     <resources>
-        <image name="zhang" width="174" height="174"/>
-        <image name="矩形32" width="194" height="92"/>
+        <image name="交接班-形状20" width="87" height="87"/>
     </resources>
 </document>

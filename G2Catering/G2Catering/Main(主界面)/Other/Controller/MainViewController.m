@@ -43,6 +43,7 @@
     self.flag = 0;
     
     
+    
     [self p_initViews];
     
 
@@ -254,6 +255,7 @@
     
     self.clearView = [[UIView alloc]init];
     self.clearView.backgroundColor = [UIColor clearColor];
+    //self.clearView.backgroundColor = [UIColor redColor];
     
     
     UISwipeGestureRecognizer *lSwipe = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(back)];
@@ -331,7 +333,7 @@ static float  kDuration = 0.25; //动画持续时间
             self.view.transform = CGAffineTransformMakeTranslation(kLeftViewWidth, 0);
             self.leftView.transform = CGAffineTransformMakeTranslation(kLeftViewWidth, 0);
             
-        } completion:^(BOOL finished) {
+        } completion:^(BOOL finished){
             
             self.flag = -1;
             //self.leftView.hidden = NO;
@@ -456,7 +458,7 @@ static float  kDuration = 0.25; //动画持续时间
             
         }
             break;
-        case 0: //预订管理
+        case 0: //预定管理
         {
             BookingManagerViewController *vc = [[BookingManagerViewController alloc] init];
             
