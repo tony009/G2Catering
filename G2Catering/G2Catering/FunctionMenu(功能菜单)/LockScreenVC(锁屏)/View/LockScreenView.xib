@@ -24,7 +24,7 @@
                             <rect key="frame" x="68" y="139" width="30" height="40"/>
                         </imageView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKS-fx-eAG">
-                            <rect key="frame" x="107" y="140" width="32" height="32"/>
+                            <rect key="frame" x="107" y="135" width="32" height="32"/>
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <state key="normal" title="99+" backgroundImage="锁屏-椭圆2"/>
                         </button>
@@ -40,7 +40,7 @@
                         <constraint firstAttribute="height" constant="200" id="Tn4-Pg-jqm"/>
                         <constraint firstItem="4Oi-xA-iWp" firstAttribute="centerX" secondItem="gEa-if-3ne" secondAttribute="centerX" constant="5" id="ZZy-UB-JFZ"/>
                         <constraint firstAttribute="trailing" secondItem="aKS-fx-eAG" secondAttribute="trailing" constant="15" id="etz-RC-Q7T"/>
-                        <constraint firstItem="aKS-fx-eAG" firstAttribute="top" secondItem="TqZ-eB-WTL" secondAttribute="top" constant="140" id="f4L-o9-ajl"/>
+                        <constraint firstItem="aKS-fx-eAG" firstAttribute="top" secondItem="TqZ-eB-WTL" secondAttribute="top" constant="135" id="f4L-o9-ajl"/>
                         <constraint firstItem="aKS-fx-eAG" firstAttribute="leading" secondItem="gEa-if-3ne" secondAttribute="trailing" id="h7C-dI-nEF"/>
                     </constraints>
                     <variation key="default">

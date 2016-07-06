@@ -65,7 +65,7 @@
             [UIView animateWithDuration:1 animations:^{
                 
                 [self layoutIfNeeded];
-                [self.lockOrUnlockImageView setImage:[UIImage imageNamed:@"解锁"]];
+                [self.lockOrUnlockImageView setImage:[UIImage imageNamed:@"锁屏"]];
                 self.screenStatus = @"lock";
             }];
         }];
@@ -86,7 +86,7 @@
             [UIView animateWithDuration:1 animations:^{
                 
                 [self layoutIfNeeded];
-                [self.lockOrUnlockImageView setImage:[UIImage imageNamed:@"锁屏"]];
+                [self.lockOrUnlockImageView setImage:[UIImage imageNamed:@"解锁"]];
                 
                 self.screenStatus = @"unlock";
 
