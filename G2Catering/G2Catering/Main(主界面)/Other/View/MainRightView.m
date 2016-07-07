@@ -8,6 +8,15 @@
 
 #import "MainRightView.h"
 #import  "LingShouViewController.h"
+
+
+@interface MainRightView ()
+
+@property (nonatomic,strong) UIButton *lastSelectedButton;
+
+@end
+
+
 @implementation MainRightView
 
 /*
@@ -43,8 +52,24 @@
     
 }
 
+-(void)setButtonBackgroundColor:(UIButton *)button{
+    
+    if (self.lastSelectedButton) {
+        [self.lastSelectedButton setBackgroundColor:RGB(0x2a, 0x42, 0x5a)];
+    }
+    
+    [button setBackgroundColor:RGB(0x17, 0x2e, 0x45)];
+    
+    self.lastSelectedButton = button;
+    
+}
 
 - (IBAction)orderingAction:(UIButton *)sender {
+    
+    
+
+    [self setButtonBackgroundColor:sender];
+    
     
     if([self.delegate respondsToSelector:@selector(MainRightViewMenuDidChick:withIndex:)]){
         
@@ -55,6 +80,8 @@
 
 - (IBAction)dinnerTableAction:(UIButton *)sender {
     
+    [self setButtonBackgroundColor:sender];
+    
     if([self.delegate respondsToSelector:@selector(MainRightViewMenuDidChick:withIndex:)]){
         
         [self.delegate MainRightViewMenuDidChick:self withIndex:1];
@@ -63,6 +90,9 @@
 }
 
 - (IBAction)lingShouAction:(id)sender {
+    
+    [self setButtonBackgroundColor:sender];
+    
     if([self.delegate respondsToSelector:@selector(MainRightViewMenuDidChick:withIndex:)]){
         
         [self.delegate MainRightViewMenuDidChick:self withIndex:2];

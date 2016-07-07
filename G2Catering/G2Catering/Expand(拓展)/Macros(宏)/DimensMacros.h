@@ -19,7 +19,9 @@
 
 
 //
-#define kLeftViewWidth 200 // 左边栏的宽度
+#define kLeftViewWidth 301 // 左边栏的宽度
+
+#define kRightViewWidth 151 //右边栏的宽度
 
 
 #endif /* DimensMacros_h */

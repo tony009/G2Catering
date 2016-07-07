@@ -14,23 +14,24 @@
                 <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="统计表云彩" translatesAutoresizingMaskIntoConstraints="NO" id="QR7-K0-8hN">
                     <rect key="frame" x="3" y="3" width="111" height="62"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="锁屏" translatesAutoresizingMaskIntoConstraints="NO" id="yW7-pe-wye">
-                    <rect key="frame" x="44" y="14" width="30" height="40"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="解锁" translatesAutoresizingMaskIntoConstraints="NO" id="yW7-pe-wye">
+                    <rect key="frame" x="45" y="16" width="27" height="36"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1u-wF-JAc">
-                    <rect key="frame" x="76" y="15" width="32" height="32"/>
+                    <rect key="frame" x="76" y="10" width="32" height="32"/>
                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                     <state key="normal" title="99+" backgroundImage="锁屏-椭圆2"/>
                 </button>
             </subviews>
             <constraints>
                 <constraint firstItem="yW7-pe-wye" firstAttribute="centerY" secondItem="QR7-K0-8hN" secondAttribute="centerY" id="8Vy-1I-fKF"/>
-                <constraint firstItem="W1u-wF-JAc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="95a-ai-Xqw"/>
+                <constraint firstItem="W1u-wF-JAc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="95a-ai-Xqw"/>
                 <constraint firstItem="QR7-K0-8hN" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="TzK-g1-Khd"/>
                 <constraint firstAttribute="trailing" secondItem="W1u-wF-JAc" secondAttribute="trailing" constant="8" id="Vli-CZ-hpB"/>
                 <constraint firstItem="QR7-K0-8hN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="3" id="Y1S-OD-7p7"/>
                 <constraint firstItem="yW7-pe-wye" firstAttribute="centerX" secondItem="QR7-K0-8hN" secondAttribute="centerX" id="lJv-mA-Jw0"/>
             </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="cloudImageView" destination="QR7-K0-8hN" id="ZHr-Cy-6Lm"/>
@@ -42,7 +43,7 @@
     </objects>
     <resources>
         <image name="统计表云彩" width="111" height="62"/>
-        <image name="锁屏" width="30" height="40"/>
+        <image name="解锁" width="27" height="36"/>
         <image name="锁屏-椭圆2" width="32" height="32"/>
     </resources>
 </document>

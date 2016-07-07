@@ -21,6 +21,9 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
 @interface OrderingViewController ()<UITableViewDelegate,UITableViewDataSource,UICollectionViewDelegate,UICollectionViewDataSource>
 
 
+@property (weak, nonatomic) IBOutlet UIButton *placeOrderButton;
+@property (weak, nonatomic) IBOutlet UIButton *checkButton;
+
 
 @property (weak, nonatomic) IBOutlet UIView *buttonView; //
 
@@ -62,20 +65,10 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
     [self.orderListTableView registerNib:nib2 forCellReuseIdentifier:tableViewCellIdentifer];
     
     
-    self.firstView.layer.borderWidth = 1;
-    self.secondView.layer.borderWidth = 1;
-    self.orderCollectionView.layer.borderWidth =1;
-    self.orderListView.layer.borderWidth = 1;
-    
-    self.firstView.layer.borderColor = [UIColor grayColor].CGColor;
-    self.secondView.layer.borderColor = [UIColor grayColor].CGColor;
-    self.orderCollectionView.layer.borderColor = [UIColor grayColor].CGColor;
-    self.orderListView.layer.borderColor = [UIColor grayColor].CGColor;
-    
-    self.firstView.layer.cornerRadius = 10;
-    self.secondView.layer.cornerRadius = 10;
-    self.orderCollectionView.layer.cornerRadius = 10;
-    self.orderListView.layer.cornerRadius = 10;
+    [self.firstView setCornerRadius:10 withBorderWidth:1 withBorderColor:RGB(0xc2, 0xc7, 0xcc)];
+    [self.secondView setCornerRadius:10 withBorderWidth:1 withBorderColor:RGB(0xc2, 0xc7, 0xcc)];
+    [self.orderCollectionView setCornerRadius:10 withBorderWidth:1 withBorderColor:RGB(0xc2, 0xc7, 0xcc)];
+    [self.orderListView setCornerRadius:10 withBorderWidth:1 withBorderColor:RGB(0xc2, 0xc7, 0xcc)];
     
     //
     self.orderCollectionView.showsVerticalScrollIndicator = NO;
@@ -91,6 +84,8 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
     
     //
     
+    [self.placeOrderButton setCornerRadius:0 withBorderWidth:1.0 withBorderColor:RGB(0xc2, 0xc7, 0xcc)];
+    [self.checkButton setCornerRadius:0 withBorderWidth:1.0 withBorderColor:RGB(0xc2, 0xc7, 0xcc)];
     
     self.dishTypeView.strArray = @[@"全部",@"热菜",@"甜菜",@"主食",@"凉菜",@"酒水",@"特价"];
     
@@ -190,7 +185,7 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     OrderingTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:tableViewCellIdentifer];
-    cell.dishPrice.text = @"100";
+    cell.dishPrice.text = @"￥100";
     cell.dishName.text = @"五彩三丝";
     
     return cell;
