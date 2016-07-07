@@ -65,20 +65,10 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
     [self.orderListTableView registerNib:nib2 forCellReuseIdentifier:tableViewCellIdentifer];
     
     
-    self.firstView.layer.borderWidth = 1;
-    self.secondView.layer.borderWidth = 1;
-    self.orderCollectionView.layer.borderWidth =1;
-    self.orderListView.layer.borderWidth = 1;
-    
-    self.firstView.layer.borderColor = [UIColor grayColor].CGColor;
-    self.secondView.layer.borderColor = [UIColor grayColor].CGColor;
-    self.orderCollectionView.layer.borderColor = [UIColor grayColor].CGColor;
-    self.orderListView.layer.borderColor = [UIColor grayColor].CGColor;
-    
-    self.firstView.layer.cornerRadius = 10;
-    self.secondView.layer.cornerRadius = 10;
-    self.orderCollectionView.layer.cornerRadius = 10;
-    self.orderListView.layer.cornerRadius = 10;
+    [self.firstView setCornerRadius:10 withBorderWidth:1 withBorderColor:RGB(0xc2, 0xc7, 0xcc)];
+    [self.secondView setCornerRadius:10 withBorderWidth:1 withBorderColor:RGB(0xc2, 0xc7, 0xcc)];
+    [self.orderCollectionView setCornerRadius:10 withBorderWidth:1 withBorderColor:RGB(0xc2, 0xc7, 0xcc)];
+    [self.orderListView setCornerRadius:10 withBorderWidth:1 withBorderColor:RGB(0xc2, 0xc7, 0xcc)];
     
     //
     self.orderCollectionView.showsVerticalScrollIndicator = NO;

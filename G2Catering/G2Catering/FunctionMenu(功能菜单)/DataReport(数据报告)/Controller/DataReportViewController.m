@@ -50,25 +50,22 @@
 #pragma mark - setupTopView
 - (void)setupTopView {
     
-    self.startDataBtn.layer.masksToBounds = YES;
-    self.startDataBtn.layer.cornerRadius  = 5;
-    self.startDataBtn.layer.borderColor = [UIColor grayColor].CGColor;
-    self.startDataBtn.layer.borderWidth = 1;
+    [self.startDataBtn setCornerRadius:5.0 withBorderWidth:1.0 withBorderColor:RGB(0xc2, 0xc7, 0xcc)];
     
-    self.endDataBtn.layer.masksToBounds = YES;
-    self.endDataBtn.layer.cornerRadius  = 5;
-    self.endDataBtn.layer.borderColor = [UIColor grayColor].CGColor;
-    self.endDataBtn.layer.borderWidth = 1;
+    [self.endDataBtn setCornerRadius:5.0 withBorderWidth:1.0 withBorderColor:RGB(0xc2, 0xc7, 0xcc)];
+    
+    
+    
     
     self.bigBackView.layer.masksToBounds = YES;
     self.bigBackView.layer.cornerRadius  = 5;
     
     self.todayBtn.layer.masksToBounds = YES;
-    self.todayBtn.layer.cornerRadius  = 5;    
+    self.todayBtn.layer.cornerRadius  = 15;
     self.weekBtn.layer.masksToBounds = YES;
-    self.weekBtn.layer.cornerRadius  = 5;
+    self.weekBtn.layer.cornerRadius  = 15;
     self.monthBtn.layer.masksToBounds = YES;
-    self.monthBtn.layer.cornerRadius  = 5;
+    self.monthBtn.layer.cornerRadius  = 15;
 
     
     [self.todayBtn addTarget:self action:@selector(didClickTodayBtn:) forControlEvents:UIControlEventTouchUpInside];
@@ -226,10 +223,12 @@ static NSString *reuserID = @"OrderingTableViewCell";
 static NSString *reuser = @"FoodAnayseTableViewCell";
 - (void)setupFoodAnayseView{
     
-    self.foodAnalyseBackView.layer.masksToBounds = YES;
-    self.foodAnalyseBackView.layer.cornerRadius = 5;
-    self.foodAnalyseBackView.layer.borderColor = [UIColor grayColor].CGColor;
-    self.foodAnalyseBackView.layer.borderWidth = 1;
+
+    [self.top10Btn setCornerRadius:5.0 withBorderWidth:1.0 withBorderColor:RGB(0xc2, 0xc7, 0xcc)];
+    
+    [self.foodAnalyseBackView setCornerRadius:5.0 withBorderWidth:1.0 withBorderColor:RGB(0xc2, 0xc7, 0xcc)];
+    
+    
     
     self.foodAnayseTableView.delegate = self;
     self.foodAnayseTableView.dataSource = self;
@@ -497,9 +496,7 @@ static NSString *reuser = @"FoodAnayseTableViewCell";
 static NSString *reuserCollectionID = @"DishTypeCollectionViewCell";
 - (void)setupFoodCategoryView{
     
-    self.foodCategoryBackView.layer.borderColor = [UIColor grayColor].CGColor;
-    self.foodCategoryBackView.layer.borderWidth = 1;
-    self.foodCategoryBackView.layer.cornerRadius = 5;
+    [self.foodCategoryBackView setCornerRadius:5.0 withBorderWidth:1.0 withBorderColor:RGB(0xc2, 0xc7, 0xcc)];
     
 //    UIBezierPath *bezierPath = [UIBezierPath bezierPathWithRoundedRect:self.foodCategoryBackView.bounds byRoundingCorners:UIRectCornerTopRight | UIRectCornerBottomRight cornerRadii:CGSizeMake(10, 10)];
 //    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
