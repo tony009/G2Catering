@@ -45,8 +45,8 @@
     imagev.layer.borderWidth = 1;
     imagev.backgroundColor = [UIColor whiteColor];
     [self addSubview:imagev];
-    
-    CGPoint middlePoint = CGPointMake(69+cllFrame.origin.x+cllFrame.size.width/2, cllFrame.origin.y+66+cllFrame.size.height/2);
+//    29
+    CGPoint middlePoint = CGPointMake(29+cllFrame.origin.x+cllFrame.size.width/2, cllFrame.origin.y+42+cllFrame.size.height/2);
     imagev.center = middlePoint;
     
     UIButton *btn = (UIButton *)[self viewWithTag:kBtnTag];
@@ -60,10 +60,10 @@
     btn4.center = middlePoint;
     
     [UIView animateWithDuration:1.0 animations:^{
-        btn.frame = CGRectMake(cllFrame.origin.x,cllFrame.origin.y+66 , marginWidth, marginWidth);
-        btn4.frame = CGRectMake(cllFrame.origin.x+cllFrame.size.width+82,cllFrame.origin.y+66 , marginWidth, marginWidth);
-        btn2.frame = CGRectMake(69+cllFrame.origin.x+10,cllFrame.origin.y , marginWidth, marginWidth);
-        btn3.frame = CGRectMake(69+cllFrame.origin.x+cllFrame.size.width/2+10,cllFrame.origin.y , marginWidth, marginWidth);
+        btn.frame = CGRectMake(cllFrame.origin.x-20,cllFrame.origin.y+66 , marginWidth, marginWidth);
+        btn4.frame = CGRectMake(cllFrame.origin.x+cllFrame.size.width+25,cllFrame.origin.y+66 , marginWidth, marginWidth);
+        btn2.frame = CGRectMake(42+cllFrame.origin.x,cllFrame.origin.y -10, marginWidth, marginWidth);
+        btn3.frame = CGRectMake(40+cllFrame.origin.x+cllFrame.size.width/2+10,cllFrame.origin.y-10 , marginWidth, marginWidth);
     } completion:^(BOOL finished) {
         
     }];

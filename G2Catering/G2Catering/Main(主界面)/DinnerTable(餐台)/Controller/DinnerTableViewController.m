@@ -99,10 +99,6 @@
     OrderPerson *order = [[OrderPerson alloc] initWithdict:dic];
     orderDataArray = [NSMutableArray arrayWithObjects:order,order,order,order,order, nil];
     
-//    self.searchTextField.layer.cornerRadius = 10;
-//    self.searchTextField.layer.masksToBounds = YES;
-//    self.searchTextField.layer.borderColor = [UIColor lightGrayColor].CGColor;
-//    self.searchTextField.layer.borderWidth = 1;
     
     self.waiMaiView.layer.borderColor = [UIColor lightGrayColor].CGColor;
     self.waiMaiView.layer.borderWidth = 1;
@@ -369,6 +365,10 @@
         [self changgeDeskTable];
     }else{
         
+        [UIView animateWithDuration:0.7 animations:^{
+            self.view.frame = CGRectMake(-338, 0, 1362, 768);
+        }];
+        
         [_longView removeFromSuperview];
     }
 }
@@ -376,6 +376,11 @@
 #pragma mark- 右侧选择菜单
 - (void)DishTypeView:(DishTypeView *)dishTypeView didSelectItemAtIndex:(NSInteger)index
 {
+    if (deskTypeState == DeskStateOther) {
+        [UIView animateWithDuration:0.7 animations:^{
+            self.view.frame = CGRectMake(0, 0, 1362, 768);
+        }];
+    }
     switch (index) {
         case 0:
             deskTypeState = DeskStateAll;
