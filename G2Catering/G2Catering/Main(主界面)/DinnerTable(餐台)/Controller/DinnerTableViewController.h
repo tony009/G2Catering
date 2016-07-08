@@ -33,5 +33,6 @@ typedef NS_ENUM(NSInteger,DeskState) {
 @property (weak, nonatomic) IBOutlet UIView *waiMaiWholeView;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIButton *searchBtn;
+@property (weak, nonatomic) IBOutlet UILabel *allLabel;
 
 @end

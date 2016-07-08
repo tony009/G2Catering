@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DinnerTableViewController">
             <connections>
+                <outlet property="allLabel" destination="Kw0-Ar-RjO" id="VWy-uk-clb"/>
                 <outlet property="collectionView" destination="7Sm-q9-YkO" id="pKH-T4-XiA"/>
                 <outlet property="dishTypeView" destination="4VI-lh-z2W" id="3uR-9H-OEK"/>
                 <outlet property="firstView" destination="iHG-GY-ISS" id="daG-PB-d8n"/>
@@ -88,7 +89,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="haq-cw-UJm">
-                                    <rect key="frame" x="17" y="55" width="295" height="553"/>
+                                    <rect key="frame" x="0.0" y="55" width="328" height="553"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </tableView>
@@ -133,7 +134,7 @@
         </view>
     </objects>
     <resources>
-        <image name="背景图片" width="156" height="133"/>
+        <image name="背景图片" width="26" height="26"/>
         <image name="餐台-搜索" width="16" height="17"/>
     </resources>
 </document>
