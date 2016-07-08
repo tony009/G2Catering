@@ -36,10 +36,6 @@ static NSString *reuserID = @"bookCell";
     self.backView.layer.borderColor   = [UIColor lightGrayColor].CGColor;
     self.backView.layer.borderWidth   = 1;
     
-    self.searchBackView.layer.borderColor   = [UIColor colorWithRed:42/255.0f green:66/255.0f blue:90/255.0f alpha:1].CGColor;
-    self.searchBackView.layer.borderWidth   = 1;
-    self.searchBackView.layer.cornerRadius  = 2;
-    self.searchBackView.layer.masksToBounds = YES;
     
     self.bookTableView.delegate   = self;
     self.bookTableView.dataSource = self;

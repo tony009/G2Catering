@@ -47,14 +47,15 @@
         [UIView animateWithDuration:0.25 animations:^{
             
             self.allView.transform = CGAffineTransformMakeTranslation(-338, 0);
-            VIPLeftView *leftView = [[[NSBundle mainBundle]loadNibNamed:@"VIPLeftView" owner:self options:nil]lastObject];
-            leftView.delegate = self;
-            leftView.frame = CGRectMake(KScreenWidth - 338, 0, 338, 768);
-            [self.view addSubview:leftView];
+  
             _isHidden = NO;
             
         } completion:^(BOOL finished) {
             
+            VIPLeftView *leftView = [[[NSBundle mainBundle]loadNibNamed:@"VIPLeftView" owner:self options:nil]lastObject];
+            leftView.delegate = self;
+            leftView.frame = CGRectMake(KScreenWidth - 338, 0, 338, 768);
+            [self.view addSubview:leftView];
             
             
         }];
@@ -121,6 +122,14 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
    
     VIPTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"VIPTableViewCell" forIndexPath:indexPath];
+    
+    
+    if (indexPath.row % 2 == 1) {
+        cell.backgroundColor = RGB(248, 251, 255);
+    }else{
+        cell.backgroundColor = [UIColor whiteColor];
+    }
+    
     return cell;
 }
 

@@ -240,7 +240,7 @@
                                 <constraint firstItem="j5o-ic-Vhx" firstAttribute="leading" secondItem="ax6-85-r8b" secondAttribute="leading" constant="25" id="zQk-fO-G1V"/>
                             </constraints>
                         </view>
-                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="49" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eMg-1v-05G">
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="49" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eMg-1v-05G">
                             <rect key="frame" x="0.0" y="127" width="986" height="593"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </tableView>

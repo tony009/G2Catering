@@ -17,6 +17,8 @@
     self.layer.borderColor   = [UIColor lightGrayColor].CGColor;
     self.layer.borderWidth   = 1;
     
+    
+    
     self.sureBtn.layer.cornerRadius  = 5;
     self.sureBtn.layer.masksToBounds = YES;
     

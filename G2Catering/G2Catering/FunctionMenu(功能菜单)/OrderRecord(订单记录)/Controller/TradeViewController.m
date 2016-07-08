@@ -327,8 +327,11 @@
             NSArray *nibArr = [[NSBundle mainBundle] loadNibNamed:@"JiaoYiJiLuCell" owner:nil options:nil];
             cell1 = [nibArr lastObject];
         }
-        if (indexPath.row % 2) {
-            cell1.backgroundColor = [UIColor colorWithRed:246/255.0 green:246/255.0 blue:246/255.0 alpha:1];
+        
+        if (indexPath.row % 2 == 1) {
+            cell1.backgroundColor = [UIColor colorWithRed:248/255.0f green:251/255.0f blue:255/255.0f alpha:1];
+        }else{
+            cell1.backgroundColor = [UIColor whiteColor];
         }
         
         return cell1;

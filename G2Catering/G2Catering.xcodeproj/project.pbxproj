@@ -8,29 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		040AFC8569EBF84ABB39E999 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 073B094CD599E52328204BCD /* libPods.a */; };
-		4323B8D91D2BA30A005173BE /* OrderPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 4323B8D81D2BA30A005173BE /* OrderPerson.m */; settings = {ASSET_TAGS = (); }; };
-		43882E701D23C9F1006C28CE /* DeskCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E4D1D23C9F1006C28CE /* DeskCollectionController.m */; settings = {ASSET_TAGS = (); }; };
-		43882E711D23C9F1006C28CE /* DeskCollectionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E4E1D23C9F1006C28CE /* DeskCollectionController.xib */; settings = {ASSET_TAGS = (); }; };
-		43882E721D23C9F1006C28CE /* DeskTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E501D23C9F1006C28CE /* DeskTableViewController.m */; settings = {ASSET_TAGS = (); }; };
-		43882E731D23C9F1006C28CE /* DeskTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E511D23C9F1006C28CE /* DeskTableViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		43882E741D23C9F1006C28CE /* DinnerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E531D23C9F1006C28CE /* DinnerTableViewController.m */; settings = {ASSET_TAGS = (); }; };
-		43882E751D23C9F1006C28CE /* DinnerTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E541D23C9F1006C28CE /* DinnerTableViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		43882E761D23C9F1006C28CE /* DeskCollectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E571D23C9F1006C28CE /* DeskCollectionTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
-		43882E771D23C9F1006C28CE /* DeskCollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E581D23C9F1006C28CE /* DeskCollectionTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
-		43882E781D23C9F1006C28CE /* DeskCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E5A1D23C9F1006C28CE /* DeskCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
-		43882E791D23C9F1006C28CE /* DeskCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E5B1D23C9F1006C28CE /* DeskCollectionViewCell.xib */; settings = {ASSET_TAGS = (); }; };
-		43882E7A1D23C9F1006C28CE /* LongPressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E5D1D23C9F1006C28CE /* LongPressView.m */; settings = {ASSET_TAGS = (); }; };
-		43882E7B1D23C9F1006C28CE /* LongPressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E5E1D23C9F1006C28CE /* LongPressView.xib */; settings = {ASSET_TAGS = (); }; };
-		43882E7C1D23C9F1006C28CE /* PanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E601D23C9F1006C28CE /* PanView.m */; settings = {ASSET_TAGS = (); }; };
-		43882E7D1D23C9F1006C28CE /* RightCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E621D23C9F1006C28CE /* RightCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
-		43882E7E1D23C9F1006C28CE /* RightCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E631D23C9F1006C28CE /* RightCollectionViewCell.xib */; settings = {ASSET_TAGS = (); }; };
-		43882E7F1D23C9F1006C28CE /* ShowMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E651D23C9F1006C28CE /* ShowMenuView.m */; settings = {ASSET_TAGS = (); }; };
-		43882E801D23C9F1006C28CE /* UpCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E671D23C9F1006C28CE /* UpCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
-		43882E811D23C9F1006C28CE /* UpCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E681D23C9F1006C28CE /* UpCollectionViewCell.xib */; settings = {ASSET_TAGS = (); }; };
-		43882E821D23C9F1006C28CE /* WaiMaiDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E6A1D23C9F1006C28CE /* WaiMaiDetailTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
-		43882E831D23C9F1006C28CE /* WaiMaiDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E6B1D23C9F1006C28CE /* WaiMaiDetailTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
-		43882E841D23C9F1006C28CE /* WaiMaiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E6D1D23C9F1006C28CE /* WaiMaiTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
-		43882E851D23C9F1006C28CE /* WaiMaiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E6E1D23C9F1006C28CE /* WaiMaiTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		4323B8D91D2BA30A005173BE /* OrderPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 4323B8D81D2BA30A005173BE /* OrderPerson.m */; };
+		43882E701D23C9F1006C28CE /* DeskCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E4D1D23C9F1006C28CE /* DeskCollectionController.m */; };
+		43882E711D23C9F1006C28CE /* DeskCollectionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E4E1D23C9F1006C28CE /* DeskCollectionController.xib */; };
+		43882E721D23C9F1006C28CE /* DeskTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E501D23C9F1006C28CE /* DeskTableViewController.m */; };
+		43882E731D23C9F1006C28CE /* DeskTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E511D23C9F1006C28CE /* DeskTableViewController.xib */; };
+		43882E741D23C9F1006C28CE /* DinnerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E531D23C9F1006C28CE /* DinnerTableViewController.m */; };
+		43882E751D23C9F1006C28CE /* DinnerTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E541D23C9F1006C28CE /* DinnerTableViewController.xib */; };
+		43882E761D23C9F1006C28CE /* DeskCollectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E571D23C9F1006C28CE /* DeskCollectionTableViewCell.m */; };
+		43882E771D23C9F1006C28CE /* DeskCollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E581D23C9F1006C28CE /* DeskCollectionTableViewCell.xib */; };
+		43882E781D23C9F1006C28CE /* DeskCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E5A1D23C9F1006C28CE /* DeskCollectionViewCell.m */; };
+		43882E791D23C9F1006C28CE /* DeskCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E5B1D23C9F1006C28CE /* DeskCollectionViewCell.xib */; };
+		43882E7A1D23C9F1006C28CE /* LongPressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E5D1D23C9F1006C28CE /* LongPressView.m */; };
+		43882E7B1D23C9F1006C28CE /* LongPressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E5E1D23C9F1006C28CE /* LongPressView.xib */; };
+		43882E7C1D23C9F1006C28CE /* PanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E601D23C9F1006C28CE /* PanView.m */; };
+		43882E7D1D23C9F1006C28CE /* RightCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E621D23C9F1006C28CE /* RightCollectionViewCell.m */; };
+		43882E7E1D23C9F1006C28CE /* RightCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E631D23C9F1006C28CE /* RightCollectionViewCell.xib */; };
+		43882E7F1D23C9F1006C28CE /* ShowMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E651D23C9F1006C28CE /* ShowMenuView.m */; };
+		43882E801D23C9F1006C28CE /* UpCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E671D23C9F1006C28CE /* UpCollectionViewCell.m */; };
+		43882E811D23C9F1006C28CE /* UpCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E681D23C9F1006C28CE /* UpCollectionViewCell.xib */; };
+		43882E821D23C9F1006C28CE /* WaiMaiDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E6A1D23C9F1006C28CE /* WaiMaiDetailTableViewCell.m */; };
+		43882E831D23C9F1006C28CE /* WaiMaiDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E6B1D23C9F1006C28CE /* WaiMaiDetailTableViewCell.xib */; };
+		43882E841D23C9F1006C28CE /* WaiMaiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E6D1D23C9F1006C28CE /* WaiMaiTableViewCell.m */; };
+		43882E851D23C9F1006C28CE /* WaiMaiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E6E1D23C9F1006C28CE /* WaiMaiTableViewCell.xib */; };
 		763177111D20FB8200571559 /* SegmentedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 763177101D20FB8200571559 /* SegmentedView.m */; };
 		763177131D20FC1E00571559 /* SegmentedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 763177121D20FC1E00571559 /* SegmentedView.xib */; };
 		763177191D2A5B4600571559 /* 下拉提示.gif in Resources */ = {isa = PBXBuildFile; fileRef = 763177181D2A5B4600571559 /* 下拉提示.gif */; };
@@ -1586,7 +1586,7 @@
 				TargetAttributes = {
 					76D45C6D1D0CFD3B0026491F = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 2JRHMYYZCM;
+						DevelopmentTeam = EY9GA3N4W5;
 					};
 					76D45C861D0CFD3B0026491F = {
 						CreatedOnToolsVersion = 7.3.1;
