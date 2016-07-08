@@ -19,20 +19,14 @@
     self.segmentedCtrl.frame = CGRectMake(CGRectGetMaxX(self.nameLabel.frame), CGRectGetMinY(self.nameLabel.frame), 338- CGRectGetMaxX(self.nameLabel.frame)-30, 30);
     [self.topView addSubview:self.segmentedCtrl];
     
-    [self  setRoundAngleWithView:self.cancelBtn withCornerRadius:5 withColor:[UIColor clearColor]];
-    
-    [self  setRoundAngleWithView:self.yesBtn withCornerRadius:5 withColor:[UIColor clearColor]];
-    
-    
-}
 
-//设置圆角
-- (void)setRoundAngleWithView:(UIView *)changeView withCornerRadius:(double)cornerRadius withColor:(UIColor *)color{
+
     
-    changeView.layer.masksToBounds = YES;
-    changeView.layer.cornerRadius = cornerRadius;
-    changeView.layer.borderColor = color.CGColor;
-    changeView.layer.borderWidth = 1;
+    [self.cancelBtn setCornerRadius:5.0 withBorderWidth:1.0 withBorderColor: RGB(0xc2, 0xc7, 0xcc)];
+    
+    [self.yesBtn setCornerRadius:5.0 withBorderWidth:1.0 withBorderColor: RGB(0xc2, 0xc7, 0xcc)];
+
+    
     
 }
 

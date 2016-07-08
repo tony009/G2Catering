@@ -51,8 +51,9 @@
     //默认状态下
     _imageArray = [NSMutableArray arrayWithArray:@[@"交易记录－全部-点击",@"交易记录－堂食",@"交易记录－外卖",@"交易记录－外带",@"交易记录－异常"]];
      _selectedImage = [NSMutableArray arrayWithArray:@[@"交易记录－全部",@"交易记录－堂食-点击",@"交易记录－外卖-点击",@"交易记录－外带-点击",@"交易记录－异常-点击"]];
-    [self setRoundAngleWithView:self.bgView
-               withCornerRadius:5 withColor:[UIColor lightGrayColor]];
+    
+    
+    [self.bgView setCornerRadius:5.0 withBorderWidth:1.0 withBorderColor:RGB(0xc2, 0xc7, 0xcc)];
     
 }
 
@@ -327,8 +328,11 @@
             NSArray *nibArr = [[NSBundle mainBundle] loadNibNamed:@"JiaoYiJiLuCell" owner:nil options:nil];
             cell1 = [nibArr lastObject];
         }
-        if (indexPath.row % 2) {
-            cell1.backgroundColor = [UIColor colorWithRed:246/255.0 green:246/255.0 blue:246/255.0 alpha:1];
+        
+        if (indexPath.row % 2 == 1) {
+            cell1.backgroundColor = [UIColor colorWithRed:248/255.0f green:251/255.0f blue:255/255.0f alpha:1];
+        }else{
+            cell1.backgroundColor = [UIColor whiteColor];
         }
         
         return cell1;

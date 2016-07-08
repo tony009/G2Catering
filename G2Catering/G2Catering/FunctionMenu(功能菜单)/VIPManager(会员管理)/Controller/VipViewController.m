@@ -27,19 +27,10 @@
     [self.vipTable registerNib:[UINib nibWithNibName:@"VIPTableViewCell" bundle:nil] forCellReuseIdentifier:@"VIPTableViewCell"];
     [self.addBtn addTarget:self action:@selector(addVipAction:) forControlEvents:UIControlEventTouchUpInside];
     
-    [self.allView setCornerRadius:5.0 withBorderWidth:1.0 withBorderColor:[UIColor grayColor]];
+    [self.allView setCornerRadius:5.0 withBorderWidth:1.0 withBorderColor:RGB(0xc2, 0xc7, 0xcc)];
+    
 
 }
-//设置圆角
-- (void)setRoundAngleWithView:(UIView *)changeView withCornerRadius:(double)cornerRadius withColor:(UIColor *)color{
-    
-    changeView.layer.masksToBounds = YES;
-    changeView.layer.cornerRadius = cornerRadius;
-    changeView.layer.borderColor = color.CGColor;
-    changeView.layer.borderWidth = 1;
-    
-}
-
 
 - (void)addVipAction:(UIButton *)btn{
     
@@ -47,14 +38,15 @@
         [UIView animateWithDuration:0.25 animations:^{
             
             self.allView.transform = CGAffineTransformMakeTranslation(-338, 0);
-            VIPLeftView *leftView = [[[NSBundle mainBundle]loadNibNamed:@"VIPLeftView" owner:self options:nil]lastObject];
-            leftView.delegate = self;
-            leftView.frame = CGRectMake(KScreenWidth - 338, 0, 338, 768);
-            [self.view addSubview:leftView];
+  
             _isHidden = NO;
             
         } completion:^(BOOL finished) {
             
+            VIPLeftView *leftView = [[[NSBundle mainBundle]loadNibNamed:@"VIPLeftView" owner:self options:nil]lastObject];
+            leftView.delegate = self;
+            leftView.frame = CGRectMake(KScreenWidth - 338, 27, 338, 720);
+            [self.view addSubview:leftView];
             
             
         }];
@@ -121,6 +113,14 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
    
     VIPTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"VIPTableViewCell" forIndexPath:indexPath];
+    
+    
+    if (indexPath.row % 2 == 1) {
+        cell.backgroundColor = RGB(248, 251, 255);
+    }else{
+        cell.backgroundColor = [UIColor whiteColor];
+    }
+    
     return cell;
 }
 
