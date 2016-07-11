@@ -16,11 +16,16 @@
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+#import "AFNetworking.h"
 #import "UIViewController+MBProgressHUD.h"
 #import "Macros.h"
 #import "UIView+UI.h"
 #endif
 
+
+
+
+#define iBeaconBaseUrl @"192.168.1.15:8080"
 
 
 // Include any system framework and library headers here that should be included in all compilation units.

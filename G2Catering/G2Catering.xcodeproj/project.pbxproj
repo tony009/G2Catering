@@ -39,6 +39,11 @@
 		763177251D2B60C000571559 /* UIView+UI.m in Sources */ = {isa = PBXBuildFile; fileRef = 763177241D2B60C000571559 /* UIView+UI.m */; };
 		763177291D2BA6CA00571559 /* BluetoothConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763177271D2BA6CA00571559 /* BluetoothConnectionViewController.m */; };
 		7631772A1D2BA6CA00571559 /* BluetoothConnectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 763177281D2BA6CA00571559 /* BluetoothConnectionViewController.xib */; };
+		7695BD0C1D3391DF00DDB96E /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7695BD001D3391DF00DDB96E /* DataManager.m */; };
+		7695BD0D1D3391DF00DDB96E /* CmEmployee.m in Sources */ = {isa = PBXBuildFile; fileRef = 7695BD031D3391DF00DDB96E /* CmEmployee.m */; };
+		7695BD0E1D3391DF00DDB96E /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7695BD051D3391DF00DDB96E /* LoginModel.m */; };
+		7695BD0F1D3391DF00DDB96E /* RegisterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7695BD071D3391DF00DDB96E /* RegisterModel.m */; };
+		7695BD101D3391DF00DDB96E /* UserDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7695BD091D3391DF00DDB96E /* UserDataManager.m */; };
 		76D45C7E1D0CFD3B0026491F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76D45C7D1D0CFD3B0026491F /* Assets.xcassets */; };
 		76D45C8C1D0CFD3B0026491F /* G2CateringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D45C8B1D0CFD3B0026491F /* G2CateringTests.m */; };
 		76D45C971D0CFD3C0026491F /* G2CateringUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D45C961D0CFD3C0026491F /* G2CateringUITests.m */; };
@@ -277,6 +282,16 @@
 		763177261D2BA6CA00571559 /* BluetoothConnectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothConnectionViewController.h; sourceTree = "<group>"; };
 		763177271D2BA6CA00571559 /* BluetoothConnectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluetoothConnectionViewController.m; sourceTree = "<group>"; };
 		763177281D2BA6CA00571559 /* BluetoothConnectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BluetoothConnectionViewController.xib; sourceTree = "<group>"; };
+		7695BCFF1D3391DF00DDB96E /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		7695BD001D3391DF00DDB96E /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		7695BD021D3391DF00DDB96E /* CmEmployee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CmEmployee.h; sourceTree = "<group>"; };
+		7695BD031D3391DF00DDB96E /* CmEmployee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CmEmployee.m; sourceTree = "<group>"; };
+		7695BD041D3391DF00DDB96E /* LoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
+		7695BD051D3391DF00DDB96E /* LoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
+		7695BD061D3391DF00DDB96E /* RegisterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterModel.h; sourceTree = "<group>"; };
+		7695BD071D3391DF00DDB96E /* RegisterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterModel.m; sourceTree = "<group>"; };
+		7695BD081D3391DF00DDB96E /* UserDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDataManager.h; sourceTree = "<group>"; };
+		7695BD091D3391DF00DDB96E /* UserDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDataManager.m; sourceTree = "<group>"; };
 		76D45C6E1D0CFD3B0026491F /* G2Catering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = G2Catering.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76D45C7D1D0CFD3B0026491F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76D45C871D0CFD3B0026491F /* G2CateringTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = G2CateringTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -716,6 +731,39 @@
 			path = "Category(分类)";
 			sourceTree = "<group>";
 		};
+		7695BCFD1D3391DF00DDB96E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7695BCFE1D3391DF00DDB96E /* DataManager */,
+				7695BD011D3391DF00DDB96E /* User */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7695BCFE1D3391DF00DDB96E /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				7695BCFF1D3391DF00DDB96E /* DataManager.h */,
+				7695BD001D3391DF00DDB96E /* DataManager.m */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		7695BD011D3391DF00DDB96E /* User */ = {
+			isa = PBXGroup;
+			children = (
+				7695BD021D3391DF00DDB96E /* CmEmployee.h */,
+				7695BD031D3391DF00DDB96E /* CmEmployee.m */,
+				7695BD041D3391DF00DDB96E /* LoginModel.h */,
+				7695BD051D3391DF00DDB96E /* LoginModel.m */,
+				7695BD061D3391DF00DDB96E /* RegisterModel.h */,
+				7695BD071D3391DF00DDB96E /* RegisterModel.m */,
+				7695BD081D3391DF00DDB96E /* UserDataManager.h */,
+				7695BD091D3391DF00DDB96E /* UserDataManager.m */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
 		76D45C651D0CFD3B0026491F = {
 			isa = PBXGroup;
 			children = (
@@ -741,6 +789,7 @@
 		76D45C701D0CFD3B0026491F /* G2Catering */ = {
 			isa = PBXGroup;
 			children = (
+				7695BCFD1D3391DF00DDB96E /* Model */,
 				54C9366F1D29FB0C00739A6D /* payment(支付) */,
 				F104CD0E1D1B8083003EAEEC /* Expand(拓展) */,
 				F104CD161D1B8083003EAEEC /* FunctionMenu(功能菜单) */,
@@ -1772,6 +1821,7 @@
 				9179F5781D224FD9002CF61D /* UIColor+Zirkfied.m in Sources */,
 				7631771C1D2B593000571559 /* SearchView.m in Sources */,
 				763177291D2BA6CA00571559 /* BluetoothConnectionViewController.m in Sources */,
+				7695BD101D3391DF00DDB96E /* UserDataManager.m in Sources */,
 				F104CE081D1B8083003EAEEC /* JiLuCaiViewCell.m in Sources */,
 				F104CE401D1B8083003EAEEC /* OrderingViewController.m in Sources */,
 				43882E821D23C9F1006C28CE /* WaiMaiDetailTableViewCell.m in Sources */,
@@ -1788,6 +1838,7 @@
 				43882E701D23C9F1006C28CE /* DeskCollectionController.m in Sources */,
 				43882E741D23C9F1006C28CE /* DinnerTableViewController.m in Sources */,
 				9179F58B1D224FDA002CF61D /* ZFPieChart.m in Sources */,
+				7695BD0F1D3391DF00DDB96E /* RegisterModel.m in Sources */,
 				F104CE261D1B8083003EAEEC /* LM_button.m in Sources */,
 				763177251D2B60C000571559 /* UIView+UI.m in Sources */,
 				43882E721D23C9F1006C28CE /* DeskTableViewController.m in Sources */,
@@ -1819,6 +1870,7 @@
 				F104CE161D1B8083003EAEEC /* LM_datePickerView.m in Sources */,
 				F104CE421D1B8083003EAEEC /* DishTypeView.m in Sources */,
 				F104CE2F1D1B8083003EAEEC /* XYPieChart.m in Sources */,
+				7695BD0E1D3391DF00DDB96E /* LoginModel.m in Sources */,
 				9179F57A1D224FD9002CF61D /* ZFLabel.m in Sources */,
 				F104CE241D1B8083003EAEEC /* FoodCollectionViewCell.m in Sources */,
 				9179F5761D224FD9002CF61D /* NSString+Zirkfied.m in Sources */,
@@ -1841,6 +1893,7 @@
 				915737781D2129D300B6EC1D /* FoodAnayseTableViewCell.m in Sources */,
 				F104CE001D1B8083003EAEEC /* SearchBlueToothView.m in Sources */,
 				F104CE061D1B8083003EAEEC /* JiaoYiJiLuCell.m in Sources */,
+				7695BD0D1D3391DF00DDB96E /* CmEmployee.m in Sources */,
 				F104CE511D1B8083003EAEEC /* MainLeftView.m in Sources */,
 				818EFB771D1D096B005C02E5 /* ScanView.m in Sources */,
 				9179F57B1D224FD9002CF61D /* ZFPopoverLabel.m in Sources */,
@@ -1861,6 +1914,7 @@
 				43882E801D23C9F1006C28CE /* UpCollectionViewCell.m in Sources */,
 				F104CE6B1D1B8083003EAEEC /* FSCalendarConstance.m in Sources */,
 				9179F58E1D224FDA002CF61D /* ZFWaveChart.m in Sources */,
+				7695BD0C1D3391DF00DDB96E /* DataManager.m in Sources */,
 				9179F5861D224FDA002CF61D /* ZFHorizontalBarChart.m in Sources */,
 				9179F5811D224FD9002CF61D /* ZFBarChart.m in Sources */,
 				9179F5831D224FD9002CF61D /* ZFGenericChart.m in Sources */,
