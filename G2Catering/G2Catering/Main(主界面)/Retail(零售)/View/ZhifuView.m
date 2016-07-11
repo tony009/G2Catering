@@ -7,6 +7,7 @@
 //
 
 #import "ZhifuView.h"
+#import "UIButton+RoundSide.h"
 #import "TypeCollectionViewCell.h"
 #import "fuKuanView.h"
 #import "ScanView.h"
@@ -23,10 +24,13 @@
 @implementation ZhifuView
 
 - (void)awakeFromNib{
-    _typeArray = [NSMutableArray arrayWithArray:@[@"百度钱包3",@"微信支付3",@"支付宝3",@"qq3",@"pay3",@"vip3",@"银联3",@"组13"]];
-     _stypeArray = [NSMutableArray arrayWithArray:@[@"百度钱包2",@"微信支付2",@"支付宝2",@"qq2",@"pay2",@"vip2",@"银联2",@"组13"]];
-    _ntypeArray = [NSMutableArray arrayWithArray:@[@"百度钱包1",@"微信支付1",@"支付宝1",@"qq1",@"pay1",@"vip1",@"银联1",@"组13"]];
+    _typeArray = [NSMutableArray arrayWithArray:@[@"aliPayWallet",@"ApplePay",@"baiduWallet",@"jdWallet",@"qqWallet",@"UnionPay",@"vip",@"wechatWallet",@"组13"]];
+     _stypeArray = [NSMutableArray arrayWithArray:@[@"aliPayWallet",@"ApplePay",@"baiduWallet",@"jdWallet",@"qqWallet",@"UnionPay",@"vip",@"wechatWallet",@"组13"]];
+    _ntypeArray = [NSMutableArray arrayWithArray:@[@"aliPayWallet",@"ApplePay",@"baiduWallet",@"jdWallet",@"qqWallet",@"UnionPay",@"vip",@"wechatWallet",@"组13"]];
     [self.typeCollection registerNib:[UINib nibWithNibName:@"TypeCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"TypeCollectionViewCell"];
+    self.typeCollection.showsVerticalScrollIndicator = NO;
+    self.typeCollection.showsHorizontalScrollIndicator = NO;
+    
     self.typeCollection.dataSource =self;
     self.typeCollection.delegate =self;
     self.layer.borderColor = [UIColor lightGrayColor].CGColor;
@@ -45,11 +49,16 @@
     self.inputText.delegate = self;
     self.inputText.keyboardType = UIKeyboardTypeNumberPad;
     
+    [self.scanBtn roundSide:@"SideRight"];
+    
     //刘明
     
     [self scan];
     
+    
 }
+
+
 
 - (void)scan{
     
@@ -142,9 +151,11 @@
     
     
 }
+
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     TypeCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"TypeCollectionViewCell" forIndexPath:indexPath];
     [cell.typeBtn setImage:[UIImage imageNamed:_typeArray[indexPath.row]] forState:UIControlStateNormal];
+    cell.typeBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;// UIViewContentModeCenter;
     [cell.typeBtn setImage:[UIImage imageNamed:_ntypeArray[indexPath.row]] forState:UIControlStateDisabled];
     [cell.typeBtn setImage:[UIImage imageNamed:_stypeArray[indexPath.row]] forState:UIControlStateSelected];
     cell.typeBtn.tag = 200+indexPath.row;

@@ -5,6 +5,7 @@
 //  Created by wd on 16/6/14.
 //  Copyright © 2016年 NDL. All rights reserved.
 //
+#import <Masonry/Masonry.h>
 #import "PanView.h"
 #import "ShowMenuView.h"
 #import "DinnerTableViewController.h"
@@ -15,7 +16,7 @@
 #import "LockScreenView.h"
 #import "OrderPerson.h"
 #import "DishTypeView.h"
-@interface DinnerTableViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UITableViewDataSource,UITableViewDelegate,ShowMenuViewViewDelegate,DishTypeViewDelegate>
+@interface DinnerTableViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UITableViewDataSource,UITableViewDelegate,ShowMenuViewViewDelegate,DishTypeViewDelegate,UIAlertViewDelegate>
 {
     NSArray *_array;
     
@@ -41,6 +42,11 @@
     
 //  存储外卖的相关信息
     NSMutableArray *orderDataArray;  //  外卖数组
+    
+
+    UIAlertView *bingAlert;          //  并桌Alert
+    UIAlertView *huanAlert;          //  换桌Alert
+    
 }
 
 @property (weak, nonatomic) IBOutlet UIView *firstView;
@@ -113,6 +119,8 @@
     self.dishTypeView.strArray = _array;
     self.dishTypeView.delegate = self;
     [self.dishTypeView setSelectIndex:0];
+    
+
 }
 
 - (void)_initCollectionView
@@ -259,11 +267,15 @@
                 endHuan = cell.nameLabel.text;
                 endIndex = indexPath.row;
                 
+                bingAlert = [[UIAlertView alloc] initWithTitle:@"确定换桌" message:[NSString stringWithFormat:@"确定将%@换到第%@桌?\n(操作后不可撤销)",biginHuan,cell.nameLabel.text] delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil] ;
+                [bingAlert show];
                 
-                [self revertNewArray:biginHuan endIndexz:endHuan];
-                [[[UIAlertView alloc] initWithTitle:@"提示" message:[NSString stringWithFormat:@"换到第%@桌",cell.nameLabel.text] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil] show];
-                deskState = DeskTableStateDefault;
-                [self.collectionView reloadData];
+           
+                
+//                [self revertNewArray:biginHuan endIndexz:endHuan];
+//                [[[UIAlertView alloc] initWithTitle:@"提示" message:[NSString stringWithFormat:@"换到第%@桌",cell.nameLabel.text] delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil] show];
+//                deskState = DeskTableStateDefault;
+//                [self.collectionView reloadData];
             }
         }
         if (deskState == DeskTableStateCombin) {
@@ -277,11 +289,14 @@
                 }
                 
                 endBing = cell.nameLabel.text;
+                huanAlert = [[UIAlertView alloc] initWithTitle:@"确定并桌" message:[NSString stringWithFormat:@"确定将%@桌并到%@桌?\n(操作后订单合并且不可以撤销)",beginBing,endBing] delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil] ;
+                [huanAlert show];
                 
-                [arr2 replaceObjectAtIndex:fromIndex withObject:@"0"];
-                [[[UIAlertView alloc] initWithTitle:@"提示" message:[NSString stringWithFormat:@"第%@桌和第%@桌并桌了",beginBing,endBing] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil] show];
-                deskState = DeskTableStateDefault;
-                [self.collectionView reloadData];
+                
+//                [arr2 replaceObjectAtIndex:fromIndex withObject:@"0"];
+//                [[[UIAlertView alloc] initWithTitle:@"提示" message:[NSString stringWithFormat:@"第%@桌和第%@桌并桌了",beginBing,endBing] delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil] show];
+//                deskState = DeskTableStateDefault;
+//                [self.collectionView reloadData];
             }
         }
     }else{
@@ -305,6 +320,22 @@
     WaiMaiTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"WaiMaiTableViewCell" forIndexPath:indexPath];
     cell.numLabel.text = @"002";
     return cell;
+    
+}
+
+#pragma mark- AlertDelegate
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if ([alertView isEqual:bingAlert]&&buttonIndex==1) {
+        [self revertNewArray:biginHuan endIndexz:endHuan];
+        deskState = DeskTableStateDefault;
+        [self.collectionView reloadData];
+    }
+    if ([alertView isEqual:huanAlert]&&buttonIndex==1) {
+        [arr2 replaceObjectAtIndex:fromIndex withObject:@"0"];
+        deskState = DeskTableStateDefault;
+        [self.collectionView reloadData];
+    }
     
 }
 
@@ -459,6 +490,8 @@
     }
 
 }
+
+
 
 #pragma mark- 点击方法
 - (IBAction)searchBtnAction:(id)sender {
@@ -666,6 +699,19 @@
     } else {
         return YES;
     }
+}
+
+#pragma mark- 拼桌
+-(void)addQuanxianWithLabel:(UIView *)label {
+    UILabel *xian = [UILabel new];
+    xian.backgroundColor = [UIColor redColor];
+    [label addSubview:xian];
+    [xian mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(@0);
+        make.right.equalTo(@0);
+        make.top.equalTo(label.mas_top).offset(1);
+        make.height.equalTo(@1);
+    }];
 }
 
 

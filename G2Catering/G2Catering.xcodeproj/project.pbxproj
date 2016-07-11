@@ -31,6 +31,34 @@
 		43882E831D23C9F1006C28CE /* WaiMaiDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E6B1D23C9F1006C28CE /* WaiMaiDetailTableViewCell.xib */; };
 		43882E841D23C9F1006C28CE /* WaiMaiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E6D1D23C9F1006C28CE /* WaiMaiTableViewCell.m */; };
 		43882E851D23C9F1006C28CE /* WaiMaiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E6E1D23C9F1006C28CE /* WaiMaiTableViewCell.xib */; };
+		43D1EAE91D33527D0087A2AA /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D1EAE11D33527D0087A2AA /* LoginModel.m */; settings = {ASSET_TAGS = (); }; };
+		43D1EAF31D3365690087A2AA /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D1EAEF1D3365690087A2AA /* NSObject+YYModel.m */; settings = {ASSET_TAGS = (); }; };
+		43D1EAF41D3365690087A2AA /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D1EAF11D3365690087A2AA /* YYClassInfo.m */; settings = {ASSET_TAGS = (); }; };
+		5430E3511D2E2AFA0092985E /* aliPayWallet.png in Resources */ = {isa = PBXBuildFile; fileRef = 5430E3391D2E2AFA0092985E /* aliPayWallet.png */; };
+		5430E3521D2E2AFA0092985E /* aliPayWallet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5430E33A1D2E2AFA0092985E /* aliPayWallet@2x.png */; };
+		5430E3531D2E2AFA0092985E /* aliPayWallet@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5430E33B1D2E2AFA0092985E /* aliPayWallet@3x.png */; };
+		5430E3541D2E2AFA0092985E /* ApplePay.png in Resources */ = {isa = PBXBuildFile; fileRef = 5430E33C1D2E2AFA0092985E /* ApplePay.png */; };
+		5430E3551D2E2AFA0092985E /* ApplePay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5430E33D1D2E2AFA0092985E /* ApplePay@2x.png */; };
+		5430E3561D2E2AFA0092985E /* ApplePay@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5430E33E1D2E2AFA0092985E /* ApplePay@3x.png */; };
+		5430E3571D2E2AFA0092985E /* baiduWallet.png in Resources */ = {isa = PBXBuildFile; fileRef = 5430E33F1D2E2AFA0092985E /* baiduWallet.png */; };
+		5430E3581D2E2AFA0092985E /* baiduWallet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5430E3401D2E2AFA0092985E /* baiduWallet@2x.png */; };
+		5430E3591D2E2AFA0092985E /* baiduWallet@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5430E3411D2E2AFA0092985E /* baiduWallet@3x.png */; };
+		5430E35A1D2E2AFA0092985E /* jdWallet.png in Resources */ = {isa = PBXBuildFile; fileRef = 5430E3421D2E2AFA0092985E /* jdWallet.png */; };
+		5430E35B1D2E2AFA0092985E /* jdWallet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5430E3431D2E2AFA0092985E /* jdWallet@2x.png */; };
+		5430E35C1D2E2AFA0092985E /* jdWallet@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5430E3441D2E2AFA0092985E /* jdWallet@3x.png */; };
+		5430E35D1D2E2AFA0092985E /* qqWallet.png in Resources */ = {isa = PBXBuildFile; fileRef = 5430E3451D2E2AFA0092985E /* qqWallet.png */; };
+		5430E35E1D2E2AFA0092985E /* qqWallet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5430E3461D2E2AFA0092985E /* qqWallet@2x.png */; };
+		5430E35F1D2E2AFA0092985E /* qqWallet@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5430E3471D2E2AFA0092985E /* qqWallet@3x.png */; };
+		5430E3601D2E2AFA0092985E /* UnionPay.png in Resources */ = {isa = PBXBuildFile; fileRef = 5430E3481D2E2AFA0092985E /* UnionPay.png */; };
+		5430E3611D2E2AFA0092985E /* UnionPay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5430E3491D2E2AFA0092985E /* UnionPay@2x.png */; };
+		5430E3621D2E2AFA0092985E /* UnionPay@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5430E34A1D2E2AFA0092985E /* UnionPay@3x.png */; };
+		5430E3631D2E2AFA0092985E /* vip.png in Resources */ = {isa = PBXBuildFile; fileRef = 5430E34B1D2E2AFA0092985E /* vip.png */; };
+		5430E3641D2E2AFA0092985E /* vip@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5430E34C1D2E2AFA0092985E /* vip@2x.png */; };
+		5430E3651D2E2AFA0092985E /* vip@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5430E34D1D2E2AFA0092985E /* vip@3x.png */; };
+		5430E3661D2E2AFA0092985E /* wechatWallet.png in Resources */ = {isa = PBXBuildFile; fileRef = 5430E34E1D2E2AFA0092985E /* wechatWallet.png */; };
+		5430E3671D2E2AFA0092985E /* wechatWallet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5430E34F1D2E2AFA0092985E /* wechatWallet@2x.png */; };
+		5430E3681D2E2AFA0092985E /* wechatWallet@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5430E3501D2E2AFA0092985E /* wechatWallet@3x.png */; };
+		54E77B5E1D334959005CDE5F /* UIButton+RoundSide.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E77B5D1D334959005CDE5F /* UIButton+RoundSide.m */; };
 		763177111D20FB8200571559 /* SegmentedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 763177101D20FB8200571559 /* SegmentedView.m */; };
 		763177131D20FC1E00571559 /* SegmentedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 763177121D20FC1E00571559 /* SegmentedView.xib */; };
 		763177191D2A5B4600571559 /* 下拉提示.gif in Resources */ = {isa = PBXBuildFile; fileRef = 763177181D2A5B4600571559 /* 下拉提示.gif */; };
@@ -258,6 +286,13 @@
 		43882E6C1D23C9F1006C28CE /* WaiMaiTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaiMaiTableViewCell.h; sourceTree = "<group>"; };
 		43882E6D1D23C9F1006C28CE /* WaiMaiTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaiMaiTableViewCell.m; sourceTree = "<group>"; };
 		43882E6E1D23C9F1006C28CE /* WaiMaiTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaiMaiTableViewCell.xib; sourceTree = "<group>"; };
+		43D1EAE01D33527D0087A2AA /* LoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
+		43D1EAE11D33527D0087A2AA /* LoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
+		43D1EAED1D3365690087A2AA /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
+		43D1EAEE1D3365690087A2AA /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
+		43D1EAEF1D3365690087A2AA /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
+		43D1EAF01D3365690087A2AA /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
+		43D1EAF11D3365690087A2AA /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
 		54060A001D2BA47E004FA5FB /* ScanQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanQRCodeViewController.h; sourceTree = "<group>"; };
 		54060A011D2BA47E004FA5FB /* ScanQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanQRCodeViewController.m; sourceTree = "<group>"; };
 		54060A021D2BA47E004FA5FB /* ScanQRCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanQRCodeViewController.xib; sourceTree = "<group>"; };
@@ -267,9 +302,35 @@
 		54060A0A1D2BA581004FA5FB /* PaySuccessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaySuccessViewController.h; sourceTree = "<group>"; };
 		54060A0B1D2BA581004FA5FB /* PaySuccessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaySuccessViewController.m; sourceTree = "<group>"; };
 		54060A0C1D2BA581004FA5FB /* PaySuccessViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaySuccessViewController.xib; sourceTree = "<group>"; };
+		5430E3391D2E2AFA0092985E /* aliPayWallet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aliPayWallet.png; sourceTree = "<group>"; };
+		5430E33A1D2E2AFA0092985E /* aliPayWallet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "aliPayWallet@2x.png"; sourceTree = "<group>"; };
+		5430E33B1D2E2AFA0092985E /* aliPayWallet@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "aliPayWallet@3x.png"; sourceTree = "<group>"; };
+		5430E33C1D2E2AFA0092985E /* ApplePay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ApplePay.png; sourceTree = "<group>"; };
+		5430E33D1D2E2AFA0092985E /* ApplePay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ApplePay@2x.png"; sourceTree = "<group>"; };
+		5430E33E1D2E2AFA0092985E /* ApplePay@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ApplePay@3x.png"; sourceTree = "<group>"; };
+		5430E33F1D2E2AFA0092985E /* baiduWallet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baiduWallet.png; sourceTree = "<group>"; };
+		5430E3401D2E2AFA0092985E /* baiduWallet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "baiduWallet@2x.png"; sourceTree = "<group>"; };
+		5430E3411D2E2AFA0092985E /* baiduWallet@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "baiduWallet@3x.png"; sourceTree = "<group>"; };
+		5430E3421D2E2AFA0092985E /* jdWallet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jdWallet.png; sourceTree = "<group>"; };
+		5430E3431D2E2AFA0092985E /* jdWallet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jdWallet@2x.png"; sourceTree = "<group>"; };
+		5430E3441D2E2AFA0092985E /* jdWallet@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jdWallet@3x.png"; sourceTree = "<group>"; };
+		5430E3451D2E2AFA0092985E /* qqWallet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qqWallet.png; sourceTree = "<group>"; };
+		5430E3461D2E2AFA0092985E /* qqWallet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qqWallet@2x.png"; sourceTree = "<group>"; };
+		5430E3471D2E2AFA0092985E /* qqWallet@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qqWallet@3x.png"; sourceTree = "<group>"; };
+		5430E3481D2E2AFA0092985E /* UnionPay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UnionPay.png; sourceTree = "<group>"; };
+		5430E3491D2E2AFA0092985E /* UnionPay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UnionPay@2x.png"; sourceTree = "<group>"; };
+		5430E34A1D2E2AFA0092985E /* UnionPay@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UnionPay@3x.png"; sourceTree = "<group>"; };
+		5430E34B1D2E2AFA0092985E /* vip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vip.png; sourceTree = "<group>"; };
+		5430E34C1D2E2AFA0092985E /* vip@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vip@2x.png"; sourceTree = "<group>"; };
+		5430E34D1D2E2AFA0092985E /* vip@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vip@3x.png"; sourceTree = "<group>"; };
+		5430E34E1D2E2AFA0092985E /* wechatWallet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wechatWallet.png; sourceTree = "<group>"; };
+		5430E34F1D2E2AFA0092985E /* wechatWallet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wechatWallet@2x.png"; sourceTree = "<group>"; };
+		5430E3501D2E2AFA0092985E /* wechatWallet@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wechatWallet@3x.png"; sourceTree = "<group>"; };
 		54C936761D29FC5800739A6D /* PaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentViewController.h; sourceTree = "<group>"; };
 		54C936771D29FC5800739A6D /* PaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentViewController.m; sourceTree = "<group>"; };
 		54C936781D29FC5800739A6D /* PaymentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentViewController.xib; sourceTree = "<group>"; };
+		54E77B5C1D334959005CDE5F /* UIButton+RoundSide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+RoundSide.h"; sourceTree = "<group>"; };
+		54E77B5D1D334959005CDE5F /* UIButton+RoundSide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+RoundSide.m"; sourceTree = "<group>"; };
 		7631770F1D20FB8200571559 /* SegmentedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentedView.h; sourceTree = "<group>"; };
 		763177101D20FB8200571559 /* SegmentedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentedView.m; sourceTree = "<group>"; };
 		763177121D20FC1E00571559 /* SegmentedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SegmentedView.xib; sourceTree = "<group>"; };
@@ -655,9 +716,55 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		43D1EAF21D3365690087A2AA /* YYModel */ = {
+			isa = PBXGroup;
+			children = (
+				43D1EAED1D3365690087A2AA /* YYModel.h */,
+				43D1EAEE1D3365690087A2AA /* NSObject+YYModel.h */,
+				43D1EAEF1D3365690087A2AA /* NSObject+YYModel.m */,
+				43D1EAF01D3365690087A2AA /* YYClassInfo.h */,
+				43D1EAF11D3365690087A2AA /* YYClassInfo.m */,
+			);
+			name = YYModel;
+			path = "/Users/lcc/Desktop/YYModel-master/Benchmark/ModelBenchmark/../../YYModel";
+			sourceTree = "<absolute>";
+		};
+		5430E3381D2E26C80092985E /* PictureResources */ = {
+			isa = PBXGroup;
+			children = (
+				5430E3391D2E2AFA0092985E /* aliPayWallet.png */,
+				5430E33A1D2E2AFA0092985E /* aliPayWallet@2x.png */,
+				5430E33B1D2E2AFA0092985E /* aliPayWallet@3x.png */,
+				5430E33C1D2E2AFA0092985E /* ApplePay.png */,
+				5430E33D1D2E2AFA0092985E /* ApplePay@2x.png */,
+				5430E33E1D2E2AFA0092985E /* ApplePay@3x.png */,
+				5430E33F1D2E2AFA0092985E /* baiduWallet.png */,
+				5430E3401D2E2AFA0092985E /* baiduWallet@2x.png */,
+				5430E3411D2E2AFA0092985E /* baiduWallet@3x.png */,
+				5430E3421D2E2AFA0092985E /* jdWallet.png */,
+				5430E3431D2E2AFA0092985E /* jdWallet@2x.png */,
+				5430E3441D2E2AFA0092985E /* jdWallet@3x.png */,
+				5430E3451D2E2AFA0092985E /* qqWallet.png */,
+				5430E3461D2E2AFA0092985E /* qqWallet@2x.png */,
+				5430E3471D2E2AFA0092985E /* qqWallet@3x.png */,
+				5430E3481D2E2AFA0092985E /* UnionPay.png */,
+				5430E3491D2E2AFA0092985E /* UnionPay@2x.png */,
+				5430E34A1D2E2AFA0092985E /* UnionPay@3x.png */,
+				5430E34B1D2E2AFA0092985E /* vip.png */,
+				5430E34C1D2E2AFA0092985E /* vip@2x.png */,
+				5430E34D1D2E2AFA0092985E /* vip@3x.png */,
+				5430E34E1D2E2AFA0092985E /* wechatWallet.png */,
+				5430E34F1D2E2AFA0092985E /* wechatWallet@2x.png */,
+				5430E3501D2E2AFA0092985E /* wechatWallet@3x.png */,
+			);
+			path = PictureResources;
+			sourceTree = "<group>";
+		};
 		54C9366F1D29FB0C00739A6D /* payment(支付) */ = {
 			isa = PBXGroup;
 			children = (
+				43D1EAF21D3365690087A2AA /* YYModel */,
+				5430E3381D2E26C80092985E /* PictureResources */,
 				54C936751D29FC5800739A6D /* controller */,
 				54C936791D29FC5800739A6D /* model */,
 				54C9367A1D29FC5800739A6D /* view */,
@@ -669,6 +776,8 @@
 		54C936751D29FC5800739A6D /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				43D1EAE01D33527D0087A2AA /* LoginModel.h */,
+				43D1EAE11D33527D0087A2AA /* LoginModel.m */,
 				54C936761D29FC5800739A6D /* PaymentViewController.h */,
 				54C936771D29FC5800739A6D /* PaymentViewController.m */,
 				54C936781D29FC5800739A6D /* PaymentViewController.xib */,
@@ -1043,6 +1152,8 @@
 				917A06501D1CC48B00CEDB9E /* ZhifuView.h */,
 				917A06511D1CC48B00CEDB9E /* ZhifuView.m */,
 				917A06521D1CC48B00CEDB9E /* ZhifuView.xib */,
+				54E77B5C1D334959005CDE5F /* UIButton+RoundSide.h */,
+				54E77B5D1D334959005CDE5F /* UIButton+RoundSide.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1635,7 +1746,7 @@
 				TargetAttributes = {
 					76D45C6D1D0CFD3B0026491F = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = EY9GA3N4W5;
+						DevelopmentTeam = VSMJ54AW24;
 					};
 					76D45C861D0CFD3B0026491F = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -1684,6 +1795,9 @@
 				F104CE1F1D1B8083003EAEEC /* DeviceTestView.xib in Resources */,
 				43882E771D23C9F1006C28CE /* DeskCollectionTableViewCell.xib in Resources */,
 				F104CE651D1B8083003EAEEC /* Main.storyboard in Resources */,
+				5430E35C1D2E2AFA0092985E /* jdWallet@3x.png in Resources */,
+				5430E3671D2E2AFA0092985E /* wechatWallet@2x.png in Resources */,
+				5430E35E1D2E2AFA0092985E /* qqWallet@2x.png in Resources */,
 				763177131D20FC1E00571559 /* SegmentedView.xib in Resources */,
 				917A06541D1CC48B00CEDB9E /* fuKuanView.xib in Resources */,
 				43882E851D23C9F1006C28CE /* WaiMaiTableViewCell.xib in Resources */,
@@ -1691,29 +1805,44 @@
 				F104CE091D1B8083003EAEEC /* JiLuCaiViewCell.xib in Resources */,
 				F104CE411D1B8083003EAEEC /* OrderingViewController.xib in Resources */,
 				915731CE1D20BBAC00B6EC1D /* DataReportViewController.xib in Resources */,
+				5430E35B1D2E2AFA0092985E /* jdWallet@2x.png in Resources */,
 				43882E711D23C9F1006C28CE /* DeskCollectionController.xib in Resources */,
 				9179F5931D22795B002CF61D /* DishTypeCollectionViewCell.xib in Resources */,
+				5430E3561D2E2AFA0092985E /* ApplePay@3x.png in Resources */,
 				F104CE231D1B8083003EAEEC /* EstimateView.xib in Resources */,
 				F104CE281D1B8083003EAEEC /* PrintSettingsView.xib in Resources */,
 				F104CDFD1D1B8083003EAEEC /* LoginViewController.xib in Resources */,
 				F104CE6F1D1B8083003EAEEC /* LICENSE in Resources */,
 				43882E791D23C9F1006C28CE /* DeskCollectionViewCell.xib in Resources */,
+				5430E3581D2E2AFA0092985E /* baiduWallet@2x.png in Resources */,
 				F104CE2C1D1B8083003EAEEC /* UpdatePasswordView.xib in Resources */,
+				5430E3571D2E2AFA0092985E /* baiduWallet.png in Resources */,
+				5430E3661D2E2AFA0092985E /* wechatWallet.png in Resources */,
 				9157322D1D2114E500B6EC1D /* OrderCountTableViewCell.xib in Resources */,
 				F104CE051D1B8083003EAEEC /* CheDanView.xib in Resources */,
 				43882E751D23C9F1006C28CE /* DinnerTableViewController.xib in Resources */,
+				5430E3541D2E2AFA0092985E /* ApplePay.png in Resources */,
+				5430E3651D2E2AFA0092985E /* vip@3x.png in Resources */,
 				F104CE1D1D1B8083003EAEEC /* AboutSettingsView.xib in Resources */,
+				5430E35A1D2E2AFA0092985E /* jdWallet.png in Resources */,
+				5430E3621D2E2AFA0092985E /* UnionPay@3x.png in Resources */,
 				43882E7B1D23C9F1006C28CE /* LongPressView.xib in Resources */,
 				F104CE151D1B8083003EAEEC /* CancelBookView.xib in Resources */,
 				76D45C7E1D0CFD3B0026491F /* Assets.xcassets in Resources */,
+				5430E3531D2E2AFA0092985E /* aliPayWallet@3x.png in Resources */,
 				F104CE251D1B8083003EAEEC /* FoodCollectionViewCell.xib in Resources */,
 				F104CE541D1B8083003EAEEC /* MainRightView.xib in Resources */,
 				915737791D2129D300B6EC1D /* FoodAnayseTableViewCell.xib in Resources */,
 				F104CE4C1D1B8083003EAEEC /* OrderingTableViewCell.xib in Resources */,
+				5430E3511D2E2AFA0092985E /* aliPayWallet.png in Resources */,
+				5430E3631D2E2AFA0092985E /* vip.png in Resources */,
 				F104CE331D1B8083003EAEEC /* VIPLeftView.xib in Resources */,
+				5430E35D1D2E2AFA0092985E /* qqWallet.png in Resources */,
 				F104CE641D1B8083003EAEEC /* LaunchScreen.storyboard in Resources */,
 				F104CE2A1D1B8083003EAEEC /* PrintSettingTableViewCell.xib in Resources */,
 				7631771E1D2B593D00571559 /* SearchView.xib in Resources */,
+				5430E3591D2E2AFA0092985E /* baiduWallet@3x.png in Resources */,
+				5430E3521D2E2AFA0092985E /* aliPayWallet@2x.png in Resources */,
 				F104CE131D1B8083003EAEEC /* BookManagerTableViewCell.xib in Resources */,
 				F104CE311D1B8083003EAEEC /* VipViewController.xib in Resources */,
 				F104CE481D1B8083003EAEEC /* OpenTableCollectionViewCell.xib in Resources */,
@@ -1722,6 +1851,7 @@
 				F104CE0D1D1B8083003EAEEC /* TypeTableViewCell.xib in Resources */,
 				F104CDFF1D1B8083003EAEEC /* BlueToothDeviceTableViewCell.xib in Resources */,
 				F104CE011D1B8083003EAEEC /* SearchBlueToothView.xib in Resources */,
+				5430E3641D2E2AFA0092985E /* vip@2x.png in Resources */,
 				F104CE4E1D1B8083003EAEEC /* MainViewController.xib in Resources */,
 				F104CE191D1B8083003EAEEC /* TableCollectionViewCell.xib in Resources */,
 				43882E7E1D23C9F1006C28CE /* RightCollectionViewCell.xib in Resources */,
@@ -1732,13 +1862,18 @@
 				F104CE0B1D1B8083003EAEEC /* TradeContentView.xib in Resources */,
 				F104CE561D1B8083003EAEEC /* LingShouViewController.xib in Resources */,
 				F104CE521D1B8083003EAEEC /* MainLeftView.xib in Resources */,
+				5430E3551D2E2AFA0092985E /* ApplePay@2x.png in Resources */,
 				917A06561D1CC48B00CEDB9E /* LingShouTableViewCell.xib in Resources */,
+				5430E3681D2E2AFA0092985E /* wechatWallet@3x.png in Resources */,
+				5430E3601D2E2AFA0092985E /* UnionPay.png in Resources */,
 				F104CE211D1B8083003EAEEC /* EstimateSettingView.xib in Resources */,
+				5430E35F1D2E2AFA0092985E /* qqWallet@3x.png in Resources */,
 				818EFB781D1D096B005C02E5 /* ScanView.xib in Resources */,
 				43882E831D23C9F1006C28CE /* WaiMaiDetailTableViewCell.xib in Resources */,
 				F104CE0F1D1B8083003EAEEC /* BookingManagerViewController.xib in Resources */,
 				F104CE351D1B8083003EAEEC /* VIPTableViewCell.xib in Resources */,
 				F104CE4A1D1B8083003EAEEC /* OrderingCollectionViewCell.xib in Resources */,
+				5430E3611D2E2AFA0092985E /* UnionPay@2x.png in Resources */,
 				F104CE631D1B8083003EAEEC /* Info.plist in Resources */,
 				F104CE111D1B8083003EAEEC /* AddBookView.xib in Resources */,
 			);
@@ -1869,10 +2004,12 @@
 				F104CE121D1B8083003EAEEC /* BookManagerTableViewCell.m in Sources */,
 				F104CE161D1B8083003EAEEC /* LM_datePickerView.m in Sources */,
 				F104CE421D1B8083003EAEEC /* DishTypeView.m in Sources */,
+				43D1EAE91D33527D0087A2AA /* LoginModel.m in Sources */,
 				F104CE2F1D1B8083003EAEEC /* XYPieChart.m in Sources */,
 				7695BD0E1D3391DF00DDB96E /* LoginModel.m in Sources */,
 				9179F57A1D224FD9002CF61D /* ZFLabel.m in Sources */,
 				F104CE241D1B8083003EAEEC /* FoodCollectionViewCell.m in Sources */,
+				43D1EAF31D3365690087A2AA /* NSObject+YYModel.m in Sources */,
 				9179F5761D224FD9002CF61D /* NSString+Zirkfied.m in Sources */,
 				F104CE471D1B8083003EAEEC /* OpenTableCollectionViewCell.m in Sources */,
 				F104CE021D1B8083003EAEEC /* TradeViewController.m in Sources */,
@@ -1887,6 +2024,7 @@
 				F104CE2B1D1B8083003EAEEC /* UpdatePasswordView.m in Sources */,
 				9179F58C1D224FDA002CF61D /* ZFTranslucencePath.m in Sources */,
 				4323B8D91D2BA30A005173BE /* OrderPerson.m in Sources */,
+				43D1EAF41D3365690087A2AA /* YYClassInfo.m in Sources */,
 				F104CE0E1D1B8083003EAEEC /* BookingManagerViewController.m in Sources */,
 				F104CE0A1D1B8083003EAEEC /* TradeContentView.m in Sources */,
 				F104CE6D1D1B8083003EAEEC /* FSCalendarHeader.m in Sources */,
@@ -1919,6 +2057,7 @@
 				9179F5811D224FD9002CF61D /* ZFBarChart.m in Sources */,
 				9179F5831D224FD9002CF61D /* ZFGenericChart.m in Sources */,
 				915731CD1D20BBAC00B6EC1D /* DataReportViewController.m in Sources */,
+				54E77B5E1D334959005CDE5F /* UIButton+RoundSide.m in Sources */,
 				763177111D20FB8200571559 /* SegmentedView.m in Sources */,
 				F104CE321D1B8083003EAEEC /* VIPLeftView.m in Sources */,
 				F104CE341D1B8083003EAEEC /* VIPTableViewCell.m in Sources */,
