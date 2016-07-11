@@ -31,9 +31,6 @@
 		43882E831D23C9F1006C28CE /* WaiMaiDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E6B1D23C9F1006C28CE /* WaiMaiDetailTableViewCell.xib */; };
 		43882E841D23C9F1006C28CE /* WaiMaiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E6D1D23C9F1006C28CE /* WaiMaiTableViewCell.m */; };
 		43882E851D23C9F1006C28CE /* WaiMaiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E6E1D23C9F1006C28CE /* WaiMaiTableViewCell.xib */; };
-		43D1EAE91D33527D0087A2AA /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D1EAE11D33527D0087A2AA /* LoginModel.m */; settings = {ASSET_TAGS = (); }; };
-		43D1EAF31D3365690087A2AA /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D1EAEF1D3365690087A2AA /* NSObject+YYModel.m */; settings = {ASSET_TAGS = (); }; };
-		43D1EAF41D3365690087A2AA /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D1EAF11D3365690087A2AA /* YYClassInfo.m */; settings = {ASSET_TAGS = (); }; };
 		5430E3511D2E2AFA0092985E /* aliPayWallet.png in Resources */ = {isa = PBXBuildFile; fileRef = 5430E3391D2E2AFA0092985E /* aliPayWallet.png */; };
 		5430E3521D2E2AFA0092985E /* aliPayWallet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5430E33A1D2E2AFA0092985E /* aliPayWallet@2x.png */; };
 		5430E3531D2E2AFA0092985E /* aliPayWallet@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5430E33B1D2E2AFA0092985E /* aliPayWallet@3x.png */; };
@@ -281,13 +278,6 @@
 		43882E6C1D23C9F1006C28CE /* WaiMaiTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaiMaiTableViewCell.h; sourceTree = "<group>"; };
 		43882E6D1D23C9F1006C28CE /* WaiMaiTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaiMaiTableViewCell.m; sourceTree = "<group>"; };
 		43882E6E1D23C9F1006C28CE /* WaiMaiTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaiMaiTableViewCell.xib; sourceTree = "<group>"; };
-		43D1EAE01D33527D0087A2AA /* LoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
-		43D1EAE11D33527D0087A2AA /* LoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
-		43D1EAED1D3365690087A2AA /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
-		43D1EAEE1D3365690087A2AA /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
-		43D1EAEF1D3365690087A2AA /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
-		43D1EAF01D3365690087A2AA /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
-		43D1EAF11D3365690087A2AA /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
 		54060A001D2BA47E004FA5FB /* ScanQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanQRCodeViewController.h; sourceTree = "<group>"; };
 		54060A011D2BA47E004FA5FB /* ScanQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanQRCodeViewController.m; sourceTree = "<group>"; };
 		54060A021D2BA47E004FA5FB /* ScanQRCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanQRCodeViewController.xib; sourceTree = "<group>"; };
@@ -701,19 +691,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		43D1EAF21D3365690087A2AA /* YYModel */ = {
-			isa = PBXGroup;
-			children = (
-				43D1EAED1D3365690087A2AA /* YYModel.h */,
-				43D1EAEE1D3365690087A2AA /* NSObject+YYModel.h */,
-				43D1EAEF1D3365690087A2AA /* NSObject+YYModel.m */,
-				43D1EAF01D3365690087A2AA /* YYClassInfo.h */,
-				43D1EAF11D3365690087A2AA /* YYClassInfo.m */,
-			);
-			name = YYModel;
-			path = "/Users/lcc/Desktop/YYModel-master/Benchmark/ModelBenchmark/../../YYModel";
-			sourceTree = "<absolute>";
-		};
 		5430E3381D2E26C80092985E /* PictureResources */ = {
 			isa = PBXGroup;
 			children = (
@@ -748,7 +725,6 @@
 		54C9366F1D29FB0C00739A6D /* payment(支付) */ = {
 			isa = PBXGroup;
 			children = (
-				43D1EAF21D3365690087A2AA /* YYModel */,
 				5430E3381D2E26C80092985E /* PictureResources */,
 				54C936751D29FC5800739A6D /* controller */,
 				54C936791D29FC5800739A6D /* model */,
@@ -761,8 +737,6 @@
 		54C936751D29FC5800739A6D /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				43D1EAE01D33527D0087A2AA /* LoginModel.h */,
-				43D1EAE11D33527D0087A2AA /* LoginModel.m */,
 				54C936761D29FC5800739A6D /* PaymentViewController.h */,
 				54C936771D29FC5800739A6D /* PaymentViewController.m */,
 				54C936781D29FC5800739A6D /* PaymentViewController.xib */,
@@ -1953,11 +1927,9 @@
 				F104CE121D1B8083003EAEEC /* BookManagerTableViewCell.m in Sources */,
 				F104CE161D1B8083003EAEEC /* LM_datePickerView.m in Sources */,
 				F104CE421D1B8083003EAEEC /* DishTypeView.m in Sources */,
-				43D1EAE91D33527D0087A2AA /* LoginModel.m in Sources */,
 				F104CE2F1D1B8083003EAEEC /* XYPieChart.m in Sources */,
 				9179F57A1D224FD9002CF61D /* ZFLabel.m in Sources */,
 				F104CE241D1B8083003EAEEC /* FoodCollectionViewCell.m in Sources */,
-				43D1EAF31D3365690087A2AA /* NSObject+YYModel.m in Sources */,
 				9179F5761D224FD9002CF61D /* NSString+Zirkfied.m in Sources */,
 				F104CE471D1B8083003EAEEC /* OpenTableCollectionViewCell.m in Sources */,
 				F104CE021D1B8083003EAEEC /* TradeViewController.m in Sources */,
@@ -1972,7 +1944,6 @@
 				F104CE2B1D1B8083003EAEEC /* UpdatePasswordView.m in Sources */,
 				9179F58C1D224FDA002CF61D /* ZFTranslucencePath.m in Sources */,
 				4323B8D91D2BA30A005173BE /* OrderPerson.m in Sources */,
-				43D1EAF41D3365690087A2AA /* YYClassInfo.m in Sources */,
 				F104CE0E1D1B8083003EAEEC /* BookingManagerViewController.m in Sources */,
 				F104CE0A1D1B8083003EAEEC /* TradeContentView.m in Sources */,
 				F104CE6D1D1B8083003EAEEC /* FSCalendarHeader.m in Sources */,

@@ -6,10 +6,7 @@
 //  Copyright © 2016年 NDL. All rights reserved.
 //
 
-#define HOST_URL @"http://192.168.1.15:8080/"
-#import "NSObject+YYModel.h"
-#import "LoginModel.h"
-#import "YYModel.h"
+
 #import "HttpTool.h"
 #import "AFNetworking.h"
 #import "MJExtension.h"
@@ -230,87 +227,67 @@ parameters:(id)parameters
     //if ([HttpTool isConnectionAvailable]) {
     
         //创建请求url
-    NSString *baseurl = [NSString stringWithFormat:@"%@%@",HOST_URL,restPath];
     
     AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
     
     sessionManager.requestSerializer = [AFJSONRequestSerializer serializer];
     
-    [sessionManager POST:baseurl parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+    [sessionManager POST:restPath parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
        
-        
-        
-        Class abc = NSClassFromString (@"LoginModel");
-        abc = [modelClass yy_modelWithJSON:responseObject[@"message"]];
-        success(abc);
 
-
-        [modelClass yy_modelWithJSON:responseObject[@"message"]];
-        success(modelClass);
-        
-       LoginModel *log = [modelClass yy_modelWithJSON:responseObject[@"message"]];
-       success(log);
-        
-        
-        
-
-//        
-        
-        
-        NSLog(@"__responseObject__%@",responseObject[@"message"]);
-//        if ([responseObject[@"status"] isEqualToString:@"OK"]) {
-//            
-//            id  result;
-//            id  tmp;
-//            
-//            if (keyPath && ![keyPath isEqualToString:@""]) {
-//                tmp = [responseObject valueForKeyPath:keyPath];
-//            }else{
-//                tmp = responseObject;
-//            }
-//            
-//            if (modelClass) {
-//                
-//                if ([tmp isKindOfClass:[NSArray class]]) {
-//                    
-//                    
-//                    result = [modelClass mj_objectArrayWithKeyValuesArray:tmp];
-//                    
-//                    
-//                    
-//                }else if([tmp isKindOfClass:[NSDictionary class]]){
-//                    
-//                    result = [modelClass mj_objectWithKeyValues:tmp];
-//                    
-//                    
-//                }else if([tmp isKindOfClass:[NSNull class]]){
-//                    
-//                    result = nil;
-//                    
-//                }
-//                else if([tmp isKindOfClass:[NSObject class]]){
-//                    
-//                    result = [modelClass mj_objectWithKeyValues:tmp];
-//                    
-//                    
-//                }
-//            }else{
-//                
-//                result = tmp;
-//            }
-//            
-//            
-//            success(result);
-//            
-//        }else{
-//            
-//            
-//            NSError *error = [NSError errorWithDomain:@"" code:1
-//                                             userInfo:responseObject];
-//            
-//            failure(error);
-//            
-//        }
+        if ([responseObject[@"status"] isEqualToString:@"OK"]) {
+            
+            id  result;
+            id  tmp;
+            
+            if (keyPath && ![keyPath isEqualToString:@""]) {
+                tmp = [responseObject valueForKeyPath:keyPath];
+            }else{
+                tmp = responseObject;
+            }
+            
+            if (modelClass) {
+                
+                if ([tmp isKindOfClass:[NSArray class]]) {
+                    
+                    
+                    result = [modelClass mj_objectArrayWithKeyValuesArray:tmp];
+                    
+                    
+                    
+                }else if([tmp isKindOfClass:[NSDictionary class]]){
+                    
+                    result = [modelClass mj_objectWithKeyValues:tmp];
+                    
+                    
+                }else if([tmp isKindOfClass:[NSNull class]]){
+                    
+                    result = nil;
+                    
+                }
+                else if([tmp isKindOfClass:[NSObject class]]){
+                    
+                    result = [modelClass mj_objectWithKeyValues:tmp];
+                    
+                    
+                }
+            }else{
+                
+                result = tmp;
+            }
+            
+            
+            success(result);
+            
+        }else{
+            
+            
+            NSError *error = [NSError errorWithDomain:@"" code:1
+                                             userInfo:responseObject];
+            
+            failure(error);
+            
+        }
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
@@ -318,14 +295,11 @@ parameters:(id)parameters
         failure(error);
     }];
     
-    //}
+
     
 }
 
--(NSString *)hostUrl:(NSString *)url
-{
-    return [NSString stringWithFormat:@"%@%@",HOST_URL,url];
-}
+
 
 
 @end

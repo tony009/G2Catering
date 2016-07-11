@@ -5,7 +5,7 @@
 //  Created by NDlan on 16/6/20.
 //  Copyright © 2016年 NDL. All rights reserved.
 //
-#import "LoginModel.h"
+
 #import "HttpTool.h"
 #import "LoginViewController.h"
 #import "MainViewController.h"
@@ -93,15 +93,15 @@
     }
     
 //    "loginUsername":"admin","loginPassword":"admin"
-    NSDictionary *loginDic = @{@"loginUsername":@"admin",@"loginPassword":@"admin1"};
+//    NSDictionary *loginDic = @{@"loginUsername":@"admin",@"loginPassword":@"admin1"};
     
-    [HttpTool postWithForm:@"g2-service-module/business/bm/users/appLogin" parameters:loginDic modelClass:[LoginModel class] keyPath:@"" success:^(id response) {
-        
-        LoginModel *logModel = response;
-        NSLog(@"__response__%@",logModel.loginUsername);
-    } failure:^(NSError *error) {
-        
-    }];
+//    [HttpTool postWithForm:@"g2-service-module/business/bm/users/appLogin" parameters:loginDic modelClass:@"" keyPath:@"" success:^(id response) {
+//        
+//
+//
+//    } failure:^(NSError *error) {
+//        
+//    }];
     
 //    BluetoothConnectionViewController *bcVC = [[BluetoothConnectionViewController alloc]init];
 //    UINavigationController *nc = [[UINavigationController alloc]initWithRootViewController:bcVC];
