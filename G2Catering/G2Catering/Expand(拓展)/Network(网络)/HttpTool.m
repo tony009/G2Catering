@@ -6,7 +6,7 @@
 //  Copyright © 2016年 NDL. All rights reserved.
 //
 
-//#define HOST_URL @"http://192.168.1.15:8080/"
+
 #import "HttpTool.h"
 #import "AFNetworking.h"
 #import "MJExtension.h"
@@ -234,7 +234,7 @@ parameters:(id)parameters
     
     [sessionManager POST:restPath parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
        
-        NSLog(@"__responseObject__%@",responseObject[@"message"]);
+
         if ([responseObject[@"status"] isEqualToString:@"OK"]) {
             
             id  result;
@@ -298,6 +298,7 @@ parameters:(id)parameters
 
     
 }
+
 
 
 
