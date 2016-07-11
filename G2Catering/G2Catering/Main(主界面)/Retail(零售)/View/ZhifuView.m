@@ -7,6 +7,7 @@
 //
 
 #import "ZhifuView.h"
+#import "UIButton+RoundSide.h"
 #import "TypeCollectionViewCell.h"
 #import "fuKuanView.h"
 #import "ScanView.h"
@@ -48,11 +49,16 @@
     self.inputText.delegate = self;
     self.inputText.keyboardType = UIKeyboardTypeNumberPad;
     
+    [self.scanBtn roundSide:@"SideRight"];
+    
     //刘明
     
     [self scan];
     
+    
 }
+
+
 
 - (void)scan{
     
