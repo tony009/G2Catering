@@ -13,6 +13,7 @@
 #import "LockScreenView.h"
 #import "UnLockView.h"
 #import "BluetoothConnectionViewController.h"
+#import "UserDataManager.h"
 @interface LoginViewController ()<UITextFieldDelegate>
 
 @property (nonatomic, strong) SearchBlueToothView *searchView;
@@ -30,6 +31,14 @@
     
     
     //[KWindow bringSubviewToFront:unLockView];
+    
+    LoginModel *model = [[LoginModel alloc]initWithLoginUsername:@"admin" loginPassword:@"admin1"];
+    
+    [UserDataManager logIn:model success:^(id response) {
+        
+    } failure:^(NSError *error) {
+        
+    }];
     
 }
 

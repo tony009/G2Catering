@@ -10,7 +10,7 @@
 #import "HttpTool.h"
 #import "MJExtension.h"
 
-//static NSString *iBeaconBaseUrl = @"http://192.168.1.15:8080/"; //测试
+//static NSString *BaseUrl = @"http://192.168.1.15:8080/"; //测试
 //
 //static NSString *baseUrl = @"http://122.112.12.25:18081/";
 

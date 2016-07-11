@@ -8,6 +8,7 @@
 
 #import "UserDataManager.h"
 #import "CmEmployee.h"
+#import "LoginSuccessModel.h"
 
 @implementation UserDataManager
 
@@ -17,13 +18,10 @@
     failure:(failure)failure{
     
     
-    NSString *url = [NSString stringWithFormat:@"%@/%@",iBeaconBaseUrl,@"ibeacon-service-module/business/cm/employee/selectOne"];
+    NSString *url = [NSString stringWithFormat:@"%@/%@",BaseUrl,@"g2-service-module/business/bm/users/appLogin"];
     
-    [HttpTool postWithForm:url parameters:[model mj_keyValues] modelClass:[CmEmployee class] keyPath:@"message" success:^(id response) {
-       
-        
-        
-        
+    [HttpTool postWithForm:url parameters:[model mj_keyValues] modelClass:[LoginSuccessModel class] keyPath:@"message" success:^(id response) {
+
         success(response);
         
     } failure:^(NSError *error) {
@@ -33,7 +31,6 @@
     }];
 
     
-    
 }
 
 //注册
@@ -42,7 +39,7 @@
            failure:(failure)failure{
     
     
-    NSString *url = [NSString stringWithFormat:@"%@/%@",iBeaconBaseUrl,@"ibeacon-service-module/business/cm/employee/addOne"];
+    NSString *url = [NSString stringWithFormat:@"%@/%@",BaseUrl,@"ibeacon-service-module/business/cm/employee/addOne"];
     NSLog(@"%@",[model mj_keyValues]);
     [HttpTool postWithForm:url parameters:[model mj_keyValues] modelClass:nil keyPath:nil success:^(id response) {
         
@@ -74,7 +71,7 @@
               success:(success)success
               failure:(failure)failure{
     
-    NSString *url = [NSString stringWithFormat:@"%@/%@",iBeaconBaseUrl,@"ibeacon-service-module/business/cm/employee/editSelective"];
+    NSString *url = [NSString stringWithFormat:@"%@/%@",BaseUrl,@"ibeacon-service-module/business/cm/employee/editSelective"];
     
     
     [HttpTool POST:url parameters:[employee mj_keyValues] success:^(id response) {
@@ -108,7 +105,7 @@
               failure:(failure)failure{
     
     
-    NSString *url = [NSString stringWithFormat:@"%@/%@",iBeaconBaseUrl,@"ibeacon-service-module/business/cm/employee/editSelective"];
+    NSString *url = [NSString stringWithFormat:@"%@/%@",BaseUrl,@"ibeacon-service-module/business/cm/employee/editSelective"];
     
     
     [HttpTool POST:url parameters:[employee mj_keyValues] success:^(id response) {
@@ -142,7 +139,7 @@
               success:(success)success
              failure:(failure)failure{
     
-    NSString *url = [NSString stringWithFormat:@"%@/%@",iBeaconBaseUrl,@"ibeacon-service-module/business/cm/employee/editSelective"];
+    NSString *url = [NSString stringWithFormat:@"%@/%@",BaseUrl,@"ibeacon-service-module/business/cm/employee/editSelective"];
     
 //    NSDictionary *dic = @{@"defaultId":@"40288102522e592801522ec5d15d0002",@"mobile":@"18410109053"};
     
@@ -181,7 +178,7 @@
     AFHTTPSessionManager *session = [AFHTTPSessionManager manager];
     
     
-    NSString *url = [NSString stringWithFormat:@"%@/%@",iBeaconBaseUrl,@"ibeacon-service-module/business/cw/imageUpload/postformdata"];
+    NSString *url = [NSString stringWithFormat:@"%@/%@",BaseUrl,@"ibeacon-service-module/business/cw/imageUpload/postformdata"];
     
     [session POST:url parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
         
@@ -203,7 +200,7 @@
                               };
         
         
-        NSString *url = [NSString stringWithFormat:@"%@/%@",iBeaconBaseUrl,@"ibeacon-service-module/business/cm/employee/editSelective"];
+        NSString *url = [NSString stringWithFormat:@"%@/%@",BaseUrl,@"ibeacon-service-module/business/cm/employee/editSelective"];
         
         [HttpTool POST:url parameters:dic success:^(id response) {
             

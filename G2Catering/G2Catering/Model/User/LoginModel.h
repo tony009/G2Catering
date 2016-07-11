@@ -16,8 +16,10 @@
 
 @property (nonatomic,copy) NSString *mobile; //手机号
 
--(instancetype)initWithUsername:(NSString *)mobile
-                     password:(NSString *)password;
+
+
+-(instancetype)initWithLoginUsername:(NSString *)loginUsername
+                     loginPassword:(NSString *)loginPassword;
 
 
 -(instancetype)initWithMobile:(NSString *)mobile

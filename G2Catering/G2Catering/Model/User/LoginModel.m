@@ -21,11 +21,11 @@
 }
 
 
--(instancetype)initWithUsername:(NSString *)mobile
-                     password:(NSString *)password{
+-(instancetype)initWithLoginUsername:(NSString *)loginUsername
+                       loginPassword:(NSString *)loginPassword{
     if (self = [super init]) {
-        _loginUsername = mobile;
-        _loginPassword = password;
+        _loginUsername = loginUsername;
+        _loginPassword = loginPassword;
     }
     
     return self;
