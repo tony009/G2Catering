@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -48,7 +48,7 @@
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="打印选项" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mwl-Va-kCS">
                             <rect key="frame" x="65" y="57" width="72" height="22"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -61,25 +61,25 @@
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="档口名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qG9-qK-Exf">
                                     <rect key="frame" x="30" y="17" width="72" height="22"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="品牌" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNr-tv-2ug">
                                     <rect key="frame" x="202" y="17" width="36" height="22"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IP地址" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mt4-sG-1bj">
-                                    <rect key="frame" x="358" y="17" width="52" height="22"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="IP地址" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mt4-sG-1bj">
+                                    <rect key="frame" x="358" y="17" width="66" height="22"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="菜品类" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WjF-vS-N3h">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="菜品类" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WjF-vS-N3h">
                                     <rect key="frame" x="530" y="17" width="54" height="22"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -101,7 +101,7 @@
                                 <constraint firstItem="Mt4-sG-1bj" firstAttribute="leading" secondItem="cNr-tv-2ug" secondAttribute="trailing" constant="120" id="9Jc-lY-bL5"/>
                                 <constraint firstItem="cNr-tv-2ug" firstAttribute="leading" secondItem="qG9-qK-Exf" secondAttribute="trailing" constant="100" id="CYh-kP-XeW"/>
                                 <constraint firstAttribute="trailing" secondItem="hrH-Iy-K6k" secondAttribute="trailing" id="Cay-sd-fmS"/>
-                                <constraint firstItem="WjF-vS-N3h" firstAttribute="leading" secondItem="Mt4-sG-1bj" secondAttribute="trailing" constant="120" id="POf-J8-c0V"/>
+                                <constraint firstItem="WjF-vS-N3h" firstAttribute="leading" secondItem="Mt4-sG-1bj" secondAttribute="trailing" constant="106" id="POf-J8-c0V"/>
                                 <constraint firstItem="cNr-tv-2ug" firstAttribute="centerY" secondItem="qG9-qK-Exf" secondAttribute="centerY" id="VGf-Z3-v6W"/>
                                 <constraint firstAttribute="bottom" secondItem="hrH-Iy-K6k" secondAttribute="bottom" id="Y1n-44-E3c"/>
                                 <constraint firstItem="hrH-Iy-K6k" firstAttribute="leading" secondItem="kK5-Qj-qbF" secondAttribute="leading" constant="6" id="aFR-40-m9d"/>
@@ -145,7 +145,7 @@
                 <outlet property="addBtn" destination="yK7-kr-Vpl" id="gCl-O1-H9u"/>
                 <outlet property="tableView" destination="wc5-Do-JUc" id="WcE-9k-vle"/>
             </connections>
-            <point key="canvasLocation" x="464" y="351"/>
+            <point key="canvasLocation" x="463.5" y="351"/>
         </view>
     </objects>
     <resources>
