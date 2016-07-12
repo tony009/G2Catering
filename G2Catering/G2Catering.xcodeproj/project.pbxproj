@@ -31,6 +31,9 @@
 		43882E831D23C9F1006C28CE /* WaiMaiDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E6B1D23C9F1006C28CE /* WaiMaiDetailTableViewCell.xib */; };
 		43882E841D23C9F1006C28CE /* WaiMaiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E6D1D23C9F1006C28CE /* WaiMaiTableViewCell.m */; };
 		43882E851D23C9F1006C28CE /* WaiMaiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E6E1D23C9F1006C28CE /* WaiMaiTableViewCell.xib */; };
+		43D1EAF71D339EB20087A2AA /* GoodsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D1EAF61D339EB20087A2AA /* GoodsModel.m */; settings = {ASSET_TAGS = (); }; };
+		43D1EAFA1D33A3790087A2AA /* ChangeGoodsNO.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D1EAF91D33A3790087A2AA /* ChangeGoodsNO.m */; settings = {ASSET_TAGS = (); }; };
+		43D1EAFD1D33A5860087A2AA /* DeleteStoreGoods.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D1EAFC1D33A5860087A2AA /* DeleteStoreGoods.m */; settings = {ASSET_TAGS = (); }; };
 		5430E3511D2E2AFA0092985E /* aliPayWallet.png in Resources */ = {isa = PBXBuildFile; fileRef = 5430E3391D2E2AFA0092985E /* aliPayWallet.png */; };
 		5430E3521D2E2AFA0092985E /* aliPayWallet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5430E33A1D2E2AFA0092985E /* aliPayWallet@2x.png */; };
 		5430E3531D2E2AFA0092985E /* aliPayWallet@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5430E33B1D2E2AFA0092985E /* aliPayWallet@3x.png */; };
@@ -284,6 +287,12 @@
 		43882E6C1D23C9F1006C28CE /* WaiMaiTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaiMaiTableViewCell.h; sourceTree = "<group>"; };
 		43882E6D1D23C9F1006C28CE /* WaiMaiTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaiMaiTableViewCell.m; sourceTree = "<group>"; };
 		43882E6E1D23C9F1006C28CE /* WaiMaiTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaiMaiTableViewCell.xib; sourceTree = "<group>"; };
+		43D1EAF51D339EB20087A2AA /* GoodsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsModel.h; sourceTree = "<group>"; };
+		43D1EAF61D339EB20087A2AA /* GoodsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsModel.m; sourceTree = "<group>"; };
+		43D1EAF81D33A3790087A2AA /* ChangeGoodsNO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeGoodsNO.h; sourceTree = "<group>"; };
+		43D1EAF91D33A3790087A2AA /* ChangeGoodsNO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeGoodsNO.m; sourceTree = "<group>"; };
+		43D1EAFB1D33A5860087A2AA /* DeleteStoreGoods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteStoreGoods.h; sourceTree = "<group>"; };
+		43D1EAFC1D33A5860087A2AA /* DeleteStoreGoods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteStoreGoods.m; sourceTree = "<group>"; };
 		54060A001D2BA47E004FA5FB /* ScanQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanQRCodeViewController.h; sourceTree = "<group>"; };
 		54060A011D2BA47E004FA5FB /* ScanQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanQRCodeViewController.m; sourceTree = "<group>"; };
 		54060A021D2BA47E004FA5FB /* ScanQRCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanQRCodeViewController.xib; sourceTree = "<group>"; };
@@ -848,6 +857,12 @@
 				7695BD091D3391DF00DDB96E /* UserDataManager.m */,
 				7695BD121D339B2000DDB96E /* LoginSuccessModel.h */,
 				7695BD131D339B2000DDB96E /* LoginSuccessModel.m */,
+				43D1EAF51D339EB20087A2AA /* GoodsModel.h */,
+				43D1EAF61D339EB20087A2AA /* GoodsModel.m */,
+				43D1EAF81D33A3790087A2AA /* ChangeGoodsNO.h */,
+				43D1EAF91D33A3790087A2AA /* ChangeGoodsNO.m */,
+				43D1EAFB1D33A5860087A2AA /* DeleteStoreGoods.h */,
+				43D1EAFC1D33A5860087A2AA /* DeleteStoreGoods.m */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -1946,6 +1961,7 @@
 				F104CE6E1D1B8083003EAEEC /* FSCalendarStickyHeader.m in Sources */,
 				43882E7D1D23C9F1006C28CE /* RightCollectionViewCell.m in Sources */,
 				F104CE491D1B8083003EAEEC /* OrderingCollectionViewCell.m in Sources */,
+				43D1EAFD1D33A5860087A2AA /* DeleteStoreGoods.m in Sources */,
 				818EFB7F1D1D098C005C02E5 /* NSString+log.m in Sources */,
 				9179F58D1D224FDA002CF61D /* ZFWave.m in Sources */,
 				818EFB801D1D098C005C02E5 /* UIView+AdjustFrame.m in Sources */,
@@ -1980,6 +1996,7 @@
 				F104CE681D1B8083003EAEEC /* FSCalendarAppearance.m in Sources */,
 				F104CE041D1B8083003EAEEC /* CheDanView.m in Sources */,
 				9179F5801D224FD9002CF61D /* ZFBar.m in Sources */,
+				43D1EAF71D339EB20087A2AA /* GoodsModel.m in Sources */,
 				F104CE121D1B8083003EAEEC /* BookManagerTableViewCell.m in Sources */,
 				F104CE161D1B8083003EAEEC /* LM_datePickerView.m in Sources */,
 				F104CE421D1B8083003EAEEC /* DishTypeView.m in Sources */,
@@ -2020,6 +2037,7 @@
 				9179F4DB1D221BB9002CF61D /* UnLockView.m in Sources */,
 				F104CE4B1D1B8083003EAEEC /* OrderingTableViewCell.m in Sources */,
 				9179F57D1D224FD9002CF61D /* ZFYAxisLine.m in Sources */,
+				43D1EAFA1D33A3790087A2AA /* ChangeGoodsNO.m in Sources */,
 				9179F5851D224FDA002CF61D /* ZFHorizontalBar.m in Sources */,
 				43882E7C1D23C9F1006C28CE /* PanView.m in Sources */,
 				F104CE711D1B8083003EAEEC /* NSDate+TEAExtensions.m in Sources */,

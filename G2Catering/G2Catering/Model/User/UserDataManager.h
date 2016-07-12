@@ -12,6 +12,9 @@
 #import "LoginModel.h"
 #import "RegisterModel.h"
 
+#import "GoodsModel.h"
+#import "ChangeGoodsNO.h"
+#import "DeleteStoreGoods.h"
 @interface UserDataManager : DataManager
 
 
@@ -57,5 +60,18 @@
           success:(success)success
           failure:(failure)failure;
 
+//添加商品到购物车
++(void)addGoodToStore:(GoodsModel *)goodsModel
+              success:(success)success
+              failure:(failure)failure;
 
+//更改购物车商品数量
++(void)changgeGoods:(ChangeGoodsNO *)goodsModel
+              success:(success)success
+              failure:(failure)failure;
+
+    //更改购物车商品数量
++(void)deleteGoodFromStore:(DeleteStoreGoods *)goodsModel
+              success:(success)success
+              failure:(failure)failure;
 @end
