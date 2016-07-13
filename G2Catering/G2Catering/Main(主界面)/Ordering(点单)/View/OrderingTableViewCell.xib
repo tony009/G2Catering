@@ -68,6 +68,7 @@
                 <outlet property="dishName" destination="cPx-yM-tSy" id="EAT-fh-2bu"/>
                 <outlet property="dishNumberLabel" destination="ZKV-Dg-pUo" id="U4O-Rk-zTd"/>
                 <outlet property="dishPrice" destination="wZ3-tz-9WB" id="dwr-5y-ozu"/>
+                <outlet property="whetherDonateImageView" destination="obk-Oa-KEI" id="LCS-yF-l4D"/>
             </connections>
             <point key="canvasLocation" x="262" y="243"/>
         </tableViewCell>
