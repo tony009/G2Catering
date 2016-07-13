@@ -110,7 +110,7 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
         
     }];
     
-//  categoryId 分类的 和
+//  categoryId 分类的
 //  defaultId  商品id
     GoodsCheck *goodsModel = [[GoodsCheck alloc] initWithOrgId:@"1"];
     [GoodsDataManager goodsCheck:goodsModel success:^(id response) {
