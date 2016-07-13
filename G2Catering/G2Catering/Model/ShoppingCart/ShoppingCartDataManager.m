@@ -11,6 +11,18 @@
 @implementation ShoppingCartDataManager
 
 #pragma mark- 购物车
+
+
++(void)getShoppingCartByCustomerId:(NSString *)customerId
+                           success:(success)success
+                           failure:(failure)failure{
+    
+    NSString *url = [NSString stringWithFormat:@"%@/%@",BaseUrl,@"g2-service-module/business/sm/shopping/cart/item/addProdutToCart"];
+    
+    
+}
+
+
 //添加商品到购物车
 +(void)addGoodToStore:(GoodsModel *)goodsModel success:(success)success failure:(failure)failure
 {

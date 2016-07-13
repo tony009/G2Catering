@@ -17,6 +17,11 @@
 #import "ChanggeGoods.h"
 @interface ShoppingCartDataManager : DataManager
 
+//获取购物车列表
++(void)getShoppingCartByCustomerId:(NSString *)customerId
+                           success:(success)success
+                           failure:(failure)failure;
+
 
 //添加商品到购物车
 +(void)addGoodToStore:(GoodsModel *)goodsModel
