@@ -1816,7 +1816,7 @@
 				TargetAttributes = {
 					76D45C6D1D0CFD3B0026491F = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = EY9GA3N4W5;
+						DevelopmentTeam = VSMJ54AW24;
 					};
 					76D45C861D0CFD3B0026491F = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -2289,7 +2289,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/G2Catering/Resources(资源)/Plist/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ndlan.;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ndlan.Catering;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 2;
@@ -2308,7 +2308,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/G2Catering/Resources(资源)/Plist/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ndlan.;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ndlan.Catering;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 2;

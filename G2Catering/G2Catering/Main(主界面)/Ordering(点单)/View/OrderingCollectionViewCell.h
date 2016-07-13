@@ -11,4 +11,6 @@
 @interface OrderingCollectionViewCell : UICollectionViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *dishName; //菜名
+@property (weak, nonatomic) IBOutlet UILabel *dishNumLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *dishNumImageView;
 @end
