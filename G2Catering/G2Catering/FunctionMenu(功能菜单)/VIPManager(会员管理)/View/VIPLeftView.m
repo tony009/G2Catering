@@ -44,6 +44,7 @@
 
 - (IBAction)yesAction:(id)sender {
      NSLog(@"VIPLeftViewDidChickYes");
+    
     if ([self.delegate respondsToSelector:@selector(VIPLeftViewDidChickYes:)]) {
         
         [self.delegate VIPLeftViewDidChickYes:self];

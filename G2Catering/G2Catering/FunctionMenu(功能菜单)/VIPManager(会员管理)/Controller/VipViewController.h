@@ -13,4 +13,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *addBtn;
 @property (weak, nonatomic) IBOutlet UIView *allView;
 
+
+
 @end

@@ -8,6 +8,28 @@
 
 #import "VIPTableViewCell.h"
 
+
+@interface VIPTableViewCell ()
+
+@property (weak, nonatomic) IBOutlet UILabel *numberLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *phoneLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *typeLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *amountLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *pointLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *createTimeLabel;
+
+
+@property (weak, nonatomic) IBOutlet UILabel *lastUsedTimeLabel;
+
+@end
+
 @implementation VIPTableViewCell
 
 - (void)awakeFromNib {
@@ -16,6 +38,14 @@
     
     
 }
+
+-(void)setModel:(UserModel *)model{
+    
+    
+    self.nameLabel.text = model.name;
+    
+}
+
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];

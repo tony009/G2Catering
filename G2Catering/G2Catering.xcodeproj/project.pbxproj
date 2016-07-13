@@ -70,6 +70,7 @@
 		7695BD0F1D3391DF00DDB96E /* RegisterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7695BD071D3391DF00DDB96E /* RegisterModel.m */; };
 		7695BD101D3391DF00DDB96E /* UserDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7695BD091D3391DF00DDB96E /* UserDataManager.m */; };
 		7695BD141D339B2000DDB96E /* LoginSuccessModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7695BD131D339B2000DDB96E /* LoginSuccessModel.m */; };
+		7695BD171D339E6500DDB96E /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7695BD161D339E6500DDB96E /* UserModel.m */; };
 		76D45C7E1D0CFD3B0026491F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76D45C7D1D0CFD3B0026491F /* Assets.xcassets */; };
 		76D45C8C1D0CFD3B0026491F /* G2CateringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D45C8B1D0CFD3B0026491F /* G2CateringTests.m */; };
 		76D45C971D0CFD3C0026491F /* G2CateringUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D45C961D0CFD3C0026491F /* G2CateringUITests.m */; };
@@ -346,6 +347,8 @@
 		7695BD091D3391DF00DDB96E /* UserDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDataManager.m; sourceTree = "<group>"; };
 		7695BD121D339B2000DDB96E /* LoginSuccessModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginSuccessModel.h; sourceTree = "<group>"; };
 		7695BD131D339B2000DDB96E /* LoginSuccessModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginSuccessModel.m; sourceTree = "<group>"; };
+		7695BD151D339E6500DDB96E /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		7695BD161D339E6500DDB96E /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
 		76D45C6E1D0CFD3B0026491F /* G2Catering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = G2Catering.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76D45C7D1D0CFD3B0026491F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76D45C871D0CFD3B0026491F /* G2CateringTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = G2CateringTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -838,16 +841,18 @@
 		7695BD011D3391DF00DDB96E /* User */ = {
 			isa = PBXGroup;
 			children = (
+				7695BD151D339E6500DDB96E /* UserModel.h */,
+				7695BD161D339E6500DDB96E /* UserModel.m */,
 				7695BD021D3391DF00DDB96E /* CmEmployee.h */,
 				7695BD031D3391DF00DDB96E /* CmEmployee.m */,
+				7695BD121D339B2000DDB96E /* LoginSuccessModel.h */,
+				7695BD131D339B2000DDB96E /* LoginSuccessModel.m */,
 				7695BD041D3391DF00DDB96E /* LoginModel.h */,
 				7695BD051D3391DF00DDB96E /* LoginModel.m */,
 				7695BD061D3391DF00DDB96E /* RegisterModel.h */,
 				7695BD071D3391DF00DDB96E /* RegisterModel.m */,
 				7695BD081D3391DF00DDB96E /* UserDataManager.h */,
 				7695BD091D3391DF00DDB96E /* UserDataManager.m */,
-				7695BD121D339B2000DDB96E /* LoginSuccessModel.h */,
-				7695BD131D339B2000DDB96E /* LoginSuccessModel.m */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -1941,6 +1946,7 @@
 				43882E821D23C9F1006C28CE /* WaiMaiDetailTableViewCell.m in Sources */,
 				917A06531D1CC48B00CEDB9E /* fuKuanView.m in Sources */,
 				F104CE0C1D1B8083003EAEEC /* TypeTableViewCell.m in Sources */,
+				7695BD171D339E6500DDB96E /* UserModel.m in Sources */,
 				9179F57C1D224FD9002CF61D /* ZFXAxisLine.m in Sources */,
 				F104CE4F1D1B8083003EAEEC /* MainLeftTableViewCell.m in Sources */,
 				F104CE6E1D1B8083003EAEEC /* FSCalendarStickyHeader.m in Sources */,

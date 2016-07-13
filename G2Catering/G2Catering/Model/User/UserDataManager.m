@@ -33,123 +33,151 @@
     
 }
 
-//注册
-+(void)registerInfo:(RegisterModel *)model
-            success:(success)success
-           failure:(failure)failure{
-    
-    
-    NSString *url = [NSString stringWithFormat:@"%@/%@",BaseUrl,@"ibeacon-service-module/business/cm/employee/addOne"];
-    NSLog(@"%@",[model mj_keyValues]);
-    [HttpTool postWithForm:url parameters:[model mj_keyValues] modelClass:nil keyPath:nil success:^(id response) {
-        
-        if ([response[@"status"] isEqualToString:@"OK"]) {
-            
-            success(response);
-            
-        }else{
-            
-            
-            NSError *error = [NSError errorWithDomain:errorDomain code:HttpErrorCode_WrongReult
-                               userInfo:response];
-            
-            failure(error);
-            
-        }
-    
-        
-    } failure:^(NSError *error) {
-        
-        failure(error);
-        
-    }];
-    
-}
-
-
-+(void)modifyPassword:(CmEmployee *)employee
-              success:(success)success
-              failure:(failure)failure{
-    
-    NSString *url = [NSString stringWithFormat:@"%@/%@",BaseUrl,@"ibeacon-service-module/business/cm/employee/editSelective"];
-    
-    
-    [HttpTool POST:url parameters:[employee mj_keyValues] success:^(id response) {
-        
-        if ([response[@"status"] isEqualToString:@"OK"]) {
-            
-            success(response);
-            
-        }else{
-            
-            
-            NSError *error = [NSError errorWithDomain:errorDomain code:HttpErrorCode_WrongReult
-                                             userInfo:response];
-            
-            failure(error);
-            
-        }
-        
-    } failure:^(NSError *error) {
-        
-        
-        failure(error);
-        
-    }];
-    
-    
-}
-
-+(void)forgetPasswrod:(CmEmployee *)employee
+//获取会员列表
++(void)getVIPUserList:(UserModel *)usermodel
               success:(success)success
               failure:(failure)failure{
     
     
-    NSString *url = [NSString stringWithFormat:@"%@/%@",BaseUrl,@"ibeacon-service-module/business/cm/employee/editSelective"];
+    NSString *url = [NSString stringWithFormat:@"%@/%@",BaseUrl,@"g2-service-module/business/bm/users/getUserList"];
     
     
-    [HttpTool POST:url parameters:[employee mj_keyValues] success:^(id response) {
+    [HttpTool postWithForm:url parameters:[usermodel mj_keyValues] modelClass:[UserModel class] keyPath:@"message" success:^(id response) {
         
-        if ([response[@"status"] isEqualToString:@"OK"]) {
-            
-            success(response);
-            
-        }else{
-            
-            
-            NSError *error = [NSError errorWithDomain:errorDomain code:HttpErrorCode_WrongReult
-                                             userInfo:response];
-            
-            failure(error);
-            
-        }
-        
-    } failure:^(NSError *error) {
-        
-        
-        failure(error);
-        
-    }];
-    
-    
-    
-}
-
-+(void)modifyUserInfo:(CmEmployee *)employee
-              success:(success)success
-             failure:(failure)failure{
-    
-    NSString *url = [NSString stringWithFormat:@"%@/%@",BaseUrl,@"ibeacon-service-module/business/cm/employee/editSelective"];
-    
-//    NSDictionary *dic = @{@"defaultId":@"40288102522e592801522ec5d15d0002",@"mobile":@"18410109053"};
-    
-    
-    [HttpTool POST:url parameters:[employee mj_keyValues] success:^(id response) {
-       
         success(response);
         
     } failure:^(NSError *error) {
         
+        failure(error);
+        
+    }];
+    
+    
+}
+
++(void)addVIPUser:(UserModel *)usermodel
+          success:(success)success
+          failure:(failure)failure{
+    
+    
+    
+    NSString *url = [NSString stringWithFormat:@"%@/%@",BaseUrl,@"g2-service-module/business/bm/users/addUser"];
+    
+    
+    [HttpTool POST:url parameters:[usermodel mj_keyValues] success:^(id response) {
+        
+        if ([response[@"status"] isEqualToString:@"OK"]) {
+            
+            success(response);
+            
+        }else{
+            
+            
+            NSError *error = [NSError errorWithDomain:errorDomain code:HttpErrorCode_WrongReult
+                                             userInfo:response];
+            
+            failure(error);
+            
+        }
+        
+    } failure:^(NSError *error) {
+        
+        
+        failure(error);
+        
+    }];
+    
+}
+
++(void)modifyVIPUser:(UserModel *)usermodel
+             success:(success)success
+             failure:(failure)failure{
+    
+    NSString *url = [NSString stringWithFormat:@"%@/%@",BaseUrl,@"g2-service-module/business/bm/users/updateUser"];
+    
+    [HttpTool POST:url parameters:[usermodel mj_keyValues] success:^(id response) {
+        
+        if ([response[@"status"] isEqualToString:@"OK"]) {
+            
+            success(response);
+            
+        }else{
+            
+            
+            NSError *error = [NSError errorWithDomain:errorDomain code:HttpErrorCode_WrongReult
+                                             userInfo:response];
+            
+            failure(error);
+            
+        }
+        
+    } failure:^(NSError *error) {
+        
+        
+        failure(error);
+        
+    }];
+    
+}
+
++(void)deleteVIPUser:(UserModel *)usermodel
+             success:(success)success
+             failure:(failure)failure{
+    
+    
+    NSString *url = [NSString stringWithFormat:@"%@/%@",BaseUrl,@"g2-service-module/business/bm/users/updateUser"];
+    
+    [HttpTool POST:url parameters:[usermodel mj_keyValues] success:^(id response) {
+        
+        if ([response[@"status"] isEqualToString:@"OK"]) {
+            
+            success(response);
+            
+        }else{
+            
+            
+            NSError *error = [NSError errorWithDomain:errorDomain code:HttpErrorCode_WrongReult
+                                             userInfo:response];
+            
+            failure(error);
+            
+        }
+        
+    } failure:^(NSError *error) {
+        
+        
+        failure(error);
+        
+    }];
+    
+}
+
+
++(void)modifyPassword:(UserModel *)usermodel
+              success:(success)success
+              failure:(failure)failure{
+    
+    NSString *url = [NSString stringWithFormat:@"%@/%@",BaseUrl,@"g2-service-module/business/bm/users/updateUser"];
+    
+    
+    [HttpTool POST:url parameters:[usermodel mj_keyValues] success:^(id response) {
+        
+        if ([response[@"status"] isEqualToString:@"OK"]) {
+            
+            success(response);
+            
+        }else{
+            
+            
+            NSError *error = [NSError errorWithDomain:errorDomain code:HttpErrorCode_WrongReult
+                                             userInfo:response];
+            
+            failure(error);
+            
+        }
+        
+    } failure:^(NSError *error) {
+        
         
         failure(error);
         
@@ -157,6 +185,8 @@
     
     
 }
+
+
 
 +(void)uploadPhoto:(UIImage *)photo
            success:(success)success

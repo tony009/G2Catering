@@ -9,10 +9,17 @@
 #import "VipViewController.h"
 #import "VIPTableViewCell.h"
 #import "VIPLeftView.h"
+
+#import "UserDataManager.h"
+#import "UserModel.h"
+
+
 @interface VipViewController ()<UITableViewDelegate,UITableViewDataSource,VIPLeftViewDelegate>{
     
     BOOL _isHidden;
 }
+
+@property (nonatomic,strong) NSArray<UserModel *> *userArray;
 
 @end
 
@@ -21,15 +28,39 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _isHidden = YES;
-  //[self.bgView setImage:[UIImage imageNamed:@"订单-BG"]];
     self.vipTable.dataSource =self;
     self.vipTable.delegate =self;
     [self.vipTable registerNib:[UINib nibWithNibName:@"VIPTableViewCell" bundle:nil] forCellReuseIdentifier:@"VIPTableViewCell"];
+    
     [self.addBtn addTarget:self action:@selector(addVipAction:) forControlEvents:UIControlEventTouchUpInside];
     
     [self.allView setCornerRadius:5.0 withBorderWidth:1.0 withBorderColor:RGB(0xc2, 0xc7, 0xcc)];
     
 
+    
+    self.userArray = [NSArray array];
+    
+
+    [self p_getData];
+}
+
+
+-(void)p_getData{
+    
+    
+    UserModel *model = [[UserModel alloc]init];
+    model.jobStatus = @"2";
+    
+    [UserDataManager getVIPUserList:model success:^(id response) {
+        
+        self.userArray = response;
+        
+        [self.vipTable reloadData];
+    } failure:^(NSError *error) {
+        
+        
+    }];
+    
 }
 
 - (void)addVipAction:(UIButton *)btn{
@@ -74,17 +105,42 @@
 }
 - (void)VIPLeftViewDidChickYes:(VIPLeftView  *)orderContent{
     
-    [UIView animateWithDuration:0.25 animations:^{
+    
+    NSString *phone =   orderContent.phoneTextField.text;
+    NSString *name = orderContent.nameLabel.text;
+    
+    NSString *amount = orderContent.amountTextField.text;
+    
+    UserModel *model = [[UserModel alloc]init];
+    model.mobile = phone;
+    model.name = name;
+    model.jobStatus = @"2";
+    model.groupIds = @[@"15b86fa03cfd11e66bd265bf3021409c"];
+    
+    [UserDataManager addVIPUser:model success:^(id response) {
         
-        self.allView.transform = CGAffineTransformIdentity;
-         [orderContent removeFromSuperview];
-        _isHidden = YES;
         
-    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:0.25 animations:^{
+            
+            self.allView.transform = CGAffineTransformIdentity;
+            [orderContent removeFromSuperview];
+            _isHidden = YES;
+            
+        } completion:^(BOOL finished) {
+            
+            
+            
+        }];
         
         
+    } failure:^(NSError *error) {
+       
         
     }];
+    
+    
+    
+
 }
 
 
@@ -93,6 +149,7 @@
     
     return UITableViewCellEditingStyleDelete;
 }
+
 - (NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     return @"充值";
@@ -107,13 +164,13 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return 10;
+    return self.userArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
    
     VIPTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"VIPTableViewCell" forIndexPath:indexPath];
-    
+    cell.model = self.userArray[indexPath.row];
     
     if (indexPath.row % 2 == 1) {
         cell.backgroundColor = RGB(248, 251, 255);

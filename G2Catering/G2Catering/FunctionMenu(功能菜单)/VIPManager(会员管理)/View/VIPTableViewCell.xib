@@ -64,6 +64,16 @@
                     </label>
                 </subviews>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="amountLabel" destination="Xe4-fG-2rn" id="YyQ-Yt-25Y"/>
+                <outlet property="createTimeLabel" destination="cKu-fc-fZY" id="xfF-xG-Xpz"/>
+                <outlet property="lastUsedTimeLabel" destination="ZyK-L7-VcB" id="sdL-mT-Q7X"/>
+                <outlet property="nameLabel" destination="8za-6t-BQH" id="rTF-II-RpT"/>
+                <outlet property="numberLabel" destination="dpF-Hu-Jbd" id="6Yi-Sg-Qxn"/>
+                <outlet property="phoneLabel" destination="74b-tP-PNr" id="AZU-YI-6FW"/>
+                <outlet property="pointLabel" destination="l2b-gI-1pL" id="SkQ-JH-lSG"/>
+                <outlet property="typeLabel" destination="lBc-o6-elT" id="Ode-X8-Mhu"/>
+            </connections>
             <point key="canvasLocation" x="578.5" y="244"/>
         </tableViewCell>
     </objects>

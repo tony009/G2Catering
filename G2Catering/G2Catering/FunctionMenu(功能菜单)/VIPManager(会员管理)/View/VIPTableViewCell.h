@@ -8,7 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+#import "UserModel.h"
+
 @interface VIPTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UISwitch *switchView;
+
+
+@property (strong,nonatomic)UserModel *model;
 
 @end

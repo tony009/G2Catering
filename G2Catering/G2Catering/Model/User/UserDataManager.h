@@ -11,38 +11,43 @@
 #import "CmEmployee.h"
 #import "LoginModel.h"
 #import "RegisterModel.h"
+#import "UserModel.h"
 
 @interface UserDataManager : DataManager
 
-
+//LoginModel *model = [[LoginModel alloc]initWithLoginUsername:@"admin" loginPassword:@"admin1"];
 //登录接口
 +(void)logIn:(LoginModel *)model
      success:(success)success
     failure:(failure)failure;
 
 
-//注册
-+(void)registerInfo:(RegisterModel *)model
-            success:(success)success
-           failure:(failure)failure;
-
-//    CmEmployee *e = [[CmEmployee alloc]initWithDefaultId:@"40288102522e592801522ec5d15d0002" oldPassword:@"123" newPassword:@"123456"];
 //修改密码
-+(void)modifyPassword:(CmEmployee *)employee
++(void)modifyPassword:(UserModel *)usermodel
+              success:(success)success
+              failure:(failure)failure;
+
+//获取会员列表
++(void)getVIPUserList:(UserModel *)usermodel
               success:(success)success
               failure:(failure)failure;
 
 
-//忘记密码
-+(void)forgetPasswrod:(CmEmployee *)employee
-              success:(success)success
-              failure:(failure)failure;
+//添加会员
++(void)addVIPUser:(UserModel *)usermodel
+          success:(success)success
+          failure:(failure)failure;
+
+//修改会员
++(void)modifyVIPUser:(UserModel *)usermodel
+             success:(success)success
+             failure:(failure)failure;
 
 
-//修改用户信息
-+(void)modifyUserInfo:(CmEmployee *)employee
-              success:(success)success
-              failure:(failure)failure;
+//删除会员
++(void)deleteVIPUser:(UserModel *)usermodel
+             success:(success)success
+             failure:(failure)failure;
 
 
 ////上传图片

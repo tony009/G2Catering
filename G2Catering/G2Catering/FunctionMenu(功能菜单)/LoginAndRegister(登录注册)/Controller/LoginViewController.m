@@ -32,13 +32,8 @@
     
     //[KWindow bringSubviewToFront:unLockView];
     
-    LoginModel *model = [[LoginModel alloc]initWithLoginUsername:@"admin" loginPassword:@"admin1"];
     
-    [UserDataManager logIn:model success:^(id response) {
-        
-    } failure:^(NSError *error) {
-        
-    }];
+    
     
 }
 
