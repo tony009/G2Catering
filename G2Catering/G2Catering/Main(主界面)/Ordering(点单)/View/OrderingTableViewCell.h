@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *dishName; //菜名
 
 @property (weak, nonatomic) IBOutlet UILabel *dishPrice; //菜价
+@property (weak, nonatomic) IBOutlet UILabel *dishNumberLabel;
 
 
 @end
