@@ -17,7 +17,4 @@
 
 -(instancetype)initWithGoodId:(NSString *)goodsId userId:(NSString *)userId;
 
-
-//-(instancetype)initWithMobile:(NSString *)mobile
-//                     password:(NSString *)password;
 @end

@@ -14,12 +14,26 @@
 
 #import "OpenTableAndTakeOutView.h"
 #import "ZhifuView.h"
+
+#import "GoodsDataManager.h"
+#import "GoodsType.h"
+#import "GoodsTypeSuccess.h"
+#import "GoodsCheckSuccess.h"
 static NSString *collectionViewCellIdentifer = @"OrderingCollectionViewReuseCell";
 static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
 
 
-@interface OrderingViewController ()<UITableViewDelegate,UITableViewDataSource,UICollectionViewDelegate,UICollectionViewDataSource>
+@interface OrderingViewController ()<UITableViewDelegate,UITableViewDataSource,UICollectionViewDelegate,UICollectionViewDataSource,DishTypeViewDelegate>
 
+@property (nonatomic,strong)NSArray*typeArray;
+
+@property (nonatomic,strong)NSArray *allArray;                  // (全部)
+@property (nonatomic,strong)NSArray *dataArray;                 // (界面全部显示)
+@property (nonatomic,strong)NSMutableDictionary *resutlDict;    //（根据右侧热菜等选择）
+
+
+@property (nonatomic,strong)NSMutableArray *allCaiArray;        // 添加的全部菜品
+@property(nonatomic,strong)NSMutableArray *caiArray;            // 左侧菜品
 
 @property (weak, nonatomic) IBOutlet UIButton *placeOrderButton;
 @property (weak, nonatomic) IBOutlet UIButton *checkButton;
@@ -87,12 +101,42 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
     [self.placeOrderButton setCornerRadius:0 withBorderWidth:1.0 withBorderColor:RGB(0xc2, 0xc7, 0xcc)];
     [self.checkButton setCornerRadius:0 withBorderWidth:1.0 withBorderColor:RGB(0xc2, 0xc7, 0xcc)];
     
-    self.dishTypeView.strArray = @[@"全部",@"热菜",@"甜菜",@"主食",@"凉菜",@"酒水",@"特价"];
+    GoodsType *goodsType = [[GoodsType alloc] initWithGoodContent:@""];
+    [GoodsDataManager typeGoodsCheck:goodsType success:^(id response) {
+        
+        [self performSelectorOnMainThread:@selector(method:) withObject:response waitUntilDone:nil];
+        
+    } failure:^(NSError *error) {
+        
+    }];
     
+//  categoryId 分类的 和
+//  defaultId  商品id
+    GoodsCheck *goodsModel = [[GoodsCheck alloc] initWithOrgId:@"1"];
+    [GoodsDataManager goodsCheck:goodsModel success:^(id response) {
+        self.allArray = response;
+        self.dataArray = response;
+        NSMutableDictionary *mutDic = [self transFormArrayToDictionary:response];
+        self.resutlDict = mutDic;
+        [self.orderCollectionView reloadData];
+        
+    } failure:^(NSError *error) {
+        
+    }];
     
-
+    self.allCaiArray = [NSMutableArray array];
 }
 
+-(void)method:(NSArray*)arree
+{
+    GoodsTypeSuccess *succ = [[GoodsTypeSuccess alloc] init];
+    succ.categoryName = @"全部";
+    NSMutableArray *mu = [NSMutableArray arrayWithObject:succ];
+    [mu addObjectsFromArray:arree];
+    self.typeArray = mu;
+    self.dishTypeView.strArray = mu;
+    self.dishTypeView.delegate = self;
+}
 
 - (IBAction)orderFuncAction:(UIButton *)sender {
     
@@ -165,31 +209,128 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     
-    return 30;
+    return self.dataArray.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
     OrderingCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:collectionViewCellIdentifer forIndexPath:indexPath];
-
+    GoodsCheckSuccess *goodsCheck = self.dataArray[indexPath.row];
+    cell.dishName.text = goodsCheck.goodsDesc;
     return cell;
 }
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    GoodsCheckSuccess *succe = self.dataArray[indexPath.row];
+    [self.allCaiArray addObject:succe];
+    self.caiArray = [self transFormCaiArray:self.allCaiArray];
+    [self.orderListTableView reloadData];
+}
 
 #pragma mark -- UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 5;
+    return self.caiArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     OrderingTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:tableViewCellIdentifer];
-    cell.dishPrice.text = @"￥100";
-    cell.dishName.text = @"五彩三丝";
-    cell.dishNumberLabel.text = @"X 2";
+//    goodsPrice
+//    goodsName
+//
+    GoodsCheckSuccess *succMode = self.caiArray[indexPath.row][0];
+    cell.dishPrice.text = succMode.goodsPrice;
+    cell.dishName.text =succMode.goodsName;
+    cell.dishNumberLabel.text = [NSString stringWithFormat:@"%zi",[self.caiArray[indexPath.row] count]];
     
     return cell;
+}
+#pragma mark- 右侧滑动菜单代理方法
+- (void)DishTypeView:(DishTypeView *)dishTypeView didSelectItemAtIndex:(GoodsTypeSuccess *)index
+{
+    if ([index.categoryName isEqualToString:@"全部"]) {
+        self.dataArray = self.allArray;
+    }else{
+        self.dataArray = self.resutlDict[index.defaultId];
+    }
+    [self.orderCollectionView reloadData];
+   
+}
+
+
+#pragma mark- ToolMethod
+-(NSMutableDictionary *)transFormArrayToDictionary:(NSMutableArray *)dataArray
+{
+    NSMutableArray *dateMutablearray =  [@[] mutableCopy];
+    NSMutableArray *array = [NSMutableArray arrayWithArray:dataArray];
+    
+    for (int i = 0; i < array.count; i ++) {
+        
+        NSString *string = [(GoodsCheckSuccess *)array[i] categoryId];
+        
+        NSMutableArray *tempArray = [@[] mutableCopy];
+        
+        [tempArray addObject:array[i]];
+        
+        for (int j = i+1; j < array.count; j ++) {
+            
+            NSString *jstring = [(GoodsCheckSuccess *)array[j] categoryId];
+            
+            if([string isEqualToString:jstring]){
+                
+                [tempArray addObject:array[j]];
+                [array removeObjectAtIndex:j];
+                j = j-1;
+            }
+        }
+        
+        [dateMutablearray addObject:tempArray];
+        
+    }
+    
+    NSLog(@"dateMutable:%@",dateMutablearray);
+    
+
+    NSMutableDictionary *muta = [NSMutableDictionary dictionary];
+    for (int i = 0; i<dateMutablearray.count; i++) {
+        NSString *categoryId = [dateMutablearray[i][0] categoryId];
+        [muta setValue:dateMutablearray[i] forKey:categoryId];
+    }
+    return muta;
+}
+
+-(NSMutableArray *)transFormCaiArray:(NSMutableArray *)dataArray
+{
+    NSMutableArray *dateMutablearray =  [@[] mutableCopy];
+    NSMutableArray *array = [NSMutableArray arrayWithArray:dataArray];
+    
+    for (int i = 0; i < array.count; i ++) {
+        
+        NSString *string = [(GoodsCheckSuccess *)array[i] defaultId];
+        
+        NSMutableArray *tempArray = [@[] mutableCopy];
+        
+        [tempArray addObject:array[i]];
+        
+        for (int j = i+1; j < array.count; j ++) {
+            
+            NSString *jstring = [(GoodsCheckSuccess *)array[j] defaultId];
+            
+            if([string isEqualToString:jstring]){
+                
+                [tempArray addObject:array[j]];
+                [array removeObjectAtIndex:j];
+                j = j-1;
+            }
+        }
+        
+        [dateMutablearray addObject:tempArray];
+        
+    }
+    return dateMutablearray;
 }
 
 @end

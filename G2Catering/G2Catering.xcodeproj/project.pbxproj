@@ -351,8 +351,8 @@
 		763177281D2BA6CA00571559 /* BluetoothConnectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BluetoothConnectionViewController.xib; sourceTree = "<group>"; };
 		7695BCFF1D3391DF00DDB96E /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		7695BD001D3391DF00DDB96E /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
-		7695BD4B1D35F23F00DDB96E /* ChangeGoodsNO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeGoodsNO.h; sourceTree = "<group>"; };
-		7695BD4C1D35F23F00DDB96E /* ChangeGoodsNO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeGoodsNO.m; sourceTree = "<group>"; };
+		7695BD4B1D35F23F00DDB96E /* ChangeGoodsNO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChangeGoodsNO.h; path = ../Goods/ChangeGoodsNO.h; sourceTree = "<group>"; };
+		7695BD4C1D35F23F00DDB96E /* ChangeGoodsNO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChangeGoodsNO.m; path = ../Goods/ChangeGoodsNO.m; sourceTree = "<group>"; };
 		7695BD4D1D35F23F00DDB96E /* ChanggeGoods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChanggeGoods.h; sourceTree = "<group>"; };
 		7695BD4E1D35F23F00DDB96E /* ChanggeGoods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChanggeGoods.m; sourceTree = "<group>"; };
 		7695BD4F1D35F23F00DDB96E /* ChanggeGoodsSuccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChanggeGoodsSuccess.h; sourceTree = "<group>"; };
@@ -363,8 +363,8 @@
 		7695BD541D35F23F00DDB96E /* GoodsCheckSuccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsCheckSuccess.m; sourceTree = "<group>"; };
 		7695BD551D35F23F00DDB96E /* GoodsDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsDataManager.h; sourceTree = "<group>"; };
 		7695BD561D35F23F00DDB96E /* GoodsDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsDataManager.m; sourceTree = "<group>"; };
-		7695BD571D35F23F00DDB96E /* GoodsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsModel.h; sourceTree = "<group>"; };
-		7695BD581D35F23F00DDB96E /* GoodsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsModel.m; sourceTree = "<group>"; };
+		7695BD571D35F23F00DDB96E /* GoodsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoodsModel.h; path = ../Goods/GoodsModel.h; sourceTree = "<group>"; };
+		7695BD581D35F23F00DDB96E /* GoodsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoodsModel.m; path = ../Goods/GoodsModel.m; sourceTree = "<group>"; };
 		7695BD591D35F23F00DDB96E /* GoodsType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsType.h; sourceTree = "<group>"; };
 		7695BD5A1D35F23F00DDB96E /* GoodsType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsType.m; sourceTree = "<group>"; };
 		7695BD5B1D35F23F00DDB96E /* GoodsTypeSuccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsTypeSuccess.h; sourceTree = "<group>"; };
@@ -885,8 +885,6 @@
 		7695BD4A1D35F23F00DDB96E /* Goods */ = {
 			isa = PBXGroup;
 			children = (
-				7695BD4B1D35F23F00DDB96E /* ChangeGoodsNO.h */,
-				7695BD4C1D35F23F00DDB96E /* ChangeGoodsNO.m */,
 				7695BD4D1D35F23F00DDB96E /* ChanggeGoods.h */,
 				7695BD4E1D35F23F00DDB96E /* ChanggeGoods.m */,
 				7695BD4F1D35F23F00DDB96E /* ChanggeGoodsSuccess.h */,
@@ -897,8 +895,6 @@
 				7695BD541D35F23F00DDB96E /* GoodsCheckSuccess.m */,
 				7695BD551D35F23F00DDB96E /* GoodsDataManager.h */,
 				7695BD561D35F23F00DDB96E /* GoodsDataManager.m */,
-				7695BD571D35F23F00DDB96E /* GoodsModel.h */,
-				7695BD581D35F23F00DDB96E /* GoodsModel.m */,
 				7695BD591D35F23F00DDB96E /* GoodsType.h */,
 				7695BD5A1D35F23F00DDB96E /* GoodsType.m */,
 				7695BD5B1D35F23F00DDB96E /* GoodsTypeSuccess.h */,
@@ -910,14 +906,18 @@
 		7695BD5D1D35F23F00DDB96E /* ShoppingCart */ = {
 			isa = PBXGroup;
 			children = (
+				7695BD571D35F23F00DDB96E /* GoodsModel.h */,
+				7695BD581D35F23F00DDB96E /* GoodsModel.m */,
+				7695BD641D35F23F00DDB96E /* GoodsModelSuccess.h */,
+				7695BD651D35F23F00DDB96E /* GoodsModelSuccess.m */,
+				7695BD4B1D35F23F00DDB96E /* ChangeGoodsNO.h */,
+				7695BD4C1D35F23F00DDB96E /* ChangeGoodsNO.m */,
 				7695BD5E1D35F23F00DDB96E /* ChangeGoodsNOSuccess.h */,
 				7695BD5F1D35F23F00DDB96E /* ChangeGoodsNOSuccess.m */,
 				7695BD601D35F23F00DDB96E /* DeleteStoreGoods.h */,
 				7695BD611D35F23F00DDB96E /* DeleteStoreGoods.m */,
 				7695BD621D35F23F00DDB96E /* DeleteStoreGoodsSuccess.h */,
 				7695BD631D35F23F00DDB96E /* DeleteStoreGoodsSuccess.m */,
-				7695BD641D35F23F00DDB96E /* GoodsModelSuccess.h */,
-				7695BD651D35F23F00DDB96E /* GoodsModelSuccess.m */,
 				7695BD661D35F23F00DDB96E /* ShoppingCartDataManager.h */,
 				7695BD671D35F23F00DDB96E /* ShoppingCartDataManager.m */,
 			);

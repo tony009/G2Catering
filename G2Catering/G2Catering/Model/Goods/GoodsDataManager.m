@@ -22,6 +22,7 @@
     [HttpTool postWithForm:url parameters:[goodsModel mj_keyValues] modelClass:[GoodsTypeSuccess class] keyPath:@"message" success:^(id response) {
         
         success(response);
+        NSLog(@"%@",response);
         
     } failure:^(NSError *error) {
         
