@@ -187,6 +187,7 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
     OrderingTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:tableViewCellIdentifer];
     cell.dishPrice.text = @"￥100";
     cell.dishName.text = @"五彩三丝";
+    cell.dishNumberLabel.text = @"X 2";
     
     return cell;
 }
