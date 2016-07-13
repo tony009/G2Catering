@@ -5,7 +5,7 @@
 //  Created by NDlan on 16/6/20.
 //  Copyright © 2016年 NDL. All rights reserved.
 //
-
+#import "DeleteStoreGoods.h"
 #import "HttpTool.h"
 #import "LoginViewController.h"
 #import "MainViewController.h"
@@ -14,6 +14,11 @@
 #import "UnLockView.h"
 #import "BluetoothConnectionViewController.h"
 #import "UserDataManager.h"
+
+#import "GoodsType.h"
+#import "GoodsCheck.h"
+#import "ChanggeGoods.h"
+
 @interface LoginViewController ()<UITextFieldDelegate>
 
 @property (nonatomic, strong) SearchBlueToothView *searchView;
@@ -31,6 +36,7 @@
     
     
     //[KWindow bringSubviewToFront:unLockView];
+
     
     
     
