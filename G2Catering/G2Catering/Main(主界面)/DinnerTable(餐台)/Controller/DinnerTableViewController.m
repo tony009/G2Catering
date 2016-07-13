@@ -118,7 +118,7 @@
 //    [KWindow addSubview:lockView];
     self.dishTypeView.strArray = _array;
     self.dishTypeView.delegate = self;
-    [self.dishTypeView setSelectIndex:0];
+//    [self.dishTypeView setSelectIndex:0];
     
 
 }

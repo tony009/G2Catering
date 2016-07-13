@@ -92,10 +92,8 @@
     static NSString *identify = @"cell";
     
     DishTypeViewCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identify forIndexPath:indexPath];
-    cell.btn.layer.borderWidth =1;
-    cell.btn.layer.borderColor = [[UIColor lightGrayColor]CGColor];
-    cell.btn.clipsToBounds = YES;
-    [cell.btn setTitle:self.strArray[indexPath.row] forState:UIControlStateNormal];
+    
+    [cell.btn setTitle:[self.strArray[indexPath.row] categoryName] forState:UIControlStateNormal];
     
     return cell;
 }
@@ -111,7 +109,7 @@
 //    frame.size.height = 100;
 //    frame.size.width = 80;
 //    cell.frame = frame;
-    
+  
     cell.backgroundColor = RGB(0x2a, 0x42, 0x5a);
     [cell.btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     
@@ -120,7 +118,8 @@
     
     if ([self.delegate respondsToSelector:@selector(DishTypeView:didSelectItemAtIndex:)]) {
         
-        [self.delegate DishTypeView:self didSelectItemAtIndex:indexPath.row];
+//        [self.delegate DishTypeView:self didSelectItemAtIndex:indexPath.row];
+        [self.delegate DishTypeView:self didSelectItemAtIndex:self.strArray[indexPath.row] ];
         
     }
     
@@ -134,15 +133,12 @@
     [cell.btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
 }
 
--(void)setSelectIndex:(NSInteger)index
+-(void)setStrArray:(NSArray<GoodsTypeSuccess *> *)strArray
 {
-//    [self.collectionView row]
-//    NSIndexPath *indexPath = [self.collectionView indexPathForItemAtPoint:CGPointMake(20, 20)];
-////    NSInteger selectedIndex = 0;
-////    NSIndexPath *selectedIndexPath = [NSIndexPath indexPathForRow:selectedIndex inSection:0];
-//    DishTypeViewCollectionViewCell *cell = (DishTypeViewCollectionViewCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
-//    cell.backgroundColor = [UIColor whiteColor];
-//    [cell.btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    _strArray = strArray;
+    [self.collectionView reloadData];
 }
+
+
 
 @end
