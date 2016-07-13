@@ -171,7 +171,11 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
     OrderingCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:collectionViewCellIdentifer forIndexPath:indexPath];
-
+    if (indexPath.row %6 ==0) {
+        cell.dishNumImageView.image = [UIImage imageNamed:@"estimateDishNumBackground"];
+        cell.dishNumLabel.text =@"4";
+    }
+  
     return cell;
 }
 
@@ -185,9 +189,17 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     OrderingTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:tableViewCellIdentifer];
+    if (indexPath.row %2 == 0) {
+      cell.whetherDonateImageView.image = [UIImage imageNamed:@"donate"];
+    cell.dishNumberLabel.hidden = YES;
+    }else
+    {
+       cell.dishNumberLabel.text = @"X 2";
+    }
+    
     cell.dishPrice.text = @"￥100";
     cell.dishName.text = @"五彩三丝";
-    cell.dishNumberLabel.text = @"X 2";
+   
     
     return cell;
 }

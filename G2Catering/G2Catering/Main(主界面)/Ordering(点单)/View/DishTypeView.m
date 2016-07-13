@@ -92,7 +92,9 @@
     static NSString *identify = @"cell";
     
     DishTypeViewCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identify forIndexPath:indexPath];
-    
+    cell.btn.layer.borderWidth =1;
+    cell.btn.layer.borderColor = [[UIColor lightGrayColor]CGColor];
+    cell.btn.clipsToBounds = YES;
     [cell.btn setTitle:self.strArray[indexPath.row] forState:UIControlStateNormal];
     
     return cell;

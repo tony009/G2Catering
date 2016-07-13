@@ -14,6 +14,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *dishPrice; //菜价
 @property (weak, nonatomic) IBOutlet UILabel *dishNumberLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *whetherDonateImageView;
 
 
 @end
