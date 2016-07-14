@@ -233,7 +233,7 @@ parameters:(id)parameters
     sessionManager.requestSerializer = [AFJSONRequestSerializer serializer];
     
     [sessionManager POST:restPath parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
-       
+        NSLog(@"__responseObject_%@",responseObject);
 
         if ([responseObject[@"status"] isEqualToString:@"OK"]) {
             

@@ -20,6 +20,8 @@
 #import "GoodsTypeSuccess.h"
 #import "GoodsCheckSuccess.h"
 #import "ShoppingCartDataManager.h"
+#import "ChangeGoodsNO.h"
+
 static NSString *collectionViewCellIdentifer = @"OrderingCollectionViewReuseCell";
 static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
 
@@ -117,6 +119,7 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
 //  defaultId  商品id
     GoodsCheck *goodsModel = [[GoodsCheck alloc] initWithOrgId:@"1"];
     [GoodsDataManager goodsCheck:goodsModel success:^(id response) {
+        
         self.allArray = response;
         self.dataArray = response;
         NSMutableDictionary *mutDic = [self transFormArrayToDictionary:response];
@@ -245,9 +248,6 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     OrderingTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:tableViewCellIdentifer];
-//    goodsPrice
-//    goodsName
-//
     GoodsCheckSuccess *succMode = self.caiArray[indexPath.row][0];
     cell.dishPrice.text = succMode.goodsPrice;
     cell.dishName.text =succMode.goodsName;
@@ -259,14 +259,30 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     _showGoodsView=[[[NSBundle mainBundle]loadNibNamed:@"ShowGoodsView" owner:self options:nil]lastObject];
+    _showGoodsView.goodSuccess = self.caiArray[indexPath.row][0];
+    _showGoodsView.numberLabel.text = [NSString stringWithFormat:@"%zi",[self.caiArray[indexPath.row] count]];
     _showGoodsView.delegate = self;
     _showGoodsView.backgroundColor = [UIColor clearColor];
     [KWindow addSubview:_showGoodsView];
 }
 
 #pragma mark- 弹出视图DelegateMethod
--(void)btnDelegateName:(NSString *)name number:(int)number type:(int)type
+-(void)btnDelegateName:(GoodsCheckSuccess *)goodCheck number:(int)number type:(int)type
 {
+    NSLog(@"%@",goodCheck.categoryId);
+    NSLog(@"%@",goodCheck.defaultId);
+    ChangeGoodsNO *changge = [[ChangeGoodsNO alloc] initWithGoodId:goodCheck.defaultId quantity:[NSString stringWithFormat:@"%d",number] state:@"0"];
+    [ShoppingCartDataManager changgeGoods:changge success:^(id response) {
+        NSLog(@"————%@",response);
+//        [self removeSameObject:goodCheck];
+//        for (int i = 0; i<number; i++) {
+//            [self.allCaiArray addObject:changge];
+//        }
+//        self.caiArray = [self transFormCaiArray:self.allCaiArray];
+//        [self.orderListTableView reloadData];
+    } failure:^(NSError *error) {
+//        [[UIAlertView alloc] initWithTitle:@"提示" message:@"" delegate:<#(nullable id)#> cancelButtonTitle:<#(nullable NSString *)#> otherButtonTitles:<#(nullable NSString *), ...#>, nil]
+    }];
     [_showGoodsView removeFromSuperview];
 }
 
@@ -353,6 +369,15 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
         
     }
     return dateMutablearray;
+}
+
+-(void)removeSameObject:(GoodsCheckSuccess*)succ
+{
+    for (GoodsCheckSuccess *su2 in self.allCaiArray) {
+        if (su2 == succ) {
+            [self.allCaiArray removeObject:su2];
+        }
+    }
 }
 
 @end

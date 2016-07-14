@@ -12,20 +12,23 @@
 
 -(void)awakeFromNib
 {
-    self.typeSelectBtn.layer.cornerRadius = 10;
+    self.typeSelectBtn.layer.cornerRadius = 35;
     self.typeSelectBtn.layer.masksToBounds = YES;
+    self.typeSelectBtn.backgroundColor = [UIColor whiteColor];
     
-    self.typeSelectBtn1.layer.cornerRadius = 10;
     self.typeSelectBtn1.layer.masksToBounds = YES;
+    self.typeSelectBtn1.layer.cornerRadius = 35;
+    self.typeSelectBtn1.backgroundColor = [UIColor whiteColor];
     
-    self.typeSelectBtn2.layer.cornerRadius = 10;
     self.typeSelectBtn2.layer.masksToBounds = YES;
+    self.typeSelectBtn2.layer.cornerRadius = 35;
+    self.typeSelectBtn2.backgroundColor = [UIColor whiteColor];
 }
 
 - (IBAction)btnMethod:(UIButton *)sender {
     
     if ([self.delegate respondsToSelector:@selector(btnDelegateName:number:type:)]) {
-        [self.delegate btnDelegateName:nil number:1 type:1];
+        [self.delegate btnDelegateName:_goodSuccess number:[self.numberLabel.text intValue] type:1];
     }
 }
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
@@ -42,9 +45,19 @@
         }else{
            self.numberLabel.text = [NSString stringWithFormat:@"%d",number-1];
         }
-    }else{
+    }else if (btnSender.tag ==3){
         number = number+1;
         self.numberLabel.text = [NSString stringWithFormat:@"%d",number];
     }
+    if (btnSender.tag ==5||btnSender.tag ==6||btnSender.tag ==7) {
+        if (btnSender.backgroundColor == [UIColor whiteColor]) {
+            [btnSender setBackgroundColor:[UIColor blueColor]];
+        }else{
+            [btnSender setBackgroundColor:[UIColor whiteColor]];
+        }
+    }
 }
+
+
+
 @end
