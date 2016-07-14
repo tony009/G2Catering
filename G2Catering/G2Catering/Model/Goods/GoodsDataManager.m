@@ -38,7 +38,6 @@
     NSString *url = [NSString stringWithFormat:@"%@/%@",BaseUrl,@"g2-service-module/business/dm/goods/getList"];
     
     [HttpTool postWithForm:url parameters:[goodsModel mj_keyValues] modelClass:[GoodsCheckSuccess class] keyPath:@"message" success:^(id response) {
-        
         success(response);
         
     } failure:^(NSError *error) {
