@@ -19,6 +19,9 @@
 #import "GoodsCheck.h"
 #import "ChanggeGoods.h"
 
+#import "GoodsModelCarGet.h"
+#import "ShoppingCartDataManager.h"
+
 @interface LoginViewController ()<UITextFieldDelegate>
 
 @property (nonatomic, strong) SearchBlueToothView *searchView;
@@ -36,9 +39,14 @@
     
     
     //[KWindow bringSubviewToFront:unLockView];
-
+//getGoodFromStoreCar
     
-    
+    GoodsModelCarGet *goodd = [[GoodsModelCarGet alloc] initWithUserId:@"15bfe9b03cfd11e66bd265bf3021409c"];
+    [ShoppingCartDataManager getGoodFromStoreCar:goodd success:^(id response) {
+        NSLog(@"__response_%@",response);
+    } failure:^(NSError *error) {
+        
+    }];
 }
 
 #pragma mark- setupSearchBlueToothView

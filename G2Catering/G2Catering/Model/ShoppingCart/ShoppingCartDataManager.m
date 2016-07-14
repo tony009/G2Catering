@@ -7,6 +7,7 @@
 //
 
 #import "ShoppingCartDataManager.h"
+#import "GoodsModelCarGetSuccess.h"
 
 @implementation ShoppingCartDataManager
 
@@ -61,5 +62,28 @@
         
         
     }];
+}
+
+//获得购物车列表中商品
++(void)getGoodFromStoreCar:(GoodsModelCarGet *)goodsModel success:(success)success failure:(failure)failure
+{
+    NSString *url = [NSString stringWithFormat:@"%@/%@",BaseUrl,@"g2-service-module/business/sm/shopping/cart/getShoppingCart"];
+    
+    NSLog(@"_nb__%@",[goodsModel mj_keyValues]);
+    [HttpTool postListWithForm:url parameters:[goodsModel mj_keyValues] keyPath:nil success:^(id response) {
+        success(response);
+    } failure:^(NSError *error) {
+        failure(error);
+    }];
+//    [HttpTool postWithForm:url parameters:[goodsModel mj_keyValues] modelClass:[GoodsModelCarGetSuccess class] keyPath:@"message" success:^(id response) {
+//        
+//        success(response);
+//        
+//    } failure:^(NSError *error) {
+//        
+//        failure(error);
+//        
+//        
+//    }];
 }
 @end

@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GoodsCheckSuccess.h"
+#import "ShopGoodsDetailModel.h"
 
 @protocol ShowGoodsViewViewDelegate <NSObject>
 
--(void)btnDelegateName:(GoodsCheckSuccess *)goodCheck number:(int)number type:(int)type;
+-(void)btnDelegateName:(ShopGoodsDetailModel *)goodCheck number:(int)number type:(int)type;
 
 @end
 @interface ShowGoodsView : UIView
@@ -25,7 +25,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *typeSelectBtn2;
 @property (weak, nonatomic) IBOutlet UILabel *numberLabel;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
-@property (nonatomic,strong)GoodsCheckSuccess *goodSuccess;
+@property (nonatomic,strong)ShopGoodsDetailModel *goodSuccess;
 
 
 @end
