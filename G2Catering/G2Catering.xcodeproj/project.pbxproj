@@ -31,6 +31,8 @@
 		43882E831D23C9F1006C28CE /* WaiMaiDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E6B1D23C9F1006C28CE /* WaiMaiDetailTableViewCell.xib */; };
 		43882E841D23C9F1006C28CE /* WaiMaiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E6D1D23C9F1006C28CE /* WaiMaiTableViewCell.m */; };
 		43882E851D23C9F1006C28CE /* WaiMaiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E6E1D23C9F1006C28CE /* WaiMaiTableViewCell.xib */; };
+		43D1EC871D3641F50087A2AA /* ShowGoodsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D1EC861D3641F50087A2AA /* ShowGoodsView.m */; settings = {ASSET_TAGS = (); }; };
+		43D1EC891D3642090087A2AA /* ShowGoodsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43D1EC881D3642090087A2AA /* ShowGoodsView.xib */; settings = {ASSET_TAGS = (); }; };
 		5430E3511D2E2AFA0092985E /* aliPayWallet.png in Resources */ = {isa = PBXBuildFile; fileRef = 5430E3391D2E2AFA0092985E /* aliPayWallet.png */; };
 		5430E3521D2E2AFA0092985E /* aliPayWallet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5430E33A1D2E2AFA0092985E /* aliPayWallet@2x.png */; };
 		5430E3531D2E2AFA0092985E /* aliPayWallet@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5430E33B1D2E2AFA0092985E /* aliPayWallet@3x.png */; };
@@ -299,6 +301,9 @@
 		43882E6C1D23C9F1006C28CE /* WaiMaiTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaiMaiTableViewCell.h; sourceTree = "<group>"; };
 		43882E6D1D23C9F1006C28CE /* WaiMaiTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaiMaiTableViewCell.m; sourceTree = "<group>"; };
 		43882E6E1D23C9F1006C28CE /* WaiMaiTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaiMaiTableViewCell.xib; sourceTree = "<group>"; };
+		43D1EC851D3641F50087A2AA /* ShowGoodsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowGoodsView.h; sourceTree = "<group>"; };
+		43D1EC861D3641F50087A2AA /* ShowGoodsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowGoodsView.m; sourceTree = "<group>"; };
+		43D1EC881D3642090087A2AA /* ShowGoodsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowGoodsView.xib; sourceTree = "<group>"; };
 		54060A001D2BA47E004FA5FB /* ScanQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanQRCodeViewController.h; sourceTree = "<group>"; };
 		54060A011D2BA47E004FA5FB /* ScanQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanQRCodeViewController.m; sourceTree = "<group>"; };
 		54060A021D2BA47E004FA5FB /* ScanQRCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanQRCodeViewController.xib; sourceTree = "<group>"; };
@@ -1573,6 +1578,9 @@
 				F104CD971D1B8083003EAEEC /* OrderingViewController.h */,
 				F104CD981D1B8083003EAEEC /* OrderingViewController.m */,
 				F104CD991D1B8083003EAEEC /* OrderingViewController.xib */,
+				43D1EC851D3641F50087A2AA /* ShowGoodsView.h */,
+				43D1EC861D3641F50087A2AA /* ShowGoodsView.m */,
+				43D1EC881D3642090087A2AA /* ShowGoodsView.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1873,6 +1881,7 @@
 				43882E851D23C9F1006C28CE /* WaiMaiTableViewCell.xib in Resources */,
 				9179F4DC1D221BB9002CF61D /* UnLockView.xib in Resources */,
 				F104CE091D1B8083003EAEEC /* JiLuCaiViewCell.xib in Resources */,
+				43D1EC891D3642090087A2AA /* ShowGoodsView.xib in Resources */,
 				F104CE411D1B8083003EAEEC /* OrderingViewController.xib in Resources */,
 				915731CE1D20BBAC00B6EC1D /* DataReportViewController.xib in Resources */,
 				5430E35B1D2E2AFA0092985E /* jdWallet@2x.png in Resources */,
@@ -2049,6 +2058,7 @@
 				9179F58B1D224FDA002CF61D /* ZFPieChart.m in Sources */,
 				F104CE261D1B8083003EAEEC /* LM_button.m in Sources */,
 				763177251D2B60C000571559 /* UIView+UI.m in Sources */,
+				43D1EC871D3641F50087A2AA /* ShowGoodsView.m in Sources */,
 				43882E721D23C9F1006C28CE /* DeskTableViewController.m in Sources */,
 				F104CE701D1B8083003EAEEC /* NSDate+FSExtension.m in Sources */,
 				7695BD881D35F23F00DDB96E /* RegisterModel.m in Sources */,

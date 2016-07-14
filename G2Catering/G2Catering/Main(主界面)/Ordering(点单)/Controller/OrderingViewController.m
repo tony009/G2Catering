@@ -9,16 +9,17 @@
 #import "OrderingViewController.h"
 #import "OrderingCollectionViewCell.h"
 #import "OrderingTableViewCell.h"
-
+#import "ShowGoodsView.h"
 #import "DishTypeView.h"
 
 #import "OpenTableAndTakeOutView.h"
 #import "ZhifuView.h"
-
+#import "ShowGoodsView.h"
 #import "GoodsDataManager.h"
 #import "GoodsType.h"
 #import "GoodsTypeSuccess.h"
 #import "GoodsCheckSuccess.h"
+#import "ShoppingCartDataManager.h"
 static NSString *collectionViewCellIdentifer = @"OrderingCollectionViewReuseCell";
 static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
 
@@ -34,6 +35,8 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
 
 @property (nonatomic,strong)NSMutableArray *allCaiArray;        // 添加的全部菜品
 @property(nonatomic,strong)NSMutableArray *caiArray;            // 左侧菜品
+
+@property (nonatomic,strong)ShowGoodsView *showGoodsView;
 
 @property (weak, nonatomic) IBOutlet UIButton *placeOrderButton;
 @property (weak, nonatomic) IBOutlet UIButton *checkButton;
@@ -222,11 +225,15 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    
     GoodsCheckSuccess *succe = self.dataArray[indexPath.row];
-    [self.allCaiArray addObject:succe];
-    self.caiArray = [self transFormCaiArray:self.allCaiArray];
-    [self.orderListTableView reloadData];
+    GoodsModel *goodsModel = [[GoodsModel alloc] initWithGoodId:succe.defaultId userId:@"15bfe9b03cfd11e66bd265bf3021409c"];
+    [ShoppingCartDataManager addGoodToStore:goodsModel success:^(id response) {
+        [self.allCaiArray addObject:succe];
+        self.caiArray = [self transFormCaiArray:self.allCaiArray];
+        [self.orderListTableView reloadData];
+    } failure:^(NSError *error) {
+    }];
+    
 }
 
 #pragma mark -- UITableViewDataSource
@@ -248,6 +255,21 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
     
     return cell;
 }
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    _showGoodsView=[[[NSBundle mainBundle]loadNibNamed:@"ShowGoodsView" owner:self options:nil]lastObject];
+    _showGoodsView.delegate = self;
+    _showGoodsView.backgroundColor = [UIColor clearColor];
+    [KWindow addSubview:_showGoodsView];
+}
+
+#pragma mark- 弹出视图DelegateMethod
+-(void)btnDelegateName:(NSString *)name number:(int)number type:(int)type
+{
+    [_showGoodsView removeFromSuperview];
+}
+
 #pragma mark- 右侧滑动菜单代理方法
 - (void)DishTypeView:(DishTypeView *)dishTypeView didSelectItemAtIndex:(GoodsTypeSuccess *)index
 {
