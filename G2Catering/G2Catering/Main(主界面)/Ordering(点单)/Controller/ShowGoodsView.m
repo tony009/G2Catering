@@ -28,7 +28,7 @@
 - (IBAction)btnMethod:(UIButton *)sender {
     
     if ([self.delegate respondsToSelector:@selector(btnDelegateName:number:type:)]) {
-        [self.delegate btnDelegateName:_goodSuccess number:[self.numberLabel.text intValue] type:1];
+        [self.delegate btnDelegateName:_goodSuccess number:[self.numberLabel.text intValue] type:sender.tag];
     }
 }
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event

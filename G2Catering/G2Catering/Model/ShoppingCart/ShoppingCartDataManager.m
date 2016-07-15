@@ -34,7 +34,7 @@
 +(void)changgeGoods:(ChangeGoodsNO *)goodsModel success:(success)success failure:(failure)failure
 {
     NSString *url = [NSString stringWithFormat:@"%@/%@",BaseUrl,@"g2-service-module/business/sm/shopping/cart/item/updateCartInfo"];
-    
+//    NSLog(@"%@");
     [HttpTool postWithForm:url parameters:[goodsModel mj_keyValues] modelClass:nil keyPath:@"message" success:^(id response) {
         
         success(response);

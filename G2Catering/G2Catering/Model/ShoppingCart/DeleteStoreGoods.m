@@ -19,11 +19,11 @@
 }
 
 
--(instancetype)initWithGoodId:(NSString *)goodsId
+-(instancetype)initWithGoodId:(NSString *)defaultId
                         state:(NSString *)state
 {
     if (self = [super init]) {
-        _defaultId = goodsId;
+        _defaultId = defaultId;
         _status = state;
     }
     return self;

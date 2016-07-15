@@ -14,7 +14,7 @@
 
 @property (nonatomic,copy) NSString *quantity;   //数量
 
-@property (nonatomic,copy) NSString *state;      //未付款状态为0
+@property (nonatomic,copy) NSString *status;      //未付款状态为0
 
 -(instancetype)initWithGoodId:(NSString *)goodsId quantity:(NSString *)quantity
                   state:(NSString *)state;

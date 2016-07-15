@@ -14,7 +14,7 @@
 
 @property (nonatomic,copy) NSString *status;     //当前状态6 为删除
 
--(instancetype)initWithGoodId:(NSString *)goodsId 
+-(instancetype)initWithGoodId:(NSString *)defaultId
                         state:(NSString *)state;
 
 @end

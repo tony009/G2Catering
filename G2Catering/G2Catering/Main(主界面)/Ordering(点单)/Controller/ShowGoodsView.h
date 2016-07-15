@@ -11,7 +11,7 @@
 
 @protocol ShowGoodsViewViewDelegate <NSObject>
 
--(void)btnDelegateName:(ShopGoodsDetailModel *)goodCheck number:(int)number type:(int)type;
+-(void)btnDelegateName:(ShopGoodsDetailModel *)goodCheck number:(int)number type:(NSInteger)type;
 
 @end
 @interface ShowGoodsView : UIView

@@ -25,7 +25,7 @@
     if (self = [super init]) {
         _defaultId = goodsId;
         _quantity = quantity;
-        _state = state;
+        _status = state;
     }
     return self;
 }
