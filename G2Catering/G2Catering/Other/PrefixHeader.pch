@@ -25,9 +25,9 @@
 
 
 
-#define BaseUrl @"http://192.168.1.15:8080"
+//#define BaseUrl @"http://192.168.1.15:8080"
 
-//#define BaseUrl @"http://122.112.29.15:18801"
+#define BaseUrl @"http://122.112.29.15:18801"
 
 
 // Include any system framework and library headers here that should be included in all compilation units.

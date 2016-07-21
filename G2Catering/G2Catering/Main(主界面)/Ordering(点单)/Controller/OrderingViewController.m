@@ -22,6 +22,8 @@
 #import "ShoppingCartDataManager.h"
 #import "ChangeGoodsNO.h"
 
+#import "OrderDataManager.h"
+
 static NSString *collectionViewCellIdentifer = @"OrderingCollectionViewReuseCell";
 static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
 
@@ -183,14 +185,23 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
 - (IBAction)placeOrderAction:(UIButton *)sender {
     
     
-//    self.openTableAndTakeOutView = [[[NSBundle mainBundle]loadNibNamed:@"OpenTableAndTakeOutView" owner:nil options:nil] firstObject];
     
     self.openTableAndTakeOutView = [[OpenTableAndTakeOutView alloc]initWithFrame:self.replacedView.frame];
 
     
     [self.view addSubview:self.openTableAndTakeOutView];
     
-    
+//    [self showHUDWithMessage:@"正在创建订单"];
+//    
+//    [OrderDataManager createOrderByCartId:@"4ed801703f6311e62ab838f5eb062502" success:^(id response) {
+//        
+//        
+//        [self hideHUD];
+//        
+//        
+//    } failure:^(NSError *error) {
+//        
+//    }];
     
 }
 

@@ -14,11 +14,14 @@
 #import "FSCalendar.h"
 #import "NSDate+FSExtension.h"
 #import "CheDanView.h"
+#import "OrderModel.h"
+#import "OrderDataManager.h"
+
 @interface TradeViewController ()<TradeContentViewDelegate,UITableViewDataSource,UITableViewDelegate,FSCalendarDataSource,FSCalendarDelegate,CheDanViewDelegate>{
     
     BOOL isHidden;
     NSMutableArray *_groupArray;
-     NSMutableArray *_subArray;
+    NSMutableArray *_subArray;
     NSMutableArray *_imageArray;
     NSMutableArray *_selectedImage;
     UIButton *_selectedBtn;
@@ -30,41 +33,65 @@
 @property (nonatomic, strong) TradeContentView *originalVc;
 
 @property (nonatomic, strong) UIButton *coverView;
+
+@property (nonatomic,strong) NSMutableArray<OrderModel *> *orderArray;
+
 @end
 
 @implementation TradeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    
+    
+    [self p_initViews];
+    
+    [self p_getData];
+    
+
+    
+}
+
+-(void)p_initViews{
+    
     [self.historyTable registerNib:[UINib nibWithNibName:@"JiaoYiJiLuCell" bundle:nil ] forCellReuseIdentifier:@"History"];
     self.historyTable.dataSource = self;
     self.historyTable.delegate = self;
     self.historyTable.tag = 202;
+    
+    
     self.typeTable.dataSource =self;
     self.typeTable.delegate = self;
     self.typeTable.tag = 201;
-   [self.typeTable registerNib:[UINib nibWithNibName:@"TypeTableViewCell" bundle:nil ] forCellReuseIdentifier:@"TypeTableViewCell"];
+    [self.typeTable registerNib:[UINib nibWithNibName:@"TypeTableViewCell" bundle:nil ] forCellReuseIdentifier:@"TypeTableViewCell"];
     isHidden = YES;
+    
     
     _groupArray= [NSMutableArray arrayWithArray:@[@"全部",@"堂食",@"外卖",@"外带",@"异常"]];
     _subArray = [NSMutableArray arrayWithArray:@[@"已下单",@"已结账",@"派送中",@"已撤单"]];
     //默认状态下
     _imageArray = [NSMutableArray arrayWithArray:@[@"交易记录－全部-点击",@"交易记录－堂食",@"交易记录－外卖",@"交易记录－外带",@"交易记录－异常"]];
-     _selectedImage = [NSMutableArray arrayWithArray:@[@"交易记录－全部",@"交易记录－堂食-点击",@"交易记录－外卖-点击",@"交易记录－外带-点击",@"交易记录－异常-点击"]];
-    
+    _selectedImage = [NSMutableArray arrayWithArray:@[@"交易记录－全部",@"交易记录－堂食-点击",@"交易记录－外卖-点击",@"交易记录－外带-点击",@"交易记录－异常-点击"]];
     
     [self.bgView setCornerRadius:5.0 withBorderWidth:1.0 withBorderColor:RGB(0xc2, 0xc7, 0xcc)];
     
+    
+     self.orderArray = [NSMutableArray array];
 }
 
-//设置圆角
-- (void)setRoundAngleWithView:(UIView *)changeView withCornerRadius:(double)cornerRadius withColor:(UIColor *)color{
+-(void)p_getData{
     
-    changeView.layer.masksToBounds = YES;
-    changeView.layer.cornerRadius = cornerRadius;
-    changeView.layer.borderColor = color.CGColor;
-    changeView.layer.borderWidth = 1;
+    [OrderDataManager getOrderListByShopId:@"15988b903cfd11e66bd265bf3021409c" status:@"0" success:^(id response) {
+       
+        self.orderArray = response;
+        
+        [self.historyTable reloadData];
+        
+    } failure:^(NSError *error) {
+        
     
+    }];
 }
 
 - (IBAction)leftAnimation:(id)sender {
@@ -287,7 +314,7 @@
             return  0;
     }else if (tableView == _historyTable){
         
-        return 10;
+        return self.orderArray.count;
     }
     return 0;
 }
@@ -329,6 +356,8 @@
             cell1 = [nibArr lastObject];
         }
         
+        cell1.model = self.orderArray[indexPath.row];
+        
         if (indexPath.row % 2 == 1) {
             cell1.backgroundColor = [UIColor colorWithRed:248/255.0f green:251/255.0f blue:255/255.0f alpha:1];
         }else{
@@ -354,6 +383,16 @@
                 [self showOriginalContentView];
         //        JiaoYiPG *jiaoyiPg = self.jiluArr[indexPath.row];
         //        self.originalVc.jiaoyiPG = jiaoyiPg;
+                
+                OrderModel *model = self.orderArray[indexPath.row];
+                
+                
+                [OrderDataManager getOrderDetailByDefaultId:model.defaultId success:^(id response) {
+                    
+                    
+                } failure:^(NSError *error) {
+                    
+                }];
 
                 isHidden = NO;
             }else{

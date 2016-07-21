@@ -19,6 +19,8 @@
 #import "GoodsCheck.h"
 #import "ChanggeGoods.h"
 
+#import "ShoppingCartDataManager.h"
+
 @interface LoginViewController ()<UITextFieldDelegate>
 
 @property (nonatomic, strong) SearchBlueToothView *searchView;
@@ -37,7 +39,7 @@
     
     //[KWindow bringSubviewToFront:unLockView];
 
-    
+     //[ShoppingCartDataManager
     
 }
 

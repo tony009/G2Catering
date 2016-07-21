@@ -31,8 +31,8 @@
 		43882E831D23C9F1006C28CE /* WaiMaiDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E6B1D23C9F1006C28CE /* WaiMaiDetailTableViewCell.xib */; };
 		43882E841D23C9F1006C28CE /* WaiMaiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E6D1D23C9F1006C28CE /* WaiMaiTableViewCell.m */; };
 		43882E851D23C9F1006C28CE /* WaiMaiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E6E1D23C9F1006C28CE /* WaiMaiTableViewCell.xib */; };
-		43D1EC871D3641F50087A2AA /* ShowGoodsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D1EC861D3641F50087A2AA /* ShowGoodsView.m */; settings = {ASSET_TAGS = (); }; };
-		43D1EC891D3642090087A2AA /* ShowGoodsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43D1EC881D3642090087A2AA /* ShowGoodsView.xib */; settings = {ASSET_TAGS = (); }; };
+		43D1EC871D3641F50087A2AA /* ShowGoodsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D1EC861D3641F50087A2AA /* ShowGoodsView.m */; };
+		43D1EC891D3642090087A2AA /* ShowGoodsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43D1EC881D3642090087A2AA /* ShowGoodsView.xib */; };
 		5430E3511D2E2AFA0092985E /* aliPayWallet.png in Resources */ = {isa = PBXBuildFile; fileRef = 5430E3391D2E2AFA0092985E /* aliPayWallet.png */; };
 		5430E3521D2E2AFA0092985E /* aliPayWallet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5430E33A1D2E2AFA0092985E /* aliPayWallet@2x.png */; };
 		5430E3531D2E2AFA0092985E /* aliPayWallet@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5430E33B1D2E2AFA0092985E /* aliPayWallet@3x.png */; };
@@ -87,6 +87,8 @@
 		7695BD881D35F23F00DDB96E /* RegisterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7695BD701D35F23F00DDB96E /* RegisterModel.m */; };
 		7695BD891D35F23F00DDB96E /* UserDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7695BD721D35F23F00DDB96E /* UserDataManager.m */; };
 		7695BD8B1D35F23F00DDB96E /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7695BD761D35F23F00DDB96E /* UserModel.m */; };
+		7695BD8F1D3791BF00DDB96E /* OrderDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7695BD8E1D3791BF00DDB96E /* OrderDataManager.m */; };
+		7695BD921D37999800DDB96E /* OrderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7695BD911D37999800DDB96E /* OrderModel.m */; };
 		76D45C7E1D0CFD3B0026491F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76D45C7D1D0CFD3B0026491F /* Assets.xcassets */; };
 		76D45C8C1D0CFD3B0026491F /* G2CateringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D45C8B1D0CFD3B0026491F /* G2CateringTests.m */; };
 		76D45C971D0CFD3C0026491F /* G2CateringUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D45C961D0CFD3C0026491F /* G2CateringUITests.m */; };
@@ -396,6 +398,10 @@
 		7695BD721D35F23F00DDB96E /* UserDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDataManager.m; sourceTree = "<group>"; };
 		7695BD751D35F23F00DDB96E /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
 		7695BD761D35F23F00DDB96E /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		7695BD8D1D3791BF00DDB96E /* OrderDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDataManager.h; sourceTree = "<group>"; };
+		7695BD8E1D3791BF00DDB96E /* OrderDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDataManager.m; sourceTree = "<group>"; };
+		7695BD901D37999800DDB96E /* OrderModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderModel.h; sourceTree = "<group>"; };
+		7695BD911D37999800DDB96E /* OrderModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderModel.m; sourceTree = "<group>"; };
 		76D45C6E1D0CFD3B0026491F /* G2Catering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = G2Catering.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76D45C7D1D0CFD3B0026491F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76D45C871D0CFD3B0026491F /* G2CateringTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = G2CateringTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -870,6 +876,7 @@
 		7695BCFD1D3391DF00DDB96E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7695BD8C1D37918800DDB96E /* Order */,
 				7695BD4A1D35F23F00DDB96E /* Goods */,
 				7695BD5D1D35F23F00DDB96E /* ShoppingCart */,
 				7695BD681D35F23F00DDB96E /* User */,
@@ -946,6 +953,17 @@
 				7695BD761D35F23F00DDB96E /* UserModel.m */,
 			);
 			path = User;
+			sourceTree = "<group>";
+		};
+		7695BD8C1D37918800DDB96E /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				7695BD8D1D3791BF00DDB96E /* OrderDataManager.h */,
+				7695BD8E1D3791BF00DDB96E /* OrderDataManager.m */,
+				7695BD901D37999800DDB96E /* OrderModel.h */,
+				7695BD911D37999800DDB96E /* OrderModel.m */,
+			);
+			path = Order;
 			sourceTree = "<group>";
 		};
 		76D45C651D0CFD3B0026491F = {
@@ -1824,7 +1842,7 @@
 				TargetAttributes = {
 					76D45C6D1D0CFD3B0026491F = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = VSMJ54AW24;
+						DevelopmentTeam = EY9GA3N4W5;
 					};
 					76D45C861D0CFD3B0026491F = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -2113,6 +2131,7 @@
 				9179F58C1D224FDA002CF61D /* ZFTranslucencePath.m in Sources */,
 				4323B8D91D2BA30A005173BE /* OrderPerson.m in Sources */,
 				F104CE0E1D1B8083003EAEEC /* BookingManagerViewController.m in Sources */,
+				7695BD8F1D3791BF00DDB96E /* OrderDataManager.m in Sources */,
 				F104CE0A1D1B8083003EAEEC /* TradeContentView.m in Sources */,
 				F104CE6D1D1B8083003EAEEC /* FSCalendarHeader.m in Sources */,
 				915737781D2129D300B6EC1D /* FoodAnayseTableViewCell.m in Sources */,
@@ -2139,6 +2158,7 @@
 				7695BD841D35F23F00DDB96E /* ShoppingCartDataManager.m in Sources */,
 				F104CE141D1B8083003EAEEC /* CancelBookView.m in Sources */,
 				43882E801D23C9F1006C28CE /* UpCollectionViewCell.m in Sources */,
+				7695BD921D37999800DDB96E /* OrderModel.m in Sources */,
 				7695BD871D35F23F00DDB96E /* LoginSuccessModel.m in Sources */,
 				F104CE6B1D1B8083003EAEEC /* FSCalendarConstance.m in Sources */,
 				9179F58E1D224FDA002CF61D /* ZFWaveChart.m in Sources */,

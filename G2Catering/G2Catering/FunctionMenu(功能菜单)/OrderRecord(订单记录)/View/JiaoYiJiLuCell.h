@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-//#import "JiaoYiPG.h"
+#import "OrderModel.h"
 
 @interface JiaoYiJiLuCell : UITableViewCell
 
 //@property (nonatomic, strong) JiaoYiPG *pg;
+
+@property (nonatomic,strong) OrderModel *model;
 
 @end

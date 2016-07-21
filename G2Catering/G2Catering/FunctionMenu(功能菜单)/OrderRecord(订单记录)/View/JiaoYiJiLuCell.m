@@ -11,16 +11,16 @@
 
 @interface JiaoYiJiLuCell ()
 
-@property (weak, nonatomic) IBOutlet UILabel *danhao;
-@property (weak, nonatomic) IBOutlet UILabel *cantai;
-@property (weak, nonatomic) IBOutlet UILabel *kaidanren;
+@property (weak, nonatomic) IBOutlet UILabel *danhao; //单号
+@property (weak, nonatomic) IBOutlet UILabel *cantai; //餐台
+@property (weak, nonatomic) IBOutlet UILabel *kaidanren; //开单人
 
-@property (weak, nonatomic) IBOutlet UILabel *kaidanshijian;
-@property (weak, nonatomic) IBOutlet UILabel *jiezhangshijian;
-@property (weak, nonatomic) IBOutlet UILabel *yingshoujine;
-@property (weak, nonatomic) IBOutlet UILabel *shihoujine;
-@property (weak, nonatomic) IBOutlet UILabel *zhuangtai;
-@property (weak, nonatomic) IBOutlet UILabel *typeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *kaidanshijian; //开单时间
+@property (weak, nonatomic) IBOutlet UILabel *jiezhangshijian;//结账时间
+@property (weak, nonatomic) IBOutlet UILabel *yingshoujine; //应收金额
+@property (weak, nonatomic) IBOutlet UILabel *shihoujine; //实收金额
+@property (weak, nonatomic) IBOutlet UILabel *zhuangtai; //状态
+@property (weak, nonatomic) IBOutlet UILabel *typeLabel; //支付方式
 
 
 @end
@@ -37,24 +37,17 @@
     // Configure the view for the selected state
 }
 
-
-//- (void)setPg:(JiaoYiPG *)pg{
-//    
-//    _pg = pg;
-//    self.danhao.text = pg.billNo;
-//    self.cantai.text = pg.tabNo;
-//    self.kaidanren.text = pg.createEmployeeName;
-//    self.shouyinyuan.text = pg.cashierEmployeeName;
-//    NSString *jieZhangTime = [TimeTool JiaoYizhuanhuanshijian:pg.payTime];
-//    self.jiezhangshijian.text =jieZhangTime;
-//    NSString *kaiDanTime =  [TimeTool JiaoYizhuanhuanshijian:pg.billTime];
-//    self.kaidanshijian.text = kaiDanTime;
-//    NSLog(@"jieZhangTime %@,kaiDanTime  %@",jieZhangTime,kaiDanTime);
-//    self.yingshoujine.text = [NSString stringWithFormat:@"%.2f",pg.oriCost.floatValue];
-//    self.shihoujine.text = [NSString stringWithFormat:@"%.2f",pg.billMoney.floatValue];
-//    self.zhuangtai.text = pg.billStatusDesc;
-//}
-
+-(void)setModel:(OrderModel *)model{
+    
+    _model = model;
+    
+    self.danhao.text = model.bno;
+    self.kaidanren.text = model.customerName;
+    self.kaidanshijian.text = model.createTime;
+    self.yingshoujine.text = model.bamount;
+    self.shihoujine.text = model.amountPaid;
+    
+}
 
 
 @end
