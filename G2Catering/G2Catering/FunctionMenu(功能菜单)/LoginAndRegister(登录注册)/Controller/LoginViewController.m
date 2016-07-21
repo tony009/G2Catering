@@ -37,11 +37,13 @@
     [self setupSearchBlueToothView];
     
     
-    //[KWindow bringSubviewToFront:unLockView];
 
      //[ShoppingCartDataManager
     
 }
+
+
+
 
 #pragma mark- setupSearchBlueToothView
 - (void)setupSearchBlueToothView{

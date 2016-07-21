@@ -6,6 +6,8 @@
 //  Copyright © 2016年 NDL. All rights reserved.
 //
 
+#define USER_ID @"15bfe9b03cfd11e66bd265bf3021409c"
+
 #import "OrderingViewController.h"
 #import "OrderingCollectionViewCell.h"
 #import "OrderingTableViewCell.h"
@@ -21,6 +23,11 @@
 #import "GoodsCheckSuccess.h"
 #import "ShoppingCartDataManager.h"
 #import "ChangeGoodsNO.h"
+#import "GoodsModelCarGet.h"
+#import "GoodsModelCarGetSuccess.h"
+#import "ShopCustomModel.h"
+#import "ShopGoodsDetailModel.h"
+#import "DeleteStoreGoods.h"
 
 #import "OrderDataManager.h"
 
@@ -71,6 +78,7 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
 
     [self p_initViews];
 }
@@ -103,11 +111,11 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
     flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
     flowLayout.itemSize = CGSizeMake(155, 180);
     
-    //
     
     [self.placeOrderButton setCornerRadius:0 withBorderWidth:1.0 withBorderColor:RGB(0xc2, 0xc7, 0xcc)];
     [self.checkButton setCornerRadius:0 withBorderWidth:1.0 withBorderColor:RGB(0xc2, 0xc7, 0xcc)];
     
+//  菜品分类  查询
     GoodsType *goodsType = [[GoodsType alloc] initWithGoodContent:@""];
     [GoodsDataManager typeGoodsCheck:goodsType success:^(id response) {
         
@@ -121,7 +129,7 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
 //  defaultId  商品id
     GoodsCheck *goodsModel = [[GoodsCheck alloc] initWithOrgId:@"1"];
     [GoodsDataManager goodsCheck:goodsModel success:^(id response) {
-        
+        NSLog(@"__response__%@",response);
         self.allArray = response;
         self.dataArray = response;
         NSMutableDictionary *mutDic = [self transFormArrayToDictionary:response];
@@ -131,8 +139,23 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
     } failure:^(NSError *error) {
         
     }];
+
     
+    [self getStoreCarList];
+
     self.allCaiArray = [NSMutableArray array];
+}
+
+#pragma mark- 获得购物车商品列表
+-(void)getStoreCarList
+{
+    GoodsModelCarGet *goodd = [[GoodsModelCarGet alloc] initWithUserId:USER_ID];
+    [ShoppingCartDataManager getGoodFromStoreCar:goodd success:^(id response) {
+        self.allCaiArray = response;
+        [self.orderListTableView reloadData];
+    } failure:^(NSError *error) {
+        [[[UIAlertView alloc] initWithTitle:@"提示" message:@"请求失败" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil] show];
+    }];
 }
 
 -(void)method:(NSArray*)arree
@@ -149,23 +172,17 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
 - (IBAction)orderFuncAction:(UIButton *)sender {
     
     self.buttonView.hidden = !self.buttonView.hidden;
-    
+    [self getStoreCarList];
 }
 
 
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    
-    
-    
-    
 }
 
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    
-    
 }
 
 
@@ -187,8 +204,6 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
     
     
     self.openTableAndTakeOutView = [[OpenTableAndTakeOutView alloc]initWithFrame:self.replacedView.frame];
-
-    
     [self.view addSubview:self.openTableAndTakeOutView];
     
 //    [self showHUDWithMessage:@"正在创建订单"];
@@ -209,18 +224,9 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 #pragma mark --UICollectionViewDataSource
 
 
@@ -233,18 +239,17 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
     
     OrderingCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:collectionViewCellIdentifer forIndexPath:indexPath];
     GoodsCheckSuccess *goodsCheck = self.dataArray[indexPath.row];
-    cell.dishName.text = goodsCheck.goodsDesc;
+    cell.dishName.text = goodsCheck.goodsName;
     return cell;
 }
+
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     GoodsCheckSuccess *succe = self.dataArray[indexPath.row];
-    GoodsModel *goodsModel = [[GoodsModel alloc] initWithGoodId:succe.defaultId userId:@"15bfe9b03cfd11e66bd265bf3021409c"];
+    GoodsModel *goodsModel = [[GoodsModel alloc] initWithGoodId:succe.defaultId userId:USER_ID];
     [ShoppingCartDataManager addGoodToStore:goodsModel success:^(id response) {
-        [self.allCaiArray addObject:succe];
-        self.caiArray = [self transFormCaiArray:self.allCaiArray];
-        [self.orderListTableView reloadData];
+        [self getStoreCarList];
     } failure:^(NSError *error) {
     }];
     
@@ -253,49 +258,80 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
 #pragma mark -- UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return self.caiArray.count;
+    if (self.allCaiArray.count==0) {
+        return 0;
+    }else{
+        return [self.allCaiArray[1] count];
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     OrderingTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:tableViewCellIdentifer];
-    GoodsCheckSuccess *succMode = self.caiArray[indexPath.row][0];
-    cell.dishPrice.text = succMode.goodsPrice;
-    cell.dishName.text =succMode.goodsName;
-    cell.dishNumberLabel.text = [NSString stringWithFormat:@"%zi",[self.caiArray[indexPath.row] count]];
+    if (self.allCaiArray.count==0) {
+    }else{
+        ShopGoodsDetailModel *succMode = self.allCaiArray[1][indexPath.row];
+        cell.dishPrice.text = succMode.goodsPrice;
+        cell.dishName.text =succMode.goodsName;
+        cell.dishNumberLabel.text = [NSString stringWithFormat:@"%d",[succMode.quantity intValue]];
+    }
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     return cell;
 }
 
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+
+- (nullable NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return @"删除";
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        
+        ShopGoodsDetailModel *succMode = self.allCaiArray[1][indexPath.row];
+        DeleteStoreGoods *dele = [[DeleteStoreGoods alloc] initWithGoodId:succMode.defaultId state:@"0"];
+        [ShoppingCartDataManager deleteGoodFromStore:dele success:^(id response) {
+            [self getStoreCarList];
+        } failure:^(NSError *error) {
+            
+        }];
+    }
+   
+}
+
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+
+    ShopGoodsDetailModel *succMode = self.allCaiArray[1][indexPath.row];
+
     _showGoodsView=[[[NSBundle mainBundle]loadNibNamed:@"ShowGoodsView" owner:self options:nil]lastObject];
-    _showGoodsView.goodSuccess = self.caiArray[indexPath.row][0];
-    _showGoodsView.numberLabel.text = [NSString stringWithFormat:@"%zi",[self.caiArray[indexPath.row] count]];
+    _showGoodsView.goodSuccess = succMode;
+    _showGoodsView.numberLabel.text = [NSString stringWithFormat:@"%d",[succMode.quantity intValue]];
     _showGoodsView.delegate = self;
     _showGoodsView.backgroundColor = [UIColor clearColor];
     [KWindow addSubview:_showGoodsView];
 }
 
 #pragma mark- 弹出视图DelegateMethod
--(void)btnDelegateName:(GoodsCheckSuccess *)goodCheck number:(int)number type:(int)type
+-(void)btnDelegateName:(ShopGoodsDetailModel *)goodCheck number:(int)number type:(NSInteger)type
 {
-    NSLog(@"%@",goodCheck.categoryId);
-    NSLog(@"%@",goodCheck.defaultId);
+    if (type == 1) {
+        [_showGoodsView removeFromSuperview];
+        return;
+    }
     ChangeGoodsNO *changge = [[ChangeGoodsNO alloc] initWithGoodId:goodCheck.defaultId quantity:[NSString stringWithFormat:@"%d",number] state:@"0"];
     [ShoppingCartDataManager changgeGoods:changge success:^(id response) {
-        NSLog(@"————%@",response);
-//        [self removeSameObject:goodCheck];
-//        for (int i = 0; i<number; i++) {
-//            [self.allCaiArray addObject:changge];
-//        }
-//        self.caiArray = [self transFormCaiArray:self.allCaiArray];
-//        [self.orderListTableView reloadData];
+        [self getStoreCarList];
     } failure:^(NSError *error) {
-//        [[UIAlertView alloc] initWithTitle:@"提示" message:@"" delegate:<#(nullable id)#> cancelButtonTitle:<#(nullable NSString *)#> otherButtonTitles:<#(nullable NSString *), ...#>, nil]
     }];
     [_showGoodsView removeFromSuperview];
 }
+
 
 #pragma mark- 右侧滑动菜单代理方法
 - (void)DishTypeView:(DishTypeView *)dishTypeView didSelectItemAtIndex:(GoodsTypeSuccess *)index
@@ -340,9 +376,6 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
         
     }
     
-    NSLog(@"dateMutable:%@",dateMutablearray);
-    
-
     NSMutableDictionary *muta = [NSMutableDictionary dictionary];
     for (int i = 0; i<dateMutablearray.count; i++) {
         NSString *categoryId = [dateMutablearray[i][0] categoryId];

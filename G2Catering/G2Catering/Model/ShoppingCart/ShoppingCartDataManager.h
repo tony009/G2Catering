@@ -15,6 +15,7 @@
 #import "GoodsType.h"
 #import "GoodsCheck.h"
 #import "ChanggeGoods.h"
+#import "GoodsModelCarGet.h"
 @interface ShoppingCartDataManager : DataManager
 
 //获取购物车列表
@@ -35,6 +36,11 @@
 
 //删除购物车商品时调用
 +(void)deleteGoodFromStore:(DeleteStoreGoods *)goodsModel
+                   success:(success)success
+                   failure:(failure)failure;
+
+//购物车列表查询
++(void)getGoodFromStoreCar:(GoodsModelCarGet *)goodsModel
                    success:(success)success
                    failure:(failure)failure;
 
