@@ -127,7 +127,7 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
 //  defaultId  商品id
     GoodsCheck *goodsModel = [[GoodsCheck alloc] initWithOrgId:@"1"];
     [GoodsDataManager goodsCheck:goodsModel success:^(id response) {
-        
+        NSLog(@"__response__%@",response);
         self.allArray = response;
         self.dataArray = response;
         NSMutableDictionary *mutDic = [self transFormArrayToDictionary:response];
@@ -225,7 +225,7 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
     
     OrderingCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:collectionViewCellIdentifer forIndexPath:indexPath];
     GoodsCheckSuccess *goodsCheck = self.dataArray[indexPath.row];
-    cell.dishName.text = goodsCheck.goodsDesc;
+    cell.dishName.text = goodsCheck.goodsName;
     return cell;
 }
 

@@ -69,7 +69,6 @@
 {
     NSString *url = [NSString stringWithFormat:@"%@/%@",BaseUrl,@"g2-service-module/business/sm/shopping/cart/getShoppingCart"];
     
-    NSLog(@"_nb__%@",[goodsModel mj_keyValues]);
     [HttpTool postListWithForm:url parameters:[goodsModel mj_keyValues] keyPath:nil success:^(id response) {
         success(response);
     } failure:^(NSError *error) {

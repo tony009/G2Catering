@@ -236,7 +236,7 @@ parameters:(id)parameters
     sessionManager.requestSerializer = [AFJSONRequestSerializer serializer];
     
     [sessionManager POST:restPath parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
-        NSLog(@"__responseObject_%@",responseObject);
+//        NSLog(@"__responseObject_%@",responseObject);
 
         if ([responseObject[@"status"] isEqualToString:@"OK"]) {
             
@@ -318,10 +318,10 @@ parameters:(id)parameters
     
     [sessionManager POST:restPath parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if ([responseObject[@"status"] isEqualToString:@"OK"]) {
-            
+            NSLog(@"__%@__responseObject",responseObject);
             ShopGoodsDetailModel *shopd = [ShopCustomModel mj_objectWithKeyValues:responseObject[@"message"]];
 //            NSLog(@"————shopd——%@",shopd.orgId);
-            NSLog(@"__responseect_%@",responseObject[@"message"]);
+//            NSLog(@"__responseect_%@",responseObject[@"message"]);
 //            NSLog(@"__respon222_%@",responseObject[@"message"][@"smShoppingCartPkgBean"]);
 //            NSLog(@"__respon222_%@",responseObject[@"message"][@"smShoppingCartPkgBean"][0][@"smShoppingCartItemBean"] );
             
