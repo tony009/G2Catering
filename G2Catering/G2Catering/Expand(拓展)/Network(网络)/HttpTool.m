@@ -236,7 +236,6 @@ parameters:(id)parameters
     sessionManager.requestSerializer = [AFJSONRequestSerializer serializer];
     
     [sessionManager POST:restPath parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
-//        NSLog(@"__responseObject_%@",responseObject);
 
         if ([responseObject[@"status"] isEqualToString:@"OK"]) {
             
@@ -302,40 +301,6 @@ parameters:(id)parameters
     
 }
 
-+(void)postListWithForm:(NSString *)restPath
-         parameters:(id)parameters
-            keyPath:(NSString *)keyPath
-            success:(success)success
-            failure:(failure)failure{
-    
-        //if ([HttpTool isConnectionAvailable]) {
-    
-        //创建请求url
-    
-    AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
-    
-    sessionManager.requestSerializer = [AFJSONRequestSerializer serializer];
-    
-    [sessionManager POST:restPath parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        if ([responseObject[@"status"] isEqualToString:@"OK"]) {
-            NSLog(@"__%@__responseObject",responseObject);
-            ShopGoodsDetailModel *shopd = [ShopCustomModel mj_objectWithKeyValues:responseObject[@"message"]];
-//            NSLog(@"————shopd——%@",shopd.orgId);
-//            NSLog(@"__responseect_%@",responseObject[@"message"]);
-//            NSLog(@"__respon222_%@",responseObject[@"message"][@"smShoppingCartPkgBean"]);
-//            NSLog(@"__respon222_%@",responseObject[@"message"][@"smShoppingCartPkgBean"][0][@"smShoppingCartItemBean"] );
-            
-            NSArray *arr = responseObject[@"message"][@"smShoppingCartPkgBean"][0][@"smShoppingCartItemBean"];
-            NSArray *arr2 =  [ShopGoodsDetailModel mj_objectArrayWithKeyValuesArray:arr];
-            NSArray *resultArray = @[shopd,arr2];
-            success(resultArray);
-        }
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        failure(error);
-    }];
-    
-
-}
 
 
 

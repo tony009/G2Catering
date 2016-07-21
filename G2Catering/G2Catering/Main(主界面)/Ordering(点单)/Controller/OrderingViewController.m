@@ -129,7 +129,6 @@ static NSString *tableViewCellIdentifer = @"OrderingTableViewReuseCell";
 //  defaultId  商品id
     GoodsCheck *goodsModel = [[GoodsCheck alloc] initWithOrgId:@"1"];
     [GoodsDataManager goodsCheck:goodsModel success:^(id response) {
-        NSLog(@"__response__%@",response);
         self.allArray = response;
         self.dataArray = response;
         NSMutableDictionary *mutDic = [self transFormArrayToDictionary:response];

@@ -45,11 +45,6 @@ parameters:(id)parameters
             success:(success)success
             failure:(failure)failure;
 
-// 请求购物车列表
-+(void)postListWithForm:(NSString *)restPath
-             parameters:(id)parameters
-                keyPath:(NSString *)keyPath
-                success:(success)success
-                failure:(failure)failure;
+
 
 @end
