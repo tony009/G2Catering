@@ -31,8 +31,12 @@
 		43882E831D23C9F1006C28CE /* WaiMaiDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E6B1D23C9F1006C28CE /* WaiMaiDetailTableViewCell.xib */; };
 		43882E841D23C9F1006C28CE /* WaiMaiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 43882E6D1D23C9F1006C28CE /* WaiMaiTableViewCell.m */; };
 		43882E851D23C9F1006C28CE /* WaiMaiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43882E6E1D23C9F1006C28CE /* WaiMaiTableViewCell.xib */; };
-		43D1EC871D3641F50087A2AA /* ShowGoodsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D1EC861D3641F50087A2AA /* ShowGoodsView.m */; };
-		43D1EC891D3642090087A2AA /* ShowGoodsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43D1EC881D3642090087A2AA /* ShowGoodsView.xib */; };
+		43D1EC871D3641F50087A2AA /* ShowGoodsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D1EC861D3641F50087A2AA /* ShowGoodsView.m */; settings = {ASSET_TAGS = (); }; };
+		43D1EC891D3642090087A2AA /* ShowGoodsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43D1EC881D3642090087A2AA /* ShowGoodsView.xib */; settings = {ASSET_TAGS = (); }; };
+		43D1EC8C1D3768A00087A2AA /* GoodsModelCarGet.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D1EC8B1D3768A00087A2AA /* GoodsModelCarGet.m */; settings = {ASSET_TAGS = (); }; };
+		43D1EC8F1D3768BA0087A2AA /* GoodsModelCarGetSuccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D1EC8E1D3768BA0087A2AA /* GoodsModelCarGetSuccess.m */; settings = {ASSET_TAGS = (); }; };
+		43D1EC921D3782A00087A2AA /* ShopGoodsDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D1EC911D3782A00087A2AA /* ShopGoodsDetailModel.m */; settings = {ASSET_TAGS = (); }; };
+		43D1EC951D37852A0087A2AA /* ShopCustomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D1EC941D37852A0087A2AA /* ShopCustomModel.m */; settings = {ASSET_TAGS = (); }; };
 		5430E3511D2E2AFA0092985E /* aliPayWallet.png in Resources */ = {isa = PBXBuildFile; fileRef = 5430E3391D2E2AFA0092985E /* aliPayWallet.png */; };
 		5430E3521D2E2AFA0092985E /* aliPayWallet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5430E33A1D2E2AFA0092985E /* aliPayWallet@2x.png */; };
 		5430E3531D2E2AFA0092985E /* aliPayWallet@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5430E33B1D2E2AFA0092985E /* aliPayWallet@3x.png */; };

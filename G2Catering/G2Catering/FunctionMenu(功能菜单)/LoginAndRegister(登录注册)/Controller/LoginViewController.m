@@ -19,7 +19,9 @@
 #import "GoodsCheck.h"
 #import "ChanggeGoods.h"
 
+#import "GoodsModelCarGet.h"
 #import "ShoppingCartDataManager.h"
+#import "ChangeGoodsNO.h"
 
 @interface LoginViewController ()<UITextFieldDelegate>
 
